@@ -27,15 +27,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.choutse.cn","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.11.1","exturl":false,"sidebar":{"position":"right","width":240,"display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":{"livere":{"order":-1}},"activeClass":"livere"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeInDown","post_header":"fadeInDown","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="0.远古时期的忘掉了…… 0.1.这个是next的网址QAQ: https:&#x2F;&#x2F;theme-next.js.org&#x2F; 0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。 使用了自己的域名，更新后页面找不到github pages。">
+    <meta name="description" content="用的next8 0.远古时期的忘掉了…… 0.1.这个是next的网址QAQ: https:&#x2F;&#x2F;theme-next.js.org&#x2F; 0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。 使用了自己的域名，更新后页面找不到github pages。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="建站过程中遇到的一些问题的总结">
 <meta property="og:url" content="https://www.choutse.cn/2022/05bfdf9581.html">
 <meta property="og:site_name" content="筹策">
-<meta property="og:description" content="0.远古时期的忘掉了…… 0.1.这个是next的网址QAQ: https:&#x2F;&#x2F;theme-next.js.org&#x2F; 0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。 使用了自己的域名，更新后页面找不到github pages。">
+<meta property="og:description" content="用的next8 0.远古时期的忘掉了…… 0.1.这个是next的网址QAQ: https:&#x2F;&#x2F;theme-next.js.org&#x2F; 0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。 使用了自己的域名，更新后页面找不到github pages。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-02T11:44:17.000Z">
-<meta property="article:modified_time" content="2022-05-23T12:40:23.302Z">
+<meta property="article:modified_time" content="2022-05-23T15:10:24.475Z">
 <meta property="article:author" content="zcxake">
 <meta property="article:tag" content="小教程">
 <meta name="twitter:card" content="summary">
@@ -58,6 +58,13 @@
 <script src="https://gcore.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
 
 <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+
+<!--点击爆炸-->
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+<script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script async src="/js/cursor/explosion.min.js"></script>
+
+
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -156,7 +163,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%EF%BC%8C%E6%9B%B4%E6%96%B0%E5%90%8E%E9%A1%B5%E9%9D%A2%E6%89%BE%E4%B8%8D%E5%88%B0github-pages%E3%80%82"><span class="nav-number">1.</span> <span class="nav-text">使用了自己的域名，更新后页面找不到github pages。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8next%E4%B8%BB%E9%A2%98%EF%BC%8C%E5%87%BA%E7%8E%B0-extends-%E2%80%98-layout-swig%E2%80%99-%E7%AD%89%E7%AD%89"><span class="nav-number">2.</span> <span class="nav-text">使用next主题，出现% extends ‘_layout.swig’ %等等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%83%B3%E8%A6%81%E6%92%AD%E6%94%BE%E6%AD%8C%E6%9B%B2%E3%80%82"><span class="nav-number">3.</span> <span class="nav-text">想要播放歌曲。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0sitemap%EF%BC%8C%E7%BD%91%E7%AB%99%E5%9C%B0%E5%9B%BE"><span class="nav-number">4.</span> <span class="nav-text">添加sitemap，网站地图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%8C%E6%9C%9B%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8D%E6%B8%B2%E6%9F%93"><span class="nav-number">5.</span> <span class="nav-text">希望某些文件夹不渲染</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#next%E4%B8%BB%E9%A2%98%E5%81%B6%E5%B0%94%E6%89%93%E5%BC%80%E4%BC%9A%E5%8F%98%E6%88%90%E7%A9%BA%E7%99%BD%EF%BC%882022-5-20%EF%BC%89next-8"><span class="nav-number">6.</span> <span class="nav-text">next主题偶尔打开会变成空白（2022.5.20）next 8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%AF%B9%E5%85%AC%E5%BC%8F%E7%9A%84%E6%94%AF%E6%8C%81"><span class="nav-number">7.</span> <span class="nav-text">添加对公式的支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%B7%E6%AD%8C%E5%AD%97%E4%BD%93%E8%AE%BF%E9%97%AE%E4%B8%8D%E7%A8%B3%E5%AE%9A"><span class="nav-number">8.</span> <span class="nav-text">谷歌字体访问不稳定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jsdelivr%E4%B8%8D%E7%A8%B3%E5%AE%9A%EF%BC%8C%E6%9B%BF%E4%BB%A3%E5%93%81"><span class="nav-number">9.</span> <span class="nav-text">jsdelivr不稳定，替代品</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%BF%E6%8D%A2%E8%83%8C%E6%99%AF"><span class="nav-number">10.</span> <span class="nav-text">替换背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A1%86%E6%A1%86%E5%9C%86%E8%A7%92"><span class="nav-number">11.</span> <span class="nav-text">框框圆角</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%EF%BC%8C%E6%9B%B4%E6%96%B0%E5%90%8E%E9%A1%B5%E9%9D%A2%E6%89%BE%E4%B8%8D%E5%88%B0github-pages%E3%80%82"><span class="nav-number">1.</span> <span class="nav-text">使用了自己的域名，更新后页面找不到github pages。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8next%E4%B8%BB%E9%A2%98%EF%BC%8C%E5%87%BA%E7%8E%B0-extends-%E2%80%98-layout-swig%E2%80%99-%E7%AD%89%E7%AD%89"><span class="nav-number">2.</span> <span class="nav-text">使用next主题，出现% extends ‘_layout.swig’ %等等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%83%B3%E8%A6%81%E6%92%AD%E6%94%BE%E6%AD%8C%E6%9B%B2%E3%80%82"><span class="nav-number">3.</span> <span class="nav-text">想要播放歌曲。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0sitemap%EF%BC%8C%E7%BD%91%E7%AB%99%E5%9C%B0%E5%9B%BE"><span class="nav-number">4.</span> <span class="nav-text">添加sitemap，网站地图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%8C%E6%9C%9B%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8D%E6%B8%B2%E6%9F%93"><span class="nav-number">5.</span> <span class="nav-text">希望某些文件夹不渲染</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#next%E4%B8%BB%E9%A2%98%E5%81%B6%E5%B0%94%E6%89%93%E5%BC%80%E4%BC%9A%E5%8F%98%E6%88%90%E7%A9%BA%E7%99%BD%EF%BC%882022-5-20%EF%BC%89next-8"><span class="nav-number">6.</span> <span class="nav-text">next主题偶尔打开会变成空白（2022.5.20）next 8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%AF%B9%E5%85%AC%E5%BC%8F%E7%9A%84%E6%94%AF%E6%8C%81"><span class="nav-number">7.</span> <span class="nav-text">添加对公式的支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%B7%E6%AD%8C%E5%AD%97%E4%BD%93%E8%AE%BF%E9%97%AE%E4%B8%8D%E7%A8%B3%E5%AE%9A"><span class="nav-number">8.</span> <span class="nav-text">谷歌字体访问不稳定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jsdelivr%E4%B8%8D%E7%A8%B3%E5%AE%9A%EF%BC%8C%E6%9B%BF%E4%BB%A3%E5%93%81"><span class="nav-number">9.</span> <span class="nav-text">jsdelivr不稳定，替代品</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%BF%E6%8D%A2%E8%83%8C%E6%99%AF"><span class="nav-number">10.</span> <span class="nav-text">替换背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A1%86%E6%A1%86%E5%9C%86%E8%A7%92"><span class="nav-number">11.</span> <span class="nav-text">框框圆角</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E9%BC%A0%E7%89%B9%E6%95%88%E5%B0%8F%E7%88%86%E7%82%B8"><span class="nav-number">12.</span> <span class="nav-text">添加鼠特效小爆炸</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -286,7 +293,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新</span>
-      <time title="修改时间：2022-05-23 20:40:23" itemprop="dateModified" datetime="2022-05-23T20:40:23+08:00">2022-05-23</time>
+      <time title="修改时间：2022-05-23 23:10:24" itemprop="dateModified" datetime="2022-05-23T23:10:24+08:00">2022-05-23</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -305,14 +312,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>7.1k</span>
+      <span>7.7k</span>
     </span>
     <span class="post-meta-item" title="阅读时长约">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长约 &asymp;</span>
-      <span>6 分</span>
+      <span>7 分</span>
     </span>
 </div>
 
@@ -323,7 +330,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>0.远古时期的忘掉了……</p>
+        <p>用的next8</p>
+<p>0.远古时期的忘掉了……</p>
 <p>0.1.这个是next的网址QAQ: <a target="_blank" rel="noopener" href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
 <p>0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。</p>
 <h3 id="使用了自己的域名，更新后页面找不到github-pages。"><a href="#使用了自己的域名，更新后页面找不到github-pages。" class="headerlink" title="使用了自己的域名，更新后页面找不到github pages。"></a>使用了自己的域名，更新后页面找不到github pages。</h3><span id="more"></span>
@@ -404,8 +412,9 @@
 <p>这里要多提一嘴镜像站了，避免以后又有啥不能使的可以替换：<br>CDNJS：原本的：cdnjs.cloudflare.com，可用替换：cdnjs.loli.net<br>unpkg可作为jsdelivr的替换用</p>
 <h3 id="jsdelivr不稳定，替代品"><a href="#jsdelivr不稳定，替代品" class="headerlink" title="jsdelivr不稳定，替代品"></a><a id="jsdelivr">jsdelivr不稳定，替代品</a></h3><p><strong>替换法</strong><br>cdn.jsdelivr.net选一个改：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fastly.jsdelivr.net</span><br><span class="line">gcore.jsdelivr.net</span><br><span class="line">testingcf.jsdelivr.net</span><br></pre></td></tr></table></figure></p>
 <p><strong>其他CDN站</strong><br><a target="_blank" rel="noopener" href="https://cdn.bytedance.com/">https://cdn.bytedance.com/</a> 字节跳动<br><a target="_blank" rel="noopener" href="https://www.staticfile.org/">https://www.staticfile.org/</a> 七牛云<br><a target="_blank" rel="noopener" href="https://cdnjs.com/">https://cdnjs.com/</a><br><a target="_blank" rel="noopener" href="https://unpkg.com/">https://unpkg.com/</a></p>
-<h3 id="替换背景"><a href="#替换背景" class="headerlink" title="替换背景"></a>替换背景</h3><p>到next主题打开styles，在source\ _data\styles.styl后加上：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background-image: url(); </span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment: fixed;</span><br><span class="line">    background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>背景图地址可以是链接或者路径，比如我放在\next\source\images\bk.jpg，那就是/images/bk.jpg<br>和background相关的几个属性：<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background.asp">https://www.w3school.com.cn/cssref/pr_background.asp</a><br>自己看着设置。<br><strong>然后在后边再加上透明度设置：</strong><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//菜单栏</span><br><span class="line">.header-inner &#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">//侧边框</span><br><span class="line">.sidebar&#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>文章的部分如果直接设置透明度，字体颜色也会变浅，</p>
+<h3 id="替换背景"><a href="#替换背景" class="headerlink" title="替换背景"></a>替换背景</h3><p>到next主题打开styles，在source\ _data\styles.styl后加上：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background-image: url(); </span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment: fixed;</span><br><span class="line">    background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>背景图地址可以是链接或者路径，比如我放在\next\source\images\bk.jpg，那就是/images/bk.jpg<br>和background相关的几个属性：<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background.asp">https://www.w3school.com.cn/cssref/pr_background.asp</a><br>自己看着设置。<br><strong>然后在后边再加上透明度设置：</strong><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 菜单栏</span><br><span class="line">.header-inner &#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">// 侧边框</span><br><span class="line">.sidebar&#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">// 文章</span><br><span class="line">.post-block&#123;</span><br><span class="line">  opacity: 0.8;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>值看着办吧。<br>我这个为了显出后边的canvas-nest，这个动态网调深了和背景重合，调浅了和文字白底重合，所以调成了以前不怎么喜欢的暗黑模式QAQ</p>
 <h3 id="框框圆角"><a href="#框框圆角" class="headerlink" title="框框圆角"></a>框框圆角</h3><p>到next主题打开variables，source\ _data\variables.styl中添加<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$border-radius-inner     = 30px 30px 30px 30px;</span><br><span class="line">$border-radius           = 30px;</span><br></pre></td></tr></table></figure></p>
+<h3 id="添加鼠特效小爆炸"><a href="#添加鼠特效小爆炸" class="headerlink" title="添加鼠特效小爆炸"></a>添加鼠特效小爆炸</h3><p>参考了<a target="_blank" rel="noopener" href="https://www.smoe.top/2020/12/27/Hexo-click/">https://www.smoe.top/2020/12/27/Hexo-click/</a><br>但是版本不同，所以我稍微改了一下。<br>js找个source文件夹放，然后直接在\source_data\head.njk里加上想要的那个效果就好了，改一下相应路径，我也是放的\themes\next\source\js\cursor，所以就抄原博文的了<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--点击爆炸--&gt;</span><br><span class="line">&lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt;</span><br><span class="line">&lt;script src=&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script async src=&quot;/js/cursor/explosion.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><br>然后我稍微改了下颜色，饱和度调低了点</p>
 
     </div>
 
@@ -477,7 +486,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">27k</span>
+    <span title="站点总字数">28k</span>
   </span>
 </div><script color="255,250,250" opacity="1" zIndex="-1" count="99" src="https://gcore.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 
