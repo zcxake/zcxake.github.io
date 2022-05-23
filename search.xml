@@ -1,0 +1,3205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Endnote 20 自定义输出类型</title>
+    <url>/2022/058897aef5.html</url>
+    <content><![CDATA[<p>想要在PPT里插入引用，Endnote的那些output styles对PPT来说感觉都太长了，想说自己改一个，结果网上发现旧版x9的方法比较多，入口在编辑下的输出类型，但是Endnote20后改版挺大的，这个位置木有了，发现新的位置在tools工具下，新建一个就好了。<br>目前先设置了Journal杂志的，毕竟一般都这个，有其他的用到了再改喽：<br><span id="more"></span><br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Author. |Title. |Journal. |Year. </span><br></pre></td></tr></table></figure><br>然后Author Lists改成超过3个只显示1个，其他人是et al</p>
+<p>eg：<br>Zheng, T., et al. Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability. Adv Mater. 2022. </p>
+<p><del>Endnote20这么卡的么，改个输出类型卡成傻子，用AE都没有这种体验……</del></p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/014a17b156.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>HTML颜色名</title>
+    <url>/2022/05a4b3b729.html</url>
+    <content><![CDATA[<p>网上蛮多的了，但是好多哦，参考起来好麻烦，整个自己喜欢的颜色吧<br>全部颜色名在这儿：<a href="https://www.runoob.com/html/html-colornames.html">https://www.runoob.com/html/html-colornames.html</a></p>
+<h3 id="紫色哒："><a href="#紫色哒：" class="headerlink" title="紫色哒："></a><font color="BlueViolet">紫色哒：</font></h3><p><strong><font color="DarkMagenta">DarkMagenta</font></strong><br><strong><font color="BlueViolet">BlueViolet</font></strong><br><strong><font color="DarkOrchid">DarkOrchid</font></strong><br><strong><font color="DarkViolet">DarkViolet</font></strong><br><strong><font color="MediumSlateBlue">MediumSlateBlue</font></strong><br><strong><font color="MediumPurple">MediumPurple</font></strong><br><strong><font color="MediumOrchid">MediumOrchid</font></strong><br><strong><font color="Orchid">Orchid</font></strong><br><strong><font color="Plum">Plum</font></strong><br><strong><font color="Lavender">Lavender</font></strong></p>
+<span id="more"></span>
+<h3 id="红色哒："><a href="#红色哒：" class="headerlink" title="红色哒："></a><font color="Crimson">红色哒：</font></h3><p><strong><font color="OrangeRed">OrangeRed</font></strong><br><strong><font color="Crimson">Crimson</font></strong><br><strong><font color="MediumVioletRed">MediumVioletRed</font></strong></p>
+<h3 id="黄色哒："><a href="#黄色哒：" class="headerlink" title="黄色哒："></a><font color="BurlyWood">黄色哒：</font></h3><p><strong><font color="DarkGoldenRod">DarkGoldenRod</font></strong><br><strong><font color="DarkKhaki">DarkKhaki</font></strong><br><strong><font color="BurlyWood">BurlyWood</font></strong></p>
+<h3 id="绿色哒："><a href="#绿色哒：" class="headerlink" title="绿色哒："></a><font color="CadetBlue">绿色哒：</font></h3><p><strong><font color="Teal">Teal</font></strong><br><strong><font color="DarkCyan">DarkCyan</font></strong><br><strong><font color="DarkOliveGreen">DarkOliveGreen</font></strong><br><strong><font color="Olive">Olive</font></strong><br><strong><font color="OliveDrab">OliveDrab</font></strong><br><strong><font color="SeaGreen">SeaGreen</font></strong><br><strong><font color="CadetBlue">CadetBlue</font></strong><br><strong><font color="DarkSeaGreen">DarkSeaGreen</font></strong><br><strong><font color="DarkTurquoise">DarkTurquoise</font></strong><br><strong><font color="LightSeaGreen">LightSeaGreen</font></strong><br><strong><font color="LimeGreen">LimeGreen</font></strong><br><strong><font color="MediumAquaMarine">MediumAquaMarine</font></strong><br><strong><font color="MediumSeaGreen">MediumSeaGreen</font></strong><br><strong><font color="YellowGreen">YellowGreen</font></strong><br><strong><font color="LightGreen">LightGreen</font></strong></p>
+<h3 id="橙色哒："><a href="#橙色哒：" class="headerlink" title="橙色哒："></a><font color="Chocolate">橙色哒：</font></h3><p><strong><font color="DarkOrange">DarkOrange</font></strong><br><strong><font color="Orange">Orange</font></strong><br><strong><font color="Chocolate">Chocolate</font></strong><br><strong><font color="Tomato">Tomato</font></strong><br><strong><font color="Coral">Coral</font></strong><br><strong><font color="DarkSalmon">DarkSalmon</font></strong><br><strong><font color="LightCoral">LightCoral</font></strong><br><strong><font color="LightSalmon">LightSalmon</font></strong><br><strong><font color="Salmon">Salmon</font></strong></p>
+<h3 id="蓝色哒："><a href="#蓝色哒：" class="headerlink" title="蓝色哒："></a><font color="CornflowerBlue">蓝色哒：</font></h3><p><strong><font color="SlateBlue">SlateBlue</font></strong><br><strong><font color="DarkSlateBlue">DarkSlateBlue</font></strong><br><strong><font color="DodgerBlue">DodgerBlue</font></strong><br><strong><font color="CornflowerBlue">CornflowerBlue</font></strong><br><strong><font color="DeepSkyBlue">DeepSkyBlue</font></strong><br><strong><font color="LightSkyBlue">LightSkyBlue</font></strong><br><strong><font color="LightBlue">LightBlue</font></strong></p>
+<h3 id="灰色哒："><a href="#灰色哒：" class="headerlink" title="灰色哒："></a><font color="DarkGray">灰色哒：</font></h3><p><strong><font color="DimGray">DimGray</font></strong><br><strong><font color="LightSlateGray">LightSlateGray</font></strong><br><strong><font color="DarkGray">DarkGray</font></strong></p>
+<h3 id="粉色哒："><a href="#粉色哒：" class="headerlink" title="粉色哒："></a><font color="DeepPink">粉色哒：</font></h3><p><strong><font color="DeepPink">DeepPink</font></strong><br><strong><font color="HotPink">HotPink</font></strong><br><strong><font color="PaleVioletRed">PaleVioletRed</font></strong></p>
+<h3 id="棕色哒："><a href="#棕色哒：" class="headerlink" title="棕色哒："></a><font color="FireBrick">棕色哒：</font></h3><p><strong><font color="FireBrick">FireBrick</font></strong><br><strong><font color="Maroon">Maroon</font></strong><br><strong><font color="Peru">Peru</font></strong></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>颜色 html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>建站过程中遇到的一些问题的总结</title>
+    <url>/2022/05bfdf9581.html</url>
+    <content><![CDATA[<p>0.远古时期的忘掉了……</p>
+<p>0.1.这个是next的网址QAQ: <a href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。</p>
+<h3 id="使用了自己的域名，更新后页面找不到github-pages。"><a href="#使用了自己的域名，更新后页面找不到github-pages。" class="headerlink" title="使用了自己的域名，更新后页面找不到github pages。"></a>使用了自己的域名，更新后页面找不到github pages。</h3><span id="more"></span>
+<p>hexo d后仓库被强行覆盖，原先的CNAME就没有了。<br>在source文件夹里加一个CNAME再更新就好了。<br>CNAME里填写自己的域名名字。</p>
+<h3 id="使用next主题，出现-extends-‘-layout-swig’-等等"><a href="#使用next主题，出现-extends-‘-layout-swig’-等等" class="headerlink" title="使用next主题，出现% extends ‘_layout.swig’ %等等"></a>使用next主题，出现% extends ‘_layout.swig’ %等等</h3><p>hexo在5.后删除了swig，需要自己手动安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i hexo-renderer-swig</span><br></pre></td></tr></table></figure>
+<h3 id="主题下创建标签出现Cannot-GET-tags-20"><a href="#主题下创建标签出现Cannot-GET-tags-20" class="headerlink" title="主题下创建标签出现Cannot GET /tags/%20/"></a>主题下创建标签出现Cannot GET /tags/%20/</h3><p>将配置文件中||后的空格删掉（竟然是自带的<br>home: /||home这种形式就没问题了。</p>
+<h3 id="想要添加歌单。"><a href="#想要添加歌单。" class="headerlink" title="想要添加歌单。"></a>想要添加歌单。</h3><p>参考了很多不同站点的做法，其实大同小异。<br>最后发现还是去官网最快。<br>但是没能将云音乐红心歌单加进来还是不太开心，metingjs没解析出来。<br>aplayer：<a href="https://aplayer.js.org/#/zh-Hans/?id=%E5%85%A5%E9%97%A8">https://aplayer.js.org/#/zh-Hans/?id=%E5%85%A5%E9%97%A8</a><br>MetingJS：<a href="https://github.com/metowolf/MetingJS">https://github.com/metowolf/MetingJS</a><br>首先根据APlayer教程安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install aplayer --save</span><br></pre></td></tr></table></figure>
+<p>然后到主题配置文件_config.yml改custom_file_path:<br>将head和sidebar加上（也就是去掉前边的#）<br>同时分别到hexo下source/_data里新建这两个njk文件</p>
+<p>siderbar.njk里的内容直接参考MeetingJS主页的教程就好了</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!-- require APlayer --&gt;</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;!-- require MetingJS --&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;meting-js</span><br><span class="line">	server=<span class="string">&quot;netease&quot;</span></span><br><span class="line">	<span class="built_in">type</span>=<span class="string">&quot;playlist&quot;</span></span><br><span class="line">	id=<span class="string">&quot;3744805&quot;</span>&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br></pre></td></tr></table></figure>
+<p>meting-js里的参数除了这三个还有APlayer里的，反正具体看官网吧，我这里没必要多复制了。<br>上述是加云音乐的，还有藤子，酷狗，虾米，百度的可以改。</p>
+<p>具体来说就是APlayer负责播放器的部分，MetingJS负责解析各大网站id。<br>但是autoplay真的能autoplay吗。→发现是浏览器限制了，唔，也好吧</p>
+<p>最后在head.njk里写上</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!--pjax：防止跳转页面音乐暂停--&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>可以跨页面放歌。<br>接着到主题配置文件_config.yml里把pjax改为true就好了。</p>
+<h3 id="添加sitemap，网站地图"><a href="#添加sitemap，网站地图" class="headerlink" title="添加sitemap，网站地图"></a>添加sitemap，网站地图</h3><p>安装搜索引擎插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save </span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+<p>在站点配置文件中把url改为自己的域名</p>
+<p>hexo cl -g后public会生成sitemap和baidusitemap两个xml文件</p>
+<p>分别到谷歌、bing站点地图输入 域名/sitemap.xml</p>
+<p>百度是专用的 域名/baidusitemap.xml</p>
+<p><strong>百度还可以手动提交</strong>：</p>
+<p>安装插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
+<p>在站点配置文件添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 3 ## 提交最新的链接数量</span><br><span class="line">  host: 域名</span><br><span class="line">  token: 在百度站长平台看</span><br><span class="line">  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
+<p>到<a href="https://ziyuan.baidu.com/linksubmit/">普通收录_加快网站内容抓取，快速提交数据工具_站长工具_网站支持_百度搜索资源平台 (baidu.com)</a>看自己的host和token</p>
+<p>在站点配置文件更改deploy：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">      - type: git</span><br><span class="line">        repo: git@github.com:zcxake/zcxake.github.io.git</span><br><span class="line">        branch: master</span><br><span class="line">      - type: baidu_url_submitter</span><br></pre></td></tr></table></figure>
+<p>注意repo和branch的缩进</p>
+<p>这样以后hexo d的时候就自动提交url到百度了。<br>更新：但是后来发现这个baidu_url_submit可能会导致一些问题，hexo s后出现warning，虽然对提交后的成品网页没影响，但是无法预览也很麻烦，所以把nodejs退到了12……</p>
+<h3 id="希望某些文件夹不渲染"><a href="#希望某些文件夹不渲染" class="headerlink" title="希望某些文件夹不渲染"></a>希望某些文件夹不渲染</h3><p>到站点配置文件检索skip，在skip_render后加上想不被渲染的，可使用glob表达式来匹配路径</p>
+<p>如我这里的是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Directory</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: :lang</span><br><span class="line">skip_render: &quot;_ing/**&quot;</span><br></pre></td></tr></table></figure>
+<p>表示source/_ing/里的所有东西都不会被渲染</p>
+<h3 id="next主题偶尔打开会变成空白（2022-5-20）next-8"><a href="#next主题偶尔打开会变成空白（2022-5-20）next-8" class="headerlink" title="next主题偶尔打开会变成空白（2022.5.20）next 8"></a>next主题偶尔打开会变成空白（2022.5.20）next 8</h3><p>先甩上参考：<br><a href="https://jnssd.com/2021/12/21/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1hexo-next%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%A9%BA%E7%99%BD%E7%9A%84%E6%83%85%E5%86%B5/">感谢分享</a><br>用同样的思路发现我也是这个原因，因为不太懂所以还是上<a href= "https://theme-next.js.org/docs/advanced-settings/vendors.html?highlight=vendors">next theme官网vendors下</a>瞅了一下，直接复制翻译一下好了，反正我是看这个搞定的。</p>
+<blockquote>
+<p>plugins: jsdelivr is used to set how to load the third-party plugins, e.g. anime.js. Third-party plugins are loaded from jsDelivr CDN by default.</p>
+<p>And we also provide other optional CDNs, including the famous UNPKG and CDNJS. These CDN providers are chosen to deliver our third-party plugins because they are fast and reliable. Set plugins to unpkg or cdnjs to load them from different CDN provider.</p>
+<p>Particularly, if you are a Chinese blogger or most of your visits come from China, please note that the CDNJS is blocked in some parts of China, don’t use it as your CDN provider.</p>
+<p>If your would like to load all third-party plugins from your site, please set plugins to local and install the @next-theme/plugins package: <a href="https://github.com/next-theme/plugins">https://github.com/next-theme/plugins</a></p>
+</blockquote>
+<table border="1">
+<tr>
+  <td>plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.js）。<br>
+  但我们也留了其他选项，比如著名的unpkg和cdnjs，选择这几个因为他们可靠且迅速，设置一个你想用的吧。<br>
+但是，如果您老在中国或者你访问者大多数在中国的话，注意cdnjs在中国部分地区禁了，谨慎选用。<br>
+<i><span class="heimu">虽然官网这么写了，但是实测是jsdelivr不稳定，另外两个可用，反正这种瞬息万变的东西自己看情况吧</span></i><br>
+但你要是想从自己网站加载第三方插件的话，把plugins项设置local然后安装@next-theme/plugins package: https://github.com/next-theme/plugins
+</td>
+</tr>
+</table>
+
+
+<blockquote>
+<p>Custom CDN URLs<br>Sometimes you may need to use CDNs other than jsdelivr, unpkg or cdnjs. For example, users can get faster loading speed in certain areas using the mirror site of jsDelivr.</p>
+<p>To enable custom CDN URL, you need to set internal: custom and / or plugins: custom in the vendors section, and then specify a CDN URL with the custom_cdn_url option.</p>
+<p>Remember to use the HTTPS protocol of CDN links when you enable HTTPS on your site.</p>
+</blockquote>
+<table border="1">
+<tr>
+  <td>自定义CDN链接<br>
+有时候，或许上边三个满足不了你，比如在某些特定的地方用JSDelivr的镜像站会快一些。
+<br>
+这时候你需要将internal和/或plugins设为custom，具体看你情况，然后填上底下的custom_cdn_url。
+<br>
+如果你的网站开启了HTTPS协议注意也要用CDN链接的HTTPS协议。</td>
+</tr>
+</table>
+
+<hr>
+<p>我目前是先改成unpkg了，如果之后还是经常空白就换成镜像站，还是不行的话就本地吧。</p>
+<h3 id="添加对公式的支持"><a href="#添加对公式的支持" class="headerlink" title="添加对公式的支持"></a>添加对公式的支持</h3><p>完全参考了<a href="https://blog.csdn.net/weixin_45511189/article/details/115798563">这一篇文章</a><br>完全可行，但以防万一给自己备一份吧：</p>
+<p>1.在hexo目录下使用下面的命令查看你是否已经安装了hexo-math插件<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-math</span><br></pre></td></tr></table></figure><br>empty就是没有，出现版本号就是装了<br>卸载之：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure><br>2.安装hexo-filter-mathjax：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-mathjax --save</span><br></pre></td></tr></table></figure><br>检查是否安装成功：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-filter-mathjax</span><br></pre></td></tr></table></figure><br>显示了hexo-filter-mathjax版本号则说明安装成功。<br>安装成功后，进行一些全局配置，打开hexo目录下的_config.yml文件，在最后面添加如下的代码：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">  tags: none # or &#x27;ams&#x27; or &#x27;all&#x27;</span><br><span class="line">  single_dollars: true # enable single dollar signs as in-line math delimiters</span><br><span class="line">  cjk_width: 0.9 # relative CJK char width</span><br><span class="line">  normal_width: 0.6 # relative normal (monospace) width</span><br><span class="line">  append_css: true # add CSS to pages rendered by MathJax</span><br><span class="line">  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span><br></pre></td></tr></table></figure><br>3.hexo-math默认的公式渲染器是hexo-renderer-marked，它和markdown的语法有冲突，我们将其卸载，查看是否安装了hexo-renderer-marked公式渲染器：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-renderer-marked</span><br></pre></td></tr></table></figure><br>如果安装了将其卸载：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked  --save</span><br></pre></td></tr></table></figure><br>然后安装一个新的公式渲染器，叫做hexo-renderer-kramed，它对hexo-renderer-marked进行了改进，在hexo目录下输入下面的命令安装：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure><br>检查hexo-renderer-kramed是否安装成功：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-renderer-kramed</span><br></pre></td></tr></table></figure><br>4.打开打开hexo主目录下的这个文件：\node_modules\kramed\lib\rules\inline.js，然后修改下面的规则（大家最好不要删除原代码，只是将其注释掉）：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">//修改为：</span><br><span class="line">escape: /^\\([`*\[\]()#$+\-.!_&gt;])/,</span><br></pre></td></tr></table></figure><br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">//修改为</span><br><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br></pre></td></tr></table></figure><br>保存并退出。<br>5.最后，打开next主题目录下的_config.yml，开启对mathjax的支持，设置为true。<br>6.行间输入是<script type="math/tex">公式内容</script>，行内公示是$公式内容$<br>7.某篇文章不想渲染公式就在md文件开头加上：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mathjax: false</span><br></pre></td></tr></table></figure></p>
+<h2 id="谷歌字体访问不稳定（及各镜像站"><a href="#谷歌字体访问不稳定（及各镜像站" class="headerlink" title="谷歌字体访问不稳定（及各镜像站"></a>谷歌字体访问不稳定（及各镜像站</h2><p>各种不稳定的问题嗯……<br>感谢<a href="https://u.sb/css-cdn/。">https://u.sb/css-cdn/。</a><br>next默认的是<a href="https://fonts.googleapis.com，然后目前有个镜像可以用，在host改成自定义的：https://fonts.loli.net">https://fonts.googleapis.com，然后目前有个镜像可以用，在host改成自定义的：https://fonts.loli.net</a><br>或者external改成false，用自己系统的字体，我目前是这样的。</p>
+<p>这里要多提一嘴镜像站了，避免以后又有啥不能使的可以替换：<br>CDNJS：原本的：cdnjs.cloudflare.com，可用替换：cdnjs.loli.net<br>unpkg可作为jsdelivr的替换用</p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>获取阿b的表情</title>
+    <url>/2022/05f71bb376.html</url>
+    <content><![CDATA[<p>方法来自知乎：<a href="https://www.zhihu.com/question/275901829/answer/1574659804">https://www.zhihu.com/question/275901829/answer/1574659804</a><br>不太用知乎所以还是转到自己的网站吧。</p>
+<p>1.在登录的状态下访问<a href="http://api.bilibili.com/x/emote/setting/panel?business=reply">http://api.bilibili.com/x/emote/setting/panel?business=reply</a> ，存储为emoji.json。<br>2.编写python脚本，保存为emoji.py在emoji.json目录下。<br><span id="more"></span><br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import json</span><br><span class="line">import os</span><br><span class="line">from concurrent.futures import ThreadPoolExecutor</span><br><span class="line">from functools import partial</span><br><span class="line">from time import sleep</span><br><span class="line"></span><br><span class="line">import requests</span><br><span class="line">from tqdm import tqdm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def mkdir(path):</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(path) is not True:</span><br><span class="line">        os.makedirs(path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_pic(url, path):</span><br><span class="line">    resp = requests.get(url)</span><br><span class="line">    with open(path, <span class="string">&#x27;wb&#x27;</span>) as code:</span><br><span class="line">        code.write(resp.content)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_emoji(emoji, save_path):</span><br><span class="line">    emoji_name = emoji[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    emoji_name = emoji_name[1:-1]</span><br><span class="line">    path = os.path.join(save_path, f<span class="string">&#x27;&#123;emoji_name&#125;.png&#x27;</span>)</span><br><span class="line">    download_pic(emoji[<span class="string">&#x27;url&#x27;</span>], path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_package(package, path):</span><br><span class="line">    package_name = package[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    save_path = os.path.join(path, package_name)</span><br><span class="line">    mkdir(save_path)</span><br><span class="line">    all_emote = <span class="built_in">set</span>(map(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1], package[<span class="string">&#x27;emote&#x27;</span>]))</span><br><span class="line">    downloaded_emote = <span class="built_in">set</span>(map(lambda e: e[:-4], os.listdir(save_path)))</span><br><span class="line">    download_emote_name = all_emote - downloaded_emote</span><br><span class="line">    <span class="keyword">if</span> len(download_emote_name) == 0:</span><br><span class="line">        <span class="built_in">return</span></span><br><span class="line">    going_to_download_emote = filter(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1] <span class="keyword">in</span> download_emote_name, package[<span class="string">&#x27;emote&#x27;</span>])</span><br><span class="line">    with ThreadPoolExecutor() as executor:</span><br><span class="line">        executor.map(partial(download_emoji, save_path=save_path), going_to_download_emote)</span><br><span class="line">    sleep(3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    with open(<span class="string">&#x27;emoji.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) as fp:</span><br><span class="line">        emojis = json.load(fp)</span><br><span class="line">    emoji_packages = emojis[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;all_packages&#x27;</span>]</span><br><span class="line">    package_path = <span class="string">&#x27;bilibili_emoji&#x27;</span></span><br><span class="line">    bar = tqdm(emoji_packages)</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> bar:</span><br><span class="line">        <span class="keyword">if</span> p[<span class="string">&#x27;text&#x27;</span>] == <span class="string">&#x27;颜文字&#x27;</span>:</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        bar.set_description(p[<span class="string">&#x27;text&#x27;</span>])</span><br><span class="line">        download_package(p, package_path)</span><br></pre></td></tr></table></figure><br>3.打开shell（windows里面powershell和cmd应该都可以），使用 pip install 安装包。<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install tqdm</span><br></pre></td></tr></table></figure><br>4.运行脚本，shell移动到目录可以cd，可以shift右键“在此处打开powershell”，可以在文件管理器里输目录的地方输cmd或者powershell回车。<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python emoji.py</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+        <tag>表情包</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>代词、名词的性数格、动词变位法、形容词性</title>
+    <url>/2022/05414763b4.html</url>
+    <content><![CDATA[<h3 id="人称代词"><a href="#人称代词" class="headerlink" title="人称代词"></a>人称代词</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">第一人称</th>
+<th style="text-align:center">第二人称</th>
+<th style="text-align:center">第三人称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">我я<br>我们мы</td>
+<td style="text-align:center">你ты<br>你们вы</td>
+<td style="text-align:center">他он<br>它оно<br>她она<br>他们，它们，她们они</td>
+</tr>
+<tr>
+<td style="text-align:center">二格</td>
+<td style="text-align:center">меня́<br>нас</td>
+<td style="text-align:center">тебя́<br>вас</td>
+<td style="text-align:center">его<br>её<br>их</td>
+</tr>
+<tr>
+<td style="text-align:center">三格</td>
+<td style="text-align:center">мне<br>нам</td>
+<td style="text-align:center">тебе́<br>вам</td>
+<td style="text-align:center">ему<br>ей<br>им</td>
+</tr>
+</tbody>
+</table>
+</div>
+<span id="more"></span>
+<h3 id="物主代词"><a href="#物主代词" class="headerlink" title="物主代词"></a>物主代词</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">阳性</th>
+<th style="text-align:center">阴性</th>
+<th style="text-align:center">中性</th>
+<th style="text-align:center">复数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">我的</td>
+<td style="text-align:center">мой</td>
+<td style="text-align:center">моя</td>
+<td style="text-align:center">моё</td>
+<td style="text-align:center">мои́</td>
+</tr>
+<tr>
+<td style="text-align:center">你的</td>
+<td style="text-align:center">твой</td>
+<td style="text-align:center">твоя</td>
+<td style="text-align:center">твоё</td>
+<td style="text-align:center">твои́</td>
+</tr>
+<tr>
+<td style="text-align:center">我们的</td>
+<td style="text-align:center">наш</td>
+<td style="text-align:center">наша</td>
+<td style="text-align:center">наше</td>
+<td style="text-align:center">наши</td>
+</tr>
+<tr>
+<td style="text-align:center">你们的</td>
+<td style="text-align:center">ваш</td>
+<td style="text-align:center">ваша</td>
+<td style="text-align:center">ваше</td>
+<td style="text-align:center">ваши</td>
+</tr>
+<tr>
+<td style="text-align:center">他的</td>
+<td style="text-align:center">его</td>
+<td style="text-align:center">его</td>
+<td style="text-align:center">его</td>
+<td style="text-align:center">его</td>
+</tr>
+<tr>
+<td style="text-align:center">她的</td>
+<td style="text-align:center">её</td>
+<td style="text-align:center">её</td>
+<td style="text-align:center">её</td>
+<td style="text-align:center">её</td>
+</tr>
+<tr>
+<td style="text-align:center">它的</td>
+<td style="text-align:center">их</td>
+<td style="text-align:center">их</td>
+<td style="text-align:center">их</td>
+<td style="text-align:center">их</td>
+</tr>
+<tr>
+<td style="text-align:center">谁的</td>
+<td style="text-align:center">чей</td>
+<td style="text-align:center">чья</td>
+<td style="text-align:center">чьё</td>
+<td style="text-align:center">чьи</td>
+</tr>
+<tr>
+<td style="text-align:center">这个</td>
+<td style="text-align:center">этот</td>
+<td style="text-align:center">эта</td>
+<td style="text-align:center">это</td>
+<td style="text-align:center">эти</td>
+</tr>
+<tr>
+<td style="text-align:center">什么样的，哪个</td>
+<td style="text-align:center">какой</td>
+<td style="text-align:center">какая</td>
+<td style="text-align:center">како́е</td>
+<td style="text-align:center">какие</td>
+</tr>
+<tr>
+<td style="text-align:center">最</td>
+<td style="text-align:center">самый</td>
+<td style="text-align:center">самая</td>
+<td style="text-align:center">самое</td>
+<td style="text-align:center">самые</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="名词的阴阳："><a href="#名词的阴阳：" class="headerlink" title="名词的阴阳："></a>名词的阴阳：</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">阳性</th>
+<th style="text-align:center">阴性</th>
+<th style="text-align:center">中性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">辅音结尾<br />й结尾<br />部分ь结尾</td>
+<td style="text-align:center">а结尾<br />я结尾<br />部分ь结尾</td>
+<td style="text-align:center">о结尾<br />е结尾<br />мя结尾</td>
+</tr>
+<tr>
+<td style="text-align:center">брат <br>музей <br>словарь <br>папа,дядя,дэдушка</td>
+<td style="text-align:center">сестра <br>тётя <br>мать</td>
+<td style="text-align:center">окно <br>упражне́ние <br>имя</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="名词的复数："><a href="#名词的复数：" class="headerlink" title="名词的复数："></a>名词的复数：</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>阳性</th>
+<th>阴性</th>
+<th>中性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><font color=Crimson>辅音结尾的加ы</font><br><font color=Orange>гкхжчшщ结尾加и<br>йь结尾改и</font></td>
+<td><font color=Crimson>а结尾的改ы</font><br><font color=Orange>гакаха结尾а改и<br>яь结尾改и</font></td>
+<td>о结尾改а<br>е结尾改я<br>мя结尾改мена</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>特殊的复数<br>брат - братья<br>сестра - сёстры<br>дом - дом<font color=Crimson>а</font><br>человек人 - люди人们<br>друт - друзь<font color=Crimson>я</font><br>город - город<font color=Crimson>а</font><br>ребёнок孩子 - дети小孩子们<br>стул - стулья<br>глаз - глаз<font color=Crimson>а</font></p>
+<h3 id="动词第一变位法："><a href="#动词第一变位法：" class="headerlink" title="动词第一变位法："></a>动词第一变位法：</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">人称</th>
+<th style="text-align:center">ть变位</th>
+<th style="text-align:center">знать例子</th>
+<th style="text-align:center">ду́мать例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">я</td>
+<td style="text-align:center">-ю,-у</td>
+<td style="text-align:center">знаю</td>
+<td style="text-align:center">ду́маю</td>
+</tr>
+<tr>
+<td style="text-align:center">ты</td>
+<td style="text-align:center">ешь</td>
+<td style="text-align:center">знаешь</td>
+<td style="text-align:center">ду́маешь</td>
+</tr>
+<tr>
+<td style="text-align:center">он(кто)/она́/оно(что)</td>
+<td style="text-align:center">ет</td>
+<td style="text-align:center">знает</td>
+<td style="text-align:center">ду́мает</td>
+</tr>
+<tr>
+<td style="text-align:center">мы</td>
+<td style="text-align:center">ем</td>
+<td style="text-align:center">знаем</td>
+<td style="text-align:center">ду́маем</td>
+</tr>
+<tr>
+<td style="text-align:center">вы</td>
+<td style="text-align:center">ете</td>
+<td style="text-align:center">знаете</td>
+<td style="text-align:center">ду́маете</td>
+</tr>
+<tr>
+<td style="text-align:center">они́</td>
+<td style="text-align:center">-ют,-ут</td>
+<td style="text-align:center">знают</td>
+<td style="text-align:center">ду́мают</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="动词第二变位法："><a href="#动词第二变位法：" class="headerlink" title="动词第二变位法："></a>动词第二变位法：</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">人称</th>
+<th style="text-align:center">变位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">я</td>
+<td style="text-align:center">-ю,-у</td>
+</tr>
+<tr>
+<td style="text-align:center">ты</td>
+<td style="text-align:center">ишь</td>
+</tr>
+<tr>
+<td style="text-align:center">он(кто)/она́/оно(что)</td>
+<td style="text-align:center">ит</td>
+</tr>
+<tr>
+<td style="text-align:center">мы</td>
+<td style="text-align:center">им</td>
+</tr>
+<tr>
+<td style="text-align:center">вы</td>
+<td style="text-align:center">ите</td>
+</tr>
+<tr>
+<td style="text-align:center">они́</td>
+<td style="text-align:center">-ят,-ат</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="形容词变性："><a href="#形容词变性：" class="headerlink" title="形容词变性："></a>形容词变性：</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>阳性</th>
+<th>阴性</th>
+<th>中性</th>
+<th>复数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>-ый/-ой</td>
+<td>-ая</td>
+<td>-ое</td>
+<td>-ые</td>
+</tr>
+<tr>
+<td></td>
+<td>-ий</td>
+<td>-яя</td>
+<td>-ее</td>
+<td>-ие</td>
+</tr>
+<tr>
+<td></td>
+<td>гкх-ий</td>
+<td>-ая</td>
+<td>-ое</td>
+<td>-ие</td>
+</tr>
+<tr>
+<td></td>
+<td>жчшщ-ий/-ой</td>
+<td>-ая</td>
+<td>-ое/-ее</td>
+<td>-ие</td>
+</tr>
+<tr>
+<td>最…</td>
+<td>са́мый</td>
+<td>са́мая</td>
+<td>са́мое</td>
+<td>са́мые</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--
+|  |  |  |  |  |
+|------    |------    |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>礼貌用语等</title>
+    <url>/2022/058ae62fc9.html</url>
+    <content><![CDATA[<p>小短语<br>Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span><br>До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span><span id="more"></span><br>До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span><br>К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span><br>здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span><br>спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span><br>Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span><br>Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span><br>Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span><br>-М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span><br>-Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span><br>-Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span><br>Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span><br>-Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span><br>-Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span><br>Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span><br>Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span><br>Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span><br>Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span><br>-Ты зн<font color=Crimson>а</font>ешь,…….<span class="heimu">你知道吗</span><br>-Кон<font color=Crimson>е</font>чно,я знаю,……<span class="heimu">我当然知道</span><br>Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span><br>Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span><br>Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span><br>Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот …<span class="heimu">这个xx多少钱</span><br>пока́<span class="heimu">[副]回头见，暂时</span><br>Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
+<!--
+|  |  |  |  |  |
+|------    |------    |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>短句</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>语法之类的吧</title>
+    <url>/2022/0529d5bea5.html</url>
+    <content><![CDATA[<h4 id="数字-属格"><a href="#数字-属格" class="headerlink" title="数字 属格"></a>数字 属格</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>个位是1</td>
+<td>主格 рубль</td>
+</tr>
+<tr>
+<td>个位是234</td>
+<td>单数属格 рубля́</td>
+</tr>
+<tr>
+<td>5-20，25-30…</td>
+<td>复数属格 рубле́й</td>
+</tr>
+</tbody>
+</table>
+</div>
+<span id="more"></span>
+<h4 id="动词喜欢的变位变格"><a href="#动词喜欢的变位变格" class="headerlink" title="动词喜欢的变位变格"></a>动词喜欢的变位变格</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>单数</th>
+<th>复数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一人称</td>
+<td>нра́влюсь</td>
+<td>нра́вимся</td>
+</tr>
+<tr>
+<td>第二人称</td>
+<td>нра́вишься</td>
+<td>нра́витесь</td>
+</tr>
+<tr>
+<td>第三人称</td>
+<td>нра́вится</td>
+<td>нра́вятся</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>用什么看主语，但是比如：Мне нра́вятся э́ти стихи́<br>主语是э́ти стихи́，所以用第三人称复数。</p>
+<h3 id="从句"><a href="#从句" class="headerlink" title="从句"></a>从句</h3><h4 id="原因从句"><a href="#原因从句" class="headerlink" title="原因从句"></a>原因从句</h4><p>…，потому́ что，…</p>
+<h4 id="说明从句"><a href="#说明从句" class="headerlink" title="说明从句"></a>说明从句</h4><p>Я думаю, что…</p>
+<p><del>顺手写个作业吧</del>：<br>《走遍俄罗斯1》<br>P116-2</p>
+<ul>
+<li>-<font color=Crimson>Почему́ тебе́ нра́вятся э́ти стихи́?</font><br>-Мне нра́вятся э́ти стихи́, потому́ что это краси́вые стихи́.<br>-你为啥喜欢这首诗？<br>-因为它美。</li>
+<li>-<font color=Crimson>Ско́лько сто́ят э́ти очки́?</font><br>-Я не зна́ю, ско́лько сто́ят э́ти очки́.<br>-你知道这眼镜多少钱吗？<br>-晓不得。</li>
+<li>-<font color=Crimson>Тебе́ нра́вится ру́сский язы́к?</font><br>-Да, мне нра́вится ру́сский язы́к.<br>-你喜欢俄语不？<br>-对头，我喜欢俄语（迫真。</li>
+<li>-<font color=Crimson>Тебе́ нра́вится э́тот фильм?</font><br>-Нет, мне не нра́вится э́тот фильм.<br>-你喜欢这个电影？<br>-不不不，我不喜欢这片儿。</li>
+<li>-Ты зна́ешь, что за́втра уро́к?<br>-<font color=Crimson>Да, я знаю.</font><br>-你晓不晓得明儿上啥课。<br>-知道。<table border="1">
+<tr>
+<td><b><font color=Crimson>错错错</font></b><br><font color=orange>这里что引领说明从句。</font></td>
+</tr>
+</table></li>
+<li>-Как вы ду́маете, сего́дня хо́лодно?<br>-<font color=Crimson>Нет, я ду́маю, сего́дня не хо́лодно</font> or <font color=Crimson>Да, я ду́маю, сего́дня хо́лодно.</font><br>-你觉得今儿冷吗？<br>-不冷呀 or 冷捏。</li>
+<li>-Как вы ду́маете, Москва́-краси́вый го́род?<br>-<font color=Crimson>Да, я ду́маю, что Москва́-краси́вый го́род.</font><br>-你觉得莫斯科美吗？<br>-美呀~</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>调型与发音规则</title>
+    <url>/2022/05f9b5f147.html</url>
+    <content><![CDATA[<h3 id="发音"><a href="#发音" class="headerlink" title="发音"></a>发音</h3><ul>
+<li><strong>1.</strong> о在非重音时弱化成а；</li>
+<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音；<br>如：рассказ中的з读成相应清辅音с,；<br>清浊对照的只有：<br>п-б<br>ф-в<br>т-д<br>к-г<br>с-з<br>ш-ж<span id="more"></span></li>
+<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化；<br>如：завтра中的в清化成ф；</li>
+<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊；<br>后者第一个字母为清辅音，则前者最后一个字母清化；<br>同理，后者浊，前者浊化；</li>
+<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
+<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
+</ul>
+<h3 id="调型"><a href="#调型" class="headerlink" title="调型"></a>调型</h3><p><strong>调型 1</strong> ：<br>用于陈述句：从调心元音开始降，调心后部低于调心前部；<br><strong>调型 2</strong> ：<br>用于有疑问词的疑问句：疑问词开始降调；<br><strong>调型 3</strong> ：<br>用于没有疑问词的疑问句：提问词的重音升调；<br><strong>调型 4</strong> ：<br>调型 3, а 调型 1.<br>转折疑问句：А это?<br><strong>调型 5</strong> ：<br>感叹句：Какая красивая девушка! </p>
+<!--
+|  |  |  |  |  |
+|------    |------    |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>发音</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>（未完）Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability</title>
+    <url>/2022/05563bb361.html</url>
+    <content><![CDATA[<blockquote>
+<p>原文：<a href="http://crossmark.crossref.org/dialog/?doi=10.1002%2Fadma.202109175&amp;domain=pdf&amp;date_stamp=2022-01-18">http://crossmark.crossref.org/dialog/?doi=10.1002%2Fadma.202109175&amp;domain=pdf&amp;date_stamp=2022-01-18</a></p>
+</blockquote>
+<table border="1">
+<tr>
+<td>
+<b><font color="orange">摘要</font>：</b>无铅钾纳铌酸盐基陶瓷（lead-free potassium sodium niobate (KNN)- 
+based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定，而这是由多晶相边界导致的。为此，本文通过<b>设计具有多个连续相变的成分多层复合材料，提出一种结构梯度的概念</b>。结构梯度陶瓷展现出优异的温度稳定性（其$d_{33}$在$25$-$100°C$温度范围内几乎没有变化，该品质远超于其他已报道的钾纳铌酸盐，这些陶瓷在同样的温度变化下压电系数变化超27%。<b>连续相变、应变梯度、以及每层组分间的互补效应</b>，三者协同作用使得压电系数表现出温度稳定性，且已被相场模拟的证明。这些发现有望为设计高稳定稳定性的功能材料提供范例。
+</td>
+</tr>
+</table>
+
+<span id="more"></span>
+<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>具有良好机电性能的压电材料在各种电子设备中起着重要作用，如传感器、传动器等。鉴于可持续发展的需求，无铅压电材料得到了广泛关注，其中，钾纳铌酸盐基的钙钛矿铁电陶瓷因其可能具有高压电性和高居里温度最具发展前景，自21世纪以来被大量研究。<strong>对于压电传感应用，材料品质因数是其<font color="DarkOrchid">压电系数$d_{33}$与工作温度范围</font></strong>。只是压电系数高是不够的，还需要其在$-20$-$100°C$温度范围内保持温度，这样才能在大跨度的工作温度下，保持可靠与稳定的传感输出，从而改善灵敏度。然而，即使是最先进的钾纳铌酸盐基陶瓷也由于其$d_{33}$的温度不稳定性而在实际应用中受到限制（见图1a）。KNN温度稳定性较差的本质原因是：多态相边界（多态相边界，PPB：polymorphic phase boundary，对组分和温度敏感）的存在，这也是替代有铅压电材料的主要问题之一。很显然，虽然挑战很大，但我们需要想办法显著提高钾纳铌酸盐陶瓷的温度稳定性，来满足期间对可靠性的要求。</p>
+<p>近几年，陆续有关于调节压电材料各种性能随温度变化关系的办法提出。大部分研究将重点放在了电学应变性质的温度稳定性上（<font color="SlateBlue">电学应变性质：大信号压电应变系数，$d_{33}^*=S_{max}/E_{max}$，可以由$d_{33}^*-T$估算</font>），很少有关注压电电荷系数（<font color="DarkOrchid"><b>压电电荷系数：最直接的压电效应，可由$d_{33}-T$估算</b></font>），尤其是关注$d_{33}$极差的温度稳定性的。因此，迫切需要探索一种打破当前困境的新方法。</p>
+<p>对KNN基陶瓷，人们常通过构建相边界来提高$d_{33}$，虽然这是最有效的办法，但是同时也带来了和PPB（多态相边界）相关的温度极度不稳定性。我们设想，<strong>令多个相变温度覆盖工作温度范围，便能同时获得高$d_{33}$与良好的温度稳定性</strong>。为实现这一设想，本次研究中，我们设计了成分梯度的多层复合材料，以构建KNN陶瓷的连续向转变（见图 1c,d）。我们选择通过改变化学成分合成的有不同相变温度的陶瓷系统（见图 1c），利用<a href="https://www.sciencedirect.com/topics/engineering/tape-casting-method">tape casting法</a>制造出成分梯度的多层材料（见图d）。本研究选用KNN是因为：KNN具有明显的压电性，且O-T相变温度高于$150°C$，并可通过调整BNZ的含量来控制O-T相变，通过添加$Fe_2O_3$作为助烧结剂改善烧结行为[27]。<font color="Tomato"><b><u>由于存在多个连续相变，相互扩散引起的应变梯度以及每个组分层间的互补效应，可以实现$d_{33}$的极高温度稳定性</u></b></font>（在$25$-$100°C$温度范围内变化小于6%）（见图1d）。本工作提供了一种开发实用先进材料的设计方法。</p>
+<p><del>但是为什么呢。</del></p>
+<figure>
+  <img data-src="\tu\Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability\1.png"
+     alt="图1"
+     width=700>
+  <figcaption><small>图1. Motivation and design idea: a,b) temperature instability of KNN-based ceramics caused by polymorphic phase boundary (PPB); c,d) new 
+design idea constructing compositionally graded multilayer composite to realize successive phase transitions and then improving the temperature 
+stability of d33 in KNN-based ceramics.</small></figcaption>
+</figure>
+
+
+<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2>]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>压电材料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>俄语单词？</title>
+    <url>/2022/05a70c3382.html</url>
+    <content><![CDATA[<p>我也不知道把单词打出来有卵用，但是先做做吧。<br><span id="more"></span></p>
+<h2 id="词汇"><a href="#词汇" class="headerlink" title="词汇"></a>词汇</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ум</td>
+<td><span class="heimu">智慧</span></td>
+<td>на</td>
+<td><span class="heimu">[前]（四格）往……上；（六格）在……上</span></td>
+<td>но</td>
+<td><span class="heimu">[连]但是</span></td>
+</tr>
+<tr>
+<td>по</td>
+<td><span class="heimu">[前]（三格）沿着……；每逢</span></td>
+<td>э́то</td>
+<td><span class="heimu">这，这是</span></td>
+<td>бум</td>
+<td><span class="heimu">热闹；热潮</span></td>
+</tr>
+<tr>
+<td>тон</td>
+<td><span class="heimu">音，调</span></td>
+<td>вон</td>
+<td><span class="heimu">[语气]那就是</span></td>
+<td>там</td>
+<td><span class="heimu">[副]在那里</span></td>
+</tr>
+<tr>
+<td>тут</td>
+<td><span class="heimu">[副]在这里</span></td>
+<td>том</td>
+<td><span class="heimu">卷，册</span></td>
+<td>дом</td>
+<td><span class="heimu">房子</span></td>
+</tr>
+<tr>
+<td>вот</td>
+<td><span class="heimu">[语气]这就是</span></td>
+<td>до́ма</td>
+<td><span class="heimu">[副]在家里</span></td>
+<td>луна́</td>
+<td><span class="heimu">月亮</span></td>
+</tr>
+<tr>
+<td>дым</td>
+<td><span class="heimu">烟</span></td>
+<td>дам</td>
+<td><span class="heimu">（我）给</span></td>
+<td>иду́</td>
+<td><span class="heimu">（我）步行去</span></td>
+</tr>
+<tr>
+<td>лом</td>
+<td><span class="heimu">铁棍，铁锹</span></td>
+<td>мол</td>
+<td><span class="heimu">[语气，用作插入语]（据某人）说</span></td>
+<td>мул</td>
+<td><span class="heimu">马骡</span></td>
+</tr>
+<tr>
+<td>ла́мпа</td>
+<td><span class="heimu">灯</span></td>
+<td>фо́то</td>
+<td><span class="heimu">照片</span></td>
+<td>вода́</td>
+<td><span class="heimu">水</span></td>
+</tr>
+<tr>
+<td>лук</td>
+<td><span class="heimu">葱</span></td>
+<td>кот</td>
+<td><span class="heimu">公猫</span></td>
+<td>бу́ква</td>
+<td><span class="heimu">字母</span></td>
+</tr>
+<tr>
+<td>мно́го</td>
+<td><span class="heimu">[副]很多</span></td>
+<td>ма́ло</td>
+<td><span class="heimu">[副]很少</span></td>
+<td>хо́лодно</td>
+<td><span class="heimu">[副]冷</span></td>
+</tr>
+<tr>
+<td>пло́хо</td>
+<td><span class="heimu">[副]不好，坏</span></td>
+<td>пого́да</td>
+<td><span class="heimu">天气</span></td>
+<td>пар</td>
+<td><span class="heimu">蒸汽</span></td>
+</tr>
+<tr>
+<td>дар</td>
+<td><span class="heimu">礼物，恩赐</span></td>
+<td>ры́ба</td>
+<td><span class="heimu">鱼</span></td>
+<td>уро́к</td>
+<td><span class="heimu">课，功课</span></td>
+</tr>
+<tr>
+<td>ка́рта</td>
+<td><span class="heimu">地图</span></td>
+<td>гру́ппа</td>
+<td><span class="heimu">一群，组</span></td>
+<td>го́род</td>
+<td><span class="heimu">城市</span></td>
+</tr>
+<tr>
+<td>страна́</td>
+<td><span class="heimu">国家</span></td>
+<td>звук</td>
+<td><span class="heimu">声音</span></td>
+<td>му́ха</td>
+<td><span class="heimu">苍蝇</span></td>
+</tr>
+<tr>
+<td>сло́во</td>
+<td><span class="heimu">单词</span></td>
+<td>су́мка</td>
+<td><span class="heimu">书包</span></td>
+<td>заво́д</td>
+<td><span class="heimu">工厂</span></td>
+</tr>
+<tr>
+<td>расска́з</td>
+<td><span class="heimu">故事，短篇小说</span></td>
+<td>соба́ка</td>
+<td><span class="heimu">狗</span></td>
+<td>зову́т</td>
+<td><span class="heimu">叫（叫什么名字）</span></td>
+</tr>
+<tr>
+<td>шар</td>
+<td><span class="heimu">球</span></td>
+<td>жар</td>
+<td><span class="heimu">热，热气</span></td>
+<td>шор</td>
+<td><span class="heimu">萧氏硬度计</span></td>
+</tr>
+<tr>
+<td>жор</td>
+<td><span class="heimu">（鱼）复原营养期</span></td>
+<td>жир</td>
+<td><span class="heimu">油，脂肪</span></td>
+<td>хорошо́</td>
+<td><span class="heimu">[副]好</span></td>
+</tr>
+<tr>
+<td>журна́л</td>
+<td><span class="heimu">杂志</span></td>
+<td>жду</td>
+<td><span class="heimu">（我）等</span></td>
+<td>каранда́ш</td>
+<td><span class="heimu">铅笔</span></td>
+</tr>
+<tr>
+<td>нож</td>
+<td><span class="heimu">刀</span></td>
+<td>ло́жка</td>
+<td><span class="heimu">匙，勺子</span></td>
+<td>жа́рко</td>
+<td><span class="heimu">热</span></td>
+</tr>
+<tr>
+<td>сад</td>
+<td><span class="heimu">花园</span></td>
+<td>то́же</td>
+<td><span class="heimu">[副]也，同样地</span></td>
+<td>дай</td>
+<td><span class="heimu">[命]（请）给</span></td>
+</tr>
+<tr>
+<td>стой</td>
+<td><span class="heimu">[命]（请）站住</span></td>
+<td>ёж</td>
+<td><span class="heimu">刺猬</span></td>
+<td>я́блоко</td>
+<td><span class="heimu">苹果</span></td>
+</tr>
+<tr>
+<td>мо́жно</td>
+<td><span class="heimu">[副]可以</span></td>
+<td>пра́вда</td>
+<td><span class="heimu">真话；真理；[插]的确，确实</span></td>
+<td>зонт</td>
+<td><span class="heimu">伞</span></td>
+</tr>
+<tr>
+<td>игра́</td>
+<td><span class="heimu">游戏，比赛</span></td>
+<td>класс</td>
+<td><span class="heimu">年级，班</span></td>
+<td>нос</td>
+<td><span class="heimu">鼻子</span></td>
+</tr>
+<tr>
+<td>нет</td>
+<td><span class="heimu">[语气]不，不是，不对</span></td>
+<td>институ́т</td>
+<td><span class="heimu">学院</span></td>
+<td>кни́га</td>
+<td><span class="heimu">书</span></td>
+</tr>
+<tr>
+<td>лист</td>
+<td><span class="heimu">张，页</span></td>
+<td>здесь</td>
+<td><span class="heimu">[副]这里</span></td>
+<td>и́мя</td>
+<td><span class="heimu">名字</span></td>
+</tr>
+<tr>
+<td>ме́сто</td>
+<td><span class="heimu">地方</span></td>
+<td>слова́рь</td>
+<td><span class="heimu">[阳]词典</span></td>
+<td>письмо́</td>
+<td><span class="heimu">信</span></td>
+</tr>
+<tr>
+<td>газе́та</td>
+<td><span class="heimu">报纸</span></td>
+<td>экску́рсия</td>
+<td><span class="heimu">游览，参观</span></td>
+<td>эта́ж</td>
+<td><span class="heimu">楼层</span></td>
+</tr>
+<tr>
+<td>а́дрес</td>
+<td><span class="heimu">姐妹</span></td>
+<td>семья́</td>
+<td><span class="heimu">家庭</span></td>
+<td>тетра́дь</td>
+<td><span class="heimu">[阴]练习本</span></td>
+</tr>
+<tr>
+<td>тепло́</td>
+<td><span class="heimu">[副]温暖地</span></td>
+<td>пе́сня</td>
+<td><span class="heimu">歌，歌曲</span></td>
+<td>мо́ре</td>
+<td><span class="heimu">大海</span></td>
+</tr>
+<tr>
+<td>упражне́ние</td>
+<td><span class="heimu">联系</span></td>
+<td>коне́чно</td>
+<td><span class="heimu">[插]当然</span></td>
+<td>вешь</td>
+<td><span class="heimu">[阴]东西，物品</span></td>
+</tr>
+<tr>
+<td>ча́шка</td>
+<td><span class="heimu">碗，杯</span></td>
+<td>ру́чка</td>
+<td><span class="heimu">钢笔</span></td>
+<td>по́чта</td>
+<td><span class="heimu">邮局</span></td>
+</tr>
+<tr>
+<td>часы́</td>
+<td><span class="heimu">[复]钟，表</span></td>
+<td>уче́бник</td>
+<td><span class="heimu">教科书</span></td>
+<td>общежи́тие</td>
+<td><span class="heimu">集体宿舍</span></td>
+</tr>
+<tr>
+<td>нельзя́</td>
+<td><span class="heimu">[副]不能，不许</span></td>
+<td>моро́женое</td>
+<td><span class="heimu">冰淇淋</span></td>
+<td>сле́ва</td>
+<td><span class="heimu">[副]（在）左边；（从）左边</span></td>
+</tr>
+<tr>
+<td>спра́ва</td>
+<td><span class="heimu">[副]（在）右边；（从）右边</span></td>
+<td>ро́за</td>
+<td><span class="heimu">玫瑰</span></td>
+<td>то́лько</td>
+<td><span class="heimu">[语气]仅仅，只</span></td>
+</tr>
+<tr>
+<td>о́чень</td>
+<td><span class="heimu">[副]很，非常</span></td>
+<td>всегда́</td>
+<td><span class="heimu">[副]永远，总是</span></td>
+<td>статья́</td>
+<td><span class="heimu">文章</span></td>
+</tr>
+<tr>
+<td>ви́за</td>
+<td><span class="heimu">签证</span></td>
+<td>ко́фе</td>
+<td><span class="heimu">[不变，阳]咖啡</span></td>
+<td>биле́т</td>
+<td><span class="heimu">票，券，（身份、职务的）证件</span></td>
+</tr>
+<tr>
+<td>конве́рт</td>
+<td><span class="heimu">信封</span></td>
+<td>переры́в</td>
+<td><span class="heimu">（课间，工间）休息时间</span></td>
+<td>де́ньги</td>
+<td><span class="heimu">[复]钱</span></td>
+</tr>
+<tr>
+<td>родно́й</td>
+<td><span class="heimu">亲的，亲近的，家乡的</span></td>
+<td>цирк</td>
+<td><span class="heimu">马戏，杂技</span></td>
+<td>центр</td>
+<td><span class="heimu">中心</span></td>
+</tr>
+<tr>
+<td>ци́фра</td>
+<td><span class="heimu">数字</span></td>
+<td>цена́</td>
+<td><span class="heimu">价格</span></td>
+<td>столи́ца</td>
+<td><span class="heimu">首都</span></td>
+</tr>
+<tr>
+<td>табли́ца</td>
+<td><span class="heimu">表，表格</span></td>
+<td>глаз</td>
+<td><span class="heimu">眼睛</span></td>
+<td>фа́брика</td>
+<td><span class="heimu">工厂</span></td>
+</tr>
+<tr>
+<td>вы́ставка</td>
+<td><span class="heimu">展览，展览会</span></td>
+<td>карти́на</td>
+<td><span class="heimu">色彩画</span></td>
+<td>прия́тно</td>
+<td><span class="heimu">[副]愉快</span></td>
+</tr>
+<tr>
+<td>знать</td>
+<td>知道</td>
+<td>никто́</td>
+<td><span class="heimu">谁也不，没有人</span></td>
+<td>норма́льно</td>
+<td><span class="heimu">[副]正常地；（口）挺好地</span></td>
+</tr>
+<tr>
+<td>сигаре́та</td>
+<td><span class="heimu">香烟</span></td>
+<td>ча́ща</td>
+<td><span class="heimu">密林</span></td>
+<td>ещё</td>
+<td><span class="heimu">[副]还，再]</span></td>
+</tr>
+<tr>
+<td>ищу́</td>
+<td><span class="heimu">（我）找</span></td>
+<td>зда́ние</td>
+<td><span class="heimu">楼房</span></td>
+<td>зуб</td>
+<td><span class="heimu">牙齿</span></td>
+</tr>
+<tr>
+<td>ка́сса</td>
+<td><span class="heimu">收款处</span></td>
+<td>рад</td>
+<td><span class="heimu">高兴</span></td>
+<td>ряд</td>
+<td><span class="heimu">排，列，行</span></td>
+</tr>
+<tr>
+<td>гита́ра</td>
+<td><span class="heimu">吉他</span></td>
+<td>хи́мия</td>
+<td><span class="heimu">化学</span></td>
+<td>откры́тка</td>
+<td><span class="heimu">明信片</span></td>
+</tr>
+<tr>
+<td>сала́т</td>
+<td><span class="heimu">沙拉</span></td>
+<td>компью́тер</td>
+<td><span class="heimu">电脑</span></td>
+<td>ле́кция</td>
+<td><span class="heimu">（大学）讲课，讲座</span></td>
+</tr>
+<tr>
+<td>конце́рт</td>
+<td><span class="heimu">音乐会，歌舞会</span></td>
+<td>не́бо</td>
+<td><span class="heimu">天空</span></td>
+<td>фильм</td>
+<td><span class="heimu">电影</span></td>
+</tr>
+<tr>
+<td>матрёшка</td>
+<td><span class="heimu">套娃</span></td>
+<td>пальто́</td>
+<td><span class="heimu">[不变，中]大衣</span></td>
+<td>нра́виться</td>
+<td><span class="heimu">[未](讨……）喜欢，合意，中意</span></td>
+</tr>
+<tr>
+<td>рома́н</td>
+<td><span class="heimu">长篇小说</span></td>
+<td>оде́жда</td>
+<td><span class="heimu">衣服，服装</span></td>
+<td>ста́нция</td>
+<td><span class="heimu">（火车，地铁）站</span></td>
+</tr>
+<tr>
+<td>сто́ит</td>
+<td><span class="heimu">价值是，值</span></td>
+<td>рубль</td>
+<td><span class="heimu">[阴]卢布</span></td>
+<td>э́тот</td>
+<td><span class="heimu">这，这个</span></td>
+</tr>
+<tr>
+<td>са́мый</td>
+<td><span class="heimu">最</span></td>
+<td>спорт</td>
+<td><span class="heimu">运动</span></td>
+<td>сувени́р</td>
+<td><span class="heimu">纪念品</span></td>
+</tr>
+<tr>
+<td>война́</td>
+<td><span class="heimu">战争</span></td>
+<td>мир</td>
+<td><span class="heimu">和平</span></td>
+<td>мо́да</td>
+<td><span class="heimu">时髦</span></td>
+</tr>
+<tr>
+<td>стихи́</td>
+<td><span class="heimu">[复]诗歌</span></td>
+<td>ку́ртка</td>
+<td><span class="heimu">（男式）上衣，夹克衫</span></td>
+<td>джи́нсы</td>
+<td><span class="heimu">[复]牛仔裤</span></td>
+</tr>
+<tr>
+<td>перча́тки</td>
+<td><span class="heimu">[复]手套</span></td>
+<td>брю́ки</td>
+<td><span class="heimu">[复]裤子</span></td>
+<td>боти́нки</td>
+<td><span class="heimu">[复]皮鞋</span></td>
+</tr>
+<tr>
+<td>хлеб</td>
+<td><span class="heimu">面包</span></td>
+<td>москви́ч</td>
+<td><span class="heimu">莫斯科人</span></td>
+<td>изве́стие</td>
+<td><span class="heimu">通知，消息</span></td>
+</tr>
+<tr>
+<td>ма́рка</td>
+<td><span class="heimu">邮票</span></td>
+<td>календа́рь</td>
+<td><span class="heimu">[阳]日历</span></td>
+<td>пи́шем</td>
+<td><span class="heimu">（我们）写</span></td>
+</tr>
+<tr>
+<td>пра́вильно</td>
+<td><span class="heimu">[副]正确地</span></td>
+<td>меню́</td>
+<td><span class="heimu">[不变，中]菜单</span></td>
+<td>повтори́</td>
+<td><span class="heimu">请重复一遍，请再说一遍</span></td>
+</tr>
+<tr>
+<td>пти́ца</td>
+<td><span class="heimu">鸟，禽</span></td>
+<td>карто́шка</td>
+<td><span class="heimu">土豆</span></td>
+<td>со́лнце</td>
+<td><span class="heimu">太阳，太阳光</span></td>
+</tr>
+<tr>
+<td>ду́мать</td>
+<td><span class="heimu">想，思考，认为</span></td>
+<td>почему́</td>
+<td><span class="heimu">为什么</span></td>
+<td>потому́ что</td>
+<td><span class="heimu">因为</span></td>
+</tr>
+<tr>
+<td>стенгазе́та</td>
+<td><span class="heimu">墙报</span></td>
+<td>верниса́ж</td>
+<td><span class="heimu">画展预展，画展开幕日</span></td>
+<td>портре́т</td>
+<td><span class="heimu">肖像</span></td>
+</tr>
+<tr>
+<td>пейза́ж</td>
+<td><span class="heimu">风景画</span></td>
+<td>пе́рвый</td>
+<td><span class="heimu">第一</span></td>
+<td>любо́вь</td>
+<td><span class="heimu">[阴]爱，爱情</span></td>
+</tr>
+<tr>
+<td>ро́дина</td>
+<td><span class="heimu">祖国，家乡</span></td>
+<td>тури́ст</td>
+<td><span class="heimu">旅行者</span></td>
+<td>ладо́нь</td>
+<td><span class="heimu">[阴]手掌</span></td>
+</tr>
+<tr>
+<td>Как на ладо́ни</td>
+<td><span class="heimu">一清二楚，了如指掌，一览无余</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="吃的"><a href="#吃的" class="headerlink" title="吃的"></a>吃的</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>молоко́</td>
+<td><span class="heimu">牛奶</span></td>
+<td>торт</td>
+<td><span class="heimu">蛋糕</span></td>
+<td>сок</td>
+<td><span class="heimu">果汁</span></td>
+</tr>
+<tr>
+<td>суп</td>
+<td><span class="heimu">汤</span></td>
+<td>сыр</td>
+<td><span class="heimu">奶酪</span></td>
+<td>за́втрак</td>
+<td><span class="heimu">早饭</span></td>
+</tr>
+<tr>
+<td>ем</td>
+<td><span class="heimu">（我）吃</span></td>
+<td>рис</td>
+<td><span class="heimu">米，米饭</span></td>
+<td>чай</td>
+<td><span class="heimu">茶</span></td>
+</tr>
+<tr>
+<td>обе́д</td>
+<td><span class="heimu">午饭</span></td>
+<td>мя́со</td>
+<td><span class="heimu">肉，肉类</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="街道"><a href="#街道" class="headerlink" title="街道"></a>街道</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>банк</td>
+<td><span class="heimu">银行</span></td>
+<td>бар</td>
+<td><span class="heimu">酒吧</span></td>
+<td>парк</td>
+<td><span class="heimu">公园</span></td>
+</tr>
+<tr>
+<td>клуб</td>
+<td><span class="heimu">俱乐部</span></td>
+<td>авто́бус</td>
+<td><span class="heimu">公共汽车</span></td>
+<td>шко́ла</td>
+<td><span class="heimu">（中、小）学校</span></td>
+</tr>
+<tr>
+<td>маши́на</td>
+<td><span class="heimu">汽车，轿车；机器</span></td>
+<td>остано́вка</td>
+<td><span class="heimu">汽车站</span></td>
+<td>апте́ка</td>
+<td><span class="heimu">药房</span></td>
+</tr>
+<tr>
+<td>магази́н</td>
+<td><span class="heimu">商店</span></td>
+<td>поликли́ника</td>
+<td><span class="heimu">门诊部</span></td>
+<td>музе́й</td>
+<td><span class="heimu">博物馆</span></td>
+</tr>
+<tr>
+<td>метро́</td>
+<td><span class="heimu">地铁</span></td>
+<td>теа́тр</td>
+<td><span class="heimu">剧院；戏剧</span></td>
+<td>суперма́ркет</td>
+<td><span class="heimu">超市</span></td>
+</tr>
+<tr>
+<td>пло́щадь</td>
+<td><span class="heimu">[阴]广场</span></td>
+<td>университе́т</td>
+<td><span class="heimu">大学</span></td>
+<td>столо́вая</td>
+<td><span class="heimu">食堂</span></td>
+</tr>
+<tr>
+<td>проспе́кт</td>
+<td><span class="heimu">大街</span></td>
+<td>кино́</td>
+<td><span class="heimu">[不变，中]电影，影院</span></td>
+<td>кио́ск</td>
+<td><span class="heimu">书报亭</span></td>
+</tr>
+<tr>
+<td>кинотеа́тр</td>
+<td><span class="heimu">电影院</span></td>
+<td>у́лица</td>
+<td><span class="heimu">街道</span></td>
+<td>гости́ница</td>
+<td><span class="heimu">宾馆，饭店</span></td>
+</tr>
+<tr>
+<td>трамва́й</td>
+<td><span class="heimu">有轨电车</span></td>
+<td>стадио́н</td>
+<td><span class="heimu">体育场</span></td>
+<td>рестора́н</td>
+<td><span class="heimu">餐厅，饭店</span></td>
+</tr>
+<tr>
+<td>дискоте́ка</td>
+<td><span class="heimu">迪斯科舞会</span></td>
+<td>библиоте́ка</td>
+<td><span class="heimu">图书馆</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="房子"><a href="#房子" class="headerlink" title="房子"></a>房子</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ко́мната</td>
+<td><span class="heimu">房间</span></td>
+<td>окно́</td>
+<td><span class="heimu">窗户</span></td>
+<td>стол</td>
+<td><span class="heimu">桌子</span></td>
+</tr>
+<tr>
+<td>стул</td>
+<td><span class="heimu">椅子</span></td>
+<td>шарф</td>
+<td><span class="heimu">长围巾</span></td>
+<td>шкаф</td>
+<td><span class="heimu">柜子</span></td>
+</tr>
+<tr>
+<td>ша́пка</td>
+<td><span class="heimu">帽子</span></td>
+<td>телефо́н</td>
+<td><span class="heimu">电话</span></td>
+<td>ва́за</td>
+<td><span class="heimu">花瓶</span></td>
+</tr>
+<tr>
+<td>альбо́м</td>
+<td><span class="heimu">相册，纪念册</span></td>
+<td>гара́ж</td>
+<td><span class="heimu">车库</span></td>
+<td>дива́н</td>
+<td><span class="heimu">长沙发</span></td>
+</tr>
+<tr>
+<td>телеви́зор</td>
+<td><span class="heimu">电视机，电视</span></td>
+<td>кре́сло</td>
+<td><span class="heimu">安乐椅，单人沙发</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="人物"><a href="#人物" class="headerlink" title="人物"></a>人物</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>брат</td>
+<td><span class="heimu">兄弟</span></td>
+<td>друг</td>
+<td><span class="heimu">朋友</span></td>
+<td>сын</td>
+<td><span class="heimu">儿子</span></td>
+</tr>
+<tr>
+<td>подру́га</td>
+<td><span class="heimu">女朋友</span></td>
+<td>ба́бушка</td>
+<td><span class="heimu">祖母</span></td>
+<td>мать</td>
+<td><span class="heimu">母亲</span></td>
+</tr>
+<tr>
+<td>тётя</td>
+<td><span class="heimu">姨，婶，姑</span></td>
+<td>дя́дя</td>
+<td><span class="heimu">叔，伯，舅，姑父</span></td>
+<td>жена́</td>
+<td><span class="heimu">妻子</span></td>
+</tr>
+<tr>
+<td>сестра́</td>
+<td><span class="heimu">姐妹</span></td>
+<td>де́душка</td>
+<td><span class="heimu">爷爷</span></td>
+<td>дочь</td>
+<td><span class="heimu">女儿</span></td>
+</tr>
+<tr>
+<td>друзья́</td>
+<td><span class="heimu">[复]朋友们</span></td>
+<td>фе́рмер</td>
+<td><span class="heimu">农场主</span></td>
+<td>хи́мик</td>
+<td><span class="heimu">化学工作者</span></td>
+</tr>
+<tr>
+<td>био́лог</td>
+<td><span class="heimu">生物工作者</span></td>
+<td>оте́ц</td>
+<td><span class="heimu">父亲</span></td>
+<td>това́рищ</td>
+<td><span class="heimu">同志</span></td>
+</tr>
+<tr>
+<td>челове́к</td>
+<td><span class="heimu">人</span></td>
+<td>лю́ди</td>
+<td><span class="heimu">[复]人们</span></td>
+<td>ребёнок</td>
+<td><span class="heimu">孩子</span></td>
+</tr>
+<tr>
+<td>де́ти</td>
+<td><span class="heimu">[复]儿童们，小孩子门</span></td>
+<td>муж</td>
+<td><span class="heimu">丈夫</span></td>
+<td>роди́тели</td>
+<td><span class="heimu">[复]父母亲</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>у́тром</td>
+<td><span class="heimu">[副词]（在）早晨</span></td>
+<td>за́втра</td>
+<td><span class="heimu">[副]明天</span></td>
+<td>мину́та</td>
+<td><span class="heimu">分钟</span></td>
+</tr>
+<tr>
+<td>май</td>
+<td><span class="heimu">五月</span></td>
+<td>днём</td>
+<td><span class="heimu">[副]在白天</span></td>
+<td>ле́том</td>
+<td><span class="heimu">[副]（在）夏天</span></td>
+</tr>
+<tr>
+<td>зимо́й</td>
+<td><span class="heimu">[副]（在）冬天</span></td>
+<td>о́сенью</td>
+<td><span class="heimu">[副]（在）秋天</span></td>
+<td>сего́дня</td>
+<td><span class="heimu">[副]今天</span></td>
+</tr>
+<tr>
+<td>сейча́с</td>
+<td><span class="heimu">[副]现在</span></td>
+<td>весно́й</td>
+<td><span class="heimu">[副]（在）春天</span></td>
+<td>ве́чером</td>
+<td><span class="heimu">[副]（在）晚上</span></td>
+</tr>
+<tr>
+<td>ночь</td>
+<td><span class="heimu">[阴]夜</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="职业"><a href="#职业" class="headerlink" title="职业"></a>职业</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>декана́т</td>
+<td><span class="heimu">系主任办公室；系领导</span></td>
+<td>студе́нт</td>
+<td><span class="heimu">男大学生</span></td>
+<td>студе́нтка</td>
+<td><span class="heimu">女大学生</span></td>
+</tr>
+<tr>
+<td>инжене́р</td>
+<td><span class="heimu">工程师</span></td>
+<td>преподава́тель</td>
+<td><span class="heimu">[阳]（大学）老师</span></td>
+<td>врач</td>
+<td><span class="heimu">医生</span></td>
+</tr>
+<tr>
+<td>дире́ктор</td>
+<td><span class="heimu">经理，院长，（中小学）校长</span></td>
+<td>спортсме́н</td>
+<td><span class="heimu">运动员</span></td>
+<td>спортсме́нка</td>
+<td><span class="heimu">女运动员</span></td>
+</tr>
+<tr>
+<td>журнали́ст</td>
+<td><span class="heimu">新闻记者</span></td>
+<td>журналистка</td>
+<td><span class="heimu">女新闻记者</span></td>
+<td>юри́ст</td>
+<td><span class="heimu">法律学家，律师</span></td>
+</tr>
+<tr>
+<td>экономи́ст</td>
+<td><span class="heimu">经济学家</span></td>
+<td>домохозя́йка</td>
+<td><span class="heimu">家庭主妇</span></td>
+<td>шко́льница</td>
+<td><span class="heimu">中小学（女）学生</span></td>
+</tr>
+<tr>
+<td>шко́льник</td>
+<td><span class="heimu">中小学（男）学生</span></td>
+<td>бизнесме́н</td>
+<td><span class="heimu">商人</span></td>
+<td>программи́ст</td>
+<td><span class="heimu">程序设计员</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="形容词"><a href="#形容词" class="headerlink" title="形容词"></a>形容词</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ста́рый</td>
+<td><span class="heimu">老的，旧的</span></td>
+<td>ру́сский</td>
+<td><span class="heimu">俄罗斯的</span></td>
+<td>новый</td>
+<td><span class="heimu">新的</span></td>
+</tr>
+<tr>
+<td>вели́кий</td>
+<td><span class="heimu">伟大的</span></td>
+<td>кита́йский</td>
+<td><span class="heimu">中国的；中国人的</span></td>
+<td>ма́ленький</td>
+<td><span class="heimu">小的</span></td>
+</tr>
+<tr>
+<td>си́ний</td>
+<td><span class="heimu">蓝色的</span></td>
+<td>хоро́ший</td>
+<td><span class="heimu">好的</span></td>
+<td>большо́й</td>
+<td><span class="heimu">大的</span></td>
+</tr>
+<tr>
+<td>интере́сный</td>
+<td><span class="heimu">有意思的，有趣的</span></td>
+<td>плохо́й</td>
+<td><span class="heimu">不好的</span></td>
+<td>молодо́й</td>
+<td><span class="heimu">年轻的</span></td>
+</tr>
+<tr>
+<td>краси́вый</td>
+<td><span class="heimu">漂亮的</span></td>
+<td>дорого́й</td>
+<td><span class="heimu">亲爱的，贵的</span></td>
+<td>дешёвый</td>
+<td><span class="heimu">便宜的</span></td>
+</tr>
+<tr>
+<td>тёплый</td>
+<td><span class="heimu">暖和的，温暖的</span></td>
+<td>популя́рный</td>
+<td><span class="heimu">普及的；受欢迎的</span></td>
+<td>изве́стный</td>
+<td><span class="heimu">著名的</span></td>
+</tr>
+<tr>
+<td>шокола́дный</td>
+<td><span class="heimu">巧克力的</span></td>
+<td>бе́лый</td>
+<td><span class="heimu">白色的</span></td>
+<td>кра́сный</td>
+<td><span class="heimu">红色的</span></td>
+</tr>
+<tr>
+<td>русско-кита́йский</td>
+<td><span class="heimu">俄汉的</span></td>
+<td>китайско-ру́сский</td>
+<td><span class="heimu">汉俄的</span></td>
+<td>совреме́нный</td>
+<td><span class="heimu">现在的，当代的</span></td>
+</tr>
+<tr>
+<td>широ́кий</td>
+<td><span class="heimu">宽阔的</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="疑问词"><a href="#疑问词" class="headerlink" title="疑问词"></a>疑问词</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>как</td>
+<td><span class="heimu">[副]如何，怎样</span></td>
+<td>кто</td>
+<td><span class="heimu">[代]谁</span></td>
+<td>когда́</td>
+<td><span class="heimu">(在)什么时候</span></td>
+</tr>
+<tr>
+<td>где</td>
+<td><span class="heimu">在哪</span></td>
+<td>что</td>
+<td><span class="heimu">什么</span></td>
+<td>чей</td>
+<td><span class="heimu">谁的（чья,чьё,чьи）</span></td>
+</tr>
+<tr>
+<td>како́й</td>
+<td></td>
+<td>ско́лько</td>
+<td><span class="heimu">多少</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="地名"><a href="#地名" class="headerlink" title="地名"></a>地名</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Во́лга</td>
+<td><span class="heimu">伏尔加河</span></td>
+<td>Москва́</td>
+<td><span class="heimu">莫斯科</span></td>
+<td>МГУ</td>
+<td><span class="heimu">莫大（莫斯科大学）</span></td>
+</tr>
+<tr>
+<td>Кра́сная пло́щадь</td>
+<td><span class="heimu">红场</span></td>
+<td>Большо́й теа́тр</td>
+<td><span class="heimu">大剧院</span></td>
+<td>Кремль</td>
+<td><span class="heimu">克里姆林宫</span></td>
+</tr>
+<tr>
+<td>Ру́сский музе́й</td>
+<td><span class="heimu">俄罗斯博物馆</span></td>
+<td>Кита́й</td>
+<td><span class="heimu">中国</span></td>
+<td>Пеки́н</td>
+<td><span class="heimu">北京</span></td>
+</tr>
+<tr>
+<td>Росси́я</td>
+<td><span class="heimu">俄罗斯</span></td>
+<td>Сант-Петербу́рг</td>
+<td><span class="heimu">圣彼得堡</span></td>
+<td>Арба́т</td>
+<td><span class="heimu">阿尔巴特街</span></td>
+</tr>
+<tr>
+<td>Третьяко́вская галере́я</td>
+<td><span class="heimu">特列季亚科夫美术馆</span></td>
+<td>НИл</td>
+<td><span class="heimu">尼罗河</span></td>
+<td>Шанха́й</td>
+<td><span class="heimu">上海</span></td>
+</tr>
+<tr>
+<td>Вене́ция</td>
+<td><span class="heimu">威尼斯</span></td>
+<td>Истори́ческий музе́й</td>
+<td><span class="heimu">历史博物馆</span></td>
+<td>Ки́евский вокза́л</td>
+<td><span class="heimu">基辅车站</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="数词"><a href="#数词" class="headerlink" title="数词"></a>数词</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 оди́н</td>
+<td>11 оди́ннадцать</td>
+<td>21 два́дцать оди́н</td>
+</tr>
+<tr>
+<td>2 два</td>
+<td>12 двена́дцать</td>
+<td>22 два́дцать два</td>
+</tr>
+<tr>
+<td>3 три</td>
+<td>13 трина́дцать</td>
+<td>…</td>
+</tr>
+<tr>
+<td>4 четы́ре</td>
+<td>14 четы́рнадцать</td>
+<td>…</td>
+</tr>
+<tr>
+<td>5 пять</td>
+<td>15 пятна́дцать</td>
+<td>…</td>
+</tr>
+<tr>
+<td>6 шесть</td>
+<td>16 шестна́дцать</td>
+<td>…</td>
+</tr>
+<tr>
+<td>7 семь</td>
+<td>17 семна́дцать</td>
+<td>…</td>
+</tr>
+<tr>
+<td>8 во́семь</td>
+<td>18 восемна́дцать</td>
+<td>…</td>
+</tr>
+<tr>
+<td>9 де́вять</td>
+<td>19 девятна́дцать</td>
+<td>…</td>
+</tr>
+<tr>
+<td>10 де́сять</td>
+<td>20 два́дцать</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>30 три́дцать<br>40 со́рок<br>50 пятьдеся́т<br>60 шестьдеся́т<br>70 се́мьдесят<br>80 во́семьдесят<br>90 девяно́сто<br>100 сто<br>200 две́сти<br>300 три́ста</p>
+<!--
+|  |  |  |  |  |
+|------    |------    |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>单词</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中国动画制作考（待补</title>
+    <url>/2022/05c0de4b7a.html</url>
+    <content><![CDATA[<p>一直挺想做个这样的统计的，感觉我是从沈剑心开始真正入坑如今的国创的。</p>
+<p>其实想当初小学看动画谁管哪国家做的呀，围棋少年哪吒传奇我也好喜欢的，后来中学为了体现逼格开始说动漫，看日式的，再后来到大学开始说ANIME，到现在已经无所畏惧和无所谓了哈哈哈。</p>
+<p>不过那么多年关注日番的经验还是很受用的，会想要了解动画制作的背后。</p>
+<p>个人喜好是真的很个人喜好233333我一般喜欢什么就是很喜欢，不喜欢就是完全不喜欢，不太有中等的（一般情况哈），没有星星的就是还没看过</p>
+<p>协力也先不放进去了，不然好复杂……</p>
+<p>先从藤子平台上的来~</p>
+<span id="more"></span>
+<h3 id="剧集版-2D"><a href="#剧集版-2D" class="headerlink" title="剧集版 2D"></a><strong>剧集版 2D</strong></h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>动画名</th>
+<th>首播日期</th>
+<th>制作方</th>
+<th>出品方</th>
+<th>导演</th>
+<th style="text-align:center">原创</th>
+<th style="text-align:center">改编</th>
+<th>配导</th>
+<th>音导</th>
+<th>补充</th>
+<th>个人喜好<br />五★满<br />★☆</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>魔方大厦</td>
+<td>1990</td>
+<td>上美影</td>
+<td>上美影</td>
+<td>查侃</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />郑渊洁《魔方大厦》</td>
+<td>韦启昌</td>
+<td>郑方</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>特别车队</td>
+<td>1993</td>
+<td>上美影</td>
+<td>上美影</td>
+<td>杨凯华</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />包蕾《特别车队》</td>
+<td>韦启昌</td>
+<td>董为杰</td>
+<td>据说黑帮题材诶</td>
+<td></td>
+</tr>
+<tr>
+<td>我为歌狂</td>
+<td>2001.8.6</td>
+<td>上美影</td>
+<td>上美影<br />上海电视台</td>
+<td>胡依红</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td>王慧坚</td>
+<td></td>
+<td>当时这种时而有Q版，歌曲很“潮”的中国动画是真的少，记得还因为在路上错过电视台播放而非常伤心<br />现在看的话确实就差点意思了，但是为什么当时我没发现这么多可爱多的广告呢，话说可爱多还是我上大学才知道的……<br />动画制作参与者后续分别创建了福煦影视、绘梦、洛水花原</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>梦里人</td>
+<td>2005.12.12</td>
+<td>央视动画部</td>
+<td>央视动画部</td>
+<td>李剑平</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />姚非拉《梦里人》</td>
+<td></td>
+<td></td>
+<td>曾经的央视啊，感觉应该还挺不错的</td>
+<td></td>
+</tr>
+<tr>
+<td>燕尾蝶</td>
+<td>2007.4.18</td>
+<td>b&amp;t</td>
+<td>彼岸天文化</td>
+<td>梁旋<br />张春</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td></td>
+<td></td>
+<td>TOTOBOBO，长花熊猫和瘦鸡</td>
+<td></td>
+</tr>
+<tr>
+<td>功夫料理娘</td>
+<td>2011.6.4</td>
+<td>狼烟动画</td>
+<td></td>
+<td>人狼</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>无名氏</td>
+<td>2014.5.14<br />（日期不确定）</td>
+<td>DCZLD<br />七灵石</td>
+<td></td>
+<td>DCZLD</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>红领巾与王小明</td>
+<td>2014.12.26</td>
+<td>DCZLD<br />七灵石</td>
+<td>ACFUN</td>
+<td>DCZLD<br />孙猛</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td></td>
+<td>文一丁</td>
+<td>当年的ACFUN啊</td>
+<td></td>
+</tr>
+<tr>
+<td>帝王攻略</td>
+<td>2018.4.30</td>
+<td>七灵石<br />（炫酷文化协力）</td>
+<td>企鹅影视</td>
+<td></td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />语笑阑珊《帝王攻略》</td>
+<td>黄莺</td>
+<td>阿秋</td>
+<td>就还行吧，剧情和动画没有太出彩的地方<br />还是能力问题，七灵石早期作品……</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>白夜玲珑</td>
+<td>2018.6.6</td>
+<td>七灵石</td>
+<td>快乐工场<br />企鹅影视<br />七灵石</td>
+<td>龚震华</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />HeHe和小林《白夜玲珑》</td>
+<td>黄莺</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>安菟！安菟！</td>
+<td>2018.8.15</td>
+<td>七灵石</td>
+<td>蜜枝科技<br />七灵石</td>
+<td>龚震华</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">虚拟偶像改（什么鬼）</td>
+<td>皇贞季</td>
+<td>郭川</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>那年那兔那些事儿 第五季</td>
+<td>2019.10.1</td>
+<td>七灵石</td>
+<td>陆军文工团<br />翼下之风</td>
+<td>王强</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />历史改<br />《那年那兔那些事儿》</td>
+<td>小连杀</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>无限少女48</td>
+<td>2020.4.8</td>
+<td>七灵石</td>
+<td>丝芭传媒<br />七灵石</td>
+<td>龚震华</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">偶像衍生</td>
+<td>皇贞季</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>绝顶</td>
+<td>2021.2.6</td>
+<td>七灵石</td>
+<td>企鹅影视<br />有狐文化<br />磨铁动漫</td>
+<td>龚震华</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />肖新宇《绝顶》</td>
+<td>杨凝</td>
+<td></td>
+<td>这个画风！这个搞笑剧情！<br />作为一个搞笑泡面番简直绝了好吗！！！<br />二当家好帅啊！</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>一人之下 第一季</td>
+<td>2016.7.8</td>
+<td>Pandanium</td>
+<td>腾讯动漫<br />动漫堂</td>
+<td>王昕</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />米二《一人之下》</td>
+<td>藤新</td>
+<td></td>
+<td>中日合作ダメダメ大ダメ！！！！！！<br />中国完全就是冤大头！<br />但因为是一人之下，为了了解背景还是推荐看……</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>端脑</td>
+<td>2014.11.28</td>
+<td>绘梦</td>
+<td>有妖气</td>
+<td>王子轩（王昕）</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />壁水羽、神祭《端脑》</td>
+<td>皇贞季<br />谢添天</td>
+<td></td>
+<td>才发现配音是南北联姻<br />看过漫画，非常牛，不知道动画改得如何……</td>
+<td></td>
+</tr>
+<tr>
+<td>妖怪名单</td>
+<td>2014.12.12</td>
+<td>绘梦<br />七灵石（有）</td>
+<td>腾讯动漫</td>
+<td>董易<br />李豪凌</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />糖人家《妖怪名单》</td>
+<td></td>
+<td></td>
+<td>当年还是绘梦者新动画联盟啊</td>
+<td></td>
+</tr>
+<tr>
+<td>那年那兔那些事儿 第一季</td>
+<td>2015.3.5</td>
+<td>绘梦</td>
+<td>翼下之风</td>
+<td>十一</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />历史改</td>
+<td>皇贞季</td>
+<td></td>
+<td>每集必哭。<br />早有耳闻，但在阿港破事儿期间才看，“眼泪会冻住”，天国的“亲，我好想你啊”，“展信佳”（第一次看看成了展信娃……），“挺直腰杆子”，麻蛋，只是想起来这些话就又泪目了</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>时空使徒</td>
+<td>2016.10.1</td>
+<td>绘梦<br />Creators in Pack</td>
+<td>腾讯动漫</td>
+<td><a href="https://movie.douban.com/subject_search?search_text=%E9%99%88%E7%83%A8">陈烨</a></td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />白骁《时空使徒》</td>
+<td>张杰</td>
+<td></td>
+<td>又是一家日本制作公司捏，估计会拉</td>
+<td></td>
+</tr>
+<tr>
+<td>凸变英雄BABA</td>
+<td>2016.10.5</td>
+<td>绘梦<br />STUDIO LAN!（澜映画）</td>
+<td>绘梦吧</td>
+<td>李豪凌</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td></td>
+<td></td>
+<td>初期爸爸变身有点劝退，但是据说神作所以还是会找机会补</td>
+<td></td>
+</tr>
+<tr>
+<td>君临臣下</td>
+<td>2016.10.11</td>
+<td>绘梦<br />铅元素（有）</td>
+<td>腾讯动漫</td>
+<td>周帆</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />花香蘑菇《君临臣下》</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>东郭小节</td>
+<td>2016.12.26</td>
+<td>绘梦</td>
+<td>腾讯动漫</td>
+<td>廖礼让<br />周帆</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />观山海《东郭小节》</td>
+<td>阿杰</td>
+<td>伍婷</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>降灵记</td>
+<td>2017.5.10</td>
+<td>绘梦<br />铅元素</td>
+<td>腾讯动漫</td>
+<td>舔盘</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />许璐《降灵记》</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>妖怪名单 第二季</td>
+<td>2017.8.3</td>
+<td>绘梦</td>
+<td>腾讯动漫<br />才贤文化</td>
+<td>董易</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />糖人家《妖怪名单》</td>
+<td>冯骏骅<br />谢添天</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>一人之下 第二季</td>
+<td>2017.10.27</td>
+<td>绘梦</td>
+<td>腾讯动漫<br />动漫堂</td>
+<td>陈烨<br />王昕</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />米二《一人之下》</td>
+<td>藤新</td>
+<td></td>
+<td>可能没有第一季看着流畅了，但是味儿对了<br />这就行了<br />OP无涯yyds！！！！</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>凸变英雄LEAF</td>
+<td>2018.4.14</td>
+<td>绘梦</td>
+<td>绘梦<br />bilibili</td>
+<td>李豪凌</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td>山新</td>
+<td>伍婷<br />杨秉音</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>我的逆天神器</td>
+<td>2018.4.26</td>
+<td>绘梦<br />铅元素</td>
+<td>腾讯动漫</td>
+<td>李豪凌</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />猫妖×毒哥、涌泉《我的逆天神器》</td>
+<td>杨天翔</td>
+<td>伍婷</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>小绿和小蓝</td>
+<td>2018.8.27</td>
+<td>绘梦<br />菊堂工作室（后来的洛水花原）</td>
+<td>腾讯动漫</td>
+<td>王昕</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />笛子Ocarina《小绿和小蓝》</td>
+<td>阿杰</td>
+<td>潇娘</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>通灵妃</td>
+<td>2018.11.30</td>
+<td>绘梦</td>
+<td>腾讯动漫<br />才贤文化</td>
+<td>李豪凌</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />肉肉《通灵妃》</td>
+<td>森中人</td>
+<td>伍婷</td>
+<td>好家伙，玛丽苏漫画改编成这样是真的厉害……<br />但是电波对上了我的<br />女主烦skr人那里的配音非常可爱<br />不喜恋爱番的可能就可以跳过了23333<br />对了，OP太魔性了！！！<br />OP分镜/演出：澜映画</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>时光代理人 第一季</td>
+<td>2021.4.30</td>
+<td>绘梦<br />澜映画</td>
+<td>bilibili</td>
+<td>李豪凌</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td>阿杰 郭浩然</td>
+<td>天門</td>
+<td>人物原案：INPLICK<br />OP、ED 都很绝</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>女娲成长日记</td>
+<td>2016.4.12</td>
+<td>视美精典</td>
+<td>阅文集团<br />腾讯视频</td>
+<td>熊可</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />凌舞水袖《女娲成长日记》</td>
+<td>夏磊<br />崔剑楠</td>
+<td></td>
+<td>人设原案/总作监：申琳<br />视美抱大腿之路的开始</td>
+<td></td>
+</tr>
+<tr>
+<td>国民老公带回家 第一季</td>
+<td>2016.10.3</td>
+<td>视美精典</td>
+<td>腾讯视频<br />阅文集团</td>
+<td>熊可</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />叶非夜《国民老公带回家》</td>
+<td>刘钦</td>
+<td>魏小涵</td>
+<td>剧情极其狗血，跑吧……</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>全职高手 第一季</td>
+<td>2017.4.7</td>
+<td>视美精典</td>
+<td>阅文集团<br />企鹅影视<br />东申影业<br />bilibili</td>
+<td>熊可</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />蝴蝶蓝《全职高手》</td>
+<td>阿杰</td>
+<td>孙玉镜等</td>
+<td>视美的出头之作啊<br />动画原案/总作监：申琳<br />话说当年的爸爸做幼齿向习惯了，OP的staff表字好大233333</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>国民老公带回家 第二季</td>
+<td>2017.5.1</td>
+<td>视美精典</td>
+<td>腾讯视频<br />阅文集团</td>
+<td>熊可</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />叶非夜《国民老公带回家》</td>
+<td>刘钦</td>
+<td>魏小涵</td>
+<td>视美恰饭番……</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>魔道祖师 前尘篇</td>
+<td>2018.7.9</td>
+<td>视美影业</td>
+<td>企鹅影视<br />视美影业</td>
+<td>熊可</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />墨香铜臭《魔道祖师》</td>
+<td>阿杰</td>
+<td>孙玉镜</td>
+<td>人物原案：申琳<br />OP超绝好听<br />三部曲里最爱的一部<br />非常喜欢视美对于家族战斗剧情节奏的把控和渲染<br />非常推荐不喜BL的也一定看一下前尘篇</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>魔道祖师 羡云篇</td>
+<td>2019.8.3</td>
+<td>视美影业</td>
+<td>企鹅影视<br />视美影业</td>
+<td>熊可</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />墨香铜臭《魔道祖师》</td>
+<td>阿杰</td>
+<td>孙玉镜</td>
+<td>人物原案：申琳<br />剧情有点忘了……</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>历师</td>
+<td>2020.5.7</td>
+<td>视美影业<br />（杭州）</td>
+<td>企鹅影视<br />视美影业</td>
+<td>程珑</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">小说改<br />石头羊《历师》</td>
+<td>杨天翔</td>
+<td>孙玉镜</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>民调局异闻录</td>
+<td>2020.8.7</td>
+<td>视美影业</td>
+<td>视美影业</td>
+<td>熊可</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />耳东水寿《民调局异闻录》</td>
+<td>阿杰</td>
+<td>孙玉镜</td>
+<td>动画原案/总作监：申琳<br />印象最深的是迷惑的2D+3D场景，爸爸啊，3D做不好可以不做的<br />剧情感觉还行，没看过原著，说是有改动，那反正对我没影响嘿嘿<br />但是动画原创的妹子实在太好看了！！申琳老师！！！你永远可以相信申琳老师！！<br />比较惨的是好不容易出品方只有视美一个了，但是周边不太好卖，商业化之路还需要继续学习</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>一念永恒 第一季</td>
+<td>2020.8.12</td>
+<td>视美影业<br />（重庆 杭州）</td>
+<td>企鹅影视<br />视美影业<br />武汉唯道</td>
+<td>苏晓光</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />耳根《一念永恒》</td>
+<td>郭浩然</td>
+<td></td>
+<td>主角初期有点苟（太过了），观感一般，不过后续还行<br />但是背景是真的好看啊，不愧是你，视美爸爸</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>魔道祖师 完结篇</td>
+<td>2021.08.07</td>
+<td>视美影业</td>
+<td>企鹅影视<br />视美影业</td>
+<td>熊可</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />墨香铜臭《魔道祖师》</td>
+<td>阿杰</td>
+<td>孙玉镜</td>
+<td>人物原案：申琳<br />OP好听<br />片尾插画绝<br />温家老弱妇孺从血池出来那里非常感人<br />最后两兄弟明明互为对方却未能相互释怀的BE美学也非常……所以说傲娇毁一生呀兄弟们</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>最强蜗牛不速之客</td>
+<td>2020.6.23</td>
+<td>好传</td>
+<td>青瓷游戏</td>
+<td>庞磊<br />DC</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">游戏衍生<br />《最强蜗牛》</td>
+<td>藤新</td>
+<td></td>
+<td>NiceBoatNB！！！<br />作为游戏衍生也太好看了！！！</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>颜王</td>
+<td>2021.9.19</td>
+<td>好传（摸鱼小组）</td>
+<td>好传<br />有没有腾讯呢</td>
+<td>孙辰</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td>藤新</td>
+<td>杨芮</td>
+<td>这剧好有trigger的风范啊！！！！（是指灵魂上像<br />好传好帅啊！！~</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>盗墓笔记秦岭神树</td>
+<td>2021.4.4</td>
+<td>启缘映画<br />一魁夺</td>
+<td>企鹅影视<br />腾讯动漫<br />南派泛娱</td>
+<td>陈烨</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />南派三叔《盗墓笔记》</td>
+<td>藤新<br />郝翔海</td>
+<td></td>
+<td>民俗顾问：高超<br />片尾偶动画：上海时周文化发展有限公司</td>
+<td></td>
+</tr>
+<tr>
+<td>一人之下 第四季</td>
+<td>2021.9.24</td>
+<td>启缘映画<br />一魁夺</td>
+<td>企鹅影视<br />腾讯动漫</td>
+<td>陈烨</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />米二《一人之下》</td>
+<td>藤新</td>
+<td></td>
+<td>片尾偶动画：上海时周文化发展有限公司<br />EDEDEDEDED！你永远可以相信一人的曲子！<br />陈朵篇久仰大名，个人感觉情绪渲染是非常到位的。</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>开局一座山 第一季</td>
+<td>2022.4.15</td>
+<td>启缘映画<br />一魁夺</td>
+<td>企鹅影视<br />腾讯动漫</td>
+<td>王巍</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />哈马大王《开局一座山》</td>
+<td>藤新</td>
+<td></td>
+<td>系统类搞笑番，还行</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>全职高手 特别篇</td>
+<td>2018.4.27</td>
+<td>彩色铅笔<br />（震雷原画协力）</td>
+<td>阅文集团<br />企鹅影视<br />东申影业<br />bilibili</td>
+<td>史涓生</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />蝴蝶蓝《全职高手》</td>
+<td>阿杰</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>全职高手 第二季</td>
+<td>2020.9.25</td>
+<td>彩色铅笔</td>
+<td>企鹅影视<br />阅文集团</td>
+<td>史涓生<br />张盈盈</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />蝴蝶蓝《全职高手》</td>
+<td>阿杰</td>
+<td>陈雨佳</td>
+<td>不太记得了，但感觉似乎是不太如第一季的</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>幻游猎人</td>
+<td>2021.12.25</td>
+<td>彩色铅笔</td>
+<td>阅文动漫<br />企鹅影视</td>
+<td>史涓生<br />张盈盈</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />纪茗《幻游猎人》</td>
+<td>杨梦露</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>实验品家庭</td>
+<td>2018.4.10</td>
+<td>大火鸟</td>
+<td>日更计划<br />大火鸟<br />企鹅影视</td>
+<td>危天行</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />Yanai《实验品家庭》</td>
+<td>皇贞季</td>
+<td>ゆうゆ</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>妖精种植手册</td>
+<td>2020.1.17</td>
+<td>大火鸟<br />（Poirot协力）</td>
+<td>企鹅影视<br />腾讯动漫</td>
+<td>危天行</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />DAZUI《妖精种植手册》</td>
+<td>藤新</td>
+<td>潇娘</td>
+<td>OP！OP！OP！OP一定要听！<br />国创有这种音乐真是太难得了！！！<br />全篇还没看完，看起来是后宫向的。<br />片尾的ヲタ芸很可爱~</td>
+<td>OP：★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>一人之下 第三季</td>
+<td>2020.4.24</td>
+<td>大火鸟</td>
+<td>企鹅影视<br />腾讯动漫</td>
+<td>危天行</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />米二《一人之下》</td>
+<td>藤新</td>
+<td></td>
+<td>武术导演：黄成希<br />请到了大手子的作画番！！！<br />剧情因为有保底所以也非常棒！<br />OP歌儿和场景和主题契合<br />OP分镜/演出：无念</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>英雄再临</td>
+<td>2020.10.18</td>
+<td>大火鸟</td>
+<td>企鹅影视<br />菠萝包轻小说</td>
+<td>危天行</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />无聊看看天《英雄再临》</td>
+<td>虫虫</td>
+<td></td>
+<td>要不是在总结就错过了<br />去补！<br />补了前几集，有点一拳</td>
+<td></td>
+</tr>
+<tr>
+<td>大王饶命 第一季</td>
+<td>2021.12.03</td>
+<td>大火鸟</td>
+<td>企鹅影视<br />腾讯动漫</td>
+<td>危天行</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />会说话的肘子《大王饶命》</td>
+<td>阿杰</td>
+<td>潇娘 罐头</td>
+<td>OP分镜/演出/人物设计：无念<br />OP作监：梁博雅<br />OP原画：史涓生、黄成希、潘婧、无念等<br />OP色彩设计：潘婧、张颉羚、无念等<br />OP特殊作画：邵雪晴<br />继无念老师和大火鸟的一人之下3后，又一个更炸天的OP<br />请加大力度，以后大火鸟就可以叫炫技社了<br />动画本身是搞笑番，节奏还行，够爽</td>
+<td>★★★★★<br />OP：★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>择天记 第一季</td>
+<td>2015.07.15</td>
+<td>福煦影视</td>
+<td>阅文集团<br />腾讯视频</td>
+<td>倪明</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />猫腻《择天记》</td>
+<td>夏磊</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>择天记 第二季</td>
+<td>2016.7.20</td>
+<td>福煦影视</td>
+<td>阅文集团<br />腾讯视频</td>
+<td>安枫</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />猫腻《择天记》</td>
+<td>冯骏骅</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>全职法师 第一季</td>
+<td>2016.9.2</td>
+<td>福煦影视</td>
+<td>阅文集团<br />腾讯视频</td>
+<td>管振宇</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />乱《全职法师》</td>
+<td>沈达威</td>
+<td>小旭音乐</td>
+<td>看了也没啥，不看也没啥</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>CMFU学院-王子碰碰球</td>
+<td>2016.11.3</td>
+<td>福煦影视</td>
+<td>阅文集团<br />腾讯视频<br />bilibili</td>
+<td>郦黎明</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />宁馨儿</td>
+<td>黄莺</td>
+<td>王冲</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>择天记 第三季</td>
+<td>2017.7.26</td>
+<td>福煦影视</td>
+<td>阅文集团<br />企鹅影视</td>
+<td>安枫</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />猫腻《择天记》</td>
+<td>冯骏骅</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>全职法师 第二季</td>
+<td>2017.9.15</td>
+<td>福煦影视<br />旭プロアクション</td>
+<td>阅文集团<br />企鹅影视</td>
+<td>管振宇</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />乱《全职法师》</td>
+<td>沈达威</td>
+<td>小旭音乐</td>
+<td>片尾全是日本人，并不想放进来……<br />但第一季在了就放进来吧……</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>择天记 第四季</td>
+<td>2018.8.22</td>
+<td>福煦影视</td>
+<td>阅文集团<br />企鹅影视</td>
+<td>安枫</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />猫腻《择天记》</td>
+<td>冯骏骅</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>全职法师 第三季</td>
+<td>2018.10.13</td>
+<td>福煦影视</td>
+<td>阅文集团<br />企鹅影视</td>
+<td>倪明</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />乱《全职法师》</td>
+<td>沈达威</td>
+<td></td>
+<td>总导演和监督到底谁大，这里写了总导演</td>
+<td></td>
+</tr>
+<tr>
+<td>择天记 第五季</td>
+<td>2020.3.16</td>
+<td>福煦影视</td>
+<td>阅文集团<br />企鹅影视</td>
+<td>安枫</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />猫腻《择天记》</td>
+<td>冯骏骅</td>
+<td>孙冰冰</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>全职法师 第四季</td>
+<td>2020.5.27</td>
+<td>福煦影视</td>
+<td>阅文集团<br />企鹅影视</td>
+<td>管振宇</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />乱《全职法师》</td>
+<td>沈达威</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>全职法师 第五季</td>
+<td>2021.6.12</td>
+<td>福煦影视</td>
+<td>阅文集团<br />企鹅影视</td>
+<td>管振宇</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />乱《全职法师》</td>
+<td>沈达威<br />柯暮卿</td>
+<td></td>
+<td>柯暮卿上位了23333</td>
+<td></td>
+</tr>
+<tr>
+<td>非人哉</td>
+<td>2018.3.29</td>
+<td>分子互动</td>
+<td>分子互动<br />企鹅影视</td>
+<td>钟鸣</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />一汪空气《非人哉》</td>
+<td>钟鸣<br />酒儿</td>
+<td></td>
+<td>没人能拒绝可爱的泡面番！<br />就不分季统计了</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>万圣街 第一季</td>
+<td>2020.4.1</td>
+<td>寒木春华</td>
+<td>分子互动<br />企鹅影视<br />天闻角川</td>
+<td>木头</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />零子还有钞《万圣街》</td>
+<td>齐杰</td>
+<td></td>
+<td>没人能拒绝可爱的泡面番！</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>万圣街 第二季</td>
+<td>2020.10.14</td>
+<td>寒木春华</td>
+<td>分子互动<br />企鹅影视</td>
+<td>木头</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />零子还有钞《万圣街》</td>
+<td>齐杰</td>
+<td></td>
+<td>没人能拒绝可爱的泡面番！</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>万圣街 第三季</td>
+<td>2022.1.26</td>
+<td>寒木春华</td>
+<td>分子互动<br />企鹅影视<br />天闻角川</td>
+<td>呆尾</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />零子还有钞《万圣街》</td>
+<td></td>
+<td></td>
+<td>没人能拒绝可爱的泡面番！</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>伍六七（第一季）</td>
+<td>2018.4.25</td>
+<td>小疯映画</td>
+<td>小疯文化<br />啊哈娱乐<br />幻星 NUROSTAR</td>
+<td>何小疯</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td>姜广涛<br />宝木中阳</td>
+<td></td>
+<td>没和大视频方合作就是底子硬气啊<br />真正的全平台<br />又搞笑又热血又温情（又是作画番），牛牛牛！</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>伍六七之最强发型师</td>
+<td>2019.10.23</td>
+<td>小疯映画</td>
+<td>小疯文化<br />啊哈娱乐</td>
+<td>何小疯</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td>姜广涛<br />宝木中阳</td>
+<td></td>
+<td></td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>伍六七之玄武国篇</td>
+<td>2021.1.27</td>
+<td>小疯映画</td>
+<td>小疯文化<br />啊哈娱乐</td>
+<td>何小疯</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td>姜广涛<br />宝木中阳</td>
+<td></td>
+<td></td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>是王者啊？</td>
+<td>2022.3.18</td>
+<td>奇影</td>
+<td>天美工作室群<br />王者荣耀</td>
+<td>王强</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">游戏衍生<br />《王者荣耀》</td>
+<td>零柒</td>
+<td></td>
+<td>王者有挺多动画了，不过这个泡面番需要的游戏知识不多，每个角色抓了个最突出的特点来展现，我没有玩过王者也觉得这个动画好看。<br />想到了以前看偶像大师泡面番的感觉，就是稍微玩玩梗，但是每集有个小剧情或搞笑或温情，就很美好~~</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>能力有限公司</td>
+<td>2016.12.28</td>
+<td>咻咻动画</td>
+<td>大酺文化<br />豚首娱乐</td>
+<td>灰楼<br />海妖</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>麻神</td>
+<td>2016.6.29</td>
+<td>震雷</td>
+<td>腾讯动漫</td>
+<td>孙猛<br />王筠婷</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />白北五 李楚涛《麻神》</td>
+<td>杨鸥</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>女武神的餐桌 第一季</td>
+<td>2019.6.28</td>
+<td>震雷<br />BLADE</td>
+<td>米哈游</td>
+<td>武市 直子<br />孙猛</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">游戏衍生<br />《崩坏3》<br />漫画改<br />《女武神的餐桌》</td>
+<td>彭博</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>女武神的餐桌 第二季</td>
+<td>2020.7.17</td>
+<td>震雷<br />BLADE</td>
+<td>米哈游</td>
+<td>武市 直子</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">游戏衍生<br />《崩坏3》<br />漫画改<br />《女武神的餐桌》</td>
+<td>彭博</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>幻界王</td>
+<td>2018.5.30</td>
+<td>方方土</td>
+<td>腾讯动漫</td>
+<td>许显堃</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />绘漫《幻界王》</td>
+<td>皇贞季</td>
+<td>魏小涵</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>灵云代码</td>
+<td>2021.7.20</td>
+<td>知行合一</td>
+<td>山东广电传媒<br />知行合一</td>
+<td>王薇</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td>孟令军</td>
+<td>毛聿成<br />王迪</td>
+<td>有民族顾问和艺术顾问<br />毛聿成诶，和张伟蜜汁渊源</td>
+<td></td>
+</tr>
+<tr>
+<td>0号宿舍</td>
+<td>2018.9.28</td>
+<td>璀璨星空</td>
+<td>估计还是璀璨星空吧</td>
+<td>王波澜<br />张楚</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td></td>
+<td></td>
+<td>可爱画风中式大学中式美式港式剧情<br />非常推荐！！<br />顺便，鲁有脚，姜广涛，还押韵了</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>魁拔妖侠传</td>
+<td>2014.7.19</td>
+<td>青青树</td>
+<td>青青树</td>
+<td>张钢<br />周洁<br />白海涛<br />周飞龙</td>
+<td style="text-align:center">○</td>
+<td style="text-align:center">×</td>
+<td>koko殿</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>魁拔之殊途</td>
+<td>2021.1.17</td>
+<td>青青树</td>
+<td>青青树</td>
+<td>周洁<br />刘雅</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />《魁拔之书》</td>
+<td>山新</td>
+<td>袁思涵</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>黑白无双 第一季</td>
+<td>2015.7.9</td>
+<td>娃娃鱼</td>
+<td>动漫之家</td>
+<td>潘斌</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />于彦舒《黑白无双》</td>
+<td>姜广涛</td>
+<td></td>
+<td>片尾看到了好传诶</td>
+<td></td>
+</tr>
+<tr>
+<td>国民老公带回家 第三季</td>
+<td>2017.10.25</td>
+<td>娃娃鱼</td>
+<td>阅文集团<br />企鹅影视</td>
+<td>番茄</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />叶非夜《国民老公带回家》</td>
+<td>冯骏骅<br />杨鸥</td>
+<td>冯金</td>
+<td></td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>国民老公带回家 第四季</td>
+<td>2018.10.3</td>
+<td>娃娃鱼</td>
+<td>阅文集团<br />企鹅影视</td>
+<td>番茄</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />叶非夜《国民老公带回家》</td>
+<td>冯骏骅</td>
+<td>冯金</td>
+<td></td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>通职者</td>
+<td>2015.12.31</td>
+<td>雨桥</td>
+<td>腾讯动漫</td>
+<td>乔彧<br />向光辉</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />久久店长《通职者》</td>
+<td>方言</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>异常生物见闻录 第一季</td>
+<td>2019.6.28</td>
+<td>漫漫淘</td>
+<td>bilibili</td>
+<td>深蓝人<br />西本由纪夫</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />远瞳《异常生物见闻录》</td>
+<td>冯骏骅</td>
+<td></td>
+<td>喜闻乐见，中日合作<br />19年还能再去中日合作的真的是没法说……</td>
+<td></td>
+</tr>
+<tr>
+<td>麻辣女配</td>
+<td>2020.4.7</td>
+<td>小鹰飞扬<br />success<br />DANGUN</td>
+<td>腾讯动漫<br />企鹅影视</td>
+<td>王瀚</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />初心漫画《麻辣女配》</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>那年那兔那些事儿 第二季</td>
+<td>2015.10.9</td>
+<td>炫酷文化</td>
+<td>翼下之风</td>
+<td>二树</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />历史改</td>
+<td>皇贞季</td>
+<td></td>
+<td></td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>那年那兔那些事儿 第三季</td>
+<td>2016.9.30</td>
+<td>树形图<br />（炫酷文化协力）</td>
+<td>翼下之风</td>
+<td>二树</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />历史改</td>
+<td></td>
+<td></td>
+<td>卖二踢脚那里真的是穷啊。<br />最后遥望南师又一年。</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td>那年那兔那些事儿 第四季</td>
+<td>2017.6.30</td>
+<td>树形图<br />（炫酷文化协力）</td>
+<td>翼下之风</td>
+<td>二树</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">漫画改<br />历史改</td>
+<td>郝翔海</td>
+<td></td>
+<td>有官方加持了<br />印象最深的是最后的朱日和。</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>盛世妆娘</td>
+<td>2018.7.24</td>
+<td>IMAGINEER<br />江通</td>
+<td>企鹅影视</td>
+<td>陈群</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />荔箫《盛世妆娘》</td>
+<td>闫培然</td>
+<td>小旭音乐-邓铮</td>
+<td>看OP感觉很一般</td>
+<td></td>
+</tr>
+<tr>
+<td>末日曙光</td>
+<td></td>
+<td>七瞳映画</td>
+<td>企鹅影视</td>
+<td>谭均文</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">小说改<br />非天夜翔《末日曙光》</td>
+<td>吴磊<br />边江</td>
+<td>林彦汝</td>
+<td>可惜了领声和边工</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="剧集版-3D"><a href="#剧集版-3D" class="headerlink" title="剧集版 3D"></a>剧集版 3D</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>动画名</th>
+<th>首播日期</th>
+<th>制作方</th>
+<th>出品方</th>
+<th>导演</th>
+<th style="text-align:center">原创</th>
+<th style="text-align:center">改编</th>
+<th>配导</th>
+<th>音导</th>
+<th>补充</th>
+<th>个人喜好</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>勇者大冒险 第一季</td>
+<td>2015.3.31</td>
+<td>中影年年</td>
+<td>腾讯动漫<br />像素软件</td>
+<td>黄海涛</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">游戏改<br />《勇者大冒险》</td>
+<td>肯定是音熊的</td>
+<td></td>
+<td>非常不容易，建模也不是现在稍显同质化的美型风，尤其是配角极具特色，场景放在现在看虽然建模精度低，但是却能明显看出来用心<br />剧情也非常有意思！<br />我的中影年年啊！！！</td>
+<td>★★★★★<br />★★★★★</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="剧场版-2D"><a href="#剧场版-2D" class="headerlink" title="剧场版 2D"></a><strong>剧场版 2D</strong></h3><p>（暂时先不统计）</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>动画名</th>
+<th>上映日期</th>
+<th>制作方</th>
+<th>出品方</th>
+<th>导演</th>
+<th>原创</th>
+<th>改编</th>
+<th>配导</th>
+<th>音导</th>
+<th>补充</th>
+<th>个人喜好</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>魁拔1：十万火急</td>
+<td>2011.7.8</td>
+<td></td>
+<td></td>
+<td></td>
+<td>○</td>
+<td>×</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>魁拔3：战神崛起</td>
+<td>2014.10.1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>○</td>
+<td>×</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>制作公司</strong>：</p>
+<p>视美精典/<strong>视美影业</strong>：北京视美精典影业有限公司，家大业大，2D之神（我心中），在重庆发家，大部队也在重庆</p>
+<p>彩色铅笔：重庆彩色铅笔动漫设计有限责任公司，视美一些员工2013年分出去的，但因为是原画师独立出去的，感觉改编作的编剧和节奏上目前还不太如视美</p>
+<p>铅元素：重庆铅元素文化传播有限公司，由彩色铅笔员工2015年离开后创立，和绘梦有大JQ</p>
+<p><strong>大火鸟</strong>：广州大火鸟文化传媒有限公司，前身烤鸡鸡动画，我个人感觉大火鸟非常有作画情结，总是在找机会秀作画做打戏画方块（滑稽</p>
+<p><strong>好传</strong><del><strong>（NiceBoat）</strong></del>：天津市好传文化传播有限公司，对我来说，视美可能是商业作之神，好传则是原创之光，颇有骨头社的风气（<del>有钱就去作死</del>）。<a href="http://www.nbacg.com/index/footsteps"  target="—_blank">官网的足迹介绍</a>，看着就很热血，<a href="https://www.sohu.com/a/210149776_141927" target="_blank">老板的一篇介绍</a>也推荐看看，其中关于为何转到天津那段就感觉很真诚，然后还有一处他离开北京手冢治虫动画公司那段印象比较深：“<em>公司的前辈中有很多是来自河北省张家口的农民，画了大半辈子，每天重复做着同样的事情。‘日本人不会让你得到提升，我怕自己再画下去就和老前辈一样了，干了半年赶紧溜了。’</em>”，中国动画能发展进步，和每一位为之奋斗的动画人密不可分。顺便原来大理寺的古建筑教授是因为老板就是天津大学建筑学院的呀233333</p>
+<p>福煦影视：上海福煦影视文化投资有限公司，2D中日合作，比较拉跨，3D看脸，上限挺高，下限也挺低。和绘梦有点像，主打前期，话说是上影厂的大佬创办的，但是2D真是……</p>
+<p>寒木春华：北京寒木春华动画技术有限公司，前身为罗小黑战记工作室，21年9月底搬到天津，天津又有一家特色的2D动画公司了~</p>
+<p>洛水花原：前身为王昕导演的菊堂工作室，2013年创建，2018年品牌化，2020年10月王昕出走绘梦后独立，腾讯也放手绘梦入股洛水花原。（然后绘梦另一半被阿b入股，现在绘梦已成为阿b全资子公司，<del>正式告别包工头生活</del>）</p>
+<p>上美影：上海美术电影制片厂，老大佬了。</p>
+<p>震雷：上海震雷文化传播有限公司，七灵石分出去的一家</p>
+<p>方方土：北京方方土动漫科技有限公司，和下边有JQ</p>
+<p>知行合一：长春知行合一动漫有限公司，和上边有JQ</p>
+<p><strong>澜映画</strong>：深圳市澜映画动画制作有限公司</p>
+<p>青青树：北京青青树动漫科技有限公司</p>
+<p>炫酷文化：苏州炫酷文化传播有限公司</p>
+<p>树形图：南京树形图动漫设计有限公司</p>
+<p>江通：江通动画股份有限公司</p>
+<p>七瞳：浙江七瞳映画文化传媒有限公司</p>
+<p><strong>出品方</strong>：</p>
+<p>腾讯动漫：深圳市腾讯动漫有限公司</p>
+<p>腾讯视频：深圳市腾讯斐泰科技有限公司</p>
+<p>企鹅影视：上海腾讯企鹅影视文化传播有限公司</p>
+<p>动漫堂：天津动漫堂艺术发展有限公司</p>
+<p>阅文集团&amp;阅文动漫：上海阅文信息技术有限公司</p>
+<p>东申影业：东申（上海）影业有限公司</p>
+<p>bilibili：上海幻电信息科技有限公司</p>
+<p>视美影业：北京视美精典影业有限公司</p>
+<p>武汉唯道：武汉唯道科技有限公司</p>
+<p>南派泛娱：南派泛娱有限公司</p>
+<p>菠萝包轻小说：广州轻阅网络科技有限公司</p>
+<p>分子互动：北京分子互动文化传播有限公司</p>
+<p>天闻角川：广州天闻角川动漫有限公司</p>
+<p>小疯文化：广州小疯文化传播有限公司</p>
+<p>啊哈娱乐：啊哈娱乐（上海）有限公司</p>
+<p>天美工作室群：腾讯科技（深圳）有限公司</p>
+<p>王者荣耀：深圳市腾讯计算机系统有限公司</p>
+<p>ACFUN：北京弹幕网络科技有限公司</p>
+<p>彼岸天文化：彼岸天（北京）文化有限公司</p>
+<p>上影厂：上海美术电影制片厂有限公司</p>
+<p>大酺文化：北京大酺文化传媒有限公司</p>
+<p>豚首娱乐：成都豚首天帅文化传媒有限公司</p>
+<p>蜜枝科技：北京猴啦科技有限公司</p>
+<p>七灵石：七翎石文化传媒（上海）有限公司</p>
+<p>米哈游：上海米哈游网络科技股份有限公司</p>
+<p>翼下之风：厦门翼下之风动漫科技有限公司</p>
+<p>才贤文化：上海才贤文化发展有限公司</p>
+]]></content>
+      <categories>
+        <category>动画</category>
+      </categories>
+      <tags>
+        <tag>中国动画</tag>
+      </tags>
+  </entry>
+</search>

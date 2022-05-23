@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="BLneP6LWaguCRi2maU-e9VKPRifNH5lkjOc0QnYCjkg">
+  <meta name="msvalidate.01" content="A3849444E0DE82F95E1181FD7B96F868">
+  <meta name="baidu-site-verification" content="1wuqBI6z8B">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Arial:300,300italic,400,400italic,700,700italic%7CZCOOL+XiaoWei:300,300italic,400,400italic,700,700italic%7CMacondo:300,300italic,400,400italic,700,700italic%7CMa+Shan+Zheng:300,300italic,400,400italic,700,700italic%7CPT+Serif:300,300italic,400,400italic,700,700italic%7CNoto+Serif+Japanese:300,300italic,400,400italic,700,700italic%7CNoto+Serif+SC:300,300italic,400,400italic,700,700italic%7CRoboto:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.choutse.cn","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"right","width":240,"display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":{"livere":{"order":-1}},"activeClass":"livere"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"bounceIn","post_header":"fadeInDown","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="0.远古时期的忘掉了…… 0.1.这个是next的网址QAQ: https:&#x2F;&#x2F;theme-next.js.org&#x2F; 0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。 使用了自己的域名，更新后页面找不到github pages。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="建站过程中遇到的一些问题的总结">
+<meta property="og:url" content="https://www.choutse.cn/2022/05bfdf9581.html">
+<meta property="og:site_name" content="筹策">
+<meta property="og:description" content="0.远古时期的忘掉了…… 0.1.这个是next的网址QAQ: https:&#x2F;&#x2F;theme-next.js.org&#x2F; 0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。 使用了自己的域名，更新后页面找不到github pages。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-02T11:44:17.000Z">
+<meta property="article:modified_time" content="2022-05-22T00:45:04.215Z">
+<meta property="article:author" content="zcxake">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://www.choutse.cn/2022/05bfdf9581.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.choutse.cn/2022/05bfdf9581.html","path":"2022/05bfdf9581.html","title":"建站过程中遇到的一些问题的总结"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>建站过程中遇到的一些问题的总结 | 筹策</title>
+  
+
+
+
+
+<!--pjax：防止跳转页面音乐暂停-->
+<script src="https://gcore.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="筹策" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">筹策</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">善数，不用筹策</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签儿<span class="badge">10</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>存档<span class="badge">12</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>本站检索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%EF%BC%8C%E6%9B%B4%E6%96%B0%E5%90%8E%E9%A1%B5%E9%9D%A2%E6%89%BE%E4%B8%8D%E5%88%B0github-pages%E3%80%82"><span class="nav-number">1.</span> <span class="nav-text">使用了自己的域名，更新后页面找不到github pages。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8next%E4%B8%BB%E9%A2%98%EF%BC%8C%E5%87%BA%E7%8E%B0-extends-%E2%80%98-layout-swig%E2%80%99-%E7%AD%89%E7%AD%89"><span class="nav-number">2.</span> <span class="nav-text">使用next主题，出现% extends ‘_layout.swig’ %等等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E4%B8%8B%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE%E5%87%BA%E7%8E%B0Cannot-GET-tags-20"><span class="nav-number">3.</span> <span class="nav-text">主题下创建标签出现Cannot GET &#x2F;tags&#x2F;%20&#x2F;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%83%B3%E8%A6%81%E6%B7%BB%E5%8A%A0%E6%AD%8C%E5%8D%95%E3%80%82"><span class="nav-number">4.</span> <span class="nav-text">想要添加歌单。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0sitemap%EF%BC%8C%E7%BD%91%E7%AB%99%E5%9C%B0%E5%9B%BE"><span class="nav-number">5.</span> <span class="nav-text">添加sitemap，网站地图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%8C%E6%9C%9B%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8D%E6%B8%B2%E6%9F%93"><span class="nav-number">6.</span> <span class="nav-text">希望某些文件夹不渲染</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#next%E4%B8%BB%E9%A2%98%E5%81%B6%E5%B0%94%E6%89%93%E5%BC%80%E4%BC%9A%E5%8F%98%E6%88%90%E7%A9%BA%E7%99%BD%EF%BC%882022-5-20%EF%BC%89next-8"><span class="nav-number">7.</span> <span class="nav-text">next主题偶尔打开会变成空白（2022.5.20）next 8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%AF%B9%E5%85%AC%E5%BC%8F%E7%9A%84%E6%94%AF%E6%8C%81"><span class="nav-number">8.</span> <span class="nav-text">添加对公式的支持</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B0%B7%E6%AD%8C%E5%AD%97%E4%BD%93%E8%AE%BF%E9%97%AE%E4%B8%8D%E7%A8%B3%E5%AE%9A%EF%BC%88%E5%8F%8A%E5%90%84%E9%95%9C%E5%83%8F%E7%AB%99"><span class="nav-number"></span> <span class="nav-text">谷歌字体访问不稳定（及各镜像站</span></a></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="zcxake"
+      src="/images/redface.jpg">
+  <p class="site-author-name" itemprop="name">zcxake</p>
+  <div class="site-description" itemprop="description">天行健，君子以自强不息；地势坤，君子以厚德载物</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">存档</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签儿</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/1484336" title="我的阿b → https:&#x2F;&#x2F;space.bilibili.com&#x2F;1484336" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>我的阿b</a>
+      </span>
+  </div>
+
+
+<!-- require APlayer -->
+	<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+	<script src="https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS-->
+
+<script src="https://gcore.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--playlist外链地址-->   
+<meting-js
+           server="netease"
+           type="playlist" 
+           id="68803128"
+		   autoplay="true"
+           mini="false"
+		   fixed="false"
+           list-folded="true"
+           volume="0.2"
+           theme="#FADFA3"
+           order="random"
+           loop="all"
+           preload="auto"
+           lrc-type="1"
+           mutex="true">
+</meting-js>
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.choutse.cn/2022/05bfdf9581.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/redface.jpg">
+      <meta itemprop="name" content="zcxake">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="筹策">
+      <meta itemprop="description" content="天行健，君子以自强不息；地势坤，君子以厚德载物">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="建站过程中遇到的一些问题的总结 | 筹策">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          建站过程中遇到的一些问题的总结
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">创建</span>
+
+      <time title="创建时间：2022-05-02 19:44:17" itemprop="dateCreated datePublished" datetime="2022-05-02T19:44:17+08:00">2022-05-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新</span>
+      <time title="修改时间：2022-05-22 08:45:04" itemprop="dateModified" datetime="2022-05-22T08:45:04+08:00">2022-05-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%BD%91%E7%AB%99/" itemprop="url" rel="index"><span itemprop="name">网站</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>5.9k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长约">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长约 &asymp;</span>
+      <span>5 分</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>0.远古时期的忘掉了……</p>
+<p>0.1.这个是next的网址QAQ: <a target="_blank" rel="noopener" href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。</p>
+<h3 id="使用了自己的域名，更新后页面找不到github-pages。"><a href="#使用了自己的域名，更新后页面找不到github-pages。" class="headerlink" title="使用了自己的域名，更新后页面找不到github pages。"></a>使用了自己的域名，更新后页面找不到github pages。</h3><span id="more"></span>
+<p>hexo d后仓库被强行覆盖，原先的CNAME就没有了。<br>在source文件夹里加一个CNAME再更新就好了。<br>CNAME里填写自己的域名名字。</p>
+<h3 id="使用next主题，出现-extends-‘-layout-swig’-等等"><a href="#使用next主题，出现-extends-‘-layout-swig’-等等" class="headerlink" title="使用next主题，出现% extends ‘_layout.swig’ %等等"></a>使用next主题，出现% extends ‘_layout.swig’ %等等</h3><p>hexo在5.后删除了swig，需要自己手动安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-renderer-swig</span><br></pre></td></tr></table></figure>
+<h3 id="主题下创建标签出现Cannot-GET-tags-20"><a href="#主题下创建标签出现Cannot-GET-tags-20" class="headerlink" title="主题下创建标签出现Cannot GET /tags/%20/"></a>主题下创建标签出现Cannot GET /tags/%20/</h3><p>将配置文件中||后的空格删掉（竟然是自带的<br>home: /||home这种形式就没问题了。</p>
+<h3 id="想要添加歌单。"><a href="#想要添加歌单。" class="headerlink" title="想要添加歌单。"></a>想要添加歌单。</h3><p>参考了很多不同站点的做法，其实大同小异。<br>最后发现还是去官网最快。<br>但是没能将云音乐红心歌单加进来还是不太开心，metingjs没解析出来。<br>aplayer：<a target="_blank" rel="noopener" href="https://aplayer.js.org/#/zh-Hans/?id=%E5%85%A5%E9%97%A8">https://aplayer.js.org/#/zh-Hans/?id=%E5%85%A5%E9%97%A8</a><br>MetingJS：<a target="_blank" rel="noopener" href="https://github.com/metowolf/MetingJS">https://github.com/metowolf/MetingJS</a><br>首先根据APlayer教程安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install aplayer --save</span><br></pre></td></tr></table></figure>
+<p>然后到主题配置文件_config.yml改custom_file_path:<br>将head和sidebar加上（也就是去掉前边的#）<br>同时分别到hexo下source/_data里新建这两个njk文件</p>
+<p>siderbar.njk里的内容直接参考MeetingJS主页的教程就好了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- require APlayer --&gt;</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;!-- require MetingJS --&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;meting-js</span><br><span class="line">	server=<span class="string">&quot;netease&quot;</span></span><br><span class="line">	<span class="built_in">type</span>=<span class="string">&quot;playlist&quot;</span></span><br><span class="line">	id=<span class="string">&quot;3744805&quot;</span>&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br></pre></td></tr></table></figure>
+<p>meting-js里的参数除了这三个还有APlayer里的，反正具体看官网吧，我这里没必要多复制了。<br>上述是加云音乐的，还有藤子，酷狗，虾米，百度的可以改。</p>
+<p>具体来说就是APlayer负责播放器的部分，MetingJS负责解析各大网站id。<br>但是autoplay真的能autoplay吗。→发现是浏览器限制了，唔，也好吧</p>
+<p>最后在head.njk里写上</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--pjax：防止跳转页面音乐暂停--&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>可以跨页面放歌。<br>接着到主题配置文件_config.yml里把pjax改为true就好了。</p>
+<h3 id="添加sitemap，网站地图"><a href="#添加sitemap，网站地图" class="headerlink" title="添加sitemap，网站地图"></a>添加sitemap，网站地图</h3><p>安装搜索引擎插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save </span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+<p>在站点配置文件中把url改为自己的域名</p>
+<p>hexo cl -g后public会生成sitemap和baidusitemap两个xml文件</p>
+<p>分别到谷歌、bing站点地图输入 域名/sitemap.xml</p>
+<p>百度是专用的 域名/baidusitemap.xml</p>
+<p><strong>百度还可以手动提交</strong>：</p>
+<p>安装插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
+<p>在站点配置文件添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 3 ## 提交最新的链接数量</span><br><span class="line">  host: 域名</span><br><span class="line">  token: 在百度站长平台看</span><br><span class="line">  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
+<p>到<a target="_blank" rel="noopener" href="https://ziyuan.baidu.com/linksubmit/">普通收录_加快网站内容抓取，快速提交数据工具_站长工具_网站支持_百度搜索资源平台 (baidu.com)</a>看自己的host和token</p>
+<p>在站点配置文件更改deploy：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">      - type: git</span><br><span class="line">        repo: git@github.com:zcxake/zcxake.github.io.git</span><br><span class="line">        branch: master</span><br><span class="line">      - type: baidu_url_submitter</span><br></pre></td></tr></table></figure>
+<p>注意repo和branch的缩进</p>
+<p>这样以后hexo d的时候就自动提交url到百度了。<br>更新：但是后来发现这个baidu_url_submit可能会导致一些问题，hexo s后出现warning，虽然对提交后的成品网页没影响，但是无法预览也很麻烦，所以把nodejs退到了12……</p>
+<h3 id="希望某些文件夹不渲染"><a href="#希望某些文件夹不渲染" class="headerlink" title="希望某些文件夹不渲染"></a>希望某些文件夹不渲染</h3><p>到站点配置文件检索skip，在skip_render后加上想不被渲染的，可使用glob表达式来匹配路径</p>
+<p>如我这里的是：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Directory</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: :lang</span><br><span class="line">skip_render: &quot;_ing/**&quot;</span><br></pre></td></tr></table></figure>
+<p>表示source/_ing/里的所有东西都不会被渲染</p>
+<h3 id="next主题偶尔打开会变成空白（2022-5-20）next-8"><a href="#next主题偶尔打开会变成空白（2022-5-20）next-8" class="headerlink" title="next主题偶尔打开会变成空白（2022.5.20）next 8"></a>next主题偶尔打开会变成空白（2022.5.20）next 8</h3><p>先甩上参考：<br><a target="_blank" rel="noopener" href="https://jnssd.com/2021/12/21/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1hexo-next%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%A9%BA%E7%99%BD%E7%9A%84%E6%83%85%E5%86%B5/">感谢分享</a><br>用同样的思路发现我也是这个原因，因为不太懂所以还是上<a href= "https://theme-next.js.org/docs/advanced-settings/vendors.html?highlight=vendors">next theme官网vendors下</a>瞅了一下，直接复制翻译一下好了，反正我是看这个搞定的。</p>
+<blockquote>
+<p>plugins: jsdelivr is used to set how to load the third-party plugins, e.g. anime.js. Third-party plugins are loaded from jsDelivr CDN by default.</p>
+<p>And we also provide other optional CDNs, including the famous UNPKG and CDNJS. These CDN providers are chosen to deliver our third-party plugins because they are fast and reliable. Set plugins to unpkg or cdnjs to load them from different CDN provider.</p>
+<p>Particularly, if you are a Chinese blogger or most of your visits come from China, please note that the CDNJS is blocked in some parts of China, don’t use it as your CDN provider.</p>
+<p>If your would like to load all third-party plugins from your site, please set plugins to local and install the @next-theme/plugins package: <a target="_blank" rel="noopener" href="https://github.com/next-theme/plugins">https://github.com/next-theme/plugins</a></p>
+</blockquote>
+<table border="1">
+<tr>
+  <td>plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.js）。<br>
+  但我们也留了其他选项，比如著名的unpkg和cdnjs，选择这几个因为他们可靠且迅速，设置一个你想用的吧。<br>
+但是，如果您老在中国或者你访问者大多数在中国的话，注意cdnjs在中国部分地区禁了，谨慎选用。<br>
+<i><span class="heimu">虽然官网这么写了，但是实测是jsdelivr不稳定，另外两个可用，反正这种瞬息万变的东西自己看情况吧</span></i><br>
+但你要是想从自己网站加载第三方插件的话，把plugins项设置local然后安装@next-theme/plugins package: https://github.com/next-theme/plugins
+</td>
+</tr>
+</table>
+
+
+<blockquote>
+<p>Custom CDN URLs<br>Sometimes you may need to use CDNs other than jsdelivr, unpkg or cdnjs. For example, users can get faster loading speed in certain areas using the mirror site of jsDelivr.</p>
+<p>To enable custom CDN URL, you need to set internal: custom and / or plugins: custom in the vendors section, and then specify a CDN URL with the custom_cdn_url option.</p>
+<p>Remember to use the HTTPS protocol of CDN links when you enable HTTPS on your site.</p>
+</blockquote>
+<table border="1">
+<tr>
+  <td>自定义CDN链接<br>
+有时候，或许上边三个满足不了你，比如在某些特定的地方用JSDelivr的镜像站会快一些。
+<br>
+这时候你需要将internal和/或plugins设为custom，具体看你情况，然后填上底下的custom_cdn_url。
+<br>
+如果你的网站开启了HTTPS协议注意也要用CDN链接的HTTPS协议。</td>
+</tr>
+</table>
+
+<hr>
+<p>我目前是先改成unpkg了，如果之后还是经常空白就换成镜像站，还是不行的话就本地吧。</p>
+<h3 id="添加对公式的支持"><a href="#添加对公式的支持" class="headerlink" title="添加对公式的支持"></a>添加对公式的支持</h3><p>完全参考了<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45511189/article/details/115798563">这一篇文章</a><br>完全可行，但以防万一给自己备一份吧：</p>
+<p>1.在hexo目录下使用下面的命令查看你是否已经安装了hexo-math插件<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-math</span><br></pre></td></tr></table></figure><br>empty就是没有，出现版本号就是装了<br>卸载之：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure><br>2.安装hexo-filter-mathjax：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-mathjax --save</span><br></pre></td></tr></table></figure><br>检查是否安装成功：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-filter-mathjax</span><br></pre></td></tr></table></figure><br>显示了hexo-filter-mathjax版本号则说明安装成功。<br>安装成功后，进行一些全局配置，打开hexo目录下的_config.yml文件，在最后面添加如下的代码：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">  tags: none # or &#x27;ams&#x27; or &#x27;all&#x27;</span><br><span class="line">  single_dollars: true # enable single dollar signs as in-line math delimiters</span><br><span class="line">  cjk_width: 0.9 # relative CJK char width</span><br><span class="line">  normal_width: 0.6 # relative normal (monospace) width</span><br><span class="line">  append_css: true # add CSS to pages rendered by MathJax</span><br><span class="line">  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span><br></pre></td></tr></table></figure><br>3.hexo-math默认的公式渲染器是hexo-renderer-marked，它和markdown的语法有冲突，我们将其卸载，查看是否安装了hexo-renderer-marked公式渲染器：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-renderer-marked</span><br></pre></td></tr></table></figure><br>如果安装了将其卸载：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked  --save</span><br></pre></td></tr></table></figure><br>然后安装一个新的公式渲染器，叫做hexo-renderer-kramed，它对hexo-renderer-marked进行了改进，在hexo目录下输入下面的命令安装：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure><br>检查hexo-renderer-kramed是否安装成功：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-renderer-kramed</span><br></pre></td></tr></table></figure><br>4.打开打开hexo主目录下的这个文件：\node_modules\kramed\lib\rules\inline.js，然后修改下面的规则（大家最好不要删除原代码，只是将其注释掉）：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">//修改为：</span><br><span class="line">escape: /^\\([`*\[\]()#$+\-.!_&gt;])/,</span><br></pre></td></tr></table></figure><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">//修改为</span><br><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br></pre></td></tr></table></figure><br>保存并退出。<br>5.最后，打开next主题目录下的_config.yml，开启对mathjax的支持，设置为true。<br>6.行间输入是<script type="math/tex">公式内容</script>，行内公示是$公式内容$<br>7.某篇文章不想渲染公式就在md文件开头加上：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mathjax: false</span><br></pre></td></tr></table></figure></p>
+<h2 id="谷歌字体访问不稳定（及各镜像站"><a href="#谷歌字体访问不稳定（及各镜像站" class="headerlink" title="谷歌字体访问不稳定（及各镜像站"></a>谷歌字体访问不稳定（及各镜像站</h2><p>各种不稳定的问题嗯……<br>感谢<a target="_blank" rel="noopener" href="https://u.sb/css-cdn/。">https://u.sb/css-cdn/。</a><br>next默认的是<a href="https://fonts.googleapis.com，然后目前有个镜像可以用，在host改成自定义的：https://fonts.loli.net">https://fonts.googleapis.com，然后目前有个镜像可以用，在host改成自定义的：https://fonts.loli.net</a><br>或者external改成false，用自己系统的字体，我目前是这样的。</p>
+<p>这里要多提一嘴镜像站了，避免以后又有啥不能使的可以替换：<br>CDNJS：原本的：cdnjs.cloudflare.com，可用替换：cdnjs.loli.net<br>unpkg可作为jsdelivr的替换用</p>
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/05a70c3382.html" rel="prev" title="俄语单词？">
+                  <i class="fa fa-chevron-left"></i> 俄语单词？
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/05f71bb376.html" rel="next" title="获取阿b的表情">
+                  获取阿b的表情 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-livere">livere</a></li>
+            <li class="tab"><a href="#comment-gitalk">gitalk</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane livere" id="comment-livere">
+              <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81NjQ1MC8zMjkxMw=="></div>
+            </div>
+            <div class="tab-pane gitalk" id="comment-gitalk">
+              <div class="comments gitalk-container"></div>
+            </div>
+        </div>
+      </div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-z"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zcxake | 筹策</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">26k</span>
+  </span>
+</div><script color="255,250,250" opacity="0.9" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("2/1/2022 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@next-theme/pjax@0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://unpkg.com/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://unpkg.com/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk@1.7.2/dist/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"zcxake","repo":"zcxake.github.io","client_id":"8ce4c7328a10af78aa59","client_secret":"f7c542af69be056a31e57fc1f632386c75486ffd","admin_user":"zcxake","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://unpkg.com/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"7fad812ca2afec7f2edb59a35bf054b2"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+<script src="/js/third-party/comments/livere.js"></script>
+
+
+
+</body>
+</html>
+
+
