@@ -3178,7 +3178,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  z-index: -1;
 }
 .header-inner {
   opacity: 1;

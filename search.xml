@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/014a17b156.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Endnote 20 自定义输出类型</title>
     <url>/2022/058897aef5.html</url>
     <content><![CDATA[<p>想要在PPT里插入引用，Endnote的那些output styles对PPT来说感觉都太长了，想说自己改一个，结果网上发现旧版x9的方法比较多，入口在编辑下的输出类型，但是Endnote20后改版挺大的，这个位置木有了，发现新的位置在tools工具下，新建一个就好了。<br>目前先设置了Journal杂志的，毕竟一般都这个，有其他的用到了再改喽：<br><span id="more"></span><br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Author. |Title. |Journal. |Year. </span><br></pre></td></tr></table></figure><br>然后Author Lists改成超过3个只显示1个，其他人是et al</p>
@@ -18,6 +13,11 @@
       <tags>
         <tag>小教程</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/014a17b156.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>HTML颜色名</title>
@@ -552,24 +552,6 @@
       </tags>
   </entry>
   <entry>
-    <title>礼貌用语等</title>
-    <url>/2022/058ae62fc9.html</url>
-    <content><![CDATA[<p>小短语<br>Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span><br>До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span><span id="more"></span><br>До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span><br>К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span><br>здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span><br>спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span><br>Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span><br>Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span><br>Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span><br>-М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span><br>-Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span><br>-Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span><br>Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span><br>-Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span><br>-Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span><br>Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span><br>Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span><br>Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span><br>Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span><br>-Ты зн<font color=Crimson>а</font>ешь,…….<span class="heimu">你知道吗</span><br>-Кон<font color=Crimson>е</font>чно,я знаю,……<span class="heimu">我当然知道</span><br>Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span><br>Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span><br>Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span><br>Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот …<span class="heimu">这个xx多少钱</span><br>пока́<span class="heimu">[副]回头见，暂时</span><br>Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
-<!--
-|  |  |  |  |  |
-|------    |------    |------|------|------|
-|  |  |  |  |  |
-<div title="ののの"><font color=Crimson></font></div>
--->
-]]></content>
-      <categories>
-        <category>Русский язык</category>
-      </categories>
-      <tags>
-        <tag>短句</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>调型与发音规则</title>
     <url>/2022/05f9b5f147.html</url>
     <content><![CDATA[<h3 id="发音"><a href="#发音" class="headerlink" title="发音"></a>发音</h3><ul>
@@ -593,6 +575,24 @@
       </categories>
       <tags>
         <tag>发音</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>礼貌用语等</title>
+    <url>/2022/058ae62fc9.html</url>
+    <content><![CDATA[<p>小短语<br>Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span><br>До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span><span id="more"></span><br>До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span><br>К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span><br>здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span><br>спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span><br>Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span><br>Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span><br>Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span><br>-М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span><br>-Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span><br>-Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span><br>Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span><br>-Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span><br>-Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span><br>Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span><br>Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span><br>Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span><br>Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span><br>-Ты зн<font color=Crimson>а</font>ешь,…….<span class="heimu">你知道吗</span><br>-Кон<font color=Crimson>е</font>чно,я знаю,……<span class="heimu">我当然知道</span><br>Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span><br>Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span><br>Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span><br>Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот …<span class="heimu">这个xx多少钱</span><br>пока́<span class="heimu">[副]回头见，暂时</span><br>Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
+<!--
+|  |  |  |  |  |
+|------    |------    |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>短句</tag>
       </tags>
   </entry>
   <entry>
