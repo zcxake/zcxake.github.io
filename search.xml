@@ -183,6 +183,12 @@
 <td style="text-align:center">тебе́<br>вам</td>
 <td style="text-align:center">ему<br>ей<br>им</td>
 </tr>
+<tr>
+<td style="text-align:center">四格</td>
+<td style="text-align:center">меня<br>нас</td>
+<td style="text-align:center">тебя<br>вас</td>
+<td style="text-align:center">его<br>её<br>их</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -302,6 +308,7 @@
 </tbody>
 </table>
 </div>
+<p>表示人和动物的名词叫动物名词，用кто提问；<br>其他名词是非动物名词（如大部分中性名词），用что提问。</p>
 <h3 id="名词的复数："><a href="#名词的复数：" class="headerlink" title="名词的复数："></a>名词的复数：</h3><div class="table-container">
 <table>
 <thead>
@@ -313,9 +320,14 @@
 </thead>
 <tbody>
 <tr>
-<td><font color=Crimson>辅音结尾的加ы</font><br><font color=Orange>гкхжчшщ结尾加и<br>йь结尾改и</font></td>
-<td><font color=Crimson>а结尾的改ы</font><br><font color=Orange>гакаха结尾а改и<br>яь结尾改и</font></td>
-<td>о结尾改а<br>е结尾改я<br>мя结尾改мена</td>
+<td><font color=Crimson>辅音结尾的加ы</font><br><font color=Orange>-г-к-х-ж-ч-ш-щ结尾加и<br>-й-ь结尾改и</font></td>
+<td><font color=Crimson>-а结尾的改ы</font><br><font color=Orange>-га-ка-ха结尾а改и<br>-я-ь结尾改и</font></td>
+<td>-о结尾改а<br>-е结尾改я<br>-мя结尾改мена</td>
+</tr>
+<tr>
+<td>стол-столы <br> врач-врачи <br> музей-музеи словапь-словали</td>
+<td>лампа-лампы<br>песня-пасни тетрадь-тетради</td>
+<td>окно-окна<br>море-моря</td>
 </tr>
 </tbody>
 </table>
@@ -420,31 +432,31 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>硬变化</td>
 <td>-ый/-ой</td>
 <td>-ая</td>
 <td>-ое</td>
 <td>-ые</td>
 </tr>
 <tr>
-<td></td>
-<td>-ий</td>
+<td>软变化</td>
+<td>-ний</td>
 <td>-яя</td>
 <td>-ее</td>
 <td>-ие</td>
 </tr>
 <tr>
-<td></td>
-<td>гкх-ий</td>
+<td>硬变化</td>
+<td>г/к/х-ий</td>
 <td>-ая</td>
 <td>-ое</td>
 <td>-ие</td>
 </tr>
 <tr>
-<td></td>
-<td>жчшщ-ий/-ой</td>
+<td>软变化</td>
+<td>ж/ч/ш/щ-ий<br>ж/ч/ш/щ-ой</td>
 <td>-ая</td>
-<td>-ое/-ее</td>
+<td>-ое<br>-ее</td>
 <td>-ие</td>
 </tr>
 <tr>
@@ -468,6 +480,24 @@
       </categories>
       <tags>
         <tag>语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>礼貌用语等</title>
+    <url>/2022/058ae62fc9.html</url>
+    <content><![CDATA[<p>小短语<br>Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span><br>До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span><span id="more"></span><br>До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span><br>К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span><br>здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span><br>спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span><br>Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span><br>Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span><br>Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span><br>-М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span><br>-Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span><br>-Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span><br>Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span><br>-Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span><br>-Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span><br>Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span><br>Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span><br>Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span><br>Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span><br>-Ты зн<font color=Crimson>а</font>ешь,…….<span class="heimu">你知道吗</span><br>-Кон<font color=Crimson>е</font>чно,я знаю,……<span class="heimu">我当然知道</span><br>Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span><br>Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span><br>Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span><br>Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот …<span class="heimu">这个xx多少钱</span><br>пока́<span class="heimu">[副]回头见，暂时</span><br>Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
+<!--
+|  |  |  |  |  |
+|------    |------    |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>短句</tag>
       </tags>
   </entry>
   <entry>
@@ -529,6 +559,8 @@
 <p>用什么看主语，但是比如：Мне нра́вятся э́ти стихи́<br>主语是э́ти стихи́，所以用第三人称复数。</p>
 <h3 id="从句"><a href="#从句" class="headerlink" title="从句"></a>从句</h3><h4 id="原因从句"><a href="#原因从句" class="headerlink" title="原因从句"></a>原因从句</h4><p>…，потому́ что，…</p>
 <h4 id="说明从句"><a href="#说明从句" class="headerlink" title="说明从句"></a>说明从句</h4><p>Я думаю, что…</p>
+<h3 id="动词命令式"><a href="#动词命令式" class="headerlink" title="动词命令式"></a>动词命令式</h3><p>用来表示命令、请求、建议、劝告等行为。<br>当对方是一个人或者朋友、家庭成员时，使用单数；<br>如：Антон, скажи!<br>当对方是两人以上或者虽然一个人但想表示礼貌时，使用复数。<br>如：Антон Ивановна, скажите!</p>
+<h3 id="句型"><a href="#句型" class="headerlink" title="句型"></a>句型</h3><p><strong>Кто он?</strong><br>询问人的职业、社会地位和职务等信息。<br> <strong>询问信息</strong><br> Вы знаето, …<br> Вы не знаето, …<br> 第二种带有否定语气词，更委婉。但两种问法回答是一样的。</p>
 <p><del>顺手写个作业吧</del>：<br>《走遍俄罗斯1》<br>P116-2</p>
 <ul>
 <li>-<font color=Crimson>Почему́ тебе́ нра́вятся э́ти стихи́?</font><br>-Мне нра́вятся э́ти стихи́, потому́ что это краси́вые стихи́.<br>-你为啥喜欢这首诗？<br>-因为它美。</li>
@@ -575,24 +607,6 @@
       </categories>
       <tags>
         <tag>发音</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>礼貌用语等</title>
-    <url>/2022/058ae62fc9.html</url>
-    <content><![CDATA[<p>小短语<br>Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span><br>До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span><span id="more"></span><br>До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span><br>К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span><br>здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span><br>спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span><br>Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span><br>Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span><br>Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span><br>-М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span><br>-Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span><br>-Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span><br>Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span><br>-Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span><br>-Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span><br>Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span><br>Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span><br>Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span><br>Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span><br>-Ты зн<font color=Crimson>а</font>ешь,…….<span class="heimu">你知道吗</span><br>-Кон<font color=Crimson>е</font>чно,я знаю,……<span class="heimu">我当然知道</span><br>Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span><br>Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span><br>Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span><br>Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот …<span class="heimu">这个xx多少钱</span><br>пока́<span class="heimu">[副]回头见，暂时</span><br>Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
-<!--
-|  |  |  |  |  |
-|------    |------    |------|------|------|
-|  |  |  |  |  |
-<div title="ののの"><font color=Crimson></font></div>
--->
-]]></content>
-      <categories>
-        <category>Русский язык</category>
-      </categories>
-      <tags>
-        <tag>短句</tag>
       </tags>
   </entry>
   <entry>
