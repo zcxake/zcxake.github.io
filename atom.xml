@@ -6,7 +6,7 @@
   <link href="https://www.choutse.cn/atom.xml" rel="self"/>
   
   <link href="https://www.choutse.cn/"/>
-  <updated>2022-05-22T06:22:48.744Z</updated>
+  <updated>2022-05-30T06:26:22.808Z</updated>
   <id>https://www.choutse.cn/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>制作bongo cat的一些注意事项</title>
+    <link href="https://www.choutse.cn/2022/0530cbe1d0.html"/>
+    <id>https://www.choutse.cn/2022/0530cbe1d0.html</id>
+    <published>2022-05-30T05:45:06.000Z</published>
+    <updated>2022-05-30T06:26:22.808Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;偶在首页上看到散人的bongo cat，感觉好可爱，然后还很有意思，就想自己做个。&lt;br&gt;最后做了个星瞳的，因为不会画画所以参考了一些星瞳已有的表情包，反正&lt;a href=&quot;https://www.bilibili.com/video/BV1jt4y1p7VG?spm_id_from=333.999.0.0&quot;&gt;成品&lt;/a&gt;感觉害挺可爱的。&lt;br&gt;不过过程中遇到了非常多的问题，其实也是因为软件相关教程比较少，自带教程也是点到即止，所以现在把自己的经验总结一下吧，官方教程里涉及到的就不会再提了。&lt;br&gt;&lt;a href=&quot;https://www.bilibili.com/read/readlist/rl191271&quot;&gt;原版软件&lt;/a&gt;在这里，找最新的版本去下载，看作者的意思马上就有新版了，这个教程出了也没啥意义其实2333333&lt;br&gt;</summary>
+    
+    
+    
+    <category term="创作" scheme="https://www.choutse.cn/categories/%E5%88%9B%E4%BD%9C/"/>
+    
+    
+    <category term="小教程" scheme="https://www.choutse.cn/tags/%E5%B0%8F%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML颜色名</title>
