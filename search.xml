@@ -588,6 +588,32 @@
       </tags>
   </entry>
   <entry>
+    <title>调型与发音规则</title>
+    <url>/2022/05f9b5f147.html</url>
+    <content><![CDATA[<h3 id="发音"><a href="#发音" class="headerlink" title="发音"></a>发音</h3><ul>
+<li><strong>1.</strong> о在非重音时弱化成а；</li>
+<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音；<br>如：рассказ中的з读成相应清辅音с,；<br>清浊对照的只有：<br>п-б<br>ф-в<br>т-д<br>к-г<br>с-з<br>ш-ж<span id="more"></span></li>
+<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化；<br>如：завтра中的в清化成ф；</li>
+<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊；<br>后者第一个字母为清辅音，则前者最后一个字母清化；<br>同理，后者浊，前者浊化；</li>
+<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
+<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
+</ul>
+<h3 id="调型"><a href="#调型" class="headerlink" title="调型"></a>调型</h3><p><strong>调型 1</strong> ：<br>用于陈述句：从调心元音开始降，调心后部低于调心前部；<br><strong>调型 2</strong> ：<br>用于有疑问词的疑问句：疑问词开始降调；<br><strong>调型 3</strong> ：<br>用于没有疑问词的疑问句：提问词的重音升调；<br><strong>调型 4</strong> ：<br>调型 3, а 调型 1.<br>转折疑问句：А это?<br><strong>调型 5</strong> ：<br>感叹句：Какая красивая девушка! </p>
+<!--
+|  |  |  |  |  |
+|------    |------    |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>发音</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>语法之类的吧</title>
     <url>/2022/0529d5bea5.html</url>
     <content><![CDATA[<h3 id="数字-属格"><a href="#数字-属格" class="headerlink" title="数字 属格"></a>数字 属格</h3><div class="table-container">
@@ -668,32 +694,6 @@
       </categories>
       <tags>
         <tag>语法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>调型与发音规则</title>
-    <url>/2022/05f9b5f147.html</url>
-    <content><![CDATA[<h3 id="发音"><a href="#发音" class="headerlink" title="发音"></a>发音</h3><ul>
-<li><strong>1.</strong> о在非重音时弱化成а；</li>
-<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音；<br>如：рассказ中的з读成相应清辅音с,；<br>清浊对照的只有：<br>п-б<br>ф-в<br>т-д<br>к-г<br>с-з<br>ш-ж<span id="more"></span></li>
-<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化；<br>如：завтра中的в清化成ф；</li>
-<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊；<br>后者第一个字母为清辅音，则前者最后一个字母清化；<br>同理，后者浊，前者浊化；</li>
-<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
-<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
-</ul>
-<h3 id="调型"><a href="#调型" class="headerlink" title="调型"></a>调型</h3><p><strong>调型 1</strong> ：<br>用于陈述句：从调心元音开始降，调心后部低于调心前部；<br><strong>调型 2</strong> ：<br>用于有疑问词的疑问句：疑问词开始降调；<br><strong>调型 3</strong> ：<br>用于没有疑问词的疑问句：提问词的重音升调；<br><strong>调型 4</strong> ：<br>调型 3, а 调型 1.<br>转折疑问句：А это?<br><strong>调型 5</strong> ：<br>感叹句：Какая красивая девушка! </p>
-<!--
-|  |  |  |  |  |
-|------    |------    |------|------|------|
-|  |  |  |  |  |
-<div title="ののの"><font color=Crimson></font></div>
--->
-]]></content>
-      <categories>
-        <category>Русский язык</category>
-      </categories>
-      <tags>
-        <tag>发音</tag>
       </tags>
   </entry>
   <entry>
@@ -1958,7 +1958,7 @@ based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定�
 </figure>
 
 
-<p>将结构梯度多层复合材料的原位$d_{33}-T$与其他热点无铅陶瓷系统对比（图3d），在$25-100°C$表现出优越的压电温度稳定性。尽管钛酸钡陶瓷有极高的压电性，但其居里温度过低导致在接近$100°C$时完全去极化。由于$T_C$较低，铌酸钠陶瓷出也报道过类似的现象。图3e进一步总结了在$25-100°C$下一些具有代表性的KNN陶瓷的压电变化率[$\Delta d_{33}=|(d_{33T}/d_{33RT})-1|*100%$]。可以看到已报道的传统KNN陶瓷总出现较大的$d_{33}$变化，而本工作的复合KNN陶瓷在室温下$d_{33}$约有330$pCN^{-1}$，在温度高达$100°C$时变化也低于$6%$。另外，对传感应用比较重要的品质因数$(d_{33}\times g_{33})也会得到极大改善（见图S7，支撑信息）。因此，新设计的KNN无铅陶瓷在对于温度稳定有较高要求的压电应用中有极大应用前景。</p>
+<p>将结构梯度多层复合材料的原位$d_{33}-T$与其他热点无铅陶瓷系统对比（图3d），在$25-100°C$表现出优越的压电温度稳定性。尽管钛酸钡陶瓷有极高的压电性，但其居里温度过低导致在接近$100°C$时完全去极化。由于$T_C$较低，铌酸钠陶瓷出也报道过类似的现象。图3e进一步总结了在$25-100°C$下一些具有代表性的KNN陶瓷的压电变化率[$\Delta d_{33}=|(d_{33T}/d_{33RT})-1|*100%$]。可以看到已报道的传统KNN陶瓷总出现较大的$d_{33}$变化，而本工作的复合KNN陶瓷在室温下$d_{33}$约有330$pCN^{-1}$，在温度高达$100°C$时变化也低于$6%$。另外，对传感应用比较重要的品质因数$(d_{33} \times g_{33})$也会得到极大改善（见图S7，支撑信息）。因此，新设计的KNN无铅陶瓷在对于温度稳定有较高要求的压电应用中有极大应用前景。</p>
 <p>作为铁电陶瓷重要特征之一，铁电畴与材料性能密切相关。铁电材料的畴结构对热激发非常活跃，导致对温度变化会引起性能变化。</p>
 <p>The temperature dependence of primitive domain indicates that the domain orientation will change with temperature, especially for micro- or nanosized domains, leading to a transition from microsized domains to macrosized domains (Figure S8, Supporting Information). </p>
 <p>In view of the important role of domains in temperature stability, the thermal evolution of the domain structure in each constituent of the multilayer composite is given in Figure  3f and Figure S9 in the Supporting Information, which was meas- ured from the cross-section of the composite.</p>
