@@ -25,10 +25,10 @@
     
     
     <summary type="html">&lt;p&gt;看文献真不是人能干的事儿，正好听到这首，发现歌词里好多不太常见的读音，索性打一下喽（过去是学累了抄歌词，现在是学累了打歌词嗯……&lt;/p&gt;
-&lt;font color=#eb507e&gt; それぞれの場所へ旅立っても
-&lt;br&gt;友達だ聞くまでもないじゃん
-&lt;br&gt;十人十色に輝いた日々が
-&lt;br&gt;胸張れと背中押す&lt;/font&gt;
+&lt;p&gt;&lt;font color=#eb507e&gt; それぞれの場所へ旅立っても&lt;br /&gt;
+&lt;br&gt;友達だ聞くまでもないじゃん&lt;br /&gt;
+&lt;br&gt;十人十色に輝いた日々が&lt;br /&gt;
+&lt;br&gt;胸張れと背中押す&lt;/font&gt;&lt;br /&gt;
 &lt;br&gt;</summary>
     
     
@@ -48,7 +48,10 @@
     <updated>2022-05-30T06:52:58.697Z</updated>
     
     
-    <summary type="html">&lt;p&gt;偶在首页上看到散人的bongo cat，感觉好可爱，然后还很有意思，就想自己做个。&lt;br&gt;最后做了个星瞳的，因为不会画画所以参考了一些星瞳已有的表情包，反正&lt;a href=&quot;https://www.bilibili.com/video/BV1jt4y1p7VG?spm_id_from=333.999.0.0&quot;&gt;成品&lt;/a&gt;感觉害挺可爱的。&lt;br&gt;不过过程中遇到了非常多的问题，其实也是因为软件相关教程比较少，自带教程也是点到即止，所以现在把自己的经验总结一下吧，官方教程里涉及到的就不会再提了。&lt;br&gt;&lt;a href=&quot;https://www.bilibili.com/read/readlist/rl191271&quot;&gt;原版软件&lt;/a&gt;在这里，找最新的版本去下载，看作者的意思马上就有新版了，这个教程出了也没啥意义其实2333333&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;偶在首页上看到散人的bongo cat，感觉好可爱，然后还很有意思，就想自己做个。&lt;br /&gt;
+最后做了个星瞳的，因为不会画画所以参考了一些星瞳已有的表情包，反正&lt;a href=&quot;https://www.bilibili.com/video/BV1jt4y1p7VG?spm_id_from=333.999.0.0&quot;&gt;成品&lt;/a&gt;感觉害挺可爱的。&lt;br /&gt;
+不过过程中遇到了非常多的问题，其实也是因为软件相关教程比较少，自带教程也是点到即止，所以现在把自己的经验总结一下吧，官方教程里涉及到的就不会再提了。&lt;br /&gt;
+&lt;a href=&quot;https://www.bilibili.com/read/readlist/rl191271&quot;&gt;原版软件&lt;/a&gt;在这里，找最新的版本去下载，看作者的意思马上就有新版了，这个教程出了也没啥意义其实2333333&lt;/p&gt;</summary>
     
     
     
@@ -67,8 +70,19 @@
     <updated>2022-05-22T06:22:48.744Z</updated>
     
     
-    <summary type="html">&lt;p&gt;网上蛮多的了，但是好多哦，参考起来好麻烦，整个自己喜欢的颜色吧&lt;br&gt;全部颜色名在这儿：&lt;a href=&quot;https://www.runoob.com/html/html-colornames.html&quot;&gt;https://www.runoob.com/html/html-colornames.html&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;紫色哒：&quot;&gt;&lt;a href=&quot;#紫色哒：&quot; class=&quot;headerlink&quot; title=&quot;紫色哒：&quot;&gt;&lt;/a&gt;&lt;font color=&quot;BlueViolet&quot;&gt;紫色哒：&lt;/font&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;&lt;font color=&quot;DarkMagenta&quot;&gt;DarkMagenta&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;font color=&quot;BlueViolet&quot;&gt;BlueViolet&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;font color=&quot;DarkOrchid&quot;&gt;DarkOrchid&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;font color=&quot;DarkViolet&quot;&gt;DarkViolet&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;font color=&quot;MediumSlateBlue&quot;&gt;MediumSlateBlue&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;font color=&quot;MediumPurple&quot;&gt;MediumPurple&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;font color=&quot;MediumOrchid&quot;&gt;MediumOrchid&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;font color=&quot;Orchid&quot;&gt;Orchid&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;font color=&quot;Plum&quot;&gt;Plum&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;font color=&quot;Lavender&quot;&gt;Lavender&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;网上蛮多的了，但是好多哦，参考起来好麻烦，整个自己喜欢的颜色吧&lt;br /&gt;
+全部颜色名在这儿：&lt;a href=&quot;https://www.runoob.com/html/html-colornames.html&quot;&gt;https://www.runoob.com/html/html-colornames.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;font-colorblueviolet紫色哒font&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#font-colorblueviolet紫色哒font&quot;&gt;&lt;/a&gt; &lt;font color=&quot;BlueViolet&quot;&gt;紫色哒：&lt;/font&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&quot;DarkMagenta&quot;&gt;DarkMagenta&lt;/font&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;font color=&quot;BlueViolet&quot;&gt;BlueViolet&lt;/font&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;font color=&quot;DarkOrchid&quot;&gt;DarkOrchid&lt;/font&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;font color=&quot;DarkViolet&quot;&gt;DarkViolet&lt;/font&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;font color=&quot;MediumSlateBlue&quot;&gt;MediumSlateBlue&lt;/font&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;font color=&quot;MediumPurple&quot;&gt;MediumPurple&lt;/font&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;font color=&quot;MediumOrchid&quot;&gt;MediumOrchid&lt;/font&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;font color=&quot;Orchid&quot;&gt;Orchid&lt;/font&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;font color=&quot;Plum&quot;&gt;Plum&lt;/font&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;font color=&quot;Lavender&quot;&gt;Lavender&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;</summary>
     
     
     
@@ -84,7 +98,7 @@
     <link href="https://www.choutse.cn/2022/05563bb361.html"/>
     <id>https://www.choutse.cn/2022/05563bb361.html</id>
     <published>2022-05-21T08:10:20.000Z</published>
-    <updated>2022-06-04T13:26:00.682Z</updated>
+    <updated>2022-06-05T03:46:57.252Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -118,7 +132,8 @@ based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定�
     <updated>2022-05-21T05:34:18.818Z</updated>
     
     
-    <summary type="html">&lt;p&gt;想要在PPT里插入引用，Endnote的那些output styles对PPT来说感觉都太长了，想说自己改一个，结果网上发现旧版x9的方法比较多，入口在编辑下的输出类型，但是Endnote20后改版挺大的，这个位置木有了，发现新的位置在tools工具下，新建一个就好了。&lt;br&gt;目前先设置了Journal杂志的，毕竟一般都这个，有其他的用到了再改喽：&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;想要在PPT里插入引用，Endnote的那些output styles对PPT来说感觉都太长了，想说自己改一个，结果网上发现旧版x9的方法比较多，入口在编辑下的输出类型，但是Endnote20后改版挺大的，这个位置木有了，发现新的位置在tools工具下，新建一个就好了。&lt;br /&gt;
+目前先设置了Journal杂志的，毕竟一般都这个，有其他的用到了再改喽：&lt;/p&gt;</summary>
     
     
     
@@ -137,7 +152,7 @@ based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定�
     <updated>2022-05-25T01:24:21.644Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;数字-属格&quot;&gt;&lt;a href=&quot;#数字-属格&quot; class=&quot;headerlink&quot; title=&quot;数字 属格&quot;&gt;&lt;/a&gt;数字 属格&lt;/h3&gt;&lt;div class=&quot;table-container&quot;&gt;
+    <summary type="html">&lt;h3 id=&quot;数字-属格&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#数字-属格&quot;&gt;&lt;/a&gt; 数字 属格&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -159,8 +174,7 @@ based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定�
 &lt;td&gt;复数属格 рубле́й&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;</summary>
+&lt;/table&gt;</summary>
     
     
     
@@ -203,7 +217,7 @@ based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定�
     <updated>2022-05-25T01:17:12.225Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;人称代词&quot;&gt;&lt;a href=&quot;#人称代词&quot; class=&quot;headerlink&quot; title=&quot;人称代词&quot;&gt;&lt;/a&gt;人称代词&lt;/h3&gt;&lt;div class=&quot;table-container&quot;&gt;
+    <summary type="html">&lt;h3 id=&quot;人称代词&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#人称代词&quot;&gt;&lt;/a&gt; 人称代词&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -239,8 +253,7 @@ based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定�
 &lt;td style=&quot;text-align:center&quot;&gt;его&lt;br&gt;её&lt;br&gt;их&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;</summary>
+&lt;/table&gt;</summary>
     
     
     
@@ -259,7 +272,9 @@ based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定�
     <updated>2022-05-20T17:19:01.580Z</updated>
     
     
-    <summary type="html">&lt;p&gt;小短语&lt;br&gt;Дав&lt;font color=Crimson&gt;а&lt;/font&gt;йте познак&lt;font color=Crimson&gt;о&lt;/font&gt;мимся.&lt;span class=&quot;heimu&quot;&gt;让我们认识一下。&lt;/span&gt;&lt;br&gt;До свид&lt;font color=Crimson&gt;а&lt;/font&gt;ния!&lt;span class=&quot;heimu&quot;&gt;再见！&lt;/span&gt;</summary>
+    <summary type="html">&lt;p&gt;小短语&lt;br /&gt;
+Дав&lt;font color=Crimson&gt;а&lt;/font&gt;йте познак&lt;font color=Crimson&gt;о&lt;/font&gt;мимся.&lt;span class=&quot;heimu&quot;&gt;让我们认识一下。&lt;/span&gt;&lt;br /&gt;
+До свид&lt;font color=Crimson&gt;а&lt;/font&gt;ния!&lt;span class=&quot;heimu&quot;&gt;再见！&lt;/span&gt;</summary>
     
     
     
@@ -278,9 +293,19 @@ based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定�
     <updated>2022-05-18T03:21:18.832Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;发音&quot;&gt;&lt;a href=&quot;#发音&quot; class=&quot;headerlink&quot; title=&quot;发音&quot;&gt;&lt;/a&gt;发音&lt;/h3&gt;&lt;ul&gt;
+    <summary type="html">&lt;h3 id=&quot;发音&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#发音&quot;&gt;&lt;/a&gt; 发音&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;1.&lt;/strong&gt; о在非重音时弱化成а；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2.&lt;/strong&gt; 浊辅音在结尾时读成相应的清辅音；&lt;br&gt;如：рассказ中的з读成相应清辅音с,；&lt;br&gt;清浊对照的只有：&lt;br&gt;п-б&lt;br&gt;ф-в&lt;br&gt;т-д&lt;br&gt;к-г&lt;br&gt;с-з&lt;br&gt;ш-ж</summary>
+&lt;li&gt;&lt;strong&gt;2.&lt;/strong&gt; 浊辅音在结尾时读成相应的清辅音；&lt;br /&gt;
+如：рассказ中的з读成相应清辅音с,；&lt;br /&gt;
+清浊对照的只有：&lt;br /&gt;
+п-б&lt;br /&gt;
+ф-в&lt;br /&gt;
+т-д&lt;br /&gt;
+к-г&lt;br /&gt;
+с-з&lt;br /&gt;
+ш-ж&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     
@@ -299,7 +324,7 @@ based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定�
     <updated>2022-05-22T00:44:06.609Z</updated>
     
     
-    <summary type="html">&lt;p&gt;我也不知道把单词打出来有卵用，但是先做做吧。&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;我也不知道把单词打出来有卵用，但是先做做吧。&lt;/p&gt;</summary>
     
     
     
@@ -315,14 +340,14 @@ based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定�
     <link href="https://www.choutse.cn/2022/05bfdf9581.html"/>
     <id>https://www.choutse.cn/2022/05bfdf9581.html</id>
     <published>2022-05-02T11:44:17.000Z</published>
-    <updated>2022-05-23T15:10:24.475Z</updated>
+    <updated>2022-06-05T07:11:19.752Z</updated>
     
     
     <summary type="html">&lt;p&gt;用的next8&lt;/p&gt;
 &lt;p&gt;0.远古时期的忘掉了……&lt;/p&gt;
 &lt;p&gt;0.1.这个是next的网址QAQ: &lt;a href=&quot;https://theme-next.js.org/&quot;&gt;https://theme-next.js.org/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。&lt;/p&gt;
-&lt;h3 id=&quot;使用了自己的域名，更新后页面找不到github-pages。&quot;&gt;&lt;a href=&quot;#使用了自己的域名，更新后页面找不到github-pages。&quot; class=&quot;headerlink&quot; title=&quot;使用了自己的域名，更新后页面找不到github pages。&quot;&gt;&lt;/a&gt;使用了自己的域名，更新后页面找不到github pages。&lt;/h3&gt;</summary>
+&lt;h3 id=&quot;使用了自己的域名更新后页面找不到github-pages&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#使用了自己的域名更新后页面找不到github-pages&quot;&gt;&lt;/a&gt; 使用了自己的域名，更新后页面找不到github pages。&lt;/h3&gt;</summary>
     
     
     
@@ -341,8 +366,10 @@ based ceramics）固有缺点就是压电系数$d_{33}$随温度变化不稳定�
     <updated>2022-05-16T05:39:27.698Z</updated>
     
     
-    <summary type="html">&lt;p&gt;方法来自知乎：&lt;a href=&quot;https://www.zhihu.com/question/275901829/answer/1574659804&quot;&gt;https://www.zhihu.com/question/275901829/answer/1574659804&lt;/a&gt;&lt;br&gt;不太用知乎所以还是转到自己的网站吧。&lt;/p&gt;
-&lt;p&gt;1.在登录的状态下访问&lt;a href=&quot;http://api.bilibili.com/x/emote/setting/panel?business=reply&quot;&gt;http://api.bilibili.com/x/emote/setting/panel?business=reply&lt;/a&gt; ，存储为emoji.json。&lt;br&gt;2.编写python脚本，保存为emoji.py在emoji.json目录下。&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;方法来自知乎：&lt;a href=&quot;https://www.zhihu.com/question/275901829/answer/1574659804&quot;&gt;https://www.zhihu.com/question/275901829/answer/1574659804&lt;/a&gt;&lt;br /&gt;
+不太用知乎所以还是转到自己的网站吧。&lt;/p&gt;
+&lt;p&gt;1.在登录的状态下访问http://api.bilibili.com/x/emote/setting/panel?business=reply ，存储为emoji.json。&lt;br /&gt;
+2.编写python脚本，保存为emoji.py在emoji.json目录下。&lt;/p&gt;</summary>
     
     
     

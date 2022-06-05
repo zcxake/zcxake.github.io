@@ -26,12 +26,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.choutse.cn","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"right","width":240,"display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":{"livere":{"order":-1}},"activeClass":"livere"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeInDown","post_header":"fadeInDown","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="偶在首页上看到散人的bongo cat，感觉好可爱，然后还很有意思，就想自己做个。最后做了个星瞳的，因为不会画画所以参考了一些星瞳已有的表情包，反正成品感觉害挺可爱的。不过过程中遇到了非常多的问题，其实也是因为软件相关教程比较少，自带教程也是点到即止，所以现在把自己的经验总结一下吧，官方教程里涉及到的就不会再提了。原版软件在这里，找最新的版本去下载，看作者的意思马上就有新版了，这个教程出了也没啥意">
+    <meta name="description" content="偶在首页上看到散人的bongo cat，感觉好可爱，然后还很有意思，就想自己做个。 最后做了个星瞳的，因为不会画画所以参考了一些星瞳已有的表情包，反正成品感觉害挺可爱的。 不过过程中遇到了非常多的问题，其实也是因为软件相关教程比较少，自带教程也是点到即止，所以现在把自己的经验总结一下吧，官方教程里涉及到的就不会再提了。 原版软件在这里，找最新的版本去下载，看作者的意思马上就有新版了，这个教程出了也">
 <meta property="og:type" content="article">
 <meta property="og:title" content="制作bongo cat的一些注意事项">
 <meta property="og:url" content="https://www.choutse.cn/2022/0530cbe1d0.html">
 <meta property="og:site_name" content="筹策">
-<meta property="og:description" content="偶在首页上看到散人的bongo cat，感觉好可爱，然后还很有意思，就想自己做个。最后做了个星瞳的，因为不会画画所以参考了一些星瞳已有的表情包，反正成品感觉害挺可爱的。不过过程中遇到了非常多的问题，其实也是因为软件相关教程比较少，自带教程也是点到即止，所以现在把自己的经验总结一下吧，官方教程里涉及到的就不会再提了。原版软件在这里，找最新的版本去下载，看作者的意思马上就有新版了，这个教程出了也没啥意">
+<meta property="og:description" content="偶在首页上看到散人的bongo cat，感觉好可爱，然后还很有意思，就想自己做个。 最后做了个星瞳的，因为不会画画所以参考了一些星瞳已有的表情包，反正成品感觉害挺可爱的。 不过过程中遇到了非常多的问题，其实也是因为软件相关教程比较少，自带教程也是点到即止，所以现在把自己的经验总结一下吧，官方教程里涉及到的就不会再提了。 原版软件在这里，找最新的版本去下载，看作者的意思马上就有新版了，这个教程出了也">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-30T05:45:06.000Z">
 <meta property="article:modified_time" content="2022-05-30T06:52:58.697Z">
@@ -56,7 +56,7 @@
 <!--pjax：防止跳转页面音乐暂停-->
 <script src="https://gcore.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
 
-<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<!--script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"--><!--/script-->
 
 <!--点击爆炸-->
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
@@ -162,7 +162,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%88%E6%95%B4%E4%BD%93%E6%8A%8A%E6%8E%A7%E5%90%A7"><span class="nav-number">1.</span> <span class="nav-text">先整体把控吧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AA%97%E5%8F%A3%E5%B0%BA%E5%AF%B8%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">窗口尺寸的设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#live2D%E9%87%8C%E8%AE%BE%E7%BD%AE%E5%A5%BD%E4%BA%86%EF%BC%8C%E4%BD%86%E6%98%AF%E5%AE%9E%E9%99%85%E4%B8%AD%E7%9C%8B%E4%B8%8D%E5%88%B0%E6%89%8B%E6%89%8B"><span class="nav-number">3.</span> <span class="nav-text">live2D里设置好了，但是实际中看不到手手</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%88%E6%95%B4%E4%BD%93%E6%8A%8A%E6%8E%A7%E5%90%A7"><span class="nav-number">1.</span> <span class="nav-text"> 先整体把控吧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AA%97%E5%8F%A3%E5%B0%BA%E5%AF%B8%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text"> 窗口尺寸的设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#live2d%E9%87%8C%E8%AE%BE%E7%BD%AE%E5%A5%BD%E4%BA%86%E4%BD%86%E6%98%AF%E5%AE%9E%E9%99%85%E4%B8%AD%E7%9C%8B%E4%B8%8D%E5%88%B0%E6%89%8B%E6%89%8B"><span class="nav-number">3.</span> <span class="nav-text"> live2D里设置好了，但是实际中看不到手手</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -305,7 +305,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>702</span>
+      <span>707</span>
     </span>
     <span class="post-meta-item" title="阅读时长约">
       <span class="post-meta-item-icon">
@@ -323,10 +323,23 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>偶在首页上看到散人的bongo cat，感觉好可爱，然后还很有意思，就想自己做个。<br>最后做了个星瞳的，因为不会画画所以参考了一些星瞳已有的表情包，反正<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1jt4y1p7VG?spm_id_from=333.999.0.0">成品</a>感觉害挺可爱的。<br>不过过程中遇到了非常多的问题，其实也是因为软件相关教程比较少，自带教程也是点到即止，所以现在把自己的经验总结一下吧，官方教程里涉及到的就不会再提了。<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/readlist/rl191271">原版软件</a>在这里，找最新的版本去下载，看作者的意思马上就有新版了，这个教程出了也没啥意义其实2333333<br><span id="more"></span></p>
-<h3 id="先整体把控吧"><a href="#先整体把控吧" class="headerlink" title="先整体把控吧"></a>先整体把控吧</h3><p>首先看文件夹，根目录中的<strong>config.json</strong>主要负责改属性，<strong>img</strong>中的三个文件夹分别对应三种模式。<br>最终显示的图层顺序是<strong>bg静图→keyboard文件夹→cat model(live2D)文件夹→hand文件夹</strong><br>那么问题就出来了，如果要用live2D，而且你的live2D里包括键盘，想通过keyboard文件夹里的图像来展示按键效果是不可能了，那就只能把按键效果整合到hand文件夹里的手上，结果就是keyboard文件夹空着就行。</p>
-<h3 id="窗口尺寸的设置"><a href="#窗口尺寸的设置" class="headerlink" title="窗口尺寸的设置"></a>窗口尺寸的设置</h3><p>在config.json里搜“window”，去更改“window_size”，改为自己图像的尺寸。<br>但是你自己打开试一下就会发现实际显示尺寸会小一些，我的做法是把bg的键盘图先改成自己的，然后到config.json里搜“l2d_correct”调整放大倍数，自己调调试试吧。</p>
-<h3 id="live2D里设置好了，但是实际中看不到手手"><a href="#live2D里设置好了，但是实际中看不到手手" class="headerlink" title="live2D里设置好了，但是实际中看不到手手"></a>live2D里设置好了，但是实际中看不到手手</h3><p>config.json中hand属性下边我当初为了方便，多打了几个[]，结果就是系统认为什么都不按也是按了，HandDown属性总是1……<br>删去多余的[]就好了……<br><br><br>目前就这些吧，反正这两点搞不懂还是挺影响制作的。</p>
+        <p>偶在首页上看到散人的bongo cat，感觉好可爱，然后还很有意思，就想自己做个。<br />
+最后做了个星瞳的，因为不会画画所以参考了一些星瞳已有的表情包，反正<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1jt4y1p7VG?spm_id_from=333.999.0.0">成品</a>感觉害挺可爱的。<br />
+不过过程中遇到了非常多的问题，其实也是因为软件相关教程比较少，自带教程也是点到即止，所以现在把自己的经验总结一下吧，官方教程里涉及到的就不会再提了。<br />
+<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/readlist/rl191271">原版软件</a>在这里，找最新的版本去下载，看作者的意思马上就有新版了，这个教程出了也没啥意义其实2333333</p>
+<span id="more"></span>
+<h3 id="先整体把控吧"><a class="markdownIt-Anchor" href="#先整体把控吧"></a> 先整体把控吧</h3>
+<p>首先看文件夹，根目录中的<strong>config.json</strong>主要负责改属性，<strong>img</strong>中的三个文件夹分别对应三种模式。<br />
+最终显示的图层顺序是<strong>bg静图→keyboard文件夹→cat model(live2D)文件夹→hand文件夹</strong><br />
+那么问题就出来了，如果要用live2D，而且你的live2D里包括键盘，想通过keyboard文件夹里的图像来展示按键效果是不可能了，那就只能把按键效果整合到hand文件夹里的手上，结果就是keyboard文件夹空着就行。</p>
+<h3 id="窗口尺寸的设置"><a class="markdownIt-Anchor" href="#窗口尺寸的设置"></a> 窗口尺寸的设置</h3>
+<p>在config.json里搜“window”，去更改“window_size&quot;，改为自己图像的尺寸。<br />
+但是你自己打开试一下就会发现实际显示尺寸会小一些，我的做法是把bg的键盘图先改成自己的，然后到config.json里搜“l2d_correct”调整放大倍数，自己调调试试吧。</p>
+<h3 id="live2d里设置好了但是实际中看不到手手"><a class="markdownIt-Anchor" href="#live2d里设置好了但是实际中看不到手手"></a> live2D里设置好了，但是实际中看不到手手</h3>
+<p>config.json中hand属性下边我当初为了方便，多打了几个[]，结果就是系统认为什么都不按也是按了，HandDown属性总是1……<br />
+删去多余的[]就好了……<br />
+<br><br />
+目前就这些吧，反正这两点搞不懂还是挺影响制作的。</p>
 
     </div>
 
@@ -385,7 +398,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">37k</span>
+    <span title="站点总字数">40k</span>
   </span>
 </div><!--canvas nest-->
 <script color="255,250,250" opacity="1" zIndex="-1" count="99" src="https://gcore.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
@@ -436,8 +449,7 @@ setInterval("createtime()",250);
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://unpkg.com/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
-<script src="/js/third-party/math/mathjax.js"></script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><link rel="stylesheet" href="https://unpkg.com/katex@0.15.3/dist/katex.min.css" integrity="sha256-TThEtR+XalhWKkfF383YLOrI50NGNeIqrzS+q08afrY=" crossorigin="anonymous">
 
 
 <script src="/js/third-party/comments/livere.js"></script>
