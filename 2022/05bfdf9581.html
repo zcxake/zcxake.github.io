@@ -26,15 +26,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.choutse.cn","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"right","width":240,"display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":{"livere":{"order":-1}},"activeClass":"livere"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeInDown","post_header":"fadeInDown","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="用的next8 0.远古时期的忘掉了…… 0.1.这个是next的网址QAQ: https:&#x2F;&#x2F;theme-next.js.org&#x2F; 0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。  使用了自己的域名，更新后页面找不到github pages。">
+    <meta name="description" content="用的next8 0.远古时期的忘掉了…… 0.1.这个是next的网址QAQ: https:&#x2F;&#x2F;theme-next.js.org&#x2F; 0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。 使用了自己的域名，更新后页面找不到github pages。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="建站过程中遇到的一些问题的总结">
 <meta property="og:url" content="https://www.choutse.cn/2022/05bfdf9581.html">
 <meta property="og:site_name" content="筹策">
-<meta property="og:description" content="用的next8 0.远古时期的忘掉了…… 0.1.这个是next的网址QAQ: https:&#x2F;&#x2F;theme-next.js.org&#x2F; 0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。  使用了自己的域名，更新后页面找不到github pages。">
+<meta property="og:description" content="用的next8 0.远古时期的忘掉了…… 0.1.这个是next的网址QAQ: https:&#x2F;&#x2F;theme-next.js.org&#x2F; 0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。 使用了自己的域名，更新后页面找不到github pages。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-02T11:44:17.000Z">
-<meta property="article:modified_time" content="2022-06-05T07:11:19.752Z">
+<meta property="article:modified_time" content="2022-06-05T11:24:31.046Z">
 <meta property="article:author" content="zcxake">
 <meta property="article:tag" content="小教程">
 <meta name="twitter:card" content="summary">
@@ -162,7 +162,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%96%B0%E5%90%8E%E9%A1%B5%E9%9D%A2%E6%89%BE%E4%B8%8D%E5%88%B0github-pages"><span class="nav-number">1.</span> <span class="nav-text"> 使用了自己的域名，更新后页面找不到github pages。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8next%E4%B8%BB%E9%A2%98%E5%87%BA%E7%8E%B0-extends-_layoutswig-%E7%AD%89%E7%AD%89"><span class="nav-number">2.</span> <span class="nav-text"> 使用next主题，出现% extends ‘_layout.swig’ %等等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%83%B3%E8%A6%81%E6%92%AD%E6%94%BE%E6%AD%8C%E6%9B%B2"><span class="nav-number">3.</span> <span class="nav-text"> 想要播放歌曲。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0sitemap%E7%BD%91%E7%AB%99%E5%9C%B0%E5%9B%BE"><span class="nav-number">4.</span> <span class="nav-text"> 添加sitemap，网站地图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%8C%E6%9C%9B%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8D%E6%B8%B2%E6%9F%93"><span class="nav-number">5.</span> <span class="nav-text"> 希望某些文件夹不渲染</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#next%E4%B8%BB%E9%A2%98%E5%81%B6%E5%B0%94%E6%89%93%E5%BC%80%E4%BC%9A%E5%8F%98%E6%88%90%E7%A9%BA%E7%99%BD2022520next-8"><span class="nav-number">6.</span> <span class="nav-text"> next主题偶尔打开会变成空白（2022.5.20）next 8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%AF%B9%E5%85%AC%E5%BC%8F%E7%9A%84%E6%94%AF%E6%8C%81"><span class="nav-number">7.</span> <span class="nav-text"> 添加对公式的支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%B7%E6%AD%8C%E5%AD%97%E4%BD%93%E8%AE%BF%E9%97%AE%E4%B8%8D%E7%A8%B3%E5%AE%9A"><span class="nav-number">8.</span> <span class="nav-text"> 谷歌字体访问不稳定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#a-idjsdelivrjsdelivr%E4%B8%8D%E7%A8%B3%E5%AE%9A%E6%9B%BF%E4%BB%A3%E5%93%81a"><span class="nav-number">9.</span> <span class="nav-text"> jsdelivr不稳定，替代品</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%BF%E6%8D%A2%E8%83%8C%E6%99%AF"><span class="nav-number">10.</span> <span class="nav-text"> 替换背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A1%86%E6%A1%86%E5%9C%86%E8%A7%92"><span class="nav-number">11.</span> <span class="nav-text"> 框框圆角</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E9%BC%A0%E7%89%B9%E6%95%88%E5%B0%8F%E7%88%86%E7%82%B8"><span class="nav-number">12.</span> <span class="nav-text"> 添加鼠特效小爆炸</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%96%B0%E5%90%8E%E9%A1%B5%E9%9D%A2%E6%89%BE%E4%B8%8D%E5%88%B0github-pages"><span class="nav-number">1.</span> <span class="nav-text">使用了自己的域名，更新后页面找不到github pages。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8next%E4%B8%BB%E9%A2%98%E5%87%BA%E7%8E%B0-extends-_layout.swig-%E7%AD%89%E7%AD%89"><span class="nav-number">2.</span> <span class="nav-text">使用next主题，出现% extends &#39;_layout.swig&#39; %等等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%83%B3%E8%A6%81%E6%92%AD%E6%94%BE%E6%AD%8C%E6%9B%B2"><span class="nav-number">3.</span> <span class="nav-text">想要播放歌曲。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0sitemap%E7%BD%91%E7%AB%99%E5%9C%B0%E5%9B%BE"><span class="nav-number">4.</span> <span class="nav-text">添加sitemap，网站地图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%8C%E6%9C%9B%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8D%E6%B8%B2%E6%9F%93"><span class="nav-number">5.</span> <span class="nav-text">希望某些文件夹不渲染</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#next%E4%B8%BB%E9%A2%98%E5%81%B6%E5%B0%94%E6%89%93%E5%BC%80%E4%BC%9A%E5%8F%98%E6%88%90%E7%A9%BA%E7%99%BD2022.5.20next-8"><span class="nav-number">6.</span> <span class="nav-text">next主题偶尔打开会变成空白（2022.5.20）next 8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%AF%B9%E5%85%AC%E5%BC%8F%E7%9A%84%E6%94%AF%E6%8C%81"><span class="nav-number">7.</span> <span class="nav-text">添加对公式的支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jsdelivr%E4%B8%8D%E7%A8%B3%E5%AE%9A%E6%9B%BF%E4%BB%A3%E5%93%81"><span class="nav-number">8.</span> <span class="nav-text">jsdelivr不稳定，替代品</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%BF%E6%8D%A2%E8%83%8C%E6%99%AF"><span class="nav-number">9.</span> <span class="nav-text">替换背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A1%86%E6%A1%86%E5%9C%86%E8%A7%92"><span class="nav-number">10.</span> <span class="nav-text">框框圆角</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E9%BC%A0%E7%89%B9%E6%95%88%E5%B0%8F%E7%88%86%E7%82%B8"><span class="nav-number">11.</span> <span class="nav-text">添加鼠特效小爆炸</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -292,7 +292,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新</span>
-      <time title="修改时间：2022-06-05 15:11:19" itemprop="dateModified" datetime="2022-06-05T15:11:19+08:00">2022-06-05</time>
+      <time title="修改时间：2022-06-05 19:24:31" itemprop="dateModified" datetime="2022-06-05T19:24:31+08:00">2022-06-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -331,40 +331,27 @@
     <div class="post-body" itemprop="articleBody">
         <p>用的next8</p>
 <p>0.远古时期的忘掉了……</p>
-<p>0.1.这个是next的网址QAQ: <a target="_blank" rel="noopener" href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>0.1.这个是next的网址QAQ: https://theme-next.js.org/</p>
 <p>0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。</p>
-<h3 id="使用了自己的域名更新后页面找不到github-pages"><a class="markdownIt-Anchor" href="#使用了自己的域名更新后页面找不到github-pages"></a> 使用了自己的域名，更新后页面找不到github pages。</h3>
+<h3 id="使用了自己的域名更新后页面找不到github-pages">使用了自己的域名，更新后页面找不到github pages。</h3>
 <span id="more"></span>
-<p>hexo d后仓库被强行覆盖，原先的CNAME就没有了。<br />
-在source文件夹里加一个CNAME再更新就好了。<br />
-CNAME里填写自己的域名名字。</p>
-<h3 id="使用next主题出现-extends-_layoutswig-等等"><a class="markdownIt-Anchor" href="#使用next主题出现-extends-_layoutswig-等等"></a> 使用next主题，出现% extends ‘_layout.swig’ %等等</h3>
+<p>hexo d后仓库被强行覆盖，原先的CNAME就没有了。 在source文件夹里加一个CNAME再更新就好了。 CNAME里填写自己的域名名字。</p>
+<h3 id="使用next主题出现-extends-_layout.swig-等等">使用next主题，出现% extends '_layout.swig' %等等</h3>
 <p>hexo在5.后删除了swig，需要自己手动安装</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-renderer-swig</span><br></pre></td></tr></table></figure>
-<h3 id="想要播放歌曲"><a class="markdownIt-Anchor" href="#想要播放歌曲"></a> 想要播放歌曲。</h3>
-<p>参考了很多不同站点的做法，其实大同小异。<br />
-最后发现还是去官网最快。<br />
-但是没能将云音乐红心歌单加进来还是不太开心，metingjs没解析出来。<br />
-aplayer：<a target="_blank" rel="noopener" href="https://aplayer.js.org/#/zh-Hans/?id=%E5%85%A5%E9%97%A8">https://aplayer.js.org/#/zh-Hans/?id=入门</a><br />
-MetingJS：<a target="_blank" rel="noopener" href="https://github.com/metowolf/MetingJS">https://github.com/metowolf/MetingJS</a><br />
-首先根据APlayer教程安装：</p>
+<h3 id="想要播放歌曲">想要播放歌曲。</h3>
+<p>参考了很多不同站点的做法，其实大同小异。 最后发现还是去官网最快。 但是没能将云音乐红心歌单加进来还是不太开心，metingjs没解析出来。 aplayer：https://aplayer.js.org/#/zh-Hans/?id=%E5%85%A5%E9%97%A8 MetingJS：https://github.com/metowolf/MetingJS 首先根据APlayer教程安装：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install aplayer --save</span><br></pre></td></tr></table></figure>
-<p>然后到主题配置文件_config.yml改custom_file_path:<br />
-将head和sidebar加上（也就是去掉前边的#）<br />
-同时分别到hexo下source/_data里新建这两个njk文件</p>
+<p>然后到主题配置文件_config.yml改custom_file_path: 将head和sidebar加上（也就是去掉前边的#） 同时分别到hexo下source/_data里新建这两个njk文件</p>
 <p>siderbar.njk里的内容直接参考MeetingJS主页的教程就好了</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- require APlayer --&gt;</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;!-- require MetingJS --&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;meting-js</span><br><span class="line">	server=<span class="string">&quot;netease&quot;</span></span><br><span class="line">	<span class="built_in">type</span>=<span class="string">&quot;playlist&quot;</span></span><br><span class="line">	id=<span class="string">&quot;3744805&quot;</span>&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br></pre></td></tr></table></figure>
-<p>BUT， jsdelivr不好用了，可以改成（具体见<a href="#jsdelivr">这里：jsdelivr不稳定，替代品</a>，pjax那里同理，自己改一下吧：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- require APlayer --&gt;</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;!-- require MetingJS --&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://gcore.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;meting-js</span><br><span class="line">	server=<span class="string">&quot;netease&quot;</span></span><br><span class="line">	<span class="built_in">type</span>=<span class="string">&quot;playlist&quot;</span></span><br><span class="line">	id=<span class="string">&quot;3744805&quot;</span>&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br></pre></td></tr></table></figure>
-<p>meting-js里的参数除了这三个还有APlayer里的，反正具体看官网吧，我这里没必要多复制了。<br />
-上述是加云音乐的，还有藤子，酷狗，虾米，百度的可以改。</p>
-<p>具体来说就是APlayer负责播放器的部分，MetingJS负责解析各大网站id。<br />
-但是autoplay真的能autoplay吗。→发现是浏览器限制了，唔，也好吧</p>
+<p>BUT， jsdelivr不好用了，可以改成（具体见<a href="#jsdelivr">这里：jsdelivr不稳定，替代品</a>，pjax那里同理，自己改一下吧： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- require APlayer --&gt;</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;!-- require MetingJS --&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://gcore.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;meting-js</span><br><span class="line">	server=<span class="string">&quot;netease&quot;</span></span><br><span class="line">	<span class="built_in">type</span>=<span class="string">&quot;playlist&quot;</span></span><br><span class="line">	id=<span class="string">&quot;3744805&quot;</span>&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br></pre></td></tr></table></figure></p>
+<p>meting-js里的参数除了这三个还有APlayer里的，反正具体看官网吧，我这里没必要多复制了。 上述是加云音乐的，还有藤子，酷狗，虾米，百度的可以改。</p>
+<p>具体来说就是APlayer负责播放器的部分，MetingJS负责解析各大网站id。 但是autoplay真的能autoplay吗。→发现是浏览器限制了，唔，也好吧</p>
 <p>最后在head.njk里写上</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--pjax：防止跳转页面音乐暂停--&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<p>可以跨页面放歌。<br />
-接着到主题配置文件_config.yml里把pjax改为true就好了。</p>
-<h3 id="添加sitemap网站地图"><a class="markdownIt-Anchor" href="#添加sitemap网站地图"></a> 添加sitemap，网站地图</h3>
+<p>可以跨页面放歌。 接着到主题配置文件_config.yml里把pjax改为true就好了。</p>
+<h3 id="添加sitemap网站地图">添加sitemap，网站地图</h3>
 <p>安装搜索引擎插件：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save </span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
 <p>在站点配置文件中把url改为自己的域名</p>
@@ -380,127 +367,59 @@ MetingJS：<a target="_blank" rel="noopener" href="https://github.com/metowolf/M
 <p>在站点配置文件更改deploy：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">      - type: git</span><br><span class="line">        repo: git@github.com:zcxake/zcxake.github.io.git</span><br><span class="line">        branch: master</span><br><span class="line">      - type: baidu_url_submitter</span><br></pre></td></tr></table></figure>
 <p>注意repo和branch的缩进</p>
-<p>这样以后hexo d的时候就自动提交url到百度了。<br />
-更新：但是后来发现这个baidu_url_submit可能会导致一些问题，hexo s后出现warning，虽然对提交后的成品网页没影响，但是无法预览也很麻烦，所以把nodejs退到了12……</p>
-<h3 id="希望某些文件夹不渲染"><a class="markdownIt-Anchor" href="#希望某些文件夹不渲染"></a> 希望某些文件夹不渲染</h3>
+<p>这样以后hexo d的时候就自动提交url到百度了。 更新：但是后来发现这个baidu_url_submit可能会导致一些问题，hexo s后出现warning，虽然对提交后的成品网页没影响，但是无法预览也很麻烦，所以把nodejs退到了12……</p>
+<h3 id="希望某些文件夹不渲染">希望某些文件夹不渲染</h3>
 <p>到站点配置文件检索skip，在skip_render后加上想不被渲染的，可使用glob表达式来匹配路径</p>
 <p>如我这里的是：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Directory</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: :lang</span><br><span class="line">skip_render: &quot;_ing/**&quot;</span><br></pre></td></tr></table></figure>
 <p>表示source/_ing/里的所有东西都不会被渲染</p>
-<h3 id="next主题偶尔打开会变成空白2022520next-8"><a class="markdownIt-Anchor" href="#next主题偶尔打开会变成空白2022520next-8"></a> next主题偶尔打开会变成空白（2022.5.20）next 8</h3>
-<p>先甩上参考：<br />
-<a target="_blank" rel="noopener" href="https://jnssd.com/2021/12/21/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1hexo-next%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%A9%BA%E7%99%BD%E7%9A%84%E6%83%85%E5%86%B5/">感谢分享</a><br />
-用同样的思路发现我也是这个原因，因为不太懂所以还是上<a href= "https://theme-next.js.org/docs/advanced-settings/vendors.html?highlight=vendors">next theme官网vendors下</a>瞅了一下，直接复制翻译一下好了，反正我是看这个搞定的。</p>
+<h3 id="next主题偶尔打开会变成空白2022.5.20next-8">next主题偶尔打开会变成空白（2022.5.20）next 8</h3>
+<p>先甩上参考： <a target="_blank" rel="noopener" href="https://jnssd.com/2021/12/21/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1hexo-next%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%A9%BA%E7%99%BD%E7%9A%84%E6%83%85%E5%86%B5/">感谢分享</a> 用同样的思路发现我也是这个原因，因为不太懂所以还是上<a href= "https://theme-next.js.org/docs/advanced-settings/vendors.html?highlight=vendors">next theme官网vendors下</a>瞅了一下，直接复制翻译一下好了，反正我是看这个搞定的。</p>
 <blockquote>
 <p>plugins: jsdelivr is used to set how to load the third-party plugins, e.g. anime.js. Third-party plugins are loaded from jsDelivr CDN by default.</p>
 <p>And we also provide other optional CDNs, including the famous UNPKG and CDNJS. These CDN providers are chosen to deliver our third-party plugins because they are fast and reliable. Set plugins to unpkg or cdnjs to load them from different CDN provider.</p>
-<p>Particularly, if you are a Chinese blogger or most of your visits come from China, please note that the CDNJS is blocked in some parts of China, don’t use it as your CDN provider.</p>
-<p>If your would like to load all third-party plugins from your site, please set plugins to local and install the @next-theme/plugins package: <a target="_blank" rel="noopener" href="https://github.com/next-theme/plugins">https://github.com/next-theme/plugins</a></p>
+<p>Particularly, if you are a Chinese blogger or most of your visits come from China, please note that the CDNJS is blocked in some parts of China, don't use it as your CDN provider.</p>
+<p>If your would like to load all third-party plugins from your site, please set plugins to local and install the <span class="citation" data-cites="next-theme/plugins">@next-theme/plugins</span> package: https://github.com/next-theme/plugins</p>
 </blockquote>
 <table border="1">
 <tr>
-  <td>plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.js）。<br>
-  但我们也留了其他选项，比如著名的unpkg和cdnjs，选择这几个因为他们可靠且迅速，设置一个你想用的吧。<br>
-但是，如果您老在中国或者你访问者大多数在中国的话，注意cdnjs在中国部分地区禁了，谨慎选用。<br>
-<i><span class="heimu">虽然官网这么写了，但是实测是jsdelivr不稳定，另外两个可用，反正这种瞬息万变的东西自己看情况吧</span></i><br>
-但你要是想从自己网站加载第三方插件的话，把plugins项设置local然后安装@next-theme/plugins package: https://github.com/next-theme/plugins
+<td>
+plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.js）。<br> 但我们也留了其他选项，比如著名的unpkg和cdnjs，选择这几个因为他们可靠且迅速，设置一个你想用的吧。<br> 但是，如果您老在中国或者你访问者大多数在中国的话，注意cdnjs在中国部分地区禁了，谨慎选用。<br> <i><span class="heimu">虽然官网这么写了，但是实测是jsdelivr不稳定，另外两个可用，反正这种瞬息万变的东西自己看情况吧</span></i><br> 但你要是想从自己网站加载第三方插件的话，把plugins项设置local然后安装@next-theme/plugins package: https://github.com/next-theme/plugins
 </td>
 </tr>
 </table>
 <blockquote>
-<p>Custom CDN URLs<br />
-Sometimes you may need to use CDNs other than jsdelivr, unpkg or cdnjs. For example, users can get faster loading speed in certain areas using the mirror site of jsDelivr.</p>
+<p>Custom CDN URLs Sometimes you may need to use CDNs other than jsdelivr, unpkg or cdnjs. For example, users can get faster loading speed in certain areas using the mirror site of jsDelivr.</p>
 <p>To enable custom CDN URL, you need to set internal: custom and / or plugins: custom in the vendors section, and then specify a CDN URL with the custom_cdn_url option.</p>
 <p>Remember to use the HTTPS protocol of CDN links when you enable HTTPS on your site.</p>
 </blockquote>
 <table border="1">
 <tr>
-  <td>自定义CDN链接<br>
-有时候，或许上边三个满足不了你，比如在某些特定的地方用JSDelivr的镜像站会快一些。
-<br>
-这时候你需要将internal和/或plugins设为custom，具体看你情况，然后填上底下的custom_cdn_url。
-<br>
-如果你的网站开启了HTTPS协议注意也要用CDN链接的HTTPS协议。</td>
+<td>
+自定义CDN链接<br> 有时候，或许上边三个满足不了你，比如在某些特定的地方用JSDelivr的镜像站会快一些。 <br> 这时候你需要将internal和/或plugins设为custom，具体看你情况，然后填上底下的custom_cdn_url。 <br> 如果你的网站开启了HTTPS协议注意也要用CDN链接的HTTPS协议。
+</td>
 </tr>
 </table>
 <hr />
 <p>我目前是先改成unpkg了，如果之后还是经常空白就换成镜像站，还是不行的话就本地吧。</p>
-<h3 id="添加对公式的支持"><a class="markdownIt-Anchor" href="#添加对公式的支持"></a> 添加对公式的支持</h3>
-<p>更新：<br />
-看都推荐用mathjax，但用了之后长公式不能换行，换成katex感觉这个更好，还可以选中。<br />
-主题config.yml中math下开启katex，<br />
-然后前边差不多，先卸载原先的</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure>
-<p>再安装</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i @upupming/hexo-renderer-markdown-it-plus --save</span><br></pre></td></tr></table></figure>
-<p>目前katex是0.15.6了，已经很好用了。<br />
-下面是过去mathjax的，上面的如果好用就不用看了。</p>
-<p>mathjax：<br />
-完全参考了<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45511189/article/details/115798563">这一篇文章</a><br />
-完全可行，但以防万一给自己备一份吧：</p>
-<p>1.在hexo目录下使用下面的命令查看你是否已经安装了hexo-math插件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-math</span><br></pre></td></tr></table></figure>
-<p>empty就是没有，出现版本号就是装了<br />
-卸载之：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure>
-<p>2.安装hexo-filter-mathjax：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-mathjax --save</span><br></pre></td></tr></table></figure>
-<p>检查是否安装成功：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-filter-mathjax</span><br></pre></td></tr></table></figure>
-<p>显示了hexo-filter-mathjax版本号则说明安装成功。<br />
-安装成功后，进行一些全局配置，打开hexo目录下的_config.yml文件，在最后面添加如下的代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">  tags: none # or &#x27;ams&#x27; or &#x27;all&#x27;</span><br><span class="line">  single_dollars: true # enable single dollar signs as in-line math delimiters</span><br><span class="line">  cjk_width: 0.9 # relative CJK char width</span><br><span class="line">  normal_width: 0.6 # relative normal (monospace) width</span><br><span class="line">  append_css: true # add CSS to pages rendered by MathJax</span><br><span class="line">  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span><br></pre></td></tr></table></figure>
-<p>3.hexo-math默认的公式渲染器是hexo-renderer-marked，它和markdown的语法有冲突，我们将其卸载，查看是否安装了hexo-renderer-marked公式渲染器：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-renderer-marked</span><br></pre></td></tr></table></figure>
-<p>如果安装了将其卸载：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked  --save</span><br></pre></td></tr></table></figure>
-<p>然后安装一个新的公式渲染器，叫做hexo-renderer-kramed，它对hexo-renderer-marked进行了改进，在hexo目录下输入下面的命令安装：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure>
-<p>检查hexo-renderer-kramed是否安装成功：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-renderer-kramed</span><br></pre></td></tr></table></figure>
-<p>4.打开打开hexo主目录下的这个文件：\node_modules\kramed\lib\rules\inline.js，然后修改下面的规则（大家最好不要删除原代码，只是将其注释掉）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">//修改为：</span><br><span class="line">escape: /^\\([`*\[\]()#$+\-.!_&gt;])/,</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">//修改为</span><br><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br></pre></td></tr></table></figure>
-<p>保存并退出。<br />
-5.最后，打开next主题目录下的_config.yml，开启对mathjax的支持，设置为true。<br />
-6.行间输入是$$公式内容$$，行内公示是$公式内容$<br />
-7.某篇文章不想渲染公式就在md文件开头加上：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mathjax: false</span><br></pre></td></tr></table></figure>
-<h3 id="谷歌字体访问不稳定"><a class="markdownIt-Anchor" href="#谷歌字体访问不稳定"></a> 谷歌字体访问不稳定</h3>
-<p>各种不稳定的问题嗯……<br />
-感谢https://u.sb/css-cdn/ 。<br />
-next默认的是https://fonts.googleapis.com ，然后目前有个镜像可以用，在host改成自定义的：<a target="_blank" rel="noopener" href="https://fonts.loli.net">https://fonts.loli.net</a></p>
-<p>这里要多提一嘴镜像站了，避免以后又有啥不能使的可以替换：<br />
-CDNJS：原本的：<a target="_blank" rel="noopener" href="http://cdnjs.cloudflare.com">cdnjs.cloudflare.com</a>，可用替换：<a target="_blank" rel="noopener" href="http://cdnjs.loli.net">cdnjs.loli.net</a><br />
-unpkg可作为jsdelivr的替换用</p>
-<h3 id="a-idjsdelivrjsdelivr不稳定替代品a"><a class="markdownIt-Anchor" href="#a-idjsdelivrjsdelivr不稳定替代品a"></a> <a id="jsdelivr">jsdelivr不稳定，替代品</a></h3>
-<p><strong>替换法</strong><br />
-cdn.jsdelivr.net选一个改：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fastly.jsdelivr.net</span><br><span class="line">gcore.jsdelivr.net</span><br><span class="line">testingcf.jsdelivr.net</span><br></pre></td></tr></table></figure>
-<p><strong>其他CDN站</strong><br />
-<a target="_blank" rel="noopener" href="https://cdn.bytedance.com/">https://cdn.bytedance.com/</a> 字节跳动<br />
-<a target="_blank" rel="noopener" href="https://www.staticfile.org/">https://www.staticfile.org/</a> 七牛云<br />
-<a target="_blank" rel="noopener" href="https://cdnjs.com/">https://cdnjs.com/</a><br />
-<a target="_blank" rel="noopener" href="https://unpkg.com/">https://unpkg.com/</a></p>
-<h3 id="替换背景"><a class="markdownIt-Anchor" href="#替换背景"></a> 替换背景</h3>
-<p>到next主题打开styles，在source\ _data\styles.styl后加上：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background-image: url(); </span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment: fixed;</span><br><span class="line">    background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>背景图地址可以是链接或者路径，比如我放在\next\source\images\bk.jpg，那就是/images/bk.jpg<br />
-和background相关的几个属性：<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background.asp">https://www.w3school.com.cn/cssref/pr_background.asp</a><br />
-自己看着设置。<br />
-<strong>然后在后边再加上透明度设置：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 菜单栏</span><br><span class="line">.header-inner &#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">// 侧边框</span><br><span class="line">.sidebar&#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">// 文章</span><br><span class="line">.post-block&#123;</span><br><span class="line">  opacity: 0.8;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>值看着办吧。<br />
-我这个为了显出后边的canvas-nest，这个动态网调深了和背景重合，调浅了和文字白底重合，所以调成了以前不怎么喜欢的暗黑模式QAQ</p>
-<h3 id="框框圆角"><a class="markdownIt-Anchor" href="#框框圆角"></a> 框框圆角</h3>
-<p>到next主题打开variables，source\ _data\variables.styl中添加</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$border-radius-inner     = 30px 30px 30px 30px;</span><br><span class="line">$border-radius           = 30px;</span><br></pre></td></tr></table></figure>
-<h3 id="添加鼠特效小爆炸"><a class="markdownIt-Anchor" href="#添加鼠特效小爆炸"></a> 添加鼠特效小爆炸</h3>
-<p>参考了https://www.smoe.top/2020/12/27/Hexo-click/<br />
-但是版本不同，所以我稍微改了一下。<br />
-js找个source文件夹放，然后直接在\source_data\head.njk里加上想要的那个效果就好了，改一下相应路径，我也是放的\themes\next\source\js\cursor，所以就抄原博文的了</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--点击爆炸--&gt;</span><br><span class="line">&lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt;</span><br><span class="line">&lt;script src=&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script async src=&quot;/js/cursor/explosion.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<p>然后我稍微改了下颜色，饱和度调低了点</p>
+<h3 id="添加对公式的支持">添加对公式的支持</h3>
+<p>再更新：</p>
+<p>katex别的都挺好，能自动换行，能复制，可是在复杂一点的html语言里就会无法解析，懒得折腾跟着next官网又换成了mathjax，然后手动换行了。</p>
+<p>看了mathjax官网，确实v3还不支持自动换行，摊手，就先这样吧。</p>
+<p><span class="heimu">但确实katex更好看……</span></p>
+<p>更新： 看都推荐用mathjax，但用了之后长公式不能换行，换成katex感觉这个更好，还可以选中。 主题config.yml中math下开启katex， 然后前边差不多，先卸载原先的 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure> 再安装 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i @upupming/hexo-renderer-markdown-it-plus --save</span><br></pre></td></tr></table></figure> 目前katex是0.15.6了，已经很好用了。 下面是过去mathjax的，上面的如果好用就不用看了。</p>
+<p>mathjax： 完全参考了<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45511189/article/details/115798563">这一篇文章</a> 完全可行，但以防万一给自己备一份吧：</p>
+<p>1.在hexo目录下使用下面的命令查看你是否已经安装了hexo-math插件 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-math</span><br></pre></td></tr></table></figure> empty就是没有，出现版本号就是装了 卸载之： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure> 2.安装hexo-filter-mathjax： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-mathjax --save</span><br></pre></td></tr></table></figure> 检查是否安装成功： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-filter-mathjax</span><br></pre></td></tr></table></figure> 显示了hexo-filter-mathjax版本号则说明安装成功。 安装成功后，进行一些全局配置，打开hexo目录下的_config.yml文件，在最后面添加如下的代码： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">  tags: none # or &#x27;ams&#x27; or &#x27;all&#x27;</span><br><span class="line">  single_dollars: true # enable single dollar signs as in-line math delimiters</span><br><span class="line">  cjk_width: 0.9 # relative CJK char width</span><br><span class="line">  normal_width: 0.6 # relative normal (monospace) width</span><br><span class="line">  append_css: true # add CSS to pages rendered by MathJax</span><br><span class="line">  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span><br></pre></td></tr></table></figure> 3.hexo-math默认的公式渲染器是hexo-renderer-marked，它和markdown的语法有冲突，我们将其卸载，查看是否安装了hexo-renderer-marked公式渲染器： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-renderer-marked</span><br></pre></td></tr></table></figure> 如果安装了将其卸载： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked  --save</span><br></pre></td></tr></table></figure> 然后安装一个新的公式渲染器，叫做hexo-renderer-kramed，它对hexo-renderer-marked进行了改进，在hexo目录下输入下面的命令安装： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure> 检查hexo-renderer-kramed是否安装成功： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list hexo-renderer-kramed</span><br></pre></td></tr></table></figure> 4.打开打开hexo主目录下的这个文件：_modules.js，然后修改下面的规则（大家最好不要删除原代码，只是将其注释掉）： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">//修改为：</span><br><span class="line">escape: /^\\([`*\[\]()#$+\-.!_&gt;])/,</span><br></pre></td></tr></table></figure> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">//修改为</span><br><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br></pre></td></tr></table></figure> 保存并退出。 5.最后，打开next主题目录下的_config.yml，开启对mathjax的支持，设置为true。 6.行间输入是<span class="math display">\[公式内容\]</span>，行内公示是$公式内容$ 7.某篇文章不想渲染公式就在md文件开头加上： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mathjax: false</span><br></pre></td></tr></table></figure> ### 谷歌字体访问不稳定 各种不稳定的问题嗯…… 感谢https://u.sb/css-cdn/ 。 next默认的是https://fonts.googleapis.com ，然后目前有个镜像可以用，在host改成自定义的：https://fonts.loli.net</p>
+<p>这里要多提一嘴镜像站了，避免以后又有啥不能使的可以替换： CDNJS：原本的：cdnjs.cloudflare.com，可用替换：cdnjs.loli.net unpkg可作为jsdelivr的替换用</p>
+<h3 id="jsdelivr不稳定替代品"><a id="jsdelivr">jsdelivr不稳定，替代品</a></h3>
+<p><strong>替换法</strong> cdn.jsdelivr.net选一个改： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fastly.jsdelivr.net</span><br><span class="line">gcore.jsdelivr.net</span><br><span class="line">testingcf.jsdelivr.net</span><br></pre></td></tr></table></figure></p>
+<p><strong>其他CDN站</strong> https://cdn.bytedance.com/ 字节跳动 https://www.staticfile.org/ 七牛云 https://cdnjs.com/ https://unpkg.com/</p>
+<h3 id="替换背景">替换背景</h3>
+<p>到next主题打开styles，在source _data.styl后加上： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background-image: url(); </span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment: fixed;</span><br><span class="line">    background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 背景图地址可以是链接或者路径，比如我放在.jpg，那就是/images/bk.jpg 和background相关的几个属性：https://www.w3school.com.cn/cssref/pr_background.asp 自己看着设置。 <strong>然后在后边再加上透明度设置：</strong> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 菜单栏</span><br><span class="line">.header-inner &#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">// 侧边框</span><br><span class="line">.sidebar&#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">// 文章</span><br><span class="line">.post-block&#123;</span><br><span class="line">  opacity: 0.8;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 值看着办吧。 我这个为了显出后边的canvas-nest，这个动态网调深了和背景重合，调浅了和文字白底重合，所以调成了以前不怎么喜欢的暗黑模式QAQ</p>
+<h3 id="框框圆角">框框圆角</h3>
+<p>到next主题打开variables，source _data.styl中添加 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$border-radius-inner     = 30px 30px 30px 30px;</span><br><span class="line">$border-radius           = 30px;</span><br></pre></td></tr></table></figure></p>
+<h3 id="添加鼠特效小爆炸">添加鼠特效小爆炸</h3>
+<p>参考了https://www.smoe.top/2020/12/27/Hexo-click/ 但是版本不同，所以我稍微改了一下。 js找个source文件夹放，然后直接在_data.njk里加上想要的那个效果就好了，改一下相应路径，我也是放的，所以就抄原博文的了 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--点击爆炸--&gt;</span><br><span class="line">&lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt;</span><br><span class="line">&lt;script src=&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script async src=&quot;/js/cursor/explosion.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure> 然后我稍微改了下颜色，饱和度调低了点</p>
 
     </div>
 
@@ -559,7 +478,7 @@ js找个source文件夹放，然后直接在\source_data\head.njk里加上想要
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">40k</span>
+    <span title="站点总字数">38k</span>
   </span>
 </div><!--canvas nest-->
 <script color="255,250,250" opacity="1" zIndex="-1" count="99" src="https://gcore.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
@@ -610,7 +529,8 @@ setInterval("createtime()",250);
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><link rel="stylesheet" href="https://unpkg.com/katex@0.15.3/dist/katex.min.css" integrity="sha256-TThEtR+XalhWKkfF383YLOrI50NGNeIqrzS+q08afrY=" crossorigin="anonymous">
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://unpkg.com/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 <script src="/js/third-party/comments/livere.js"></script>
