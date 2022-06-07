@@ -15,12 +15,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/014a17b156.html</url>
-    <content><![CDATA[
-]]></content>
-  </entry>
-  <entry>
     <title>HTML颜色名</title>
     <url>/2022/05a4b3b729.html</url>
     <content><![CDATA[<p>网上蛮多的了，但是好多哦，参考起来好麻烦，整个自己喜欢的颜色吧 全部颜色名在这儿：https://www.runoob.com/html/html-colornames.html ### <font color="BlueViolet">紫色哒：</font> <strong><font color="DarkMagenta">DarkMagenta</font></strong> <strong><font color="BlueViolet">BlueViolet</font></strong> <strong><font color="DarkOrchid">DarkOrchid</font></strong> <strong><font color="DarkViolet">DarkViolet</font></strong> <strong><font color="MediumSlateBlue">MediumSlateBlue</font></strong> <strong><font color="MediumPurple">MediumPurple</font></strong> <strong><font color="MediumOrchid">MediumOrchid</font></strong> <strong><font color="Orchid">Orchid</font></strong> <strong><font color="Plum">Plum</font></strong> <strong><font color="Lavender">Lavender</font></strong></p>
@@ -50,6 +44,12 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/014a17b156.html</url>
+    <content><![CDATA[
+]]></content>
+  </entry>
+  <entry>
     <title>制作bongo cat的一些注意事项</title>
     <url>/2022/0530cbe1d0.html</url>
     <content><![CDATA[<p>偶在首页上看到散人的bongo cat，感觉好可爱，然后还很有意思，就想自己做个。 最后做了个星瞳的，因为不会画画所以参考了一些星瞳已有的表情包，反正<a href="https://www.bilibili.com/video/BV1jt4y1p7VG?spm_id_from=333.999.0.0">成品</a>感觉害挺可爱的。 不过过程中遇到了非常多的问题，其实也是因为软件相关教程比较少，自带教程也是点到即止，所以现在把自己的经验总结一下吧，官方教程里涉及到的就不会再提了。 <a href="https://www.bilibili.com/read/readlist/rl191271">原版软件</a>在这里，找最新的版本去下载，看作者的意思马上就有新版了，这个教程出了也没啥意义其实2333333 <span id="more"></span> ### 先整体把控吧 首先看文件夹，根目录中的<strong>config.json</strong>主要负责改属性，<strong>img</strong>中的三个文件夹分别对应三种模式。 最终显示的图层顺序是<strong>bg静图→keyboard文件夹→cat model(live2D)文件夹→hand文件夹</strong> 那么问题就出来了，如果要用live2D，而且你的live2D里包括键盘，想通过keyboard文件夹里的图像来展示按键效果是不可能了，那就只能把按键效果整合到hand文件夹里的手上，结果就是keyboard文件夹空着就行。</p>
@@ -61,20 +61,6 @@
       </categories>
       <tags>
         <tag>小教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>获取阿b的表情</title>
-    <url>/2022/05f71bb376.html</url>
-    <content><![CDATA[<p>方法来自知乎：https://www.zhihu.com/question/275901829/answer/1574659804 不太用知乎所以还是转到自己的网站吧。</p>
-<p>1.在登录的状态下访问http://api.bilibili.com/x/emote/setting/panel?business=reply ，存储为emoji.json。 2.编写python脚本，保存为emoji.py在emoji.json目录下。 <span id="more"></span> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import json</span><br><span class="line">import os</span><br><span class="line">from concurrent.futures import ThreadPoolExecutor</span><br><span class="line">from functools import partial</span><br><span class="line">from time import sleep</span><br><span class="line"></span><br><span class="line">import requests</span><br><span class="line">from tqdm import tqdm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def mkdir(path):</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(path) is not True:</span><br><span class="line">        os.makedirs(path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_pic(url, path):</span><br><span class="line">    resp = requests.get(url)</span><br><span class="line">    with open(path, <span class="string">&#x27;wb&#x27;</span>) as code:</span><br><span class="line">        code.write(resp.content)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_emoji(emoji, save_path):</span><br><span class="line">    emoji_name = emoji[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    emoji_name = emoji_name[1:-1]</span><br><span class="line">    path = os.path.join(save_path, f<span class="string">&#x27;&#123;emoji_name&#125;.png&#x27;</span>)</span><br><span class="line">    download_pic(emoji[<span class="string">&#x27;url&#x27;</span>], path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_package(package, path):</span><br><span class="line">    package_name = package[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    save_path = os.path.join(path, package_name)</span><br><span class="line">    mkdir(save_path)</span><br><span class="line">    all_emote = <span class="built_in">set</span>(map(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1], package[<span class="string">&#x27;emote&#x27;</span>]))</span><br><span class="line">    downloaded_emote = <span class="built_in">set</span>(map(lambda e: e[:-4], os.listdir(save_path)))</span><br><span class="line">    download_emote_name = all_emote - downloaded_emote</span><br><span class="line">    <span class="keyword">if</span> len(download_emote_name) == 0:</span><br><span class="line">        <span class="built_in">return</span></span><br><span class="line">    going_to_download_emote = filter(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1] <span class="keyword">in</span> download_emote_name, package[<span class="string">&#x27;emote&#x27;</span>])</span><br><span class="line">    with ThreadPoolExecutor() as executor:</span><br><span class="line">        executor.map(partial(download_emoji, save_path=save_path), going_to_download_emote)</span><br><span class="line">    sleep(3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    with open(<span class="string">&#x27;emoji.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) as fp:</span><br><span class="line">        emojis = json.load(fp)</span><br><span class="line">    emoji_packages = emojis[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;all_packages&#x27;</span>]</span><br><span class="line">    package_path = <span class="string">&#x27;bilibili_emoji&#x27;</span></span><br><span class="line">    bar = tqdm(emoji_packages)</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> bar:</span><br><span class="line">        <span class="keyword">if</span> p[<span class="string">&#x27;text&#x27;</span>] == <span class="string">&#x27;颜文字&#x27;</span>:</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        bar.set_description(p[<span class="string">&#x27;text&#x27;</span>])</span><br><span class="line">        download_package(p, package_path)</span><br></pre></td></tr></table></figure> 3.打开shell（windows里面powershell和cmd应该都可以），使用 pip install 安装包。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install tqdm</span><br></pre></td></tr></table></figure> 4.运行脚本，shell移动到目录可以cd，可以shift右键“在此处打开powershell”，可以在文件管理器里输目录的地方输cmd或者powershell回车。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python emoji.py</span><br></pre></td></tr></table></figure></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>小教程</tag>
-        <tag>表情包</tag>
       </tags>
   </entry>
   <entry>
@@ -177,6 +163,20 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </categories>
       <tags>
         <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>获取阿b的表情</title>
+    <url>/2022/05f71bb376.html</url>
+    <content><![CDATA[<p>方法来自知乎：https://www.zhihu.com/question/275901829/answer/1574659804 不太用知乎所以还是转到自己的网站吧。</p>
+<p>1.在登录的状态下访问http://api.bilibili.com/x/emote/setting/panel?business=reply ，存储为emoji.json。 2.编写python脚本，保存为emoji.py在emoji.json目录下。 <span id="more"></span> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import json</span><br><span class="line">import os</span><br><span class="line">from concurrent.futures import ThreadPoolExecutor</span><br><span class="line">from functools import partial</span><br><span class="line">from time import sleep</span><br><span class="line"></span><br><span class="line">import requests</span><br><span class="line">from tqdm import tqdm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def mkdir(path):</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(path) is not True:</span><br><span class="line">        os.makedirs(path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_pic(url, path):</span><br><span class="line">    resp = requests.get(url)</span><br><span class="line">    with open(path, <span class="string">&#x27;wb&#x27;</span>) as code:</span><br><span class="line">        code.write(resp.content)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_emoji(emoji, save_path):</span><br><span class="line">    emoji_name = emoji[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    emoji_name = emoji_name[1:-1]</span><br><span class="line">    path = os.path.join(save_path, f<span class="string">&#x27;&#123;emoji_name&#125;.png&#x27;</span>)</span><br><span class="line">    download_pic(emoji[<span class="string">&#x27;url&#x27;</span>], path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_package(package, path):</span><br><span class="line">    package_name = package[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    save_path = os.path.join(path, package_name)</span><br><span class="line">    mkdir(save_path)</span><br><span class="line">    all_emote = <span class="built_in">set</span>(map(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1], package[<span class="string">&#x27;emote&#x27;</span>]))</span><br><span class="line">    downloaded_emote = <span class="built_in">set</span>(map(lambda e: e[:-4], os.listdir(save_path)))</span><br><span class="line">    download_emote_name = all_emote - downloaded_emote</span><br><span class="line">    <span class="keyword">if</span> len(download_emote_name) == 0:</span><br><span class="line">        <span class="built_in">return</span></span><br><span class="line">    going_to_download_emote = filter(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1] <span class="keyword">in</span> download_emote_name, package[<span class="string">&#x27;emote&#x27;</span>])</span><br><span class="line">    with ThreadPoolExecutor() as executor:</span><br><span class="line">        executor.map(partial(download_emoji, save_path=save_path), going_to_download_emote)</span><br><span class="line">    sleep(3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    with open(<span class="string">&#x27;emoji.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) as fp:</span><br><span class="line">        emojis = json.load(fp)</span><br><span class="line">    emoji_packages = emojis[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;all_packages&#x27;</span>]</span><br><span class="line">    package_path = <span class="string">&#x27;bilibili_emoji&#x27;</span></span><br><span class="line">    bar = tqdm(emoji_packages)</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> bar:</span><br><span class="line">        <span class="keyword">if</span> p[<span class="string">&#x27;text&#x27;</span>] == <span class="string">&#x27;颜文字&#x27;</span>:</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        bar.set_description(p[<span class="string">&#x27;text&#x27;</span>])</span><br><span class="line">        download_package(p, package_path)</span><br></pre></td></tr></table></figure> 3.打开shell（windows里面powershell和cmd应该都可以），使用 pip install 安装包。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install tqdm</span><br></pre></td></tr></table></figure> 4.运行脚本，shell移动到目录可以cd，可以shift右键“在此处打开powershell”，可以在文件管理器里输目录的地方输cmd或者powershell回车。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python emoji.py</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+        <tag>表情包</tag>
       </tags>
   </entry>
   <entry>
@@ -515,6 +515,52 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
+    <title>调型与发音规则</title>
+    <url>/2022/05f9b5f147.html</url>
+    <content><![CDATA[<h3 id="发音">发音</h3>
+<ul>
+<li><strong>1.</strong> о在非重音时弱化成а；</li>
+<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音； 如：рассказ中的з读成相应清辅音с,； 清浊对照的只有： п-б ф-в т-д к-г с-з ш-ж <span id="more"></span></li>
+<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化； 如：завтра中的в清化成ф；</li>
+<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊； 后者第一个字母为清辅音，则前者最后一个字母清化； 同理，后者浊，前者浊化；</li>
+<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
+<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
+</ul>
+<h3 id="调型">调型</h3>
+<p><strong>调型 1</strong> ： 用于陈述句：从调心元音开始降，调心后部低于调心前部； <strong>调型 2</strong> ： 用于有疑问词的疑问句：疑问词开始降调； <strong>调型 3</strong> ： 用于没有疑问词的疑问句：提问词的重音升调； <strong>调型 4</strong> ： 调型 3, а 调型 1. 转折疑问句：А это? <strong>调型 5</strong> ： 感叹句：Какая красивая девушка!</p>
+<!--
+|  |  |  |  |  |
+|------ |------ |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>发音</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>礼貌用语等</title>
+    <url>/2022/058ae62fc9.html</url>
+    <content><![CDATA[<p>小短语 Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span> До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span> До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span> К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span> здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span> спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span> Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span> Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span> Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span> -М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span> -Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span> -Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span> Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span> -Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span> -Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span> Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span> Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span> Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span> Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span> -Ты зн<font color=Crimson>а</font>ешь,.......<span class="heimu">你知道吗</span> -Кон<font color=Crimson>е</font>чно,я знаю,......<span class="heimu">我当然知道</span> Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span> Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span> Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span> Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот ...<span class="heimu">这个xx多少钱</span> пока́<span class="heimu">[副]回头见，暂时</span> Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
+<!--
+|  |  |  |  |  |
+|------ |------ |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>短句</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>语法之类的吧</title>
     <url>/2022/0529d5bea5.html</url>
     <content><![CDATA[<h3 id="数字-属格">数字 属格</h3>
@@ -591,49 +637,177 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>礼貌用语等</title>
-    <url>/2022/058ae62fc9.html</url>
-    <content><![CDATA[<p>小短语 Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span> До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span> До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span> К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span> здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span> спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span> Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span> Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span> Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span> -М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span> -Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span> -Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span> Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span> -Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span> -Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span> Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span> Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span> Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span> Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span> -Ты зн<font color=Crimson>а</font>ешь,.......<span class="heimu">你知道吗</span> -Кон<font color=Crimson>е</font>чно,я знаю,......<span class="heimu">我当然知道</span> Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span> Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span> Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span> Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот ...<span class="heimu">这个xx多少钱</span> пока́<span class="heimu">[副]回头见，暂时</span> Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
-<!--
-|  |  |  |  |  |
-|------ |------ |------|------|------|
-|  |  |  |  |  |
-<div title="ののの"><font color=Crimson></font></div>
--->
+    <title>日语自动词他动词</title>
+    <url>/2022/06af827696.html</url>
+    <content><![CDATA[<p>唔姆，整理一下。 <br>详情点全文。</p>
+<span id="more"></span>
+<table>
+<thead>
+<tr class="header">
+<th>自动词</th>
+<th>他动词</th>
+<th>意思</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ruby>開<rp>(<rp><rt>あ</rt><rp>)</rp></ruby>く</td>
+<td><ruby>開<rp>(<rp><rt>あ</rt><rp>)</rp></ruby>ける</td>
+<td>开/打开</td>
+</tr>
+<tr class="even">
+<td>まる</td>
+<td><ruby>閉<rp>(<rp><rt>し</rt><rp>)</rp></ruby>める</td>
+<td>关/关闭</td>
+</tr>
+<tr class="odd">
+<td>つく</td>
+<td>つける</td>
+<td>开/打开</td>
+</tr>
+<tr class="even">
+<td>消える</td>
+<td>消す</td>
+<td>关，消失/关闭，消除</td>
+</tr>
+<tr class="odd">
+<td>壊れる</td>
+<td>壊す</td>
+<td>坏了/破幻</td>
+</tr>
+<tr class="even">
+<td><ruby>割<rp>(<rp><rt>わ</rt><rp>)</rp></ruby>れる</td>
+<td><ruby>割<rp>(<rp><rt>わ</rt><rp>)</rp></ruby>る</td>
+<td>破裂/分割</td>
+</tr>
+<tr class="odd">
+<td>折れる</td>
+<td>折る</td>
+<td>折/折断</td>
+</tr>
+<tr class="even">
+<td><ruby>破<rp>(<rp><rt>やぶ</rt><rp>)</rp></ruby>れる</td>
+<td><ruby>破<rp>(<rp><rt>やぶ</rt><rp>)</rp></ruby>る</td>
+<td>破裂/打破</td>
+</tr>
+<tr class="odd">
+<td><ruby>汚<rp>(<rp><rt>よご</rt><rp>)</rp></ruby>れる</td>
+<td><ruby>汚<rp>(<rp><rt>よご</rt><rp>)</rp></ruby>す</td>
+<td>脏/弄脏</td>
+</tr>
+<tr class="even">
+<td>付く</td>
+<td>付ける</td>
+<td>附着/附上</td>
+</tr>
+<tr class="odd">
+<td><ruby>外<rp>(<rp><rt>はず</rt><rp>)</rp></ruby>れる</td>
+<td><ruby>外<rp>(<rp><rt>はず</rt><rp>)</rp></ruby>す</td>
+<td>脱落/取下</td>
+</tr>
+<tr class="even">
+<td><ruby>止<rp>(<rp><rt>と</rt><rp>)</rp></ruby>まる</td>
+<td><ruby>止<rp>(<rp><rt>と</rt><rp>)</rp></ruby>める</td>
+<td>停下/被停下</td>
+</tr>
+<tr class="odd">
+<td>間違う</td>
+<td>間違える</td>
+<td>错/弄错</td>
+</tr>
+<tr class="even">
+<td>落ちる</td>
+<td>落とす</td>
+<td>掉落/弄丢</td>
+</tr>
+<tr class="odd">
+<td>掛かる</td>
+<td>掛ける</td>
+<td>挂着/挂上</td>
+</tr>
+<tr class="even">
+<td>高まる</td>
+<td>高める</td>
+<td>高涨/提高</td>
+</tr>
+<tr class="odd">
+<td>片付く</td>
+<td>片付ける</td>
+<td>收拾好/收拾</td>
+</tr>
+<tr class="even">
+<td>広まる</td>
+<td>広める</td>
+<td>广阔/扩大</td>
+</tr>
+<tr class="odd">
+<td>上がる</td>
+<td>上げる</td>
+<td>上升/提高</td>
+</tr>
+<tr class="even">
+<td>下がる</td>
+<td>下げる</td>
+<td>下降/使下降</td>
+</tr>
+<tr class="odd">
+<td><ruby>温<rp>(<rp><rt>あたた</rt><rp>)</rp></ruby>まる</td>
+<td><ruby>温<rp>(<rp><rt>あたた</rt><rp>)</rp></ruby>める</td>
+<td>温/温暖</td>
+</tr>
+<tr class="even">
+<td>覚める</td>
+<td>覚ます</td>
+<td>苏醒/弄醒</td>
+</tr>
+<tr class="odd">
+<td>立つ</td>
+<td>立てる</td>
+<td>站立/建立</td>
+</tr>
+<tr class="even">
+<td><ruby>並<rp>(<rp><rt>なら</rt><rp>)</rp></ruby>ぶ</td>
+<td><ruby>並<rp>(<rp><rt>なら</rt><rp>)</rp></ruby>べる</td>
+<td>排/排列</td>
+</tr>
+<tr class="odd">
+<td>決まる</td>
+<td>決める</td>
+<td>决定</td>
+</tr>
+<tr class="even">
+<td>続く</td>
+<td>続ける</td>
+<td>继续</td>
+</tr>
+<tr class="odd">
+<td>変わる</td>
+<td>変える</td>
+<td>改变</td>
+</tr>
+<tr class="even">
+<td><ruby>入<rp>(<rp><rt>はい</rt><rp>)</rp></ruby>る</td>
+<td><ruby>入<rp>(<rp><rt>い</rt><rp>)</rp></ruby>れる</td>
+<td>进入/放入</td>
+</tr>
+<tr class="odd">
+<td>込む</td>
+<td>込める</td>
+<td>混杂/装入</td>
+</tr>
+<tr class="even">
+<td>残る</td>
+<td>残す</td>
+<td>剩余</td>
+</tr>
+</tbody>
+</table>
 ]]></content>
       <categories>
-        <category>Русский язык</category>
+        <category>日本語</category>
       </categories>
       <tags>
-        <tag>短句</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>调型与发音规则</title>
-    <url>/2022/05f9b5f147.html</url>
-    <content><![CDATA[<h3 id="发音">发音</h3>
-<ul>
-<li><strong>1.</strong> о在非重音时弱化成а；</li>
-<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音； 如：рассказ中的з读成相应清辅音с,； 清浊对照的只有： п-б ф-в т-д к-г с-з ш-ж <span id="more"></span></li>
-<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化； 如：завтра中的в清化成ф；</li>
-<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊； 后者第一个字母为清辅音，则前者最后一个字母清化； 同理，后者浊，前者浊化；</li>
-<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
-<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
-</ul>
-<h3 id="调型">调型</h3>
-<p><strong>调型 1</strong> ： 用于陈述句：从调心元音开始降，调心后部低于调心前部； <strong>调型 2</strong> ： 用于有疑问词的疑问句：疑问词开始降调； <strong>调型 3</strong> ： 用于没有疑问词的疑问句：提问词的重音升调； <strong>调型 4</strong> ： 调型 3, а 调型 1. 转折疑问句：А это? <strong>调型 5</strong> ： 感叹句：Какая красивая девушка!</p>
-<!--
-|  |  |  |  |  |
-|------ |------ |------|------|------|
-|  |  |  |  |  |
-<div title="ののの"><font color=Crimson></font></div>
--->
-]]></content>
-      <categories>
-        <category>Русский язык</category>
-      </categories>
-      <tags>
-        <tag>发音</tag>
+        <tag>语法</tag>
       </tags>
   </entry>
   <entry>
