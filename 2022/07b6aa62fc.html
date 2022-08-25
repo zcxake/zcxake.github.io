@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#99c"><meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#99c">
+  <meta name="google-site-verification" content="BLneP6LWaguCRi2maU-e9VKPRifNH5lkjOc0QnYCjkg">
+  <meta name="msvalidate.01" content="A3849444E0DE82F95E1181FD7B96F868">
+  <meta name="baidu-site-verification" content="1wuqBI6z8B">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Arial:300,300italic,400,400italic,700,700italic%7CZCOOL+XiaoWei:300,300italic,400,400italic,700,700italic%7CMacondo:300,300italic,400,400italic,700,700italic%7CMa+Shan+Zheng:300,300italic,400,400italic,700,700italic%7CPT+Serif:300,300italic,400,400italic,700,700italic%7CNoto+Serif+Japanese:300,300italic,400,400italic,700,700italic%7CNoto+Serif+SC:300,300italic,400,400italic,700,700italic%7CRoboto:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.choutse.cn","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"right","width":240,"display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":{"livere":{"order":-1}},"activeClass":"livere"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeInDown","post_header":"fadeInDown","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="文章信息  作者：Zhang Zihan，崔田，Michael J. Hutcheon，Alice M. Shipley，Song Hao，Du Mingyang，Vladimir Z. Kresin，段德芳，Chris J. Pickard，Yao Yansun 单位：吉大超硬；宁波大学物理科学与技术学院；剑桥卡文迪许实验室；加利福尼亚大学劳伦斯伯克利实验室；剑桥冶金与材料科学系；东北大学">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Design  Principles  for  High-Temperature  Superconductors  with  a  Hydrogen-Based  Alloy  Backbone  at  Moderate  Pressure">
+<meta property="og:url" content="https://www.choutse.cn/2022/07b6aa62fc.html">
+<meta property="og:site_name" content="筹策">
+<meta property="og:description" content="文章信息  作者：Zhang Zihan，崔田，Michael J. Hutcheon，Alice M. Shipley，Song Hao，Du Mingyang，Vladimir Z. Kresin，段德芳，Chris J. Pickard，Yao Yansun 单位：吉大超硬；宁波大学物理科学与技术学院；剑桥卡文迪许实验室；加利福尼亚大学劳伦斯伯克利实验室；剑桥冶金与材料科学系；东北大学">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.choutse.cn/tu/Pressure-induced%20metallization%20of%20dense%20(H2S)2H2%20with%20high-Tc%20superconductivity/1.png">
+<meta property="og:image" content="https://www.choutse.cn/tu/Pressure-induced%20metallization%20of%20dense%20(H2S)2H2%20with%20high-Tc%20superconductivity/2.png">
+<meta property="og:image" content="https://www.choutse.cn/tu/Pressure-induced%20metallization%20of%20dense%20(H2S)2H2%20with%20high-Tc%20superconductivity/3.png">
+<meta property="og:image" content="https://www.choutse.cn/tu/Pressure-induced%20metallization%20of%20dense%20(H2S)2H2%20with%20high-Tc%20superconductivity/表1.png">
+<meta property="og:image" content="https://www.choutse.cn/tu/Pressure-induced%20metallization%20of%20dense%20(H2S)2H2%20with%20high-Tc%20superconductivity/4.png">
+<meta property="article:published_time" content="2022-07-15T12:52:32.000Z">
+<meta property="article:modified_time" content="2022-07-24T10:23:00.771Z">
+<meta property="article:author" content="zcxake">
+<meta property="article:tag" content="文献">
+<meta property="article:tag" content="超导">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.choutse.cn/tu/Pressure-induced%20metallization%20of%20dense%20(H2S)2H2%20with%20high-Tc%20superconductivity/1.png">
+
+
+<link rel="canonical" href="https://www.choutse.cn/2022/07b6aa62fc.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.choutse.cn/2022/07b6aa62fc.html","path":"2022/07b6aa62fc.html","title":"Design  Principles  for  High-Temperature  Superconductors  with  a  Hydrogen-Based  Alloy  Backbone  at  Moderate  Pressure"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Design  Principles  for  High-Temperature  Superconductors  with  a  Hydrogen-Based  Alloy  Backbone  at  Moderate  Pressure | 筹策</title>
+  
+
+
+
+
+<!--pjax：防止跳转页面音乐暂停-->
+<script src="https://gcore.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
+
+<!--script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"--><!--/script-->
+
+<!--点击爆炸-->
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+<script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script async src="/js/cursor/explosion.min.js"></script>
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="筹策" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">筹策</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">善数，不用筹策</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签儿<span class="badge">12</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>存档<span class="badge">21</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>本站检索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E4%BF%A1%E6%81%AF"><span class="nav-number">1.</span> <span class="nav-text">文章信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%91%98%E8%A6%81"><span class="nav-number">2.</span> <span class="nav-text">摘要：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF-%E7%BB%93%E8%AE%BA"><span class="nav-number">3.</span> <span class="nav-text">背景 结论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">3.1.</span> <span class="nav-text">背景</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="zcxake"
+      src="/images/redface.jpg">
+  <p class="site-author-name" itemprop="name">zcxake</p>
+  <div class="site-description" itemprop="description">天行健，君子以自强不息；地势坤，君子以厚德载物</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-name">存档</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签儿</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/1484336" title="我的阿b → https:&#x2F;&#x2F;space.bilibili.com&#x2F;1484336" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>我的阿b</a>
+      </span>
+  </div>
+
+
+<!-- require APlayer -->
+	<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+	<script src="https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS-->
+
+<script src="https://gcore.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--playlist外链地址-->   
+<meting-js
+           server="netease"
+           type="playlist" 
+           id="68803128"
+		   autoplay="true"
+           mini="false"
+		   fixed="false"
+           list-folded="true"
+           volume="0.2"
+           theme="#FADFA3"
+           order="random"
+           loop="all"
+           preload="auto"
+           lrc-type="1"
+           mutex="true">
+</meting-js>
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.choutse.cn/2022/07b6aa62fc.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/redface.jpg">
+      <meta itemprop="name" content="zcxake">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="筹策">
+      <meta itemprop="description" content="天行健，君子以自强不息；地势坤，君子以厚德载物">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Design  Principles  for  High-Temperature  Superconductors  with  a  Hydrogen-Based  Alloy  Backbone  at  Moderate  Pressure | 筹策">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Design  Principles  for  High-Temperature  Superconductors  with  a  Hydrogen-Based  Alloy  Backbone  at  Moderate  Pressure
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">创建</span>
+
+      <time title="创建时间：2022-07-15 20:52:32" itemprop="dateCreated datePublished" datetime="2022-07-15T20:52:32+08:00">2022-07-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新</span>
+      <time title="修改时间：2022-07-24 18:23:00" itemprop="dateModified" datetime="2022-07-24T18:23:00+08:00">2022-07-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">科研相关</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长约">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长约 &asymp;</span>
+      <span>6 分</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="文章信息">文章信息</h2>
+<ul>
+<li>作者：Zhang Zihan，崔田，Michael J. Hutcheon，Alice M. Shipley，Song Hao，Du Mingyang，Vladimir Z. Kresin，段德芳，Chris J. Pickard，Yao Yansun</li>
+<li>单位：吉大超硬；宁波大学物理科学与技术学院；剑桥卡文迪许实验室；加利福尼亚大学劳伦斯伯克利实验室；剑桥冶金与材料科学系；东北大学先进材料研究所；萨斯喀彻温大学物理和工程物理系</li>
+<li>期刊：PHYSICAL REVIEW LETTERS</li>
+</ul>
+<span id="more"></span>
+<h2 id="摘要">摘要：</h2>
+<p>氢基超导体为长期寻求的室温超导体提供了一条途径，但是这些材料金属化所需的高压限制了它们的直接应用。 例如，碳质氢化硫是实验室是制得的第一个室温超导体，可以在267GPa的极端高压下达到临界温度（<span class="math inline">\(T_c\)</span>）288K。 下一个公认的挑战是在明显更低的压强下实现室温超导。 <strong>本文提出一种在低压下实现高温超导电性的策略，方法是将小半径元素和氢金属化来形成具有合金骨架的三元H基超导体。</strong> 我们在<span class="math inline">\(AXH_8\)</span>形式的化合物中鉴定出了“萤石型”主链，与其他已报道的氢基超导体比，在中等压力下表现出高温超导性。 <span class="math inline">\(LaBeH_8\)</span>的<span class="math inline">\(Fm\overline{3}m\)</span>相具有萤石型<span class="math inline">\(H-Be\)</span>合金主链，预测在98GPa以上具有热力学稳定性，降到20GPa有动力学稳定性，<span class="math inline">\(T_c\)</span>高至185K。 远远低于具有相似几何结构的笼合氢化物<span class="math inline">\(LaH_{10}\)</span>所需的合成压强170GPa。 我们的方法为在接近环境压力的条件下寻找高<span class="math inline">\(T_c\)</span>三元H基超导体铺平道路。</p>
+<h2 id="背景-结论">背景 结论</h2>
+<h3 id="背景">背景</h3>
+<p>氢，世界上最轻的元素，被预测在极端压强下会变成固体金属展现出高温超导性（<span class="math inline">\(T_cs\)</span>在<span class="math inline">\(100-760K\)</span>）。 然而，在高达400GPa的高压试验中，固体氢的金属化仍然是不确定的。 据预测，通过对其他元素和氢进行化学预压缩，在低压下产生足够的金属化价密度，可以在富氢材料中实现类似的高温超导性。 基于这个原则， 预测了一系列的氢基超导体，有一些已经成功在实验室合成。 值得注意的是，<span class="math inline">\(H_3S\)</span>被预测是高温超导体，其<span class="math inline">\(T_c\)</span>为<span class="math inline">\(191-204K\)</span>，后来在实验中测量<span class="math inline">\(155GPa\)</span>下<span class="math inline">\(T_c\)</span>为<span class="math inline">\(203K\)</span>而得到证实。 在这一成功之后，几个新的笼合氢化物也被预测与合成，这些氢化物由重金属原子预压缩的纯氢主链组成，如<span class="math inline">\(170-180GPa\)</span>下<span class="math inline">\(T_c\)</span>为<span class="math inline">\(250-260K\)</span>的<span class="math inline">\(LaH_{10}\)</span>。 发现了几种集合类别的氢化物有助于提高<span class="math inline">\(T_c\)</span>。 除了共价六重立方（covalent sixfold cubic）<span class="math inline">\(H_3S\)</span>和钠长石型（sodalite-type）笼合氢化物，最近也预测了一类五磷酸盐（pentagraphene-like）氢化物在<span class="math inline">\(250GPa\)</span>具有高<span class="math inline">\(T_c\)</span>。 尽管这些H基超导体的稳定压强（大于<span class="math inline">\(150GPa\)</span>）远低于纯氢金属化所需压强， 但他们仍然很难获得。 因此，下一个挑战就是在明显更低的压强下获得室温超导电性，且很明确最终目标是到达环境压强。</p>
+<p>人们已经探索了不同的方法来降低H基超导体的稳定压强。 对已知富氢二元系统掺杂元素或分子是其中一种方式。 例如，对<span class="math inline">\(H_3S\)</span>掺<span class="math inline">\(CH_4\)</span>分子可以在极低的<span class="math inline">\(100GPa\)</span>形成亚稳态化合物。 对于预压缩元素的选择也很重要。 例如，镧系元素和锕系元素的低压稳定性和f电子密切相关。 因此，<span class="math inline">\(YbH_6\)</span>和<span class="math inline">\(LuH_6\)</span>的亚稳态被预测在相对低压强下具有高<span class="math inline">\(T_c\)</span>超导性（分别为<span class="math inline">\(70GPa\)</span>下<span class="math inline">\(145K\)</span>和<span class="math inline">\(100GPa\)</span>下<span class="math inline">\(273K\)</span>）。 至于更低的压强，实验中分别观察到<span class="math inline">\(Fm\overline{3}m\)</span>的<span class="math inline">\(UH_{8+\delta}\)</span>、<span class="math inline">\(F4\overline{3}m\)</span>的<span class="math inline">\(EuH_9\)</span>和<span class="math inline">\(C2/c\)</span>的<span class="math inline">\(NdH_7\)</span>压强为<span class="math inline">\(42,86,85GPa\)</span>，但是这些系统的<span class="math inline">\(T_cs\)</span>非常低。</p>
+<p>虽然二元氢化物已经被广泛探索，但对三元氢化物的研究更具挑战性，但也回报丰厚。 目前已发现三元氢化物比二元氢化物表现出更优秀的性质。 比如，实验中C掺杂的<span class="math inline">\(H_3S\)</span>比<span class="math inline">\(H_3S\)</span>具有更高的<span class="math inline">\(T_c\)</span>，掺杂<span class="math inline">\(Li\)</span>的分子<span class="math inline">\(Mg-H\)</span>相，<span class="math inline">\(Li_2MgH_{16}\)</span>，被预测是目前为止最高的<span class="math inline">\(T_c\)</span>。 然而，三元化合物的相图比二元化合物复杂得多，因此需要有效的方法来构建。 最近的研究显示可以通过硬球模型（hard-sphere model）来构建高压下三元氢化物的相图。 有效探索三元氢化物的能力和在低压下识别具有理想超导性的三元氢化物的能力是未来推进超导研究的关键。</p>
+<p>这里，我们提供一种策略，通过二元<span class="math inline">\(X-H\)</span>主链，设计低压下的高<span class="math inline">\(T_c\)</span>三元H基超导体，随后有金属元素A预压缩。 由此产生的<span class="math inline">\(X-H\)</span>主链比纯H主链更容易金属化，且可以通过用其他原子(X)掺杂已知结构来设计，这些原子会破坏母体结构的局部基元。 这将导致占据了重叠能带的金属化的富H相，也称氢合金相。 我们首先设计了一类新型的萤石型三元结构<span class="math inline">\(AXH_8(Fm\overline{3}m)\)</span>，从其中我们发现了七种由预压缩元素<span class="math inline">\(A(A=S_c,C_a,Y,S_r,L_a,B_a)\)</span>和小半径元素<span class="math inline">\(X(X=B_e,B,A_l)\)</span>组成的动态稳定的H基超导体。 接下来是重建硬球模型来研究新的萤石型氢化物和这些新材料在集合因素方面的稳定性。</p>
+<p>我们从高温超导体<span class="math inline">\(LaH_{10}\)</span>的纯H主链中设计了这些合金主链材料中的第一个，其与低压超导体<span class="math inline">\(UH_8\)</span>具有同样的对称性。 比较<span class="math inline">\(UH_8\)</span>和<span class="math inline">\(LaH_{10}\)</span>的晶体结构（见图1a和1b），<span class="math inline">\(LaH_{10}\)</span>的结构可以视作以<span class="math inline">\(UH_8\)</span>为母体结构，在真空四面体位点掺杂额外的H原子。 额外的H原子破坏了立方<span class="math inline">\(H_8\)</span>单元的位置，导致产生<span class="math inline">\(LaH_{10}\)</span>中著名的笼合物主链。 相反，掺杂X原子可以插入立方<span class="math inline">\(H_8\)</span>单元中心空位，导致<span class="math inline">\(LaXH_8\)</span>的<span class="math inline">\(Fm\overline{3}m\)</span>结构（见图1c）。 例如，对这些立方位，<span class="math inline">\(Be\)</span>可能是一个合适的掺杂元素。 这条新颖的<span class="math inline">\(H-Be\)</span>合金主链对应于萤石型排列（如图1d），其中Be原子位于面心立方晶格的位点上，而<span class="math inline">\(H_4\)</span>四面体位于Be原子间的四面体空位中（如图1e和1f）。 三元氢化物<span class="math inline">\(AXH_8\)</span>，有<span class="math inline">\(X_H\)</span>合金主链，有可能在低于其他已报道的H基超导体所需的压力下实现高温超导。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\1.png"
+     alt="图1"
+     width=700>
+<figcaption>
+<small>图1. <br>(a)<span class="math inline">\(H_8\)</span>立方单元的<span class="math inline">\(UH_8\)</span>晶体结构。U离子黑色，H离子粉色。 <br>(b)<span class="math inline">\(LaH_{10}\)</span>的晶体结构，La离子绿色。<span class="math inline">\(LaH_{10}\)</span>的主链由粉色的立方单元H原子和灰色的四面体中心H原子组成。 <br>(c)<span class="math inline">\(UH_8\)</span>的晶体结构，<span class="math inline">\(H_8\)</span>立方中心显示为红球。 <br>(d)萤石<span class="math inline">\(CaF_2\)</span>的晶体结构，Ca阳离子深蓝色，F粒子浅蓝色。 <br>(e)<span class="math inline">\(LaBeH_8\)</span>的晶体结构。<span class="math inline">\(LaBeH_8\)</span>的主链由粉色的四面体单元H原子和蓝色的立方中心Be原子组成。 <br>(f)萤石型<span class="math inline">\(LaBeH_8\)</span>笼。</small>
+</figcaption>
+</figure>
+<p>在确定了这种三元萤石型结构之后，我们继续研究更广泛的萤石型主链氢化物<span class="math inline">\(AXH_8\)</span>（<span class="math inline">\(Fm\overline{3}m\)</span>），由预压缩元素A（A=Sc，Ca，sr，La，Ba）和小半径元素X（X=Be，B，Al）组成。 在所得的<span class="math inline">\(AXH_8\)</span>三元氢化物的18种组合中，有七种在本文研究的压力范围内表现出动态稳定性的区域，这是由声子散射中不存在虚数频率而建立的（见SI的S1-S8）。 这些氢化物分别是<span class="math inline">\(LaBeH_8\)</span>, <span class="math inline">\(CaBeH_8\)</span>, <span class="math inline">\(YBeH_8\)</span>, <span class="math inline">\(CaBH_8\)</span>, <span class="math inline">\(SrBH_8\)</span>, <span class="math inline">\(LaBH_8\)</span>, 和<span class="math inline">\(LaAlH_8\)</span>。 值得注意，<span class="math inline">\(LaBeH_8\)</span>在地狱20GPa的压强下让能保持动态稳定。 其他的11中氢化物在研究的压强范围内不稳定，表现出破坏晶体对称性的虚声子模式（见SI的图S12-S22）。 在确定了七种动态稳定的萤石型氢化物之后，我们使用从头开始随机结构搜索来确定他们的热力学稳定性，方法是构建凸包（见SI的图S24-S30）。 将声子色散分析（图SI的S1）和焓差计算（图2b）联系起来，我们发现立方<span class="math inline">\(LaBeH_8\)</span>在98GPa以上变得热力学稳定了。 然而，它的动态稳定性（亚稳性）可以保持在低至20GPa。 <span class="math inline">\(YBeH_8\)</span>和<span class="math inline">\(SrBH_8\)</span>在300GPa时具有热力学稳定（见SI的图S23）。 剩下四种展现出动态稳定的氢化物<span class="math inline">\(CaBeH_8\)</span>, <span class="math inline">\(CaBH_8\)</span>, <span class="math inline">\(LaBH_8\)</span>, 和<span class="math inline">\(LaAlH_8\)</span>在研究的压强范围内未出现热力学稳定性（小于等于300GPa），可能会在更高的压强下稳定。 根据无机晶体结构数据库，20%的合成材料是亚稳的，其中一些甚至有正的形成焓。 <strong>高压合成通常涉及高温，因此产物通常是亚稳的</strong>；合成的金刚石和氮同素异形体就是很好的例子。 实验发现的超导系统Si-H和S-C-H在理论计算中也被发现具有亚稳态。 <strong>非谐性在一些超导氢化物中具有重要作用</strong>。 然而，目前的计算不允许在结构预测中对非谐效应进行高通量评估。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\2.png"
+     alt="图2"
+     width=700>
+<figcaption>
+<small>图2.萤石型氢化物<span class="math inline">\(AXH_8\)</span>的计算焓。 <br>(a)x轴为A原子半径，y轴为X原子半径。动力不稳定系统以黑色十字显示。亚稳相是圆圈，基于凸包上方计算的焓着色。热力学稳定相为红色方形。 <br>(b)相对于<span class="math inline">\(LaBeH_8\)</span>的<span class="math inline">\(Fm\overline{3}m\)</span>相<span class="math inline">\(La-Be-H\)</span>结构的计算焓作为压强的函数，<span class="math inline">\(LaH_6\)</span>, <span class="math inline">\(BeH_2\)</span>,和<span class="math inline">\(H\)</span>的结构来自文献。</small>
+</figcaption>
+</figure>
+<p>在研究了这些萤石型主链氢化物的稳定性后，我们继续研究他们的超导性质。 从SI第三部分的Eliashberg方程知，<span class="math inline">\(T_c\)</span>值由<span class="math inline">\(\mu^*=0.1\)</span>确定的。 如图3所示，预计<span class="math inline">\(LaBeH_8\)</span>将展现出高温超导性，在100GPa时<span class="math inline">\(T_c=192K\)</span>，20GPa时<span class="math inline">\(T_c=183K\)</span>（亚稳态阈值）。 由McMillan方程和Gorkov-Kresin理论计算出的<span class="math inline">\(T_c\)</span>值在SI中展示和讨论。 这些萤石型主链结构也有表现出室温超导性的潜力，亚稳态<span class="math inline">\(CaBeH_8\)</span>预测在210GPa下<span class="math inline">\(T_c=300K\)</span>。 同样，我们计算出<span class="math inline">\(YBeH_8\)</span>, <span class="math inline">\(CaBH_8\)</span>, <span class="math inline">\(SrBH_8\)</span>, <span class="math inline">\(LaBH_8\)</span>和<span class="math inline">\(LaAlH_8\)</span>在他们各自的亚稳态区表现出高温超导性，分别在100GPa下<span class="math inline">\(T_c=249K\)</span>，100GPa下<span class="math inline">\(T_c=238K\)</span>，150GPa下<span class="math inline">\(T_c=200K\)</span>，70GPa下<span class="math inline">\(T_c=160K\)</span>，100GPa下<span class="math inline">\(T_c=144K\)</span>。 这些超导氢化物的一个共同特征是在布里渊区边界出现软声子模式（见SI的图S1-S8），旷职出现强声电耦合。 当系统不稳定时，这种效应更强。 如图3所示，萤石型主链氢化物动态稳定的阈值压强比典型的高<span class="math inline">\(T_c\)</span>氢化物更低，同时保留远高于液氮温度的<span class="math inline">\(T_c\)</span>。 <span class="math inline">\(LaBeH_8\)</span>是第一个提出的H基超导体，其品质因数（figure of merit score）约为<span class="math inline">\(S=3-4\)</span>。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\3.png"
+     alt="图3"
+     width=700>
+<figcaption>
+<small>图3.典型超导体<span class="math inline">\(T_cs\)</span>的压强依赖性。 萤石型主链氢化物最低压强下的<span class="math inline">\(T_cs\)</span>为橘色圆圈，他们也在此处变得动态稳定。 红圈是<span class="math inline">\(LaBeH_8\)</span>变得热力学稳定的最低压强（98GPa），立方<span class="math inline">\(LaBeH_8\)</span>的建议合成压强范围以黄色高亮显示。 蓝色方块表示文献里报道的二元笼合氢化物最低压强下的<span class="math inline">\(T_cs\)</span>。 紫色星星来自实验的著名超导体的<span class="math inline">\(T_cs\)</span>。 背景根据品质因数<span class="math inline">\(S=(T/\sqrt(P^2+T^2_{MgB_2}))\)</span>着色，S是评估超导体的重要特性。 虚线是河合型多砧面压机的压强限制。</small>
+</figcaption>
+</figure>
+<p><strong>几何因子在钙钛矿和二维过渡金属碳（氮）化物（MXenes）等材料的高通量筛选中起重要作用</strong>。 有效的硬球模型可以用来探索这种新型材料的结构原型。 萤石型氢化物的动态稳定性取决于预压缩元素A的半径，表明从几何因素推导出来的硬球模型可以使我们得出这一类结构的一般结论。 要构建这种模型，我们做了两个简化：（i）将预压缩元素视为硬球；（ii）主链特征是<span class="math inline">\(H-H\)</span>键和<span class="math inline">\(X-H\)</span>键。 该模型的推到在SI的第五部分提出，此方案给出了立方晶胞（L）的晶格参数，<span class="math inline">\(H-H\)</span>键长度(<span class="math inline">\(b_{H─H}\)</span>)和<span class="math inline">\(X─H\)</span>键长度(<span class="math inline">\(b_{X─H}\)</span>)如下： <span class="math display">\[L=\frac{\sqrt{3}+1}{t+1}2R_A\]</span> <span class="math display">\[b_{H-H}=\frac{\sqrt{3}+1-2t}{t+1}\sqrt{6}R_A=F_{H-H}d_{H-H}\]</span> <span class="math display">\[b_{X-H}=\frac{3t-\sqrt{3}}{t+1}R_A=F_{H-X}d_{H-X}\]</span> 其中<span class="math inline">\(R_A\)</span>是原子A的共价半径，<span class="math inline">\(t=0.95-1.05\)</span>是允许硬球略微重叠的公差系数。 从文献中知，键长也可以表示为柔性因子（F）和二元氢化物（d）的乘积。</p>
+<p>表1中显示了使用硬球模型的七种氢化物的<span class="math inline">\(L\)</span>，<span class="math inline">\(b_{H─H}\)</span>和<span class="math inline">\(b_{X─H}\)</span>，根据密度泛函理论在150GPa下计算的也列在里边。 通过硬球模型获得的<span class="math inline">\(L\)</span>与100-200GPa压强范围内通过密度泛函理论获得的相近。 萤石型主链的几何形状将<span class="math inline">\(H-H\)</span>键长相对一般氢化物的<span class="math inline">\(H-H\)</span>键长拉长30%-60%或20%-30%（分别根据硬球模型和密度泛函理论），这由于大量电荷转移到<span class="math inline">\(H-H\)</span>键上（见表1）。 <span class="math inline">\(X-H\)</span>键也被几何因素影响，但键长拉长还是缩短取决于组成；硬球模型和密度泛函理论计算一致。 显然，几何因素对于理论萤石型氢化物的稳定性至关重要。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\表1.png"
+     alt="图表1"
+     width=700>
+<figcaption>
+<small>表1.由硬球模型（unprimed）和150GPa下密度泛函理论（primed）计算出的晶格参数<span class="math inline">\(L\)</span>，键长<span class="math inline">\(b_{X-H}\)</span>和<span class="math inline">\(b_{H-H}\)</span>，柔性因子<span class="math inline">\(F\)</span>。 转移到<span class="math inline">\(H\)</span>的电荷量表示为<span class="math inline">\(\delta\)</span>。 这里，我们用<span class="math inline">\(t=1.03,d_{H-H}=1.1Å,d_{Be-H}=1.31Å,d_{b-H}=1.22Å,d_{Al-H}=1.72Å\)</span>。</small>
+</figcaption>
+</figure>
+<p>硬球模型复合<span class="math inline">\(AXH_8\)</span>的一般特征，并允许我们确定净体重可以替代<span class="math inline">\(X\)</span>元素的标准。 特别是，候选元素应该在二元系统中形成键长<span class="math inline">\(1.2-1.6Å\)</span>的氢键。 因此，我们研究了将<span class="math inline">\(Si,P,和S\)</span>取代入<span class="math inline">\(LaXH_8\)</span>的可能性，因为<span class="math inline">\(X-H\)</span>键长是<span class="math inline">\(d_{Si-H}~1.6Å\)</span>，<span class="math inline">\(d_{P-H}~1.4Å\)</span>和<span class="math inline">\(d_{S-H}~1.5Å\)</span>。 我们发现<span class="math inline">\(LaSiH8\)</span>，<span class="math inline">\(LaSH8\)</span>和<span class="math inline">\(LaPH8\)</span>在200GPa下均动态稳定（见SI的图S9-S11），计算出他们都展现出高<span class="math inline">\(T_c\)</span>超导性：在100GPa下150K，200GPa下195K，200GPa下151K（分别见SI图S50-S52）。</p>
+<p>氢化物中的二元主链通常由高压下的极性键组成。 例如，<span class="math inline">\(SCH_7\)</span>的<span class="math inline">\(SH_3\)</span>珠帘由<span class="math inline">\(H-S\)</span>极性键组成（见图4a）。 这些主链中极性键的端到端的排列通常具有低焓。 但是在<span class="math inline">\(BeH_8\)</span>主链中，四个具有负电荷<span class="math inline">\(\delta^-\)</span>的H原子非常接近（见图4b），表明萤石型主链以不同的方式形成。 在萤石型主链的独特键合环境中，如表1，大量电话转移到H原子是可能的；这些电子沿<span class="math inline">\(H-H\)</span>键占据反键态（如SI的图S56-S62）。 这些额外的电子不仅拉长<span class="math inline">\(H-H\)</span>键，还能在费米能级上导致增长的<span class="math inline">\(H\)</span>衍生态密度。 因此合金主链中独特的化学提供了改善H基超导体的途径。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\4.png"
+     alt="图4"
+     width=700>
+<figcaption>
+<small>图4.(a)<span class="math inline">\(H_3S\)</span>主链中的<span class="math inline">\(H-S\)</span>键的极化矢量；在这些键中，正电荷在H原子（粉色），负电荷在S原子（黄色）。 <br>(b)<span class="math inline">\(BeH_8\)</span>主链中的<span class="math inline">\(Be-H\)</span>键的极化矢量，导致氢原子处的电荷集中。在这些键中，正电荷在Be原子（绿色），负电荷在H原子（粉色）。</small>
+</figcaption>
+</figure>
+<p>作为开发低压稳定H基超导体的一部分，我们设计了一类具有萤石型合金主链的三元氢化物<span class="math inline">\(AXH_8\)</span>。 与其他已报道的H基超导体相比，预测的<span class="math inline">\(AXH_8\)</span>氢化物在远低于他们热力学区域的压强下表现出动态稳定性，同时保持了高<span class="math inline">\(T_c\)</span>超导体需要的强声电耦合。 我们考虑的系统之一是低至20GPa下的动态稳定性，这一压强远低于典型H基超导体稳定的所需压强和KMAPs能获得的压强。 如果将镧系和锕系元素包含进去，萤石型主链家族的氢化物会约有20个成员。 未来对其他三元系统的研究可能会通过类似的方法发现更接近环境压强的高温超导体。</p>
+<p>综上所述，设计具有合金主链的氢化物被证明是获取低压H基超导体的有效方法。 在这些材料中，小半径元与氢合金化，在主链结构中引入新键，取代一些<span class="math inline">\(H-H\)</span>键。 我们的研究结果将促进进一步的实验探索，在环境压强下合成氢化物基超导体将是高温超导领域的一个重要突破。</p>
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%96%87%E7%8C%AE/" rel="tag"><i class="fa fa-tag"></i> 文献</a>
+              <a href="/tags/%E8%B6%85%E5%AF%BC/" rel="tag"><i class="fa fa-tag"></i> 超导</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/077c76717f.html" rel="prev" title="下载各大网站视频的方法">
+                  <i class="fa fa-chevron-left"></i> 下载各大网站视频的方法
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/07d0e9cc8b.html" rel="next" title="Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity">
+                  Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81NjQ1MC8zMjkxMw=="></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-z"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zcxake | 筹策</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">70k</span>
+  </span>
+</div><!--canvas nest-->
+<script color="255,250,250" opacity="1" zIndex="-1" count="99" src="https://gcore.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("2/1/2022 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@next-theme/pjax@0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://unpkg.com/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://unpkg.com/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script src="/js/third-party/comments/livere.js"></script>
+
+
+
+</body>
+</html>
+
+

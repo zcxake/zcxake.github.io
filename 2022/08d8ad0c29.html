@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#99c"><meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#99c">
+  <meta name="google-site-verification" content="BLneP6LWaguCRi2maU-e9VKPRifNH5lkjOc0QnYCjkg">
+  <meta name="msvalidate.01" content="A3849444E0DE82F95E1181FD7B96F868">
+  <meta name="baidu-site-verification" content="1wuqBI6z8B">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Arial:300,300italic,400,400italic,700,700italic%7CZCOOL+XiaoWei:300,300italic,400,400italic,700,700italic%7CMacondo:300,300italic,400,400italic,700,700italic%7CMa+Shan+Zheng:300,300italic,400,400italic,700,700italic%7CPT+Serif:300,300italic,400,400italic,700,700italic%7CNoto+Serif+Japanese:300,300italic,400,400italic,700,700italic%7CNoto+Serif+SC:300,300italic,400,400italic,700,700italic%7CRoboto:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.choutse.cn","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"right","width":240,"display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":{"livere":{"order":-1}},"activeClass":"livere"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeInDown","post_header":"fadeInDown","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="文章信息  作者：Y.C. Tian, W.H. Zhang, F.S. Li, Y.L. Wu, Q. Wu, F. Sun, G.Y. Zhou, Lili Wang, Xucun Ma, Qi-Kun Xue, and Jimin Zhao 单位：中科院物理所北京凝聚态物理国家实验室，清华大学低维量子物理国家重点实验室，量子物质科学协同创新中心 期刊：PHYSICAL REVIEW">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3">
+<meta property="og:url" content="https://www.choutse.cn/2022/08d8ad0c29.html">
+<meta property="og:site_name" content="筹策">
+<meta property="og:description" content="文章信息  作者：Y.C. Tian, W.H. Zhang, F.S. Li, Y.L. Wu, Q. Wu, F. Sun, G.Y. Zhou, Lili Wang, Xucun Ma, Qi-Kun Xue, and Jimin Zhao 单位：中科院物理所北京凝聚态物理国家实验室，清华大学低维量子物理国家重点实验室，量子物质科学协同创新中心 期刊：PHYSICAL REVIEW">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.choutse.cn/tu/Ultrafast%20Dynamics%20Evidence%20of%20High%20Temperature%20Superconductivity%20in%20Single%20Unit%20Cell%20FeSe%20on%20SrTiO3/1.png">
+<meta property="og:image" content="https://www.choutse.cn/tu/Ultrafast%20Dynamics%20Evidence%20of%20High%20Temperature%20Superconductivity%20in%20Single%20Unit%20Cell%20FeSe%20on%20SrTiO3/2.png">
+<meta property="og:image" content="https://www.choutse.cn/tu/Ultrafast%20Dynamics%20Evidence%20of%20High%20Temperature%20Superconductivity%20in%20Single%20Unit%20Cell%20FeSe%20on%20SrTiO3/3.png">
+<meta property="og:image" content="https://www.choutse.cn/tu/Ultrafast%20Dynamics%20Evidence%20of%20High%20Temperature%20Superconductivity%20in%20Single%20Unit%20Cell%20FeSe%20on%20SrTiO3/4.png">
+<meta property="og:image" content="https://www.choutse.cn/tu/Ultrafast%20Dynamics%20Evidence%20of%20High%20Temperature%20Superconductivity%20in%20Single%20Unit%20Cell%20FeSe%20on%20SrTiO3/s7.png">
+<meta property="article:published_time" content="2022-08-24T10:50:30.000Z">
+<meta property="article:modified_time" content="2022-08-25T08:03:14.417Z">
+<meta property="article:author" content="zcxake">
+<meta property="article:tag" content="文献">
+<meta property="article:tag" content="超导">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.choutse.cn/tu/Ultrafast%20Dynamics%20Evidence%20of%20High%20Temperature%20Superconductivity%20in%20Single%20Unit%20Cell%20FeSe%20on%20SrTiO3/1.png">
+
+
+<link rel="canonical" href="https://www.choutse.cn/2022/08d8ad0c29.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.choutse.cn/2022/08d8ad0c29.html","path":"2022/08d8ad0c29.html","title":"Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3 | 筹策</title>
+  
+
+
+
+
+<!--pjax：防止跳转页面音乐暂停-->
+<script src="https://gcore.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
+
+<!--script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"--><!--/script-->
+
+<!--点击爆炸-->
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+<script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script async src="/js/cursor/explosion.min.js"></script>
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="筹策" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">筹策</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">善数，不用筹策</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签儿<span class="badge">12</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>存档<span class="badge">21</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>本站检索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E4%BF%A1%E6%81%AF"><span class="nav-number">1.</span> <span class="nav-text">文章信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%91%98%E8%A6%81"><span class="nav-number">2.</span> <span class="nav-text">摘要：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E7%AD%89"><span class="nav-number">3.</span> <span class="nav-text">背景等</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">3.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%90%E6%9E%9C"><span class="nav-number">3.2.</span> <span class="nav-text">成果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C%E8%BF%87%E7%A8%8B"><span class="nav-number">4.</span> <span class="nav-text">实验过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE1"><span class="nav-number">4.1.</span> <span class="nav-text">图1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE2"><span class="nav-number">4.2.</span> <span class="nav-text">图2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE3"><span class="nav-number">4.3.</span> <span class="nav-text">图3</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E9%87%8F"><span class="nav-number">5.</span> <span class="nav-text">定量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#diss-others"><span class="nav-number">5.1.</span> <span class="nav-text">diss others</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#go-on"><span class="nav-number">5.2.</span> <span class="nav-text">go on</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8E%E9%93%81%E5%9F%BA%E4%B8%8D%E5%90%8C"><span class="nav-number">5.3.</span> <span class="nav-text">与铁基不同</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE4"><span class="nav-number">5.4.</span> <span class="nav-text">图4</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AE%BA"><span class="nav-number">6.</span> <span class="nav-text">结论</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="zcxake"
+      src="/images/redface.jpg">
+  <p class="site-author-name" itemprop="name">zcxake</p>
+  <div class="site-description" itemprop="description">天行健，君子以自强不息；地势坤，君子以厚德载物</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-name">存档</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签儿</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/1484336" title="我的阿b → https:&#x2F;&#x2F;space.bilibili.com&#x2F;1484336" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>我的阿b</a>
+      </span>
+  </div>
+
+
+<!-- require APlayer -->
+	<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+	<script src="https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS-->
+
+<script src="https://gcore.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--playlist外链地址-->   
+<meting-js
+           server="netease"
+           type="playlist" 
+           id="68803128"
+		   autoplay="true"
+           mini="false"
+		   fixed="false"
+           list-folded="true"
+           volume="0.2"
+           theme="#FADFA3"
+           order="random"
+           loop="all"
+           preload="auto"
+           lrc-type="1"
+           mutex="true">
+</meting-js>
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.choutse.cn/2022/08d8ad0c29.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/redface.jpg">
+      <meta itemprop="name" content="zcxake">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="筹策">
+      <meta itemprop="description" content="天行健，君子以自强不息；地势坤，君子以厚德载物">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3 | 筹策">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">创建</span>
+
+      <time title="创建时间：2022-08-24 18:50:30" itemprop="dateCreated datePublished" datetime="2022-08-24T18:50:30+08:00">2022-08-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新</span>
+      <time title="修改时间：2022-08-25 16:03:14" itemprop="dateModified" datetime="2022-08-25T16:03:14+08:00">2022-08-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">科研相关</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>6.9k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长约">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长约 &asymp;</span>
+      <span>6 分</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="文章信息">文章信息</h2>
+<ul>
+<li>作者：Y.C. Tian, W.H. Zhang, F.S. Li, Y.L. Wu, Q. Wu, F. Sun, G.Y. Zhou, Lili Wang, Xucun Ma, Qi-Kun Xue, and Jimin Zhao</li>
+<li>单位：中科院物理所北京凝聚态物理国家实验室，清华大学低维量子物理国家重点实验室，量子物质科学协同创新中心</li>
+<li>期刊：PHYSICAL REVIEW LETTERS</li>
+</ul>
+<span id="more"></span>
+<h2 id="摘要">摘要：</h2>
+<p>我们报道了具有碲化亚铁<span class="math inline">\(FeTe\)</span>封层的钛酸锶<span class="math inline">\(SrTiO_3\)</span>上单晶胞厚硒化亚铁<span class="math inline">\(TeSe\)</span>薄膜的时间分辨激发态超快动力学。 通过测量光激发准粒子的密度和寿命，我们明确地识别了超导相变，其相变温度为<span class="math inline">\(68(-5+2)K\)</span>，超导能隙为<span class="math inline">\(\Delta(0)=20.2\pm1.5meV\)</span>。 获得的声电耦合强度<span class="math inline">\(\lambda\)</span>高达0.48，表明声电耦合在钛酸锶系统的单晶胞硒化亚铁的高温超导性中可能起关键作用。 我们进一步在封层中发现一个<span class="math inline">\(0.05THz\)</span>的声学模分支，它为粘合玻色子提供了额外的衰减通道。</p>
+<h2 id="背景等">背景等</h2>
+<h3 id="背景">背景</h3>
+<p>钛酸锶上单晶胞厚硒化亚铁薄膜有高超导温度，但是通过角分辨光电子能谱实验测得的为<span class="math inline">\(55\pm5,65\pm5,60\pm5,58\pm7K\)</span>，通过输运测量为<span class="math inline">\(109K\)</span>，通过磁化测量为<span class="math inline">\(20K\)</span>（<span class="math inline">\(45K\)</span>起始）。</p>
+<p>已经分析知道声电耦合对高超导温度起关键作用。但是<span class="math inline">\(T_c\)</span>值仍不准确，且需要通过不同的实验来全面认识超导性。</p>
+<p><strong>作为研究激发态超快动力学的有力手段，对能隙敏感的超快光谱可以提供准粒子和各种激发态之间的相互作用信息</strong>，例如声电耦合，且经常用于探测和控制新型量子材料，其中就包括超导体。</p>
+<h3 id="成果">成果</h3>
+<p>本篇文章利用超快光谱来研究覆盖了两晶胞<span class="math inline">\(FeTe\)</span>的<span class="math inline">\(1UC FeSe/STO\)</span>，缩写为<span class="math inline">\(2FeTe/1FeSe/STO\)</span>，<span class="math inline">\(FeTe\)</span>用来保护样品不受空气污染。明确获得了超导转变温度，能隙，声电耦合强度，热电子密度，以及电子温度。还在薄<span class="math inline">\(FeTe\)</span>中观察到一个声学声子分支，它形成胶合玻色子的侧衰变通道，因此解释了所报告的<span class="math inline">\(T_c\)</span>值的不一致。</p>
+<h2 id="实验过程">实验过程</h2>
+<p>采用中心波长为800nm、脉冲宽度为96fs，重复频率<span class="math inline">\(250kHz\)</span>的超快激光脉冲在<span class="math inline">\(5K\)</span>到室温的环境下，激发和探测<span class="math inline">\(2FeTe/1FeSe/STO\)</span>样品的光载体的超快动力学。</p>
+<p>测量了差分反射率<span class="math inline">\(\Delta R/R\)</span>作为延迟时间的函数。 泵浦和探测光通量分别保持在<span class="math inline">\(268和30\mu J/cm^2\)</span></p>
+<p>与常用的<span class="math inline">\(76-100MHz\)</span>激光系统相比，由于样品传输，做我们<span class="math inline">\(250kHz\)</span>的实验中，稳态激光加热（即所谓的热效应）要弱1000倍。这就使得我们可以用更高的激发和探测的通量，来保持高信噪比。 此外，由于每个光脉冲对每个FeSe晶胞仅激发约0.03个电子，而系统在~100ps内弛豫到超导基态（见下文），因此<strong>大多数超导冷凝物不会发生非热熔化</strong>。</p>
+<p>实施交叉极化检测以进一步提高信噪比</p>
+<h3 id="图1">图1</h3>
+<p>图1总结了样品的归一化光致瞬态差分反射率，插图中示意性地说明了这一点（生长过程的细节在其他文献中详细描述）。 在这里，<span class="math inline">\(|\Delta R/R|\)</span>与光激发自由载流子的密度成正比，因为探测光的吸收由泵浦引起的量子占有数变化进行线性修正（参考费米黄金法则）。</p>
+<p>可以看到<span class="math inline">\(t=0ps\)</span>后的扫描路径有增加和减少的两部分组成，其振幅和寿随温度变化。 重要的是，在<span class="math inline">\(t&gt;0ps\)</span>可以看到一个驼峰。 驼峰的大小随温度升高而先减小后增高，在<span class="math inline">\(70K\)</span>左右出现变化。 这和下方要讨论的超导转变有关。</p>
+<p>注意到在我们的控制实验中，2UC的FeTe是最好的覆盖层数，可以清楚地区分1UC FeSe的超快动力学和覆盖层FeTe的超快动力学。 在附加材料中，我们展示了FeSe对于超导相的帮助，而不是FeTe。</p>
+<figure>
+<img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\1.png"
+     alt="图1"
+     width=700>
+<figcaption>
+<small>图1.归一化光诱导差分反射率。 <br>图中显示了不同温度下的扫描曲线，并显示了放大视图。 <br>紫色箭头标记了驼峰随温度升高的变化趋势。 <br>图中还显示了样品构造图例。 </small>
+</figcaption>
+</figure>
+<h3 id="图2">图2</h3>
+<p>为了通过超快载流子动力学来识别相变，我们将瞬时反射率绘制为时间和温度的函数，见图2。 不同颜色有助于理解相变。 可以看到有几个温区，对应不同的相。</p>
+<p>特别是，初始（0-2ps，白色紫色区域）和进行过程中（大于2ps，红色蓝色区域），都在68K左右，弛豫出现明显的变化。 这些颜色变化反映出在相变中，载流子密度和寿命的变化，并定性的代表了超导相变。</p>
+<p>我们在下面进一步展示了定量的数据分析，它明确证明这就是超导相变，其相变温度为68(-2/-5)K。</p>
+<figure>
+<img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\2.png"
+     alt="图2"
+     width=700>
+<figcaption>
+<small>图2.超导相变的定性证据。 <br>差分反射率作为幅度和延迟时间的二维映射图，定性地说明在68K附近出现超导相变。 <br>白线标记了超导相变温度。 <br>在-2.8-43.5ps的时间步长为0.23ps，在43.5-173ps的时间步长为3.33ps；温度步长变化在图3中。 <br>进行了适当插值使着色更平滑。 </small>
+</figcaption>
+</figure>
+<h3 id="图3">图3</h3>
+<p>时间分辨过程可以用两个实验分量近似： <span class="math inline">\(\Delta R/R=A_{fast}e^{-t/\tau_{fast}}+A_{slow}e^{-t/\tau_{slow}}+A_0\)</span>， 其中<span class="math inline">\(A_{fast}\)</span>，<span class="math inline">\(\tau_{fast}\)</span>，<span class="math inline">\(A_{slow}\)</span>，<span class="math inline">\(\tau_{slow}\)</span>是温度的函数，均通过实验数据拟合而来，而<span class="math inline">\(A_0\)</span>是散射泵泄露的背景。 注意我们已经在数据拟合中包含了卷积。 结果总结在图3中，fast部分反映声电耦合（图3a和b），slow部分反映跨能隙准粒子重组，受声子对断裂的影响（图3c和d）。</p>
+<p>可以看到，随着温度升高，在68K以下，<span class="math inline">\(A_{slow}\)</span>稳定下降，在接近68K时突然下降，然后在68K以上趋势恒定（图3c）。 且在略低于68K的温度下，可以清楚看到<span class="math inline">\(\tau_{slow}\)</span>有明显的发散。 这两种变化同时出现强烈意味着超导相变的发生。</p>
+<p>准粒子和玻色子之间的准平衡在超导态下形成，他们共同的寿命由所谓的声子瓶颈效应决定（见下面的讨论）。 在<span class="math inline">\(T_c\)</span>两端，超导能隙的笔盒必然引起准粒子密度和寿命的显著变化。</p>
+<p>注意通常<span class="math inline">\(T_c\)</span>略高于寿命出现奇点的温度。</p>
+<p>我们将图3d中的103K峰归于FeTe层反铁磁相到顺磁相的相变。 它不是超导相变，因为没有同时出现<span class="math inline">\(A_{slow}\)</span>的变化。 另外，160ps的寿命（图3d）也几乎与另一个10UC FeTe/STO样品的寿命相同（见补充材料）。</p>
+<p><font color="MediumOrchid">超导温度为103K的另一种可能性也直接被时域数据拟合结果排除。</font></p>
+<p>尽管FeTe有很强的背景，我们还是可以清晰地观察到FeSe的相变。 这表明我们的方法是单层敏感的，可以应用到其他界面研究上。</p>
+<p>微观上，在相干光激发后，处于远高于费米面的高激发态的准粒子弛豫到超导能隙上方，与高频声子（high frequency phonons，缩写为HFP，<span class="math inline">\(E_{ph}&gt;2\Delta\)</span>，<span class="math inline">\(\Delta\)</span>是超导能隙）形成准平衡量子混合物。</p>
+<p>库珀对的形成和破裂以声子群决定的方式演变，即声子瓶颈效应。 这个效应可以利用超快光谱最直接和有效地观测到，且可以通过<a href=https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.19.27>Rothwarf-Taylor对声电耦合平衡的描述</a>来理解。</p>
+<p>在该模型中，高频声子在电子凝聚过程中破坏了库珀对，因此与准粒子一起构成了一个动态平衡，只能通过高频声子的衰减和逃逸来缓和。 此即声子瓶颈效应，可从图3d中看出（60K左右较大的<span class="math inline">\(\tau_{slow}\)</span>）。</p>
+<figure>
+<img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\3.png"
+     alt="图3"
+     width=700>
+<figcaption>
+<small>图3.超导相变在68（-5/+2）K的定量证据。 <br>（a）fast组分振幅与温度的关系； <br>（b）fast组分寿命与温度的关系，红点是反卷积数据。 <br>（c）slow组分振幅与温度的关系； <br>（d）slow组分寿命与温度的关系，红线是理论仿真曲线；橘色条纹标记了63-70K的超导温度；亮蓝色条纹标记了FeTe封层的非超导相变； <br>（c）中插图：热激发准粒子的密度；（d）中插图：8K附近数据的放大图。 </small>
+</figcaption>
+</figure>
+<h2 id="定量">定量</h2>
+<p>定量地，我们使用Kabanov等的库珀对超导明星来模拟图3中的结果。 对于电子玻色子相互作用系统，对能隙敏感的超快动力学可以通过温度相关的差分反射率表示为： <span class="math display">\[\Delta R/R\propto \dfrac{\epsilon_{I}[\Delta(T)+k_BT/2]}{1+\dfrac{2\nu}{N(0)\hbar \Omega_c}\sqrt{\dfrac{2k_BT}{\pi \Delta (T)}}e^{-\Delta(T)/k_BT}} \tag{1}\]</span> 其中<span class="math inline">\(\epsilon_I\)</span>是单位晶胞吸收的激光能量密度，<span class="math inline">\(\Omega_c\)</span>是声子截止频率，<span class="math inline">\(\nu\)</span>是单位晶胞有效的相互作用声子数量，<span class="math inline">\(N(0)\)</span>是费米面的态密度，我们假设在<span class="math inline">\(T_c\)</span>附近有一对称的能隙<span class="math inline">\(\Delta(T)=\Delta(0)[1-(T/T_c)]^{1/2}\)</span>。</p>
+<p>我们通过方程（1）拟合了图3c中的数据，并发现<span class="math inline">\(A_{slow}\)</span>的拟合曲线有一急剧下降并在68K停止。 对于其他常规、铜基、铁基超导体，这个截止温度就是超导相变的温度。</p>
+<p>同时，使用该模型，准粒子（以及平衡状态的声子）与能隙相关的寿命可以描述为： <span class="math display">\[\begin{aligned}
+\tau _{slow} &amp;= \tau_{ph}
+\\
+&amp;= \dfrac{\hbar^2\omega^2ln\left[\dfrac{1}{\dfrac{\epsilon_I}{2N(0)\Delta(0)^2}+e^{\frac{\Delta(T)}{k_BT}}}\right]}{12\Gamma_\omega\Delta(T)^2} \tag2
+\end{aligned}\]</span> 其中<span class="math inline">\(\omega\)</span>是高频声子的频率，<span class="math inline">\(\Gamma_\omega\)</span>是声子线宽。</p>
+<p>通过方程（2）我们在图3d中拟合了<span class="math inline">\(\tau_{slow}\)</span>的数据，在60K左右出现显著的奇点。 多次尝试拟合参数给出了<span class="math inline">\(63K&lt;T_c&lt;70K\)</span>的边界，最优化的值为68K。</p>
+<p>但是考虑到温度测量的系统误差，样品的相变温度只略高于68K，而不低于68K。</p>
+<p>同时，上述分析得到<span class="math inline">\(\Delta(0)=3.2-3.7k_BT_c\)</span>（<span class="math inline">\(k_B\)</span>是玻尔兹曼常数），即<span class="math inline">\(\Delta(0)=20.2\pm1.5meV\)</span>，与已报道的20.1meV，19meV和<span class="math inline">\(3.0-3.5k_BT_c\)</span>吻合得非常好。</p>
+<h3 id="diss-others"><del>diss others</del></h3>
+<p>在过去角分辨光电子能谱测量中，去除覆盖层、退火、或者在放置4-6天后测量都会导致能隙发生变化。 而传输测量则由于电接触经常对非常薄的活性层造成缺陷。 一般来说，能隙和相变温度的变化是由测量的薄膜中样品间质量波动引起的。</p>
+<p>与上述测量相比，超快光谱提供一种非破坏的方法来研究高温超导体。</p>
+<p>因此，在样品质量相同的情况下，我们观察到的能隙和相变温度比非原位传输测量更高也就不足为奇了。 若没有覆盖层，超快光谱可以在原位测量中给出更高的相变温度。 我们还获得了热准粒子的密度<span class="math inline">\(n_{th}\)</span>（见图3c），随着温度趋于<span class="math inline">\(T_c\)</span>显著增加。</p>
+<h3 id="go-on">go on</h3>
+<p>我们可以直接从准粒子寿命获得声电耦合强度<span class="math inline">\(\lambda\)</span>。 弛豫动力学由<span class="math inline">\(\lambda\left&lt;\omega^2\right&gt;=(\pi/3)(k_BT/\hbar \tau_{e-ph})\)</span>的电子声子耦合决定，其中<span class="math inline">\(\tau_{e-ph}\)</span>可以直接由我们的泵浦探测光谱测得（比如<span class="math inline">\(\tau_{fast}=0.23ps\)</span>，见图3b的红点，是原始<span class="math inline">\(\tau_{fast}\)</span>数据反卷积的结果），<span class="math inline">\(\lambda^2\)</span>是Eliashberg方程的二阶矩。</p>
+<p>根据激光通量，我们估计<span class="math inline">\(T_e=902K\)</span>。</p>
+<p>我们推测声电耦合主要发生在FeSe电子和STO（或者界面）的声子之间，因为STO（或者界面）处大量原子贡献了声子浴。 例如，在石墨烯上生长的单层FeSe不是超导体。</p>
+<p>取在大体积STO<span class="math inline">\(\Gamma\)</span>附近测得的低光学声子频率，<span class="math inline">\(\hbar^2\left&lt;\omega^2\right&gt;=22^2(meBV)^2\)</span>，我们获得<span class="math inline">\(\lambda=0.48\)</span>。 作为对比，同样使用超快光谱测量块状FeSe获得的<span class="math inline">\(\lambda=0.16\)</span>。</p>
+<p>尽管取<a href=https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.108.257006>文献</a>中FeSe的<span class="math inline">\(A_{1g}\)</span>来计算，<span class="math inline">\(\lambda\)</span>的值还是更大，甚至比体积值大得多。 因此我们确认声电耦合在1UC FeSe/STO系统中占据更重要的作用。</p>
+<h3 id="与铁基不同">与铁基不同</h3>
+<p>迄今为止，块状FeSe和其他铁基超导体中，人们普遍认为电子-电子相互作用导致了超导效应。 但是1UC FeSe/STO系统的电子结构却大不相同。 此外，由于衬底的强相互作用，电子-电子相关性也显著不同。 或者，从理论上讲界面相互作用以各种方式增强了声电耦合作用。</p>
+<p>我们本次的实验表明1UC FeSe/STO系统有更大的<span class="math inline">\(\lambda\)</span>（=0.48），使我们相信在此高温超导中声电耦合作用起着关键作用，即使不能排除电子-电子相互作用。</p>
+<h3 id="图4">图4</h3>
+<p>为进一步探究配对情况及为何覆盖层会导致超导温度将降低，我们研究了覆盖层的影响。 我们在STO上制备了两层晶胞的FeTe（缩写为2UC FeTe/STO），在FeTe层中明确地生成并检测到了相干声子声学分支。</p>
+<p>图4a显示了叠加在单指数电子衰减上的清晰的周期声子振荡。 去除电子弛豫后，相干声学声子波展示在图4a下方。 通过图4a的傅里叶变换得到声子频率为0.05THz（0.2meV）。</p>
+<p>声子声学波的相对周期为20ps，其寿命在4.5K时为274ps，在24K时为262ps，在110K时为200ps。 在10Uc FeTe/STO样品中也观察到看了相同的声学模，且由于FeTe层较厚，振荡更为突出。 注意由于信号微弱但背景很强，在单原子层中观察到相干声学模的报道很少。</p>
+<p>我们猜想在FeTe层中观察到的声学支对超导凝聚的玻色子形成衰变通道，因此降低了2FeTe/1FeSe/STO样品的超导相变温度。 在图4b和4c中大致说明了这一点。 尽管很多类型的玻色子都可以成为胶体，我们以声子作为例子来描述这个物理图像。</p>
+<p>STO和界面的光学声子通过单层FeSe层隧道衰变为FeTe覆盖层的声学分支。 在动量空间，高能光学声子（可能是胶合玻色子）的弛豫受到FeTe引起的额外的衰变通道的推动。 这里，所有特征都绘制到能量尺度，声子能带结构基于<a href=http://dx.doi.org/10.1103/PhysRevB.77.134111>文献</a>的计算。</p>
+<p>尽管如缺陷、杂质、干涉和磁散射等其他来源也会降低超导温度，但是光学声子向声学声子的非谐衰变是固有且有效的。</p>
+<p>此外，非谐波衰变的其他通道会导致光学支的额外增宽，从而导致不那么尖锐的超导相变。 这可能反映在传输测量中。</p>
+<p>在图4a中可以看出2Uc FeTe/STO的准粒子动力学之包括一个指数衰变。 我们在图S7中展示了它的温度依赖性，其振幅和寿命不显示超导特性。 因此尽管FeTe层厚度减小了，但我们观察到的超导响应不来自该层。</p>
+<p>而且，我们在2Uc FeTe/STO进行了另一个反射和对照试验，表明FeSe主导反射信号，超导响应很显然来自FeSe而不是FeTe。</p>
+<figure>
+<img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\4.png"
+     alt="图4"
+     width=700>
+<figcaption>
+<small>图4.覆盖层中的相干声学声子和胶合玻色子的衰变。 <br>（a）2Uc FeTe/STO的超快动力学；实线：单指数拟合；节假的相干声学声子在下方面板中展示；插图：傅里叶变换。 <br>（b）通过FeSe层的声子衰减图示。红波：STO和界面中的光学声子；黄波：FeTe层中的声学声子。 <br>（c）对应的K空间原理图。大红箭头：新的弛豫通道；LO，TO和LA：纵光学声子（longitudinal optical phonons），横光学声子（transverse optical phonons）和纵声学声子（longitudinal acoustic phonons）。 </small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\s7.png"
+     alt="图s7"
+     width=700>
+<figcaption>
+<small>图s7.2Uc FeTe/STO的对照试验。 <br>（a）不同温度下光载流子寿命。黑点与图3d中的相同，具有红色的理论拟合曲线。插图放大显示了与温度相关的行为。分析说明了泵浦和探测功率。 <br>（b）动力学振幅。黑点与图3c中的相同，有红色理论拟合曲线。 <br>（a）（b）中动力学属性并不相同。 </small>
+</figcaption>
+</figure>
+<h2 id="结论">结论</h2>
+<p>我们通过研究准粒子超快动力学，观察到2FeTe/1FeSe/STO样品高温超导转变温度<span class="math inline">\(T_c=68(-5/+2)K\)</span>。 这是封闭单层FeSe样品中已报道的最高温度。 能隙为<span class="math inline">\(\Delta(0)=20.2\pm1.5meV\)</span>，即<span class="math inline">\(\Delta(0)=3.2-3.7k_BT_c\)</span>。 声电耦合强度<span class="math inline">\(\lambda=0.48\)</span>强于块状材料，表明声电耦合可能在超导机制中期关键作用。 且在FeTe封层中观察到0.05THz的相干声学支，增强了配对玻色子的衰变，很好地解释了封层对超导相变温度的降低作用。 我们的实验结果，从激发态演化中浓缩出来，独立地构成了1UC FeSe/STO系统高相变温度的证据。 我们的研究表明超快光谱对单层相变是敏感的，为单层或者界面量子材料的非破坏研究铺平了道路。</p>
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%96%87%E7%8C%AE/" rel="tag"><i class="fa fa-tag"></i> 文献</a>
+              <a href="/tags/%E8%B6%85%E5%AF%BC/" rel="tag"><i class="fa fa-tag"></i> 超导</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/077c76717f.html" rel="next" title="下载各大网站视频的方法">
+                  下载各大网站视频的方法 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81NjQ1MC8zMjkxMw=="></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-z"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zcxake | 筹策</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">70k</span>
+  </span>
+</div><!--canvas nest-->
+<script color="255,250,250" opacity="1" zIndex="-1" count="99" src="https://gcore.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("2/1/2022 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@next-theme/pjax@0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://unpkg.com/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://unpkg.com/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script src="/js/third-party/comments/livere.js"></script>
+
+
+
+</body>
+</html>
+
+

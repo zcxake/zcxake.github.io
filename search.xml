@@ -50,6 +50,46 @@
       </tags>
   </entry>
   <entry>
+    <title>下载各大网站视频的方法</title>
+    <url>/2022/077c76717f.html</url>
+    <content><![CDATA[<p>过去下视频是为了看，现在主要是为了剪视频，不过目的无所谓了，主要不同网站适用性不同，有时候就忘了应该用哪种很麻烦，索性一起记录下。</p>
+<span id="more"></span>
+<p><strong>时效性：2022.07.18</strong></p>
+<h3 id="m3u8腾讯">m3u8（腾讯）</h3>
+<p>先从今天的腾讯开始，之前我用lux下载，但是lux现在无法解析到480p以上的清晰度了，只能换个，现在用的是m3u8大法：</p>
+<ul>
+<li>猫抓探测：https://github.com/xifangczy/cat-catch</li>
+<li>下载器下载：https://github.com/nilaoda/N_m3u8DL-CLI</li>
+</ul>
+<p>使用方法都有就不细写了，推荐使用simpleG。</p>
+<h3 id="luxannie优酷">Lux（annie）（优酷）</h3>
+<p>之前用来下优酷来着，现在不确定能不能使了，不过反正之前大部分网站都可以用。</p>
+<ul>
+<li>https://github.com/iawia002/lux</li>
+</ul>
+<p>基本用法就是&quot;lux -i 链接&quot;获取信息</p>
+<p>下载需要会员的视频时就&quot;lux -i -c cookie所在位置如D:.txt 链接&quot;</p>
+<p>cookie获取方式可以用EditThisCookie插件或者F12控制台输入document.cookie底下那一行。</p>
+<p>这种方式也类似you-get等</p>
+<h3 id="downkyi阿b">Downkyi（阿b）</h3>
+<ul>
+<li>https://github.com/leiurayer/downkyi</li>
+</ul>
+<p>非常非常非常简单好用的阿b视频下载器！！！！</p>
+<h3 id="gihosoft-tubegetyoutube">Gihosoft TubeGet（YouTube）</h3>
+<ul>
+<li>https://www.gihosoft.com/free-youtube-downloader.html</li>
+</ul>
+<p>按理说Lux其实可以下载YouTube的，不过这个软件早早就下了，所以也一直在用，也是简单好用的那种。</p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>制作bongo cat的一些注意事项</title>
     <url>/2022/0530cbe1d0.html</url>
     <content><![CDATA[<p>偶在首页上看到散人的bongo cat，感觉好可爱，然后还很有意思，就想自己做个。 最后做了个星瞳的，因为不会画画所以参考了一些星瞳已有的表情包，反正<a href="https://www.bilibili.com/video/BV1jt4y1p7VG?spm_id_from=333.999.0.0">成品</a>感觉害挺可爱的。 不过过程中遇到了非常多的问题，其实也是因为软件相关教程比较少，自带教程也是点到即止，所以现在把自己的经验总结一下吧，官方教程里涉及到的就不会再提了。 <a href="https://www.bilibili.com/read/readlist/rl191271">原版软件</a>在这里，找最新的版本去下载，看作者的意思马上就有新版了，这个教程出了也没啥意义其实2333333 <span id="more"></span> ### 先整体把控吧 首先看文件夹，根目录中的<strong>config.json</strong>主要负责改属性，<strong>img</strong>中的三个文件夹分别对应三种模式。 最终显示的图层顺序是<strong>bg静图→keyboard文件夹→cat model(live2D)文件夹→hand文件夹</strong> 那么问题就出来了，如果要用live2D，而且你的live2D里包括键盘，想通过keyboard文件夹里的图像来展示按键效果是不可能了，那就只能把按键效果整合到hand文件夹里的手上，结果就是keyboard文件夹空着就行。</p>
@@ -168,7 +208,8 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
   <entry>
     <title>获取阿b的表情</title>
     <url>/2022/05f71bb376.html</url>
-    <content><![CDATA[<p>方法来自知乎：https://www.zhihu.com/question/275901829/answer/1574659804 不太用知乎所以还是转到自己的网站吧。</p>
+    <content><![CDATA[<p>下述方法不能用了，先用这里别人收集好的吧： https://github.com/lrhtony/BiliEmoji</p>
+<p>方法来自知乎：https://www.zhihu.com/question/275901829/answer/1574659804 不太用知乎所以还是转到自己的网站吧。</p>
 <p>1.在登录的状态下访问http://api.bilibili.com/x/emote/setting/panel?business=reply ，存储为emoji.json。 2.编写python脚本，保存为emoji.py在emoji.json目录下。 <span id="more"></span> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import json</span><br><span class="line">import os</span><br><span class="line">from concurrent.futures import ThreadPoolExecutor</span><br><span class="line">from functools import partial</span><br><span class="line">from time import sleep</span><br><span class="line"></span><br><span class="line">import requests</span><br><span class="line">from tqdm import tqdm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def mkdir(path):</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(path) is not True:</span><br><span class="line">        os.makedirs(path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_pic(url, path):</span><br><span class="line">    resp = requests.get(url)</span><br><span class="line">    with open(path, <span class="string">&#x27;wb&#x27;</span>) as code:</span><br><span class="line">        code.write(resp.content)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_emoji(emoji, save_path):</span><br><span class="line">    emoji_name = emoji[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    emoji_name = emoji_name[1:-1]</span><br><span class="line">    path = os.path.join(save_path, f<span class="string">&#x27;&#123;emoji_name&#125;.png&#x27;</span>)</span><br><span class="line">    download_pic(emoji[<span class="string">&#x27;url&#x27;</span>], path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_package(package, path):</span><br><span class="line">    package_name = package[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    save_path = os.path.join(path, package_name)</span><br><span class="line">    mkdir(save_path)</span><br><span class="line">    all_emote = <span class="built_in">set</span>(map(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1], package[<span class="string">&#x27;emote&#x27;</span>]))</span><br><span class="line">    downloaded_emote = <span class="built_in">set</span>(map(lambda e: e[:-4], os.listdir(save_path)))</span><br><span class="line">    download_emote_name = all_emote - downloaded_emote</span><br><span class="line">    <span class="keyword">if</span> len(download_emote_name) == 0:</span><br><span class="line">        <span class="built_in">return</span></span><br><span class="line">    going_to_download_emote = filter(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1] <span class="keyword">in</span> download_emote_name, package[<span class="string">&#x27;emote&#x27;</span>])</span><br><span class="line">    with ThreadPoolExecutor() as executor:</span><br><span class="line">        executor.map(partial(download_emoji, save_path=save_path), going_to_download_emote)</span><br><span class="line">    sleep(3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    with open(<span class="string">&#x27;emoji.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) as fp:</span><br><span class="line">        emojis = json.load(fp)</span><br><span class="line">    emoji_packages = emojis[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;all_packages&#x27;</span>]</span><br><span class="line">    package_path = <span class="string">&#x27;bilibili_emoji&#x27;</span></span><br><span class="line">    bar = tqdm(emoji_packages)</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> bar:</span><br><span class="line">        <span class="keyword">if</span> p[<span class="string">&#x27;text&#x27;</span>] == <span class="string">&#x27;颜文字&#x27;</span>:</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        bar.set_description(p[<span class="string">&#x27;text&#x27;</span>])</span><br><span class="line">        download_package(p, package_path)</span><br></pre></td></tr></table></figure> 3.打开shell（windows里面powershell和cmd应该都可以），使用 pip install 安装包。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install tqdm</span><br></pre></td></tr></table></figure> 4.运行脚本，shell移动到目录可以cd，可以shift右键“在此处打开powershell”，可以在文件管理器里输目录的地方输cmd或者powershell回车。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python emoji.py</span><br></pre></td></tr></table></figure></p>
 ]]></content>
       <categories>
@@ -533,6 +574,34 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
+    <title>调型与发音规则</title>
+    <url>/2022/05f9b5f147.html</url>
+    <content><![CDATA[<h3 id="发音">发音</h3>
+<ul>
+<li><strong>1.</strong> о在非重音时弱化成а；</li>
+<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音； 如：рассказ中的з读成相应清辅音с,； 清浊对照的只有： п-б ф-в т-д к-г с-з ш-ж <span id="more"></span></li>
+<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化； 如：завтра中的в清化成ф；</li>
+<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊； 后者第一个字母为清辅音，则前者最后一个字母清化； 同理，后者浊，前者浊化；</li>
+<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
+<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
+</ul>
+<h3 id="调型">调型</h3>
+<p><strong>调型 1</strong> ： 用于陈述句：从调心元音开始降，调心后部低于调心前部； <strong>调型 2</strong> ： 用于有疑问词的疑问句：疑问词开始降调； <strong>调型 3</strong> ： 用于没有疑问词的疑问句：提问词的重音升调； <strong>调型 4</strong> ： 调型 3, а 调型 1. 转折疑问句：А это? <strong>调型 5</strong> ： 感叹句：Какая красивая девушка!</p>
+<!--
+|  |  |  |  |  |
+|------ |------ |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>发音</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>语法之类的吧</title>
     <url>/2022/0529d5bea5.html</url>
     <content><![CDATA[<h3 id="数字-属格">数字 属格</h3>
@@ -609,31 +678,64 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>调型与发音规则</title>
-    <url>/2022/05f9b5f147.html</url>
-    <content><![CDATA[<h3 id="发音">发音</h3>
-<ul>
-<li><strong>1.</strong> о在非重音时弱化成а；</li>
-<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音； 如：рассказ中的з读成相应清辅音с,； 清浊对照的只有： п-б ф-в т-д к-г с-з ш-ж <span id="more"></span></li>
-<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化； 如：завтра中的в清化成ф；</li>
-<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊； 后者第一个字母为清辅音，则前者最后一个字母清化； 同理，后者浊，前者浊化；</li>
-<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
-<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
-</ul>
-<h3 id="调型">调型</h3>
-<p><strong>调型 1</strong> ： 用于陈述句：从调心元音开始降，调心后部低于调心前部； <strong>调型 2</strong> ： 用于有疑问词的疑问句：疑问词开始降调； <strong>调型 3</strong> ： 用于没有疑问词的疑问句：提问词的重音升调； <strong>调型 4</strong> ： 调型 3, а 调型 1. 转折疑问句：А это? <strong>调型 5</strong> ： 感叹句：Какая красивая девушка!</p>
-<!--
-|  |  |  |  |  |
-|------ |------ |------|------|------|
-|  |  |  |  |  |
-<div title="ののの"><font color=Crimson></font></div>
--->
+    <title>Origin操作小指南</title>
+    <url>/2022/06431ba714.html</url>
+    <content><![CDATA[<p>真的很小，用的是2021版。</p>
+<h3 id="开始之前">开始之前</h3>
+<ol type="1">
+<li>固定左侧的项目管理器。</li>
+<li>修改默认字体和页边距： <br>Preference-Options-Text Fonts中Font和Default设置为Times New Roman <br>隔壁的Page设置为Tight</li>
+<li>一些快捷键和图标 <br><img align="left" width="24" height="29" data-src="\tu\Origin操作小指南\1.png"> Rescale表示自动重置坐标轴刻度，以使图像可以充满区域； <br><br><img align="left" width="25" height="136" data-src="\tu\Origin操作小指南\2.png"> 可以增加坐标轴； <br><br><br><br><br>Ctrl+D 新增列；</li>
+</ol>
+<span id="more"></span>
+<h3 id="开整">开整</h3>
+<ol type="1">
+<li>导入数据</li>
+<li>调整坐标轴，双击坐标轴进入设置</li>
+</ol>
 ]]></content>
       <categories>
-        <category>Русский язык</category>
+        <category>科研相关</category>
       </categories>
       <tags>
-        <tag>发音</tag>
+        <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jade操作小指南</title>
+    <url>/2022/0680a0f618.html</url>
+    <content><![CDATA[<p>导入里的import可以设置txt 找到自己的txt后导入，也可以直接拖入。</p>
+<p>一上来就遇到了一个非常脑瘫的问题，导入的txt设置问题。 <br>这里把需要修改的参数列出来吧。</p>
+<span id="more"></span>
+<p>Data Starts at L：这个指的是从第几行开始处理数据 <br>Char- &amp; Width：左边的空是从第几位开始是强度，右边是强度字符长度，这个长点无所谓 <br>Angle Column：左边的空是从第几位开始是角度，右边是到第几位角度结束 <br>主要就是改这几个，然后图像就正确了。 <br>举例： <br>数据为：10.0000 1320.0000 <br>相应设置为： <br>Angle Column：1 7 <br>Char- &amp; Width：9 9</p>
+<ol type="1">
+<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\2.png">（但是不建议）去除背底，双击工具栏的BG，这个可能是因为样品粗糙，或者光源有问题，或者是粉末。</li>
+<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\1.png">（但是不建议）粉末可能杂峰较多，可以用工具栏的这个平滑一下。</li>
+<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\3.png">Search &amp; Match上右键，右边可以设置元素，两下有底色的是确定有的，单击字体变色是可能存在的。左边第一个不限制查找。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>桜ノ雨</title>
+    <url>/2022/066631e6d7.html</url>
+    <content><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=22677426&amp;auto=0&amp;height=32">
+</iframe>
+<p>看文献真不是人能干的事儿，正好听到这首，发现歌词里好多不太常见的读音，索性打一下喽（过去是学累了抄歌词，现在是学累了打歌词嗯……</p>
+<p>0629更新捏：做了实验发现和实验比起来，看文献真是世间最美好的事。</p>
+<p><font color=#eb507e> それぞれの場所へ旅立っても <br>友達だ聞くまでもないじゃん <br>十人十色に輝いた日々が <br>胸張れと背中押す</font> <br><span id="more"></span></p>
+<p><font color=#eb507e><br><ruby>土埃<rp>(<rp><rt>つちぼこり</rt><rp>)</rp></ruby>上げ<ruby>競<rp>(<rp><rt>きそ</rt><rp>)</rp></ruby>った<ruby>校庭<rp>(<rp><rt>こうてい</rt><rp>)</rp></ruby> <br><ruby>窮屈<rp>(<rp><rt>きゅうくつ</rt><rp>)</rp></ruby>で着くずした制服 <br>机の上に書いた落書き <br>どれもこれも僕らの証 <br> <br><ruby>白紙<rp>(<rp><rt>はくし</rt><rp>)</rp></ruby>の<ruby>答辞<rp>(<rp><rt>とうじ</rt><rp>)</rp></ruby>には伝えきれない <br>思い出の数だけ涙が滲む <br>幼くて傷つけもした <br>僕らは少しくらい大人になれたのかな <br> <br>教室の窓から桜の雨 <br>ふわり手のひらこころに寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br><ruby>下駄箱<rp>(<rp><rt>げたばこ</rt><rp>)</rp></ruby>で見つけた恋の実 <br><ruby>廊下<rp>(<rp><rt>ろうか</rt><rp>)</rp></ruby>で<ruby>零<rp>(<rp><rt>こぼ</rt><rp>)</rp></ruby>した<ruby>不平不満<rp>(<rp><rt>ふへいふまん</rt><rp>)</rp></ruby> <br><ruby>屋上<rp>(<rp><rt>おくじょう</rt><rp>)</rp></ruby>で<ruby>手繰<rp>(<rp><rt>た</rt><rp>)</rp>繰<rp>(<rp><rt>ぐ</rt><rp>)</rp></ruby>り描いた未来図 <br>どれもこれも僕らの証 <br> <br>卒業<ruby>証書<rp>(<rp><rt>しょうしょ</rt><rp>)</rp></ruby>には書いてないけど <br>人を信じ人を愛して<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>んだ <br>泣き笑い喜び<ruby>怒<rp>(<rp><rt>いか</rt><rp>)</rp></ruby>り <br>僕らみたいに青く青く晴れ渡る空 <br> <br>教室の窓から桜ノ虹 <br>夢の<ruby>一片<rp>(<rp><rt>ひとひら</rt><rp>)</rp></ruby>胸<ruby>震<rp>(<rp><rt>ふる</rt><rp>)</rp></ruby>わせた <br>出会いの為の別れと信じて <br>手を振り返そう　忘れないで <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br><ruby>幾千<rp>(<rp><rt>いくぜん</rt><rp>)</rp></ruby>の<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>び<ruby>舎<rp>(<rp><rt>や</rt><rp>)</rp></ruby>の中で <br>僕らが巡り逢えた奇跡 <br>幾つ年をとっても変わらないで <br>その優しい笑顔 <br> <br>教室の窓から桜ノ雨 <br>ふわりてのひら　心に寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br>No matter how hard it hurts me. <br>I'll never say good bye. <br>Your presence will always linger in my heart. <br>... wanna see your smile again. </font></p>
+]]></content>
+      <categories>
+        <category>日本語</category>
+      </categories>
+      <tags>
+        <tag>歌词</tag>
       </tags>
   </entry>
   <entry>
@@ -1061,19 +1163,324 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>桜ノ雨</title>
-    <url>/2022/066631e6d7.html</url>
-    <content><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=22677426&amp;auto=0&amp;height=32">
-</iframe>
-<p>看文献真不是人能干的事儿，正好听到这首，发现歌词里好多不太常见的读音，索性打一下喽（过去是学累了抄歌词，现在是学累了打歌词嗯……</p>
-<p><font color=#eb507e> それぞれの場所へ旅立っても <br>友達だ聞くまでもないじゃん <br>十人十色に輝いた日々が <br>胸張れと背中押す</font> <br><span id="more"></span></p>
-<p><font color=#eb507e><br><ruby>土埃<rp>(<rp><rt>つちぼこり</rt><rp>)</rp></ruby>上げ<ruby>競<rp>(<rp><rt>きそ</rt><rp>)</rp></ruby>った<ruby>校庭<rp>(<rp><rt>こうてい</rt><rp>)</rp></ruby> <br><ruby>窮屈<rp>(<rp><rt>きゅうくつ</rt><rp>)</rp></ruby>で着くずした制服 <br>机の上に書いた落書き <br>どれもこれも僕らの証 <br> <br><ruby>白紙<rp>(<rp><rt>はくし</rt><rp>)</rp></ruby>の<ruby>答辞<rp>(<rp><rt>とうじ</rt><rp>)</rp></ruby>には伝えきれない <br>思い出の数だけ涙が滲む <br>幼くて傷つけもした <br>僕らは少しくらい大人になれたのかな <br> <br>教室の窓から桜の雨 <br>ふわり手のひらこころに寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br><ruby>下駄箱<rp>(<rp><rt>げたばこ</rt><rp>)</rp></ruby>で見つけた恋の実 <br><ruby>廊下<rp>(<rp><rt>ろうか</rt><rp>)</rp></ruby>で<ruby>零<rp>(<rp><rt>こぼ</rt><rp>)</rp></ruby>した<ruby>不平不満<rp>(<rp><rt>ふへいふまん</rt><rp>)</rp></ruby> <br><ruby>屋上<rp>(<rp><rt>おくじょう</rt><rp>)</rp></ruby>で<ruby>手繰<rp>(<rp><rt>た</rt><rp>)</rp>繰<rp>(<rp><rt>ぐ</rt><rp>)</rp></ruby>り描いた未来図 <br>どれもこれも僕らの証 <br> <br>卒業<ruby>証書<rp>(<rp><rt>しょうしょ</rt><rp>)</rp></ruby>には書いてないけど <br>人を信じ人を愛して<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>んだ <br>泣き笑い喜び<ruby>怒<rp>(<rp><rt>いか</rt><rp>)</rp></ruby>り <br>僕らみたいに青く青く晴れ渡る空 <br> <br>教室の窓から桜ノ虹 <br>夢の<ruby>一片<rp>(<rp><rt>ひとひら</rt><rp>)</rp></ruby>胸<ruby>震<rp>(<rp><rt>ふる</rt><rp>)</rp></ruby>わせた <br>出会いの為の別れと信じて <br>手を振り返そう　忘れないで <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br><ruby>幾千<rp>(<rp><rt>いくぜん</rt><rp>)</rp></ruby>の<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>び<ruby>舎<rp>(<rp><rt>や</rt><rp>)</rp></ruby>の中で <br>僕らが巡り逢えた奇跡 <br>幾つ年をとっても変わらないで <br>その優しい笑顔 <br> <br>教室の窓から桜ノ雨 <br>ふわりてのひら　心に寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br>No matter how hard it hurts me. <br>I'll never say good bye. <br>Your presence will always linger in my heart. <br>... wanna see your smile again. </font></p>
+    <title>Design  Principles  for  High-Temperature  Superconductors  with  a  Hydrogen-Based  Alloy  Backbone  at  Moderate  Pressure</title>
+    <url>/2022/07b6aa62fc.html</url>
+    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
+<ul>
+<li>作者：Zhang Zihan，崔田，Michael J. Hutcheon，Alice M. Shipley，Song Hao，Du Mingyang，Vladimir Z. Kresin，段德芳，Chris J. Pickard，Yao Yansun</li>
+<li>单位：吉大超硬；宁波大学物理科学与技术学院；剑桥卡文迪许实验室；加利福尼亚大学劳伦斯伯克利实验室；剑桥冶金与材料科学系；东北大学先进材料研究所；萨斯喀彻温大学物理和工程物理系</li>
+<li>期刊：PHYSICAL REVIEW LETTERS</li>
+</ul>
+<span id="more"></span>
+<h2 id="摘要">摘要：</h2>
+<p>氢基超导体为长期寻求的室温超导体提供了一条途径，但是这些材料金属化所需的高压限制了它们的直接应用。 例如，碳质氢化硫是实验室是制得的第一个室温超导体，可以在267GPa的极端高压下达到临界温度（<span class="math inline">\(T_c\)</span>）288K。 下一个公认的挑战是在明显更低的压强下实现室温超导。 <strong>本文提出一种在低压下实现高温超导电性的策略，方法是将小半径元素和氢金属化来形成具有合金骨架的三元H基超导体。</strong> 我们在<span class="math inline">\(AXH_8\)</span>形式的化合物中鉴定出了“萤石型”主链，与其他已报道的氢基超导体比，在中等压力下表现出高温超导性。 <span class="math inline">\(LaBeH_8\)</span>的<span class="math inline">\(Fm\overline{3}m\)</span>相具有萤石型<span class="math inline">\(H-Be\)</span>合金主链，预测在98GPa以上具有热力学稳定性，降到20GPa有动力学稳定性，<span class="math inline">\(T_c\)</span>高至185K。 远远低于具有相似几何结构的笼合氢化物<span class="math inline">\(LaH_{10}\)</span>所需的合成压强170GPa。 我们的方法为在接近环境压力的条件下寻找高<span class="math inline">\(T_c\)</span>三元H基超导体铺平道路。</p>
+<h2 id="背景-结论">背景 结论</h2>
+<h3 id="背景">背景</h3>
+<p>氢，世界上最轻的元素，被预测在极端压强下会变成固体金属展现出高温超导性（<span class="math inline">\(T_cs\)</span>在<span class="math inline">\(100-760K\)</span>）。 然而，在高达400GPa的高压试验中，固体氢的金属化仍然是不确定的。 据预测，通过对其他元素和氢进行化学预压缩，在低压下产生足够的金属化价密度，可以在富氢材料中实现类似的高温超导性。 基于这个原则， 预测了一系列的氢基超导体，有一些已经成功在实验室合成。 值得注意的是，<span class="math inline">\(H_3S\)</span>被预测是高温超导体，其<span class="math inline">\(T_c\)</span>为<span class="math inline">\(191-204K\)</span>，后来在实验中测量<span class="math inline">\(155GPa\)</span>下<span class="math inline">\(T_c\)</span>为<span class="math inline">\(203K\)</span>而得到证实。 在这一成功之后，几个新的笼合氢化物也被预测与合成，这些氢化物由重金属原子预压缩的纯氢主链组成，如<span class="math inline">\(170-180GPa\)</span>下<span class="math inline">\(T_c\)</span>为<span class="math inline">\(250-260K\)</span>的<span class="math inline">\(LaH_{10}\)</span>。 发现了几种集合类别的氢化物有助于提高<span class="math inline">\(T_c\)</span>。 除了共价六重立方（covalent sixfold cubic）<span class="math inline">\(H_3S\)</span>和钠长石型（sodalite-type）笼合氢化物，最近也预测了一类五磷酸盐（pentagraphene-like）氢化物在<span class="math inline">\(250GPa\)</span>具有高<span class="math inline">\(T_c\)</span>。 尽管这些H基超导体的稳定压强（大于<span class="math inline">\(150GPa\)</span>）远低于纯氢金属化所需压强， 但他们仍然很难获得。 因此，下一个挑战就是在明显更低的压强下获得室温超导电性，且很明确最终目标是到达环境压强。</p>
+<p>人们已经探索了不同的方法来降低H基超导体的稳定压强。 对已知富氢二元系统掺杂元素或分子是其中一种方式。 例如，对<span class="math inline">\(H_3S\)</span>掺<span class="math inline">\(CH_4\)</span>分子可以在极低的<span class="math inline">\(100GPa\)</span>形成亚稳态化合物。 对于预压缩元素的选择也很重要。 例如，镧系元素和锕系元素的低压稳定性和f电子密切相关。 因此，<span class="math inline">\(YbH_6\)</span>和<span class="math inline">\(LuH_6\)</span>的亚稳态被预测在相对低压强下具有高<span class="math inline">\(T_c\)</span>超导性（分别为<span class="math inline">\(70GPa\)</span>下<span class="math inline">\(145K\)</span>和<span class="math inline">\(100GPa\)</span>下<span class="math inline">\(273K\)</span>）。 至于更低的压强，实验中分别观察到<span class="math inline">\(Fm\overline{3}m\)</span>的<span class="math inline">\(UH_{8+\delta}\)</span>、<span class="math inline">\(F4\overline{3}m\)</span>的<span class="math inline">\(EuH_9\)</span>和<span class="math inline">\(C2/c\)</span>的<span class="math inline">\(NdH_7\)</span>压强为<span class="math inline">\(42,86,85GPa\)</span>，但是这些系统的<span class="math inline">\(T_cs\)</span>非常低。</p>
+<p>虽然二元氢化物已经被广泛探索，但对三元氢化物的研究更具挑战性，但也回报丰厚。 目前已发现三元氢化物比二元氢化物表现出更优秀的性质。 比如，实验中C掺杂的<span class="math inline">\(H_3S\)</span>比<span class="math inline">\(H_3S\)</span>具有更高的<span class="math inline">\(T_c\)</span>，掺杂<span class="math inline">\(Li\)</span>的分子<span class="math inline">\(Mg-H\)</span>相，<span class="math inline">\(Li_2MgH_{16}\)</span>，被预测是目前为止最高的<span class="math inline">\(T_c\)</span>。 然而，三元化合物的相图比二元化合物复杂得多，因此需要有效的方法来构建。 最近的研究显示可以通过硬球模型（hard-sphere model）来构建高压下三元氢化物的相图。 有效探索三元氢化物的能力和在低压下识别具有理想超导性的三元氢化物的能力是未来推进超导研究的关键。</p>
+<p>这里，我们提供一种策略，通过二元<span class="math inline">\(X-H\)</span>主链，设计低压下的高<span class="math inline">\(T_c\)</span>三元H基超导体，随后有金属元素A预压缩。 由此产生的<span class="math inline">\(X-H\)</span>主链比纯H主链更容易金属化，且可以通过用其他原子(X)掺杂已知结构来设计，这些原子会破坏母体结构的局部基元。 这将导致占据了重叠能带的金属化的富H相，也称氢合金相。 我们首先设计了一类新型的萤石型三元结构<span class="math inline">\(AXH_8(Fm\overline{3}m)\)</span>，从其中我们发现了七种由预压缩元素<span class="math inline">\(A(A=S_c,C_a,Y,S_r,L_a,B_a)\)</span>和小半径元素<span class="math inline">\(X(X=B_e,B,A_l)\)</span>组成的动态稳定的H基超导体。 接下来是重建硬球模型来研究新的萤石型氢化物和这些新材料在集合因素方面的稳定性。</p>
+<p>我们从高温超导体<span class="math inline">\(LaH_{10}\)</span>的纯H主链中设计了这些合金主链材料中的第一个，其与低压超导体<span class="math inline">\(UH_8\)</span>具有同样的对称性。 比较<span class="math inline">\(UH_8\)</span>和<span class="math inline">\(LaH_{10}\)</span>的晶体结构（见图1a和1b），<span class="math inline">\(LaH_{10}\)</span>的结构可以视作以<span class="math inline">\(UH_8\)</span>为母体结构，在真空四面体位点掺杂额外的H原子。 额外的H原子破坏了立方<span class="math inline">\(H_8\)</span>单元的位置，导致产生<span class="math inline">\(LaH_{10}\)</span>中著名的笼合物主链。 相反，掺杂X原子可以插入立方<span class="math inline">\(H_8\)</span>单元中心空位，导致<span class="math inline">\(LaXH_8\)</span>的<span class="math inline">\(Fm\overline{3}m\)</span>结构（见图1c）。 例如，对这些立方位，<span class="math inline">\(Be\)</span>可能是一个合适的掺杂元素。 这条新颖的<span class="math inline">\(H-Be\)</span>合金主链对应于萤石型排列（如图1d），其中Be原子位于面心立方晶格的位点上，而<span class="math inline">\(H_4\)</span>四面体位于Be原子间的四面体空位中（如图1e和1f）。 三元氢化物<span class="math inline">\(AXH_8\)</span>，有<span class="math inline">\(X_H\)</span>合金主链，有可能在低于其他已报道的H基超导体所需的压力下实现高温超导。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\1.png"
+     alt="图1"
+     width=700>
+<figcaption>
+<small>图1. <br>(a)<span class="math inline">\(H_8\)</span>立方单元的<span class="math inline">\(UH_8\)</span>晶体结构。U离子黑色，H离子粉色。 <br>(b)<span class="math inline">\(LaH_{10}\)</span>的晶体结构，La离子绿色。<span class="math inline">\(LaH_{10}\)</span>的主链由粉色的立方单元H原子和灰色的四面体中心H原子组成。 <br>(c)<span class="math inline">\(UH_8\)</span>的晶体结构，<span class="math inline">\(H_8\)</span>立方中心显示为红球。 <br>(d)萤石<span class="math inline">\(CaF_2\)</span>的晶体结构，Ca阳离子深蓝色，F粒子浅蓝色。 <br>(e)<span class="math inline">\(LaBeH_8\)</span>的晶体结构。<span class="math inline">\(LaBeH_8\)</span>的主链由粉色的四面体单元H原子和蓝色的立方中心Be原子组成。 <br>(f)萤石型<span class="math inline">\(LaBeH_8\)</span>笼。</small>
+</figcaption>
+</figure>
+<p>在确定了这种三元萤石型结构之后，我们继续研究更广泛的萤石型主链氢化物<span class="math inline">\(AXH_8\)</span>（<span class="math inline">\(Fm\overline{3}m\)</span>），由预压缩元素A（A=Sc，Ca，sr，La，Ba）和小半径元素X（X=Be，B，Al）组成。 在所得的<span class="math inline">\(AXH_8\)</span>三元氢化物的18种组合中，有七种在本文研究的压力范围内表现出动态稳定性的区域，这是由声子散射中不存在虚数频率而建立的（见SI的S1-S8）。 这些氢化物分别是<span class="math inline">\(LaBeH_8\)</span>, <span class="math inline">\(CaBeH_8\)</span>, <span class="math inline">\(YBeH_8\)</span>, <span class="math inline">\(CaBH_8\)</span>, <span class="math inline">\(SrBH_8\)</span>, <span class="math inline">\(LaBH_8\)</span>, 和<span class="math inline">\(LaAlH_8\)</span>。 值得注意，<span class="math inline">\(LaBeH_8\)</span>在地狱20GPa的压强下让能保持动态稳定。 其他的11中氢化物在研究的压强范围内不稳定，表现出破坏晶体对称性的虚声子模式（见SI的图S12-S22）。 在确定了七种动态稳定的萤石型氢化物之后，我们使用从头开始随机结构搜索来确定他们的热力学稳定性，方法是构建凸包（见SI的图S24-S30）。 将声子色散分析（图SI的S1）和焓差计算（图2b）联系起来，我们发现立方<span class="math inline">\(LaBeH_8\)</span>在98GPa以上变得热力学稳定了。 然而，它的动态稳定性（亚稳性）可以保持在低至20GPa。 <span class="math inline">\(YBeH_8\)</span>和<span class="math inline">\(SrBH_8\)</span>在300GPa时具有热力学稳定（见SI的图S23）。 剩下四种展现出动态稳定的氢化物<span class="math inline">\(CaBeH_8\)</span>, <span class="math inline">\(CaBH_8\)</span>, <span class="math inline">\(LaBH_8\)</span>, 和<span class="math inline">\(LaAlH_8\)</span>在研究的压强范围内未出现热力学稳定性（小于等于300GPa），可能会在更高的压强下稳定。 根据无机晶体结构数据库，20%的合成材料是亚稳的，其中一些甚至有正的形成焓。 <strong>高压合成通常涉及高温，因此产物通常是亚稳的</strong>；合成的金刚石和氮同素异形体就是很好的例子。 实验发现的超导系统Si-H和S-C-H在理论计算中也被发现具有亚稳态。 <strong>非谐性在一些超导氢化物中具有重要作用</strong>。 然而，目前的计算不允许在结构预测中对非谐效应进行高通量评估。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\2.png"
+     alt="图2"
+     width=700>
+<figcaption>
+<small>图2.萤石型氢化物<span class="math inline">\(AXH_8\)</span>的计算焓。 <br>(a)x轴为A原子半径，y轴为X原子半径。动力不稳定系统以黑色十字显示。亚稳相是圆圈，基于凸包上方计算的焓着色。热力学稳定相为红色方形。 <br>(b)相对于<span class="math inline">\(LaBeH_8\)</span>的<span class="math inline">\(Fm\overline{3}m\)</span>相<span class="math inline">\(La-Be-H\)</span>结构的计算焓作为压强的函数，<span class="math inline">\(LaH_6\)</span>, <span class="math inline">\(BeH_2\)</span>,和<span class="math inline">\(H\)</span>的结构来自文献。</small>
+</figcaption>
+</figure>
+<p>在研究了这些萤石型主链氢化物的稳定性后，我们继续研究他们的超导性质。 从SI第三部分的Eliashberg方程知，<span class="math inline">\(T_c\)</span>值由<span class="math inline">\(\mu^*=0.1\)</span>确定的。 如图3所示，预计<span class="math inline">\(LaBeH_8\)</span>将展现出高温超导性，在100GPa时<span class="math inline">\(T_c=192K\)</span>，20GPa时<span class="math inline">\(T_c=183K\)</span>（亚稳态阈值）。 由McMillan方程和Gorkov-Kresin理论计算出的<span class="math inline">\(T_c\)</span>值在SI中展示和讨论。 这些萤石型主链结构也有表现出室温超导性的潜力，亚稳态<span class="math inline">\(CaBeH_8\)</span>预测在210GPa下<span class="math inline">\(T_c=300K\)</span>。 同样，我们计算出<span class="math inline">\(YBeH_8\)</span>, <span class="math inline">\(CaBH_8\)</span>, <span class="math inline">\(SrBH_8\)</span>, <span class="math inline">\(LaBH_8\)</span>和<span class="math inline">\(LaAlH_8\)</span>在他们各自的亚稳态区表现出高温超导性，分别在100GPa下<span class="math inline">\(T_c=249K\)</span>，100GPa下<span class="math inline">\(T_c=238K\)</span>，150GPa下<span class="math inline">\(T_c=200K\)</span>，70GPa下<span class="math inline">\(T_c=160K\)</span>，100GPa下<span class="math inline">\(T_c=144K\)</span>。 这些超导氢化物的一个共同特征是在布里渊区边界出现软声子模式（见SI的图S1-S8），旷职出现强声电耦合。 当系统不稳定时，这种效应更强。 如图3所示，萤石型主链氢化物动态稳定的阈值压强比典型的高<span class="math inline">\(T_c\)</span>氢化物更低，同时保留远高于液氮温度的<span class="math inline">\(T_c\)</span>。 <span class="math inline">\(LaBeH_8\)</span>是第一个提出的H基超导体，其品质因数（figure of merit score）约为<span class="math inline">\(S=3-4\)</span>。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\3.png"
+     alt="图3"
+     width=700>
+<figcaption>
+<small>图3.典型超导体<span class="math inline">\(T_cs\)</span>的压强依赖性。 萤石型主链氢化物最低压强下的<span class="math inline">\(T_cs\)</span>为橘色圆圈，他们也在此处变得动态稳定。 红圈是<span class="math inline">\(LaBeH_8\)</span>变得热力学稳定的最低压强（98GPa），立方<span class="math inline">\(LaBeH_8\)</span>的建议合成压强范围以黄色高亮显示。 蓝色方块表示文献里报道的二元笼合氢化物最低压强下的<span class="math inline">\(T_cs\)</span>。 紫色星星来自实验的著名超导体的<span class="math inline">\(T_cs\)</span>。 背景根据品质因数<span class="math inline">\(S=(T/\sqrt(P^2+T^2_{MgB_2}))\)</span>着色，S是评估超导体的重要特性。 虚线是河合型多砧面压机的压强限制。</small>
+</figcaption>
+</figure>
+<p><strong>几何因子在钙钛矿和二维过渡金属碳（氮）化物（MXenes）等材料的高通量筛选中起重要作用</strong>。 有效的硬球模型可以用来探索这种新型材料的结构原型。 萤石型氢化物的动态稳定性取决于预压缩元素A的半径，表明从几何因素推导出来的硬球模型可以使我们得出这一类结构的一般结论。 要构建这种模型，我们做了两个简化：（i）将预压缩元素视为硬球；（ii）主链特征是<span class="math inline">\(H-H\)</span>键和<span class="math inline">\(X-H\)</span>键。 该模型的推到在SI的第五部分提出，此方案给出了立方晶胞（L）的晶格参数，<span class="math inline">\(H-H\)</span>键长度(<span class="math inline">\(b_{H─H}\)</span>)和<span class="math inline">\(X─H\)</span>键长度(<span class="math inline">\(b_{X─H}\)</span>)如下： <span class="math display">\[L=\frac{\sqrt{3}+1}{t+1}2R_A\]</span> <span class="math display">\[b_{H-H}=\frac{\sqrt{3}+1-2t}{t+1}\sqrt{6}R_A=F_{H-H}d_{H-H}\]</span> <span class="math display">\[b_{X-H}=\frac{3t-\sqrt{3}}{t+1}R_A=F_{H-X}d_{H-X}\]</span> 其中<span class="math inline">\(R_A\)</span>是原子A的共价半径，<span class="math inline">\(t=0.95-1.05\)</span>是允许硬球略微重叠的公差系数。 从文献中知，键长也可以表示为柔性因子（F）和二元氢化物（d）的乘积。</p>
+<p>表1中显示了使用硬球模型的七种氢化物的<span class="math inline">\(L\)</span>，<span class="math inline">\(b_{H─H}\)</span>和<span class="math inline">\(b_{X─H}\)</span>，根据密度泛函理论在150GPa下计算的也列在里边。 通过硬球模型获得的<span class="math inline">\(L\)</span>与100-200GPa压强范围内通过密度泛函理论获得的相近。 萤石型主链的几何形状将<span class="math inline">\(H-H\)</span>键长相对一般氢化物的<span class="math inline">\(H-H\)</span>键长拉长30%-60%或20%-30%（分别根据硬球模型和密度泛函理论），这由于大量电荷转移到<span class="math inline">\(H-H\)</span>键上（见表1）。 <span class="math inline">\(X-H\)</span>键也被几何因素影响，但键长拉长还是缩短取决于组成；硬球模型和密度泛函理论计算一致。 显然，几何因素对于理论萤石型氢化物的稳定性至关重要。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\表1.png"
+     alt="图表1"
+     width=700>
+<figcaption>
+<small>表1.由硬球模型（unprimed）和150GPa下密度泛函理论（primed）计算出的晶格参数<span class="math inline">\(L\)</span>，键长<span class="math inline">\(b_{X-H}\)</span>和<span class="math inline">\(b_{H-H}\)</span>，柔性因子<span class="math inline">\(F\)</span>。 转移到<span class="math inline">\(H\)</span>的电荷量表示为<span class="math inline">\(\delta\)</span>。 这里，我们用<span class="math inline">\(t=1.03,d_{H-H}=1.1Å,d_{Be-H}=1.31Å,d_{b-H}=1.22Å,d_{Al-H}=1.72Å\)</span>。</small>
+</figcaption>
+</figure>
+<p>硬球模型复合<span class="math inline">\(AXH_8\)</span>的一般特征，并允许我们确定净体重可以替代<span class="math inline">\(X\)</span>元素的标准。 特别是，候选元素应该在二元系统中形成键长<span class="math inline">\(1.2-1.6Å\)</span>的氢键。 因此，我们研究了将<span class="math inline">\(Si,P,和S\)</span>取代入<span class="math inline">\(LaXH_8\)</span>的可能性，因为<span class="math inline">\(X-H\)</span>键长是<span class="math inline">\(d_{Si-H}~1.6Å\)</span>，<span class="math inline">\(d_{P-H}~1.4Å\)</span>和<span class="math inline">\(d_{S-H}~1.5Å\)</span>。 我们发现<span class="math inline">\(LaSiH8\)</span>，<span class="math inline">\(LaSH8\)</span>和<span class="math inline">\(LaPH8\)</span>在200GPa下均动态稳定（见SI的图S9-S11），计算出他们都展现出高<span class="math inline">\(T_c\)</span>超导性：在100GPa下150K，200GPa下195K，200GPa下151K（分别见SI图S50-S52）。</p>
+<p>氢化物中的二元主链通常由高压下的极性键组成。 例如，<span class="math inline">\(SCH_7\)</span>的<span class="math inline">\(SH_3\)</span>珠帘由<span class="math inline">\(H-S\)</span>极性键组成（见图4a）。 这些主链中极性键的端到端的排列通常具有低焓。 但是在<span class="math inline">\(BeH_8\)</span>主链中，四个具有负电荷<span class="math inline">\(\delta^-\)</span>的H原子非常接近（见图4b），表明萤石型主链以不同的方式形成。 在萤石型主链的独特键合环境中，如表1，大量电话转移到H原子是可能的；这些电子沿<span class="math inline">\(H-H\)</span>键占据反键态（如SI的图S56-S62）。 这些额外的电子不仅拉长<span class="math inline">\(H-H\)</span>键，还能在费米能级上导致增长的<span class="math inline">\(H\)</span>衍生态密度。 因此合金主链中独特的化学提供了改善H基超导体的途径。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\4.png"
+     alt="图4"
+     width=700>
+<figcaption>
+<small>图4.(a)<span class="math inline">\(H_3S\)</span>主链中的<span class="math inline">\(H-S\)</span>键的极化矢量；在这些键中，正电荷在H原子（粉色），负电荷在S原子（黄色）。 <br>(b)<span class="math inline">\(BeH_8\)</span>主链中的<span class="math inline">\(Be-H\)</span>键的极化矢量，导致氢原子处的电荷集中。在这些键中，正电荷在Be原子（绿色），负电荷在H原子（粉色）。</small>
+</figcaption>
+</figure>
+<p>作为开发低压稳定H基超导体的一部分，我们设计了一类具有萤石型合金主链的三元氢化物<span class="math inline">\(AXH_8\)</span>。 与其他已报道的H基超导体相比，预测的<span class="math inline">\(AXH_8\)</span>氢化物在远低于他们热力学区域的压强下表现出动态稳定性，同时保持了高<span class="math inline">\(T_c\)</span>超导体需要的强声电耦合。 我们考虑的系统之一是低至20GPa下的动态稳定性，这一压强远低于典型H基超导体稳定的所需压强和KMAPs能获得的压强。 如果将镧系和锕系元素包含进去，萤石型主链家族的氢化物会约有20个成员。 未来对其他三元系统的研究可能会通过类似的方法发现更接近环境压强的高温超导体。</p>
+<p>综上所述，设计具有合金主链的氢化物被证明是获取低压H基超导体的有效方法。 在这些材料中，小半径元与氢合金化，在主链结构中引入新键，取代一些<span class="math inline">\(H-H\)</span>键。 我们的研究结果将促进进一步的实验探索，在环境压强下合成氢化物基超导体将是高温超导领域的一个重要突破。</p>
 ]]></content>
       <categories>
-        <category>日本語</category>
+        <category>科研相关</category>
       </categories>
       <tags>
-        <tag>歌词</tag>
+        <tag>文献</tag>
+        <tag>超导</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity</title>
+    <url>/2022/07d0e9cc8b.html</url>
+    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
+<ul>
+<li>作者：段德芳，Liu Yunxian，田夫波，Li Da，黄晓丽，Zhao Zhonglong，Yu Hongyu，刘冰冰，Tian Wenjing，崔田</li>
+<li>单位：吉大超硬；吉大超分子结构与材料</li>
+<li>期刊：Scientific Reports</li>
+</ul>
+<span id="more"></span>
+<h2 id="摘要">摘要：</h2>
+<p>通过从头计算（ab initio calculations)阐明了最近合成的含<span class="math inline">\(H_2\)</span>化合物<span class="math inline">\((H_2S)_2H_2\)</span>的高压结构，金属化和超导性。 <strong>X射线衍射理论和实验数据、状态方程和拉曼光谱的良好一致性表明该有序晶体具有P1对称性</strong>。 Cccm结构有利于部分氢键的形成。 进一步压缩后，<span class="math inline">\(H_2\)</span>分子消失，两个令人感兴趣的具有R3m和Im-3m对称性的金属化结构分别在111和180GPa以上重建。 预测的金属化压强是111GPa，接近于当前建议的本体氢分子金属化压力的三分之一。 Allen-Dynes-modified McMillan方程应用于Im-3m结构，在200Gpa下产生191K到204K的高<span class="math inline">\(T_c\)</span>，是迄今为止报道的富氢范德华化合物和<span class="math inline">\(MH_3\)</span>型氢化物的最高值之一。</p>
+<h2 id="背景-结论">背景 结论</h2>
+<h3 id="背景">背景</h3>
+<p>闭壳系统（closed shell system）（比如<span class="math inline">\(H_2O\)</span>, <span class="math inline">\(H_2S\)</span>, <span class="math inline">\(CH_4\)</span>, <span class="math inline">\(SiH_4\)</span>, <span class="math inline">\(GeH_4\)</span>,<span class="math inline">\(NH_3BH_3\)</span>, <span class="math inline">\(Ar\)</span>, <span class="math inline">\(Kr\)</span>, 和<span class="math inline">\(Xe\)</span>）可在高压下吸收额外的<span class="math inline">\(H_2\)</span>分子，形成一系列新的含<span class="math inline">\(H_2\)</span>化学计量化合物，例如：<span class="math inline">\(H_2O(H_2)\)</span>, <span class="math inline">\((H_2S)_2H_2\)</span>, <span class="math inline">\(CH_4(H_2)_4\)</span>, <span class="math inline">\(SiH_4(H_2)_2\)</span>, <span class="math inline">\(GeH_4(H_2)_2\)</span>,<span class="math inline">\(NH_3BH_3(H_2)_x\)</span>, <span class="math inline">\(Ar(H_2)_2\)</span>, <span class="math inline">\(Kr(H_2)_4\)</span>, 和<span class="math inline">\(Xe(H_2)_8\)</span>。 鉴于他们含氢量很高，这些化合物是潜在的储能材料和高压超导体。 例如，<span class="math inline">\(33.4 wt\%\)</span>高含氢量的<span class="math inline">\(CH_4(H_2)_4\)</span>就是一种潜在的高储氢材料。 金属是有望作为室温超导体，是目前高压研究领域最重要的物理问题之一。 然而，氢的金属化仍在实验辩论阶段。 富氢化合物，例如<span class="math inline">\(GaH_3, GeH_3,Si_2H_6, SiH_4, GeH_4, KH_6, CaH_6, SiH_4(H_2)_2, 和 GeH_4(H_2)_2\)</span>作为替代品被广泛研究，因为他们的金属化可以通过化学预压缩在相对较低的压强下发生，呈现出高温超导性。 含<span class="math inline">\(H_2\)</span>化合物<span class="math inline">\(SiH_4(H_2)_2和GeH_4(H_2)_2\)</span>被预测在250GPa下有高<span class="math inline">\(T_c\)</span>值98K到108K，在250GPa下<span class="math inline">\(T_c\)</span>值76K到90K，库伦系数<span class="math inline">\(m^*\)</span>分别为0.1-0.13。 对<span class="math inline">\(MH_3(M=Ga,Ge,Si)\)</span>型氢化物，理论预测在160GPa下<span class="math inline">\(T_c\)</span>为76K到86K（<span class="math inline">\(\mu^*=0.1-0.13\)</span>），180GPa下<span class="math inline">\(T_c\)</span>为140K（<span class="math inline">\(\mu^*=0.13\)</span>），275GPa下<span class="math inline">\(T_c\)</span>为139K到153K（<span class="math inline">\(\mu^*=0.1-0.13\)</span>）。 理论预测了表明，类钠长石<span class="math inline">\(CaH_6\)</span>在150GPa下<span class="math inline">\(T_c\)</span>到达220K到235K（<span class="math inline">\(\mu^*=0.1-0.13\)</span>）。 考虑到<span class="math inline">\(H_2\)</span>是宇宙中最丰富的物质，含<span class="math inline">\(H_2\)</span>化合物在广泛的P-T范围内的行为对行星科学非常重要。</p>
+<p>最近，Strobel等人报道混合硫化氢<span class="math inline">\(H_2S\)</span>和氢气<span class="math inline">\(H_2\)</span>可以在3.5GPa附近形成化学计量化合物<span class="math inline">\((H_2S)_2H_2\)</span>，这是旋转无序结构的特征。 XRD结果表明这个结构属于四方空间群I4/mcm。 实验拉曼数据表明表明在17GPa以上发生了有序过程的结构转变。 通过结构优化，利用从头计算密度泛函理论（DFT）计算得出空间群I222也可能存在。 然而，由于势能垒，仅通过结构弛豫获得最稳定的结构是很困难的。 反而可能另一个意想不到的结构变得稳定。</p>
+<p>在本研究中，我们采用新路线，利用最近快速发展的进化算法USPEX（Universal Structure Predictor: Evolutionary Xtallography）来探索高压下<span class="math inline">\((H_2S)_2H_2\)</span>的有序晶体结构。 我们发现三斜结构（P1）在能量上是有利的。 为研究<span class="math inline">\((H_2S)_2H_2\)</span>的金属化和潜在的高温超导性，对更高压结构进行了广泛探索。 我们的计算显示111GPa的金属化压强，在200GPa时<span class="math inline">\(T_c\)</span>高达200K。 较低的金属化压强可由当今的金刚石压砧技术达到，将会引发大量的实验。</p>
+<h3 id="结论">结论</h3>
+<p>在20-300GPa下， 对每个晶胞1-4、6和8个<span class="math inline">\(H_3S\)</span>公式单位（formula units per cell）进行变晶胞结构预测仿真（Variable-cell structure prediction simulations）。 如图1，在高压下发现了一组新结构——三斜（8公式单位每晶胞），正交Cccm（16公式单位每晶胞），三角R3m（3公式单位每晶胞）和立方Im-3m（2公式单位每晶胞）。 这些结构在不同压强下的晶格参数在SI信息中的表1中列出。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\1.png"
+     alt="图1"
+     width=700>
+<figcaption>
+<small>图1.高压下<span class="math inline">\((H_2S)_2H_2\)</span>的晶格结构。<br>(a)垂直于（001）平面的P1结构，(b)垂直于（010）平面的P1结构，(c)垂直于（100）平面的Cccm结构，(e)R3m，与(f)Im-3m。大球表示S小球表示H原子。</small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\2.jpg"
+     alt="表1"
+     width=700>
+<figcaption>
+<small>表1.我们预测的高压下<span class="math inline">\((H_2S)_2H_2\)</span>的P1，Cccm，R3m和Im-3m结构的结构参数。</small>
+</figcaption>
+</figure>
+<p>图2显示了不同结构的焓差曲线（相对于Cccm结构）。 P1是37GPa以下最稳定的结构，能量低于推荐的实验I222结构。 P1结构包含一个有序的H键<span class="math inline">\(H_2S\)</span>网格和两个占据空隙位点的反平行氢分子。 其中一个分子在<span class="math inline">\(z=0\)</span>，另一个在<span class="math inline">\(z=1/2\)</span>平面（如图1a和1b）。 Cccm结构在37GPa和111GPa之间具有能量稳定性。 不同于P1结构，部分氢键对称性是在Cccm结构形成的。 这个结构由3D<span class="math inline">\(H_2S\)</span>网格组成，这些网格将不同类型的氢分子捕获在通道中：一种类型的排列使得头尾相连的氢分子（<span class="math inline">\(H_2-H_2\)</span>）沿着c轴，而另一种类型的特征是指向b轴的平行氢分子（<span class="math inline">\(H_1-H_1\)</span>）构型（如图1c和1d）。 没有任何虚频也证实了P1和Cccm相的动态稳定性（见SI的图S1）。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\2.png"
+     alt="图2"
+     width=700>
+<figcaption>
+<small>图2.计算每个<span class="math inline">\(H_3S\)</span>单位的焓作为压力的函数。计算各种结构相对于我们预测的Cccm结构的焓作为压力的函数曲线。也绘制了分解为<span class="math inline">\(S_2/3H_2\)</span>和<span class="math inline">\(H_2S+H_2\)</span>的焓曲线。</small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\S1.png"
+     alt="图S1"
+     width=700>
+<figcaption>
+<small>图S1.沿布里渊区高对称方向的(a)30GPa下P1和(b)80GPa下Cccm的声子散射曲线。</small>
+</figcaption>
+</figure>
+<p>P1结构的三个晶格角度<span class="math inline">\(\alpha=90.12°, \beta=89.85°, \gamma=90.15°\)</span>在20GPa下接近90°（参见SI的表1），可是看作一个略微扭曲的正交晶格。 这就可以解释实验出现正交结构的现象。 我们比较了P1和实验的XRD谱图，见图3a。 理论和实验获得相同的X射线波长<span class="math inline">\(0.39796\text{Å}\)</span>。 P1结构的模拟XRD谱图与实验数据吻合。 在图3b中对P1结构计算的状态方程与实验方程进行了比较。 理论与实验结果的良好一致性也为P1结构的有效性提供了支撑。 鉴于XRD无法检测氢原子，因此比较了P1的拉曼光谱和实验数据（见SI图S2）。 两个<span class="math inline">\(H_2\)</span>振动峰重现良好，两个低频特性在理论和实验定性一致。 拉曼、XRD和状态方程均支持我们预测的在<span class="math inline">\((H_2S)_2H_2\)</span>中的P1结构。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\3.png"
+     alt="图3"
+     width=700>
+<figcaption>
+<small>图3.计算的XRD和状态方程与实验结果比较。(a)模拟的XRD谱图和(b)计算的P1结构的状态方程和实验数据比较(ref. 2)。(c)不同压强下P1、Cccm、R3m和Im-3m结构的原子间距。</small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\S2.png"
+     alt="图S2"
+     width=700>
+<figcaption>
+<small>图S2.P1结构计算的拉曼光谱（红线表示加宽的<span class="math inline">\(15cm^{-1}\)</span>，暗黄线表示加宽的<span class="math inline">\(100cm^{-1}\)</span>）和实验数据。</small>
+</figcaption>
+</figure>
+<p>Cccm结构在111GPa以上转变为更致密的R3m结构，进一步压缩后体积塌缩<span class="math inline">\(9.2\%\)</span>。 R3m结构显示一个<span class="math inline">\(H_2\)</span>分子消失，形成了金字塔状的<span class="math inline">\(H_3S\)</span>的分子单位，见图1e。 高对称的Im-3m结构在180GPa以上变得有利。 这个结构特征是两个S原子位于简单立方晶格的体心，H原子对称地位于S原子之间（图1f）。 观察到在R3m→Im-3m相变中完成了氢键的对称化。 随着共享氢的<span class="math inline">\(SH_6\)</span>的形成，S原子的配位数由3增加到6。</p>
+<p>考核了生成<span class="math inline">\(S+H_2\)</span>和<span class="math inline">\(H_2S+H_2\)</span>的分解焓，来检查不同压强下<span class="math inline">\((H_2S)_2H_2\)</span>的相稳定性（图2）。 在相应稳定压强下，采用了<span class="math inline">\(H_2\)</span>的<span class="math inline">\(P6_3m\)</span>, <span class="math inline">\(C2/c\)</span>, 和<span class="math inline">\(Cmca\)</span>结构，<span class="math inline">\(S\)</span>的<span class="math inline">\(I4_1/acd\)</span>和<span class="math inline">\(\beta-Po\)</span>结构，<span class="math inline">\(H_2S\)</span>的<span class="math inline">\(P2/c\)</span>, <span class="math inline">\(Pmc2_1\)</span>, <span class="math inline">\(P-1\)</span>和<span class="math inline">\(Cmca\)</span>结构。 在20GPa到300GPa下，<span class="math inline">\((H_2S)_2H_2\)</span>最稳定的相的焓比<span class="math inline">\(S+H_2\)</span>和<span class="math inline">\(H_2S+H_2\)</span>更低。 因此，在我们研究的压强范围内，<span class="math inline">\((H_2S)_2H_2\)</span>晶体保持稳定，抗分解。 图3b中展示了<span class="math inline">\((H_2S)_2H_2\)</span>的压强-体积关系。 P1到Cccm的相变产生<span class="math inline">\(1.5\%\)</span>的体积塌缩，Cccm到R3m是<span class="math inline">\(9.2\%\)</span>，表明有一阶相变特征，而R3m到Im-3m的相变体积变化是连续的，证明是二阶性质（second-order nature）。</p>
+<p>在图3c中绘出了最近的分子内键和分子间键距离的压力依赖性，以理解<span class="math inline">\((H_2S)_2H_2\)</span>中观察到的分子间相互作用。 四种类型的分子内<span class="math inline">\(H-H\)</span>键长度几乎相等，约等于<span class="math inline">\(0.75\text{Å}\)</span>，略长于20GPa时固体<span class="math inline">\(H_2\)</span>中的<span class="math inline">\(0.74\text{Å}\)</span>，表明<span class="math inline">\(H_2S\)</span>和<span class="math inline">\(H_2\)</span>之前存在弱相互作用。 有两个<span class="math inline">\(H-H\)</span>键长随着压强增加而增加，然而另两个减小，分别与观察到的<span class="math inline">\(H-H\)</span>键拉曼震动的红移和蓝移一致。 氢键(H2...S2)在20GPa时也相对较弱，距离为<span class="math inline">\(2.01\text{Å}\)</span>。 氢键强度随着压强增加而逐渐增加，且显著将<span class="math inline">\(H_2-S_1\)</span>共价键之一延长一个分子长度。 <span class="math inline">\(H_3-S_1\)</span>键（对称氢键）的长度为<span class="math inline">\(1.59\text{Å}\)</span>，<span class="math inline">\(H_4-S_1\)</span>共价键是<span class="math inline">\(1.39\text{Å}\)</span>，Cccm结构中的<span class="math inline">\(H_4...S_2\)</span>键是<span class="math inline">\(1.84\text{Å}\)</span>，表明氢键很强。 强氢键的强度减小，而<span class="math inline">\(H_4–S_1\)</span>键长随着压强增加略微增加。 值得注意，在110GPa时（见图3d），<span class="math inline">\(H_1–H_1\)</span>键长减小至<span class="math inline">\(0.744\text{Å}\)</span>，而<span class="math inline">\(H_2–H_2\)</span>键长增加至<span class="math inline">\(0.757\text{Å}\)</span>，表明在压力作用下，<span class="math inline">\(S\)</span>和<span class="math inline">\(H_2\)</span>间相互作用略有增加。 在111GPa时，R3m结构与消失的<span class="math inline">\(H_2\)</span>分子一起重建，并形成新的<span class="math inline">\(H-S\)</span>键。 因此，形成了Cccm到R3m相变的巨大的动力学势垒。 <span class="math inline">\(H_1-S_1\)</span>键长随着压强增加而增加，而氢键长度(H1...S2)减小了。 因此，在180GPa压强下，随着R3m到Im-3m的相变，氢键完成对称化。 在110GPa，R3m结构中<span class="math inline">\(H-H\)</span>最近的距离是<span class="math inline">\(1.599\text{Å}\)</span>，远长于弱共价键特征特征，<span class="math inline">\(CaH_6\)</span>中<span class="math inline">\(H-H\)</span>键的<span class="math inline">\(1.2\text{Å}\)</span>。 随着压强的增加，<span class="math inline">\(H-H\)</span>距离慢慢减小，在300GPa变成<span class="math inline">\(1.433\text{Å}\)</span>，表示氢原子间不存在任何键。</p>
+<p>我们也探讨了<span class="math inline">\((H_2S)_2H_2\)</span>所有结构的电子能带结构和投影态密度。 在20GPa时P1结构是绝缘体，具有<span class="math inline">\(3.34eV\)</span>的间接带隙（见SI图S3）。 能带平坦，表明P1结构是典型的分子晶体。 Cccm结构的带隙随着压强的增加而降低，且大约在110GPa时闭合。 考虑到广义梯度近似（generalized gradient approximation）下DFT的缺点，计算出的带隙可能偏低。 因此Cccm应该在其稳定范围内都是绝缘体。 值得注意的是，如图4所示，R3m和Im-3m结构在费米能及都是具有大态密度的良金属。 投影态密度清晰地表明S和H轨道的强杂化。 R3m和Im-em费米能级附近的每个能带结构都是“平带-陡带”，表示他们会是良超导体。 预测的111GPa的金属化压强明显低于之前建议的本体分子氢金属化压强。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\4.png"
+     alt="图4"
+     width=700>
+<figcaption>
+<small>图4.电子能带结构和态密度。沿选定的高对称线(a)130GPa的R3m和(b)200GPa的Im-3m的电子能带结构和原子投影态密度，其中零处的虚线表示费米能级。</small>
+</figcaption>
+</figure>
+<p>图5展示了计算的声子色散曲线和R3m和Im-em结构的投影声子态密度。 没有任何虚频率表明他们的动态稳定性。 低频带主要来自S原子的振动，而高频模式主要和H原子相关。 研究了声电耦合<span class="math inline">\(\lambda\)</span>，对数平均声子频率<span class="math inline">\(\omega_{log}\)</span>，与Eliashberg声子光谱函数<span class="math inline">\(\alpha^2F(\omega)\)</span>，来探究<span class="math inline">\((H_2S)_2H_2\)</span>超导电性的可能性。 在130GPa时，R3m的<span class="math inline">\(\lambda\)</span>为2.07，表明有相当强的声电耦合；计算声子光谱的<span class="math inline">\(\omega_{log}\)</span>是1125.1K。 在200GPa时，Im-3m的<span class="math inline">\(\lambda\)</span>为2.19，而<span class="math inline">\(\omega_{log}\)</span>是1334.6K。 利用计算出的<span class="math inline">\(\omega_{log}\)</span>以及公认的从Allen-Dynes-modified McMillan方程得出的库仑赝势<span class="math inline">\(\mu^*\)</span>值(0.1–0.13)，R3m的超导相变温度<span class="math inline">\(T_c\)</span>在130GPa时在155K到166K。 同样，Im-3m结构计算出的<span class="math inline">\(T_c\)</span>在200GPa时高达191K到204K。 <span class="math inline">\(T_c\)</span>近乎随压强线性降低（取<span class="math inline">\(\mu^*=0.13\)</span>，250GPa下184K，300GPa下179K），其近似速率<span class="math inline">\((dT_c/dP)\)</span>为20.12K/GPa。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\5.png"
+     alt="图5"
+     width=700>
+<figcaption>
+<small>图5.声子性质和Eliashberg光谱函数。(a)130GPa的R3m和(b)200GPa的Im-3m的声子色散曲线，投射在S和H原子的声子态密度，以及Eliashberg 光谱函数<span class="math inline">\(\alpha^2F(\omega)\)</span>与电子-声子积分<span class="math inline">\(\lambda(\omega)\)</span>。</small>
+</figcaption>
+</figure>
+<h2 id="讨论">讨论：</h2>
+<p>由富氢材料<span class="math inline">\((H_2S)_2H_2\)</span>或<span class="math inline">\(H_3S\)</span>的金属化和潜在高温超导性，在20GPa到300GPa的宽压范围对高压结构进行了广泛的探索。 依次预测到四种高压结构：P1（37GPa下稳定），Cccm（37GPa-111GPa稳定），R3m（111GPa-180GPa稳定）是Im-3m（高于180GPa稳定）。 R3m和Im-3m结构在111GPa以上是良金属。 Im-3m相200GPa下的预测<span class="math inline">\(T_c\)</span>为191K-204K，是迄今为止报道的富<span class="math inline">\(H_2\)</span>范德华化合物和<span class="math inline">\(MH_3(M = Ga, Ge, Si)\)</span>型氢化物中的最高值之一。 经过文献调研，观察到<span class="math inline">\(MH_3\)</span>结构在结构、金属化和超导性有很多相似之处。 他们在高压下都有高对称立方结构，具有高温超导相变温度。 最低的<span class="math inline">\(T_c\)</span>是<span class="math inline">\(GaH_3\)</span>的86K。 在实验可达的压强下，他们也是良金属，最高的金属化压强是<span class="math inline">\(Si_2H_6\)</span>的190GPa。 尽管通过USPEX代码实现晶格结构预测的方法对于全局结构收敛是有效的，但是他受限于采用的仿真单元的尺寸。（Although the crystal structure-predicting methods implemented by USPEX code are efficient for global structural convergence, it is limited by the sizes of the simulation cell employed. ） Given that the number of energy minima on the potential-energy surface grows exponentially with increasing cell size, making an extensive structural search is impossible. 因此我们不能排除可能存在更大单元（unit cells）<span class="math inline">\((H_2S)_2H_2\)</span>高压相的可能性。</p>
+<p>要注意，在R3m和Im-3m结构中没有发现<span class="math inline">\(H_2\)</span>分子。 但是，其他含<span class="math inline">\(H_2\)</span>化合物在高达300GPa时仍存在<span class="math inline">\(H_2\)</span>分子，比如<span class="math inline">\(SiH_4(H_2)_2\)</span>, <span class="math inline">\(GeH_4(H_2)_2\)</span>和<span class="math inline">\(Ar(H_2)_2\)</span>，虽然分子内的<span class="math inline">\(H-H\)</span>键在高压下回被拉伸。 我们计算了电子局域函数（electron localization function）以理解在R3m和Im-3m结构中键的性质（图6）。 <span class="math inline">\(S-H\)</span>键的电子局域函数值接近1.0，表明存在很强的极性共价键。 最近邻<span class="math inline">\(H-H\)</span>键的电子局域函数值非常低，表明氢原子之间没有共价键特性。 这种情况与<span class="math inline">\(MH_3(M=Ga, Ge, Si)\)</span>型不同，<span class="math inline">\(MH_3\)</span>中电荷由M转移至H原子，形成很强的离子特征。 我们提出R3m共价键可能以如下方式性形成：高压下<span class="math inline">\(H_2\)</span>分解为H原子，然后H原子与S原子形成强烈的极性共价键。 这种强键是H和S原子紧密结合形成致密<span class="math inline">\(H_3S\)</span>结构，从而减小其体积。</p>
+<figure>
+<img data-src="\tu\Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity\6.png"
+     alt="图6"
+     width=700>
+<figcaption>
+<small>图6.计算的<span class="math inline">\((H_2S)_2H_2\)</span>电子局域函数。计算的(a)等值面值为0.73的R3m，(b)R3m的(011)平面，(c)等值面值为0.73的Im-3m和(d)Im-3m平面的电子局域函数。</small>
+</figcaption>
+</figure>
+<p>预测<span class="math inline">\((H_2S)_2H_2\)</span>或<span class="math inline">\(H_3S\)</span>的高温<span class="math inline">\(T_c\)</span>在200K量级是非常振奋人心的，促使我们研究其潜在的超导机制。 图5展示了130GPa下R3m和200GPa下Im-3m各自相应的Eliashberg光谱函数<span class="math inline">\(\alpha^2F(\omega)\)</span>和积分<span class="math inline">\(\lambda\)</span>作为频率的函数。 对于R3m结构，在频率低于15THz的S振动共贡献了33.1%的<span class="math inline">\(\lambda\)</span>，18THz以上的H振动贡献了66.9%的<span class="math inline">\(\lambda\)</span>。 对于Im-3m结构，低频的S振动（小于18THz）和高频的H振动模式（大于20THz）分别为声电耦合贡献了18.4%和82.6%。 这个结果突出表明H原子在超导电性中扮演了重要角色，尽管低频下的S振动也有贡献。 这种物理机制类似于<span class="math inline">\(GaH_3\)</span>和<span class="math inline">\(GeH_4(H_2)_2\)</span>，但是不同于<span class="math inline">\(SiH_4(H_2)_2\)</span>，后者由<span class="math inline">\(H_2\)</span>和<span class="math inline">\(SiH_4\)</span>分子间相互作用主导超导电性。</p>
+<p>值得注意的是，计算出<span class="math inline">\((H_2S)_2H_2\)</span>的金属化压强（111GPa）在金刚石压砧承受范围内。 众所周知，密度泛函理论由于其在处理激发态方面的系统缺陷，计算出的带隙会偏低。 因此，<span class="math inline">\((H_2S)_2H_2\)</span>的实际金属化压强可能比本研究中密度泛函理论估计的值高。 然而，计算得的<span class="math inline">\((H_2S)_2H_2\)</span>金属化压强大约是固体氢金属化所需压强的1/3。 估计的<span class="math inline">\((H_2S)_2H_2\)</span>的最高<span class="math inline">\(T_c=200K\)</span>高于大多数含氢化合物，比如<span class="math inline">\(SnH_4(H_2)_2, GeH_4(H_2)_2和MH_3(M=Ga, Ge, Si)\)</span>。 我们的发现代表向理解金属化氢和富氢氢化物的高压行为前进了重要一步，可以激励未来的在结构和导电测量的高压试验。</p>
+<h2 id="方法">方法</h2>
+<p><span class="math inline">\((H_2S)_2H_2\)</span>的高压晶体结构通过合并进化算法（evolutionary algorithm）和从头开始的总能量计算（ab initio total-energy calculations）在USPEX代码实现。 （种群（population）尺寸：10-60个结构，随着系统规模而增加）结构在第一代（first generation）中随机生成。 下一代由上一代最低焓结构的60%生成。 新结构由遗传（60%），排列（permutation）（10%）和晶格突然（30%）操作生成。 每一代的最佳结构也延续到下一代。 当最佳结构在超过20代内没有变化时计算停止。</p>
+<p>Generalized Gradient Approximation 广义梯度近似</p>
+<p>内在的结构弛豫在广义梯度近似（Generalized Gradient Approximation）的Perdew-Burke-Ernzerhof参数化中通过密度泛函理论执行，如Vienna从头计算仿真包里的VASP代码那样实现。 采用全电子投影仪增强波法，<span class="math inline">\(H(1s^2)\)</span>核心半径为0.8a.u.，<span class="math inline">\(S(3s^23p^4)\)</span>核心半径为1.5a.u.。 采用<span class="math inline">\(2\pi\times0.05Å^{-1}\)</span>网格的布里渊区采样和截止值500eV的平面波基足够对结构进行初始探索。 然而，我们重新用截止能量800eV更高的精度和<span class="math inline">\(2\pi\times0.03Å^{-1}\)</span>的k点网格计算了焓曲线。 选择这些值是为了确保总能量可以很好地收敛到优于1meV/atom。</p>
+<p>利用密度泛函围绕理论和范德比尔特型超软电位（Vanderbilt-type ultrasoft potentials）的平面波赝势法（plane-wave pseudopotential method）计算晶格动力学和超导电性质，通过QUANTUM-ESPRESSO代码实现。 收敛测试（convergence tests）提供合适的80Ry动能截止值。 R3m第一布里渊区的q点网格<span class="math inline">\(3\times3\times5\)</span>，Im-3m为<span class="math inline">\(8\times8\times8\)</span>用于声子色散计算的力常数插值。 采用R3m更紧密的k点网格<span class="math inline">\(16\times16\times24\)</span>和Im-3m的<span class="math inline">\(32\times32\times32\)</span>来确保k点收敛，高斯宽度0.03Ry，近似EPC计算参数<span class="math inline">\(\lambda\)</span>零宽限制。</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>超导</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3</title>
+    <url>/2022/08d8ad0c29.html</url>
+    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
+<ul>
+<li>作者：Y.C. Tian, W.H. Zhang, F.S. Li, Y.L. Wu, Q. Wu, F. Sun, G.Y. Zhou, Lili Wang, Xucun Ma, Qi-Kun Xue, and Jimin Zhao</li>
+<li>单位：中科院物理所北京凝聚态物理国家实验室，清华大学低维量子物理国家重点实验室，量子物质科学协同创新中心</li>
+<li>期刊：PHYSICAL REVIEW LETTERS</li>
+</ul>
+<span id="more"></span>
+<h2 id="摘要">摘要：</h2>
+<p>我们报道了具有碲化亚铁<span class="math inline">\(FeTe\)</span>封层的钛酸锶<span class="math inline">\(SrTiO_3\)</span>上单晶胞厚硒化亚铁<span class="math inline">\(TeSe\)</span>薄膜的时间分辨激发态超快动力学。 通过测量光激发准粒子的密度和寿命，我们明确地识别了超导相变，其相变温度为<span class="math inline">\(68(-5+2)K\)</span>，超导能隙为<span class="math inline">\(\Delta(0)=20.2\pm1.5meV\)</span>。 获得的声电耦合强度<span class="math inline">\(\lambda\)</span>高达0.48，表明声电耦合在钛酸锶系统的单晶胞硒化亚铁的高温超导性中可能起关键作用。 我们进一步在封层中发现一个<span class="math inline">\(0.05THz\)</span>的声学模分支，它为粘合玻色子提供了额外的衰减通道。</p>
+<h2 id="背景等">背景等</h2>
+<h3 id="背景">背景</h3>
+<p>钛酸锶上单晶胞厚硒化亚铁薄膜有高超导温度，但是通过角分辨光电子能谱实验测得的为<span class="math inline">\(55\pm5,65\pm5,60\pm5,58\pm7K\)</span>，通过输运测量为<span class="math inline">\(109K\)</span>，通过磁化测量为<span class="math inline">\(20K\)</span>（<span class="math inline">\(45K\)</span>起始）。</p>
+<p>已经分析知道声电耦合对高超导温度起关键作用。但是<span class="math inline">\(T_c\)</span>值仍不准确，且需要通过不同的实验来全面认识超导性。</p>
+<p><strong>作为研究激发态超快动力学的有力手段，对能隙敏感的超快光谱可以提供准粒子和各种激发态之间的相互作用信息</strong>，例如声电耦合，且经常用于探测和控制新型量子材料，其中就包括超导体。</p>
+<h3 id="成果">成果</h3>
+<p>本篇文章利用超快光谱来研究覆盖了两晶胞<span class="math inline">\(FeTe\)</span>的<span class="math inline">\(1UC FeSe/STO\)</span>，缩写为<span class="math inline">\(2FeTe/1FeSe/STO\)</span>，<span class="math inline">\(FeTe\)</span>用来保护样品不受空气污染。明确获得了超导转变温度，能隙，声电耦合强度，热电子密度，以及电子温度。还在薄<span class="math inline">\(FeTe\)</span>中观察到一个声学声子分支，它形成胶合玻色子的侧衰变通道，因此解释了所报告的<span class="math inline">\(T_c\)</span>值的不一致。</p>
+<h2 id="实验过程">实验过程</h2>
+<p>采用中心波长为800nm、脉冲宽度为96fs，重复频率<span class="math inline">\(250kHz\)</span>的超快激光脉冲在<span class="math inline">\(5K\)</span>到室温的环境下，激发和探测<span class="math inline">\(2FeTe/1FeSe/STO\)</span>样品的光载体的超快动力学。</p>
+<p>测量了差分反射率<span class="math inline">\(\Delta R/R\)</span>作为延迟时间的函数。 泵浦和探测光通量分别保持在<span class="math inline">\(268和30\mu J/cm^2\)</span></p>
+<p>与常用的<span class="math inline">\(76-100MHz\)</span>激光系统相比，由于样品传输，做我们<span class="math inline">\(250kHz\)</span>的实验中，稳态激光加热（即所谓的热效应）要弱1000倍。这就使得我们可以用更高的激发和探测的通量，来保持高信噪比。 此外，由于每个光脉冲对每个FeSe晶胞仅激发约0.03个电子，而系统在~100ps内弛豫到超导基态（见下文），因此<strong>大多数超导冷凝物不会发生非热熔化</strong>。</p>
+<p>实施交叉极化检测以进一步提高信噪比</p>
+<h3 id="图1">图1</h3>
+<p>图1总结了样品的归一化光致瞬态差分反射率，插图中示意性地说明了这一点（生长过程的细节在其他文献中详细描述）。 在这里，<span class="math inline">\(|\Delta R/R|\)</span>与光激发自由载流子的密度成正比，因为探测光的吸收由泵浦引起的量子占有数变化进行线性修正（参考费米黄金法则）。</p>
+<p>可以看到<span class="math inline">\(t=0ps\)</span>后的扫描路径有增加和减少的两部分组成，其振幅和寿随温度变化。 重要的是，在<span class="math inline">\(t&gt;0ps\)</span>可以看到一个驼峰。 驼峰的大小随温度升高而先减小后增高，在<span class="math inline">\(70K\)</span>左右出现变化。 这和下方要讨论的超导转变有关。</p>
+<p>注意到在我们的控制实验中，2UC的FeTe是最好的覆盖层数，可以清楚地区分1UC FeSe的超快动力学和覆盖层FeTe的超快动力学。 在附加材料中，我们展示了FeSe对于超导相的帮助，而不是FeTe。</p>
+<figure>
+<img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\1.png"
+     alt="图1"
+     width=700>
+<figcaption>
+<small>图1.归一化光诱导差分反射率。 <br>图中显示了不同温度下的扫描曲线，并显示了放大视图。 <br>紫色箭头标记了驼峰随温度升高的变化趋势。 <br>图中还显示了样品构造图例。 </small>
+</figcaption>
+</figure>
+<h3 id="图2">图2</h3>
+<p>为了通过超快载流子动力学来识别相变，我们将瞬时反射率绘制为时间和温度的函数，见图2。 不同颜色有助于理解相变。 可以看到有几个温区，对应不同的相。</p>
+<p>特别是，初始（0-2ps，白色紫色区域）和进行过程中（大于2ps，红色蓝色区域），都在68K左右，弛豫出现明显的变化。 这些颜色变化反映出在相变中，载流子密度和寿命的变化，并定性的代表了超导相变。</p>
+<p>我们在下面进一步展示了定量的数据分析，它明确证明这就是超导相变，其相变温度为68(-2/-5)K。</p>
+<figure>
+<img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\2.png"
+     alt="图2"
+     width=700>
+<figcaption>
+<small>图2.超导相变的定性证据。 <br>差分反射率作为幅度和延迟时间的二维映射图，定性地说明在68K附近出现超导相变。 <br>白线标记了超导相变温度。 <br>在-2.8-43.5ps的时间步长为0.23ps，在43.5-173ps的时间步长为3.33ps；温度步长变化在图3中。 <br>进行了适当插值使着色更平滑。 </small>
+</figcaption>
+</figure>
+<h3 id="图3">图3</h3>
+<p>时间分辨过程可以用两个实验分量近似： <span class="math inline">\(\Delta R/R=A_{fast}e^{-t/\tau_{fast}}+A_{slow}e^{-t/\tau_{slow}}+A_0\)</span>， 其中<span class="math inline">\(A_{fast}\)</span>，<span class="math inline">\(\tau_{fast}\)</span>，<span class="math inline">\(A_{slow}\)</span>，<span class="math inline">\(\tau_{slow}\)</span>是温度的函数，均通过实验数据拟合而来，而<span class="math inline">\(A_0\)</span>是散射泵泄露的背景。 注意我们已经在数据拟合中包含了卷积。 结果总结在图3中，fast部分反映声电耦合（图3a和b），slow部分反映跨能隙准粒子重组，受声子对断裂的影响（图3c和d）。</p>
+<p>可以看到，随着温度升高，在68K以下，<span class="math inline">\(A_{slow}\)</span>稳定下降，在接近68K时突然下降，然后在68K以上趋势恒定（图3c）。 且在略低于68K的温度下，可以清楚看到<span class="math inline">\(\tau_{slow}\)</span>有明显的发散。 这两种变化同时出现强烈意味着超导相变的发生。</p>
+<p>准粒子和玻色子之间的准平衡在超导态下形成，他们共同的寿命由所谓的声子瓶颈效应决定（见下面的讨论）。 在<span class="math inline">\(T_c\)</span>两端，超导能隙的笔盒必然引起准粒子密度和寿命的显著变化。</p>
+<p>注意通常<span class="math inline">\(T_c\)</span>略高于寿命出现奇点的温度。</p>
+<p>我们将图3d中的103K峰归于FeTe层反铁磁相到顺磁相的相变。 它不是超导相变，因为没有同时出现<span class="math inline">\(A_{slow}\)</span>的变化。 另外，160ps的寿命（图3d）也几乎与另一个10UC FeTe/STO样品的寿命相同（见补充材料）。</p>
+<p><font color="MediumOrchid">超导温度为103K的另一种可能性也直接被时域数据拟合结果排除。</font></p>
+<p>尽管FeTe有很强的背景，我们还是可以清晰地观察到FeSe的相变。 这表明我们的方法是单层敏感的，可以应用到其他界面研究上。</p>
+<p>微观上，在相干光激发后，处于远高于费米面的高激发态的准粒子弛豫到超导能隙上方，与高频声子（high frequency phonons，缩写为HFP，<span class="math inline">\(E_{ph}&gt;2\Delta\)</span>，<span class="math inline">\(\Delta\)</span>是超导能隙）形成准平衡量子混合物。</p>
+<p>库珀对的形成和破裂以声子群决定的方式演变，即声子瓶颈效应。 这个效应可以利用超快光谱最直接和有效地观测到，且可以通过<a href=https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.19.27>Rothwarf-Taylor对声电耦合平衡的描述</a>来理解。</p>
+<p>在该模型中，高频声子在电子凝聚过程中破坏了库珀对，因此与准粒子一起构成了一个动态平衡，只能通过高频声子的衰减和逃逸来缓和。 此即声子瓶颈效应，可从图3d中看出（60K左右较大的<span class="math inline">\(\tau_{slow}\)</span>）。</p>
+<figure>
+<img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\3.png"
+     alt="图3"
+     width=700>
+<figcaption>
+<small>图3.超导相变在68（-5/+2）K的定量证据。 <br>（a）fast组分振幅与温度的关系； <br>（b）fast组分寿命与温度的关系，红点是反卷积数据。 <br>（c）slow组分振幅与温度的关系； <br>（d）slow组分寿命与温度的关系，红线是理论仿真曲线；橘色条纹标记了63-70K的超导温度；亮蓝色条纹标记了FeTe封层的非超导相变； <br>（c）中插图：热激发准粒子的密度；（d）中插图：8K附近数据的放大图。 </small>
+</figcaption>
+</figure>
+<h2 id="定量">定量</h2>
+<p>定量地，我们使用Kabanov等的库珀对超导明星来模拟图3中的结果。 对于电子玻色子相互作用系统，对能隙敏感的超快动力学可以通过温度相关的差分反射率表示为： <span class="math display">\[\Delta R/R\propto \dfrac{\epsilon_{I}[\Delta(T)+k_BT/2]}{1+\dfrac{2\nu}{N(0)\hbar \Omega_c}\sqrt{\dfrac{2k_BT}{\pi \Delta (T)}}e^{-\Delta(T)/k_BT}} \tag{1}\]</span> 其中<span class="math inline">\(\epsilon_I\)</span>是单位晶胞吸收的激光能量密度，<span class="math inline">\(\Omega_c\)</span>是声子截止频率，<span class="math inline">\(\nu\)</span>是单位晶胞有效的相互作用声子数量，<span class="math inline">\(N(0)\)</span>是费米面的态密度，我们假设在<span class="math inline">\(T_c\)</span>附近有一对称的能隙<span class="math inline">\(\Delta(T)=\Delta(0)[1-(T/T_c)]^{1/2}\)</span>。</p>
+<p>我们通过方程（1）拟合了图3c中的数据，并发现<span class="math inline">\(A_{slow}\)</span>的拟合曲线有一急剧下降并在68K停止。 对于其他常规、铜基、铁基超导体，这个截止温度就是超导相变的温度。</p>
+<p>同时，使用该模型，准粒子（以及平衡状态的声子）与能隙相关的寿命可以描述为： <span class="math display">\[\begin{aligned}
+\tau _{slow} &amp;= \tau_{ph}
+\\
+&amp;= \dfrac{\hbar^2\omega^2ln\left[\dfrac{1}{\dfrac{\epsilon_I}{2N(0)\Delta(0)^2}+e^{\frac{\Delta(T)}{k_BT}}}\right]}{12\Gamma_\omega\Delta(T)^2} \tag2
+\end{aligned}\]</span> 其中<span class="math inline">\(\omega\)</span>是高频声子的频率，<span class="math inline">\(\Gamma_\omega\)</span>是声子线宽。</p>
+<p>通过方程（2）我们在图3d中拟合了<span class="math inline">\(\tau_{slow}\)</span>的数据，在60K左右出现显著的奇点。 多次尝试拟合参数给出了<span class="math inline">\(63K&lt;T_c&lt;70K\)</span>的边界，最优化的值为68K。</p>
+<p>但是考虑到温度测量的系统误差，样品的相变温度只略高于68K，而不低于68K。</p>
+<p>同时，上述分析得到<span class="math inline">\(\Delta(0)=3.2-3.7k_BT_c\)</span>（<span class="math inline">\(k_B\)</span>是玻尔兹曼常数），即<span class="math inline">\(\Delta(0)=20.2\pm1.5meV\)</span>，与已报道的20.1meV，19meV和<span class="math inline">\(3.0-3.5k_BT_c\)</span>吻合得非常好。</p>
+<h3 id="diss-others"><del>diss others</del></h3>
+<p>在过去角分辨光电子能谱测量中，去除覆盖层、退火、或者在放置4-6天后测量都会导致能隙发生变化。 而传输测量则由于电接触经常对非常薄的活性层造成缺陷。 一般来说，能隙和相变温度的变化是由测量的薄膜中样品间质量波动引起的。</p>
+<p>与上述测量相比，超快光谱提供一种非破坏的方法来研究高温超导体。</p>
+<p>因此，在样品质量相同的情况下，我们观察到的能隙和相变温度比非原位传输测量更高也就不足为奇了。 若没有覆盖层，超快光谱可以在原位测量中给出更高的相变温度。 我们还获得了热准粒子的密度<span class="math inline">\(n_{th}\)</span>（见图3c），随着温度趋于<span class="math inline">\(T_c\)</span>显著增加。</p>
+<h3 id="go-on">go on</h3>
+<p>我们可以直接从准粒子寿命获得声电耦合强度<span class="math inline">\(\lambda\)</span>。 弛豫动力学由<span class="math inline">\(\lambda\left&lt;\omega^2\right&gt;=(\pi/3)(k_BT/\hbar \tau_{e-ph})\)</span>的电子声子耦合决定，其中<span class="math inline">\(\tau_{e-ph}\)</span>可以直接由我们的泵浦探测光谱测得（比如<span class="math inline">\(\tau_{fast}=0.23ps\)</span>，见图3b的红点，是原始<span class="math inline">\(\tau_{fast}\)</span>数据反卷积的结果），<span class="math inline">\(\lambda^2\)</span>是Eliashberg方程的二阶矩。</p>
+<p>根据激光通量，我们估计<span class="math inline">\(T_e=902K\)</span>。</p>
+<p>我们推测声电耦合主要发生在FeSe电子和STO（或者界面）的声子之间，因为STO（或者界面）处大量原子贡献了声子浴。 例如，在石墨烯上生长的单层FeSe不是超导体。</p>
+<p>取在大体积STO<span class="math inline">\(\Gamma\)</span>附近测得的低光学声子频率，<span class="math inline">\(\hbar^2\left&lt;\omega^2\right&gt;=22^2(meBV)^2\)</span>，我们获得<span class="math inline">\(\lambda=0.48\)</span>。 作为对比，同样使用超快光谱测量块状FeSe获得的<span class="math inline">\(\lambda=0.16\)</span>。</p>
+<p>尽管取<a href=https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.108.257006>文献</a>中FeSe的<span class="math inline">\(A_{1g}\)</span>来计算，<span class="math inline">\(\lambda\)</span>的值还是更大，甚至比体积值大得多。 因此我们确认声电耦合在1UC FeSe/STO系统中占据更重要的作用。</p>
+<h3 id="与铁基不同">与铁基不同</h3>
+<p>迄今为止，块状FeSe和其他铁基超导体中，人们普遍认为电子-电子相互作用导致了超导效应。 但是1UC FeSe/STO系统的电子结构却大不相同。 此外，由于衬底的强相互作用，电子-电子相关性也显著不同。 或者，从理论上讲界面相互作用以各种方式增强了声电耦合作用。</p>
+<p>我们本次的实验表明1UC FeSe/STO系统有更大的<span class="math inline">\(\lambda\)</span>（=0.48），使我们相信在此高温超导中声电耦合作用起着关键作用，即使不能排除电子-电子相互作用。</p>
+<h3 id="图4">图4</h3>
+<p>为进一步探究配对情况及为何覆盖层会导致超导温度将降低，我们研究了覆盖层的影响。 我们在STO上制备了两层晶胞的FeTe（缩写为2UC FeTe/STO），在FeTe层中明确地生成并检测到了相干声子声学分支。</p>
+<p>图4a显示了叠加在单指数电子衰减上的清晰的周期声子振荡。 去除电子弛豫后，相干声学声子波展示在图4a下方。 通过图4a的傅里叶变换得到声子频率为0.05THz（0.2meV）。</p>
+<p>声子声学波的相对周期为20ps，其寿命在4.5K时为274ps，在24K时为262ps，在110K时为200ps。 在10Uc FeTe/STO样品中也观察到看了相同的声学模，且由于FeTe层较厚，振荡更为突出。 注意由于信号微弱但背景很强，在单原子层中观察到相干声学模的报道很少。</p>
+<p>我们猜想在FeTe层中观察到的声学支对超导凝聚的玻色子形成衰变通道，因此降低了2FeTe/1FeSe/STO样品的超导相变温度。 在图4b和4c中大致说明了这一点。 尽管很多类型的玻色子都可以成为胶体，我们以声子作为例子来描述这个物理图像。</p>
+<p>STO和界面的光学声子通过单层FeSe层隧道衰变为FeTe覆盖层的声学分支。 在动量空间，高能光学声子（可能是胶合玻色子）的弛豫受到FeTe引起的额外的衰变通道的推动。 这里，所有特征都绘制到能量尺度，声子能带结构基于<a href=http://dx.doi.org/10.1103/PhysRevB.77.134111>文献</a>的计算。</p>
+<p>尽管如缺陷、杂质、干涉和磁散射等其他来源也会降低超导温度，但是光学声子向声学声子的非谐衰变是固有且有效的。</p>
+<p>此外，非谐波衰变的其他通道会导致光学支的额外增宽，从而导致不那么尖锐的超导相变。 这可能反映在传输测量中。</p>
+<p>在图4a中可以看出2Uc FeTe/STO的准粒子动力学之包括一个指数衰变。 我们在图S7中展示了它的温度依赖性，其振幅和寿命不显示超导特性。 因此尽管FeTe层厚度减小了，但我们观察到的超导响应不来自该层。</p>
+<p>而且，我们在2Uc FeTe/STO进行了另一个反射和对照试验，表明FeSe主导反射信号，超导响应很显然来自FeSe而不是FeTe。</p>
+<figure>
+<img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\4.png"
+     alt="图4"
+     width=700>
+<figcaption>
+<small>图4.覆盖层中的相干声学声子和胶合玻色子的衰变。 <br>（a）2Uc FeTe/STO的超快动力学；实线：单指数拟合；节假的相干声学声子在下方面板中展示；插图：傅里叶变换。 <br>（b）通过FeSe层的声子衰减图示。红波：STO和界面中的光学声子；黄波：FeTe层中的声学声子。 <br>（c）对应的K空间原理图。大红箭头：新的弛豫通道；LO，TO和LA：纵光学声子（longitudinal optical phonons），横光学声子（transverse optical phonons）和纵声学声子（longitudinal acoustic phonons）。 </small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\s7.png"
+     alt="图s7"
+     width=700>
+<figcaption>
+<small>图s7.2Uc FeTe/STO的对照试验。 <br>（a）不同温度下光载流子寿命。黑点与图3d中的相同，具有红色的理论拟合曲线。插图放大显示了与温度相关的行为。分析说明了泵浦和探测功率。 <br>（b）动力学振幅。黑点与图3c中的相同，有红色理论拟合曲线。 <br>（a）（b）中动力学属性并不相同。 </small>
+</figcaption>
+</figure>
+<h2 id="结论">结论</h2>
+<p>我们通过研究准粒子超快动力学，观察到2FeTe/1FeSe/STO样品高温超导转变温度<span class="math inline">\(T_c=68(-5/+2)K\)</span>。 这是封闭单层FeSe样品中已报道的最高温度。 能隙为<span class="math inline">\(\Delta(0)=20.2\pm1.5meV\)</span>，即<span class="math inline">\(\Delta(0)=3.2-3.7k_BT_c\)</span>。 声电耦合强度<span class="math inline">\(\lambda=0.48\)</span>强于块状材料，表明声电耦合可能在超导机制中期关键作用。 且在FeTe封层中观察到0.05THz的相干声学支，增强了配对玻色子的衰变，很好地解释了封层对超导相变温度的降低作用。 我们的实验结果，从激发态演化中浓缩出来，独立地构成了1UC FeSe/STO系统高相变温度的证据。 我们的研究表明超快光谱对单层相变是敏感的，为单层或者界面量子材料的非破坏研究铺平了道路。</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>超导</tag>
       </tags>
   </entry>
   <entry>
@@ -2244,8 +2651,77 @@ f_{bulk}=&amp; \alpha_1(P_1^2+P_2^2+P_3^2)+\alpha_{11}(P_1^4+P_2^4+P_3^4)+\alpha
 &amp; +\alpha_{1122}(P_1^4P_2^4+P_2^4P_3^4+P_1^4P_3^4)+\alpha_{1123}(P_1^4P_2^2P_3^2+P_2^4P_1^2P_3^2+P_3^4P_1^2P_2^2)
 \end{aligned}\]</span></p>
 <p>其中，<span class="math inline">\(α_{1}, α_{11}, α_{12}, α_{123}, α_{111}, α_{112}, α_{1111}, α_{1112}, α_{1122}, α_{1123}\)</span>是朗道能量系数。其中只有<span class="math inline">\(α_{1}\)</span>与温度相关。</p>
-<p>Based on the Landau energy coefficients of (K0.5Na0.5) NbO3 and the experimental data (phase transition temperatures and dielectric properties) in this work, the Landau energy coefficients of (1−x) KNNS-xBNZ-Fe (1% ≤ x ≤ 4%) were set to be 一些值 where T is the temperature in Kelvin.</p>
-<p>The gradient energy density, associated with the polarization vectors gradient change at domain walls[11] can be expressed as 公式14</p>
+<p>略</p>
+<p><strong>支撑信息：</strong> <strong>补充图S1a</strong>，抛光多层复合材料 (I-II-III-IV)的横截面SEM图；<strong>S1b</strong>，相邻的界面；<strong>S1c-e</strong>，沿SEM图中黄线的Bi和Zr元素线扫描。</p>
+<p>在图2a中，可以发现一些小颗粒覆盖在成分II的表面，可能是热蚀刻温度不合适造成的。为了说明这个问题，在图S1a中展示了抛光后的多层复合材料的横截面SEM图。可以看到组分II的表面上没有小颗粒了。图S1b中的层间界面图可以进一步确定，其与抛光和热蚀刻的样品类似。根据横截面Bi和Zr元素的线扫描图（图S1c-e），可以确认组成层的顺序。</p>
+<figure>
+<img data-src="\tu\Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability\s1.png"
+     alt="图s1"
+     width=700>
+</figure>
+<p><strong>补充图S2a</strong>，单一组分(I, II, III, IV)介电常数（<span class="math inline">\(\epsilon_r\)</span>）随温度的变化；<strong>S2b</strong>，各组分的<span class="math inline">\(T_c\)</span>和<span class="math inline">\(T_{O-T}\)</span>；<strong>S2c</strong>，各组分<span class="math inline">\(\epsilon/\epsilon_{max}\)</span>作为<span class="math inline">\(T/T_{max}\)</span>的函数；<strong>S2d</strong>，梯度复合材料在不同层压顺序下的<span class="math inline">\(\epsilon_r-T\)</span>曲线。</p>
+<p>图S2a展示了单一组分(I, II, III, IV)介电常数<span class="math inline">\(\epsilon_r\)</span>随温度的变化，测量条件分别为<span class="math inline">\(f=1,10,100kHz\)</span>。图S2b则展示了居里温度<span class="math inline">\(T_c\)</span>和O-T相变温度<span class="math inline">\(T_{O-T}\)</span>随着BNZ含量的增加(I-IV)而降低。图S2c表明，随着BNZ含量的增加，相变温度的降低，可以引入更多的扩散相变行为。图S2d展示了同样厚度下，三种不同层压顺序(即I-II-III-IV,I-II-III-IV-III-II-I, 和IV-III-II-I-II-III-IV)的<span class="math inline">\(\epsilon_r-T\)</span>曲线。层压顺序会影响介电性能和相变。例如，I-II-III-IV的多层复合材料具有最显著的连续相变，且如灰色箭头指出来的那样，每个组分顺电到铁电的相变温度可以容易地区分。因此，对应于每个单独组分居里温度的四个连续峰表明多层复合材料I-II-III-IV已经实现了组分梯度分层。</p>
+<figure>
+<img data-src="\tu\Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability\s2.png"
+     alt="图s2"
+     width=700>
+</figure>
+<p><strong>补充图3</strong>，单一组分(I, II, III, IV)的表面SEM、PFM幅和相图。</p>
+<p>与图2的横截面SEM和PFM图相似，四种组分的微观结构没有很大差异，而畴的轮廓随着x增加有所不同。也就是说，宏观的畴转变成了复杂且接触的畴。</p>
+<figure>
+<img data-src="\tu\Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability\s3.png"
+     alt="图s3"
+     width=700>
+</figure>
+<p><strong>补充图4a</strong>，单一组分(I, II, III, IV)和复合材料顶部底部的放大的室温下XRD图（<span class="math inline">\(2\theta=45°-46°\)</span>）；<strong>S4b</strong>，沿多层复合材料横截面的微区XRD全谱图（<span class="math inline">\(2\theta=0°-160°\)</span>）。</p>
+<p>可从图S4a中看出，不同组分XRD峰明显不同。因此，梯度结构可以通过将四种组分整合在一起实现。对多层复合材料来说，虽然其顶部底部的XRD谱图与I到IV的相似，但这不能表明实现了梯度结构。因此，在图S4b中给出了沿多层复合材料横截面的XRD全谱图。</p>
+<figure>
+<img data-src="\tu\Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability\s4.png"
+     alt="图s4"
+     width=700>
+</figure>
+<p><strong>补充图5a</strong>，</p>
+<p>Supplementary Fig 5 a, Electric field dependence of P-E loops of single composition (I, II, III, IV); b, Bipolar and unipolar S-E curves of single composition (I, II, III, IV); c, E-dependence of P-E loops and bipolar/unipolar S-E curves of the compositionally graded multilayer composite (I-II-III-IV); d, E-dependence of Pr values of single composition and multilayer composite; e, unipolar strain (Suni) and poling strain (Spol) of single composition and multilayer composite.</p>
+<p>Supplementary Fig. 5a displays the electric field-dependent P-E loops of four single compositions, measured at room temperature and f=1 Hz. Similarity to the ferroelectric behavior of the ceramics prepared by CSS 1, those tape casted samples also possess saturated P-E loops when the applied electric field is larger than their coercive electric field. Different from the decreased ferroelectricity with the increase of BNZ contents, the strain response increases gradually as reflected by both the bipolar and unipolar S-E curves [Supplementary Fig. 5b]. This phenomenon can be well explained by the disruption of partial ferroelectric orders, as verified by the diffused phase transition and the refined domain size (leading to the weaking of ferroelectricity) and the phase transition from pure O phase to multiple phase coexistence (leading to the strengthen of strain response). The EC value of each constituent is slightly different, reflecting the domain switching becomes easier as the constituent changes from I to IV, leading to a higher electric field induced strain level. Supplementary Fig. 5c shows the P-E loops, bipolar S-E and unipolar S-E curves of the compositionally graded multilayer composite (I-II-III-IV). To illustrate the composite effect more clearly, E-dependent Pr in single composition (I, II, III, IV) and multilayer composite (I-II-III-IV) were summarized in Supplementary Fig. 5d, and the unipolar strain (Suni) and poling strain (Spol) were compared in Supplementary Fig. 5e. All those electrical parameters including Pr, Suni and Spol of the multilayer composite are in the middle of the four single compositions and are independent on the applied field strength, indicating that the multilayer composite combines synergistically the complementary properties of each constituent layers 2.</p>
+<figure>
+<img data-src="\tu\Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability\s5.png"
+     alt="图s5"
+     width=700>
+</figure>
+<p>Supplementary Fig 6 d33 T/d33 RT as a function of temperature for the compositionally graded multilayer composite (I-II-III-IV) with a, different thickness of each constituent and b, d33 T/d33 RT as a function of temperature for the compositionally graded multilayer composite with different laminated sequence. The variation of d33 (in the temperature range of 25~100 oC) as a function of c, composite structure types and d, laminated sequence.</p>
+<p>Supplementary Fig. 6 demonstrated that the d33-T behavior of the multilayer composites (I-II-III-IV) has a close relationship with thickness and laminated sequence of each constituent. Here, the thickness of each constituent was expressed by the layer numbers of dried tapes. For example, the composite with 10/10/10/10 means that the layer numbers of dried tapes for constituent I, II, III, and IV is 10, 10, 10, and 10, respectively. As shown in Supplementary Fig. 6a, the thickness of each constituent will greatly influence the temperature stability of d33, and the multilayer composite with 10/10/10/10 has the most excellent temperature stability [Supplementary. Fig 6c], which may be due to the complementary effect of each constituent. In addition, the laminated sequence also affects the temperature dependence of d33 [Supplementary Fig. 6b, d]. As the multilayer of I-II-III-IV-III-II-I has the most sharped phase transition [Supplementary Fig. 2d], the variation of d33 is larger than that of the other two multilayer composites. Therefore, the compositionally graded multilayer composite, with the optimally tailored composite structure, results in a negligible variation of d33 in the temperature range from 25 to 100 oC.</p>
+<figure>
+<img data-src="\tu\Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability\s6.png"
+     alt="图s6"
+     width=700>
+</figure>
+<p>Supplementary Fig 7 Temperature stability of d33 g33: comparison of the studied compositionally graded multilayer composite and reported KNN based lead free ceramic.</p>
+<p>By comparing the properties of the multilayer composite and the reported KNN-BLT-BZ6 ceramics3 with similar room temperature d33 values, a much improved temperature stability of d33 g33 can be also obtained in this work.</p>
+<figure>
+<img data-src="\tu\Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability\s7.png"
+     alt="图s7"
+     width=700>
+</figure>
+<p>Supplementary Fig 8 PFM amplitude images of single composition (I and II), measured at different temperatures.</p>
+<p>Supplementary Fig. 8 exhibits the PFM amplitude images of single composition (I and II), measured at different temperatures. For composition I with macro-stripe domains and O phase in the measured temperature range, very stable domain configuration can be obtained, where the domain morphologies have no obvious changes with temperature increasing. While for single composition II with both micro and nano-size domains at room temperature, the thermally activated domain variation can be clearly observed. For example, the orientation of micro-size domain in region a gradually rotate when temperature increases, as reflected by the color changing from yellow to blue (meaning that the piezo-response along out-of-plane weakens due to the reduction of c-axis vector intensity). For those nano-size domains in region b, the piezo-response increases gradually after thermal excitation. What’s more important is that those nano-size domains gradually converge to form larger size domains, which was previously reported as the disappear of nano-domain4. Therefore, those micro- and/or nano-domains are sensitive to external fields, including both electric field and thermal field. That’s why high piezoelectricity can be obtained in those KNN-based materials with small size domains while a rapid decrease of piezoelectricity also appears with the increase of temperature.</p>
+<figure>
+<img data-src="\tu\Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability\s8.png"
+     alt="图s8"
+     width=700>
+</figure>
+<p>Supplementary Fig 9 PFM phase images of each constituent of the multilayer composite, measured along the cross section and different temperature.</p>
+<p>Supplementary Fig. 9 shows the PFM phase images of each constituent of the multilayer composite, measured along the cross section and different temperature. For constituent I, almost no back-switching of oriented domains can be observed because higher TO-T (~112 oC) results in much stable domain behavior. However, for the other three constituents (II, III, and IV), obvious domain back-switching behavior (shown by the red dotted circles) can be observed when the measured temperature is higher than their corresponding TO-T.</p>
+<figure>
+<img data-src="\tu\Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability\s9.png"
+     alt="图s9"
+     width=700>
+</figure>
+<p>Supplementary Table 1 Electrical parameters of single compositions and multilayer composite</p>
+<figure>
+<img data-src="\tu\Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability\tb1.png"
+     alt="图tb1"
+     width=700>
+</figure>
 ]]></content>
       <categories>
         <category>科研相关</category>
