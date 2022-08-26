@@ -246,6 +246,13 @@
   </url>
   
   <url>
+    <loc>https://www.choutse.cn/tags/%E6%AD%8C%E8%AF%8D/</loc>
+    <lastmod>2022-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.choutse.cn/tags/%E7%9F%AD%E5%8F%A5/</loc>
     <lastmod>2022-08-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -254,13 +261,6 @@
   
   <url>
     <loc>https://www.choutse.cn/tags/%E5%8F%91%E9%9F%B3/</loc>
-    <lastmod>2022-08-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.choutse.cn/tags/%E6%AD%8C%E8%AF%8D/</loc>
     <lastmod>2022-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -325,14 +325,14 @@
   </url>
   
   <url>
-    <loc>https://www.choutse.cn/categories/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D1%8F%D0%B7%D1%8B%D0%BA/</loc>
+    <loc>https://www.choutse.cn/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</loc>
     <lastmod>2022-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.choutse.cn/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</loc>
+    <loc>https://www.choutse.cn/categories/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D1%8F%D0%B7%D1%8B%D0%BA/</loc>
     <lastmod>2022-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
