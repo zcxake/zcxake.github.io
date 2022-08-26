@@ -104,6 +104,21 @@
       </tags>
   </entry>
   <entry>
+    <title>获取阿b的表情</title>
+    <url>/2022/05f71bb376.html</url>
+    <content><![CDATA[<p>下述方法不能用了，先用这里别人收集好的吧： https://github.com/lrhtony/BiliEmoji</p>
+<p>方法来自知乎：https://www.zhihu.com/question/275901829/answer/1574659804 不太用知乎所以还是转到自己的网站吧。</p>
+<p>1.在登录的状态下访问http://api.bilibili.com/x/emote/setting/panel?business=reply ，存储为emoji.json。 2.编写python脚本，保存为emoji.py在emoji.json目录下。 <span id="more"></span> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import json</span><br><span class="line">import os</span><br><span class="line">from concurrent.futures import ThreadPoolExecutor</span><br><span class="line">from functools import partial</span><br><span class="line">from time import sleep</span><br><span class="line"></span><br><span class="line">import requests</span><br><span class="line">from tqdm import tqdm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def mkdir(path):</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(path) is not True:</span><br><span class="line">        os.makedirs(path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_pic(url, path):</span><br><span class="line">    resp = requests.get(url)</span><br><span class="line">    with open(path, <span class="string">&#x27;wb&#x27;</span>) as code:</span><br><span class="line">        code.write(resp.content)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_emoji(emoji, save_path):</span><br><span class="line">    emoji_name = emoji[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    emoji_name = emoji_name[1:-1]</span><br><span class="line">    path = os.path.join(save_path, f<span class="string">&#x27;&#123;emoji_name&#125;.png&#x27;</span>)</span><br><span class="line">    download_pic(emoji[<span class="string">&#x27;url&#x27;</span>], path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_package(package, path):</span><br><span class="line">    package_name = package[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    save_path = os.path.join(path, package_name)</span><br><span class="line">    mkdir(save_path)</span><br><span class="line">    all_emote = <span class="built_in">set</span>(map(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1], package[<span class="string">&#x27;emote&#x27;</span>]))</span><br><span class="line">    downloaded_emote = <span class="built_in">set</span>(map(lambda e: e[:-4], os.listdir(save_path)))</span><br><span class="line">    download_emote_name = all_emote - downloaded_emote</span><br><span class="line">    <span class="keyword">if</span> len(download_emote_name) == 0:</span><br><span class="line">        <span class="built_in">return</span></span><br><span class="line">    going_to_download_emote = filter(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1] <span class="keyword">in</span> download_emote_name, package[<span class="string">&#x27;emote&#x27;</span>])</span><br><span class="line">    with ThreadPoolExecutor() as executor:</span><br><span class="line">        executor.map(partial(download_emoji, save_path=save_path), going_to_download_emote)</span><br><span class="line">    sleep(3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    with open(<span class="string">&#x27;emoji.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) as fp:</span><br><span class="line">        emojis = json.load(fp)</span><br><span class="line">    emoji_packages = emojis[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;all_packages&#x27;</span>]</span><br><span class="line">    package_path = <span class="string">&#x27;bilibili_emoji&#x27;</span></span><br><span class="line">    bar = tqdm(emoji_packages)</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> bar:</span><br><span class="line">        <span class="keyword">if</span> p[<span class="string">&#x27;text&#x27;</span>] == <span class="string">&#x27;颜文字&#x27;</span>:</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        bar.set_description(p[<span class="string">&#x27;text&#x27;</span>])</span><br><span class="line">        download_package(p, package_path)</span><br></pre></td></tr></table></figure> 3.打开shell（windows里面powershell和cmd应该都可以），使用 pip install 安装包。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install tqdm</span><br></pre></td></tr></table></figure> 4.运行脚本，shell移动到目录可以cd，可以shift右键“在此处打开powershell”，可以在文件管理器里输目录的地方输cmd或者powershell回车。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python emoji.py</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+        <tag>表情包</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>建站过程中遇到的一些问题的总结</title>
     <url>/2022/05bfdf9581.html</url>
     <content><![CDATA[<p>用的next8</p>
@@ -203,21 +218,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </categories>
       <tags>
         <tag>小教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>获取阿b的表情</title>
-    <url>/2022/05f71bb376.html</url>
-    <content><![CDATA[<p>下述方法不能用了，先用这里别人收集好的吧： https://github.com/lrhtony/BiliEmoji</p>
-<p>方法来自知乎：https://www.zhihu.com/question/275901829/answer/1574659804 不太用知乎所以还是转到自己的网站吧。</p>
-<p>1.在登录的状态下访问http://api.bilibili.com/x/emote/setting/panel?business=reply ，存储为emoji.json。 2.编写python脚本，保存为emoji.py在emoji.json目录下。 <span id="more"></span> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import json</span><br><span class="line">import os</span><br><span class="line">from concurrent.futures import ThreadPoolExecutor</span><br><span class="line">from functools import partial</span><br><span class="line">from time import sleep</span><br><span class="line"></span><br><span class="line">import requests</span><br><span class="line">from tqdm import tqdm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def mkdir(path):</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(path) is not True:</span><br><span class="line">        os.makedirs(path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_pic(url, path):</span><br><span class="line">    resp = requests.get(url)</span><br><span class="line">    with open(path, <span class="string">&#x27;wb&#x27;</span>) as code:</span><br><span class="line">        code.write(resp.content)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_emoji(emoji, save_path):</span><br><span class="line">    emoji_name = emoji[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    emoji_name = emoji_name[1:-1]</span><br><span class="line">    path = os.path.join(save_path, f<span class="string">&#x27;&#123;emoji_name&#125;.png&#x27;</span>)</span><br><span class="line">    download_pic(emoji[<span class="string">&#x27;url&#x27;</span>], path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_package(package, path):</span><br><span class="line">    package_name = package[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    save_path = os.path.join(path, package_name)</span><br><span class="line">    mkdir(save_path)</span><br><span class="line">    all_emote = <span class="built_in">set</span>(map(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1], package[<span class="string">&#x27;emote&#x27;</span>]))</span><br><span class="line">    downloaded_emote = <span class="built_in">set</span>(map(lambda e: e[:-4], os.listdir(save_path)))</span><br><span class="line">    download_emote_name = all_emote - downloaded_emote</span><br><span class="line">    <span class="keyword">if</span> len(download_emote_name) == 0:</span><br><span class="line">        <span class="built_in">return</span></span><br><span class="line">    going_to_download_emote = filter(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1] <span class="keyword">in</span> download_emote_name, package[<span class="string">&#x27;emote&#x27;</span>])</span><br><span class="line">    with ThreadPoolExecutor() as executor:</span><br><span class="line">        executor.map(partial(download_emoji, save_path=save_path), going_to_download_emote)</span><br><span class="line">    sleep(3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    with open(<span class="string">&#x27;emoji.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) as fp:</span><br><span class="line">        emojis = json.load(fp)</span><br><span class="line">    emoji_packages = emojis[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;all_packages&#x27;</span>]</span><br><span class="line">    package_path = <span class="string">&#x27;bilibili_emoji&#x27;</span></span><br><span class="line">    bar = tqdm(emoji_packages)</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> bar:</span><br><span class="line">        <span class="keyword">if</span> p[<span class="string">&#x27;text&#x27;</span>] == <span class="string">&#x27;颜文字&#x27;</span>:</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        bar.set_description(p[<span class="string">&#x27;text&#x27;</span>])</span><br><span class="line">        download_package(p, package_path)</span><br></pre></td></tr></table></figure> 3.打开shell（windows里面powershell和cmd应该都可以），使用 pip install 安装包。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install tqdm</span><br></pre></td></tr></table></figure> 4.运行脚本，shell移动到目录可以cd，可以shift右键“在此处打开powershell”，可以在文件管理器里输目录的地方输cmd或者powershell回车。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python emoji.py</span><br></pre></td></tr></table></figure></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>小教程</tag>
-        <tag>表情包</tag>
       </tags>
   </entry>
   <entry>
@@ -574,34 +574,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>调型与发音规则</title>
-    <url>/2022/05f9b5f147.html</url>
-    <content><![CDATA[<h3 id="发音">发音</h3>
-<ul>
-<li><strong>1.</strong> о在非重音时弱化成а；</li>
-<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音； 如：рассказ中的з读成相应清辅音с,； 清浊对照的只有： п-б ф-в т-д к-г с-з ш-ж <span id="more"></span></li>
-<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化； 如：завтра中的в清化成ф；</li>
-<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊； 后者第一个字母为清辅音，则前者最后一个字母清化； 同理，后者浊，前者浊化；</li>
-<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
-<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
-</ul>
-<h3 id="调型">调型</h3>
-<p><strong>调型 1</strong> ： 用于陈述句：从调心元音开始降，调心后部低于调心前部； <strong>调型 2</strong> ： 用于有疑问词的疑问句：疑问词开始降调； <strong>调型 3</strong> ： 用于没有疑问词的疑问句：提问词的重音升调； <strong>调型 4</strong> ： 调型 3, а 调型 1. 转折疑问句：А это? <strong>调型 5</strong> ： 感叹句：Какая красивая девушка!</p>
-<!--
-|  |  |  |  |  |
-|------ |------ |------|------|------|
-|  |  |  |  |  |
-<div title="ののの"><font color=Crimson></font></div>
--->
-]]></content>
-      <categories>
-        <category>Русский язык</category>
-      </categories>
-      <tags>
-        <tag>发音</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>语法之类的吧</title>
     <url>/2022/0529d5bea5.html</url>
     <content><![CDATA[<h3 id="数字-属格">数字 属格</h3>
@@ -678,64 +650,31 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>Origin操作小指南</title>
-    <url>/2022/06431ba714.html</url>
-    <content><![CDATA[<p>真的很小，用的是2021版。</p>
-<h3 id="开始之前">开始之前</h3>
-<ol type="1">
-<li>固定左侧的项目管理器。</li>
-<li>修改默认字体和页边距： <br>Preference-Options-Text Fonts中Font和Default设置为Times New Roman <br>隔壁的Page设置为Tight</li>
-<li>一些快捷键和图标 <br><img align="left" width="24" height="29" data-src="\tu\Origin操作小指南\1.png"> Rescale表示自动重置坐标轴刻度，以使图像可以充满区域； <br><br><img align="left" width="25" height="136" data-src="\tu\Origin操作小指南\2.png"> 可以增加坐标轴； <br><br><br><br><br>Ctrl+D 新增列；</li>
-</ol>
-<span id="more"></span>
-<h3 id="开整">开整</h3>
-<ol type="1">
-<li>导入数据</li>
-<li>调整坐标轴，双击坐标轴进入设置</li>
-</ol>
+    <title>调型与发音规则</title>
+    <url>/2022/05f9b5f147.html</url>
+    <content><![CDATA[<h3 id="发音">发音</h3>
+<ul>
+<li><strong>1.</strong> о在非重音时弱化成а；</li>
+<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音； 如：рассказ中的з读成相应清辅音с,； 清浊对照的只有： п-б ф-в т-д к-г с-з ш-ж <span id="more"></span></li>
+<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化； 如：завтра中的в清化成ф；</li>
+<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊； 后者第一个字母为清辅音，则前者最后一个字母清化； 同理，后者浊，前者浊化；</li>
+<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
+<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
+</ul>
+<h3 id="调型">调型</h3>
+<p><strong>调型 1</strong> ： 用于陈述句：从调心元音开始降，调心后部低于调心前部； <strong>调型 2</strong> ： 用于有疑问词的疑问句：疑问词开始降调； <strong>调型 3</strong> ： 用于没有疑问词的疑问句：提问词的重音升调； <strong>调型 4</strong> ： 调型 3, а 调型 1. 转折疑问句：А это? <strong>调型 5</strong> ： 感叹句：Какая красивая девушка!</p>
+<!--
+|  |  |  |  |  |
+|------ |------ |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
 ]]></content>
       <categories>
-        <category>科研相关</category>
+        <category>Русский язык</category>
       </categories>
       <tags>
-        <tag>小教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jade操作小指南</title>
-    <url>/2022/0680a0f618.html</url>
-    <content><![CDATA[<p>导入里的import可以设置txt 找到自己的txt后导入，也可以直接拖入。</p>
-<p>一上来就遇到了一个非常脑瘫的问题，导入的txt设置问题。 <br>这里把需要修改的参数列出来吧。</p>
-<span id="more"></span>
-<p>Data Starts at L：这个指的是从第几行开始处理数据 <br>Char- &amp; Width：左边的空是从第几位开始是强度，右边是强度字符长度，这个长点无所谓 <br>Angle Column：左边的空是从第几位开始是角度，右边是到第几位角度结束 <br>主要就是改这几个，然后图像就正确了。 <br>举例： <br>数据为：10.0000 1320.0000 <br>相应设置为： <br>Angle Column：1 7 <br>Char- &amp; Width：9 9</p>
-<ol type="1">
-<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\2.png">（但是不建议）去除背底，双击工具栏的BG，这个可能是因为样品粗糙，或者光源有问题，或者是粉末。</li>
-<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\1.png">（但是不建议）粉末可能杂峰较多，可以用工具栏的这个平滑一下。</li>
-<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\3.png">Search &amp; Match上右键，右边可以设置元素，两下有底色的是确定有的，单击字体变色是可能存在的。左边第一个不限制查找。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>小教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>桜ノ雨</title>
-    <url>/2022/066631e6d7.html</url>
-    <content><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=22677426&amp;auto=0&amp;height=32">
-</iframe>
-<p>看文献真不是人能干的事儿，正好听到这首，发现歌词里好多不太常见的读音，索性打一下喽（过去是学累了抄歌词，现在是学累了打歌词嗯……</p>
-<p>0629更新捏：做了实验发现和实验比起来，看文献真是世间最美好的事。</p>
-<p><font color=#eb507e> それぞれの場所へ旅立っても <br>友達だ聞くまでもないじゃん <br>十人十色に輝いた日々が <br>胸張れと背中押す</font> <br><span id="more"></span></p>
-<p><font color=#eb507e><br><ruby>土埃<rp>(<rp><rt>つちぼこり</rt><rp>)</rp></ruby>上げ<ruby>競<rp>(<rp><rt>きそ</rt><rp>)</rp></ruby>った<ruby>校庭<rp>(<rp><rt>こうてい</rt><rp>)</rp></ruby> <br><ruby>窮屈<rp>(<rp><rt>きゅうくつ</rt><rp>)</rp></ruby>で着くずした制服 <br>机の上に書いた落書き <br>どれもこれも僕らの証 <br> <br><ruby>白紙<rp>(<rp><rt>はくし</rt><rp>)</rp></ruby>の<ruby>答辞<rp>(<rp><rt>とうじ</rt><rp>)</rp></ruby>には伝えきれない <br>思い出の数だけ涙が滲む <br>幼くて傷つけもした <br>僕らは少しくらい大人になれたのかな <br> <br>教室の窓から桜の雨 <br>ふわり手のひらこころに寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br><ruby>下駄箱<rp>(<rp><rt>げたばこ</rt><rp>)</rp></ruby>で見つけた恋の実 <br><ruby>廊下<rp>(<rp><rt>ろうか</rt><rp>)</rp></ruby>で<ruby>零<rp>(<rp><rt>こぼ</rt><rp>)</rp></ruby>した<ruby>不平不満<rp>(<rp><rt>ふへいふまん</rt><rp>)</rp></ruby> <br><ruby>屋上<rp>(<rp><rt>おくじょう</rt><rp>)</rp></ruby>で<ruby>手繰<rp>(<rp><rt>た</rt><rp>)</rp>繰<rp>(<rp><rt>ぐ</rt><rp>)</rp></ruby>り描いた未来図 <br>どれもこれも僕らの証 <br> <br>卒業<ruby>証書<rp>(<rp><rt>しょうしょ</rt><rp>)</rp></ruby>には書いてないけど <br>人を信じ人を愛して<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>んだ <br>泣き笑い喜び<ruby>怒<rp>(<rp><rt>いか</rt><rp>)</rp></ruby>り <br>僕らみたいに青く青く晴れ渡る空 <br> <br>教室の窓から桜ノ虹 <br>夢の<ruby>一片<rp>(<rp><rt>ひとひら</rt><rp>)</rp></ruby>胸<ruby>震<rp>(<rp><rt>ふる</rt><rp>)</rp></ruby>わせた <br>出会いの為の別れと信じて <br>手を振り返そう　忘れないで <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br><ruby>幾千<rp>(<rp><rt>いくぜん</rt><rp>)</rp></ruby>の<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>び<ruby>舎<rp>(<rp><rt>や</rt><rp>)</rp></ruby>の中で <br>僕らが巡り逢えた奇跡 <br>幾つ年をとっても変わらないで <br>その優しい笑顔 <br> <br>教室の窓から桜ノ雨 <br>ふわりてのひら　心に寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br>No matter how hard it hurts me. <br>I'll never say good bye. <br>Your presence will always linger in my heart. <br>... wanna see your smile again. </font></p>
-]]></content>
-      <categories>
-        <category>日本語</category>
-      </categories>
-      <tags>
-        <tag>歌词</tag>
+        <tag>发音</tag>
       </tags>
   </entry>
   <entry>
@@ -1163,6 +1102,67 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
+    <title>Origin操作小指南</title>
+    <url>/2022/06431ba714.html</url>
+    <content><![CDATA[<p>真的很小，用的是2021版。</p>
+<h3 id="开始之前">开始之前</h3>
+<ol type="1">
+<li>固定左侧的项目管理器。</li>
+<li>修改默认字体和页边距： <br>Preference-Options-Text Fonts中Font和Default设置为Times New Roman <br>隔壁的Page设置为Tight</li>
+<li>一些快捷键和图标 <br><img align="left" width="24" height="29" data-src="\tu\Origin操作小指南\1.png"> Rescale表示自动重置坐标轴刻度，以使图像可以充满区域； <br><br><img align="left" width="25" height="136" data-src="\tu\Origin操作小指南\2.png"> 可以增加坐标轴； <br><br><br><br><br>Ctrl+D 新增列；</li>
+</ol>
+<span id="more"></span>
+<h3 id="开整">开整</h3>
+<ol type="1">
+<li>导入数据</li>
+<li>调整坐标轴，双击坐标轴进入设置</li>
+</ol>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jade操作小指南</title>
+    <url>/2022/0680a0f618.html</url>
+    <content><![CDATA[<p>导入里的import可以设置txt 找到自己的txt后导入，也可以直接拖入。</p>
+<p>一上来就遇到了一个非常脑瘫的问题，导入的txt设置问题。 <br>这里把需要修改的参数列出来吧。</p>
+<span id="more"></span>
+<p>Data Starts at L：这个指的是从第几行开始处理数据 <br>Char- &amp; Width：左边的空是从第几位开始是强度，右边是强度字符长度，这个长点无所谓 <br>Angle Column：左边的空是从第几位开始是角度，右边是到第几位角度结束 <br>主要就是改这几个，然后图像就正确了。 <br>举例： <br>数据为：10.0000 1320.0000 <br>相应设置为： <br>Angle Column：1 7 <br>Char- &amp; Width：9 9</p>
+<ol type="1">
+<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\2.png">（但是不建议）去除背底，双击工具栏的BG，这个可能是因为样品粗糙，或者光源有问题，或者是粉末。</li>
+<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\1.png">（但是不建议）粉末可能杂峰较多，可以用工具栏的这个平滑一下。</li>
+<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\3.png">Search &amp; Match上右键，右边可以设置元素，两下有底色的是确定有的，单击字体变色是可能存在的。左边第一个不限制查找。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>桜ノ雨</title>
+    <url>/2022/066631e6d7.html</url>
+    <content><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=22677426&amp;auto=0&amp;height=32">
+</iframe>
+<p>看文献真不是人能干的事儿，正好听到这首，发现歌词里好多不太常见的读音，索性打一下喽（过去是学累了抄歌词，现在是学累了打歌词嗯……</p>
+<p>0629更新捏：做了实验发现和实验比起来，看文献真是世间最美好的事。</p>
+<p><font color=#eb507e> それぞれの場所へ旅立っても <br>友達だ聞くまでもないじゃん <br>十人十色に輝いた日々が <br>胸張れと背中押す</font> <br><span id="more"></span></p>
+<p><font color=#eb507e><br><ruby>土埃<rp>(<rp><rt>つちぼこり</rt><rp>)</rp></ruby>上げ<ruby>競<rp>(<rp><rt>きそ</rt><rp>)</rp></ruby>った<ruby>校庭<rp>(<rp><rt>こうてい</rt><rp>)</rp></ruby> <br><ruby>窮屈<rp>(<rp><rt>きゅうくつ</rt><rp>)</rp></ruby>で着くずした制服 <br>机の上に書いた落書き <br>どれもこれも僕らの証 <br> <br><ruby>白紙<rp>(<rp><rt>はくし</rt><rp>)</rp></ruby>の<ruby>答辞<rp>(<rp><rt>とうじ</rt><rp>)</rp></ruby>には伝えきれない <br>思い出の数だけ涙が滲む <br>幼くて傷つけもした <br>僕らは少しくらい大人になれたのかな <br> <br>教室の窓から桜の雨 <br>ふわり手のひらこころに寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br><ruby>下駄箱<rp>(<rp><rt>げたばこ</rt><rp>)</rp></ruby>で見つけた恋の実 <br><ruby>廊下<rp>(<rp><rt>ろうか</rt><rp>)</rp></ruby>で<ruby>零<rp>(<rp><rt>こぼ</rt><rp>)</rp></ruby>した<ruby>不平不満<rp>(<rp><rt>ふへいふまん</rt><rp>)</rp></ruby> <br><ruby>屋上<rp>(<rp><rt>おくじょう</rt><rp>)</rp></ruby>で<ruby>手繰<rp>(<rp><rt>た</rt><rp>)</rp>繰<rp>(<rp><rt>ぐ</rt><rp>)</rp></ruby>り描いた未来図 <br>どれもこれも僕らの証 <br> <br>卒業<ruby>証書<rp>(<rp><rt>しょうしょ</rt><rp>)</rp></ruby>には書いてないけど <br>人を信じ人を愛して<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>んだ <br>泣き笑い喜び<ruby>怒<rp>(<rp><rt>いか</rt><rp>)</rp></ruby>り <br>僕らみたいに青く青く晴れ渡る空 <br> <br>教室の窓から桜ノ虹 <br>夢の<ruby>一片<rp>(<rp><rt>ひとひら</rt><rp>)</rp></ruby>胸<ruby>震<rp>(<rp><rt>ふる</rt><rp>)</rp></ruby>わせた <br>出会いの為の別れと信じて <br>手を振り返そう　忘れないで <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br><ruby>幾千<rp>(<rp><rt>いくぜん</rt><rp>)</rp></ruby>の<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>び<ruby>舎<rp>(<rp><rt>や</rt><rp>)</rp></ruby>の中で <br>僕らが巡り逢えた奇跡 <br>幾つ年をとっても変わらないで <br>その優しい笑顔 <br> <br>教室の窓から桜ノ雨 <br>ふわりてのひら　心に寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br>No matter how hard it hurts me. <br>I'll never say good bye. <br>Your presence will always linger in my heart. <br>... wanna see your smile again. </font></p>
+]]></content>
+      <categories>
+        <category>日本語</category>
+      </categories>
+      <tags>
+        <tag>歌词</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Design  Principles  for  High-Temperature  Superconductors  with  a  Hydrogen-Based  Alloy  Backbone  at  Moderate  Pressure</title>
     <url>/2022/07b6aa62fc.html</url>
     <content><![CDATA[<h2 id="文章信息">文章信息</h2>
@@ -1366,7 +1366,7 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
 </ul>
 <span id="more"></span>
 <h2 id="摘要">摘要：</h2>
-<p>我们报道了具有碲化亚铁<span class="math inline">\(FeTe\)</span>封层的钛酸锶<span class="math inline">\(SrTiO_3\)</span>上单晶胞厚硒化亚铁<span class="math inline">\(TeSe\)</span>薄膜的时间分辨激发态超快动力学。 通过测量光激发准粒子的密度和寿命，我们明确地识别了超导相变，其相变温度为<span class="math inline">\(68(-5+2)K\)</span>，超导能隙为<span class="math inline">\(\Delta(0)=20.2\pm1.5meV\)</span>。 获得的声电耦合强度<span class="math inline">\(\lambda\)</span>高达0.48，表明声电耦合在钛酸锶系统的单晶胞硒化亚铁的高温超导性中可能起关键作用。 我们进一步在封层中发现一个<span class="math inline">\(0.05THz\)</span>的声学模分支，它为粘合玻色子提供了额外的衰减通道。</p>
+<p>我们报道了具有碲化亚铁<span class="math inline">\(FeTe\)</span>封层的钛酸锶<span class="math inline">\(SrTiO_3\)</span>上单晶胞厚硒化亚铁<span class="math inline">\(TeSe\)</span>薄膜的时间分辨激发态超快动力学。 通过测量光激发准粒子的密度和寿命，我们明确地识别了超导相变，其相变温度为<span class="math inline">\(68(-5/+2)K\)</span>，超导能隙为<span class="math inline">\(\Delta(0)=20.2\pm1.5meV\)</span>。 获得的声电耦合强度<span class="math inline">\(\lambda\)</span>高达0.48，表明声电耦合在钛酸锶系统的单晶胞硒化亚铁的高温超导性中可能起关键作用。 我们进一步在封层中发现一个<span class="math inline">\(0.05THz\)</span>的声学模分支，它为粘合玻色子提供了额外的衰减通道。</p>
 <h2 id="背景等">背景等</h2>
 <h3 id="背景">背景</h3>
 <p>钛酸锶上单晶胞厚硒化亚铁薄膜有高超导温度，但是通过角分辨光电子能谱实验测得的为<span class="math inline">\(55\pm5,65\pm5,60\pm5,58\pm7K\)</span>，通过输运测量为<span class="math inline">\(109K\)</span>，通过磁化测量为<span class="math inline">\(20K\)</span>（<span class="math inline">\(45K\)</span>起始）。</p>
@@ -1381,7 +1381,7 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
 <p>实施交叉极化检测以进一步提高信噪比</p>
 <h3 id="图1">图1</h3>
 <p>图1总结了样品的归一化光致瞬态差分反射率，插图中示意性地说明了这一点（生长过程的细节在其他文献中详细描述）。 在这里，<span class="math inline">\(|\Delta R/R|\)</span>与光激发自由载流子的密度成正比，因为探测光的吸收由泵浦引起的量子占有数变化进行线性修正（参考费米黄金法则）。</p>
-<p>可以看到<span class="math inline">\(t=0ps\)</span>后的扫描路径有增加和减少的两部分组成，其振幅和寿随温度变化。 重要的是，在<span class="math inline">\(t&gt;0ps\)</span>可以看到一个驼峰。 驼峰的大小随温度升高而先减小后增高，在<span class="math inline">\(70K\)</span>左右出现变化。 这和下方要讨论的超导转变有关。</p>
+<p>可以看到<span class="math inline">\(t=0ps\)</span>后的扫描路径有增加和减少的两部分组成，其振幅和寿命随温度变化。 重要的是，在<span class="math inline">\(t&gt;0ps\)</span>可以看到一个驼峰。 驼峰的大小随温度升高而先减小后增高，在<span class="math inline">\(70K\)</span>左右出现变化。 这和下方要讨论的超导转变有关。</p>
 <p>注意到在我们的控制实验中，2UC的FeTe是最好的覆盖层数，可以清楚地区分1UC FeSe的超快动力学和覆盖层FeTe的超快动力学。 在附加材料中，我们展示了FeSe对于超导相的帮助，而不是FeTe。</p>
 <figure>
 <img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\1.png"
@@ -1394,7 +1394,7 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
 <h3 id="图2">图2</h3>
 <p>为了通过超快载流子动力学来识别相变，我们将瞬时反射率绘制为时间和温度的函数，见图2。 不同颜色有助于理解相变。 可以看到有几个温区，对应不同的相。</p>
 <p>特别是，初始（0-2ps，白色紫色区域）和进行过程中（大于2ps，红色蓝色区域），都在68K左右，弛豫出现明显的变化。 这些颜色变化反映出在相变中，载流子密度和寿命的变化，并定性的代表了超导相变。</p>
-<p>我们在下面进一步展示了定量的数据分析，它明确证明这就是超导相变，其相变温度为68(-2/-5)K。</p>
+<p>我们在下面进一步展示了定量的数据分析，它明确证明这就是超导相变，其相变温度为68(+2/-5)K。</p>
 <figure>
 <img data-src="\tu\Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3\2.png"
      alt="图2"
@@ -1425,11 +1425,7 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
 <h2 id="定量">定量</h2>
 <p>定量地，我们使用Kabanov等的库珀对超导明星来模拟图3中的结果。 对于电子玻色子相互作用系统，对能隙敏感的超快动力学可以通过温度相关的差分反射率表示为： <span class="math display">\[\Delta R/R\propto \dfrac{\epsilon_{I}[\Delta(T)+k_BT/2]}{1+\dfrac{2\nu}{N(0)\hbar \Omega_c}\sqrt{\dfrac{2k_BT}{\pi \Delta (T)}}e^{-\Delta(T)/k_BT}} \tag{1}\]</span> 其中<span class="math inline">\(\epsilon_I\)</span>是单位晶胞吸收的激光能量密度，<span class="math inline">\(\Omega_c\)</span>是声子截止频率，<span class="math inline">\(\nu\)</span>是单位晶胞有效的相互作用声子数量，<span class="math inline">\(N(0)\)</span>是费米面的态密度，我们假设在<span class="math inline">\(T_c\)</span>附近有一对称的能隙<span class="math inline">\(\Delta(T)=\Delta(0)[1-(T/T_c)]^{1/2}\)</span>。</p>
 <p>我们通过方程（1）拟合了图3c中的数据，并发现<span class="math inline">\(A_{slow}\)</span>的拟合曲线有一急剧下降并在68K停止。 对于其他常规、铜基、铁基超导体，这个截止温度就是超导相变的温度。</p>
-<p>同时，使用该模型，准粒子（以及平衡状态的声子）与能隙相关的寿命可以描述为： <span class="math display">\[\begin{aligned}
-\tau _{slow} &amp;= \tau_{ph}
-\\
-&amp;= \dfrac{\hbar^2\omega^2ln\left[\dfrac{1}{\dfrac{\epsilon_I}{2N(0)\Delta(0)^2}+e^{\frac{\Delta(T)}{k_BT}}}\right]}{12\Gamma_\omega\Delta(T)^2} \tag2
-\end{aligned}\]</span> 其中<span class="math inline">\(\omega\)</span>是高频声子的频率，<span class="math inline">\(\Gamma_\omega\)</span>是声子线宽。</p>
+<p>同时，使用该模型，准粒子（以及平衡状态的声子）与能隙相关的寿命可以描述为： <span class="math display">\[\tau _{slow} = \tau_{ph}= \dfrac{\hbar^2\omega^2ln\left[\dfrac{1}{\dfrac{\epsilon_I}{2N(0)\Delta(0)^2}+e^{\frac{\Delta(T)}{k_BT}}}\right]}{12\Gamma_\omega\Delta(T)^2} \tag2\]</span> 其中<span class="math inline">\(\omega\)</span>是高频声子的频率，<span class="math inline">\(\Gamma_\omega\)</span>是声子线宽。</p>
 <p>通过方程（2）我们在图3d中拟合了<span class="math inline">\(\tau_{slow}\)</span>的数据，在60K左右出现显著的奇点。 多次尝试拟合参数给出了<span class="math inline">\(63K&lt;T_c&lt;70K\)</span>的边界，最优化的值为68K。</p>
 <p>但是考虑到温度测量的系统误差，样品的相变温度只略高于68K，而不低于68K。</p>
 <p>同时，上述分析得到<span class="math inline">\(\Delta(0)=3.2-3.7k_BT_c\)</span>（<span class="math inline">\(k_B\)</span>是玻尔兹曼常数），即<span class="math inline">\(\Delta(0)=20.2\pm1.5meV\)</span>，与已报道的20.1meV，19meV和<span class="math inline">\(3.0-3.5k_BT_c\)</span>吻合得非常好。</p>
