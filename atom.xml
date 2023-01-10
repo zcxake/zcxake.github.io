@@ -6,7 +6,7 @@
   <link href="https://www.choutse.cn/atom.xml" rel="self"/>
   
   <link href="https://www.choutse.cn/"/>
-  <updated>2022-08-26T12:50:57.696Z</updated>
+  <updated>2023-01-10T13:40:20.193Z</updated>
   <id>https://www.choutse.cn/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>论文词组总结</title>
+    <link href="https://www.choutse.cn/2022/09b48925d7.html"/>
+    <id>https://www.choutse.cn/2022/09b48925d7.html</id>
+    <published>2022-09-18T07:07:21.000Z</published>
+    <updated>2023-01-10T13:40:20.193Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;看到了就随机记一下吧：&lt;/p&gt;
+&lt;p&gt;除此之外 beyond this point&lt;/p&gt;
+&lt;p&gt;急剧下降 dramatic decrease&lt;/p&gt;
+&lt;p&gt;精确地 refined&lt;/p&gt;
+&lt;p&gt;先锋的 avant garde&lt;/p&gt;
+&lt;p&gt;从这个角度看 from this perspective&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研相关" scheme="https://www.choutse.cn/categories/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="论文写作" scheme="https://www.choutse.cn/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>低温传压介质</title>
+    <link href="https://www.choutse.cn/2022/094d06fdeb.html"/>
+    <id>https://www.choutse.cn/2022/094d06fdeb.html</id>
+    <published>2022-09-15T04:32:35.000Z</published>
+    <updated>2023-01-10T13:41:40.816Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;fujii-g.-and-nagano-h.-nature-of-pressure-transmitting-media-at-low-temperature.-japanese-journal-of-applied-physics.-1972.&quot;&gt;Fujii, G. and Nagano, H. Nature of Pressure Transmitting Media at Low Temperature. Japanese Journal of Applied Physics. 1972.&lt;/h2&gt;
+&lt;p&gt;72年的古早文章了。传压介质用的滑石（talc）和聚四氟乙烯（teflon），锡相变温度与压强相关，以此测量介质的同质性和柔软性。&lt;/p&gt;
+&lt;p&gt;先提到以前用水做传压介质，降温后水结冰扩展，产生压力，但是在液氦温度下最多产生1.7 kbar的压强。后来用油-煤油做传压介质，获得了15 kbar的压强，常压下加压后降温。两种办法低温下都不好再改变压强。后有人用氢和氦气作为传压介质，其在4K时也足够柔软（plastic）。&lt;/p&gt;
+&lt;p&gt;这篇文献实验压机的拉伸和压缩部分是SUS 27不锈钢制成，因为低温下其具有低导热性，延展性以及高屈服强度。 作者认为气体传压介质比较危险且相较于固体传压介质压力系统比较复杂，决定用滑石和聚四氟乙烯作为传压介质。 用4电极法测锡的电阻来检查传压介质的静水压性质。 超导相变温度宽度是开始相变和结束相变的温度差。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;看完了，感觉参考意义不大，先这么着吧。&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研相关" scheme="https://www.choutse.cn/categories/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="文献" scheme="https://www.choutse.cn/tags/%E6%96%87%E7%8C%AE/"/>
+    
+    <category term="超导" scheme="https://www.choutse.cn/tags/%E8%B6%85%E5%AF%BC/"/>
+    
+  </entry>
   
   <entry>
     <title>Ultrafast Dynamics Evidence of High Temperature Superconductivity in Single Unit Cell FeSe on SrTiO3</title>
@@ -92,7 +141,7 @@
     <link href="https://www.choutse.cn/2022/07d0e9cc8b.html"/>
     <id>https://www.choutse.cn/2022/07d0e9cc8b.html</id>
     <published>2022-07-07T11:58:00.000Z</published>
-    <updated>2022-07-15T13:05:18.503Z</updated>
+    <updated>2022-08-27T09:14:18.971Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;文章信息&quot;&gt;文章信息&lt;/h2&gt;
@@ -464,52 +513,6 @@
     
     
     <category term="单词" scheme="https://www.choutse.cn/tags/%E5%8D%95%E8%AF%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>建站过程中遇到的一些问题的总结</title>
-    <link href="https://www.choutse.cn/2022/05bfdf9581.html"/>
-    <id>https://www.choutse.cn/2022/05bfdf9581.html</id>
-    <published>2022-05-02T11:44:17.000Z</published>
-    <updated>2022-06-05T11:24:31.046Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;用的next8&lt;/p&gt;
-&lt;p&gt;0.远古时期的忘掉了……&lt;/p&gt;
-&lt;p&gt;0.1.这个是next的网址QAQ: https://theme-next.js.org/&lt;/p&gt;
-&lt;p&gt;0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。&lt;/p&gt;
-&lt;h3 id=&quot;使用了自己的域名更新后页面找不到github-pages&quot;&gt;使用了自己的域名，更新后页面找不到github pages。&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="网站" scheme="https://www.choutse.cn/categories/%E7%BD%91%E7%AB%99/"/>
-    
-    
-    <category term="小教程" scheme="https://www.choutse.cn/tags/%E5%B0%8F%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>获取阿b的表情</title>
-    <link href="https://www.choutse.cn/2022/05f71bb376.html"/>
-    <id>https://www.choutse.cn/2022/05f71bb376.html</id>
-    <published>2022-05-01T16:46:17.000Z</published>
-    <updated>2022-08-18T07:30:40.901Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;下述方法不能用了，先用这里别人收集好的吧： https://github.com/lrhtony/BiliEmoji&lt;/p&gt;
-&lt;p&gt;方法来自知乎：https://www.zhihu.com/question/275901829/answer/1574659804 不太用知乎所以还是转到自己的网站吧。&lt;/p&gt;
-&lt;p&gt;1.在登录的状态下访问http://api.bilibili.com/x/emote/setting/panel?business=reply ，存储为emoji.json。 2.编写python脚本，保存为emoji.py在emoji.json目录下。</summary>
-    
-    
-    
-    <category term="网站" scheme="https://www.choutse.cn/categories/%E7%BD%91%E7%AB%99/"/>
-    
-    
-    <category term="小教程" scheme="https://www.choutse.cn/tags/%E5%B0%8F%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="表情包" scheme="https://www.choutse.cn/tags/%E8%A1%A8%E6%83%85%E5%8C%85/"/>
     
   </entry>
   
