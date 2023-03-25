@@ -6,7 +6,7 @@
   <link href="https://www.choutse.cn/atom.xml" rel="self"/>
   
   <link href="https://www.choutse.cn/"/>
-  <updated>2023-03-18T14:09:28.667Z</updated>
+  <updated>2023-03-25T11:59:42.820Z</updated>
   <id>https://www.choutse.cn/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>日语N1语法总结</title>
+    <link href="https://www.choutse.cn/2023/033e64d16e.html"/>
+    <id>https://www.choutse.cn/2023/033e64d16e.html</id>
+    <published>2023-03-24T12:19:39.000Z</published>
+    <updated>2023-03-25T11:59:42.820Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;唔姆，整理一下。 &lt;br&gt;详情点全文。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="日本語" scheme="https://www.choutse.cn/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+    
+    <category term="语法" scheme="https://www.choutse.cn/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>补番参考（待补</title>
     <link href="https://www.choutse.cn/2023/03a9b7bd2c.html"/>
     <id>https://www.choutse.cn/2023/03a9b7bd2c.html</id>
     <published>2023-03-18T14:08:43.000Z</published>
-    <updated>2023-03-18T14:09:28.667Z</updated>
+    <updated>2023-03-25T11:42:16.859Z</updated>
     
     
     <summary type="html">&lt;p&gt;其实就是一些榜单……来自壁姐姐。&lt;/p&gt;</summary>
@@ -123,7 +142,7 @@
     <link href="https://www.choutse.cn/2022/09b48925d7.html"/>
     <id>https://www.choutse.cn/2022/09b48925d7.html</id>
     <published>2022-09-18T07:07:21.000Z</published>
-    <updated>2023-03-18T12:18:03.020Z</updated>
+    <updated>2023-03-23T13:00:31.427Z</updated>
     
     
     <summary type="html">&lt;p&gt;看到了就随机记一下吧：&lt;/p&gt;
@@ -335,7 +354,7 @@
     <link href="https://www.choutse.cn/2022/066631e6d7.html"/>
     <id>https://www.choutse.cn/2022/066631e6d7.html</id>
     <published>2022-06-03T12:14:10.000Z</published>
-    <updated>2022-06-29T06:42:32.240Z</updated>
+    <updated>2023-03-25T03:52:14.110Z</updated>
     
     
     <summary type="html">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;298&quot; height=&quot;52&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;amp;id=22677426&amp;amp;auto=0&amp;amp;height=32&quot;&gt;
@@ -377,7 +396,7 @@
     <link href="https://www.choutse.cn/2022/05a4b3b729.html"/>
     <id>https://www.choutse.cn/2022/05a4b3b729.html</id>
     <published>2022-05-22T01:58:44.000Z</published>
-    <updated>2022-05-22T06:22:48.744Z</updated>
+    <updated>2023-03-25T10:52:50.827Z</updated>
     
     
     <summary type="html">&lt;p&gt;网上蛮多的了，但是好多哦，参考起来好麻烦，整个自己喜欢的颜色吧 全部颜色名在这儿：https://www.runoob.com/html/html-colornames.html ### &lt;font color=&quot;BlueViolet&quot;&gt;紫色哒：&lt;/font&gt; &lt;strong&gt;&lt;font color=&quot;DarkMagenta&quot;&gt;DarkMagenta&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;BlueViolet&quot;&gt;BlueViolet&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;DarkOrchid&quot;&gt;DarkOrchid&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;DarkViolet&quot;&gt;DarkViolet&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;MediumSlateBlue&quot;&gt;MediumSlateBlue&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;MediumPurple&quot;&gt;MediumPurple&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;MediumOrchid&quot;&gt;MediumOrchid&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;Orchid&quot;&gt;Orchid&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;Plum&quot;&gt;Plum&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;Lavender&quot;&gt;Lavender&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;</summary>
@@ -472,30 +491,6 @@
     
     
     <category term="语法" scheme="https://www.choutse.cn/tags/%E8%AF%AD%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>中国动画制作考（待补</title>
-    <link href="https://www.choutse.cn/2022/05c0de4b7a.html"/>
-    <id>https://www.choutse.cn/2022/05c0de4b7a.html</id>
-    <published>2022-05-15T13:13:17.000Z</published>
-    <updated>2022-05-19T11:09:59.442Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;一直挺想做个这样的统计的，感觉我是从沈剑心开始真正入坑如今的国创的。&lt;/p&gt;
-&lt;p&gt;其实想当初小学看动画谁管哪国家做的呀，围棋少年哪吒传奇我也好喜欢的，后来中学为了体现逼格开始说动漫，看日式的，再后来到大学开始说ANIME，到现在已经无所畏惧和无所谓了哈哈哈。&lt;/p&gt;
-&lt;p&gt;不过那么多年关注日番的经验还是很受用的，会想要了解动画制作的背后。&lt;/p&gt;
-&lt;p&gt;个人喜好是真的很个人喜好233333我一般喜欢什么就是很喜欢，不喜欢就是完全不喜欢，不太有中等的（一般情况哈），没有星星的就是还没看过&lt;/p&gt;
-&lt;p&gt;协力也先不放进去了，不然好复杂……&lt;/p&gt;
-&lt;p&gt;先从藤子平台上的来~&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="动画" scheme="https://www.choutse.cn/categories/%E5%8A%A8%E7%94%BB/"/>
-    
-    
-    <category term="中国动画" scheme="https://www.choutse.cn/tags/%E4%B8%AD%E5%9B%BD%E5%8A%A8%E7%94%BB/"/>
     
   </entry>
   
