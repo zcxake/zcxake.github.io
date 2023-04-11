@@ -237,7 +237,7 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
 <li><font color="Crimson">灵能百分百 第三季</font></li>
 <li><font color="MistyRose ">向山进发 第四季</font></li>
 <li><font color="DarkOrange">间谍过家家 分割后半</font></li>
-<li><font color="DarkOrange">异世界舅舅</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42105"><font color="DarkOrange">异世界舅舅</font></a></li>
 <li><font color="Crimson">电锯人</font></li>
 <li><font color="Crimson">JOJO的奇妙冒险 石之海 第二季</font></li>
 <li><font color="HotPink">IDOLiSH7 第三季 分割后半</font></li>
@@ -815,24 +815,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>礼貌用语等</title>
-    <url>/2022/058ae62fc9.html</url>
-    <content><![CDATA[<p>小短语 Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span> До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span> До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span> К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span> здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span> спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span> Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span> Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span> Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span> -М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span> -Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span> -Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span> Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span> -Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span> -Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span> Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span> Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span> Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span> Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span> -Ты зн<font color=Crimson>а</font>ешь,.......<span class="heimu">你知道吗</span> -Кон<font color=Crimson>е</font>чно,я знаю,......<span class="heimu">我当然知道</span> Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span> Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span> Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span> Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот ...<span class="heimu">这个xx多少钱</span> пока́<span class="heimu">[副]回头见，暂时</span> Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
-<!--
-|  |  |  |  |  |
-|------ |------ |------|------|------|
-|  |  |  |  |  |
-<div title="ののの"><font color=Crimson></font></div>
--->
-]]></content>
-      <categories>
-        <category>Русский язык</category>
-      </categories>
-      <tags>
-        <tag>短句</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>语法之类的吧</title>
     <url>/2022/0529d5bea5.html</url>
     <content><![CDATA[<h3 id="数字-属格">数字 属格</h3>
@@ -906,6 +888,24 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </categories>
       <tags>
         <tag>语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>礼貌用语等</title>
+    <url>/2022/058ae62fc9.html</url>
+    <content><![CDATA[<p>小短语 Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span> До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span> До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span> К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span> здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span> спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span> Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span> Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span> Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span> -М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span> -Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span> -Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span> Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span> -Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span> -Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span> Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span> Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span> Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span> Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span> -Ты зн<font color=Crimson>а</font>ешь,.......<span class="heimu">你知道吗</span> -Кон<font color=Crimson>е</font>чно,я знаю,......<span class="heimu">我当然知道</span> Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span> Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span> Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span> Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот ...<span class="heimu">这个xx多少钱</span> пока́<span class="heimu">[副]回头见，暂时</span> Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
+<!--
+|  |  |  |  |  |
+|------ |------ |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>短句</tag>
       </tags>
   </entry>
   <entry>
@@ -998,6 +998,99 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       <tags>
         <tag>文献</tag>
         <tag>超快</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium</title>
+    <url>/2023/0438b78d0c.html</url>
+    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
+<ul>
+<li>标题：由致密流体氦的高压插入引起的五硅沸石中正体积变化的单斜-斜方晶相变</li>
+<li>时间：October 25, 2021</li>
+<li>作者：Mario Santoro, Weiwei Dong, Konstantin Glazyrin, and Julien Haines</li>
+<li>单位：意大利国家光学研究所；欧洲非线性光谱实验室；德国电子同步加速器；中国科学院高能所北京同步辐射；法国蒙彼利埃大学</li>
+<li>期刊：the Journal of Physical chemistry C</li>
+<li>用到的表征手段：同步辐射XRD</li>
+</ul>
+<span id="more"></span>
+<blockquote>
+<p>原文：<a href="https://pubs.acs.org/doi/10.1021/acs.jpcc.1c07791">10.1021/acs.jpcc.1c07791</a></p>
+</blockquote>
+<table border="1">
+<tr>
+<td>
+<b><font color="orange">摘要</font>：</b> 使用同步辐射XRD研究了五硅沸石（archetypal siliceous zeolite Mobil-Five MFI）中氦的插入。由于氦气对孔隙和骨架的渗透程度非常高，MFI的单斜形式在较大的压力区间内稳定，并且压缩性远低于孔隙为空或充满除氢以外的任何其他客体分子或原子时。MFI结构从单斜<span class="math inline">\(P2_1/n\)</span>变为正交Pnma，在接近10 GPa时体积不连续地增加了3%。材料在高于42 GPa的压力下具有很高的应变性，但仍保持结晶性。卸压时释放应变，回复高结晶性。
+</td>
+</tr>
+</table>
+<h2 id="引言">引言</h2>
+<p>已经发现氦在高压下很容易穿透某些形式的二氧化硅的框架，例如α-方石英和二氧化硅玻璃，导致结构膨胀。这种行为不会在氩气中的压缩时发生，但在中等大小的氖原子的情况下，动力学速度低于阈值压力时可能发生。对于多孔纯二氧化硅沸石，较大的原子和分子很容易在高压下进入孔隙。在原型全二氧化硅沸石的情况下，具有单斜五硅（MFI）结构和三维孔隙系统的硅质岩-1，氩或简单的分子如水，氮气和二氧化碳可以完全填充孔隙系统但不进入框架。唯一的例外是氢气，最近发现它进入了框架的二级单元。MFI的结构由沿b方向的线性5.3 Å×5.6 Å通道和xz平面上的5.1 Å×5.5 Å正弦孔（sinusoidal pores）形成。高二氧化硅，MFI在349 K处经历从单斜<span class="math inline">\(P2_1/n\)</span>到正交的铁弹性相变。在1 GPa附近的高压下也观察到类似的相变。当硅质MFI在渗透介质（如水或二氧化碳）中被压缩时，这种转变可以在更低的压力下发生。还发现用客体物种填充可以稳定正交相，相对于在非常高的压力下压力诱导的非晶化。在H2填充的MFI中，在60 GPa下仍能观察到结晶相。</p>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\1.jpeg"
+     alt="图 1"
+     width=700>
+<figcaption>
+<small>图 1.单斜P21/n11，空间群14（下图）和正交Pnma，S.G. 62 MFI（上图）的结构。比较结构，我们注意到单斜α=90.6207°，并且在Si-O-Si桥接角上观察到一些小差异。单斜晶系的晶胞在非标准空间群设置中描述，以保留类似于斜方相的基础。 </small>
+</figcaption>
+</figure>
+<p>在本工作中，我们探索了硅质MFI，重点是氦插入对单斜相和正交相的影响，它们的稳定性场，体积变化以及该材料的可压缩性。</p>
+<h2 id="方法">方法</h2>
+<p>先制备样品，不细看了。</p>
+<p>将样品与标压用的红宝石球一起放置在DAC的垫圈孔中。在高压下引入流体氦气，压到0.13 GPa。使用波长为0.4828 Å的单色辐射，在DESY的PETRA-III同步加速器的极端条件下光束线P02.2进行角度色散X射线粉末衍射测量。聚焦光束光斑尺寸为9 μm×3 μm。使用珀金埃尔默XRD1621（2048×2048像素，200 μm× 200 μm）探测器进行检测。对二维衍射图像进行积分，然后使用Dioptas程序获得一维衍射轮廓。使用FullProf程序进行Le Baul精修以获得精确的晶格参数和体积。使用红宝石荧光法测量压力。</p>
+<h2 id="结果与讨论">结果与讨论</h2>
+<p>在环境压力下，样品MFI选用已知的单斜结构。在0.13 GPa加载氦气时，结构仍然是单斜的，然而，与之前空的MFI和充满许多分子原子（例如水和二氧化碳）的MFI相比，尽管填充了孔隙，但在1 GPa以下没有观察到向更对称的正交Pnma的转化。事实上，即使高达9.1 GPa，晶胞仍然是单斜晶系，hkl和<span class="math inline">\(\overline{h}kl\)</span>反射有明显的分裂（图2和3）。单斜角度α未随压力减小，无明显趋于正交相的形式（表1，图4）。单斜晶胞在非标准<span class="math inline">\(P2_1/n11\)</span>，S.G.14空间群设置中描述，以保持与Pnma正交相相同的参考。在填充He的情况下，相对晶胞体积远高于无填充或充Ar或充CO2的MFI正交晶相，导致单斜MFI因He膨胀（图5）。氦不同于上面提到的其他客体物种，因为它已被清楚地证明可以穿透各种二氧化硅形式的框架，例如二氧化硅玻璃和方石英，因此除了5.5 Å直径的孔外，它还可以填充框架中的各种环和笼。H2的情况与高压下MFI的正交晶型类似，氢分子不仅占据孔隙，而且占据由SiO4四面体的5元和6元环构成的框架中的笼子。但对于充氢气的情况，低压下没有观察到单斜形式，也没有观察到单斜-正交相变。在另一种硅质沸石TON中，发现在高压和高温下插入 H2 会引起异常体积增加和向更高对称结构的相变.</p>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\2.jpeg"
+     alt="图 2"
+     width=700>
+<figcaption>
+<small>图 2.MFI在He中的X射线衍射图与压力的函数关系（λ=0.4828 Å）。卸压时获得的数据用“dec.”表示。 </small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\3.jpeg"
+     alt="图 3"
+     width=700>
+<figcaption>
+<small>图 3.以Le Bail拟合9.1 GPa MFI/He P21/n结构（下图）和10.9 GPa Pnma结构（上图）。实验（黑色），计算（红色）和差异（蓝色）（λ = 0.4828 Å）。垂直条表示布拉格反射的计算位置。 </small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\4.jpeg"
+     alt="图 4"
+     width=700>
+<figcaption>
+<small>图 4.He中MFI的晶胞参数压缩（实心符号）和卸压（空符号）的函数。误差线小于符号大小。 </small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\b1.png"
+     alt="表 1"
+     width=700>
+<figcaption>
+<small>表1.压缩时结构过渡发生在9.1和10.9 GPa之间。请注意，空起始材料是单斜晶系，在空间组（P21/n，S.G. 14）的非标准P21/n11设置中，a=20.1344（1）Å，b=19.9018（1）Å，c=13.38641（8）Å，α=90.6207（5）°，以保持与斜方体型Pnma相同的轴。 </small>
+</figcaption>
+</figure>
+<p>晶格参数a在压力为7 GPa以下时减小，但在7到9 GPa之间，它几乎是不可压缩的，这表明预相变的开始（图4）。随后是10.9 GPa处的衍射图样发生重大变化，该衍射图谱仍处于液相中，比12.1 GPa的氦凝固压力低1 GPa以上。在10.9 GPa时，峰值锐化并移动到较低的2θ角，hkl反射分裂消失（例如，313和<span class="math inline">\(\overline{3}13\)</span>），此外，hkl反射与khl反射合并。在此压力下，晶胞参数为a=b=19.443(2)Å和c=13.071(3) Å，意外地具有相同的a和b值，即使从结构的角度来看这些方向非常不同。这种意外并不新鲜，以前在高压下观察到Ar和CO2中的MFI也存在这个现象。 由于将致密流体氦插入结构中，在相变处观察到接近3%的体积增加（图5）。预计该高压下的单斜向正交晶系、铁弹性相变的单斜角度和体积将连续或不连续减小。由于穿透剂He在晶体结构的框架中进入空隙的性质不同，目前的行为与先前报道的案例明显不同。在这里，我们还报告说，在He填充MFI的斜方相中，a细胞参数的可压缩性明显更高，这与正弦孔的方向相对应。沿线孔方向的b参数刚性很强。</p>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\5.jpeg"
+     alt="图 5"
+     width=700>
+<figcaption>
+<small>图 5.He中MFI的相对体积（V/V0）压缩（实心方块）和卸压（空方块）的函数。圆圈、虚线和实线分别代表MFI在H2，硅油和Ar和CO2中的行为。误差线小于符号大小。 </small>
+</figcaption>
+</figure>
+<p>由于这种准静水压力传递介质的偏应力程度低，氦气中MFI的峰值在高达42 GPa时仍然非常尖锐（图2）。 在42 GPa以上，峰展宽与MFI结构中的应变有关。这些线在压力释放时变尖，但我们观察到结构行为存在一些滞后。减压至6.2 GPa后，MFI的体积与压缩时观察到的体积相似，但结构仍然是正交的。</p>
+<p>与He填充的MFI相比，H2填充MFI的衍射线略宽，但从未观察到快速增加，并且展宽更为缓慢。与He填充MFI相比，晶胞的可压缩性更低。 由于氦原子和氢分子的大小相似，因此可以预期MFI结构中的氦量与GCMC模拟中的H2在晶胞体积相似的压力下发现的氦量相似，例如，在12和16 GPa之间，每个单位插入约135个H2分子。</p>
+<h2 id="结论">结论</h2>
+<p>氦气很容易填充单斜MFI的结构，使该相稳定在∼10 GPa的压力下，这远高于任何其他原子或分子客体的报告。高于该压力，但仍比氦的凝固压力低1-2 GPa，观察到向正交相的转变，体积增加约3%，这是由于进一步填充致密流体氦完全改变了这种转变的机制，在没有孔隙填充的情况下通常是铁弹性的。事实上，插入的氦的局部结构的变化，模仿纯氦的凝固相关变化，很可能会发生，并成为观察到的充满氦的MFI转变的驱动力。</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>分子筛</tag>
       </tags>
   </entry>
   <entry>
@@ -2790,6 +2883,123 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
+    <title>Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite</title>
+    <url>/2023/03bfc7ad76.html</url>
+    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
+<ul>
+<li>标题：压力诱导的有机铅溴化物钙钛矿相变，可逆非晶化与异常可见光响应</li>
+<li>时间：August 18, 2015</li>
+<li>作者：Yonggang Wang, Xujie Lv, Wenge Yang, Ting Wen, Liuxiang Yang, Xiangting Ren, Lin Wang, Zheshuai Lin, Yusheng Zhao</li>
+<li>单位：内华达大学拉斯维加斯分校高压科学与工程中心；卡内基科学研究所地球物理实验室高压协同联盟；河南郑州市黄河科学技术学院纳米结构功能材料研究所；北京高压科学研究中心；中国科学院理化技术研究所晶体研发中心</li>
+<li>期刊：Journal of the American Chemical Society</li>
+<li>用到的表征手段：同步辐射XRD；荧光；电阻；光电流；</li>
+</ul>
+<span id="more"></span>
+<blockquote>
+<p>原文：<a href="https://pubs.acs.org/doi/10.1021/jacs.5b06346">10.1021/jacs.5b06346</a></p>
+</blockquote>
+<table border="1">
+<tr>
+<td>
+<b><font color="orange">摘要</font>：</b>静水压，作为化学压的替代，可以用来调节晶体结构和物理性质，是用来探寻新型功能材料和进行基础研究的重要手段。本文中，我们报道了室温，静水压直到34 GPa下有机溴化物钙钛矿<span class="math inline">\(CH_3NH_3PbBr_3(MAPbBr_3)\)</span>的相稳定性和可见光响应。在2 GPa以下发现了两个相变（<span class="math inline">\(Pm\overline{3}m\)</span>到<span class="math inline">\(Im\overline{3}\)</span>，然后到<span class="math inline">\(Pnma\)</span>），应该来自<span class="math inline">\(PbBr_6\)</span>的八面体的旋转；从2 GPa开始观察到可逆非晶化，和Ma阳离子的长程有序性被破坏相关。通过原位光致发光、电阻、光电流测量和第一性原理模拟，研究了<span class="math inline">\(MAPbBr_3\)</span>对压力的可见光响应。压缩过程中翻唱的带隙变化（先红移后蓝移）归因于压缩效应和压力诱导非晶化之间的竞争。伴随着在25 Gpa左右完成非晶化过程，电阻增加了5个数量级，而系统仍然保持了半导体特性和对可见光照射的大响应。我们的结果不仅表明静水压可以作为有机卤化物钙钛矿基光伏器件的开关或者控制器，也为探索更多非晶有机金属复合物作为潜在的光吸收剂的提供了思路。
+</td>
+</tr>
+</table>
+<h2 id="引言">引言</h2>
+<p>利用有机金属卤化物钙钛矿作为光吸收剂的染料敏化太阳能电池（dye-sensitized solar cells），因其低成本和出色的功率转换效应最近成为具有潜力的光伏技术。自从Kim等在2012年第一次报道了功率转换效率9.7%、长程耐用的固态钙钛矿太阳能电池以来，该值在之后的三年里增长到了近20%。有机金属卤化物出色的光伏性能归因于其各种有用性能的结合，如出色的电荷载流子迁移率（来自无机金属卤化物八面体结构）和塑性机械性能（来自有机部分）。</p>
+<p>有机金属卤化物化合物是钙钛矿型晶体结构，具有通用形式<span class="math inline">\(AMX_3\)</span>，其中A是有机铵阳离子，M是<span class="math inline">\(Pb^{2+}\)</span>和<span class="math inline">\(Sn^{2+}\)</span>而X一般是<span class="math inline">\(Cl^{-}\)</span>、<span class="math inline">\(Br^{-}\)</span>、<span class="math inline">\(I^{-}\)</span>或者小分子离子如<span class="math inline">\(BF_4^{-}\)</span>。该结构包含一个角共享的<span class="math inline">\(MX_6\)</span>八面体框架和十二面体A位点的有机铵阳离子。尽管钙钛矿结构看上去非常简单，但原型的<span class="math inline">\(AMX_3\)</span>型钙钛矿具有复杂和令人惊讶的化学处理潜力，他们的光电子特性可以通过改变金属离子、卤族阴离子、有机阳离子尺寸或者异质元素掺杂来调节。例如，Seok组报道了<span class="math inline">\(CH_3NH_3Pb(I_{1-x}Br_x)_3\)</span>在多样、高效、稳定的纳米结构太阳能电池的化学管理。他们发现单胞尺寸和化合物的带隙与Br/I比例呈线性关系，且可以简单地通过调节化合物中I/Br的比例来控制带隙，几乎覆盖整个可见光谱。Kanatzidis组报告了用无铅溶液加工的钙钛矿半导体甲基碘化锡铵<span class="math inline">\(CH_3NH_3SnI_3\)</span>基固态光伏器件作为光采集器。用锡取代铅代表向低成本和环境友好型太阳能电池迈出一步。他们也制备了化学取代的<span class="math inline">\(CH_3NH_3SnI_{3-x}Br_x\)</span>固溶体，也表现出可覆盖可见光谱的可控带隙。Grätzel组报道了混合有机阳离子钙钛矿光电板通过在<span class="math inline">\(APbI_3\)</span>的A位点混合甲脒（<span class="math inline">\(HN=CHNH_3^+\)</span>）和甲基铵（<span class="math inline">\(CH_3NH_3^+\)</span>）来增强太阳能吸收。他们发现这个组合会比只有<span class="math inline">\(CH_3NH_3^+\)</span>的那些增强短路电流。这些化学修饰技术展现出作为多功能工具调节光吸收材料结构和光电子性质，使其具有更好的光伏表现的巨大潜力，</p>
+<p>静水压作为化学压力的替代，可以有效调节晶体结构和电子构型，是当前材料物理科学中改变物理/化学性质的重要手段。其不仅可以深入了解结构-性质的关系，若压力不高（一般小于10 GPa）还可找到实际应用。目前还没有关于压力调谐对有机金属卤化物钙钛矿光伏性能影响的报道。只有几个压力相关的报道聚焦于材料的结构性质，施加的压力也很有限。本文我们第一次尝试对有机溴化铅钙钛<span class="math inline">\(CH3NH_3PbBr3(MAPbBr_3)\)</span>加压到38 GPa调谐带隙和光电流性质。用原位XRD、光致发光（PL）、电阻（ER）和光电流测量研究了<span class="math inline">\(MAPbBr_3\)</span>的晶体结构演变和可见光响应。结果不仅为有机金属卤化物结构性质关系提供深入见解，也为未来现金光伏材料的探索提供了启示。</p>
+<h2 id="实验细节">实验细节</h2>
+<h3 id="样品准备">样品准备</h3>
+<p>准备MAPbBr3钙钛矿晶体与先前报道的方法类似。简单地说，先将80.9 g氢溴酸（~40 wt%）和31.6 g甲铵（~40 wt%）在冰浴中反应，然后搅拌2小时。后将混合溶液在50°C下加热1小时，形成无色的CH3NH3Br晶体。将晶体用乙醚清洗三次，真空中烘干。然后将等摩尔量的新鲜制备的CH3NH3Br（1.12g，10mmol）和PbBr2（3.67g，10mmol）在60°C下混合在50mL N-二甲基甲酰胺（DMF，∼40wt%）中，搅拌过夜，产生母离子溶液。将溶液在65°C真空下再处理24小时后获得橙色晶体。将产品储存在密封的玻璃管中以进行进一步表征。</p>
+<h3 id="原位高压测试">原位高压测试</h3>
+<p>利用对称DAC产生高压。将不锈钢垫片预压至50微米，然后用激光在中心打出200微米直径的洞作为样品腔。将MAPbBr3微晶（&lt;1.0 mg）和小红宝石球放入样品腔。未使用传压介质，由红宝石荧光法标压。在16 ID-B station of High-Pressure Collaborative Access Team (HPCAT) at the Advanced Phonon Source (APS), Argonne National Laboratory (ANL)进行的原位高压角度色散XRD实验。衍射实验使用5微米直径（FWHM）、波长0.4066 Å的聚焦单色X射线束。衍射图由一个二维的PILATUS探测器记录，并通过Fit2D程序集成为一维剖面。使用FULLPROF程序进行结构改进。</p>
+<p>在HPSTAR (Shanghai, China)用3mW、325nm激发激光的拉曼光谱仪测量原位高压PL谱。电阻由四电极电阻测量系统测得，该系统由Keithley 6221电流源、2182A纳伏表和7001电压/电流开关系统组成。用DAC产生高达38 GPa的压力，在不锈钢垫片和金刚石中插入立方氮化硼将电极和垫片之间绝缘。用四根金线连接样品进行电阻测量，并采用四点探针连接模式测量光电流（见图6插入图）。对于光电流测量，用Autolab PGSTAT128N workstation记录I-t数据。20 W的白炽灯作为照射源（样品上~2 <span class="math inline">\(W/cm^2\)</span>）。因为电阻会随着压强变化，因此通过施加恒定电压（在给定压力点从0.0001到4.0 V不等，取决于电阻。例如，1.0 GPa是0.0001 V，20 GPa下1.0 V）产生μA水平的暗电流。</p>
+<h3 id="第一性原理计算">第一性原理计算</h3>
+<p>基于密度泛函理论的平面波赝势法和CASTEP封装计算了MAPbBr3的分态密度（Partial Density of State）和压强-带隙关系。交换相关泛函由局部密度近似（local density approximation）描述。用超软赝势模拟所有组成元素的离子-电子相互作用，其中C <span class="math inline">\(2s^22p^2\)</span>，N <span class="math inline">\(2s^22p^3\)</span>，Pb <span class="math inline">\(6s^25d^{10}4f^{14}6p^2\)</span>和Br <span class="math inline">\(4s^23d^{10}4p^5\)</span>电子视作价电子。选择布里渊区380 eV动能截止，Monkhorst-Pack k点网格跨度低于0.04/<span class="math inline">\(Å^3\)</span>。初始模型从无机晶体结构数据库获得（ICSD #158306）。用quasi-Newton法完全优化了0到2 GPa静水压力下MAPbBr3的晶胞参数和原子位置。能量变化、最大力、最大应力和最大位移的优化周期之间的收敛阈值分别设置为每原子 5.0 × 10−6 eV、每 Å0.01 eV、0.02 GPa 和 5.0 × 10 −4 Å。当满足所有这些条件时，优化将终止。所有这些计算参数都经过测试，以确保为当前目的提供足够的精度。</p>
+<h2 id="结果和讨论">结果和讨论</h2>
+<p>在环境条件下，MAPbBr3以立方钙钛矿型结构结晶，有共享角的PbBr6八面体和位于A位点的有机阳离子构成。如图S1，S2，生长的橙色微晶空间群<span class="math inline">\(Pm\overline{3}m\)</span>（晶格常数a=8.4413(6)Å），在立方相中表现出良好的相纯度，以及紫外照射下的绿色发射。样品在对称DAC中进行原位高压研究（具体见实验细节）。在加压到34 GPa和卸压过程中收集了MAPbBr3的同步辐射XRD图。1a是压缩过程中四个压强点的原始XRD二维图。随着压强的增加，一些尖锐的环变弱，且出现了宽环，表明结构紊乱以及部分非晶化的开始。当压力施加到12.5 GPa，几乎所有的初始衍射环都消失了，且只有四个宽环（1强3弱）保留，可能也非晶相相关。最强宽环的d值（3.5-4.0 Å）与紧密堆积的Br阴离子中Br-Br距离一致。1b展示了加压过程中的XRD，最后又卸压到0 GPa。在很低的压力下（0.4 GPa）发生了很微小的结构转变，分别在6.3和7.3°出现了很小的峰，详见图2及后续讨论。另一个相变发生在1.8 GPa，8°左右的峰产生了明显的分裂。随着压力的增加（高于2 GPa），非晶化引起的宽带主导了XRD图。考虑到晶体结构是由无机骨架和具有不同结合强度的有机填充物构成的，压力诱导出非晶化也就不奇怪了。然而，晶体MAPbBr3的一些峰在相对高压下也保持下来。例如，弱峰（011）在8.9 GPa下也可观察到，（001）甚至在本文章中的最高压34 GPa下也存在。要注意这些峰与重原子Pb和Br的长程有序堆积高度相关，如图1c。因此，压力诱导的非晶化材料应该继续保持交联PbBr6钙钛矿的骨架，但是高度扭曲的MA分子。在卸压过程中，非晶相回到了原来的MAPbBr3晶体形式，XRD图谱可以通过使用具有几乎相同参数的<span class="math inline">\(Pm\overline{3}m\)</span>晶胞再次索引。</p>
+<figure>
+<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\S1.png"
+     alt="图 S1"
+     width=700>
+<figcaption>
+<small>图 S1.MAPbBr3样品环境条件下粉末XRD。</small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\S2.png"
+     alt="图 S2"
+     width=700>
+<figcaption>
+<small>图 S2.环境条件下MAPbBr3的PL谱。</small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\1.png"
+     alt="图 1"
+     width=700>
+<figcaption>
+<small>图 1.加压到34 GPa和卸压过程中MAPbBr3同步辐射XRD: (a)原始2D XRD图像和(b)整合的1D XRD曲线。卸压后的XRD图谱可以看出与原材料具有相同的晶体结构（空间群<span class="math inline">\(Pm\overline{3}m\)</span>）。(c)MAPbBr3 晶格中代表性晶面间距的图示（为清楚起见，仅绘制了 Pb 和 Br 原子）。</small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\2.png"
+     alt="图 2"
+     width=700>
+<figcaption>
+<small>图 2.不同压力下MAPbBr3的Rietveld精修。(a)环境下立方空间群<span class="math inline">\(Pm\overline{3}m\)</span>的XRD数据，a=8.4416(5) Å；(b)0.4 GPa 空间群<span class="math inline">\(Im\overline{3}\)</span>XRD精修数据，a=11.702(5) Å；(c)1.8 GPa 正交空间群Pnma XRD精修数据，a=7.9389(4) Å，b=11.551(2) Å，c=8.1544(6) Å。（实验：红圈；模拟：蓝线；布拉格反射：绿条；背离：灰线）。插图是MAPbBr3精修晶体结构，其中蓝色是PbBr6八面体，灰色C/N原子。</small>
+</figcaption>
+</figure>
+<p>环境条件下，<span class="math inline">\(CH_3NH_3PbBr_3\)</span>为立方空间群<span class="math inline">\(Pm\overline{3}m\)</span>。已报道，低温下游三个相变（如在236.3 K变为I4/mcm，在154.0 K变为P4/mmm，在148.8 K变为<span class="math inline">\(Pna2_1\)</span>，而只有Swainson等报道过高压下（1 GPa以下）<span class="math inline">\(Pm\overline{3}m\)</span>到<span class="math inline">\(Im\overline{3}\)</span>的相变。他们还通过DFT计算提出更高压下游空间群Pnma的正交相。相对地，在我们的实验中，我们观察到立方<span class="math inline">\(Im\overline{3}\)</span>结构作为中间相，仅在0.4到1.1 GPa存在，且从1.8 GPa开始出现Pnma的正交相，直到4 GPa左右完成非晶化。图2展示了0,0.4,1.8 GPa的XRD Reitveld精修曲线。环境图谱用是MAPbBr3立方结构模型，其中没有H原子，精修给出晶胞参数为：a=8.4416(5) Å。0.4 GPa，采用更大的立方晶胞（<span class="math inline">\(Im\overline{3}\)</span>，<span class="math inline">\(a=\sqrt{2}a_0\)</span>）来符合弱的新峰（如绿箭头）。而在1.8 GPa以上，采用Pnma正交晶胞模型来拟合进一步分裂的衍射峰（a=7.9389(4) Å, b=11.551(2) Å, c=8.1544(6) Å）。看来PbBr6八面体的倾斜扭曲主导了两个相变（<span class="math inline">\(Im \overline{3}\)</span>的<span class="math inline">\(a^+a^+a^+\)</span>,Pnma的<span class="math inline">\(a^+b^−b^−\)</span>），MA阳离子可能不会进行长程定向排序，仅有助于衍射背景的加宽。图3展示了不同压力下MAPbBr3的相图和晶胞参数变化。压缩过程中两个不连续的相变均在晶胞参数（a，b，c）和体积（V）上有很明显的变化。这几个相分别被称为相1（<span class="math inline">\(Pm\overline{3}m，环境压力\)</span>，相2（$Im，0.4到1.1 GPa）与相3（Pnma，1.8 GPa以上）。正交相MAPbBr3表现出压缩的各向异性，由于哑铃型MA分子对PbBr6八面体同相和异相的不同影响。</p>
+<figure>
+<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\3.png"
+     alt="图 3"
+     width=700>
+<figcaption>
+<small>图 3.室温下MAPbBr3单胞参数（a）和体积（b）随压强变化。I空间群：立方，<span class="math inline">\(Pm\overline{3}m\)</span>；II: 立方，<span class="math inline">\(Im\overline{3}\)</span>；III:正交，Pnma。</small>
+</figcaption>
+</figure>
+<p>人们可能主要关注对MAPbBr3的光伏相关特性的压力效应，并想知道几个GPa级别的高压技术是否可以在光伏设备中找到应用。首先，我们通过加压到20.7 GPa测量MAPbBr3的原位PL谱来估计带隙演变。样品放在500微米砧面的DAC，用325纳米3 mW的激光照射，使用微型拉曼系统获取数据。图4是加压和卸压过程的PL曲线。环境样品在525纳米有一个绿色发射中心，对应这近边缘带隙发射，与之前的文献一致。压缩中观察到一条反常峰位移，先是0到1 GPa的逐渐红移，然后是1 GPa以上的蓝移。这个现象先前从未在晶体半导体中被观测到，因为电子结构的压力效应一般是单向的，相变通常导致性质的突然变化。而本实验中，反常的PL/带隙变化是由于两种力的竞争，分别是压缩效应缩短键长和压力诱导非晶化破坏某些键。随着压力的增加，PL逐渐变弱，最后无法探测到，这是因为非晶格中增强的非放射性过程。在压力释放过程中，非晶化的MAPbBr3重新获得了520.5纳米的绿色发射中心，与初始相比有微小的蓝移，且重新获得了环境晶体结构。</p>
+<figure>
+<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\4.png"
+     alt="图 4"
+     width=700>
+<figcaption>
+<small>图 4.室温下MAPbBr3的PL谱在加压（a）和卸压（b）过程中与压强关系。用325纳米和3 mW激光进行照射。</small>
+</figcaption>
+</figure>
+<p>图5a显示PL数据得来的MAPbBr3带隙变化。带隙从1到5 GPa增加了+0.2 eV，该效应确实不可忽略，他表明静水压在光伏应用中作为控制工具的潜力。为了进一步理解MAPbBr3的异常PL行为，对分态密度和带隙压力下的变化做了第一性原理计算。基于正交MAPbBr3（Pnma）的结果表明，静水压有利于缩小带隙（红移到更长的波长）。带隙中观察到的蓝移只能是由于压力诱导的非晶化，非晶化过程中元素轨道的连续重叠被长程有序的破坏而抑制。图5b显示了每个元素对于总态密度的贡献。很明显，Br 4p轨道和Pb 6p轨道分别对MAPbBr3的价带（VB）和导带（CB）贡献最大。因此压力作用下带隙变窄主要由于PbBr6八面体的收缩和有机MA阳离子不直接影响带隙。</p>
+<figure>
+<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\5.png"
+     alt="图 5"
+     width=700>
+<figcaption>
+<small>图 5.推算的MAPbBr3带隙与压强关系（a）和计算的各组分分态密度（b）。</small>
+</figcaption>
+</figure>
+<p>电阻和光电流对半导体实际应用是很重要的性质。为了探索压力诱导非晶化过程中的电导变化，我们在DAC里用四点探针法和准四点探针法进行了原位电阻测试（两种方法分别表示为腔1和腔2，详见SI）。图6a是加压和卸压过程中MAPbBr3的电阻变化。在低压区域（小于2 GPa），没有观察到和前面提到的相变相关的明显电阻变化。当压强施加到2 GPa以上时，不同连接方式的两个样品都表现出缓慢和快速的增长，直到25 GPa达到稳定。最大电阻值比初始时增加了5个数量级。通常，压力会使无机半导体的原子间距更近，就材料来说，材料具有更好的导电性甚至金属化。可对于MAPbBr3，电阻增加可能由于压力诱导的非晶化。光电材料中巨大的电导率随压力变化的现象能给我们提供一些在光电设备中作为开关或者控制器的新型应用。</p>
+<p>我们也用腔2测量了MAPbBr3随高压变化的光电流。见图6b。这种材料在整个测试的压强范围的表现出对可见光开关的明显响应。尽管在更高压力下下降了一些，但在高达30 GPa甚至更高压力下，非晶MAPbBr3也展现了一定程度光电流，表明他具有半导体特性。如前讨论的，压力诱导的非晶化MAPbBr3是高度有序的玻璃，或者换个词，高度无序的晶体，他继承了钙钛矿结构骨架，所以我们可以通过卸压将其恢复成原始结晶相。如果这种非晶化MAPbBr3可以用作光伏材料，那么通过室压法合成的其他有机金属卤化物呢？未来对性能优于其晶型的非晶化有机金属盐的探索可能会极大地推动钙钛矿敏化太阳能电池的发展。</p>
+<figure>
+<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\6.png"
+     alt="图 6"
+     width=700>
+<figcaption>
+<small>图 6.MAPbBr3电阻（a）和光电流（b）与压强关系。（a）里的插入图为两个金电极的DAC中的样品照片。</small>
+</figcaption>
+</figure>
+<h2 id="结论">结论</h2>
+<p>最后，我们研究了有机卤化物钙钛矿MAPbBr3在室温下随压强变化的结构和可见光响应。观察到了两个相变和可逆的非晶化，可能分别来源于PbBr6八面体的倾斜和MA分子长程有序的破坏。通过原位高压测量和第一性原理模拟研究了MAPbBr3对压力的可见光响应（包括带隙移动，电阻和光电流）。结果表明静水压可能很大地影响有机卤化物的晶体结构和光伏相关性质。这不仅表明有机卤化物钙钛矿可以用在光伏设备中作为开关或者控制器，也为探索更多非晶有机金属复合材料作为潜在的光吸收剂提供了启示。</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>钙钛矿</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Pressure-induced metallization of dense (H2S)2H2 with high-Tc superconductivity</title>
     <url>/2022/07d0e9cc8b.html</url>
     <content><![CDATA[<h2 id="文章信息">文章信息</h2>
@@ -2905,123 +3115,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       <tags>
         <tag>文献</tag>
         <tag>超导</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite</title>
-    <url>/2023/03bfc7ad76.html</url>
-    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
-<ul>
-<li>标题：压力诱导的有机铅溴化物钙钛矿相变，可逆非晶化与异常可见光响应</li>
-<li>时间：August 18, 2015</li>
-<li>作者：Yonggang Wang, Xujie Lv, Wenge Yang, Ting Wen, Liuxiang Yang, Xiangting Ren, Lin Wang, Zheshuai Lin, Yusheng Zhao</li>
-<li>单位：内华达大学拉斯维加斯分校高压科学与工程中心；卡内基科学研究所地球物理实验室高压协同联盟；河南郑州市黄河科学技术学院纳米结构功能材料研究所；北京高压科学研究中心；中国科学院理化技术研究所晶体研发中心</li>
-<li>期刊：Journal of the American Chemical Society</li>
-<li>用到的表征手段：同步辐射XRD；荧光；电阻；光电流；</li>
-</ul>
-<span id="more"></span>
-<blockquote>
-<p>原文：<a href="https://pubs.acs.org/doi/10.1021/jacs.5b06346">10.1021/jacs.5b06346</a></p>
-</blockquote>
-<table border="1">
-<tr>
-<td>
-<b><font color="orange">摘要</font>：</b>静水压，作为化学压的替代，可以用来调节晶体结构和物理性质，是用来探寻新型功能材料和进行基础研究的重要手段。本文中，我们报道了室温，静水压直到34 GPa下有机溴化物钙钛矿<span class="math inline">\(CH_3NH_3PbBr_3(MAPbBr_3)\)</span>的相稳定性和可见光响应。在2 GPa以下发现了两个相变（<span class="math inline">\(Pm\overline{3}m\)</span>到<span class="math inline">\(Im\overline{3}\)</span>，然后到<span class="math inline">\(Pnma\)</span>），应该来自<span class="math inline">\(PbBr_6\)</span>的八面体的旋转；从2 GPa开始观察到可逆非晶化，和Ma阳离子的长程有序性被破坏相关。通过原位光致发光、电阻、光电流测量和第一性原理模拟，研究了<span class="math inline">\(MAPbBr_3\)</span>对压力的可见光响应。压缩过程中翻唱的带隙变化（先红移后蓝移）归因于压缩效应和压力诱导非晶化之间的竞争。伴随着在25 Gpa左右完成非晶化过程，电阻增加了5个数量级，而系统仍然保持了半导体特性和对可见光照射的大响应。我们的结果不仅表明静水压可以作为有机卤化物钙钛矿基光伏器件的开关或者控制器，也为探索更多非晶有机金属复合物作为潜在的光吸收剂的提供了思路。
-</td>
-</tr>
-</table>
-<h2 id="引言">引言</h2>
-<p>利用有机金属卤化物钙钛矿作为光吸收剂的染料敏化太阳能电池（dye-sensitized solar cells），因其低成本和出色的功率转换效应最近成为具有潜力的光伏技术。自从Kim等在2012年第一次报道了功率转换效率9.7%、长程耐用的固态钙钛矿太阳能电池以来，该值在之后的三年里增长到了近20%。有机金属卤化物出色的光伏性能归因于其各种有用性能的结合，如出色的电荷载流子迁移率（来自无机金属卤化物八面体结构）和塑性机械性能（来自有机部分）。</p>
-<p>有机金属卤化物化合物是钙钛矿型晶体结构，具有通用形式<span class="math inline">\(AMX_3\)</span>，其中A是有机铵阳离子，M是<span class="math inline">\(Pb^{2+}\)</span>和<span class="math inline">\(Sn^{2+}\)</span>而X一般是<span class="math inline">\(Cl^{-}\)</span>、<span class="math inline">\(Br^{-}\)</span>、<span class="math inline">\(I^{-}\)</span>或者小分子离子如<span class="math inline">\(BF_4^{-}\)</span>。该结构包含一个角共享的<span class="math inline">\(MX_6\)</span>八面体框架和十二面体A位点的有机铵阳离子。尽管钙钛矿结构看上去非常简单，但原型的<span class="math inline">\(AMX_3\)</span>型钙钛矿具有复杂和令人惊讶的化学处理潜力，他们的光电子特性可以通过改变金属离子、卤族阴离子、有机阳离子尺寸或者异质元素掺杂来调节。例如，Seok组报道了<span class="math inline">\(CH_3NH_3Pb(I_{1-x}Br_x)_3\)</span>在多样、高效、稳定的纳米结构太阳能电池的化学管理。他们发现单胞尺寸和化合物的带隙与Br/I比例呈线性关系，且可以简单地通过调节化合物中I/Br的比例来控制带隙，几乎覆盖整个可见光谱。Kanatzidis组报告了用无铅溶液加工的钙钛矿半导体甲基碘化锡铵<span class="math inline">\(CH_3NH_3SnI_3\)</span>基固态光伏器件作为光采集器。用锡取代铅代表向低成本和环境友好型太阳能电池迈出一步。他们也制备了化学取代的<span class="math inline">\(CH_3NH_3SnI_{3-x}Br_x\)</span>固溶体，也表现出可覆盖可见光谱的可控带隙。Grätzel组报道了混合有机阳离子钙钛矿光电板通过在<span class="math inline">\(APbI_3\)</span>的A位点混合甲脒（<span class="math inline">\(HN=CHNH_3^+\)</span>）和甲基铵（<span class="math inline">\(CH_3NH_3^+\)</span>）来增强太阳能吸收。他们发现这个组合会比只有<span class="math inline">\(CH_3NH_3^+\)</span>的那些增强短路电流。这些化学修饰技术展现出作为多功能工具调节光吸收材料结构和光电子性质，使其具有更好的光伏表现的巨大潜力，</p>
-<p>静水压作为化学压力的替代，可以有效调节晶体结构和电子构型，是当前材料物理科学中改变物理/化学性质的重要手段。其不仅可以深入了解结构-性质的关系，若压力不高（一般小于10 GPa）还可找到实际应用。目前还没有关于压力调谐对有机金属卤化物钙钛矿光伏性能影响的报道。只有几个压力相关的报道聚焦于材料的结构性质，施加的压力也很有限。本文我们第一次尝试对有机溴化铅钙钛<span class="math inline">\(CH3NH_3PbBr3(MAPbBr_3)\)</span>加压到38 GPa调谐带隙和光电流性质。用原位XRD、光致发光（PL）、电阻（ER）和光电流测量研究了<span class="math inline">\(MAPbBr_3\)</span>的晶体结构演变和可见光响应。结果不仅为有机金属卤化物结构性质关系提供深入见解，也为未来现金光伏材料的探索提供了启示。</p>
-<h2 id="实验细节">实验细节</h2>
-<h3 id="样品准备">样品准备</h3>
-<p>准备MAPbBr3钙钛矿晶体与先前报道的方法类似。简单地说，先将80.9 g氢溴酸（~40 wt%）和31.6 g甲铵（~40 wt%）在冰浴中反应，然后搅拌2小时。后将混合溶液在50°C下加热1小时，形成无色的CH3NH3Br晶体。将晶体用乙醚清洗三次，真空中烘干。然后将等摩尔量的新鲜制备的CH3NH3Br（1.12g，10mmol）和PbBr2（3.67g，10mmol）在60°C下混合在50mL N-二甲基甲酰胺（DMF，∼40wt%）中，搅拌过夜，产生母离子溶液。将溶液在65°C真空下再处理24小时后获得橙色晶体。将产品储存在密封的玻璃管中以进行进一步表征。</p>
-<h3 id="原位高压测试">原位高压测试</h3>
-<p>利用对称DAC产生高压。将不锈钢垫片预压至50微米，然后用激光在中心打出200微米直径的洞作为样品腔。将MAPbBr3微晶（&lt;1.0 mg）和小红宝石球放入样品腔。未使用传压介质，由红宝石荧光法标压。在16 ID-B station of High-Pressure Collaborative Access Team (HPCAT) at the Advanced Phonon Source (APS), Argonne National Laboratory (ANL)进行的原位高压角度色散XRD实验。衍射实验使用5微米直径（FWHM）、波长0.4066 Å的聚焦单色X射线束。衍射图由一个二维的PILATUS探测器记录，并通过Fit2D程序集成为一维剖面。使用FULLPROF程序进行结构改进。</p>
-<p>在HPSTAR (Shanghai, China)用3mW、325nm激发激光的拉曼光谱仪测量原位高压PL谱。电阻由四电极电阻测量系统测得，该系统由Keithley 6221电流源、2182A纳伏表和7001电压/电流开关系统组成。用DAC产生高达38 GPa的压力，在不锈钢垫片和金刚石中插入立方氮化硼将电极和垫片之间绝缘。用四根金线连接样品进行电阻测量，并采用四点探针连接模式测量光电流（见图6插入图）。对于光电流测量，用Autolab PGSTAT128N workstation记录I-t数据。20 W的白炽灯作为照射源（样品上~2 <span class="math inline">\(W/cm^2\)</span>）。因为电阻会随着压强变化，因此通过施加恒定电压（在给定压力点从0.0001到4.0 V不等，取决于电阻。例如，1.0 GPa是0.0001 V，20 GPa下1.0 V）产生μA水平的暗电流。</p>
-<h3 id="第一性原理计算">第一性原理计算</h3>
-<p>基于密度泛函理论的平面波赝势法和CASTEP封装计算了MAPbBr3的分态密度（Partial Density of State）和压强-带隙关系。交换相关泛函由局部密度近似（local density approximation）描述。用超软赝势模拟所有组成元素的离子-电子相互作用，其中C <span class="math inline">\(2s^22p^2\)</span>，N <span class="math inline">\(2s^22p^3\)</span>，Pb <span class="math inline">\(6s^25d^{10}4f^{14}6p^2\)</span>和Br <span class="math inline">\(4s^23d^{10}4p^5\)</span>电子视作价电子。选择布里渊区380 eV动能截止，Monkhorst-Pack k点网格跨度低于0.04/<span class="math inline">\(Å^3\)</span>。初始模型从无机晶体结构数据库获得（ICSD #158306）。用quasi-Newton法完全优化了0到2 GPa静水压力下MAPbBr3的晶胞参数和原子位置。能量变化、最大力、最大应力和最大位移的优化周期之间的收敛阈值分别设置为每原子 5.0 × 10−6 eV、每 Å0.01 eV、0.02 GPa 和 5.0 × 10 −4 Å。当满足所有这些条件时，优化将终止。所有这些计算参数都经过测试，以确保为当前目的提供足够的精度。</p>
-<h2 id="结果和讨论">结果和讨论</h2>
-<p>在环境条件下，MAPbBr3以立方钙钛矿型结构结晶，有共享角的PbBr6八面体和位于A位点的有机阳离子构成。如图S1，S2，生长的橙色微晶空间群<span class="math inline">\(Pm\overline{3}m\)</span>（晶格常数a=8.4413(6)Å），在立方相中表现出良好的相纯度，以及紫外照射下的绿色发射。样品在对称DAC中进行原位高压研究（具体见实验细节）。在加压到34 GPa和卸压过程中收集了MAPbBr3的同步辐射XRD图。1a是压缩过程中四个压强点的原始XRD二维图。随着压强的增加，一些尖锐的环变弱，且出现了宽环，表明结构紊乱以及部分非晶化的开始。当压力施加到12.5 GPa，几乎所有的初始衍射环都消失了，且只有四个宽环（1强3弱）保留，可能也非晶相相关。最强宽环的d值（3.5-4.0 Å）与紧密堆积的Br阴离子中Br-Br距离一致。1b展示了加压过程中的XRD，最后又卸压到0 GPa。在很低的压力下（0.4 GPa）发生了很微小的结构转变，分别在6.3和7.3°出现了很小的峰，详见图2及后续讨论。另一个相变发生在1.8 GPa，8°左右的峰产生了明显的分裂。随着压力的增加（高于2 GPa），非晶化引起的宽带主导了XRD图。考虑到晶体结构是由无机骨架和具有不同结合强度的有机填充物构成的，压力诱导出非晶化也就不奇怪了。然而，晶体MAPbBr3的一些峰在相对高压下也保持下来。例如，弱峰（011）在8.9 GPa下也可观察到，（001）甚至在本文章中的最高压34 GPa下也存在。要注意这些峰与重原子Pb和Br的长程有序堆积高度相关，如图1c。因此，压力诱导的非晶化材料应该继续保持交联PbBr6钙钛矿的骨架，但是高度扭曲的MA分子。在卸压过程中，非晶相回到了原来的MAPbBr3晶体形式，XRD图谱可以通过使用具有几乎相同参数的<span class="math inline">\(Pm\overline{3}m\)</span>晶胞再次索引。</p>
-<figure>
-<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\S1.png"
-     alt="图 S1"
-     width=700>
-<figcaption>
-<small>图 S1.MAPbBr3样品环境条件下粉末XRD。</small>
-</figcaption>
-</figure>
-<figure>
-<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\S2.png"
-     alt="图 S2"
-     width=700>
-<figcaption>
-<small>图 S2.环境条件下MAPbBr3的PL谱。</small>
-</figcaption>
-</figure>
-<figure>
-<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\1.png"
-     alt="图 1"
-     width=700>
-<figcaption>
-<small>图 1.加压到34 GPa和卸压过程中MAPbBr3同步辐射XRD: (a)原始2D XRD图像和(b)整合的1D XRD曲线。卸压后的XRD图谱可以看出与原材料具有相同的晶体结构（空间群<span class="math inline">\(Pm\overline{3}m\)</span>）。(c)MAPbBr3 晶格中代表性晶面间距的图示（为清楚起见，仅绘制了 Pb 和 Br 原子）。</small>
-</figcaption>
-</figure>
-<figure>
-<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\2.png"
-     alt="图 2"
-     width=700>
-<figcaption>
-<small>图 2.不同压力下MAPbBr3的Rietveld精修。(a)环境下立方空间群<span class="math inline">\(Pm\overline{3}m\)</span>的XRD数据，a=8.4416(5) Å；(b)0.4 GPa 空间群<span class="math inline">\(Im\overline{3}\)</span>XRD精修数据，a=11.702(5) Å；(c)1.8 GPa 正交空间群Pnma XRD精修数据，a=7.9389(4) Å，b=11.551(2) Å，c=8.1544(6) Å。（实验：红圈；模拟：蓝线；布拉格反射：绿条；背离：灰线）。插图是MAPbBr3精修晶体结构，其中蓝色是PbBr6八面体，灰色C/N原子。</small>
-</figcaption>
-</figure>
-<p>环境条件下，<span class="math inline">\(CH_3NH_3PbBr_3\)</span>为立方空间群<span class="math inline">\(Pm\overline{3}m\)</span>。已报道，低温下游三个相变（如在236.3 K变为I4/mcm，在154.0 K变为P4/mmm，在148.8 K变为<span class="math inline">\(Pna2_1\)</span>，而只有Swainson等报道过高压下（1 GPa以下）<span class="math inline">\(Pm\overline{3}m\)</span>到<span class="math inline">\(Im\overline{3}\)</span>的相变。他们还通过DFT计算提出更高压下游空间群Pnma的正交相。相对地，在我们的实验中，我们观察到立方<span class="math inline">\(Im\overline{3}\)</span>结构作为中间相，仅在0.4到1.1 GPa存在，且从1.8 GPa开始出现Pnma的正交相，直到4 GPa左右完成非晶化。图2展示了0,0.4,1.8 GPa的XRD Reitveld精修曲线。环境图谱用是MAPbBr3立方结构模型，其中没有H原子，精修给出晶胞参数为：a=8.4416(5) Å。0.4 GPa，采用更大的立方晶胞（<span class="math inline">\(Im\overline{3}\)</span>，<span class="math inline">\(a=\sqrt{2}a_0\)</span>）来符合弱的新峰（如绿箭头）。而在1.8 GPa以上，采用Pnma正交晶胞模型来拟合进一步分裂的衍射峰（a=7.9389(4) Å, b=11.551(2) Å, c=8.1544(6) Å）。看来PbBr6八面体的倾斜扭曲主导了两个相变（<span class="math inline">\(Im \overline{3}\)</span>的<span class="math inline">\(a^+a^+a^+\)</span>,Pnma的<span class="math inline">\(a^+b^−b^−\)</span>），MA阳离子可能不会进行长程定向排序，仅有助于衍射背景的加宽。图3展示了不同压力下MAPbBr3的相图和晶胞参数变化。压缩过程中两个不连续的相变均在晶胞参数（a，b，c）和体积（V）上有很明显的变化。这几个相分别被称为相1（<span class="math inline">\(Pm\overline{3}m，环境压力\)</span>，相2（$Im，0.4到1.1 GPa）与相3（Pnma，1.8 GPa以上）。正交相MAPbBr3表现出压缩的各向异性，由于哑铃型MA分子对PbBr6八面体同相和异相的不同影响。</p>
-<figure>
-<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\3.png"
-     alt="图 3"
-     width=700>
-<figcaption>
-<small>图 3.室温下MAPbBr3单胞参数（a）和体积（b）随压强变化。I空间群：立方，<span class="math inline">\(Pm\overline{3}m\)</span>；II: 立方，<span class="math inline">\(Im\overline{3}\)</span>；III:正交，Pnma。</small>
-</figcaption>
-</figure>
-<p>人们可能主要关注对MAPbBr3的光伏相关特性的压力效应，并想知道几个GPa级别的高压技术是否可以在光伏设备中找到应用。首先，我们通过加压到20.7 GPa测量MAPbBr3的原位PL谱来估计带隙演变。样品放在500微米砧面的DAC，用325纳米3 mW的激光照射，使用微型拉曼系统获取数据。图4是加压和卸压过程的PL曲线。环境样品在525纳米有一个绿色发射中心，对应这近边缘带隙发射，与之前的文献一致。压缩中观察到一条反常峰位移，先是0到1 GPa的逐渐红移，然后是1 GPa以上的蓝移。这个现象先前从未在晶体半导体中被观测到，因为电子结构的压力效应一般是单向的，相变通常导致性质的突然变化。而本实验中，反常的PL/带隙变化是由于两种力的竞争，分别是压缩效应缩短键长和压力诱导非晶化破坏某些键。随着压力的增加，PL逐渐变弱，最后无法探测到，这是因为非晶格中增强的非放射性过程。在压力释放过程中，非晶化的MAPbBr3重新获得了520.5纳米的绿色发射中心，与初始相比有微小的蓝移，且重新获得了环境晶体结构。</p>
-<figure>
-<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\4.png"
-     alt="图 4"
-     width=700>
-<figcaption>
-<small>图 4.室温下MAPbBr3的PL谱在加压（a）和卸压（b）过程中与压强关系。用325纳米和3 mW激光进行照射。</small>
-</figcaption>
-</figure>
-<p>图5a显示PL数据得来的MAPbBr3带隙变化。带隙从1到5 GPa增加了+0.2 eV，该效应确实不可忽略，他表明静水压在光伏应用中作为控制工具的潜力。为了进一步理解MAPbBr3的异常PL行为，对分态密度和带隙压力下的变化做了第一性原理计算。基于正交MAPbBr3（Pnma）的结果表明，静水压有利于缩小带隙（红移到更长的波长）。带隙中观察到的蓝移只能是由于压力诱导的非晶化，非晶化过程中元素轨道的连续重叠被长程有序的破坏而抑制。图5b显示了每个元素对于总态密度的贡献。很明显，Br 4p轨道和Pb 6p轨道分别对MAPbBr3的价带（VB）和导带（CB）贡献最大。因此压力作用下带隙变窄主要由于PbBr6八面体的收缩和有机MA阳离子不直接影响带隙。</p>
-<figure>
-<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\5.png"
-     alt="图 5"
-     width=700>
-<figcaption>
-<small>图 5.推算的MAPbBr3带隙与压强关系（a）和计算的各组分分态密度（b）。</small>
-</figcaption>
-</figure>
-<p>电阻和光电流对半导体实际应用是很重要的性质。为了探索压力诱导非晶化过程中的电导变化，我们在DAC里用四点探针法和准四点探针法进行了原位电阻测试（两种方法分别表示为腔1和腔2，详见SI）。图6a是加压和卸压过程中MAPbBr3的电阻变化。在低压区域（小于2 GPa），没有观察到和前面提到的相变相关的明显电阻变化。当压强施加到2 GPa以上时，不同连接方式的两个样品都表现出缓慢和快速的增长，直到25 GPa达到稳定。最大电阻值比初始时增加了5个数量级。通常，压力会使无机半导体的原子间距更近，就材料来说，材料具有更好的导电性甚至金属化。可对于MAPbBr3，电阻增加可能由于压力诱导的非晶化。光电材料中巨大的电导率随压力变化的现象能给我们提供一些在光电设备中作为开关或者控制器的新型应用。</p>
-<p>我们也用腔2测量了MAPbBr3随高压变化的光电流。见图6b。这种材料在整个测试的压强范围的表现出对可见光开关的明显响应。尽管在更高压力下下降了一些，但在高达30 GPa甚至更高压力下，非晶MAPbBr3也展现了一定程度光电流，表明他具有半导体特性。如前讨论的，压力诱导的非晶化MAPbBr3是高度有序的玻璃，或者换个词，高度无序的晶体，他继承了钙钛矿结构骨架，所以我们可以通过卸压将其恢复成原始结晶相。如果这种非晶化MAPbBr3可以用作光伏材料，那么通过室压法合成的其他有机金属卤化物呢？未来对性能优于其晶型的非晶化有机金属盐的探索可能会极大地推动钙钛矿敏化太阳能电池的发展。</p>
-<figure>
-<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\6.png"
-     alt="图 6"
-     width=700>
-<figcaption>
-<small>图 6.MAPbBr3电阻（a）和光电流（b）与压强关系。（a）里的插入图为两个金电极的DAC中的样品照片。</small>
-</figcaption>
-</figure>
-<h2 id="结论">结论</h2>
-<p>最后，我们研究了有机卤化物钙钛矿MAPbBr3在室温下随压强变化的结构和可见光响应。观察到了两个相变和可逆的非晶化，可能分别来源于PbBr6八面体的倾斜和MA分子长程有序的破坏。通过原位高压测量和第一性原理模拟研究了MAPbBr3对压力的可见光响应（包括带隙移动，电阻和光电流）。结果表明静水压可能很大地影响有机卤化物的晶体结构和光伏相关性质。这不仅表明有机卤化物钙钛矿可以用在光伏设备中作为开关或者控制器，也为探索更多非晶有机金属复合材料作为潜在的光吸收剂提供了启示。</p>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>文献</tag>
-        <tag>钙钛矿</tag>
       </tags>
   </entry>
   <entry>
