@@ -15,6 +15,14 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/014a17b156.html</url>
+    <content><![CDATA[<p><span class="math inline">\(P=\dfrac{A}{B}\left[\left(\dfrac{\lambda_1}{\lambda_0}\right)^B-1\right]\)</span>, <span class="math inline">\(A=1920\)</span>, <span class="math inline">\(B=9.61\)</span>;</p>
+<p><span class="math inline">\(T\le80\)</span>: <span class="math inline">\(\lambda_1=\lambda+0.92\)</span>;</p>
+<p><span class="math inline">\(80&lt;T&lt;298\)</span>: <span class="math inline">\(\lambda_1=\lambda+0.92\)</span>, <span class="math inline">\(\Delta T=T-298\)</span>, <span class="math inline">\(\lambda_1=\lambda+0.00003547-\Delta T\times0.0068259498-\Delta T^2\times0.0000046231-\Delta T^3\times0.0000000337\)</span></p>
+]]></content>
+  </entry>
+  <entry>
     <title>HTML颜色名</title>
     <url>/2022/05a4b3b729.html</url>
     <content><![CDATA[<p>网上蛮多的了，但是好多哦，参考起来好麻烦，整个自己喜欢的颜色吧 全部颜色名在这儿：https://www.runoob.com/html/html-colornames.html ### <font color="BlueViolet">紫色哒：</font> <strong><font color="DarkMagenta">DarkMagenta</font></strong> <strong><font color="BlueViolet">BlueViolet</font></strong> <strong><font color="DarkOrchid">DarkOrchid</font></strong> <strong><font color="DarkViolet">DarkViolet</font></strong> <strong><font color="MediumSlateBlue">MediumSlateBlue</font></strong> <strong><font color="MediumPurple">MediumPurple</font></strong> <strong><font color="MediumOrchid">MediumOrchid</font></strong> <strong><font color="Orchid">Orchid</font></strong> <strong><font color="Plum">Plum</font></strong> <strong><font color="Lavender">Lavender</font></strong></p>
@@ -42,14 +50,6 @@
       <tags>
         <tag>颜色 html</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/014a17b156.html</url>
-    <content><![CDATA[<p><span class="math inline">\(P=\dfrac{A}{B}\left[\left(\dfrac{\lambda_1}{\lambda_0}\right)^B-1\right]\)</span>, <span class="math inline">\(A=1920\)</span>, <span class="math inline">\(B=9.61\)</span>;</p>
-<p><span class="math inline">\(T\le80\)</span>: <span class="math inline">\(\lambda_1=\lambda+0.92\)</span>;</p>
-<p><span class="math inline">\(80&lt;T&lt;298\)</span>: <span class="math inline">\(\lambda_1=\lambda+0.92\)</span>, <span class="math inline">\(\Delta T=T-298\)</span>, <span class="math inline">\(\lambda_1=\lambda+0.00003547-\Delta T\times0.0068259498-\Delta T^2\times0.0000046231-\Delta T^3\times0.0000000337\)</span></p>
-]]></content>
   </entry>
   <entry>
     <title>下载各大网站视频的方法</title>
@@ -103,20 +103,6 @@
       </categories>
       <tags>
         <tag>小教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>获取阿b的表情</title>
-    <url>/2022/05f71bb376.html</url>
-    <content><![CDATA[<p>方法来自知乎：https://www.zhihu.com/question/275901829/answer/1574659804 不太用知乎所以还是转到自己的网站吧。</p>
-<p>1.在登录的状态下访问https://api.bilibili.com/x/emote/setting/panel?business=reply ，存储为emoji.json（蛮长的，需要等点时间）。 2.编写python脚本，保存为emoji.py在emoji.json目录下。 <span id="more"></span> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import json</span><br><span class="line">import os</span><br><span class="line">from concurrent.futures import ThreadPoolExecutor</span><br><span class="line">from functools import partial</span><br><span class="line">from time import sleep</span><br><span class="line"></span><br><span class="line">import requests</span><br><span class="line">from tqdm import tqdm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def mkdir(path):</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(path) is not True:</span><br><span class="line">        os.makedirs(path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_pic(url, path):</span><br><span class="line">    resp = requests.get(url)</span><br><span class="line">    with open(path, <span class="string">&#x27;wb&#x27;</span>) as code:</span><br><span class="line">        code.write(resp.content)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_emoji(emoji, save_path):</span><br><span class="line">    emoji_name = emoji[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    emoji_name = emoji_name[1:-1]</span><br><span class="line">    path = os.path.join(save_path, f<span class="string">&#x27;&#123;emoji_name&#125;.png&#x27;</span>)</span><br><span class="line">    download_pic(emoji[<span class="string">&#x27;url&#x27;</span>], path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_package(package, path):</span><br><span class="line">    package_name = package[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    save_path = os.path.join(path, package_name)</span><br><span class="line">    mkdir(save_path)</span><br><span class="line">    all_emote = <span class="built_in">set</span>(map(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1], package[<span class="string">&#x27;emote&#x27;</span>]))</span><br><span class="line">    downloaded_emote = <span class="built_in">set</span>(map(lambda e: e[:-4], os.listdir(save_path)))</span><br><span class="line">    download_emote_name = all_emote - downloaded_emote</span><br><span class="line">    <span class="keyword">if</span> len(download_emote_name) == 0:</span><br><span class="line">        <span class="built_in">return</span></span><br><span class="line">    going_to_download_emote = filter(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1] <span class="keyword">in</span> download_emote_name, package[<span class="string">&#x27;emote&#x27;</span>])</span><br><span class="line">    with ThreadPoolExecutor() as executor:</span><br><span class="line">        executor.map(partial(download_emoji, save_path=save_path), going_to_download_emote)</span><br><span class="line">    sleep(3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    with open(<span class="string">&#x27;emoji.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) as fp:</span><br><span class="line">        emojis = json.load(fp)</span><br><span class="line">    emoji_packages = emojis[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;all_packages&#x27;</span>]</span><br><span class="line">    package_path = <span class="string">&#x27;bilibili_emoji&#x27;</span></span><br><span class="line">    bar = tqdm(emoji_packages)</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> bar:</span><br><span class="line">        <span class="keyword">if</span> p[<span class="string">&#x27;text&#x27;</span>] == <span class="string">&#x27;颜文字&#x27;</span>:</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        bar.set_description(p[<span class="string">&#x27;text&#x27;</span>])</span><br><span class="line">        download_package(p, package_path)</span><br></pre></td></tr></table></figure> 3.打开shell（windows里面powershell和cmd应该都可以），使用 pip install 安装包。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install tqdm</span><br></pre></td></tr></table></figure> 4.运行脚本，shell移动到目录可以cd，可以shift右键“在此处打开powershell”，可以在文件管理器里输目录的地方输cmd或者powershell回车。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python emoji.py</span><br></pre></td></tr></table></figure></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>小教程</tag>
-        <tag>表情包</tag>
       </tags>
   </entry>
   <entry>
@@ -219,6 +205,277 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </categories>
       <tags>
         <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>获取阿b的表情</title>
+    <url>/2022/05f71bb376.html</url>
+    <content><![CDATA[<p>方法来自知乎：https://www.zhihu.com/question/275901829/answer/1574659804 不太用知乎所以还是转到自己的网站吧。</p>
+<p>1.在登录的状态下访问https://api.bilibili.com/x/emote/setting/panel?business=reply ，存储为emoji.json（蛮长的，需要等点时间）。 2.编写python脚本，保存为emoji.py在emoji.json目录下。 <span id="more"></span> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import json</span><br><span class="line">import os</span><br><span class="line">from concurrent.futures import ThreadPoolExecutor</span><br><span class="line">from functools import partial</span><br><span class="line">from time import sleep</span><br><span class="line"></span><br><span class="line">import requests</span><br><span class="line">from tqdm import tqdm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def mkdir(path):</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(path) is not True:</span><br><span class="line">        os.makedirs(path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_pic(url, path):</span><br><span class="line">    resp = requests.get(url)</span><br><span class="line">    with open(path, <span class="string">&#x27;wb&#x27;</span>) as code:</span><br><span class="line">        code.write(resp.content)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_emoji(emoji, save_path):</span><br><span class="line">    emoji_name = emoji[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    emoji_name = emoji_name[1:-1]</span><br><span class="line">    path = os.path.join(save_path, f<span class="string">&#x27;&#123;emoji_name&#125;.png&#x27;</span>)</span><br><span class="line">    download_pic(emoji[<span class="string">&#x27;url&#x27;</span>], path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_package(package, path):</span><br><span class="line">    package_name = package[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    save_path = os.path.join(path, package_name)</span><br><span class="line">    mkdir(save_path)</span><br><span class="line">    all_emote = <span class="built_in">set</span>(map(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1], package[<span class="string">&#x27;emote&#x27;</span>]))</span><br><span class="line">    downloaded_emote = <span class="built_in">set</span>(map(lambda e: e[:-4], os.listdir(save_path)))</span><br><span class="line">    download_emote_name = all_emote - downloaded_emote</span><br><span class="line">    <span class="keyword">if</span> len(download_emote_name) == 0:</span><br><span class="line">        <span class="built_in">return</span></span><br><span class="line">    going_to_download_emote = filter(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1] <span class="keyword">in</span> download_emote_name, package[<span class="string">&#x27;emote&#x27;</span>])</span><br><span class="line">    with ThreadPoolExecutor() as executor:</span><br><span class="line">        executor.map(partial(download_emoji, save_path=save_path), going_to_download_emote)</span><br><span class="line">    sleep(3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    with open(<span class="string">&#x27;emoji.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) as fp:</span><br><span class="line">        emojis = json.load(fp)</span><br><span class="line">    emoji_packages = emojis[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;all_packages&#x27;</span>]</span><br><span class="line">    package_path = <span class="string">&#x27;bilibili_emoji&#x27;</span></span><br><span class="line">    bar = tqdm(emoji_packages)</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> bar:</span><br><span class="line">        <span class="keyword">if</span> p[<span class="string">&#x27;text&#x27;</span>] == <span class="string">&#x27;颜文字&#x27;</span>:</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        bar.set_description(p[<span class="string">&#x27;text&#x27;</span>])</span><br><span class="line">        download_package(p, package_path)</span><br></pre></td></tr></table></figure> 3.打开shell（windows里面powershell和cmd应该都可以），使用 pip install 安装包。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install tqdm</span><br></pre></td></tr></table></figure> 4.运行脚本，shell移动到目录可以cd，可以shift右键“在此处打开powershell”，可以在文件管理器里输目录的地方输cmd或者powershell回车。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python emoji.py</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+        <tag>表情包</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>补番参考</title>
+    <url>/2023/03a9b7bd2c.html</url>
+    <content><![CDATA[<p>其实就是一些榜单……来自壁姐姐。</p>
+<p><font color="DimGray">萝卜</font> <font color="DimGray"></font> | <font color="Crimson">少年改/热血</font> <font color="Crimson"></font> | <font color="Maroon">青年改</font> <font color="Maroon"></font> | <font color="LimeGreen">恋爱</font> <font color="LimeGreen"></font> | <font color="LightCoral">日常</font> <font color="LightCoral"></font> | <font color="MistyRose ">百合</font> <font color="MistyRose "></font> | <font color="Indigo">BL</font> <font color="Indigo"></font> | <font color="Khaki">美少女</font> <font color="Khaki"></font> | <font color="MediumBlue">运动</font> <font color="MediumBlue"></font> | <font color="HotPink">爱抖露</font> <font color="HotPink"></font> | <font color="CadetBlue">轻改</font> <font color="CadetBlue"></font> | <font color="DarkOrange">搞笑</font> <font color="DarkOrange"></font> | <font color="DarkGoldenRod">游戏改</font> <font color="DarkGoldenRod"></font> | <font color="LightSkyBlue">悬疑/推理</font> <font color="LightSkyBlue"></font></p>
+<p>详见全文</p>
+<span id="more"></span>
+<h1 id="评分榜">评分榜</h1>
+<h2 id="月评分榜"><a href="https://www.bilibili.com/video/BV18x4y1u72T/">2022 10月评分榜</a></h2>
+<ol type="1">
+<li><a href="https://www.bilibili.com/bangumi/play/ss43164"><font color="LightCoral">孤独摇滚!</font></a></li>
+<li>赛博朋克：边缘行者</li>
+<li><font color="Crimson">死神 千年血战篇</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43141"><font color="Crimson">灵能百分百 第三季</font></a></li>
+<li><font color="MistyRose ">向山进发 第四季</font></li>
+<li><font color="DarkOrange">间谍过家家 分割后半</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42105"><font color="DarkOrange">异世界舅舅</font></a></li>
+<li><font color="Crimson">电锯人</font></li>
+<li><font color="Crimson">JOJO的奇妙冒险 石之海 第二季</font></li>
+<li><font color="HotPink">IDOLiSH7 第三季 分割后半</font></li>
+<li><font color="LimeGreen">浪漫杀手</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43155"><font color="LightCoral">少女手工</font></a></li>
+<li><font color="DimGray">机动战士高达 水星的魔女</font></li>
+<li>秋叶原女仆战争</li>
+<li><font color="Crimson">福星小子(2022)</font></li>
+<li><font color="CadetBlue">想要成为影之实力者</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43142"><font color="DarkOrange">入间同学入魔了 第三季</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43148"><font color="Crimson">致不灭的你 第二季</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43145"><font color="MediumBlue">蓝色监狱</font></a></li>
+<li>不道德公会</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
+<li>老虎和兔子 第二季 分割后半</li>
+<li><font color="CadetBlue">转生成为魔剑</font></li>
+<li><font color="DarkOrange">四人各有小秘密</font></li>
+<li><font color="LimeGreen">恋爱FLOPS</font></li>
+<li><font color="CadetBlue">后宫之乌</font></li>
+<li><font color="LimeGreen">宇崎学妹想要玩!第二季</font></li>
+<li><font color="MediumBlue">飙速宅男 第五季</font></li>
+<li><font color="LimeGreen">夫妇以上，恋人未满</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43147">我家师傅没有尾巴</a></li>
+<li><font color="DarkOrange">人类毛病大学-不死学部不幸学科-</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43146"><font color="CadetBlue">作为恶役大小姐就该养魔王</font></a></li>
+<li>Muv-Luv Alternative 第二季</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43153"><font color="CadetBlue">新手炼金术师的店铺经营</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43152"><font color="LimeGreen">书虫公主</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43158">pop子和pipi美的日常 第二季</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43144"><font color="CadetBlue">驯兽师被逐出队伍后邂逅最强少女</font></a></li>
+<li><font color="Crimson">BASTARD!!暗黑破坏神 分割后半</font></li>
+<li>彼得·格里尔的贤者时间 第二季</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43167">忍者一时</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42106"><font color="Maroon">惑星公主蜥蜴骑士</font></a></li>
+<li><font color="DarkGoldenRod">圣剑传说 玛娜传奇 -泪珠水晶-</font></li>
+</ol>
+<h2 id="月评分榜-1"><a href="https://www.bilibili.com/video/BV1qG4y1n7a6/">2022 7月评分榜</a></h2>
+<ol type="1">
+<li>来自深渊 烈日的黄金乡</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss41417"><font color="LightSkyBlue">夏日重现</font></a></li>
+<li><font color="Maroon">王者天下 第四季</font> 4.<a href="https://www.bilibili.com/bangumi/play/ss41575"><font color="MediumBlue">青之芦苇</font></a></li>
+<li><font color="LimeGreen">彻夜之歌</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42176">莉可丽丝</a></li>
+<li><font color="Maroon">影宅</font></li>
+<li><font color="CadetBlue">OVERLORD 第四季</font></li>
+<li>风都侦探</li>
+<li><font color="HotPink">闪耀路标</font></li>
+<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第四季</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
+<li><font color="DarkOrange">邪神与厨二病少女 第三季</font></li>
+<li><font color="LimeGreen">契约之吻</font></li>
+<li><font color="HotPink">联盟空军航空魔法音乐队 光辉魔女</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42188"><font color="DarkOrange">顶点!!!!!!!!!!!!!!! </font></a></li>
+<li>影之诗F</li>
+<li><font color="CadetBlue">欢迎来到实力至上主义教室 第二季</font></li>
+<li><font color="CadetBlue">异世界药局</font></li>
+<li><font color="LightCoral">组长女儿与照料专员</font></li>
+<li><font color="LimeGreen">即使如此依旧步步进逼</font></li>
+<li>租借女友 第二季</li>
+<li><font color="LimeGreen">杜鹃的婚约</font></li>
+<li><font color="LimeGreen">继母的拖油瓶是我的前女友</font></li>
+<li><font color="HotPink">神渣偶像</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss41642"><font color="CadetBlue">黑之召唤士</font></a></li>
+<li><del>在异世界迷宫开后宫</del></li>
+<li><font color="HotPink">极限之心</font></li>
+<li><font color="Crimson">BASTARD!!暗黑破坏神</font></li>
+<li>天籁人偶</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss41833"><font color="Crimson">东方少年 第二季</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42107"><font color="CadetBlue">打工吧魔王大人 第二季</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42229">RWBY 冰雪帝国</a></li>
+<li>金装的维尔梅 <sub>濒临堕落的魔法师和最强的灾厄一起冲入魔法世界</sub></li>
+<li><font color="MediumBlue">新网球王子 U-I7 WORLD CUP</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42295"><font color="DarkGoldenRod">绽放的阿尔斯诺特利亚</font></a></li>
+<li><font color="LimeGreen">最近雇佣的女仆有点奇怪</font></li>
+<li>幽灵幻境</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42080">卡片战斗先导者 will+Dress</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss41535"><font color="MediumBlue">LOVE ALL PLAY 热血羽毛球</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42201">新 东京猫猫</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42112"><font color="HotPink">LoveLive!Superstar!!第二季</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42290">幕末替身传说</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42106"><font color="Maroon">惑星公主蜥蜴骑士</font></a></li>
+<li><font color="CadetBlue">转生贤者的异世界生活~ 取得第二职业，成为世界最强</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42198"><font color="MediumBlue">足球风云 Goal to the Future</font></a></li>
+</ol>
+<h2 id="月评分榜-2"><a href="https://www.bilibili.com/video/BV1CS4y177pA/">2022 4月评分榜</a></h2>
+<ol type="1">
+<li><font color="LimeGreen">辉夜大小姐想让我告白 -究极浪漫-</font></li>
+<li><font color="DarkOrange">间谍过家家</font></li>
+<li></li>
+</ol>
+<h2 id="评分榜-1"><a href="https://www.bilibili.com/video/BV12m4y1o7nR/">2021 评分榜</a></h2>
+<ol type="1">
+<li><font color="LightSkyBlue">奇巧出租车</font></li>
+<li><font color="LightCoral">悠哉日常大王 第三季</font></li>
+<li><font color="LightCoral">摇曳露营△ 第二季</font></li>
+<li><font color="Crimson">进击的巨人 最终季 分割上半</font></li>
+<li><font color="Maroon">王者天下 第三季</font></li>
+<li><font color="DarkGoldenRod">赛马娘 第二季</font></li>
+<li><font color="LimeGreen">水果篮子 最终季</font></li>
+<li><font color="LightCoral">小林家的龙女仆 第二季</font></li>
+<li><font color="CadetBlue">Re：从零开始的异世界生活 第二季 分割下半</font></li>
+<li>国王排名</li>
+<li><font color="MediumBlue">装甲重拳 第二季</font></li>
+<li><font color="HotPink">佐贺偶像是传奇 卷土重来</font></li>
+<li><font color="CadetBlue">无职转生 在异世界认真的活下去 </font></li>
+<li><font color="Crimson">境界触发者 第三季</font></li>
+<li>薇薇 -萤石眼之歌-</li>
+<li><font color="CadetBlue">86-不存在的战区-</font></li>
+<li>歌剧少女！！</li>
+<li><font color="Crimson">致不灭的你</font></li>
+<li><font color="Crimson">Dr.STONE 石纪元 第二季</font></li>
+<li><font color="Crimson">境界触发者 第二季</font></li>
+<li>平家物语</li>
+<li><font color="LimeGreen">堀与宫村</font></li>
+<li><font color="Crimson">BEASTARS 第二季</font></li>
+<li>工作细胞BLACK</li>
+<li>漂流少年</li>
+<li>鲁邦三世 第六季</li>
+<li><font color="LimeGreen">古见同学有交流障碍症</font></li>
+<li><font color="Maroon">平稳世代的韦驮天们</font></li>
+<li>五等分的新娘 第二季</li>
+<li><font color="DarkOrange">入间同学入魔了 第二季</font></li>
+<li><font color="HotPink">IDOLiSH7 -偶像星愿- Third BEAT!</font></li>
+<li><font color="HotPink">LoveLive 爱与演唱会!超级明星!!</font></li>
+<li><font color="Crimson">忧国的莫里亚蒂 第二季</font></li>
+<li>奇蛋物语</li>
+<li><font color="DimGray">SSSS.电光机王</font></li>
+<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季</font></li>
+<li><font color="Maroon">蓝色时期</font></li>
+<li><font color="MediumBlue">无限滑板</font></li>
+<li><font color="Maroon">影宅</font></li>
+<li>工作细胞 第二季</li>
+<li><font color="LightCoral">本田小狼与我</font></li>
+<li><font color="HotPink">偶像荣耀</font></li>
+<li><font color="Crimson">怪物事变</font></li>
+<li><font color="CadetBlue">异世界食堂 第二季</font></li>
+<li><font color="DarkOrange">极主夫道</font></li>
+<li><font color="DarkOrange">阴晴不定大哥哥</font></li>
+<li>数码宝贝幽灵游戏</li>
+<li><font color="DarkOrange">看得见的见子</font></li>
+<li>白沙的水族馆</li>
+<li><font color="DimGray">巴克·亚罗</font></li>
+</ol>
+<h1 id="销量榜">销量榜</h1>
+<h2 id="销量榜-2021年10月番至2022年7月番"><a href="https://www.bilibili.com/video/BV1jG4y1u7io/">2022 销量榜 2021年10月番至2022年7月番</a></h2>
+<ol type="1">
+<li>莉可丽丝</li>
+<li><font color="Crimson">鬼灭之刃 游郭篇</font></li>
+<li><font color="HotPink">LoveLive! 虹咲学园校园偶像同好会 第二季</font></li>
+<li><font color="CadetBlue">欢迎来到实力至上主义教室 第二季</font></li>
+<li><font color="HotPink">LoveLive! Sperstar!! 第二季</font></li>
+<li><font color="LimeGreen">更衣人偶坠入爱河</font></li>
+<li><font color="DarkGoldenRod">公主连结Re:Dive 第二季</font></li>
+<li><font color="DarkOrange">间谍过家家</font></li>
+<li><del>在异世界迷宫开后宫</del></li>
+<li><font color="DarkOrange">吸血鬼马上死</font></li>
+<li><font color="CadetBlue">无职转生 到了异世界就拿出真本事 第一季 分割下半</font></li>
+<li><font color="Khaki">结城友奈是勇者 第三季</font></li>
+<li>终末的后宫</li>
+<li><font color="LightCoral">街角魔族 第二季</font></li>
+<li><font color="HotPink">视觉监狱</font></li>
+<li><font color="Khaki">明日酱的水手服</font></li>
+<li><font color="CadetBlue">OVERLORD 第四季</font></li>
+<li>来自深渊 第二季</li>
+<li><font color="CadetBlue">86-不存在的战区- 第二季</font></li>
+<li><font color="Crimson">进击的巨人 最终季 分割下半</font></li>
+<li><font color="Indigo">佐佐木与宫野</font></li>
+<li><font color="LimeGreen">擅长捉弄的高木同学 第三季</font></li>
+<li>身为女主角 讨厌的女主角与秘密的工作</li>
+<li><font color="Crimson">境界触发者 第三季</font></li>
+<li><font color="MediumBlue">新网球王子 U-I7 WORLD CUP</font></li>
+<li><font color="LimeGreen">辉夜大小姐想让我告白 第三季</font></li>
+<li><font color="CadetBlue">平凡职业成就世界最强 第二季</font></li>
+<li><font color="CadetBlue">约会大作战 第四季</font></li>
+<li>Muv-Luv Alternative</li>
+<li><font color="DarkOrange">异世界舅舅</font></li>
+<li><font color="LimeGreen">契约之吻</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
+<li><font color="HotPink">联盟空军航空魔法音乐队 光辉魔女</font></li>
+<li>鲁邦三世 第六季</li>
+<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第四季 分割上半</font></li>
+</ol>
+<h2 id="销量榜-2020年10月番至2021年7月番"><a href="https://www.bilibili.com/video/BV1vq4y1h7ht/">2021 销量榜 2020年10月番至2021年7月番</a></h2>
+<p>泡面： 天竺鼠车车</p>
+<p>TV：</p>
+<ol type="1">
+<li><font color="DarkGoldenRod">赛马娘 第二季</font></li>
+<li><font color="Crimson">咒术回战</font></li>
+<li><font color="HotPink">LoveLive! 虹咲学园学园偶像同好会</font></li>
+<li><font color="HotPink">LoveLive 爱与演唱会!超级明星!!</font></li>
+<li><font color="HotPink">IDOLiSH7 -偶像星愿- Third BEAT!</font></li>
+<li><font color="HotPink">IDOLiSH7 -偶像星愿- Second BEAT!</font></li>
+<li><font color="HotPink">催眠麦克风</font></li>
+<li><font color="HotPink">佐贺偶像是传奇 卷土重来</font></li>
+<li><font color="MediumBlue">无限滑板</font></li>
+<li><font color="LightCoral">请问您今天要来点兔子吗？BLOOM</font></li>
+<li><font color="Crimson">东京复仇者</font></li>
+<li><font color="CadetBlue">魔法科高中的劣等生 来访者篇</font></li>
+<li><font color="LightCoral">摇曳露营△ 第二季</font></li>
+<li><font color="MediumBlue">排球少年 TO THE TOP 分割下半</font></li>
+<li>突击莉莉 BOUQUET</li>
+<li>强袭魔女 通往柏林之路</li>
+<li><font color="CadetBlue">Re：从零开始的异世界生活 第二季 分割下半</font></li>
+<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季 分割上半</font></li>
+<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季 分割下半</font></li>
+<li><font color="CadetBlue">魔女之旅</font></li>
+<li>薇薇 -萤石眼之歌-</li>
+<li><font color="CadetBlue">无职转生 在异世界认真的活下去 分割上半</font></li>
+<li>五等分的新娘 第二季</li>
+<li><font color="DimGray">SSSS.电光机王</font></li>
+<li><font color="Maroon">黄金神威 第三季</font></li>
+<li><font color="LightCoral">小林家的龙女仆 第二季</font></li>
+<li><font color="Crimson">进击的巨人 最终季 分割上半</font></li>
+<li><font color="MistyRose ">安达与岛村</font></li>
+<li><del>回复术士的重启人生</del></li>
+<li><font color="DarkGoldenRod">魔法纪录 魔法少女小圆外传 第二季</font></li>
+<li><font color="LimeGreen">堀与宫村</font></li>
+<li><font color="CadetBlue">魔法科高中的优等生</font></li>
+<li><font color="LightCoral">悠哉日常大王 第三季</font></li>
+<li><font color="LightCoral">阿松 第三季</font></li>
+<li><font color="LightCoral">本田小狼与我</font></li>
+<li><font color="HotPink">月歌 第二季</font></li>
+<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第三季</font></li>
+<li><font color="CadetBlue">圣女魔力无所不能</font></li>
+<li><font color="CadetBlue">转生成为了只有乙女游戏破灭Flag的邪恶大小姐 第二季</font></li>
+<li><font color="Crimson">境界触发者 第二季</font></li>
+<li><font color="HotPink">A3!满开剧团 秋组&amp;冬组篇</font></li>
+<li><font color="CadetBlue">剃须，然后捡到女高中生</font></li>
+<li><font color="CadetBlue">86-不存在的战区-分割上半</font></li>
+<li><font color="LightCoral">满溢的水果挞</font></li>
+<li><font color="LimeGreen">水果篮子 最终季</font></li>
+</ol>
+]]></content>
+      <categories>
+        <category>动画</category>
+      </categories>
+      <tags>
+        <tag>日本动画</tag>
       </tags>
   </entry>
   <entry>
@@ -557,263 +814,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>补番参考</title>
-    <url>/2023/03a9b7bd2c.html</url>
-    <content><![CDATA[<p>其实就是一些榜单……来自壁姐姐。</p>
-<p><font color="DimGray">萝卜</font> <font color="DimGray"></font> | <font color="Crimson">少年改/热血</font> <font color="Crimson"></font> | <font color="Maroon">青年改</font> <font color="Maroon"></font> | <font color="LimeGreen">恋爱</font> <font color="LimeGreen"></font> | <font color="LightCoral">日常</font> <font color="LightCoral"></font> | <font color="MistyRose ">百合</font> <font color="MistyRose "></font> | <font color="Indigo">BL</font> <font color="Indigo"></font> | <font color="Khaki">美少女</font> <font color="Khaki"></font> | <font color="MediumBlue">运动</font> <font color="MediumBlue"></font> | <font color="HotPink">爱抖露</font> <font color="HotPink"></font> | <font color="CadetBlue">轻改</font> <font color="CadetBlue"></font> | <font color="DarkOrange">搞笑</font> <font color="DarkOrange"></font> | <font color="DarkGoldenRod">游戏改</font> <font color="DarkGoldenRod"></font> | <font color="LightSkyBlue">悬疑/推理</font> <font color="LightSkyBlue"></font></p>
-<p>详见全文</p>
-<span id="more"></span>
-<h1 id="评分榜">评分榜</h1>
-<h2 id="月评分榜"><a href="https://www.bilibili.com/video/BV18x4y1u72T/">2022 10月评分榜</a></h2>
-<ol type="1">
-<li><a href="https://www.bilibili.com/bangumi/play/ss43164"><font color="LightCoral">孤独摇滚!</font></a></li>
-<li>赛博朋克：边缘行者</li>
-<li><font color="Crimson">死神 千年血战篇</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43141"><font color="Crimson">灵能百分百 第三季</font></a></li>
-<li><font color="MistyRose ">向山进发 第四季</font></li>
-<li><font color="DarkOrange">间谍过家家 分割后半</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42105"><font color="DarkOrange">异世界舅舅</font></a></li>
-<li><font color="Crimson">电锯人</font></li>
-<li><font color="Crimson">JOJO的奇妙冒险 石之海 第二季</font></li>
-<li><font color="HotPink">IDOLiSH7 第三季 分割后半</font></li>
-<li><font color="LimeGreen">浪漫杀手</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43155"><font color="LightCoral">少女手工</font></a></li>
-<li><font color="DimGray">机动战士高达 水星的魔女</font></li>
-<li>秋叶原女仆战争</li>
-<li><font color="Crimson">福星小子(2022)</font></li>
-<li><font color="CadetBlue">想要成为影之实力者</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43142"><font color="DarkOrange">入间同学入魔了 第三季</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43148"><font color="Crimson">致不灭的你 第二季</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43145"><font color="MediumBlue">蓝色监狱</font></a></li>
-<li>不道德公会</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
-<li>老虎和兔子 第二季 分割后半</li>
-<li><font color="CadetBlue">转生成为魔剑</font></li>
-<li><font color="DarkOrange">四人各有小秘密</font></li>
-<li><font color="LimeGreen">恋爱FLOPS</font></li>
-<li><font color="CadetBlue">后宫之乌</font></li>
-<li><font color="LimeGreen">宇崎学妹想要玩!第二季</font></li>
-<li><font color="MediumBlue">飙速宅男 第五季</font></li>
-<li><font color="LimeGreen">夫妇以上，恋人未满</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43147">我家师傅没有尾巴</a></li>
-<li><font color="DarkOrange">人类毛病大学-不死学部不幸学科-</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43146"><font color="CadetBlue">作为恶役大小姐就该养魔王</font></a></li>
-<li>Muv-Luv Alternative 第二季</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43153"><font color="CadetBlue">新手炼金术师的店铺经营</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43152"><font color="LimeGreen">书虫公主</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43158">pop子和pipi美的日常 第二季</a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43144"><font color="CadetBlue">驯兽师被逐出队伍后邂逅最强少女</font></a></li>
-<li><font color="Crimson">BASTARD!!暗黑破坏神 分割后半</font></li>
-<li>彼得·格里尔的贤者时间 第二季</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43167">忍者一时</a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42106"><font color="Maroon">惑星公主蜥蜴骑士</font></a></li>
-<li><font color="DarkGoldenRod">圣剑传说 玛娜传奇 -泪珠水晶-</font></li>
-</ol>
-<h2 id="月评分榜-1"><a href="https://www.bilibili.com/video/BV1qG4y1n7a6/">2022 7月评分榜</a></h2>
-<ol type="1">
-<li>来自深渊 烈日的黄金乡</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss41417"><font color="LightSkyBlue">夏日重现</font></a></li>
-<li><font color="Maroon">王者天下 第四季</font> 4.<a href="https://www.bilibili.com/bangumi/play/ss41575"><font color="MediumBlue">青之芦苇</font></a></li>
-<li><font color="LimeGreen">彻夜之歌</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42176">莉可丽丝</a></li>
-<li><font color="Maroon">影宅</font></li>
-<li><font color="CadetBlue">OVERLORD 第四季</font></li>
-<li>风都侦探</li>
-<li><font color="HotPink">闪耀路标</font></li>
-<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第四季</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
-<li><font color="DarkOrange">邪神与厨二病少女 第三季</font></li>
-<li><font color="LimeGreen">契约之吻</font></li>
-<li><font color="HotPink">联盟空军航空魔法音乐队 光辉魔女</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42188"><font color="DarkOrange">顶点!!!!!!!!!!!!!!! </font></a></li>
-<li>影之诗F</li>
-<li><font color="CadetBlue">欢迎来到实力至上主义教室 第二季</font></li>
-<li><font color="CadetBlue">异世界药局</font></li>
-<li><font color="LightCoral">组长女儿与照料专员</font></li>
-<li><font color="LimeGreen">即使如此依旧步步进逼</font></li>
-<li>租借女友 第二季</li>
-<li><font color="LimeGreen">杜鹃的婚约</font></li>
-<li><font color="LimeGreen">继母的拖油瓶是我的前女友</font></li>
-<li><font color="HotPink">神渣偶像</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss41642"><font color="CadetBlue">黑之召唤士</font></a></li>
-<li><del>在异世界迷宫开后宫</del></li>
-<li><font color="HotPink">极限之心</font></li>
-<li><font color="Crimson">BASTARD!!暗黑破坏神</font></li>
-<li>天籁人偶</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss41833"><font color="Crimson">东方少年 第二季</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42107"><font color="CadetBlue">打工吧魔王大人 第二季</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42229">RWBY 冰雪帝国</a></li>
-<li>金装的维尔梅 <sub>濒临堕落的魔法师和最强的灾厄一起冲入魔法世界</sub></li>
-<li><font color="MediumBlue">新网球王子 U-I7 WORLD CUP</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42295"><font color="DarkGoldenRod">绽放的阿尔斯诺特利亚</font></a></li>
-<li><font color="LimeGreen">最近雇佣的女仆有点奇怪</font></li>
-<li>幽灵幻境</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42080">卡片战斗先导者 will+Dress</a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss41535"><font color="MediumBlue">LOVE ALL PLAY 热血羽毛球</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42201">新 东京猫猫</a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42112"><font color="HotPink">LoveLive!Superstar!!第二季</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42290">幕末替身传说</a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42106"><font color="Maroon">惑星公主蜥蜴骑士</font></a></li>
-<li><font color="CadetBlue">转生贤者的异世界生活~ 取得第二职业，成为世界最强</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42198"><font color="MediumBlue">足球风云 Goal to the Future</font></a></li>
-</ol>
-<h2 id="月评分榜-2"><a href="https://www.bilibili.com/video/BV1CS4y177pA/">2022 4月评分榜</a></h2>
-<ol type="1">
-<li><font color="LimeGreen">辉夜大小姐想让我告白 -究极浪漫-</font></li>
-<li><font color="DarkOrange">间谍过家家</font></li>
-<li></li>
-</ol>
-<h2 id="评分榜-1"><a href="https://www.bilibili.com/video/BV12m4y1o7nR/">2021 评分榜</a></h2>
-<ol type="1">
-<li><font color="LightSkyBlue">奇巧出租车</font></li>
-<li><font color="LightCoral">悠哉日常大王 第三季</font></li>
-<li><font color="LightCoral">摇曳露营△ 第二季</font></li>
-<li><font color="Crimson">进击的巨人 最终季 分割上半</font></li>
-<li><font color="Maroon">王者天下 第三季</font></li>
-<li><font color="DarkGoldenRod">赛马娘 第二季</font></li>
-<li><font color="LimeGreen">水果篮子 最终季</font></li>
-<li><font color="LightCoral">小林家的龙女仆 第二季</font></li>
-<li><font color="CadetBlue">Re：从零开始的异世界生活 第二季 分割下半</font></li>
-<li>国王排名</li>
-<li><font color="MediumBlue">装甲重拳 第二季</font></li>
-<li><font color="HotPink">佐贺偶像是传奇 卷土重来</font></li>
-<li><font color="CadetBlue">无职转生 在异世界认真的活下去 </font></li>
-<li><font color="Crimson">境界触发者 第三季</font></li>
-<li>薇薇 -萤石眼之歌-</li>
-<li><font color="CadetBlue">86-不存在的战区-</font></li>
-<li>歌剧少女！！</li>
-<li><font color="Crimson">致不灭的你</font></li>
-<li><font color="Crimson">Dr.STONE 石纪元 第二季</font></li>
-<li><font color="Crimson">境界触发者 第二季</font></li>
-<li>平家物语</li>
-<li><font color="LimeGreen">堀与宫村</font></li>
-<li><font color="Crimson">BEASTARS 第二季</font></li>
-<li>工作细胞BLACK</li>
-<li>漂流少年</li>
-<li>鲁邦三世 第六季</li>
-<li><font color="LimeGreen">古见同学有交流障碍症</font></li>
-<li><font color="Maroon">平稳世代的韦驮天们</font></li>
-<li>五等分的新娘 第二季</li>
-<li><font color="DarkOrange">入间同学入魔了 第二季</font></li>
-<li><font color="HotPink">IDOLiSH7 -偶像星愿- Third BEAT!</font></li>
-<li><font color="HotPink">LoveLive 爱与演唱会!超级明星!!</font></li>
-<li><font color="Crimson">忧国的莫里亚蒂 第二季</font></li>
-<li>奇蛋物语</li>
-<li><font color="DimGray">SSSS.电光机王</font></li>
-<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季</font></li>
-<li><font color="Maroon">蓝色时期</font></li>
-<li><font color="MediumBlue">无限滑板</font></li>
-<li><font color="Maroon">影宅</font></li>
-<li>工作细胞 第二季</li>
-<li><font color="LightCoral">本田小狼与我</font></li>
-<li><font color="HotPink">偶像荣耀</font></li>
-<li><font color="Crimson">怪物事变</font></li>
-<li><font color="CadetBlue">异世界食堂 第二季</font></li>
-<li><font color="DarkOrange">极主夫道</font></li>
-<li><font color="DarkOrange">阴晴不定大哥哥</font></li>
-<li>数码宝贝幽灵游戏</li>
-<li><font color="DarkOrange">看得见的见子</font></li>
-<li>白沙的水族馆</li>
-<li><font color="DimGray">巴克·亚罗</font></li>
-</ol>
-<h1 id="销量榜">销量榜</h1>
-<h2 id="销量榜-2021年10月番至2022年7月番"><a href="https://www.bilibili.com/video/BV1jG4y1u7io/">2022 销量榜 2021年10月番至2022年7月番</a></h2>
-<ol type="1">
-<li>莉可丽丝</li>
-<li><font color="Crimson">鬼灭之刃 游郭篇</font></li>
-<li><font color="HotPink">LoveLive! 虹咲学园校园偶像同好会 第二季</font></li>
-<li><font color="CadetBlue">欢迎来到实力至上主义教室 第二季</font></li>
-<li><font color="HotPink">LoveLive! Sperstar!! 第二季</font></li>
-<li><font color="LimeGreen">更衣人偶坠入爱河</font></li>
-<li><font color="DarkGoldenRod">公主连结Re:Dive 第二季</font></li>
-<li><font color="DarkOrange">间谍过家家</font></li>
-<li><del>在异世界迷宫开后宫</del></li>
-<li><font color="DarkOrange">吸血鬼马上死</font></li>
-<li><font color="CadetBlue">无职转生 到了异世界就拿出真本事 第一季 分割下半</font></li>
-<li><font color="Khaki">结城友奈是勇者 第三季</font></li>
-<li>终末的后宫</li>
-<li><font color="LightCoral">街角魔族 第二季</font></li>
-<li><font color="HotPink">视觉监狱</font></li>
-<li><font color="Khaki">明日酱的水手服</font></li>
-<li><font color="CadetBlue">OVERLORD 第四季</font></li>
-<li>来自深渊 第二季</li>
-<li><font color="CadetBlue">86-不存在的战区- 第二季</font></li>
-<li><font color="Crimson">进击的巨人 最终季 分割下半</font></li>
-<li><font color="Indigo">佐佐木与宫野</font></li>
-<li><font color="LimeGreen">擅长捉弄的高木同学 第三季</font></li>
-<li>身为女主角 讨厌的女主角与秘密的工作</li>
-<li><font color="Crimson">境界触发者 第三季</font></li>
-<li><font color="MediumBlue">新网球王子 U-I7 WORLD CUP</font></li>
-<li><font color="LimeGreen">辉夜大小姐想让我告白 第三季</font></li>
-<li><font color="CadetBlue">平凡职业成就世界最强 第二季</font></li>
-<li><font color="CadetBlue">约会大作战 第四季</font></li>
-<li>Muv-Luv Alternative</li>
-<li><font color="DarkOrange">异世界舅舅</font></li>
-<li><font color="LimeGreen">契约之吻</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
-<li><font color="HotPink">联盟空军航空魔法音乐队 光辉魔女</font></li>
-<li>鲁邦三世 第六季</li>
-<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第四季 分割上半</font></li>
-</ol>
-<h2 id="销量榜-2020年10月番至2021年7月番"><a href="https://www.bilibili.com/video/BV1vq4y1h7ht/">2021 销量榜 2020年10月番至2021年7月番</a></h2>
-<p>泡面： 天竺鼠车车</p>
-<p>TV：</p>
-<ol type="1">
-<li><font color="DarkGoldenRod">赛马娘 第二季</font></li>
-<li><font color="Crimson">咒术回战</font></li>
-<li><font color="HotPink">LoveLive! 虹咲学园学园偶像同好会</font></li>
-<li><font color="HotPink">LoveLive 爱与演唱会!超级明星!!</font></li>
-<li><font color="HotPink">IDOLiSH7 -偶像星愿- Third BEAT!</font></li>
-<li><font color="HotPink">IDOLiSH7 -偶像星愿- Second BEAT!</font></li>
-<li><font color="HotPink">催眠麦克风</font></li>
-<li><font color="HotPink">佐贺偶像是传奇 卷土重来</font></li>
-<li><font color="MediumBlue">无限滑板</font></li>
-<li><font color="LightCoral">请问您今天要来点兔子吗？BLOOM</font></li>
-<li><font color="Crimson">东京复仇者</font></li>
-<li><font color="CadetBlue">魔法科高中的劣等生 来访者篇</font></li>
-<li><font color="LightCoral">摇曳露营△ 第二季</font></li>
-<li><font color="MediumBlue">排球少年 TO THE TOP 分割下半</font></li>
-<li>突击莉莉 BOUQUET</li>
-<li>强袭魔女 通往柏林之路</li>
-<li><font color="CadetBlue">Re：从零开始的异世界生活 第二季 分割下半</font></li>
-<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季 分割上半</font></li>
-<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季 分割下半</font></li>
-<li><font color="CadetBlue">魔女之旅</font></li>
-<li>薇薇 -萤石眼之歌-</li>
-<li><font color="CadetBlue">无职转生 在异世界认真的活下去 分割上半</font></li>
-<li>五等分的新娘 第二季</li>
-<li><font color="DimGray">SSSS.电光机王</font></li>
-<li><font color="Maroon">黄金神威 第三季</font></li>
-<li><font color="LightCoral">小林家的龙女仆 第二季</font></li>
-<li><font color="Crimson">进击的巨人 最终季 分割上半</font></li>
-<li><font color="MistyRose ">安达与岛村</font></li>
-<li><del>回复术士的重启人生</del></li>
-<li><font color="DarkGoldenRod">魔法纪录 魔法少女小圆外传 第二季</font></li>
-<li><font color="LimeGreen">堀与宫村</font></li>
-<li><font color="CadetBlue">魔法科高中的优等生</font></li>
-<li><font color="LightCoral">悠哉日常大王 第三季</font></li>
-<li><font color="LightCoral">阿松 第三季</font></li>
-<li><font color="LightCoral">本田小狼与我</font></li>
-<li><font color="HotPink">月歌 第二季</font></li>
-<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第三季</font></li>
-<li><font color="CadetBlue">圣女魔力无所不能</font></li>
-<li><font color="CadetBlue">转生成为了只有乙女游戏破灭Flag的邪恶大小姐 第二季</font></li>
-<li><font color="Crimson">境界触发者 第二季</font></li>
-<li><font color="HotPink">A3!满开剧团 秋组&amp;冬组篇</font></li>
-<li><font color="CadetBlue">剃须，然后捡到女高中生</font></li>
-<li><font color="CadetBlue">86-不存在的战区-分割上半</font></li>
-<li><font color="LightCoral">满溢的水果挞</font></li>
-<li><font color="LimeGreen">水果篮子 最终季</font></li>
-</ol>
-]]></content>
-      <categories>
-        <category>动画</category>
-      </categories>
-      <tags>
-        <tag>日本动画</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>礼貌用语等</title>
     <url>/2022/058ae62fc9.html</url>
     <content><![CDATA[<p>小短语 Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span> До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span> До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span> К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span> здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span> спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span> Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span> Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span> Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span> -М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span> -Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span> -Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span> Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span> -Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span> -Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span> Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span> Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span> Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span> Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span> -Ты зн<font color=Crimson>а</font>ешь,.......<span class="heimu">你知道吗</span> -Кон<font color=Crimson>е</font>чно,я знаю,......<span class="heimu">我当然知道</span> Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span> Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span> Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span> Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот ...<span class="heimu">这个xx多少钱</span> пока́<span class="heimu">[副]回头见，暂时</span> Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
@@ -936,6 +936,41 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
+    <title>High-Pressure Phase Transition, Pore Collapse, and  Amorphization in the Siliceous 1D Zeolite, TON</title>
+    <url>/2023/042961a824.html</url>
+    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
+<ul>
+<li>标题：硅质一维沸石TON中的高压相变、孔塌陷和非晶化</li>
+<li>时间：February 13, 2017</li>
+<li>作者：Jean-Marc Thibaud, Jerôme Rouquette, Patrick Hermet, Kamil Dziubek, Federico A. Gorelli, Mario Santoro, Gaston Garbarino, Frederico G. Alabarse, Olivier Cambon, Francesco Di Renzo, Arie van der Lee, and Julien Haines</li>
+<li>单位：蒙彼利埃大学，欧洲非线性光谱实验室，亚当密茨凯维奇大学化学学院，意大利国家光学研究所，欧洲同步辐射，法国国家同步加速器，</li>
+<li>期刊：THE JOURNAL OF PHYSICAL CHEMISTRY C</li>
+<li>用到的表征手段：同步辐射XRD、红外光谱</li>
+</ul>
+<span id="more"></span>
+<blockquote>
+<p>原文：<a href="https://pubs.acs.org/doi/10.1021/acs.jpcc.6b11594">10.1021/acs.jpcc.6b11594</a></p>
+</blockquote>
+<table border="1">
+<tr>
+<td>
+<b><font color="orange">摘要</font>：</b> 通过XRD、红外光谱和DFT计算在高压下研究了具有一维孔系统的硅质沸石 TON。使用非穿透性传压介质研究了这种材料的行为。在这些条件下，从<span class="math inline">\(Cmc2_1\)</span>到<span class="math inline">\(Pbn2_1\)</span>结构的相变发生在接近0.6 GPa时，基于Rietveld 精修的原始晶胞加倍。随着椭圆率的强烈增加，孔隙开始塌陷。在将压力降低到该值以下时，初始结构没有恢复。DFT计算表明初始空孔<span class="math inline">\(Cmc2_1\)</span>相是动态不稳定的。当压力进一步增加到21 GPa时，会发生不可逆的、渐进的压力诱导的非晶化。这些变化在中红外和远红外光谱中通过<span class="math inline">\(Cmc2_1\)</span>到<span class="math inline">\(Pbn2_1\)</span>相变处的峰分裂以及非晶化导致的高压下的强峰展宽得到证实。
+</td>
+</tr>
+</table>
+<h2 id="引言">引言</h2>
+<p>沸石是由共享角的TO4（T = Si、Al、...）四面体组成的多孔铝硅酸盐，在催化、分离和离子交换等方面有许多应用。<strong>由于其高孔隙率，沸石在压力下会发生非常重要的变化</strong>。有几个相变的例子，涉及组成四面体的倾斜和/或环结构的变化。压力还可以诱导孔隙塌陷并转变为非晶态。这种非晶形式可以保留<font color="crismon">母晶相的拓扑顺序</font>，并且与普通玻璃不同。</p>
+<p>硅质沸石在吸附、催化、气体分离和储存方面也有许多重要应用，并且也可以被视为模型材料，因为它们基本上只包含SiO4四面体。对MFI（Mobil-five）系统、高压下的silicalite-1进行了大量研究，该系统具有3D互连孔隙系统。这种材料在压力下经历单斜到正交相变，随后发生孔隙坍塌和完全不可逆非晶化。具有一维孔隙系统的更简单的沸石TON (theta-1) 作为分子弹簧中的疏水主体材料和导电聚合物/沸石纳米复合材料中的绝缘主体系统也在催化剂领域广受关注，该复合材料通过单体的压力诱导插入和聚合获得。TON具有正交结构，空间群<span class="math inline">\(Cmc2_1\)</span>，在c方向上具有一维孔。框架是由SiO4四面体的5、6和10元环组成。孔隙呈椭圆形，自由直径为4.6×5.7 Å。由于其一维性质及其与其他沸石相比较小的晶胞，TON可以作为多孔材料压力响应的模型系统。此外，了解TON的高压行为对于分子弹簧应用和纳米复合材料形成中客体分子在该材料中的压力诱导插入具有重要意义。本研究的目标是研究高压下硅质沸石TON的结构变化和相稳定性。</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>分子筛</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Dirac semimetal PdTe2  temperature-dependent quasiparticle dynamics and electron–phonon coupling</title>
     <url>/2023/03770da5f0.html</url>
     <content><![CDATA[<h2 id="文章信息">文章信息</h2>
@@ -997,6 +1032,78 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       <tags>
         <tag>文献</tag>
         <tag>超快</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pressure-induced amorphization of Na2Al2Si3O10 2H2O and KAlSi2O6 zeolites</title>
+    <url>/2023/046b4cc508.html</url>
+    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
+<ul>
+<li>标题：Na2Al2Si3O10 2H2O和KAlSi2O6分子筛的压力诱导非晶化</li>
+<li>时间：28 January 2005</li>
+<li>作者：Sergei Goryainov</li>
+<li>单位：俄罗斯矿物学和岩石学研究所</li>
+<li>期刊：PHYSICA STATUS SOLIDI A-APPLICATIONS AND MATERIALS SCIENCE</li>
+<li>用到的表征手段：Raman</li>
+</ul>
+<span id="more"></span>
+<blockquote>
+<p>原文：<a href="https://onlinelibrary.wiley.com/doi/10.1002/pssa.200409094">10.1002/pssa.200409094</a></p>
+</blockquote>
+<table border="1">
+<tr>
+<td>
+<b><font color="orange">摘要</font>：</b> 在沸石<span class="math inline">\(Na_2Al_2Si_3O_{10}\cdot2H_2O\)</span>和<span class="math inline">\(KAlSi_2O_6\)</span>中观察到压力诱导非晶化效应。使用拉曼微探针原位高压地分析了DAC中<b><font color="Crimson">传压介质为甲-乙醇</font></b>的样品加压非晶化和卸压过程。在非晶化之前，在每个沸石中观察到一个晶体到晶体的相变。结果表明，对<span class="math inline">\(Na_2Al_2Si_3O_{10}\cdot2H_2O\)</span>，晶体到非晶化的相变在压至7~10 GPa是部分可逆的，在压至10 GPa以上是不可逆的。令人惊讶的是，脱水晶体<span class="math inline">\(KAlSi_2O_6\)</span>在加压至16 GPa维持一天后表现出非常高的稳定性。长时间加压（15天）导致其完全非晶化。
+</td>
+</tr>
+</table>
+<h2 id="引言">引言</h2>
+<p>压力诱导非晶化在最近得到了广泛的研究。然而，许多现象仍然令人费解，包括在非晶化时形成异质微观结构。Kingma等人报道了非晶化石英的薄片，其包含约10μm厚度的非晶相和结晶相的交替平行双折射层。Gillet 等人观察到非晶化沸石中边缘重结晶。本工作用拉曼在高压下研究了两种沸石（<span class="math inline">\(Na_2Al_2Si_3O_{10}\cdot2H_2O\)</span>和<span class="math inline">\(KAlSi_2O_6\)</span>），阐明了非晶化样品的微观结构、非晶化的可逆性以及通道内水对非晶化压力的影响。</p>
+<h2 id="实验">实验</h2>
+<p>使用配备了电荷耦合器件LN/CCD-1100 PB（普林斯顿仪器）的三重光谱仪（Dilor OMARS 89）测量拉曼光谱（RS）。使用<b><font color="Crimson">4/1 wt比例的甲-乙醇传压介质</font></b>，在DAC静水压条件下压缩~<b><font color="Crimson"><span class="math inline">\(0.1×0.05×0.15 mm^3\)</span></font></b>尺寸的样品。使用红宝石R1荧光的偏移以精度±0.03 GPa确定压力。经电子显微探针确定斜方钠铝矿（Khibiny）和四方亮氨酸盐（Orvieto）的化学成分分别非常接近<span class="math inline">\(Na_2Al_2Si_3O_{10}\cdot2H_2O\)</span>和<span class="math inline">\(KAlSi_2O_6\)</span>。</p>
+<h2 id="结果与讨论">结果与讨论</h2>
+<p>为了研究非晶化的可逆性，钠沸石在几个实验中被压缩至以下峰值压力：7.7、9.0、9.6和10.6 GPa。图1给出了7.7和9.6 GPa两个实验的拉曼数据。钠沸石拉曼带的强度和频率随着压力的增加而发生剧烈变化。与4元环的呼吸振动相关的534 cm–1处最强带的压力依赖性特征是3.7 GPa处的小不连续性（图2）。其他频段在0–3.7 GPa和3.7 GPa以上表现出峰值频率对P的线性依赖性，而在3.7 GPa时，存在斜率变化和频率不连续性。这些数据证明了3.7 GPa出现一级相变。</p>
+<figure>
+<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\1.png"
+     alt="图 1"
+     width=700>
+<figcaption>
+<small>图 1.Na2Al2Si3O10·2H2O在不同压力下的拉曼光谱。初始光谱和样品1光谱以相当的尺度绘制。样品2光谱以8倍尺度绘制。</small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\2.png"
+     alt="图 2"
+     width=700>
+<figcaption>
+<small>图 2.Na2Al2Si3O10·2H2O拉曼波数的压力依赖性。虚线显示3.7 GPa处的1–2相变和6 GPa处的近似非晶化开始。箭头标记了相2依赖关系的外推。</small>
+</figcaption>
+</figure>
+<p>534 cm–1处的最强拉曼谱带在7.7 GPa以后强度与噪声相当。在443 cm-1处的第二强度带可以在7.2 GPa以下检测到，之后它变得像一个弱宽的驼峰。拉曼强度随压力的降低和消失在这里被认为与非晶化有关，<strong>尽管只有宽玻璃状光谱的出现才能作为非晶化的直接证据</strong>。钠沸石的拉曼光谱强度在 6.8 GPa 以上迅速降低，这是因为非晶化的开始。当然，如图 1 所示，Na2Al2Si3O10·2H2O在加压至9.6 GPa后的体外光谱证明样品几乎完全非晶化。钠沸石的非晶化在6 – 7 GPa时开始，在大约10 GPa时结束。6 – 9的卸压表明非晶样品部分回复到晶体结构。压缩至7.7 GPa非晶化的样品，在P降低至零时恢复到结晶相：RS的强度减弱，带形与初始晶体相当（图 1）。</p>
+<p>详细研究了在压至9.6 GPa的Na2Al2Si3O10·2H2O样品。研究了拉曼光谱随时间的变化。残余晶带的强度在1-2天的第一阶段随时间略有增加，然后几乎没有变化。这些数据证明，少量的非晶化材料可以再结晶（非晶化的部分可逆性）。</p>
+<p>该钠沸石样品（在压至9.6 GPa后）显示出体外异质微观结构，这不同于早期在其他材料中观察到的薄片和边缘再结晶。重结晶的钠沸石样品的拉曼显微探针显示出非晶相和两个结晶相（图 1）。非晶相的拉曼光谱在不同点上略有不同。最初的单晶（沿c轴尺寸为140 µm）裂解成两个大块，它们的典型拉曼光谱不同（图 1）。这些块可能是由于非晶化时出现的机械应力而形成的。请注意，钠沸石晶体很小，与上金刚石砧面没有接触。第一块更透明，有少量缺陷，第二块因为有许多裂纹和平面缺陷而不透明。块1的拉曼光谱显示出非晶玻璃状带和两个结晶相的残余带，轻微加压的初始相1（图1中的块1，点1）和高压相2（图1中的块1，点2）。后者可能是压缩至9.6 GPa后的部分不可逆相，可由图1和2看到，是个似稳态，可能是由于与非晶域的相互作用，在室温条件下测量样品时超过4周的长时间。块2几乎是非晶的（图1中的上部曲线为边缘点2和中心点1）。在垂直于c的方向上对样品进行10 µm扫描时，拉曼微探针没有观察到薄层。中心和表面(&lt;5 µm)区域的拉曼光谱非常相似，证明没有边缘再结晶。</p>
+<p>稳定脱水的白榴石KAlSi2O6用于研究脱水沸石的非晶化，因为脱水的钠沸石具有大量的裂纹，并且在室温下不稳定。根据[11]，在白榴石KAlSi2O6中2.3 GPa下观察到可逆相变L1↔L2。初始相L1表现出强烈的拉曼双峰。以三重强带为特征的L2相的拉曼谱（图3）至少存在到~16 GPa。未观察到KAlSi2O6非晶的迹象：拉曼谱没有扩展且强度存留1.3天。</p>
+<figure>
+<img data-src="\tu\Pressure-Induced  Phase  Transformation, Reversible  Amorphization, and  Anomalous  Visible  Light  Response  in  Organolead  Bromide Perovskite\3.png"
+     alt="图 3"
+     width=700>
+<figcaption>
+<small>图 3.KAlSi2O6在环境条件（L1相）和高压下15.8 GPa（L2相）和17 GPa（非晶相+L2相轨迹）下的拉曼光谱。17 GPa处的非晶相驼峰以实心轮廓区分。</small>
+</figcaption>
+</figure>
+<p>因此，KAlSi2O6沸石的晶体结构在短时间加压时准稳定到16 GPa。早些时候，有人认为这种沸石会在8–9 GPa下非晶，就像纳沸石的水合沸石一样。请注意，Gillet等人使用了准静水压KBr传压介质。这种与经验预测的差异可能是由结构、成分（通道内水的含量）、传压介质和压力持续时间的差异引起的。</p>
+<p>在~16 GPa下保留15天，观察到KAlSi2O6几乎完全非晶化。进一步加压到18.3 GPa 3小时没有导致晶体拉曼光谱强度的降低。图3中所示的中压17 GPa下的光谱，在460和1050 cm–1处的两个非晶驼峰，以黑色高斯等高线为标志。非晶化白榴石的拉曼原位微探针在至少10 μm尺度上没有结晶层和非晶层的薄片结构。</p>
+<h2 id="结论">结论</h2>
+<p>在完全非晶化之前，在钠沸石Na2Al2Si3O10·2H2O观察到逐渐的结构变化。在3.7 GPa处出现第一个结晶相变。在~6 GPa以上，晶带的拉曼强度迅速降低。原位拉曼数据证明Na2Al2Si3O10·2H2O在~8 GPa完全非晶，尽管卸压导致部分可逆到结晶相。Na2Al2Si3O10·2H2O到非晶相的转变对于压缩到~7 – 10 GPa是部分可逆的。请注意，非晶化的可逆性在9 GPa以上迅速降低。</p>
+<p>钠沸石样品在9.6 GPa时完全非晶，且立即（0.5小时内）卸压并从DAC中取出后也是非晶的。该非晶样品在空气中部分重结晶15天后，拉曼显微探针显示出非晶相占主导地位的非均相结构，并且存在两种晶相（初始相和高压相）的轨迹。未观察到与非静水性引起的样品表面剪切应力相关的边缘重结晶。</p>
+<p>高压对白榴石的研究表明，与稳定至~7-9 GPa的钠沸石相比，其晶体结构基本上更稳定（准稳定至16 GPa）。白榴石在~16 GPa下放置15天后几乎完全非晶化。脱水KAlSi2O6晶体的高稳定性可能与通道中没有水以及骨架拓扑结构的差异有关[10]，因为等距分析型框架比纤维状钠晶石型框架更稳定。</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>分子筛</tag>
       </tags>
   </entry>
   <entry>
@@ -1192,37 +1299,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       <tags>
         <tag>文献</tag>
         <tag>分子筛</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>低温传压介质</title>
-    <url>/2022/094d06fdeb.html</url>
-    <content><![CDATA[<h2 id="fujii-g.-and-nagano-h.-nature-of-pressure-transmitting-media-at-low-temperature.-japanese-journal-of-applied-physics.-1972.">Fujii, G. and Nagano, H. Nature of Pressure Transmitting Media at Low Temperature. Japanese Journal of Applied Physics. 1972.</h2>
-<p>72年的古早文章了。传压介质用的滑石（talc）和聚四氟乙烯（teflon），锡相变温度与压强相关，以此测量介质的同质性和柔软性。</p>
-<p>先提到以前用水做传压介质，降温后水结冰扩展，产生压力，但是在液氦温度下最多产生1.7 kbar的压强。后来用油-煤油做传压介质，获得了15 kbar的压强，常压下加压后降温。两种办法低温下都不好再改变压强。后有人用氢和氦气作为传压介质，其在4K时也足够柔软（plastic）。</p>
-<p>这篇文献实验压机的拉伸和压缩部分是SUS 27不锈钢制成，因为低温下其具有低导热性，延展性以及高屈服强度。 作者认为气体传压介质比较危险且相较于固体传压介质压力系统比较复杂，决定用滑石和聚四氟乙烯作为传压介质。 用4电极法测锡的电阻来检查传压介质的静水压性质。 超导相变温度宽度是开始相变和结束相变的温度差。</p>
-<p><strong>看完了，感觉参考意义不大，先这么着吧。</strong></p>
-<span id="more"></span>
-<h2 id="tateiwa-n.-and-haga-y.-evaluations-of-pressure-transmitting-media-for-cryogenic-experiments-with-diamond-anvil-cell.-rev.-sci.-instrum.-2009.">Tateiwa, N. and Haga, Y. Evaluations of pressure-transmitting media for cryogenic experiments with diamond anvil cell. Rev. Sci. Instrum. 2009.</h2>
-<p>作者研究了14种不同的传压介质，想看哪种更适合在低温下做高压实验，结果得出结论是氮氩氦……好家伙，我就是怀疑氩不合适才来看的。</p>
-<p>一般常温下使用液体作为传压介质，但是随着温度的降低，传压介质可能发生液-固相变，固体可能在低温区域产生非静水压。该文章就是评估低温下各种传压介质性质的，尤其是在电子强关联系统中。电子态很容易受到杂质或非静水压影响。</p>
-<p>文中举例CaFe2As2在有机介质中表现出了超导性，但是在氦中未出现，感觉和我想找的相似。低温下非静水压是无法避免的，所以需要研究合适的传压介质。 过去人们主要研究常温下传压介质的静水性，很少几篇研究了低温下3 GPa以下的性质，这篇文章研究了14中不同介质10 GPa在室温、77K和4.2的性质。</p>
-<p>金刚石压砧小砧面800微米，样品腔400微米，用304不锈钢片，红宝石小于10微米，光线直径约600微米，展现的是整个样品腔的平均非静水压效应。</p>
-<p>当出现非静水压，R1和R2线会展宽。红宝石R1线对于单轴压力比较敏感，腔内红宝石为分散均匀放置，朝向随机，R1线的展宽同时反映压力不均匀分布（压力梯度）和单轴压力。</p>
-<p>红宝石荧光谱线均在压强和R1线稳定后测量，传压介质固态且高压下，需要几个小时来稳定。</p>
-<p>Fluorinerts and Daphne 7373化学稳定性强，静水压限制在1.2 GPa和2.4 GPa。还有一些就不记录了，看看比较关心的。</p>
-<p><strong>该文章测得氮、氩、氦在室温下的静水压限制压强分别为13,9和30 GPa。</strong> 使用的方法是看R1半峰全宽的变化规律。文中提到一句话是静水压的特点就是随着压强的升高半峰全宽微微下降。</p>
-<p>文中援引了一篇Klotz的文章，说即使在室温下，高于2 GPa时氩的压强质量弱于氮的。但因为他这篇测得是平均效果，所以他表示他也不知道（那你说他干啥）。</p>
-<p>然后终点来了，2 GPa的时候，氩随着降温过程压强变化只有百分之几，但是氦和氮的分别达30%到40%。随着压强升高，这个变化逐渐减小。在高于5 GPa时，氮的变化在百分之几的量级，而10 GPa时候氦的有10%。</p>
-<p>这种压强变化对于需要在比较大温度范围内测量物理性质的实验来说就是个缺点。同时，<strong>低温区较大的压强变化也会导致非静水压，对样品产生损伤</strong> ，即使用的是氦。</p>
-<p>文章最后的几点说明： - 文中的结果都针对的对顶砧，高对称地加压固体传压介质可以更好地获得静水压。 - 如果所研究的材料对应力敏感，或者比红宝石的机械力小，非静水效应可能影响材料的物理性质，尽管看上去红宝石的R1线只有小幅度加宽或者没有加宽。</p>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>文献</tag>
-        <tag>超导</tag>
       </tags>
   </entry>
   <entry>
@@ -1684,6 +1760,37 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
+    <title>低温传压介质</title>
+    <url>/2022/094d06fdeb.html</url>
+    <content><![CDATA[<h2 id="fujii-g.-and-nagano-h.-nature-of-pressure-transmitting-media-at-low-temperature.-japanese-journal-of-applied-physics.-1972.">Fujii, G. and Nagano, H. Nature of Pressure Transmitting Media at Low Temperature. Japanese Journal of Applied Physics. 1972.</h2>
+<p>72年的古早文章了。传压介质用的滑石（talc）和聚四氟乙烯（teflon），锡相变温度与压强相关，以此测量介质的同质性和柔软性。</p>
+<p>先提到以前用水做传压介质，降温后水结冰扩展，产生压力，但是在液氦温度下最多产生1.7 kbar的压强。后来用油-煤油做传压介质，获得了15 kbar的压强，常压下加压后降温。两种办法低温下都不好再改变压强。后有人用氢和氦气作为传压介质，其在4K时也足够柔软（plastic）。</p>
+<p>这篇文献实验压机的拉伸和压缩部分是SUS 27不锈钢制成，因为低温下其具有低导热性，延展性以及高屈服强度。 作者认为气体传压介质比较危险且相较于固体传压介质压力系统比较复杂，决定用滑石和聚四氟乙烯作为传压介质。 用4电极法测锡的电阻来检查传压介质的静水压性质。 超导相变温度宽度是开始相变和结束相变的温度差。</p>
+<p><strong>看完了，感觉参考意义不大，先这么着吧。</strong></p>
+<span id="more"></span>
+<h2 id="tateiwa-n.-and-haga-y.-evaluations-of-pressure-transmitting-media-for-cryogenic-experiments-with-diamond-anvil-cell.-rev.-sci.-instrum.-2009.">Tateiwa, N. and Haga, Y. Evaluations of pressure-transmitting media for cryogenic experiments with diamond anvil cell. Rev. Sci. Instrum. 2009.</h2>
+<p>作者研究了14种不同的传压介质，想看哪种更适合在低温下做高压实验，结果得出结论是氮氩氦……好家伙，我就是怀疑氩不合适才来看的。</p>
+<p>一般常温下使用液体作为传压介质，但是随着温度的降低，传压介质可能发生液-固相变，固体可能在低温区域产生非静水压。该文章就是评估低温下各种传压介质性质的，尤其是在电子强关联系统中。电子态很容易受到杂质或非静水压影响。</p>
+<p>文中举例CaFe2As2在有机介质中表现出了超导性，但是在氦中未出现，感觉和我想找的相似。低温下非静水压是无法避免的，所以需要研究合适的传压介质。 过去人们主要研究常温下传压介质的静水性，很少几篇研究了低温下3 GPa以下的性质，这篇文章研究了14中不同介质10 GPa在室温、77K和4.2的性质。</p>
+<p>金刚石压砧小砧面800微米，样品腔400微米，用304不锈钢片，红宝石小于10微米，光线直径约600微米，展现的是整个样品腔的平均非静水压效应。</p>
+<p>当出现非静水压，R1和R2线会展宽。红宝石R1线对于单轴压力比较敏感，腔内红宝石为分散均匀放置，朝向随机，R1线的展宽同时反映压力不均匀分布（压力梯度）和单轴压力。</p>
+<p>红宝石荧光谱线均在压强和R1线稳定后测量，传压介质固态且高压下，需要几个小时来稳定。</p>
+<p>Fluorinerts and Daphne 7373化学稳定性强，静水压限制在1.2 GPa和2.4 GPa。还有一些就不记录了，看看比较关心的。</p>
+<p><strong>该文章测得氮、氩、氦在室温下的静水压限制压强分别为13,9和30 GPa。</strong> 使用的方法是看R1半峰全宽的变化规律。文中提到一句话是静水压的特点就是随着压强的升高半峰全宽微微下降。</p>
+<p>文中援引了一篇Klotz的文章，说即使在室温下，高于2 GPa时氩的压强质量弱于氮的。但因为他这篇测得是平均效果，所以他表示他也不知道（那你说他干啥）。</p>
+<p>然后终点来了，2 GPa的时候，氩随着降温过程压强变化只有百分之几，但是氦和氮的分别达30%到40%。随着压强升高，这个变化逐渐减小。在高于5 GPa时，氮的变化在百分之几的量级，而10 GPa时候氦的有10%。</p>
+<p>这种压强变化对于需要在比较大温度范围内测量物理性质的实验来说就是个缺点。同时，<strong>低温区较大的压强变化也会导致非静水压，对样品产生损伤</strong> ，即使用的是氦。</p>
+<p>文章最后的几点说明： - 文中的结果都针对的对顶砧，高对称地加压固体传压介质可以更好地获得静水压。 - 如果所研究的材料对应力敏感，或者比红宝石的机械力小，非静水效应可能影响材料的物理性质，尽管看上去红宝石的R1线只有小幅度加宽或者没有加宽。</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>超导</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>桜ノ雨</title>
     <url>/2022/066631e6d7.html</url>
     <content><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=22677426&amp;auto=0&amp;height=32">
@@ -1745,6 +1852,22 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
+    <title>关于什么是DSCs</title>
+    <url>/2023/03de6b7451.html</url>
+    <content><![CDATA[<p>Dye-sensitized solar cells：染料敏化太阳能电池</p>
+<blockquote>
+<p>“染料敏化太阳能电池”全称为“染料敏化纳米薄膜太阳能电池 ”，是模拟自然界中的光合作用原理，采用吸附染料的纳米多孔二氧化钛半导体膜作为光阳极，并选用适当的氧化－还原电解质，用镀铂的导电玻璃作为光阴极，这样一个简单的染料敏化太阳电池就做好了。只要太阳光一照到电池上，它就会源源不断的开始发电了。</p>
+<p>引用自：<a href="https://www.cas.cn/kxcb/kpwz/201305/t20130528_3852089.shtml#:~:text=%E2%80%9C%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E5%A4%AA%E9%98%B3%E8%83%BD%E7%94%B5%E6%B1%A0%E2%80%9D%E5%85%A8%E7%A7%B0%E4%B8%BA%E2%80%9C%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E7%BA%B3%E7%B1%B3%E8%96%84%E8%86%9C%E5%A4%AA%E9%98%B3%E8%83%BD%E7%94%B5%E6%B1%A0,%E2%80%9D%EF%BC%8C%E6%98%AF%E6%A8%A1%E6%8B%9F%E8%87%AA%E7%84%B6%E7%95%8C%E4%B8%AD%E7%9A%84%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8%E5%8E%9F%E7%90%86%EF%BC%8C%E9%87%87%E7%94%A8%E5%90%B8%E9%99%84%E6%9F%93%E6%96%99%E7%9A%84%E7%BA%B3%E7%B1%B3%E5%A4%9A%E5%AD%94%E4%BA%8C%E6%B0%A7%E5%8C%96%E9%92%9B%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%86%9C%E4%BD%9C%E4%B8%BA%E5%85%89%E9%98%B3%E6%9E%81%EF%BC%8C%E5%B9%B6%E9%80%89%E7%94%A8%E9%80%82%E5%BD%93%E7%9A%84%E6%B0%A7%E5%8C%96%EF%BC%8D%E8%BF%98%E5%8E%9F%E7%94%B5%E8%A7%A3%E8%B4%A8%EF%BC%8C%E7%94%A8%E9%95%80%E9%93%82%E7%9A%84%E5%AF%BC%E7%94%B5%E7%8E%BB%E7%92%83%E4%BD%9C%E4%B8%BA%E5%85%89%E9%98%B4%E6%9E%81%EF%BC%8C%E8%BF%99%E6%A0%B7%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E5%A4%AA%E9%98%B3%E7%94%B5%E6%B1%A0%E5%B0%B1%E5%81%9A%E5%A5%BD%E4%BA%86%E3%80%82">中科院上海硅酸盐研究所文章</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>豆知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>论文词组总结</title>
     <url>/2022/09b48925d7.html</url>
     <content><![CDATA[<p>看到了就随机记一下吧：</p>
@@ -1798,22 +1921,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </categories>
       <tags>
         <tag>论文写作</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于什么是DSCs</title>
-    <url>/2023/03de6b7451.html</url>
-    <content><![CDATA[<p>Dye-sensitized solar cells：染料敏化太阳能电池</p>
-<blockquote>
-<p>“染料敏化太阳能电池”全称为“染料敏化纳米薄膜太阳能电池 ”，是模拟自然界中的光合作用原理，采用吸附染料的纳米多孔二氧化钛半导体膜作为光阳极，并选用适当的氧化－还原电解质，用镀铂的导电玻璃作为光阴极，这样一个简单的染料敏化太阳电池就做好了。只要太阳光一照到电池上，它就会源源不断的开始发电了。</p>
-<p>引用自：<a href="https://www.cas.cn/kxcb/kpwz/201305/t20130528_3852089.shtml#:~:text=%E2%80%9C%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E5%A4%AA%E9%98%B3%E8%83%BD%E7%94%B5%E6%B1%A0%E2%80%9D%E5%85%A8%E7%A7%B0%E4%B8%BA%E2%80%9C%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E7%BA%B3%E7%B1%B3%E8%96%84%E8%86%9C%E5%A4%AA%E9%98%B3%E8%83%BD%E7%94%B5%E6%B1%A0,%E2%80%9D%EF%BC%8C%E6%98%AF%E6%A8%A1%E6%8B%9F%E8%87%AA%E7%84%B6%E7%95%8C%E4%B8%AD%E7%9A%84%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8%E5%8E%9F%E7%90%86%EF%BC%8C%E9%87%87%E7%94%A8%E5%90%B8%E9%99%84%E6%9F%93%E6%96%99%E7%9A%84%E7%BA%B3%E7%B1%B3%E5%A4%9A%E5%AD%94%E4%BA%8C%E6%B0%A7%E5%8C%96%E9%92%9B%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%86%9C%E4%BD%9C%E4%B8%BA%E5%85%89%E9%98%B3%E6%9E%81%EF%BC%8C%E5%B9%B6%E9%80%89%E7%94%A8%E9%80%82%E5%BD%93%E7%9A%84%E6%B0%A7%E5%8C%96%EF%BC%8D%E8%BF%98%E5%8E%9F%E7%94%B5%E8%A7%A3%E8%B4%A8%EF%BC%8C%E7%94%A8%E9%95%80%E9%93%82%E7%9A%84%E5%AF%BC%E7%94%B5%E7%8E%BB%E7%92%83%E4%BD%9C%E4%B8%BA%E5%85%89%E9%98%B4%E6%9E%81%EF%BC%8C%E8%BF%99%E6%A0%B7%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E5%A4%AA%E9%98%B3%E7%94%B5%E6%B1%A0%E5%B0%B1%E5%81%9A%E5%A5%BD%E4%BA%86%E3%80%82">中科院上海硅酸盐研究所文章</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>豆知识</tag>
       </tags>
   </entry>
   <entry>

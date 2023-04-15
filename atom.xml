@@ -6,7 +6,7 @@
   <link href="https://www.choutse.cn/atom.xml" rel="self"/>
   
   <link href="https://www.choutse.cn/"/>
-  <updated>2023-04-12T12:50:54.875Z</updated>
+  <updated>2023-04-15T13:28:30.696Z</updated>
   <id>https://www.choutse.cn/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>High-Pressure Phase Transition, Pore Collapse, and  Amorphization in the Siliceous 1D Zeolite, TON</title>
+    <link href="https://www.choutse.cn/2023/042961a824.html"/>
+    <id>https://www.choutse.cn/2023/042961a824.html</id>
+    <published>2023-04-15T12:53:44.000Z</published>
+    <updated>2023-04-15T13:28:30.696Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;文章信息&quot;&gt;文章信息&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;标题：硅质一维沸石TON中的高压相变、孔塌陷和非晶化&lt;/li&gt;
+&lt;li&gt;时间：February 13, 2017&lt;/li&gt;
+&lt;li&gt;作者：Jean-Marc Thibaud, Jerôme Rouquette, Patrick Hermet, Kamil Dziubek, Federico A. Gorelli, Mario Santoro, Gaston Garbarino, Frederico G. Alabarse, Olivier Cambon, Francesco Di Renzo, Arie van der Lee, and Julien Haines&lt;/li&gt;
+&lt;li&gt;单位：蒙彼利埃大学，欧洲非线性光谱实验室，亚当密茨凯维奇大学化学学院，意大利国家光学研究所，欧洲同步辐射，法国国家同步加速器，&lt;/li&gt;
+&lt;li&gt;期刊：THE JOURNAL OF PHYSICAL CHEMISTRY C&lt;/li&gt;
+&lt;li&gt;用到的表征手段：同步辐射XRD、红外光谱&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="科研相关" scheme="https://www.choutse.cn/categories/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="文献" scheme="https://www.choutse.cn/tags/%E6%96%87%E7%8C%AE/"/>
+    
+    <category term="分子筛" scheme="https://www.choutse.cn/tags/%E5%88%86%E5%AD%90%E7%AD%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pressure-induced amorphization of Na2Al2Si3O10 2H2O and KAlSi2O6 zeolites</title>
+    <link href="https://www.choutse.cn/2023/046b4cc508.html"/>
+    <id>https://www.choutse.cn/2023/046b4cc508.html</id>
+    <published>2023-04-15T05:23:22.000Z</published>
+    <updated>2023-04-15T13:03:52.151Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;文章信息&quot;&gt;文章信息&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;标题：Na2Al2Si3O10 2H2O和KAlSi2O6分子筛的压力诱导非晶化&lt;/li&gt;
+&lt;li&gt;时间：28 January 2005&lt;/li&gt;
+&lt;li&gt;作者：Sergei Goryainov&lt;/li&gt;
+&lt;li&gt;单位：俄罗斯矿物学和岩石学研究所&lt;/li&gt;
+&lt;li&gt;期刊：PHYSICA STATUS SOLIDI A-APPLICATIONS AND MATERIALS SCIENCE&lt;/li&gt;
+&lt;li&gt;用到的表征手段：Raman&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="科研相关" scheme="https://www.choutse.cn/categories/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="文献" scheme="https://www.choutse.cn/tags/%E6%96%87%E7%8C%AE/"/>
+    
+    <category term="分子筛" scheme="https://www.choutse.cn/tags/%E5%88%86%E5%AD%90%E7%AD%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>Interzeolite transformation from FAU to CHA and MFI zeolites monitored by UV Raman spectroscopy</title>
@@ -448,55 +506,6 @@
     
     
     <category term="小教程" scheme="https://www.choutse.cn/tags/%E5%B0%8F%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML颜色名</title>
-    <link href="https://www.choutse.cn/2022/05a4b3b729.html"/>
-    <id>https://www.choutse.cn/2022/05a4b3b729.html</id>
-    <published>2022-05-22T01:58:44.000Z</published>
-    <updated>2023-03-25T10:52:50.827Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;网上蛮多的了，但是好多哦，参考起来好麻烦，整个自己喜欢的颜色吧 全部颜色名在这儿：https://www.runoob.com/html/html-colornames.html ### &lt;font color=&quot;BlueViolet&quot;&gt;紫色哒：&lt;/font&gt; &lt;strong&gt;&lt;font color=&quot;DarkMagenta&quot;&gt;DarkMagenta&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;BlueViolet&quot;&gt;BlueViolet&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;DarkOrchid&quot;&gt;DarkOrchid&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;DarkViolet&quot;&gt;DarkViolet&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;MediumSlateBlue&quot;&gt;MediumSlateBlue&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;MediumPurple&quot;&gt;MediumPurple&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;MediumOrchid&quot;&gt;MediumOrchid&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;Orchid&quot;&gt;Orchid&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;Plum&quot;&gt;Plum&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;&lt;font color=&quot;Lavender&quot;&gt;Lavender&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="网站" scheme="https://www.choutse.cn/categories/%E7%BD%91%E7%AB%99/"/>
-    
-    
-    <category term="颜色 html" scheme="https://www.choutse.cn/tags/%E9%A2%9C%E8%89%B2-html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>（未完）Compositionally Graded KNN-Based Multilayer Composite with Excellent Piezoelectric Temperature Stability</title>
-    <link href="https://www.choutse.cn/2022/05563bb361.html"/>
-    <id>https://www.choutse.cn/2022/05563bb361.html</id>
-    <published>2022-05-21T08:10:20.000Z</published>
-    <updated>2022-07-07T11:59:07.491Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;原文：http://crossmark.crossref.org/dialog/?doi=10.1002%2Fadma.202109175&amp;amp;domain=pdf&amp;amp;date_stamp=2022-01-18&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;table border=&quot;1&quot;&gt;
-&lt;tr&gt;
-&lt;td&gt;
-&lt;b&gt;&lt;font color=&quot;orange&quot;&gt;摘要&lt;/font&gt;：&lt;/b&gt;无铅钾纳铌酸盐基陶瓷（lead-free potassium sodium niobate (KNN)- based ceramics）固有缺点就是压电系数&lt;span class=&quot;math inline&quot;&gt;\(d_{33}\)&lt;/span&gt;随温度变化不稳定，而这是由多晶相边界导致的。为此，本文通过&lt;b&gt;设计具有多个连续相变的成分多层复合材料，提出一种结构梯度的概念&lt;/b&gt;。结构梯度陶瓷展现出优异的温度稳定性（其&lt;span class=&quot;math inline&quot;&gt;\(d_{33}\)&lt;/span&gt;在&lt;span class=&quot;math inline&quot;&gt;\(25\)&lt;/span&gt;-&lt;span class=&quot;math inline&quot;&gt;\(100°C\)&lt;/span&gt;温度范围内几乎没有变化，该品质远超于其他已报道的钾纳铌酸盐，这些陶瓷在同样的温度变化下压电系数变化超27%。&lt;b&gt;连续相变、应变梯度、以及每层组分间的互补效应&lt;/b&gt;，三者协同作用使得压电系数表现出温度稳定性，且已被相场模拟的证明。这些发现有望为设计高稳定稳定性的功能材料提供范例。
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;</summary>
-    
-    
-    
-    <category term="科研相关" scheme="https://www.choutse.cn/categories/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/"/>
-    
-    
-    <category term="文献" scheme="https://www.choutse.cn/tags/%E6%96%87%E7%8C%AE/"/>
-    
-    <category term="压电材料" scheme="https://www.choutse.cn/tags/%E5%8E%8B%E7%94%B5%E6%9D%90%E6%96%99/"/>
     
   </entry>
   
