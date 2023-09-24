@@ -210,8 +210,8 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
   <entry>
     <title>获取阿b的表情</title>
     <url>/2022/05f71bb376.html</url>
-    <content><![CDATA[<p>方法来自知乎：https://www.zhihu.com/question/275901829/answer/1574659804 不太用知乎所以还是转到自己的网站吧。</p>
-<p>1.在登录的状态下访问https://api.bilibili.com/x/emote/setting/panel?business=reply ，存储为emoji.json（蛮长的，需要等点时间）。 2.编写python脚本，保存为emoji.py在emoji.json目录下。 <span id="more"></span> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import json</span><br><span class="line">import os</span><br><span class="line">from concurrent.futures import ThreadPoolExecutor</span><br><span class="line">from functools import partial</span><br><span class="line">from time import sleep</span><br><span class="line"></span><br><span class="line">import requests</span><br><span class="line">from tqdm import tqdm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def mkdir(path):</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(path) is not True:</span><br><span class="line">        os.makedirs(path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_pic(url, path):</span><br><span class="line">    resp = requests.get(url)</span><br><span class="line">    with open(path, <span class="string">&#x27;wb&#x27;</span>) as code:</span><br><span class="line">        code.write(resp.content)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_emoji(emoji, save_path):</span><br><span class="line">    emoji_name = emoji[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    emoji_name = emoji_name[1:-1]</span><br><span class="line">    path = os.path.join(save_path, f<span class="string">&#x27;&#123;emoji_name&#125;.png&#x27;</span>)</span><br><span class="line">    download_pic(emoji[<span class="string">&#x27;url&#x27;</span>], path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_package(package, path):</span><br><span class="line">    package_name = package[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    save_path = os.path.join(path, package_name)</span><br><span class="line">    mkdir(save_path)</span><br><span class="line">    all_emote = <span class="built_in">set</span>(map(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1], package[<span class="string">&#x27;emote&#x27;</span>]))</span><br><span class="line">    downloaded_emote = <span class="built_in">set</span>(map(lambda e: e[:-4], os.listdir(save_path)))</span><br><span class="line">    download_emote_name = all_emote - downloaded_emote</span><br><span class="line">    <span class="keyword">if</span> len(download_emote_name) == 0:</span><br><span class="line">        <span class="built_in">return</span></span><br><span class="line">    going_to_download_emote = filter(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1] <span class="keyword">in</span> download_emote_name, package[<span class="string">&#x27;emote&#x27;</span>])</span><br><span class="line">    with ThreadPoolExecutor() as executor:</span><br><span class="line">        executor.map(partial(download_emoji, save_path=save_path), going_to_download_emote)</span><br><span class="line">    sleep(3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    with open(<span class="string">&#x27;emoji.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) as fp:</span><br><span class="line">        emojis = json.load(fp)</span><br><span class="line">    emoji_packages = emojis[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;all_packages&#x27;</span>]</span><br><span class="line">    package_path = <span class="string">&#x27;bilibili_emoji&#x27;</span></span><br><span class="line">    bar = tqdm(emoji_packages)</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> bar:</span><br><span class="line">        <span class="keyword">if</span> p[<span class="string">&#x27;text&#x27;</span>] == <span class="string">&#x27;颜文字&#x27;</span>:</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        bar.set_description(p[<span class="string">&#x27;text&#x27;</span>])</span><br><span class="line">        download_package(p, package_path)</span><br></pre></td></tr></table></figure> 3.打开shell（windows里面powershell和cmd应该都可以），使用 pip install 安装包。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install tqdm</span><br></pre></td></tr></table></figure> 4.运行脚本，shell移动到目录可以cd，可以shift右键“在此处打开powershell”，可以在文件管理器里输目录的地方输cmd或者powershell回车。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python emoji.py</span><br></pre></td></tr></table></figure></p>
+    <content><![CDATA[<p>方法来自知乎：<a href="https://www.zhihu.com/question/275901829/answer/1574659804">如何下载b站表情包？ - 知乎</a> 不太用知乎所以还是转到自己的网站吧。</p>
+<p>1.在登录的状态下访问<a href="https://api.bilibili.com/x/emote/setting/panel?business=reply" class="uri">https://api.bilibili.com/x/emote/setting/panel?business=reply</a> ，存储为emoji.json（蛮长的，需要等点时间）。 2.编写python脚本，保存为emoji.py在emoji.json目录下。 <span id="more"></span> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import json</span><br><span class="line">import os</span><br><span class="line">from concurrent.futures import ThreadPoolExecutor</span><br><span class="line">from functools import partial</span><br><span class="line">from time import sleep</span><br><span class="line"></span><br><span class="line">import requests</span><br><span class="line">from tqdm import tqdm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def mkdir(path):</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(path) is not True:</span><br><span class="line">        os.makedirs(path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_pic(url, path):</span><br><span class="line">    resp = requests.get(url)</span><br><span class="line">    with open(path, <span class="string">&#x27;wb&#x27;</span>) as code:</span><br><span class="line">        code.write(resp.content)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_emoji(emoji, save_path):</span><br><span class="line">    emoji_name = emoji[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    emoji_name = emoji_name[1:-1]</span><br><span class="line">    path = os.path.join(save_path, f<span class="string">&#x27;&#123;emoji_name&#125;.png&#x27;</span>)</span><br><span class="line">    download_pic(emoji[<span class="string">&#x27;url&#x27;</span>], path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def download_package(package, path):</span><br><span class="line">    package_name = package[<span class="string">&#x27;text&#x27;</span>]</span><br><span class="line">    save_path = os.path.join(path, package_name)</span><br><span class="line">    mkdir(save_path)</span><br><span class="line">    all_emote = <span class="built_in">set</span>(map(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1], package[<span class="string">&#x27;emote&#x27;</span>]))</span><br><span class="line">    downloaded_emote = <span class="built_in">set</span>(map(lambda e: e[:-4], os.listdir(save_path)))</span><br><span class="line">    download_emote_name = all_emote - downloaded_emote</span><br><span class="line">    <span class="keyword">if</span> len(download_emote_name) == 0:</span><br><span class="line">        <span class="built_in">return</span></span><br><span class="line">    going_to_download_emote = filter(lambda e: e[<span class="string">&#x27;text&#x27;</span>][1:-1] <span class="keyword">in</span> download_emote_name, package[<span class="string">&#x27;emote&#x27;</span>])</span><br><span class="line">    with ThreadPoolExecutor() as executor:</span><br><span class="line">        executor.map(partial(download_emoji, save_path=save_path), going_to_download_emote)</span><br><span class="line">    sleep(3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    with open(<span class="string">&#x27;emoji.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) as fp:</span><br><span class="line">        emojis = json.load(fp)</span><br><span class="line">    emoji_packages = emojis[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;all_packages&#x27;</span>]</span><br><span class="line">    package_path = <span class="string">&#x27;bilibili_emoji&#x27;</span></span><br><span class="line">    bar = tqdm(emoji_packages)</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> bar:</span><br><span class="line">        <span class="keyword">if</span> p[<span class="string">&#x27;text&#x27;</span>] == <span class="string">&#x27;颜文字&#x27;</span>:</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        bar.set_description(p[<span class="string">&#x27;text&#x27;</span>])</span><br><span class="line">        download_package(p, package_path)</span><br></pre></td></tr></table></figure> 3.打开shell（windows里面powershell和cmd应该都可以），使用 pip install 安装包。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install tqdm</span><br></pre></td></tr></table></figure> 4.运行脚本，shell移动到目录可以cd，可以shift右键“在此处打开powershell”，可以在文件管理器里输目录的地方输cmd或者powershell回车。 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python emoji.py</span><br></pre></td></tr></table></figure></p>
 ]]></content>
       <categories>
         <category>网站</category>
@@ -476,24 +476,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </categories>
       <tags>
         <tag>日本动画</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>礼貌用语等</title>
-    <url>/2022/058ae62fc9.html</url>
-    <content><![CDATA[<p>小短语 Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span> До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span> До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span> К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span> здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span> спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span> Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span> Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span> Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span> -М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span> -Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span> -Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span> Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span> -Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span> -Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span> Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span> Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span> Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span> Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span> -Ты зн<font color=Crimson>а</font>ешь,.......<span class="heimu">你知道吗</span> -Кон<font color=Crimson>е</font>чно,я знаю,......<span class="heimu">我当然知道</span> Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span> Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span> Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span> Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот ...<span class="heimu">这个xx多少钱</span> пока́<span class="heimu">[副]回头见，暂时</span> Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
-<!--
-|  |  |  |  |  |
-|------ |------ |------|------|------|
-|  |  |  |  |  |
-<div title="ののの"><font color=Crimson></font></div>
--->
-]]></content>
-      <categories>
-        <category>Русский язык</category>
-      </categories>
-      <tags>
-        <tag>短句</tag>
       </tags>
   </entry>
   <entry>
@@ -832,19 +814,9 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>调型与发音规则</title>
-    <url>/2022/05f9b5f147.html</url>
-    <content><![CDATA[<h3 id="发音">发音</h3>
-<ul>
-<li><strong>1.</strong> о在非重音时弱化成а；</li>
-<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音； 如：рассказ中的з读成相应清辅音с,； 清浊对照的只有： п-б ф-в т-д к-г с-з ш-ж <span id="more"></span></li>
-<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化； 如：завтра中的в清化成ф；</li>
-<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊； 后者第一个字母为清辅音，则前者最后一个字母清化； 同理，后者浊，前者浊化；</li>
-<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
-<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
-</ul>
-<h3 id="调型">调型</h3>
-<p><strong>调型 1</strong> ： 用于陈述句：从调心元音开始降，调心后部低于调心前部； <strong>调型 2</strong> ： 用于有疑问词的疑问句：疑问词开始降调； <strong>调型 3</strong> ： 用于没有疑问词的疑问句：提问词的重音升调； <strong>调型 4</strong> ： 调型 3, а 调型 1. 转折疑问句：А это? <strong>调型 5</strong> ： 感叹句：Какая красивая девушка!</p>
+    <title>礼貌用语等</title>
+    <url>/2022/058ae62fc9.html</url>
+    <content><![CDATA[<p>小短语 Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span> До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span> До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span> К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span> здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span> спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span> Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span> Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span> Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span> -М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span> -Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span> -Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span> Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span> -Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span> -Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span> Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span> Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span> Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span> Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span> -Ты зн<font color=Crimson>а</font>ешь,.......<span class="heimu">你知道吗</span> -Кон<font color=Crimson>е</font>чно,я знаю,......<span class="heimu">我当然知道</span> Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span> Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span> Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span> Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот ...<span class="heimu">这个xx多少钱</span> пока́<span class="heimu">[副]回头见，暂时</span> Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
 <!--
 |  |  |  |  |  |
 |------ |------ |------|------|------|
@@ -856,7 +828,7 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
         <category>Русский язык</category>
       </categories>
       <tags>
-        <tag>发音</tag>
+        <tag>短句</tag>
       </tags>
   </entry>
   <entry>
@@ -933,6 +905,34 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </categories>
       <tags>
         <tag>语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>调型与发音规则</title>
+    <url>/2022/05f9b5f147.html</url>
+    <content><![CDATA[<h3 id="发音">发音</h3>
+<ul>
+<li><strong>1.</strong> о在非重音时弱化成а；</li>
+<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音； 如：рассказ中的з读成相应清辅音с,； 清浊对照的只有： п-б ф-в т-д к-г с-з ш-ж <span id="more"></span></li>
+<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化； 如：завтра中的в清化成ф；</li>
+<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊； 后者第一个字母为清辅音，则前者最后一个字母清化； 同理，后者浊，前者浊化；</li>
+<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
+<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
+</ul>
+<h3 id="调型">调型</h3>
+<p><strong>调型 1</strong> ： 用于陈述句：从调心元音开始降，调心后部低于调心前部； <strong>调型 2</strong> ： 用于有疑问词的疑问句：疑问词开始降调； <strong>调型 3</strong> ： 用于没有疑问词的疑问句：提问词的重音升调； <strong>调型 4</strong> ： 调型 3, а 调型 1. 转折疑问句：А это? <strong>调型 5</strong> ： 感叹句：Какая красивая девушка!</p>
+<!--
+|  |  |  |  |  |
+|------ |------ |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>发音</tag>
       </tags>
   </entry>
   <entry>
@@ -1262,6 +1262,37 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
+    <title>低温传压介质</title>
+    <url>/2022/094d06fdeb.html</url>
+    <content><![CDATA[<h2 id="fujii-g.-and-nagano-h.-nature-of-pressure-transmitting-media-at-low-temperature.-japanese-journal-of-applied-physics.-1972.">Fujii, G. and Nagano, H. Nature of Pressure Transmitting Media at Low Temperature. Japanese Journal of Applied Physics. 1972.</h2>
+<p>72年的古早文章了。传压介质用的滑石（talc）和聚四氟乙烯（teflon），锡相变温度与压强相关，以此测量介质的同质性和柔软性。</p>
+<p>先提到以前用水做传压介质，降温后水结冰扩展，产生压力，但是在液氦温度下最多产生1.7 kbar的压强。后来用油-煤油做传压介质，获得了15 kbar的压强，常压下加压后降温。两种办法低温下都不好再改变压强。后有人用氢和氦气作为传压介质，其在4K时也足够柔软（plastic）。</p>
+<p>这篇文献实验压机的拉伸和压缩部分是SUS 27不锈钢制成，因为低温下其具有低导热性，延展性以及高屈服强度。 作者认为气体传压介质比较危险且相较于固体传压介质压力系统比较复杂，决定用滑石和聚四氟乙烯作为传压介质。 用4电极法测锡的电阻来检查传压介质的静水压性质。 超导相变温度宽度是开始相变和结束相变的温度差。</p>
+<p><strong>看完了，感觉参考意义不大，先这么着吧。</strong></p>
+<span id="more"></span>
+<h2 id="tateiwa-n.-and-haga-y.-evaluations-of-pressure-transmitting-media-for-cryogenic-experiments-with-diamond-anvil-cell.-rev.-sci.-instrum.-2009.">Tateiwa, N. and Haga, Y. Evaluations of pressure-transmitting media for cryogenic experiments with diamond anvil cell. Rev. Sci. Instrum. 2009.</h2>
+<p>作者研究了14种不同的传压介质，想看哪种更适合在低温下做高压实验，结果得出结论是氮氩氦……好家伙，我就是怀疑氩不合适才来看的。</p>
+<p>一般常温下使用液体作为传压介质，但是随着温度的降低，传压介质可能发生液-固相变，固体可能在低温区域产生非静水压。该文章就是评估低温下各种传压介质性质的，尤其是在电子强关联系统中。电子态很容易受到杂质或非静水压影响。</p>
+<p>文中举例CaFe2As2在有机介质中表现出了超导性，但是在氦中未出现，感觉和我想找的相似。低温下非静水压是无法避免的，所以需要研究合适的传压介质。 过去人们主要研究常温下传压介质的静水性，很少几篇研究了低温下3 GPa以下的性质，这篇文章研究了14中不同介质10 GPa在室温、77K和4.2的性质。</p>
+<p>金刚石压砧小砧面800微米，样品腔400微米，用304不锈钢片，红宝石小于10微米，光线直径约600微米，展现的是整个样品腔的平均非静水压效应。</p>
+<p>当出现非静水压，R1和R2线会展宽。红宝石R1线对于单轴压力比较敏感，腔内红宝石为分散均匀放置，朝向随机，R1线的展宽同时反映压力不均匀分布（压力梯度）和单轴压力。</p>
+<p>红宝石荧光谱线均在压强和R1线稳定后测量，传压介质固态且高压下，需要几个小时来稳定。</p>
+<p>Fluorinerts and Daphne 7373化学稳定性强，静水压限制在1.2 GPa和2.4 GPa。还有一些就不记录了，看看比较关心的。</p>
+<p><strong>该文章测得氮、氩、氦在室温下的静水压限制压强分别为13,9和30 GPa。</strong> 使用的方法是看R1半峰全宽的变化规律。文中提到一句话是静水压的特点就是随着压强的升高半峰全宽微微下降。</p>
+<p>文中援引了一篇Klotz的文章，说即使在室温下，高于2 GPa时氩的压强质量弱于氮的。但因为他这篇测得是平均效果，所以他表示他也不知道（那你说他干啥）。</p>
+<p>然后终点来了，2 GPa的时候，氩随着降温过程压强变化只有百分之几，但是氦和氮的分别达30%到40%。随着压强升高，这个变化逐渐减小。在高于5 GPa时，氮的变化在百分之几的量级，而10 GPa时候氦的有10%。</p>
+<p>这种压强变化对于需要在比较大温度范围内测量物理性质的实验来说就是个缺点。同时，<strong>低温区较大的压强变化也会导致非静水压，对样品产生损伤</strong> ，即使用的是氦。</p>
+<p>文章最后的几点说明： - 文中的结果都针对的对顶砧，高对称地加压固体传压介质可以更好地获得静水压。 - 如果所研究的材料对应力敏感，或者比红宝石的机械力小，非静水效应可能影响材料的物理性质，尽管看上去红宝石的R1线只有小幅度加宽或者没有加宽。</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>超导</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Pressure-induced amorphization of Na2Al2Si3O10 2H2O and KAlSi2O6 zeolites</title>
     <url>/2023/046b4cc508.html</url>
     <content><![CDATA[<h2 id="文章信息">文章信息</h2>
@@ -1331,153 +1362,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       <tags>
         <tag>文献</tag>
         <tag>分子筛</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>低温传压介质</title>
-    <url>/2022/094d06fdeb.html</url>
-    <content><![CDATA[<h2 id="fujii-g.-and-nagano-h.-nature-of-pressure-transmitting-media-at-low-temperature.-japanese-journal-of-applied-physics.-1972.">Fujii, G. and Nagano, H. Nature of Pressure Transmitting Media at Low Temperature. Japanese Journal of Applied Physics. 1972.</h2>
-<p>72年的古早文章了。传压介质用的滑石（talc）和聚四氟乙烯（teflon），锡相变温度与压强相关，以此测量介质的同质性和柔软性。</p>
-<p>先提到以前用水做传压介质，降温后水结冰扩展，产生压力，但是在液氦温度下最多产生1.7 kbar的压强。后来用油-煤油做传压介质，获得了15 kbar的压强，常压下加压后降温。两种办法低温下都不好再改变压强。后有人用氢和氦气作为传压介质，其在4K时也足够柔软（plastic）。</p>
-<p>这篇文献实验压机的拉伸和压缩部分是SUS 27不锈钢制成，因为低温下其具有低导热性，延展性以及高屈服强度。 作者认为气体传压介质比较危险且相较于固体传压介质压力系统比较复杂，决定用滑石和聚四氟乙烯作为传压介质。 用4电极法测锡的电阻来检查传压介质的静水压性质。 超导相变温度宽度是开始相变和结束相变的温度差。</p>
-<p><strong>看完了，感觉参考意义不大，先这么着吧。</strong></p>
-<span id="more"></span>
-<h2 id="tateiwa-n.-and-haga-y.-evaluations-of-pressure-transmitting-media-for-cryogenic-experiments-with-diamond-anvil-cell.-rev.-sci.-instrum.-2009.">Tateiwa, N. and Haga, Y. Evaluations of pressure-transmitting media for cryogenic experiments with diamond anvil cell. Rev. Sci. Instrum. 2009.</h2>
-<p>作者研究了14种不同的传压介质，想看哪种更适合在低温下做高压实验，结果得出结论是氮氩氦……好家伙，我就是怀疑氩不合适才来看的。</p>
-<p>一般常温下使用液体作为传压介质，但是随着温度的降低，传压介质可能发生液-固相变，固体可能在低温区域产生非静水压。该文章就是评估低温下各种传压介质性质的，尤其是在电子强关联系统中。电子态很容易受到杂质或非静水压影响。</p>
-<p>文中举例CaFe2As2在有机介质中表现出了超导性，但是在氦中未出现，感觉和我想找的相似。低温下非静水压是无法避免的，所以需要研究合适的传压介质。 过去人们主要研究常温下传压介质的静水性，很少几篇研究了低温下3 GPa以下的性质，这篇文章研究了14中不同介质10 GPa在室温、77K和4.2的性质。</p>
-<p>金刚石压砧小砧面800微米，样品腔400微米，用304不锈钢片，红宝石小于10微米，光线直径约600微米，展现的是整个样品腔的平均非静水压效应。</p>
-<p>当出现非静水压，R1和R2线会展宽。红宝石R1线对于单轴压力比较敏感，腔内红宝石为分散均匀放置，朝向随机，R1线的展宽同时反映压力不均匀分布（压力梯度）和单轴压力。</p>
-<p>红宝石荧光谱线均在压强和R1线稳定后测量，传压介质固态且高压下，需要几个小时来稳定。</p>
-<p>Fluorinerts and Daphne 7373化学稳定性强，静水压限制在1.2 GPa和2.4 GPa。还有一些就不记录了，看看比较关心的。</p>
-<p><strong>该文章测得氮、氩、氦在室温下的静水压限制压强分别为13,9和30 GPa。</strong> 使用的方法是看R1半峰全宽的变化规律。文中提到一句话是静水压的特点就是随着压强的升高半峰全宽微微下降。</p>
-<p>文中援引了一篇Klotz的文章，说即使在室温下，高于2 GPa时氩的压强质量弱于氮的。但因为他这篇测得是平均效果，所以他表示他也不知道（那你说他干啥）。</p>
-<p>然后终点来了，2 GPa的时候，氩随着降温过程压强变化只有百分之几，但是氦和氮的分别达30%到40%。随着压强升高，这个变化逐渐减小。在高于5 GPa时，氮的变化在百分之几的量级，而10 GPa时候氦的有10%。</p>
-<p>这种压强变化对于需要在比较大温度范围内测量物理性质的实验来说就是个缺点。同时，<strong>低温区较大的压强变化也会导致非静水压，对样品产生损伤</strong> ，即使用的是氦。</p>
-<p>文章最后的几点说明： - 文中的结果都针对的对顶砧，高对称地加压固体传压介质可以更好地获得静水压。 - 如果所研究的材料对应力敏感，或者比红宝石的机械力小，非静水效应可能影响材料的物理性质，尽管看上去红宝石的R1线只有小幅度加宽或者没有加宽。</p>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>文献</tag>
-        <tag>超导</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jade操作小指南</title>
-    <url>/2022/0680a0f618.html</url>
-    <content><![CDATA[<p>导入里的import可以设置txt 找到自己的txt后导入，也可以直接拖入。</p>
-<p>一上来就遇到了一个非常脑瘫的问题，导入的txt设置问题。 <br>这里把需要修改的参数列出来吧。</p>
-<span id="more"></span>
-<p>Data Starts at L：这个指的是从第几行开始处理数据 <br>Char- &amp; Width：左边的空是从第几位开始是强度，右边是强度字符长度，这个长点无所谓 <br>Angle Column：左边的空是从第几位开始是角度，右边是到第几位角度结束 <br>主要就是改这几个，然后图像就正确了。 <br>举例： <br>数据为：10.0000 1320.0000 <br>相应设置为： <br>Angle Column：1 7 <br>Char- &amp; Width：9 9</p>
-<ol type="1">
-<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\2.png">（但是不建议）去除背底，双击工具栏的BG，这个可能是因为样品粗糙，或者光源有问题，或者是粉末。</li>
-<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\1.png">（但是不建议）粉末可能杂峰较多，可以用工具栏的这个平滑一下。</li>
-<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\3.png">Search &amp; Match上右键，右边可以设置元素，两下有底色的是确定有的，单击字体变色是可能存在的。左边第一个不限制查找。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>小教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于什么是DSCs</title>
-    <url>/2023/03de6b7451.html</url>
-    <content><![CDATA[<p>Dye-sensitized solar cells：染料敏化太阳能电池</p>
-<blockquote>
-<p>“染料敏化太阳能电池”全称为“染料敏化纳米薄膜太阳能电池 ”，是模拟自然界中的光合作用原理，采用吸附染料的纳米多孔二氧化钛半导体膜作为光阳极，并选用适当的氧化－还原电解质，用镀铂的导电玻璃作为光阴极，这样一个简单的染料敏化太阳电池就做好了。只要太阳光一照到电池上，它就会源源不断的开始发电了。</p>
-<p>引用自：<a href="https://www.cas.cn/kxcb/kpwz/201305/t20130528_3852089.shtml#:~:text=%E2%80%9C%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E5%A4%AA%E9%98%B3%E8%83%BD%E7%94%B5%E6%B1%A0%E2%80%9D%E5%85%A8%E7%A7%B0%E4%B8%BA%E2%80%9C%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E7%BA%B3%E7%B1%B3%E8%96%84%E8%86%9C%E5%A4%AA%E9%98%B3%E8%83%BD%E7%94%B5%E6%B1%A0,%E2%80%9D%EF%BC%8C%E6%98%AF%E6%A8%A1%E6%8B%9F%E8%87%AA%E7%84%B6%E7%95%8C%E4%B8%AD%E7%9A%84%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8%E5%8E%9F%E7%90%86%EF%BC%8C%E9%87%87%E7%94%A8%E5%90%B8%E9%99%84%E6%9F%93%E6%96%99%E7%9A%84%E7%BA%B3%E7%B1%B3%E5%A4%9A%E5%AD%94%E4%BA%8C%E6%B0%A7%E5%8C%96%E9%92%9B%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%86%9C%E4%BD%9C%E4%B8%BA%E5%85%89%E9%98%B3%E6%9E%81%EF%BC%8C%E5%B9%B6%E9%80%89%E7%94%A8%E9%80%82%E5%BD%93%E7%9A%84%E6%B0%A7%E5%8C%96%EF%BC%8D%E8%BF%98%E5%8E%9F%E7%94%B5%E8%A7%A3%E8%B4%A8%EF%BC%8C%E7%94%A8%E9%95%80%E9%93%82%E7%9A%84%E5%AF%BC%E7%94%B5%E7%8E%BB%E7%92%83%E4%BD%9C%E4%B8%BA%E5%85%89%E9%98%B4%E6%9E%81%EF%BC%8C%E8%BF%99%E6%A0%B7%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E5%A4%AA%E9%98%B3%E7%94%B5%E6%B1%A0%E5%B0%B1%E5%81%9A%E5%A5%BD%E4%BA%86%E3%80%82">中科院上海硅酸盐研究所文章</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>豆知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文词组总结</title>
-    <url>/2022/09b48925d7.html</url>
-    <content><![CDATA[<p>看到了就随机记一下吧：</p>
-<p>除此之外 beyond this point</p>
-<p>急剧下降 dramatic decrease</p>
-<p>精确地 refined</p>
-<p>先锋的 avant garde</p>
-<p>从这个角度看 from this perspective</p>
-<span id="more"></span>
-<p>从……中解脱 disentangle</p>
-<p>潜在的 potential</p>
-<p>被深入研究 have been closely studied</p>
-<p>阐明，说明 elucidate</p>
-<p>利用 utilize</p>
-<p>人们普遍认为 It is broadly believed that</p>
-<p>结果表明 It is revealed that</p>
-<p>也就是说（用在句中） i.e.,</p>
-<p>不管，不论 regardless of</p>
-<p>担任，充当...作用 serve as</p>
-<p>另外 In addition</p>
-<p>本质上 essentially</p>
-<p>长期存在的 long-standing</p>
-<p>值得注意地 significantly</p>
-<p>归因于 being ascribed to</p>
-<p>随后 subsequently</p>
-<p>非同寻常的 extraordinary</p>
-<p>令人信服的 conclusive</p>
-<p><strong>使便利 减轻...困难 facilitate</strong></p>
-<p>融合为整体 integrate</p>
-<p><strong>与...一致 in line with</strong></p>
-<p>有助于 contribute to doing</p>
-<p>紧随其后 right after</p>
-<p>远高于 well above</p>
-<p>大受震撼 astonishing</p>
-<p>激励 spur</p>
-<p>长期寻求 longsought</p>
-<p>足够地 sufficiently</p>
-<p>不可避免的问题 inescapable problem</p>
-<p>关键点 sticking poit</p>
-<p>可行的手段 viable avenue</p>
-<p>证实 corroborate</p>
-<p>揭示 uncover</p>
-<p>在某种程度上 to some extent</p>
-<p>试探性的 tentative</p>
-<p>有利于 favors to</p>
-<p>很明显 It is clear that</p>
-<p>迄今为止 to date</p>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>论文写作</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin操作小指南</title>
-    <url>/2022/06431ba714.html</url>
-    <content><![CDATA[<p>真的很小，用的是2021版。</p>
-<h3 id="开始之前">开始之前</h3>
-<ol type="1">
-<li>固定左侧的项目管理器。</li>
-<li>修改默认字体和页边距： <br>Preference-Options-Text Fonts中Font和Default设置为Times New Roman <br>隔壁的Page设置为Tight</li>
-<li>一些快捷键和图标 <br><img align="left" width="24" height="29" data-src="\tu\Origin操作小指南\1.png"> Rescale表示自动重置坐标轴刻度，以使图像可以充满区域； <br><br><img align="left" width="25" height="136" data-src="\tu\Origin操作小指南\2.png"> 可以增加坐标轴； <br><br><br><br><br>Ctrl+D 新增列；</li>
-</ol>
-<span id="more"></span>
-<h3 id="开整">开整</h3>
-<ol type="1">
-<li>导入数据</li>
-<li>调整坐标轴，双击坐标轴进入设置</li>
-</ol>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>小教程</tag>
       </tags>
   </entry>
   <entry>
@@ -1939,6 +1823,125 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
+    <title>Origin操作小指南</title>
+    <url>/2022/06431ba714.html</url>
+    <content><![CDATA[<p>真的很小，用的是2021版。</p>
+<h3 id="开始之前">开始之前</h3>
+<ol type="1">
+<li>固定左侧的项目管理器。</li>
+<li>修改默认字体和页边距： <br>Preference-Options-Text Fonts中Font和Default设置为Times New Roman <br>隔壁的Page设置为Tight</li>
+<li>一些快捷键和图标 <br><img align="left" width="24" height="29" data-src="\tu\Origin操作小指南\1.png"> Rescale表示自动重置坐标轴刻度，以使图像可以充满区域； <br><br><img align="left" width="25" height="136" data-src="\tu\Origin操作小指南\2.png"> 可以增加坐标轴； <br><br><br><br><br>Ctrl+D 新增列；</li>
+</ol>
+<span id="more"></span>
+<h3 id="开整">开整</h3>
+<ol type="1">
+<li>导入数据</li>
+<li>调整坐标轴，双击坐标轴进入设置</li>
+</ol>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jade操作小指南</title>
+    <url>/2022/0680a0f618.html</url>
+    <content><![CDATA[<p>导入里的import可以设置txt 找到自己的txt后导入，也可以直接拖入。</p>
+<p>一上来就遇到了一个非常脑瘫的问题，导入的txt设置问题。 <br>这里把需要修改的参数列出来吧。</p>
+<span id="more"></span>
+<p>Data Starts at L：这个指的是从第几行开始处理数据 <br>Char- &amp; Width：左边的空是从第几位开始是强度，右边是强度字符长度，这个长点无所谓 <br>Angle Column：左边的空是从第几位开始是角度，右边是到第几位角度结束 <br>主要就是改这几个，然后图像就正确了。 <br>举例： <br>数据为：10.0000 1320.0000 <br>相应设置为： <br>Angle Column：1 7 <br>Char- &amp; Width：9 9</p>
+<ol type="1">
+<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\2.png">（但是不建议）去除背底，双击工具栏的BG，这个可能是因为样品粗糙，或者光源有问题，或者是粉末。</li>
+<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\1.png">（但是不建议）粉末可能杂峰较多，可以用工具栏的这个平滑一下。</li>
+<li><img align="left" width="24" height="29" data-src="\tu\jade操作小指南\3.png">Search &amp; Match上右键，右边可以设置元素，两下有底色的是确定有的，单击字体变色是可能存在的。左边第一个不限制查找。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于什么是DSCs</title>
+    <url>/2023/03de6b7451.html</url>
+    <content><![CDATA[<p>Dye-sensitized solar cells：染料敏化太阳能电池</p>
+<blockquote>
+<p>“染料敏化太阳能电池”全称为“染料敏化纳米薄膜太阳能电池 ”，是模拟自然界中的光合作用原理，采用吸附染料的纳米多孔二氧化钛半导体膜作为光阳极，并选用适当的氧化－还原电解质，用镀铂的导电玻璃作为光阴极，这样一个简单的染料敏化太阳电池就做好了。只要太阳光一照到电池上，它就会源源不断的开始发电了。</p>
+<p>引用自：<a href="https://www.cas.cn/kxcb/kpwz/201305/t20130528_3852089.shtml#:~:text=%E2%80%9C%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E5%A4%AA%E9%98%B3%E8%83%BD%E7%94%B5%E6%B1%A0%E2%80%9D%E5%85%A8%E7%A7%B0%E4%B8%BA%E2%80%9C%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E7%BA%B3%E7%B1%B3%E8%96%84%E8%86%9C%E5%A4%AA%E9%98%B3%E8%83%BD%E7%94%B5%E6%B1%A0,%E2%80%9D%EF%BC%8C%E6%98%AF%E6%A8%A1%E6%8B%9F%E8%87%AA%E7%84%B6%E7%95%8C%E4%B8%AD%E7%9A%84%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8%E5%8E%9F%E7%90%86%EF%BC%8C%E9%87%87%E7%94%A8%E5%90%B8%E9%99%84%E6%9F%93%E6%96%99%E7%9A%84%E7%BA%B3%E7%B1%B3%E5%A4%9A%E5%AD%94%E4%BA%8C%E6%B0%A7%E5%8C%96%E9%92%9B%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%86%9C%E4%BD%9C%E4%B8%BA%E5%85%89%E9%98%B3%E6%9E%81%EF%BC%8C%E5%B9%B6%E9%80%89%E7%94%A8%E9%80%82%E5%BD%93%E7%9A%84%E6%B0%A7%E5%8C%96%EF%BC%8D%E8%BF%98%E5%8E%9F%E7%94%B5%E8%A7%A3%E8%B4%A8%EF%BC%8C%E7%94%A8%E9%95%80%E9%93%82%E7%9A%84%E5%AF%BC%E7%94%B5%E7%8E%BB%E7%92%83%E4%BD%9C%E4%B8%BA%E5%85%89%E9%98%B4%E6%9E%81%EF%BC%8C%E8%BF%99%E6%A0%B7%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%9F%93%E6%96%99%E6%95%8F%E5%8C%96%E5%A4%AA%E9%98%B3%E7%94%B5%E6%B1%A0%E5%B0%B1%E5%81%9A%E5%A5%BD%E4%BA%86%E3%80%82">中科院上海硅酸盐研究所文章</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>豆知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文词组总结</title>
+    <url>/2022/09b48925d7.html</url>
+    <content><![CDATA[<p>看到了就随机记一下吧：</p>
+<p>除此之外 beyond this point</p>
+<p>急剧下降 dramatic decrease</p>
+<p>精确地 refined</p>
+<p>先锋的 avant garde</p>
+<p>从这个角度看 from this perspective</p>
+<span id="more"></span>
+<p>从……中解脱 disentangle</p>
+<p>潜在的 potential</p>
+<p>被深入研究 have been closely studied</p>
+<p>阐明，说明 elucidate</p>
+<p>利用 utilize</p>
+<p>人们普遍认为 It is broadly believed that</p>
+<p>结果表明 It is revealed that</p>
+<p>也就是说（用在句中） i.e.,</p>
+<p>不管，不论 regardless of</p>
+<p>担任，充当...作用 serve as</p>
+<p>另外 In addition</p>
+<p>本质上 essentially</p>
+<p>长期存在的 long-standing</p>
+<p>值得注意地 significantly</p>
+<p>归因于 being ascribed to</p>
+<p>随后 subsequently</p>
+<p>非同寻常的 extraordinary</p>
+<p>令人信服的 conclusive</p>
+<p><strong>使便利 减轻...困难 facilitate</strong></p>
+<p>融合为整体 integrate</p>
+<p><strong>与...一致 in line with</strong></p>
+<p>有助于 contribute to doing</p>
+<p>紧随其后 right after</p>
+<p>远高于 well above</p>
+<p>大受震撼 astonishing</p>
+<p>激励 spur</p>
+<p>长期寻求 longsought</p>
+<p>足够地 sufficiently</p>
+<p>不可避免的问题 inescapable problem</p>
+<p>关键点 sticking poit</p>
+<p>可行的手段 viable avenue</p>
+<p>证实 corroborate</p>
+<p>揭示 uncover</p>
+<p>在某种程度上 to some extent</p>
+<p>试探性的 tentative</p>
+<p>有利于 favors to</p>
+<p>很明显 It is clear that</p>
+<p>迄今为止 to date</p>
+<p>这指出 this points to</p>
+<p>同样地 By the same token</p>
+<p>确凿证据 Conclusive evidence</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>论文写作</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>桜ノ雨</title>
     <url>/2022/066631e6d7.html</url>
     <content><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=22677426&amp;auto=0&amp;height=32">
@@ -1953,6 +1956,53 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </categories>
       <tags>
         <tag>歌词</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python内置函数（3.11.5）</title>
+    <url>/2023/09273f918f.html</url>
+    <content><![CDATA[<p>终于开始碰Python了，应该已经有中文的了吧，不过自己学的话还是自己来一遍吧</p>
+<p>来自<a href="https://docs.python.org/3/library/functions.html#abs">Built-in Functions — Python 3.11.5 documentation</a>，是3.11.5版的。</p>
+<p>顺序暂时是字母，等学多了理解了按照类型分一下吧。</p>
+<p>详见全文</p>
+<span id="more"></span>
+<h1 id="a">A</h1>
+<h2 id="absx-绝对值">abs(x) 绝对值</h2>
+<p>abs(<em>x</em>)</p>
+<p>返回x的绝对值，参数可以是整数、浮点数，如果参数是复数，返回其大小（该复数与共轭复数的乘积的正平方根）。 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">abs</span>(<span class="built_in">complex</span>(<span class="number">2</span>,<span class="number">4</span>))</span><br><span class="line"><span class="number">4.47213595499958</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="aiter">aiter()</h2>
+<p>aiter(<em>async_iterable</em>)</p>
+<p>3.10版本中新增的</p>
+<p>返回异步可迭代对象（<a href="https://docs.python.org/3/glossary.html#term-asynchronous-iterable">Glossary — Python 3.11.5 documentation</a>）的异步迭代器（<a href="https://docs.python.org/3/glossary.html#term-asynchronous-iterator">Glossary — Python 3.11.5 documentation</a>）。</p>
+<h2 id="all">all()</h2>
+<p>all(<em>iterable</em>)</p>
+<p>如果可迭代对象的所有元素都为true（或者可迭代对象为空），则返回True。</p>
+<p>等价于 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">all</span>(<span class="params">iterable</span>):</span></span><br><span class="line">    <span class="keyword">for</span> element <span class="keyword">in</span> iterable:</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> element:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="anext">anext()</h2>
+<p><em>awaitable</em> anext(<em>async_iterator</em>)</p>
+<p><em>awaitable</em> anext(<em>async_iterator</em>, <em>default</em>)</p>
+<p>3.10版本中新增的</p>
+<p>等待时，从给定的异步迭代器返回下一项，如果给定且迭代器已用尽，则返回默认值。</p>
+<p>这是内置的next()的异步变体，表现类似。</p>
+<h2 id="any">any()</h2>
+<p>any(<em>iterable</em>)</p>
+<p>如果可迭代对象的任何元素为true，则返回True。如果可迭代对象为空，则返回False。</p>
+<p>等价于 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">any</span>(<span class="params">iterable</span>):</span></span><br><span class="line">    <span class="keyword">for</span> element <span class="keyword">in</span> iterable:</span><br><span class="line">        <span class="keyword">if</span> element:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="ascii">ascii()</h2>
+<p>ascii(<em>object</em>)</p>
+<p>转义非 ASCII 字符</p>
+<p>返回对象的可读字符串，利用<code>\x</code>、<code>\u</code>或者<code>\U</code>将非ascii字符替换为转义字符。 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">ascii</span>(<span class="string">&#x27;I love 中国&#x27;</span>)</span><br><span class="line"><span class="string">&quot;&#x27;I love \\u4e2d\\u56fd&#x27;&quot;</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="b">B</h1>
+<h2 id="bin">bin()</h2>
+<p>bin(<em>x</em>)</p>
+]]></content>
+      <categories>
+        <category>网站</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -3075,7 +3125,7 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
 <p>另一方面，主客交互也对框架有重要影响。已观察到各种分子的吸附会导致结构变形，从而导致晶胞体积发生变化。沸石晶胞的膨胀可通过客体分子与骨架结构之间的排斥相互作用来解释，而收缩是由吸引相互作用引起的。研究指出，不同拓扑框架的晶胞体积变化程度取决于通道中吸附物的种类、数量和位置。当施加高压时，一些分子/原子，例如传压介质（PTM）中的CO2和Ar，可以被挤压到多孔沸石中以扩展骨架。与不含客体的沸石的压力响应相比，在非晶化方面观察到优异的机械性能和高结构稳定性。在对原样（as-made）ZSM-5和煅烧ZSM-5的高压研究中也出现了类似的现象；由于通道中有机模板的支持作用，前者显示出比后者更高的变形和非晶化阈值压力。然而，在压力诱导水合 (PIH) 时，AlPO4-54·xH2O中发现了不同的结果。虽然由于施加压力，H2O中样品的相对晶胞体积随着PTM的增加而增加，但非晶化发生在0.9 GPa，远低于使用非穿透PTM或不使用PTM时的近2 GPa。随后的研究表明，正是通道中的水分子与框架铝原子配位，破坏了骨架结构并加速了非晶化。同样有趣的是，在一些LTA沸石（Na-A和Li-A）中，电荷平衡金属阳离子在卸压时将非晶化结构重建回结晶状态方面发挥着重要作用。因此，压力诱导的非晶化是可逆的，沸石在一些高压研究中显示出结构记忆。相反，对于煅烧的ZK-4没有发现可逆非晶化，其中电荷平衡阳离子主要是较小的质子。</p>
 <p>显然，沸石的主体骨架与通道中的客体之间存在着密切的相关性。两者都表现出相互依赖和相互作用。一方的任何变化都会导致另一方不可避免的反应。正如我们所知，压力引起的沸石结构转变，比如过水化、相变、孔隙坍塌和非晶化，一直是重要的话题。长期以来，该领域的研究一直具有重大的基础科学意义，它不仅可以帮助我们更好地了解内在结构修饰，而且还为我们提供了一个机会来确定地球深处沸石材料在过去地质时间的演化和未来在极端条件下的特殊应用。总的来说，高压同步辐射X射线衍射 (XRD) 是研究结构转变的一种强有力的方法，但它有局限性并不适用于所有情况。在这里，我们首先结合理论模拟进行拉曼研究，以检测高压下AlPO4-5的转变。在研究过程中，受限单个碘分子的拉曼特征变化用于判断AlPO4-5的框架坍塌。随后的模拟计算揭示了在相同压力范围内清晰的内部转变过程。因此，这表明客体碘分子可被视为检测沸石骨架坍塌的有效分子探针。</p>
 <h2 id="实验和模拟细节">实验和模拟细节</h2>
-<p>AlPO4-5样品(AFI)是通过水热法合成的棒状晶体，平均尺寸约为10x10x30立方微米。低密度碘填充AFI(I@AFI)样品是使用蒸汽扩散法制备的，碘的质量百分比仅为5.1%。在实验过程中，拉曼光谱是使用雷尼绍光谱仪记录的，激发波长为514.5 nm，配备50x显微镜物镜，激光斑点尺寸约为 5 mm。光谱仪的光谱分辨率为1 cm-1。通过砧面400毫米的DAC实现高压。将I@AFI样品装入在130微米的T301不锈钢垫圈腔室中。我们使用硅油作为传压介质(PTM)，红宝石荧光进行标压。</p>
+<p>AlPO4-5样品(AFI)是通过水热法合成的棒状晶体，平均尺寸约为10x10x30立方微米。低密度碘填充AFI(I@AFI)样品是使用蒸汽扩散法制备的，碘的质量百分比仅为5.1%。在实验过程中，拉曼光谱是使用雷尼绍光谱仪记录的，激发波长为514.5 nm，配备50x显微镜物镜，激光斑点尺寸约为 5 mm。光谱仪的光谱分辨率为1 cm-1。通过砧面400微米的DAC实现高压。将I@AFI样品装入在130微米的T301不锈钢垫圈腔室中。我们使用硅油作为传压介质(PTM)，红宝石荧光进行标压。</p>
 <p>在理论模拟中，首先根据先前的研究构建了一个包含两个初始晶胞的1x1x2超级晶胞。</p>
 <p>如图3a所示，OA、OB和OC沿ox、oy和oz方向。OA和OB的长度为14.0986 Å，OC的长度为17.4290 Å，是一个晶胞中晶格参数c的两倍。基于密度泛函理论(DFT)在不同压力下对AFI进行几何优化，如在Materials Studio包中的CASTEP模块中实施的那样。交换和相关效应用广义梯度近似（GGA）来描述。应用520 eV范数守恒赝势能截止，并在计算中使用AFI的电子布里渊区积分的1x1x1 Monkhorst–Pack网格间距。在0到15 GPa的模拟压力范围内，原子位置和晶格都完全松弛，并且在压缩时没有形成新的晶体结构。</p>
 <h2 id="结果与讨论">结果与讨论</h2>
