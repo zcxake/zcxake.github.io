@@ -15,6 +15,14 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/014a17b156.html</url>
+    <content><![CDATA[<p><span class="math inline">\(P=\dfrac{A}{B}\left[\left(\dfrac{\lambda_1}{\lambda_0}\right)^B-1\right]\)</span>, <span class="math inline">\(A=1920\)</span>, <span class="math inline">\(B=9.61\)</span>;</p>
+<p><span class="math inline">\(T\le80\)</span>: <span class="math inline">\(\lambda_1=\lambda+0.92\)</span>;</p>
+<p><span class="math inline">\(80&lt;T&lt;298\)</span>: <span class="math inline">\(\lambda_1=\lambda+0.92\)</span>, <span class="math inline">\(\Delta T=T-298\)</span>, <span class="math inline">\(\lambda_1=\lambda+0.00003547-\Delta T\times0.0068259498-\Delta T^2\times0.0000046231-\Delta T^3\times0.0000000337\)</span></p>
+]]></content>
+  </entry>
+  <entry>
     <title>HTML颜色名</title>
     <url>/2022/05a4b3b729.html</url>
     <content><![CDATA[<p>网上蛮多的了，但是好多哦，参考起来好麻烦，整个自己喜欢的颜色吧 全部颜色名在这儿：https://www.runoob.com/html/html-colornames.html ### <font color="BlueViolet">紫色哒：</font> <strong><font color="DarkMagenta">DarkMagenta</font></strong> <strong><font color="BlueViolet">BlueViolet</font></strong> <strong><font color="DarkOrchid">DarkOrchid</font></strong> <strong><font color="DarkViolet">DarkViolet</font></strong> <strong><font color="MediumSlateBlue">MediumSlateBlue</font></strong> <strong><font color="MediumPurple">MediumPurple</font></strong> <strong><font color="MediumOrchid">MediumOrchid</font></strong> <strong><font color="Orchid">Orchid</font></strong> <strong><font color="Plum">Plum</font></strong> <strong><font color="Lavender">Lavender</font></strong></p>
@@ -42,14 +50,6 @@
       <tags>
         <tag>颜色 html</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/014a17b156.html</url>
-    <content><![CDATA[<p><span class="math inline">\(P=\dfrac{A}{B}\left[\left(\dfrac{\lambda_1}{\lambda_0}\right)^B-1\right]\)</span>, <span class="math inline">\(A=1920\)</span>, <span class="math inline">\(B=9.61\)</span>;</p>
-<p><span class="math inline">\(T\le80\)</span>: <span class="math inline">\(\lambda_1=\lambda+0.92\)</span>;</p>
-<p><span class="math inline">\(80&lt;T&lt;298\)</span>: <span class="math inline">\(\lambda_1=\lambda+0.92\)</span>, <span class="math inline">\(\Delta T=T-298\)</span>, <span class="math inline">\(\lambda_1=\lambda+0.00003547-\Delta T\times0.0068259498-\Delta T^2\times0.0000046231-\Delta T^3\times0.0000000337\)</span></p>
-]]></content>
   </entry>
   <entry>
     <title>下载各大网站视频的方法</title>
@@ -208,260 +208,471 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>补番参考</title>
-    <url>/2023/03a9b7bd2c.html</url>
-    <content><![CDATA[<p>其实就是一些榜单……来自壁姐姐。</p>
-<p><font color="DimGray">萝卜</font> <font color="DimGray"></font> | <font color="Crimson">少年改/热血</font> <font color="Crimson"></font> | <font color="Maroon">青年改</font> <font color="Maroon"></font> | <font color="LimeGreen">恋爱</font> <font color="LimeGreen"></font> | <font color="LightCoral">日常</font> <font color="LightCoral"></font> | <font color="MistyRose ">百合</font> <font color="MistyRose "></font> | <font color="Indigo">BL</font> <font color="Indigo"></font> | <font color="Khaki">美少女</font> <font color="Khaki"></font> | <font color="MediumBlue">运动</font> <font color="MediumBlue"></font> | <font color="HotPink">爱抖露</font> <font color="HotPink"></font> | <font color="CadetBlue">轻改</font> <font color="CadetBlue"></font> | <font color="DarkOrange">搞笑</font> <font color="DarkOrange"></font> | <font color="DarkGoldenRod">游戏改</font> <font color="DarkGoldenRod"></font> | <font color="LightSkyBlue">悬疑/推理</font> <font color="LightSkyBlue"></font></p>
-<p>详见全文</p>
+    <title>可能是一些好吃的水果吧</title>
+    <url>/2023/09556379f9.html</url>
+    <content><![CDATA[<p>以后可以尝试尝试~</p>
+<table>
+<thead>
+<tr class="header">
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>枚珑瓜</td>
+<td>漳州牛奶青枣</td>
+<td>金钻凤梨</td>
+<td>金美人蜜瓜</td>
+<td>庞各庄西瓜</td>
+<td>庞各庄西瓜</td>
+<td>庞各庄西瓜</td>
+<td>庞各庄西瓜</td>
+<td>钦蜜九号黄金百香果</td>
+<td>钦蜜九号黄金百香果</td>
+<td>钦蜜九号黄金百香果</td>
+<td>枚珑瓜</td>
+</tr>
+<tr class="even">
+<td>漳州牛奶青枣</td>
+<td>武鸣沃柑</td>
+<td>漳州牛奶青枣</td>
+<td>金钻凤梨</td>
+<td>玉菇甜瓜</td>
+<td>钦蜜九号黄金百香果</td>
+<td>钦蜜九号黄金百香果</td>
+<td>钦蜜九号黄金百香果</td>
+<td>徐香猕猴桃</td>
+<td>金钻凤梨</td>
+<td>漳州牛奶青枣</td>
+<td>漳州牛奶青枣</td>
+</tr>
+<tr class="odd">
+<td>武鸣沃柑</td>
+<td></td>
+<td>武鸣沃柑</td>
+<td>武鸣沃柑</td>
+<td>金美人蜜瓜</td>
+<td>玉菇甜瓜</td>
+<td>百色田东桂七芒</td>
+<td>百色田东桂七芒</td>
+<td>翠香猕猴桃</td>
+<td>漳州葡萄柚</td>
+<td>四会砂糖橘</td>
+<td>武鸣沃柑</td>
+</tr>
+<tr class="even">
+<td>四会砂糖橘</td>
+<td></td>
+<td></td>
+<td>不知火丑橘</td>
+<td>金钻凤梨</td>
+<td>平谷水蜜桃</td>
+<td>蒙阴黄桃</td>
+<td>蒙阴黄桃</td>
+<td>大荔冬枣</td>
+<td>徐香猕猴桃</td>
+<td>金钻凤梨</td>
+<td>四会砂糖橘</td>
+</tr>
+<tr class="odd">
+<td>德庆皇帝柑</td>
+<td></td>
+<td></td>
+<td>海南贵妃芒</td>
+<td>小台农</td>
+<td>运城黄心油桃</td>
+<td>平谷水蜜桃</td>
+<td>平谷水蜜桃</td>
+<td>平谷水蜜桃</td>
+<td>大荔冬枣</td>
+<td>融安滑皮金桔</td>
+<td>融安滑皮金桔</td>
+</tr>
+<tr class="even">
+<td>丹东草莓</td>
+<td></td>
+<td></td>
+<td></td>
+<td>运城黄心油桃</td>
+<td>海南贵妃芒</td>
+<td>民勤蜜瓜</td>
+<td>民勤蜜瓜</td>
+<td>博洋9号甜瓜</td>
+<td>博洋9号甜瓜</td>
+<td>德庆皇帝柑</td>
+<td>德庆皇帝柑</td>
+</tr>
+<tr class="odd">
+<td>砂糖橘</td>
+<td></td>
+<td></td>
+<td></td>
+<td>不知火丑橘</td>
+<td></td>
+<td>运城黄心油桃</td>
+<td>运城黄心油桃</td>
+<td>贵妃蜜枣</td>
+<td>库尔勒香梨</td>
+<td>漳州葡萄柚</td>
+<td>漳州葡萄柚</td>
+</tr>
+<tr class="even">
+<td>红颜草莓</td>
+<td></td>
+<td></td>
+<td></td>
+<td>海南贵妃芒</td>
+<td></td>
+<td>海南贵妃芒</td>
+<td>文昌老椰子</td>
+<td>库尔勒香梨</td>
+<td>平和红柚</td>
+<td>爱媛38号果冻橙</td>
+<td>丹东草莓</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>文昌老椰子</td>
+<td></td>
+<td>莱阳秋月梨</td>
+<td>莱阳秋月梨</td>
+<td>平和红柚</td>
+<td>砂糖橘</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>红心猕猴桃</td>
+<td>安岳柠檬</td>
+<td>安岳柠檬</td>
+<td>爱媛38号果冻橙</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>安岳柠檬</td>
+<td>运城“冰溏心”脆柿</td>
+<td>阿克苏冰糖心苹果</td>
+<td>安岳柠檬</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>红河高山香蕉</td>
+<td>富平柿饼</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>运城“冰溏心”脆柿</td>
+<td>红颜草莓</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>阿克苏冰糖心苹果</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>红河高山香蕉</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <span id="more"></span>
-<h1 id="评分榜">评分榜</h1>
-<h2 id="月评分榜"><a href="https://www.bilibili.com/video/BV18x4y1u72T/">2022 10月评分榜</a></h2>
-<ol type="1">
-<li><a href="https://www.bilibili.com/bangumi/play/ss43164"><font color="LightCoral">孤独摇滚!</font></a></li>
-<li>赛博朋克：边缘行者</li>
-<li><font color="Crimson">死神 千年血战篇</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43141"><font color="Crimson">灵能百分百 第三季</font></a></li>
-<li><font color="MistyRose ">向山进发 第四季</font></li>
-<li><font color="DarkOrange">间谍过家家 分割后半</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42105"><font color="DarkOrange">异世界舅舅</font></a></li>
-<li><font color="Crimson">电锯人</font></li>
-<li><font color="Crimson">JOJO的奇妙冒险 石之海 第二季</font></li>
-<li><font color="HotPink">IDOLiSH7 第三季 分割后半</font></li>
-<li><font color="LimeGreen">浪漫杀手</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43155"><font color="LightCoral">少女手工</font></a></li>
-<li><font color="DimGray">机动战士高达 水星的魔女</font></li>
-<li>秋叶原女仆战争</li>
-<li><font color="Crimson">福星小子(2022)</font></li>
-<li><font color="CadetBlue">想要成为影之实力者</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43142"><font color="DarkOrange">入间同学入魔了 第三季</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43148"><font color="Crimson">致不灭的你 第二季</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43145"><font color="MediumBlue">蓝色监狱</font></a></li>
-<li>不道德公会</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
-<li>老虎和兔子 第二季 分割后半</li>
-<li><font color="CadetBlue">转生成为魔剑</font></li>
-<li><font color="DarkOrange">四人各有小秘密</font></li>
-<li><font color="LimeGreen">恋爱FLOPS</font></li>
-<li><font color="CadetBlue">后宫之乌</font></li>
-<li><font color="LimeGreen">宇崎学妹想要玩!第二季</font></li>
-<li><font color="MediumBlue">飙速宅男 第五季</font></li>
-<li><font color="LimeGreen">夫妇以上，恋人未满</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43147">我家师傅没有尾巴</a></li>
-<li><font color="DarkOrange">人类毛病大学-不死学部不幸学科-</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43146"><font color="CadetBlue">作为恶役大小姐就该养魔王</font></a></li>
-<li>Muv-Luv Alternative 第二季</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43153"><font color="CadetBlue">新手炼金术师的店铺经营</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43152"><font color="LimeGreen">书虫公主</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43158">pop子和pipi美的日常 第二季</a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43144"><font color="CadetBlue">驯兽师被逐出队伍后邂逅最强少女</font></a></li>
-<li><font color="Crimson">BASTARD!!暗黑破坏神 分割后半</font></li>
-<li>彼得·格里尔的贤者时间 第二季</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss43167">忍者一时</a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42106"><font color="Maroon">惑星公主蜥蜴骑士</font></a></li>
-<li><font color="DarkGoldenRod">圣剑传说 玛娜传奇 -泪珠水晶-</font></li>
-</ol>
-<h2 id="月评分榜-1"><a href="https://www.bilibili.com/video/BV1qG4y1n7a6/">2022 7月评分榜</a></h2>
-<ol type="1">
-<li>来自深渊 烈日的黄金乡</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss41417"><font color="LightSkyBlue">夏日重现</font></a></li>
-<li><font color="Maroon">王者天下 第四季</font> 4.<a href="https://www.bilibili.com/bangumi/play/ss41575"><font color="MediumBlue">青之芦苇</font></a></li>
-<li><font color="LimeGreen">彻夜之歌</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42176">莉可丽丝</a></li>
-<li><font color="Maroon">影宅</font></li>
-<li><font color="CadetBlue">OVERLORD 第四季</font></li>
-<li>风都侦探</li>
-<li><font color="HotPink">闪耀路标</font></li>
-<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第四季</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
-<li><font color="DarkOrange">邪神与厨二病少女 第三季</font></li>
-<li><font color="LimeGreen">契约之吻</font></li>
-<li><font color="HotPink">联盟空军航空魔法音乐队 光辉魔女</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42188"><font color="DarkOrange">顶点!!!!!!!!!!!!!!! </font></a></li>
-<li>影之诗F</li>
-<li><font color="CadetBlue">欢迎来到实力至上主义教室 第二季</font></li>
-<li><font color="CadetBlue">异世界药局</font></li>
-<li><font color="LightCoral">组长女儿与照料专员</font></li>
-<li><font color="LimeGreen">即使如此依旧步步进逼</font></li>
-<li>租借女友 第二季</li>
-<li><font color="LimeGreen">杜鹃的婚约</font></li>
-<li><font color="LimeGreen">继母的拖油瓶是我的前女友</font></li>
-<li><font color="HotPink">神渣偶像</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss41642"><font color="CadetBlue">黑之召唤士</font></a></li>
-<li><del>在异世界迷宫开后宫</del></li>
-<li><font color="HotPink">极限之心</font></li>
-<li><font color="Crimson">BASTARD!!暗黑破坏神</font></li>
-<li>天籁人偶</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss41833"><font color="Crimson">东方少年 第二季</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42107"><font color="CadetBlue">打工吧魔王大人 第二季</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42229">RWBY 冰雪帝国</a></li>
-<li>金装的维尔梅 <sub>濒临堕落的魔法师和最强的灾厄一起冲入魔法世界</sub></li>
-<li><font color="MediumBlue">新网球王子 U-I7 WORLD CUP</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42295"><font color="DarkGoldenRod">绽放的阿尔斯诺特利亚</font></a></li>
-<li><font color="LimeGreen">最近雇佣的女仆有点奇怪</font></li>
-<li>幽灵幻境</li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42080">卡片战斗先导者 will+Dress</a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss41535"><font color="MediumBlue">LOVE ALL PLAY 热血羽毛球</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42201">新 东京猫猫</a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42112"><font color="HotPink">LoveLive!Superstar!!第二季</font></a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42290">幕末替身传说</a></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42106"><font color="Maroon">惑星公主蜥蜴骑士</font></a></li>
-<li><font color="CadetBlue">转生贤者的异世界生活~ 取得第二职业，成为世界最强</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42198"><font color="MediumBlue">足球风云 Goal to the Future</font></a></li>
-</ol>
-<h2 id="月评分榜-2"><a href="https://www.bilibili.com/video/BV1CS4y177pA/">2022 4月评分榜</a></h2>
-<ol type="1">
-<li><font color="LimeGreen">辉夜大小姐想让我告白 -究极浪漫-</font></li>
-<li><font color="DarkOrange">间谍过家家</font></li>
-<li></li>
-</ol>
-<h2 id="评分榜-1"><a href="https://www.bilibili.com/video/BV12m4y1o7nR/">2021 评分榜</a></h2>
-<ol type="1">
-<li><font color="LightSkyBlue">奇巧出租车</font></li>
-<li><font color="LightCoral">悠哉日常大王 第三季</font></li>
-<li><font color="LightCoral">摇曳露营△ 第二季</font></li>
-<li><font color="Crimson">进击的巨人 最终季 分割上半</font></li>
-<li><font color="Maroon">王者天下 第三季</font></li>
-<li><font color="DarkGoldenRod">赛马娘 第二季</font></li>
-<li><font color="LimeGreen">水果篮子 最终季</font></li>
-<li><font color="LightCoral">小林家的龙女仆 第二季</font></li>
-<li><font color="CadetBlue">Re：从零开始的异世界生活 第二季 分割下半</font></li>
-<li>国王排名</li>
-<li><font color="MediumBlue">装甲重拳 第二季</font></li>
-<li><font color="HotPink">佐贺偶像是传奇 卷土重来</font></li>
-<li><font color="CadetBlue">无职转生 在异世界认真的活下去 </font></li>
-<li><font color="Crimson">境界触发者 第三季</font></li>
-<li>薇薇 -萤石眼之歌-</li>
-<li><font color="CadetBlue">86-不存在的战区-</font></li>
-<li>歌剧少女！！</li>
-<li><font color="Crimson">致不灭的你</font></li>
-<li><font color="Crimson">Dr.STONE 石纪元 第二季</font></li>
-<li><font color="Crimson">境界触发者 第二季</font></li>
-<li>平家物语</li>
-<li><font color="LimeGreen">堀与宫村</font></li>
-<li><font color="Crimson">BEASTARS 第二季</font></li>
-<li>工作细胞BLACK</li>
-<li>漂流少年</li>
-<li>鲁邦三世 第六季</li>
-<li><font color="LimeGreen">古见同学有交流障碍症</font></li>
-<li><font color="Maroon">平稳世代的韦驮天们</font></li>
-<li>五等分的新娘 第二季</li>
-<li><font color="DarkOrange">入间同学入魔了 第二季</font></li>
-<li><font color="HotPink">IDOLiSH7 -偶像星愿- Third BEAT!</font></li>
-<li><font color="HotPink">LoveLive 爱与演唱会!超级明星!!</font></li>
-<li><font color="Crimson">忧国的莫里亚蒂 第二季</font></li>
-<li>奇蛋物语</li>
-<li><font color="DimGray">SSSS.电光机王</font></li>
-<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季</font></li>
-<li><font color="Maroon">蓝色时期</font></li>
-<li><font color="MediumBlue">无限滑板</font></li>
-<li><font color="Maroon">影宅</font></li>
-<li>工作细胞 第二季</li>
-<li><font color="LightCoral">本田小狼与我</font></li>
-<li><font color="HotPink">偶像荣耀</font></li>
-<li><font color="Crimson">怪物事变</font></li>
-<li><font color="CadetBlue">异世界食堂 第二季</font></li>
-<li><font color="DarkOrange">极主夫道</font></li>
-<li><font color="DarkOrange">阴晴不定大哥哥</font></li>
-<li>数码宝贝幽灵游戏</li>
-<li><font color="DarkOrange">看得见的见子</font></li>
-<li>白沙的水族馆</li>
-<li><font color="DimGray">巴克·亚罗</font></li>
-</ol>
-<h1 id="销量榜">销量榜</h1>
-<h2 id="销量榜-2021年10月番至2022年7月番"><a href="https://www.bilibili.com/video/BV1jG4y1u7io/">2022 销量榜 2021年10月番至2022年7月番</a></h2>
-<ol type="1">
-<li>莉可丽丝</li>
-<li><font color="Crimson">鬼灭之刃 游郭篇</font></li>
-<li><font color="HotPink">LoveLive! 虹咲学园校园偶像同好会 第二季</font></li>
-<li><font color="CadetBlue">欢迎来到实力至上主义教室 第二季</font></li>
-<li><font color="HotPink">LoveLive! Sperstar!! 第二季</font></li>
-<li><font color="LimeGreen">更衣人偶坠入爱河</font></li>
-<li><font color="DarkGoldenRod">公主连结Re:Dive 第二季</font></li>
-<li><font color="DarkOrange">间谍过家家</font></li>
-<li><del>在异世界迷宫开后宫</del></li>
-<li><font color="DarkOrange">吸血鬼马上死</font></li>
-<li><font color="CadetBlue">无职转生 到了异世界就拿出真本事 第一季 分割下半</font></li>
-<li><font color="Khaki">结城友奈是勇者 第三季</font></li>
-<li>终末的后宫</li>
-<li><font color="LightCoral">街角魔族 第二季</font></li>
-<li><font color="HotPink">视觉监狱</font></li>
-<li><font color="Khaki">明日酱的水手服</font></li>
-<li><font color="CadetBlue">OVERLORD 第四季</font></li>
-<li>来自深渊 第二季</li>
-<li><font color="CadetBlue">86-不存在的战区- 第二季</font></li>
-<li><font color="Crimson">进击的巨人 最终季 分割下半</font></li>
-<li><font color="Indigo">佐佐木与宫野</font></li>
-<li><font color="LimeGreen">擅长捉弄的高木同学 第三季</font></li>
-<li>身为女主角 讨厌的女主角与秘密的工作</li>
-<li><font color="Crimson">境界触发者 第三季</font></li>
-<li><font color="MediumBlue">新网球王子 U-I7 WORLD CUP</font></li>
-<li><font color="LimeGreen">辉夜大小姐想让我告白 第三季</font></li>
-<li><font color="CadetBlue">平凡职业成就世界最强 第二季</font></li>
-<li><font color="CadetBlue">约会大作战 第四季</font></li>
-<li>Muv-Luv Alternative</li>
-<li><font color="DarkOrange">异世界舅舅</font></li>
-<li><font color="LimeGreen">契约之吻</font></li>
-<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
-<li><font color="HotPink">联盟空军航空魔法音乐队 光辉魔女</font></li>
-<li>鲁邦三世 第六季</li>
-<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第四季 分割上半</font></li>
-</ol>
-<h2 id="销量榜-2020年10月番至2021年7月番"><a href="https://www.bilibili.com/video/BV1vq4y1h7ht/">2021 销量榜 2020年10月番至2021年7月番</a></h2>
-<p>泡面： 天竺鼠车车</p>
-<p>TV：</p>
-<ol type="1">
-<li><font color="DarkGoldenRod">赛马娘 第二季</font></li>
-<li><font color="Crimson">咒术回战</font></li>
-<li><font color="HotPink">LoveLive! 虹咲学园学园偶像同好会</font></li>
-<li><font color="HotPink">LoveLive 爱与演唱会!超级明星!!</font></li>
-<li><font color="HotPink">IDOLiSH7 -偶像星愿- Third BEAT!</font></li>
-<li><font color="HotPink">IDOLiSH7 -偶像星愿- Second BEAT!</font></li>
-<li><font color="HotPink">催眠麦克风</font></li>
-<li><font color="HotPink">佐贺偶像是传奇 卷土重来</font></li>
-<li><font color="MediumBlue">无限滑板</font></li>
-<li><font color="LightCoral">请问您今天要来点兔子吗？BLOOM</font></li>
-<li><font color="Crimson">东京复仇者</font></li>
-<li><font color="CadetBlue">魔法科高中的劣等生 来访者篇</font></li>
-<li><font color="LightCoral">摇曳露营△ 第二季</font></li>
-<li><font color="MediumBlue">排球少年 TO THE TOP 分割下半</font></li>
-<li>突击莉莉 BOUQUET</li>
-<li>强袭魔女 通往柏林之路</li>
-<li><font color="CadetBlue">Re：从零开始的异世界生活 第二季 分割下半</font></li>
-<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季 分割上半</font></li>
-<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季 分割下半</font></li>
-<li><font color="CadetBlue">魔女之旅</font></li>
-<li>薇薇 -萤石眼之歌-</li>
-<li><font color="CadetBlue">无职转生 在异世界认真的活下去 分割上半</font></li>
-<li>五等分的新娘 第二季</li>
-<li><font color="DimGray">SSSS.电光机王</font></li>
-<li><font color="Maroon">黄金神威 第三季</font></li>
-<li><font color="LightCoral">小林家的龙女仆 第二季</font></li>
-<li><font color="Crimson">进击的巨人 最终季 分割上半</font></li>
-<li><font color="MistyRose ">安达与岛村</font></li>
-<li><del>回复术士的重启人生</del></li>
-<li><font color="DarkGoldenRod">魔法纪录 魔法少女小圆外传 第二季</font></li>
-<li><font color="LimeGreen">堀与宫村</font></li>
-<li><font color="CadetBlue">魔法科高中的优等生</font></li>
-<li><font color="LightCoral">悠哉日常大王 第三季</font></li>
-<li><font color="LightCoral">阿松 第三季</font></li>
-<li><font color="LightCoral">本田小狼与我</font></li>
-<li><font color="HotPink">月歌 第二季</font></li>
-<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第三季</font></li>
-<li><font color="CadetBlue">圣女魔力无所不能</font></li>
-<li><font color="CadetBlue">转生成为了只有乙女游戏破灭Flag的邪恶大小姐 第二季</font></li>
-<li><font color="Crimson">境界触发者 第二季</font></li>
-<li><font color="HotPink">A3!满开剧团 秋组&amp;冬组篇</font></li>
-<li><font color="CadetBlue">剃须，然后捡到女高中生</font></li>
-<li><font color="CadetBlue">86-不存在的战区-分割上半</font></li>
-<li><font color="LightCoral">满溢的水果挞</font></li>
-<li><font color="LimeGreen">水果篮子 最终季</font></li>
-</ol>
+<table>
+<thead>
+<tr class="header">
+<th>水果</th>
+<th>简介</th>
+<th>月份</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>广西钦蜜九号黄金百香果</td>
+<td>广西农科院重点实验室研发</td>
+<td>6-11</td>
+</tr>
+<tr class="even">
+<td>北京大兴庞各庄西瓜</td>
+<td></td>
+<td>5-8</td>
+</tr>
+<tr class="odd">
+<td>山东玉菇甜瓜</td>
+<td></td>
+<td>5-6</td>
+</tr>
+<tr class="even">
+<td>海南金美人蜜瓜</td>
+<td></td>
+<td>4-5</td>
+</tr>
+<tr class="odd">
+<td>海南金钻凤梨</td>
+<td>台湾嘉义农科所培育，台农17号</td>
+<td>3-5，10-11</td>
+</tr>
+<tr class="even">
+<td>海南枚珑瓜</td>
+<td></td>
+<td>12-1</td>
+</tr>
+<tr class="odd">
+<td>福建漳州牛奶青枣</td>
+<td></td>
+<td>11-3</td>
+</tr>
+<tr class="even">
+<td>广西武鸣沃柑</td>
+<td>以色列研发</td>
+<td>12-4</td>
+</tr>
+<tr class="odd">
+<td>广东四会砂糖橘</td>
+<td></td>
+<td>11-1</td>
+</tr>
+<tr class="even">
+<td>广西融安滑皮金桔</td>
+<td></td>
+<td>11-12</td>
+</tr>
+<tr class="odd">
+<td>德庆皇帝柑</td>
+<td></td>
+<td>11-1</td>
+</tr>
+<tr class="even">
+<td>福建漳州葡萄柚</td>
+<td></td>
+<td>10-12</td>
+</tr>
+<tr class="odd">
+<td>爱媛38号果冻橙</td>
+<td></td>
+<td>11-12</td>
+</tr>
+<tr class="even">
+<td>陕西周至徐香猕猴桃</td>
+<td></td>
+<td>9-10</td>
+</tr>
+<tr class="odd">
+<td>陕西周至翠香猕猴桃</td>
+<td>西安市猕猴桃研究所和周至县农技试验站研发</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>陕西大荔冬枣</td>
+<td></td>
+<td>9-10</td>
+</tr>
+<tr class="odd">
+<td>广西百色田东桂七芒</td>
+<td></td>
+<td>7-8</td>
+</tr>
+<tr class="even">
+<td>山东蒙阴黄桃</td>
+<td></td>
+<td>7-8</td>
+</tr>
+<tr class="odd">
+<td>北京平谷水蜜桃</td>
+<td></td>
+<td>6-9</td>
+</tr>
+<tr class="even">
+<td>甘肃民勤蜜瓜</td>
+<td></td>
+<td>7-8</td>
+</tr>
+<tr class="odd">
+<td>山东博洋9号甜瓜</td>
+<td>集结了羊角蜜和蜜瓜品质优势</td>
+<td>9-10</td>
+</tr>
+<tr class="even">
+<td>海南小台农</td>
+<td></td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>福建漳州贵妃蜜枣</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>辽宁丹东草莓</td>
+<td></td>
+<td>12-1</td>
+</tr>
+<tr class="odd">
+<td>广西砂糖橘</td>
+<td></td>
+<td>12-1</td>
+</tr>
+<tr class="even">
+<td>新疆库尔勒香梨</td>
+<td></td>
+<td>9-10</td>
+</tr>
+<tr class="odd">
+<td>福建漳州平和红柚</td>
+<td></td>
+<td>10-11</td>
+</tr>
+<tr class="even">
+<td>山东莱阳秋月梨</td>
+<td></td>
+<td>9-10</td>
+</tr>
+<tr class="odd">
+<td>四川蒲江红心猕猴桃</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>山西运城黄心油桃</td>
+<td></td>
+<td>5-8</td>
+</tr>
+<tr class="odd">
+<td>四川不知火丑橘</td>
+<td></td>
+<td>4-5</td>
+</tr>
+<tr class="even">
+<td>海南贵妃芒</td>
+<td></td>
+<td>4-7</td>
+</tr>
+<tr class="odd">
+<td>四川安岳柠檬</td>
+<td></td>
+<td>9-12</td>
+</tr>
+<tr class="even">
+<td>海南文昌老椰子</td>
+<td></td>
+<td>7-8</td>
+</tr>
+<tr class="odd">
+<td>陕西富平柿饼</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td>辽宁丹东99红颜草莓</td>
+<td></td>
+<td>12-1</td>
+</tr>
+<tr class="odd">
+<td>新疆阿克苏冰糖心苹果</td>
+<td></td>
+<td>11-12</td>
+</tr>
+<tr class="even">
+<td>云南红河高山香蕉</td>
+<td></td>
+<td>11-12</td>
+</tr>
+<tr class="odd">
+<td>山西运城“冰溏心”脆柿</td>
+<td></td>
+<td>10-11</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 ]]></content>
       <categories>
-        <category>动画</category>
+        <category>日常</category>
       </categories>
       <tags>
-        <tag>日本动画</tag>
+        <tag>小教程</tag>
       </tags>
   </entry>
   <entry>
@@ -814,6 +1025,263 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
+    <title>补番参考</title>
+    <url>/2023/03a9b7bd2c.html</url>
+    <content><![CDATA[<p>其实就是一些榜单……来自壁姐姐。</p>
+<p><font color="DimGray">萝卜</font> <font color="DimGray"></font> | <font color="Crimson">少年改/热血</font> <font color="Crimson"></font> | <font color="Maroon">青年改</font> <font color="Maroon"></font> | <font color="LimeGreen">恋爱</font> <font color="LimeGreen"></font> | <font color="LightCoral">日常</font> <font color="LightCoral"></font> | <font color="MistyRose ">百合</font> <font color="MistyRose "></font> | <font color="Indigo">BL</font> <font color="Indigo"></font> | <font color="Khaki">美少女</font> <font color="Khaki"></font> | <font color="MediumBlue">运动</font> <font color="MediumBlue"></font> | <font color="HotPink">爱抖露</font> <font color="HotPink"></font> | <font color="CadetBlue">轻改</font> <font color="CadetBlue"></font> | <font color="DarkOrange">搞笑</font> <font color="DarkOrange"></font> | <font color="DarkGoldenRod">游戏改</font> <font color="DarkGoldenRod"></font> | <font color="LightSkyBlue">悬疑/推理</font> <font color="LightSkyBlue"></font></p>
+<p>详见全文</p>
+<span id="more"></span>
+<h1 id="评分榜">评分榜</h1>
+<h2 id="月评分榜"><a href="https://www.bilibili.com/video/BV18x4y1u72T/">2022 10月评分榜</a></h2>
+<ol type="1">
+<li><a href="https://www.bilibili.com/bangumi/play/ss43164"><font color="LightCoral">孤独摇滚!</font></a></li>
+<li>赛博朋克：边缘行者</li>
+<li><font color="Crimson">死神 千年血战篇</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43141"><font color="Crimson">灵能百分百 第三季</font></a></li>
+<li><font color="MistyRose ">向山进发 第四季</font></li>
+<li><font color="DarkOrange">间谍过家家 分割后半</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42105"><font color="DarkOrange">异世界舅舅</font></a></li>
+<li><font color="Crimson">电锯人</font></li>
+<li><font color="Crimson">JOJO的奇妙冒险 石之海 第二季</font></li>
+<li><font color="HotPink">IDOLiSH7 第三季 分割后半</font></li>
+<li><font color="LimeGreen">浪漫杀手</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43155"><font color="LightCoral">少女手工</font></a></li>
+<li><font color="DimGray">机动战士高达 水星的魔女</font></li>
+<li>秋叶原女仆战争</li>
+<li><font color="Crimson">福星小子(2022)</font></li>
+<li><font color="CadetBlue">想要成为影之实力者</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43142"><font color="DarkOrange">入间同学入魔了 第三季</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43148"><font color="Crimson">致不灭的你 第二季</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43145"><font color="MediumBlue">蓝色监狱</font></a></li>
+<li>不道德公会</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
+<li>老虎和兔子 第二季 分割后半</li>
+<li><font color="CadetBlue">转生成为魔剑</font></li>
+<li><font color="DarkOrange">四人各有小秘密</font></li>
+<li><font color="LimeGreen">恋爱FLOPS</font></li>
+<li><font color="CadetBlue">后宫之乌</font></li>
+<li><font color="LimeGreen">宇崎学妹想要玩!第二季</font></li>
+<li><font color="MediumBlue">飙速宅男 第五季</font></li>
+<li><font color="LimeGreen">夫妇以上，恋人未满</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43147">我家师傅没有尾巴</a></li>
+<li><font color="DarkOrange">人类毛病大学-不死学部不幸学科-</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43146"><font color="CadetBlue">作为恶役大小姐就该养魔王</font></a></li>
+<li>Muv-Luv Alternative 第二季</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43153"><font color="CadetBlue">新手炼金术师的店铺经营</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43152"><font color="LimeGreen">书虫公主</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43158">pop子和pipi美的日常 第二季</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43144"><font color="CadetBlue">驯兽师被逐出队伍后邂逅最强少女</font></a></li>
+<li><font color="Crimson">BASTARD!!暗黑破坏神 分割后半</font></li>
+<li>彼得·格里尔的贤者时间 第二季</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43167">忍者一时</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42106"><font color="Maroon">惑星公主蜥蜴骑士</font></a></li>
+<li><font color="DarkGoldenRod">圣剑传说 玛娜传奇 -泪珠水晶-</font></li>
+</ol>
+<h2 id="月评分榜-1"><a href="https://www.bilibili.com/video/BV1qG4y1n7a6/">2022 7月评分榜</a></h2>
+<ol type="1">
+<li>来自深渊 烈日的黄金乡</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss41417"><font color="LightSkyBlue">夏日重现</font></a></li>
+<li><font color="Maroon">王者天下 第四季</font> 4.<a href="https://www.bilibili.com/bangumi/play/ss41575"><font color="MediumBlue">青之芦苇</font></a></li>
+<li><font color="LimeGreen">彻夜之歌</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42176">莉可丽丝</a></li>
+<li><font color="Maroon">影宅</font></li>
+<li><font color="CadetBlue">OVERLORD 第四季</font></li>
+<li>风都侦探</li>
+<li><font color="HotPink">闪耀路标</font></li>
+<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第四季</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
+<li><font color="DarkOrange">邪神与厨二病少女 第三季</font></li>
+<li><font color="LimeGreen">契约之吻</font></li>
+<li><font color="HotPink">联盟空军航空魔法音乐队 光辉魔女</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42188"><font color="DarkOrange">顶点!!!!!!!!!!!!!!! </font></a></li>
+<li>影之诗F</li>
+<li><font color="CadetBlue">欢迎来到实力至上主义教室 第二季</font></li>
+<li><font color="CadetBlue">异世界药局</font></li>
+<li><font color="LightCoral">组长女儿与照料专员</font></li>
+<li><font color="LimeGreen">即使如此依旧步步进逼</font></li>
+<li>租借女友 第二季</li>
+<li><font color="LimeGreen">杜鹃的婚约</font></li>
+<li><font color="LimeGreen">继母的拖油瓶是我的前女友</font></li>
+<li><font color="HotPink">神渣偶像</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss41642"><font color="CadetBlue">黑之召唤士</font></a></li>
+<li><del>在异世界迷宫开后宫</del></li>
+<li><font color="HotPink">极限之心</font></li>
+<li><font color="Crimson">BASTARD!!暗黑破坏神</font></li>
+<li>天籁人偶</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss41833"><font color="Crimson">东方少年 第二季</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42107"><font color="CadetBlue">打工吧魔王大人 第二季</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42229">RWBY 冰雪帝国</a></li>
+<li>金装的维尔梅 <sub>濒临堕落的魔法师和最强的灾厄一起冲入魔法世界</sub></li>
+<li><font color="MediumBlue">新网球王子 U-I7 WORLD CUP</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42295"><font color="DarkGoldenRod">绽放的阿尔斯诺特利亚</font></a></li>
+<li><font color="LimeGreen">最近雇佣的女仆有点奇怪</font></li>
+<li>幽灵幻境</li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42080">卡片战斗先导者 will+Dress</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss41535"><font color="MediumBlue">LOVE ALL PLAY 热血羽毛球</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42201">新 东京猫猫</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42112"><font color="HotPink">LoveLive!Superstar!!第二季</font></a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42290">幕末替身传说</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42106"><font color="Maroon">惑星公主蜥蜴骑士</font></a></li>
+<li><font color="CadetBlue">转生贤者的异世界生活~ 取得第二职业，成为世界最强</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42198"><font color="MediumBlue">足球风云 Goal to the Future</font></a></li>
+</ol>
+<h2 id="月评分榜-2"><a href="https://www.bilibili.com/video/BV1CS4y177pA/">2022 4月评分榜</a></h2>
+<ol type="1">
+<li><font color="LimeGreen">辉夜大小姐想让我告白 -究极浪漫-</font></li>
+<li><font color="DarkOrange">间谍过家家</font></li>
+<li></li>
+</ol>
+<h2 id="评分榜-1"><a href="https://www.bilibili.com/video/BV12m4y1o7nR/">2021 评分榜</a></h2>
+<ol type="1">
+<li><font color="LightSkyBlue">奇巧出租车</font></li>
+<li><font color="LightCoral">悠哉日常大王 第三季</font></li>
+<li><font color="LightCoral">摇曳露营△ 第二季</font></li>
+<li><font color="Crimson">进击的巨人 最终季 分割上半</font></li>
+<li><font color="Maroon">王者天下 第三季</font></li>
+<li><font color="DarkGoldenRod">赛马娘 第二季</font></li>
+<li><font color="LimeGreen">水果篮子 最终季</font></li>
+<li><font color="LightCoral">小林家的龙女仆 第二季</font></li>
+<li><font color="CadetBlue">Re：从零开始的异世界生活 第二季 分割下半</font></li>
+<li>国王排名</li>
+<li><font color="MediumBlue">装甲重拳 第二季</font></li>
+<li><font color="HotPink">佐贺偶像是传奇 卷土重来</font></li>
+<li><font color="CadetBlue">无职转生 在异世界认真的活下去 </font></li>
+<li><font color="Crimson">境界触发者 第三季</font></li>
+<li>薇薇 -萤石眼之歌-</li>
+<li><font color="CadetBlue">86-不存在的战区-</font></li>
+<li>歌剧少女！！</li>
+<li><font color="Crimson">致不灭的你</font></li>
+<li><font color="Crimson">Dr.STONE 石纪元 第二季</font></li>
+<li><font color="Crimson">境界触发者 第二季</font></li>
+<li>平家物语</li>
+<li><font color="LimeGreen">堀与宫村</font></li>
+<li><font color="Crimson">BEASTARS 第二季</font></li>
+<li>工作细胞BLACK</li>
+<li>漂流少年</li>
+<li>鲁邦三世 第六季</li>
+<li><font color="LimeGreen">古见同学有交流障碍症</font></li>
+<li><font color="Maroon">平稳世代的韦驮天们</font></li>
+<li>五等分的新娘 第二季</li>
+<li><font color="DarkOrange">入间同学入魔了 第二季</font></li>
+<li><font color="HotPink">IDOLiSH7 -偶像星愿- Third BEAT!</font></li>
+<li><font color="HotPink">LoveLive 爱与演唱会!超级明星!!</font></li>
+<li><font color="Crimson">忧国的莫里亚蒂 第二季</font></li>
+<li>奇蛋物语</li>
+<li><font color="DimGray">SSSS.电光机王</font></li>
+<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季</font></li>
+<li><font color="Maroon">蓝色时期</font></li>
+<li><font color="MediumBlue">无限滑板</font></li>
+<li><font color="Maroon">影宅</font></li>
+<li>工作细胞 第二季</li>
+<li><font color="LightCoral">本田小狼与我</font></li>
+<li><font color="HotPink">偶像荣耀</font></li>
+<li><font color="Crimson">怪物事变</font></li>
+<li><font color="CadetBlue">异世界食堂 第二季</font></li>
+<li><font color="DarkOrange">极主夫道</font></li>
+<li><font color="DarkOrange">阴晴不定大哥哥</font></li>
+<li>数码宝贝幽灵游戏</li>
+<li><font color="DarkOrange">看得见的见子</font></li>
+<li>白沙的水族馆</li>
+<li><font color="DimGray">巴克·亚罗</font></li>
+</ol>
+<h1 id="销量榜">销量榜</h1>
+<h2 id="销量榜-2021年10月番至2022年7月番"><a href="https://www.bilibili.com/video/BV1jG4y1u7io/">2022 销量榜 2021年10月番至2022年7月番</a></h2>
+<ol type="1">
+<li>莉可丽丝</li>
+<li><font color="Crimson">鬼灭之刃 游郭篇</font></li>
+<li><font color="HotPink">LoveLive! 虹咲学园校园偶像同好会 第二季</font></li>
+<li><font color="CadetBlue">欢迎来到实力至上主义教室 第二季</font></li>
+<li><font color="HotPink">LoveLive! Sperstar!! 第二季</font></li>
+<li><font color="LimeGreen">更衣人偶坠入爱河</font></li>
+<li><font color="DarkGoldenRod">公主连结Re:Dive 第二季</font></li>
+<li><font color="DarkOrange">间谍过家家</font></li>
+<li><del>在异世界迷宫开后宫</del></li>
+<li><font color="DarkOrange">吸血鬼马上死</font></li>
+<li><font color="CadetBlue">无职转生 到了异世界就拿出真本事 第一季 分割下半</font></li>
+<li><font color="Khaki">结城友奈是勇者 第三季</font></li>
+<li>终末的后宫</li>
+<li><font color="LightCoral">街角魔族 第二季</font></li>
+<li><font color="HotPink">视觉监狱</font></li>
+<li><font color="Khaki">明日酱的水手服</font></li>
+<li><font color="CadetBlue">OVERLORD 第四季</font></li>
+<li>来自深渊 第二季</li>
+<li><font color="CadetBlue">86-不存在的战区- 第二季</font></li>
+<li><font color="Crimson">进击的巨人 最终季 分割下半</font></li>
+<li><font color="Indigo">佐佐木与宫野</font></li>
+<li><font color="LimeGreen">擅长捉弄的高木同学 第三季</font></li>
+<li>身为女主角 讨厌的女主角与秘密的工作</li>
+<li><font color="Crimson">境界触发者 第三季</font></li>
+<li><font color="MediumBlue">新网球王子 U-I7 WORLD CUP</font></li>
+<li><font color="LimeGreen">辉夜大小姐想让我告白 第三季</font></li>
+<li><font color="CadetBlue">平凡职业成就世界最强 第二季</font></li>
+<li><font color="CadetBlue">约会大作战 第四季</font></li>
+<li>Muv-Luv Alternative</li>
+<li><font color="DarkOrange">异世界舅舅</font></li>
+<li><font color="LimeGreen">契约之吻</font></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss42104"><font color="DarkGoldenRod">传颂之物 二人的白皇</font></a></li>
+<li><font color="HotPink">联盟空军航空魔法音乐队 光辉魔女</font></li>
+<li>鲁邦三世 第六季</li>
+<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第四季 分割上半</font></li>
+</ol>
+<h2 id="销量榜-2020年10月番至2021年7月番"><a href="https://www.bilibili.com/video/BV1vq4y1h7ht/">2021 销量榜 2020年10月番至2021年7月番</a></h2>
+<p>泡面： 天竺鼠车车</p>
+<p>TV：</p>
+<ol type="1">
+<li><font color="DarkGoldenRod">赛马娘 第二季</font></li>
+<li><font color="Crimson">咒术回战</font></li>
+<li><font color="HotPink">LoveLive! 虹咲学园学园偶像同好会</font></li>
+<li><font color="HotPink">LoveLive 爱与演唱会!超级明星!!</font></li>
+<li><font color="HotPink">IDOLiSH7 -偶像星愿- Third BEAT!</font></li>
+<li><font color="HotPink">IDOLiSH7 -偶像星愿- Second BEAT!</font></li>
+<li><font color="HotPink">催眠麦克风</font></li>
+<li><font color="HotPink">佐贺偶像是传奇 卷土重来</font></li>
+<li><font color="MediumBlue">无限滑板</font></li>
+<li><font color="LightCoral">请问您今天要来点兔子吗？BLOOM</font></li>
+<li><font color="Crimson">东京复仇者</font></li>
+<li><font color="CadetBlue">魔法科高中的劣等生 来访者篇</font></li>
+<li><font color="LightCoral">摇曳露营△ 第二季</font></li>
+<li><font color="MediumBlue">排球少年 TO THE TOP 分割下半</font></li>
+<li>突击莉莉 BOUQUET</li>
+<li>强袭魔女 通往柏林之路</li>
+<li><font color="CadetBlue">Re：从零开始的异世界生活 第二季 分割下半</font></li>
+<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季 分割上半</font></li>
+<li><font color="CadetBlue">关于我转生变成史莱姆这档事 第二季 分割下半</font></li>
+<li><font color="CadetBlue">魔女之旅</font></li>
+<li>薇薇 -萤石眼之歌-</li>
+<li><font color="CadetBlue">无职转生 在异世界认真的活下去 分割上半</font></li>
+<li>五等分的新娘 第二季</li>
+<li><font color="DimGray">SSSS.电光机王</font></li>
+<li><font color="Maroon">黄金神威 第三季</font></li>
+<li><font color="LightCoral">小林家的龙女仆 第二季</font></li>
+<li><font color="Crimson">进击的巨人 最终季 分割上半</font></li>
+<li><font color="MistyRose ">安达与岛村</font></li>
+<li><del>回复术士的重启人生</del></li>
+<li><font color="DarkGoldenRod">魔法纪录 魔法少女小圆外传 第二季</font></li>
+<li><font color="LimeGreen">堀与宫村</font></li>
+<li><font color="CadetBlue">魔法科高中的优等生</font></li>
+<li><font color="LightCoral">悠哉日常大王 第三季</font></li>
+<li><font color="LightCoral">阿松 第三季</font></li>
+<li><font color="LightCoral">本田小狼与我</font></li>
+<li><font color="HotPink">月歌 第二季</font></li>
+<li><font color="CadetBlue">在地下城寻求邂逅是否搞错了什么 第三季</font></li>
+<li><font color="CadetBlue">圣女魔力无所不能</font></li>
+<li><font color="CadetBlue">转生成为了只有乙女游戏破灭Flag的邪恶大小姐 第二季</font></li>
+<li><font color="Crimson">境界触发者 第二季</font></li>
+<li><font color="HotPink">A3!满开剧团 秋组&amp;冬组篇</font></li>
+<li><font color="CadetBlue">剃须，然后捡到女高中生</font></li>
+<li><font color="CadetBlue">86-不存在的战区-分割上半</font></li>
+<li><font color="LightCoral">满溢的水果挞</font></li>
+<li><font color="LimeGreen">水果篮子 最终季</font></li>
+</ol>
+]]></content>
+      <categories>
+        <category>动画</category>
+      </categories>
+      <tags>
+        <tag>日本动画</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>礼貌用语等</title>
     <url>/2022/058ae62fc9.html</url>
     <content><![CDATA[<p>小短语 Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span> До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span> До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span> К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span> здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span> спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span> Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span> Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span> Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span> -М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span> -Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span> -Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span> Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span> -Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span> -Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span> Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span> Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span> Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span> Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span> -Ты зн<font color=Crimson>а</font>ешь,.......<span class="heimu">你知道吗</span> -Кон<font color=Crimson>е</font>чно,я знаю,......<span class="heimu">我当然知道</span> Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span> Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span> Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span> Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот ...<span class="heimu">这个xx多少钱</span> пока́<span class="heimu">[副]回头见，暂时</span> Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
@@ -829,6 +1297,34 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </categories>
       <tags>
         <tag>短句</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>调型与发音规则</title>
+    <url>/2022/05f9b5f147.html</url>
+    <content><![CDATA[<h3 id="发音">发音</h3>
+<ul>
+<li><strong>1.</strong> о在非重音时弱化成а；</li>
+<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音； 如：рассказ中的з读成相应清辅音с,； 清浊对照的只有： п-б ф-в т-д к-г с-з ш-ж <span id="more"></span></li>
+<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化； 如：завтра中的в清化成ф；</li>
+<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊； 后者第一个字母为清辅音，则前者最后一个字母清化； 同理，后者浊，前者浊化；</li>
+<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
+<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
+</ul>
+<h3 id="调型">调型</h3>
+<p><strong>调型 1</strong> ： 用于陈述句：从调心元音开始降，调心后部低于调心前部； <strong>调型 2</strong> ： 用于有疑问词的疑问句：疑问词开始降调； <strong>调型 3</strong> ： 用于没有疑问词的疑问句：提问词的重音升调； <strong>调型 4</strong> ： 调型 3, а 调型 1. 转折疑问句：А это? <strong>调型 5</strong> ： 感叹句：Какая красивая девушка!</p>
+<!--
+|  |  |  |  |  |
+|------ |------ |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>发音</tag>
       </tags>
   </entry>
   <entry>
@@ -908,98 +1404,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>调型与发音规则</title>
-    <url>/2022/05f9b5f147.html</url>
-    <content><![CDATA[<h3 id="发音">发音</h3>
-<ul>
-<li><strong>1.</strong> о在非重音时弱化成а；</li>
-<li><strong>2.</strong> 浊辅音在结尾时读成相应的清辅音； 如：рассказ中的з读成相应清辅音с,； 清浊对照的只有： п-б ф-в т-д к-г с-з ш-ж <span id="more"></span></li>
-<li><strong>3.</strong> 两个辅音连续在单词中，若后者是清辅音，前者也清化； 如：завтра中的в清化成ф；</li>
-<li><strong>4.</strong> 两个单词相连，后者第一个字母会影响前者最后一个字母的清浊； 后者第一个字母为清辅音，则前者最后一个字母清化； 同理，后者浊，前者浊化；</li>
-<li><strong>5.</strong> д/т后跟аяёюеи时，发音类似中文的j；</li>
-<li><strong>6.</strong> 疑问词作为说明从句连接词，可以不读重音。</li>
-</ul>
-<h3 id="调型">调型</h3>
-<p><strong>调型 1</strong> ： 用于陈述句：从调心元音开始降，调心后部低于调心前部； <strong>调型 2</strong> ： 用于有疑问词的疑问句：疑问词开始降调； <strong>调型 3</strong> ： 用于没有疑问词的疑问句：提问词的重音升调； <strong>调型 4</strong> ： 调型 3, а 调型 1. 转折疑问句：А это? <strong>调型 5</strong> ： 感叹句：Какая красивая девушка!</p>
-<!--
-|  |  |  |  |  |
-|------ |------ |------|------|------|
-|  |  |  |  |  |
-<div title="ののの"><font color=Crimson></font></div>
--->
-]]></content>
-      <categories>
-        <category>Русский язык</category>
-      </categories>
-      <tags>
-        <tag>发音</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Dirac semimetal PdTe2  temperature-dependent quasiparticle dynamics and electron–phonon coupling</title>
-    <url>/2023/03770da5f0.html</url>
-    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
-<ul>
-<li>标题：狄拉克半金属PdTe2随温度的载流子动力学和电声耦合</li>
-<li>作者：Shu-Yu Liu a, Shuang-Xing Zhu a, Qi-Yi Wu a, Chen Zhang a, Peng-Bo Song b,c, You-Guo Shi b,c, Hao Liu a, Zi-Teng Liu a, Jiao-Jiao Song a, Fan-Ying Wu a, Yin-Zou Zhao a, Xiao-Fang Tang a, Ya-Hua Yuan a, Han Huang a, Jun He a, H.Y. Liu d, Yu-Xia Duan a, Jian-Qiao Meng a,e,∗</li>
-<li>单位：中南大学物理与电子学院；中科院物理所北京凝聚态物理国家重点实验室；中国科学院大学物理科学学院；北京量子信息科学研究院；湖南师范大学量子效应及其应用协同创新中心</li>
-<li>期刊：Results in Physics</li>
-</ul>
-<span id="more"></span>
-<h2 id="个人评价捏">个人评价捏</h2>
-<p>对这种材料了解不多，且文章易读性对目前的我来说非常低，但是本文在超快动力学的理论框架上为笔者带来了非常大的启发，尤其是动力学曲线中振荡的部分，以及振荡与声子的关系，都在文中得到了很好的说明。</p>
-<h2 id="摘要">摘要</h2>
-<p>使用光学泵浦-探测光谱研究了狄拉克半金属PdTe2单晶体，超快载流子温度关系和声子动力学。定量分析表明亚皮秒级的超快弛豫过程（<span class="math inline">\(\tau_f\)</span>）来自电子-声子热效应。此快弛豫随后是一个稍慢的弛豫过程（<span class="math inline">\(\tau_s\)</span>），时间尺度为7-9.5皮秒，其来自声子相关的电子-空穴复合。所有测量温度下均观测到两个明显的振动模式。这些模式分别对应Te原子的面内（<span class="math inline">\(E_g\)</span>）和面外（<span class="math inline">\(A_{1g}\)</span>）运动模式。<strong>测试结果表明pure dephasing在弛豫过程中起到重要作用。</strong>电子-声子耦合常数分析表明<span class="math inline">\(A_{1g}\)</span>模式对超导贡献最大，且高频声子应也参与形成库珀对。本文章结果会提升对PdTe2复杂超导性的理解。</p>
-<h2 id="引言总结版">引言（总结版）</h2>
-<p>在发现拓扑绝缘体后，拓扑超导体吸引了大量目光。在过度金属硫族化合物中，存在各种物理性质。理论计算和实验结果都表明集中TMDC可能拥有拓扑超导性。</p>
-<p><em>补充：拓扑绝缘体：三维不导电的绝缘体态之外，还同时具有二维导电的金属表面态。拓扑超导体，其体态是超导态，表面则是具有拓扑保护的、无能隙电子态。</em></p>
-<p><em>再次补充：在具有周期原子晶格的固体材料中，电子的运动可以被周期化的布洛赫波来描述，电子能级不再是孤立的存在，而是被展宽成一条条“能带”——由一系列特定能量-动量关系组成。在凝聚态物质里，考虑到电子们受到的相互作用，电子也不再是独立的“裸电子”了，而是可以重新定义成一群“穿衣服的粒子”，称之为“准粒子”，这些准粒子的能量-动量分布，决定了材料许多宏观物理特性</em></p>
-<p><em>再再补充：材料中电子属于费米子，因为泡利不相容原理，无法全部处于低能的量子态，只能从低能带不断往高能带填充。处于最高能带（导带）的电子具有很强的巡游性，数目越多则导电性越好，一般而言金属就是导带半满填充的。许多金属在低温下会成为超导体，其电阻为零，是一种宏观量子效应。本质在于，材料中的电子（费米子）借助相互作用媒介两两配对，形成新的准粒子（玻色子），就不再同一量子态相互排挤，而是共同携手凝聚到低能稳定态——超导态</em></p>
-<p>1960s发现PdTe2超导相转变温度为1.7K。最近，通过角分辨光电子光谱证实PdTe2可能是2型或者1型2型共存的狄拉克半金属，其拥有自旋极化拓扑表面态。该拓扑表面态表明PdTe2可能是拓扑超导体。然而，比热、穿透深度和其他测试都表示PdTe2是全带隙的s波常规超导体。</p>
-<p>超导体一般分为1型和2型，区别是是否存在普通相和超导相同时存在的中间相。一些研究说体PdTe2是典型1型超导体（<span class="math inline">\(T_c=1.65 K\)</span>）。其表面混合了1型和2型，相变温度为<span class="math inline">\(T_c^s=1.33 K\)</span>。一般认为其固有表面电子不均匀性导致了混合态。</p>
-<p>对常规超导体来说，库珀对由声子联结。等钱中子非弹性散射和理论计算表示<span class="math inline">\(\Gamma\)</span>点附近的声子色散对PdTe2超导性很重要。因此，研究PdTe2声子性质有希望从实验上确定声电耦合系数。</p>
-<p>（稍微提了超快光谱对于角分辨的特点）</p>
-<p>超快光谱用来研究e-ph耦合系数，从而进一步研究其超导性。观察到两个时间尺度明显不同的载流子弛豫过程。他们分别来自e-ph热效应和声子引导的电子-空穴复合。在5-300K温度范围内探测到两种光学声子，分别是Te原子在面内（<span class="math inline">\(E_g\)</span>）和面外<span class="math inline">\(A_{1g}\)</span>运动。<span class="math inline">\(E_g\)</span>能量与一个<span class="math inline">\(\Gamma\)</span>点声子一致，其与PdTe2超导性相关。e-ph耦合常数分析显示高频声子也参与了库珀对形成。</p>
-<h2 id="实验参数">实验参数</h2>
-<p>脉冲宽度：35 fs；<br />
-中心波长：800 nm；<br />
-重复频率：1 MHz；<br />
-光斑直径：泵浦光斑 160 <span class="math inline">\(\mu m\)</span>；探测光斑 40 <span class="math inline">\(\mu m\)</span></p>
-<h2 id="结果分析">结果分析</h2>
-<h3 id="整体分析">整体分析</h3>
-<p>本篇文章的拟合方程：<br />
-<span class="math inline">\(\dfrac{Δ𝑅(𝑡)}{𝑅}=\dfrac{1}{\sqrt{2\pi w}}exp(-\dfrac{t^2}{2w^2})\otimes\left[ \sum_{i=1,2} A_iexp(-\dfrac{t-t_0}{\tau_0})+\sum_{j=1,2}B_jexp(-\Gamma_j(t-t_0))sin(\Omega_jt+\phi_j)\right]+C\)</span></p>
-<p>电子-电子热化和电子-玻色子散射过程决定了<span class="math inline">\(\frac{Δ𝑅(𝑡)}{𝑅}\)</span>的时间关系。光激发导致0.2皮秒的上升，接着是两个分别的复合过程。<br />
-其一是快复合过程（<span class="math inline">\(\tau_f\)</span>），在0.3皮秒内发生。<br />
-其二是慢复合过程（<span class="math inline">\(\tau_s\)</span>）。<br />
-在40皮秒的弛豫阶段后，信号趋于平稳。</p>
-<p>两个明显的高频振荡在光激发瞬间发生，并叠加在<span class="math inline">\(\frac{Δ𝑅(𝑡)}{𝑅}\)</span>上。</p>
-<p>这种同时性由图1中的非均匀周期性振荡证明。弛豫曲线被大幅度的两个振荡显著影响。振荡和载流子动力学导致了第一个反射峰的出现。</p>
-<h3 id="观察动力学曲线">观察动力学曲线</h3>
-<p>选定了几个温度，观察其短时间尺度的动力学曲线，发现相似的，都是两个明显的弛豫过程和两个明显的振荡。振幅随温度升高而降低（<em>我觉得是光激发声子变少了</em>），拟合曲线也都吻合完好。</p>
-<h3 id="非振荡部分即弛豫过程">非振荡部分（即弛豫过程）</h3>
-<p>老一套，提出弛豫时间<span class="math inline">\(\tau_f\)</span>和<span class="math inline">\(\tau_s\)</span>。快过程随着温度降低加快，在100 K左右达到饱和。</p>
-<p>在飞秒光激发后，电子温度迅速上升至几千K，高能热电子接下来通过电子-声子作用，利用晶格将多余的能量传递出去，整个过程为亚皮秒级。走向与其他材料中的e-ph作用一致，又由于e-e作用比e-ph作用快得多，因此<span class="math inline">\(\tau_f\)</span>主要由e-ph作用主导。</p>
-<p>低温下，e-ph和e-e作用时间差不多，因此无法用双温模型来研究低温下的e-ph作用。然后作者用双温模型计算了下比热等，不是我关注重点。</p>
-<p>利用常规法计算声电耦合常数，算出了<span class="math inline">\(\lambda \langle\omega^2\rangle\)</span>，然后关于<span class="math inline">\(\omega^2\)</span>值的代入问题，选了<span class="math inline">\(E_g\)</span>和<span class="math inline">\(A_{1g}\)</span>，算出的<span class="math inline">\(\lambda_{E_g}\gg\lambda_{theo}\)</span>，可能因为Eg的频率远小于本体的频率。而<span class="math inline">\(\lambda_{A_1g}\)</span>只微微高于理论值，说明其对超导起到更多作用，同时也说明还有更高频声子的参与。</p>
-<p>经过最初的e-ph作用后，导带中的电子和价带中的空穴逐渐靠近费米能级附近，角分辨光电子能谱测量表明PdTe2中同时存在电子和空穴费米口袋，因此很自然想到<span class="math inline">\(\tau_s\)</span>可能来自e-h复合。<span class="math inline">\(\tau_s\)</span>弛豫时间是7~9.5皮秒，比几纳秒的e-h直接复合快得多。费米口袋在动量空间是分开的，由动量守恒知道e-h需要其他准粒子帮助，这里考虑最可能的就是声子了。</p>
-<p>balabala地拟合发现很好，然后低温下由于声子激发变少，带间e-h散射效率降低，因此时间变长。</p>
-<h3 id="集体激发动力学">集体激发动力学</h3>
-<p>减掉弛豫过程后，得到振荡部分在时域上的曲线，用前边的方程进行了个拟合。利用快速傅里叶变换提取频域的相干集体激发。观察到两个高频振动模式，<span class="math inline">\(\Omega_1\)</span>和<span class="math inline">\(\Omega_2\)</span>。频率更低的<span class="math inline">\(\Omega_1\)</span>在频域上更分散可能因为其固有的声子信号较低，也可能因为其周期是<span class="math inline">\(\Omega_2\)</span>的两倍（<em>为什么这样就会有影响，是说可能所谓的FFT提取出的频率强度可能不对吗</em>）。</p>
-<p>集体激发态（如相干声子、电荷密度波）造成的振荡进一步反映在反射率信号上。通常，室温下的振荡部分主要由相干声子造成。声子通过色散激发或者光诱导拉曼模式激发。</p>
-<p>对材料进行拉曼测试，室温300 K下，两种模式拉曼位移为~75.4 <span class="math inline">\(cm_{-1}\)</span>和~133.2 <span class="math inline">\(cm_{-1}\)</span>，分别对应Te原子在面内的<span class="math inline">\(E_g\)</span>和面间的<span class="math inline">\(A_{1g}\)</span>，在同样刻度间隔下，两振动模式和上边的<span class="math inline">\(\Omega_1\)</span>和<span class="math inline">\(\Omega_2\)</span>完全一致，表明分别起源于Eg和A1g。</p>
-<p>还研究了两种振动与温度的关系。5 K时，1和2的频率大约2.6和4.2 THz，2的频率随着温度增加单调降低。在5-300K的范围，2的模式大概红移了0.2 THz。而1则在80K以上都很稳定。<span class="math inline">\(\Gamma_2\)</span>的阻尼率随温度变化较小，<span class="math inline">\(\Gamma_1\)</span>随温度升高而降低。</p>
-<p>接着就是讨论半金属和拓扑绝缘体的去相干。有一个关于非谐效应的，随着温度上升，频率会降低，而阻尼率升高，可以用来理解2模式，对于1模式是不适用的。去相干永远存在，因为量子系统永远在与周围环境连接。</p>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>文献</tag>
-        <tag>超快</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>High-Pressure Phase Transition, Pore Collapse, and  Amorphization in the Siliceous 1D Zeolite, TON</title>
     <url>/2023/042961a824.html</url>
     <content><![CDATA[<h2 id="文章信息">文章信息</h2>
@@ -1057,99 +1461,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
 </figcaption>
 </figure>
 <p>由于框架中原子数量众多，因此有必要对SiO4四面体中的距离和角度进行软约束，并固定碳原子的某些参数（SI中的表S1和CIF文件）。在低压Cmc21结构中，Si−O距离和O−Si−O角分别限制在平均值的±0.05 Å和±10°。由于高压Pbn21结构中的自由原子坐标数量非常多，精细的结构信息有限，Si−O和O−O距离被限制在平均值的±0.2 Å。放宽两种结构的软约束导致一致性因子的微小改进，但代价是原子间距离的分散增加。</p>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>文献</tag>
-        <tag>分子筛</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium</title>
-    <url>/2023/0438b78d0c.html</url>
-    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
-<ul>
-<li>标题：由致密流体氦的高压插入引起的五硅沸石中正体积变化的单斜-斜方晶相变</li>
-<li>时间：October 25, 2021</li>
-<li>作者：Mario Santoro, Weiwei Dong, Konstantin Glazyrin, and Julien Haines</li>
-<li>单位：意大利国家光学研究所；欧洲非线性光谱实验室；德国电子同步加速器；中国科学院高能所北京同步辐射；法国蒙彼利埃大学</li>
-<li>期刊：the Journal of Physical chemistry C</li>
-<li>用到的表征手段：同步辐射XRD</li>
-</ul>
-<span id="more"></span>
-<blockquote>
-<p>原文：<a href="https://pubs.acs.org/doi/10.1021/acs.jpcc.1c07791">10.1021/acs.jpcc.1c07791</a></p>
-</blockquote>
-<table border="1">
-<tr>
-<td>
-<b><font color="orange">摘要</font>：</b> 使用同步辐射XRD研究了五硅沸石（archetypal siliceous zeolite Mobil-Five MFI）中氦的插入。由于氦气对孔隙和骨架的渗透程度非常高，MFI的单斜形式在较大的压力区间内稳定，并且压缩性远低于孔隙为空或充满除氢以外的任何其他客体分子或原子时。MFI结构从单斜<span class="math inline">\(P2_1/n\)</span>变为正交Pnma，在接近10 GPa时体积不连续地增加了3%。材料在高于42 GPa的压力下具有很高的应变性，但仍保持结晶性。卸压时释放应变，回复高结晶性。
-</td>
-</tr>
-</table>
-<h2 id="引言">引言</h2>
-<p>已经发现氦在高压下很容易穿透某些形式的二氧化硅的框架，例如α-方石英和二氧化硅玻璃，导致结构膨胀。这种行为不会在氩气中的压缩时发生，但在中等大小的氖原子的情况下，动力学速度低于阈值压力时可能发生。对于多孔纯二氧化硅沸石，较大的原子和分子很容易在高压下进入孔隙。在原型全二氧化硅沸石的情况下，具有单斜五硅（MFI）结构和三维孔隙系统的硅质岩-1，氩或简单的分子如水，氮气和二氧化碳可以完全填充孔隙系统但不进入框架。唯一的例外是氢气，最近发现它进入了框架的二级单元。MFI的结构由沿b方向的线性5.3 Å×5.6 Å通道和xz平面上的5.1 Å×5.5 Å正弦孔（sinusoidal pores）形成。高二氧化硅，MFI在349 K处经历从单斜<span class="math inline">\(P2_1/n\)</span>到正交的铁弹性相变。在1 GPa附近的高压下也观察到类似的相变。当硅质MFI在渗透介质（如水或二氧化碳）中被压缩时，这种转变可以在更低的压力下发生。还发现用客体物种填充可以稳定正交相，相对于在非常高的压力下压力诱导的非晶化。在H2填充的MFI中，在60 GPa下仍能观察到结晶相。</p>
-<figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\1.jpeg"
-     alt="图 1"
-     width=700>
-<figcaption>
-<small>图 1.单斜P21/n11，空间群14（下图）和正交Pnma，S.G. 62 MFI（上图）的结构。比较结构，我们注意到单斜α=90.6207°，并且在Si-O-Si桥接角上观察到一些小差异。单斜晶系的晶胞在非标准空间群设置中描述，以保留类似于斜方相的基础。 </small>
-</figcaption>
-</figure>
-<p>在本工作中，我们探索了硅质MFI，重点是氦插入对单斜相和正交相的影响，它们的稳定性场，体积变化以及该材料的可压缩性。</p>
-<h2 id="方法">方法</h2>
-<p>先制备样品，不细看了。</p>
-<p>将样品与标压用的红宝石球一起放置在DAC的垫圈孔中。在高压下引入流体氦气，压到0.13 GPa。使用波长为0.4828 Å的单色辐射，在DESY的PETRA-III同步加速器的极端条件下光束线P02.2进行角度色散X射线粉末衍射测量。聚焦光束光斑尺寸为9 μm×3 μm。使用珀金埃尔默XRD1621（2048×2048像素，200 μm× 200 μm）探测器进行检测。对二维衍射图像进行积分，然后使用Dioptas程序获得一维衍射轮廓。使用FullProf程序进行Le Baul精修以获得精确的晶格参数和体积。使用红宝石荧光法测量压力。</p>
-<h2 id="结果与讨论">结果与讨论</h2>
-<p>在环境压力下，样品MFI选用已知的单斜结构。在0.13 GPa加载氦气时，结构仍然是单斜的，然而，与之前空的MFI和充满许多分子原子（例如水和二氧化碳）的MFI相比，尽管填充了孔隙，但在1 GPa以下没有观察到向更对称的正交Pnma的转化。事实上，即使高达9.1 GPa，晶胞仍然是单斜晶系，hkl和<span class="math inline">\(\overline{h}kl\)</span>反射有明显的分裂（图2和3）。单斜角度α未随压力减小，无明显趋于正交相的形式（表1，图4）。单斜晶胞在非标准<span class="math inline">\(P2_1/n11\)</span>，S.G.14空间群设置中描述，以保持与Pnma正交相相同的参考。在填充He的情况下，相对晶胞体积远高于无填充或充Ar或充CO2的MFI正交晶相，导致单斜MFI因He膨胀（图5）。氦不同于上面提到的其他客体物种，因为它已被清楚地证明可以穿透各种二氧化硅形式的框架，例如二氧化硅玻璃和方石英，因此除了5.5 Å直径的孔外，它还可以填充框架中的各种环和笼。H2的情况与高压下MFI的正交晶型类似，氢分子不仅占据孔隙，而且占据由SiO4四面体的5元和6元环构成的框架中的笼子。但对于充氢气的情况，低压下没有观察到单斜形式，也没有观察到单斜-正交相变。在另一种硅质沸石TON中，发现在高压和高温下插入 H2 会引起异常体积增加和向更高对称结构的相变.</p>
-<figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\2.jpeg"
-     alt="图 2"
-     width=700>
-<figcaption>
-<small>图 2.MFI在He中的X射线衍射图与压力的函数关系（λ=0.4828 Å）。卸压时获得的数据用“dec.”表示。 </small>
-</figcaption>
-</figure>
-<figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\3.jpeg"
-     alt="图 3"
-     width=700>
-<figcaption>
-<small>图 3.以Le Bail拟合9.1 GPa MFI/He P21/n结构（下图）和10.9 GPa Pnma结构（上图）。实验（黑色），计算（红色）和差异（蓝色）（λ = 0.4828 Å）。垂直条表示布拉格反射的计算位置。 </small>
-</figcaption>
-</figure>
-<figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\4.jpeg"
-     alt="图 4"
-     width=700>
-<figcaption>
-<small>图 4.He中MFI的晶胞参数压缩（实心符号）和卸压（空符号）的函数。误差线小于符号大小。 </small>
-</figcaption>
-</figure>
-<figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\b1.png"
-     alt="表 1"
-     width=700>
-<figcaption>
-<small>表1.压缩时结构过渡发生在9.1和10.9 GPa之间。请注意，空起始材料是单斜晶系，在空间组（P21/n，S.G. 14）的非标准P21/n11设置中，a=20.1344（1）Å，b=19.9018（1）Å，c=13.38641（8）Å，α=90.6207（5）°，以保持与斜方体型Pnma相同的轴。 </small>
-</figcaption>
-</figure>
-<p>晶格参数a在压力为7 GPa以下时减小，但在7到9 GPa之间，它几乎是不可压缩的，这表明预相变的开始（图4）。随后是10.9 GPa处的衍射图样发生重大变化，该衍射图谱仍处于液相中，比12.1 GPa的氦凝固压力低1 GPa以上。在10.9 GPa时，峰值锐化并移动到较低的2θ角，hkl反射分裂消失（例如，313和<span class="math inline">\(\overline{3}13\)</span>），此外，hkl反射与khl反射合并。在此压力下，晶胞参数为a=b=19.443(2)Å和c=13.071(3) Å，意外地具有相同的a和b值，即使从结构的角度来看这些方向非常不同。这种意外并不新鲜，以前在高压下观察到Ar和CO2中的MFI也存在这个现象。 由于将致密流体氦插入结构中，在相变处观察到接近3%的体积增加（图5）。预计该高压下的单斜向正交晶系、铁弹性相变的单斜角度和体积将连续或不连续减小。由于穿透剂He在晶体结构的框架中进入空隙的性质不同，目前的行为与先前报道的案例明显不同。在这里，我们还报告说，在He填充MFI的斜方相中，a细胞参数的可压缩性明显更高，这与正弦孔的方向相对应。沿线孔方向的b参数刚性很强。</p>
-<figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\5.jpeg"
-     alt="图 5"
-     width=700>
-<figcaption>
-<small>图 5.He中MFI的相对体积（V/V0）压缩（实心方块）和卸压（空方块）的函数。圆圈、虚线和实线分别代表MFI在H2，硅油和Ar和CO2中的行为。误差线小于符号大小。 </small>
-</figcaption>
-</figure>
-<p>由于这种准静水压力传递介质的偏应力程度低，氦气中MFI的峰值在高达42 GPa时仍然非常尖锐（图2）。 在42 GPa以上，峰展宽与MFI结构中的应变有关。这些线在压力释放时变尖，但我们观察到结构行为存在一些滞后。减压至6.2 GPa后，MFI的体积与压缩时观察到的体积相似，但结构仍然是正交的。</p>
-<p>与He填充的MFI相比，H2填充MFI的衍射线略宽，但从未观察到快速增加，并且展宽更为缓慢。与He填充MFI相比，晶胞的可压缩性更低。 由于氦原子和氢分子的大小相似，因此可以预期MFI结构中的氦量与GCMC模拟中的H2在晶胞体积相似的压力下发现的氦量相似，例如，在12和16 GPa之间，每个单位插入约135个H2分子。</p>
-<h2 id="结论">结论</h2>
-<p>氦气很容易填充单斜MFI的结构，使该相稳定在∼10 GPa的压力下，这远高于任何其他原子或分子客体的报告。高于该压力，但仍比氦的凝固压力低1-2 GPa，观察到向正交相的转变，体积增加约3%，这是由于进一步填充致密流体氦完全改变了这种转变的机制，在没有孔隙填充的情况下通常是铁弹性的。事实上，插入的氦的局部结构的变化，模仿纯氦的凝固相关变化，很可能会发生，并成为观察到的充满氦的MFI转变的驱动力。</p>
 ]]></content>
       <categories>
         <category>科研相关</category>
@@ -1252,6 +1563,163 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
 <p>略</p>
 <h2 id="结论">结论</h2>
 <p>综上所述，采用紫外拉曼光谱仪仔细研究了分子筛从FAU到CHA和MFI分子筛的转化。当从FAU开始到目标CHA沸石时，因为它们共享相同的基本组成单元（D6R），D6R几乎直接转变。然而，当目标沸石不包含相同的基本结构时，例如用于将FAU转化为MFI，D6R单元被分解为两个S6R作为目标产物进一步组装和生长的单元。本研究提供的见解对于进一步了解沸石间转化很重要。</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>分子筛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dirac semimetal PdTe2  temperature-dependent quasiparticle dynamics and electron–phonon coupling</title>
+    <url>/2023/03770da5f0.html</url>
+    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
+<ul>
+<li>标题：狄拉克半金属PdTe2随温度的载流子动力学和电声耦合</li>
+<li>作者：Shu-Yu Liu a, Shuang-Xing Zhu a, Qi-Yi Wu a, Chen Zhang a, Peng-Bo Song b,c, You-Guo Shi b,c, Hao Liu a, Zi-Teng Liu a, Jiao-Jiao Song a, Fan-Ying Wu a, Yin-Zou Zhao a, Xiao-Fang Tang a, Ya-Hua Yuan a, Han Huang a, Jun He a, H.Y. Liu d, Yu-Xia Duan a, Jian-Qiao Meng a,e,∗</li>
+<li>单位：中南大学物理与电子学院；中科院物理所北京凝聚态物理国家重点实验室；中国科学院大学物理科学学院；北京量子信息科学研究院；湖南师范大学量子效应及其应用协同创新中心</li>
+<li>期刊：Results in Physics</li>
+</ul>
+<span id="more"></span>
+<h2 id="个人评价捏">个人评价捏</h2>
+<p>对这种材料了解不多，且文章易读性对目前的我来说非常低，但是本文在超快动力学的理论框架上为笔者带来了非常大的启发，尤其是动力学曲线中振荡的部分，以及振荡与声子的关系，都在文中得到了很好的说明。</p>
+<h2 id="摘要">摘要</h2>
+<p>使用光学泵浦-探测光谱研究了狄拉克半金属PdTe2单晶体，超快载流子温度关系和声子动力学。定量分析表明亚皮秒级的超快弛豫过程（<span class="math inline">\(\tau_f\)</span>）来自电子-声子热效应。此快弛豫随后是一个稍慢的弛豫过程（<span class="math inline">\(\tau_s\)</span>），时间尺度为7-9.5皮秒，其来自声子相关的电子-空穴复合。所有测量温度下均观测到两个明显的振动模式。这些模式分别对应Te原子的面内（<span class="math inline">\(E_g\)</span>）和面外（<span class="math inline">\(A_{1g}\)</span>）运动模式。<strong>测试结果表明pure dephasing在弛豫过程中起到重要作用。</strong>电子-声子耦合常数分析表明<span class="math inline">\(A_{1g}\)</span>模式对超导贡献最大，且高频声子应也参与形成库珀对。本文章结果会提升对PdTe2复杂超导性的理解。</p>
+<h2 id="引言总结版">引言（总结版）</h2>
+<p>在发现拓扑绝缘体后，拓扑超导体吸引了大量目光。在过度金属硫族化合物中，存在各种物理性质。理论计算和实验结果都表明集中TMDC可能拥有拓扑超导性。</p>
+<p><em>补充：拓扑绝缘体：三维不导电的绝缘体态之外，还同时具有二维导电的金属表面态。拓扑超导体，其体态是超导态，表面则是具有拓扑保护的、无能隙电子态。</em></p>
+<p><em>再次补充：在具有周期原子晶格的固体材料中，电子的运动可以被周期化的布洛赫波来描述，电子能级不再是孤立的存在，而是被展宽成一条条“能带”——由一系列特定能量-动量关系组成。在凝聚态物质里，考虑到电子们受到的相互作用，电子也不再是独立的“裸电子”了，而是可以重新定义成一群“穿衣服的粒子”，称之为“准粒子”，这些准粒子的能量-动量分布，决定了材料许多宏观物理特性</em></p>
+<p><em>再再补充：材料中电子属于费米子，因为泡利不相容原理，无法全部处于低能的量子态，只能从低能带不断往高能带填充。处于最高能带（导带）的电子具有很强的巡游性，数目越多则导电性越好，一般而言金属就是导带半满填充的。许多金属在低温下会成为超导体，其电阻为零，是一种宏观量子效应。本质在于，材料中的电子（费米子）借助相互作用媒介两两配对，形成新的准粒子（玻色子），就不再同一量子态相互排挤，而是共同携手凝聚到低能稳定态——超导态</em></p>
+<p>1960s发现PdTe2超导相转变温度为1.7K。最近，通过角分辨光电子光谱证实PdTe2可能是2型或者1型2型共存的狄拉克半金属，其拥有自旋极化拓扑表面态。该拓扑表面态表明PdTe2可能是拓扑超导体。然而，比热、穿透深度和其他测试都表示PdTe2是全带隙的s波常规超导体。</p>
+<p>超导体一般分为1型和2型，区别是是否存在普通相和超导相同时存在的中间相。一些研究说体PdTe2是典型1型超导体（<span class="math inline">\(T_c=1.65 K\)</span>）。其表面混合了1型和2型，相变温度为<span class="math inline">\(T_c^s=1.33 K\)</span>。一般认为其固有表面电子不均匀性导致了混合态。</p>
+<p>对常规超导体来说，库珀对由声子联结。等钱中子非弹性散射和理论计算表示<span class="math inline">\(\Gamma\)</span>点附近的声子色散对PdTe2超导性很重要。因此，研究PdTe2声子性质有希望从实验上确定声电耦合系数。</p>
+<p>（稍微提了超快光谱对于角分辨的特点）</p>
+<p>超快光谱用来研究e-ph耦合系数，从而进一步研究其超导性。观察到两个时间尺度明显不同的载流子弛豫过程。他们分别来自e-ph热效应和声子引导的电子-空穴复合。在5-300K温度范围内探测到两种光学声子，分别是Te原子在面内（<span class="math inline">\(E_g\)</span>）和面外<span class="math inline">\(A_{1g}\)</span>运动。<span class="math inline">\(E_g\)</span>能量与一个<span class="math inline">\(\Gamma\)</span>点声子一致，其与PdTe2超导性相关。e-ph耦合常数分析显示高频声子也参与了库珀对形成。</p>
+<h2 id="实验参数">实验参数</h2>
+<p>脉冲宽度：35 fs；<br />
+中心波长：800 nm；<br />
+重复频率：1 MHz；<br />
+光斑直径：泵浦光斑 160 <span class="math inline">\(\mu m\)</span>；探测光斑 40 <span class="math inline">\(\mu m\)</span></p>
+<h2 id="结果分析">结果分析</h2>
+<h3 id="整体分析">整体分析</h3>
+<p>本篇文章的拟合方程：<br />
+<span class="math inline">\(\dfrac{Δ𝑅(𝑡)}{𝑅}=\dfrac{1}{\sqrt{2\pi w}}exp(-\dfrac{t^2}{2w^2})\otimes\left[ \sum_{i=1,2} A_iexp(-\dfrac{t-t_0}{\tau_0})+\sum_{j=1,2}B_jexp(-\Gamma_j(t-t_0))sin(\Omega_jt+\phi_j)\right]+C\)</span></p>
+<p>电子-电子热化和电子-玻色子散射过程决定了<span class="math inline">\(\frac{Δ𝑅(𝑡)}{𝑅}\)</span>的时间关系。光激发导致0.2皮秒的上升，接着是两个分别的复合过程。<br />
+其一是快复合过程（<span class="math inline">\(\tau_f\)</span>），在0.3皮秒内发生。<br />
+其二是慢复合过程（<span class="math inline">\(\tau_s\)</span>）。<br />
+在40皮秒的弛豫阶段后，信号趋于平稳。</p>
+<p>两个明显的高频振荡在光激发瞬间发生，并叠加在<span class="math inline">\(\frac{Δ𝑅(𝑡)}{𝑅}\)</span>上。</p>
+<p>这种同时性由图1中的非均匀周期性振荡证明。弛豫曲线被大幅度的两个振荡显著影响。振荡和载流子动力学导致了第一个反射峰的出现。</p>
+<h3 id="观察动力学曲线">观察动力学曲线</h3>
+<p>选定了几个温度，观察其短时间尺度的动力学曲线，发现相似的，都是两个明显的弛豫过程和两个明显的振荡。振幅随温度升高而降低（<em>我觉得是光激发声子变少了</em>），拟合曲线也都吻合完好。</p>
+<h3 id="非振荡部分即弛豫过程">非振荡部分（即弛豫过程）</h3>
+<p>老一套，提出弛豫时间<span class="math inline">\(\tau_f\)</span>和<span class="math inline">\(\tau_s\)</span>。快过程随着温度降低加快，在100 K左右达到饱和。</p>
+<p>在飞秒光激发后，电子温度迅速上升至几千K，高能热电子接下来通过电子-声子作用，利用晶格将多余的能量传递出去，整个过程为亚皮秒级。走向与其他材料中的e-ph作用一致，又由于e-e作用比e-ph作用快得多，因此<span class="math inline">\(\tau_f\)</span>主要由e-ph作用主导。</p>
+<p>低温下，e-ph和e-e作用时间差不多，因此无法用双温模型来研究低温下的e-ph作用。然后作者用双温模型计算了下比热等，不是我关注重点。</p>
+<p>利用常规法计算声电耦合常数，算出了<span class="math inline">\(\lambda \langle\omega^2\rangle\)</span>，然后关于<span class="math inline">\(\omega^2\)</span>值的代入问题，选了<span class="math inline">\(E_g\)</span>和<span class="math inline">\(A_{1g}\)</span>，算出的<span class="math inline">\(\lambda_{E_g}\gg\lambda_{theo}\)</span>，可能因为Eg的频率远小于本体的频率。而<span class="math inline">\(\lambda_{A_1g}\)</span>只微微高于理论值，说明其对超导起到更多作用，同时也说明还有更高频声子的参与。</p>
+<p>经过最初的e-ph作用后，导带中的电子和价带中的空穴逐渐靠近费米能级附近，角分辨光电子能谱测量表明PdTe2中同时存在电子和空穴费米口袋，因此很自然想到<span class="math inline">\(\tau_s\)</span>可能来自e-h复合。<span class="math inline">\(\tau_s\)</span>弛豫时间是7~9.5皮秒，比几纳秒的e-h直接复合快得多。费米口袋在动量空间是分开的，由动量守恒知道e-h需要其他准粒子帮助，这里考虑最可能的就是声子了。</p>
+<p>balabala地拟合发现很好，然后低温下由于声子激发变少，带间e-h散射效率降低，因此时间变长。</p>
+<h3 id="集体激发动力学">集体激发动力学</h3>
+<p>减掉弛豫过程后，得到振荡部分在时域上的曲线，用前边的方程进行了个拟合。利用快速傅里叶变换提取频域的相干集体激发。观察到两个高频振动模式，<span class="math inline">\(\Omega_1\)</span>和<span class="math inline">\(\Omega_2\)</span>。频率更低的<span class="math inline">\(\Omega_1\)</span>在频域上更分散可能因为其固有的声子信号较低，也可能因为其周期是<span class="math inline">\(\Omega_2\)</span>的两倍（<em>为什么这样就会有影响，是说可能所谓的FFT提取出的频率强度可能不对吗</em>）。</p>
+<p>集体激发态（如相干声子、电荷密度波）造成的振荡进一步反映在反射率信号上。通常，室温下的振荡部分主要由相干声子造成。声子通过色散激发或者光诱导拉曼模式激发。</p>
+<p>对材料进行拉曼测试，室温300 K下，两种模式拉曼位移为~75.4 <span class="math inline">\(cm_{-1}\)</span>和~133.2 <span class="math inline">\(cm_{-1}\)</span>，分别对应Te原子在面内的<span class="math inline">\(E_g\)</span>和面间的<span class="math inline">\(A_{1g}\)</span>，在同样刻度间隔下，两振动模式和上边的<span class="math inline">\(\Omega_1\)</span>和<span class="math inline">\(\Omega_2\)</span>完全一致，表明分别起源于Eg和A1g。</p>
+<p>还研究了两种振动与温度的关系。5 K时，1和2的频率大约2.6和4.2 THz，2的频率随着温度增加单调降低。在5-300K的范围，2的模式大概红移了0.2 THz。而1则在80K以上都很稳定。<span class="math inline">\(\Gamma_2\)</span>的阻尼率随温度变化较小，<span class="math inline">\(\Gamma_1\)</span>随温度升高而降低。</p>
+<p>接着就是讨论半金属和拓扑绝缘体的去相干。有一个关于非谐效应的，随着温度上升，频率会降低，而阻尼率升高，可以用来理解2模式，对于1模式是不适用的。去相干永远存在，因为量子系统永远在与周围环境连接。</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>超快</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium</title>
+    <url>/2023/0438b78d0c.html</url>
+    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
+<ul>
+<li>标题：由致密流体氦的高压插入引起的五硅沸石中正体积变化的单斜-斜方晶相变</li>
+<li>时间：October 25, 2021</li>
+<li>作者：Mario Santoro, Weiwei Dong, Konstantin Glazyrin, and Julien Haines</li>
+<li>单位：意大利国家光学研究所；欧洲非线性光谱实验室；德国电子同步加速器；中国科学院高能所北京同步辐射；法国蒙彼利埃大学</li>
+<li>期刊：the Journal of Physical chemistry C</li>
+<li>用到的表征手段：同步辐射XRD</li>
+</ul>
+<span id="more"></span>
+<blockquote>
+<p>原文：<a href="https://pubs.acs.org/doi/10.1021/acs.jpcc.1c07791">10.1021/acs.jpcc.1c07791</a></p>
+</blockquote>
+<table border="1">
+<tr>
+<td>
+<b><font color="orange">摘要</font>：</b> 使用同步辐射XRD研究了五硅沸石（archetypal siliceous zeolite Mobil-Five MFI）中氦的插入。由于氦气对孔隙和骨架的渗透程度非常高，MFI的单斜形式在较大的压力区间内稳定，并且压缩性远低于孔隙为空或充满除氢以外的任何其他客体分子或原子时。MFI结构从单斜<span class="math inline">\(P2_1/n\)</span>变为正交Pnma，在接近10 GPa时体积不连续地增加了3%。材料在高于42 GPa的压力下具有很高的应变性，但仍保持结晶性。卸压时释放应变，回复高结晶性。
+</td>
+</tr>
+</table>
+<h2 id="引言">引言</h2>
+<p>已经发现氦在高压下很容易穿透某些形式的二氧化硅的框架，例如α-方石英和二氧化硅玻璃，导致结构膨胀。这种行为不会在氩气中的压缩时发生，但在中等大小的氖原子的情况下，动力学速度低于阈值压力时可能发生。对于多孔纯二氧化硅沸石，较大的原子和分子很容易在高压下进入孔隙。在原型全二氧化硅沸石的情况下，具有单斜五硅（MFI）结构和三维孔隙系统的硅质岩-1，氩或简单的分子如水，氮气和二氧化碳可以完全填充孔隙系统但不进入框架。唯一的例外是氢气，最近发现它进入了框架的二级单元。MFI的结构由沿b方向的线性5.3 Å×5.6 Å通道和xz平面上的5.1 Å×5.5 Å正弦孔（sinusoidal pores）形成。高二氧化硅，MFI在349 K处经历从单斜<span class="math inline">\(P2_1/n\)</span>到正交的铁弹性相变。在1 GPa附近的高压下也观察到类似的相变。当硅质MFI在渗透介质（如水或二氧化碳）中被压缩时，这种转变可以在更低的压力下发生。还发现用客体物种填充可以稳定正交相，相对于在非常高的压力下压力诱导的非晶化。在H2填充的MFI中，在60 GPa下仍能观察到结晶相。</p>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\1.jpeg"
+     alt="图 1"
+     width=700>
+<figcaption>
+<small>图 1.单斜P21/n11，空间群14（下图）和正交Pnma，S.G. 62 MFI（上图）的结构。比较结构，我们注意到单斜α=90.6207°，并且在Si-O-Si桥接角上观察到一些小差异。单斜晶系的晶胞在非标准空间群设置中描述，以保留类似于斜方相的基础。 </small>
+</figcaption>
+</figure>
+<p>在本工作中，我们探索了硅质MFI，重点是氦插入对单斜相和正交相的影响，它们的稳定性场，体积变化以及该材料的可压缩性。</p>
+<h2 id="方法">方法</h2>
+<p>先制备样品，不细看了。</p>
+<p>将样品与标压用的红宝石球一起放置在DAC的垫圈孔中。在高压下引入流体氦气，压到0.13 GPa。使用波长为0.4828 Å的单色辐射，在DESY的PETRA-III同步加速器的极端条件下光束线P02.2进行角度色散X射线粉末衍射测量。聚焦光束光斑尺寸为9 μm×3 μm。使用珀金埃尔默XRD1621（2048×2048像素，200 μm× 200 μm）探测器进行检测。对二维衍射图像进行积分，然后使用Dioptas程序获得一维衍射轮廓。使用FullProf程序进行Le Baul精修以获得精确的晶格参数和体积。使用红宝石荧光法测量压力。</p>
+<h2 id="结果与讨论">结果与讨论</h2>
+<p>在环境压力下，样品MFI选用已知的单斜结构。在0.13 GPa加载氦气时，结构仍然是单斜的，然而，与之前空的MFI和充满许多分子原子（例如水和二氧化碳）的MFI相比，尽管填充了孔隙，但在1 GPa以下没有观察到向更对称的正交Pnma的转化。事实上，即使高达9.1 GPa，晶胞仍然是单斜晶系，hkl和<span class="math inline">\(\overline{h}kl\)</span>反射有明显的分裂（图2和3）。单斜角度α未随压力减小，无明显趋于正交相的形式（表1，图4）。单斜晶胞在非标准<span class="math inline">\(P2_1/n11\)</span>，S.G.14空间群设置中描述，以保持与Pnma正交相相同的参考。在填充He的情况下，相对晶胞体积远高于无填充或充Ar或充CO2的MFI正交晶相，导致单斜MFI因He膨胀（图5）。氦不同于上面提到的其他客体物种，因为它已被清楚地证明可以穿透各种二氧化硅形式的框架，例如二氧化硅玻璃和方石英，因此除了5.5 Å直径的孔外，它还可以填充框架中的各种环和笼。H2的情况与高压下MFI的正交晶型类似，氢分子不仅占据孔隙，而且占据由SiO4四面体的5元和6元环构成的框架中的笼子。但对于充氢气的情况，低压下没有观察到单斜形式，也没有观察到单斜-正交相变。在另一种硅质沸石TON中，发现在高压和高温下插入 H2 会引起异常体积增加和向更高对称结构的相变.</p>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\2.jpeg"
+     alt="图 2"
+     width=700>
+<figcaption>
+<small>图 2.MFI在He中的X射线衍射图与压力的函数关系（λ=0.4828 Å）。卸压时获得的数据用“dec.”表示。 </small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\3.jpeg"
+     alt="图 3"
+     width=700>
+<figcaption>
+<small>图 3.以Le Bail拟合9.1 GPa MFI/He P21/n结构（下图）和10.9 GPa Pnma结构（上图）。实验（黑色），计算（红色）和差异（蓝色）（λ = 0.4828 Å）。垂直条表示布拉格反射的计算位置。 </small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\4.jpeg"
+     alt="图 4"
+     width=700>
+<figcaption>
+<small>图 4.He中MFI的晶胞参数压缩（实心符号）和卸压（空符号）的函数。误差线小于符号大小。 </small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\b1.png"
+     alt="表 1"
+     width=700>
+<figcaption>
+<small>表1.压缩时结构过渡发生在9.1和10.9 GPa之间。请注意，空起始材料是单斜晶系，在空间组（P21/n，S.G. 14）的非标准P21/n11设置中，a=20.1344（1）Å，b=19.9018（1）Å，c=13.38641（8）Å，α=90.6207（5）°，以保持与斜方体型Pnma相同的轴。 </small>
+</figcaption>
+</figure>
+<p>晶格参数a在压力为7 GPa以下时减小，但在7到9 GPa之间，它几乎是不可压缩的，这表明预相变的开始（图4）。随后是10.9 GPa处的衍射图样发生重大变化，该衍射图谱仍处于液相中，比12.1 GPa的氦凝固压力低1 GPa以上。在10.9 GPa时，峰值锐化并移动到较低的2θ角，hkl反射分裂消失（例如，313和<span class="math inline">\(\overline{3}13\)</span>），此外，hkl反射与khl反射合并。在此压力下，晶胞参数为a=b=19.443(2)Å和c=13.071(3) Å，意外地具有相同的a和b值，即使从结构的角度来看这些方向非常不同。这种意外并不新鲜，以前在高压下观察到Ar和CO2中的MFI也存在这个现象。 由于将致密流体氦插入结构中，在相变处观察到接近3%的体积增加（图5）。预计该高压下的单斜向正交晶系、铁弹性相变的单斜角度和体积将连续或不连续减小。由于穿透剂He在晶体结构的框架中进入空隙的性质不同，目前的行为与先前报道的案例明显不同。在这里，我们还报告说，在He填充MFI的斜方相中，a细胞参数的可压缩性明显更高，这与正弦孔的方向相对应。沿线孔方向的b参数刚性很强。</p>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\5.jpeg"
+     alt="图 5"
+     width=700>
+<figcaption>
+<small>图 5.He中MFI的相对体积（V/V0）压缩（实心方块）和卸压（空方块）的函数。圆圈、虚线和实线分别代表MFI在H2，硅油和Ar和CO2中的行为。误差线小于符号大小。 </small>
+</figcaption>
+</figure>
+<p>由于这种准静水压力传递介质的偏应力程度低，氦气中MFI的峰值在高达42 GPa时仍然非常尖锐（图2）。 在42 GPa以上，峰展宽与MFI结构中的应变有关。这些线在压力释放时变尖，但我们观察到结构行为存在一些滞后。减压至6.2 GPa后，MFI的体积与压缩时观察到的体积相似，但结构仍然是正交的。</p>
+<p>与He填充的MFI相比，H2填充MFI的衍射线略宽，但从未观察到快速增加，并且展宽更为缓慢。与He填充MFI相比，晶胞的可压缩性更低。 由于氦原子和氢分子的大小相似，因此可以预期MFI结构中的氦量与GCMC模拟中的H2在晶胞体积相似的压力下发现的氦量相似，例如，在12和16 GPa之间，每个单位插入约135个H2分子。</p>
+<h2 id="结论">结论</h2>
+<p>氦气很容易填充单斜MFI的结构，使该相稳定在∼10 GPa的压力下，这远高于任何其他原子或分子客体的报告。高于该压力，但仍比氦的凝固压力低1-2 GPa，观察到向正交相的转变，体积增加约3%，这是由于进一步填充致密流体氦完全改变了这种转变的机制，在没有孔隙填充的情况下通常是铁弹性的。事实上，插入的氦的局部结构的变化，模仿纯氦的凝固相关变化，很可能会发生，并成为观察到的充满氦的MFI转变的驱动力。</p>
 ]]></content>
       <categories>
         <category>科研相关</category>
@@ -1823,23 +2291,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>桜ノ雨</title>
-    <url>/2022/066631e6d7.html</url>
-    <content><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=22677426&amp;auto=0&amp;height=32">
-</iframe>
-<p>看文献真不是人能干的事儿，正好听到这首，发现歌词里好多不太常见的读音，索性打一下喽（过去是学累了抄歌词，现在是学累了打歌词嗯……</p>
-<p>0629更新捏：做了实验发现和实验比起来，看文献真是世间最美好的事。</p>
-<p><font color=#eb507e> それぞれの場所へ旅立っても <br>友達だ聞くまでもないじゃん <br>十人十色に輝いた日々が <br>胸張れと背中押す</font> <br><span id="more"></span></p>
-<p><font color=#eb507e><br><ruby>土埃<rp>(<rp><rt>つちぼこり</rt><rp>)</rp></ruby>上げ<ruby>競<rp>(<rp><rt>きそ</rt><rp>)</rp></ruby>った<ruby>校庭<rp>(<rp><rt>こうてい</rt><rp>)</rp></ruby> <br><ruby>窮屈<rp>(<rp><rt>きゅうくつ</rt><rp>)</rp></ruby>で着くずした制服 <br>机の上に書いた落書き <br>どれもこれも僕らの証 <br> <br><ruby>白紙<rp>(<rp><rt>はくし</rt><rp>)</rp></ruby>の<ruby>答辞<rp>(<rp><rt>とうじ</rt><rp>)</rp></ruby>には伝えきれない <br>思い出の数だけ涙が滲む <br>幼くて傷つけもした <br>僕らは少しくらい大人になれたのかな <br> <br>教室の窓から桜の雨 <br>ふわり手のひらこころに寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br><ruby>下駄箱<rp>(<rp><rt>げたばこ</rt><rp>)</rp></ruby>で見つけた恋の実 <br><ruby>廊下<rp>(<rp><rt>ろうか</rt><rp>)</rp></ruby>で<ruby>零<rp>(<rp><rt>こぼ</rt><rp>)</rp></ruby>した<ruby>不平不満<rp>(<rp><rt>ふへいふまん</rt><rp>)</rp></ruby> <br><ruby>屋上<rp>(<rp><rt>おくじょう</rt><rp>)</rp></ruby>で<ruby>手<rp>(<rp><rt>た</rt><rp>)</rp>繰<rp>(<rp><rt>ぐ</rt><rp>)</rp></ruby>り描いた未来図 <br>どれもこれも僕らの証 <br> <br>卒業<ruby>証書<rp>(<rp><rt>しょうしょ</rt><rp>)</rp></ruby>には書いてないけど <br>人を信じ人を愛して<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>んだ <br>泣き笑い喜び<ruby>怒<rp>(<rp><rt>いか</rt><rp>)</rp></ruby>り <br>僕らみたいに青く青く晴れ渡る空 <br> <br>教室の窓から桜ノ虹 <br>夢の<ruby>一片<rp>(<rp><rt>ひとひら</rt><rp>)</rp></ruby>胸<ruby>震<rp>(<rp><rt>ふる</rt><rp>)</rp></ruby>わせた <br>出会いの為の別れと信じて <br>手を振り返そう　忘れないで <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br><ruby>幾千<rp>(<rp><rt>いくぜん</rt><rp>)</rp></ruby>の<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>び<ruby>舎<rp>(<rp><rt>や</rt><rp>)</rp></ruby>の中で <br>僕らが巡り逢えた奇跡 <br>幾つ年をとっても変わらないで <br>その優しい笑顔 <br> <br>教室の窓から桜ノ雨 <br>ふわりてのひら　心に寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br>No matter how hard it hurts me. <br>I'll never say good bye. <br>Your presence will always linger in my heart. <br>... wanna see your smile again. </font></p>
-]]></content>
-      <categories>
-        <category>日本語</category>
-      </categories>
-      <tags>
-        <tag>歌词</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Origin操作小指南</title>
     <url>/2022/06431ba714.html</url>
     <content><![CDATA[<p>真的很小，用的是2021版。</p>
@@ -1861,6 +2312,23 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </categories>
       <tags>
         <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>桜ノ雨</title>
+    <url>/2022/066631e6d7.html</url>
+    <content><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=22677426&amp;auto=0&amp;height=32">
+</iframe>
+<p>看文献真不是人能干的事儿，正好听到这首，发现歌词里好多不太常见的读音，索性打一下喽（过去是学累了抄歌词，现在是学累了打歌词嗯……</p>
+<p>0629更新捏：做了实验发现和实验比起来，看文献真是世间最美好的事。</p>
+<p><font color=#eb507e> それぞれの場所へ旅立っても <br>友達だ聞くまでもないじゃん <br>十人十色に輝いた日々が <br>胸張れと背中押す</font> <br><span id="more"></span></p>
+<p><font color=#eb507e><br><ruby>土埃<rp>(<rp><rt>つちぼこり</rt><rp>)</rp></ruby>上げ<ruby>競<rp>(<rp><rt>きそ</rt><rp>)</rp></ruby>った<ruby>校庭<rp>(<rp><rt>こうてい</rt><rp>)</rp></ruby> <br><ruby>窮屈<rp>(<rp><rt>きゅうくつ</rt><rp>)</rp></ruby>で着くずした制服 <br>机の上に書いた落書き <br>どれもこれも僕らの証 <br> <br><ruby>白紙<rp>(<rp><rt>はくし</rt><rp>)</rp></ruby>の<ruby>答辞<rp>(<rp><rt>とうじ</rt><rp>)</rp></ruby>には伝えきれない <br>思い出の数だけ涙が滲む <br>幼くて傷つけもした <br>僕らは少しくらい大人になれたのかな <br> <br>教室の窓から桜の雨 <br>ふわり手のひらこころに寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br><ruby>下駄箱<rp>(<rp><rt>げたばこ</rt><rp>)</rp></ruby>で見つけた恋の実 <br><ruby>廊下<rp>(<rp><rt>ろうか</rt><rp>)</rp></ruby>で<ruby>零<rp>(<rp><rt>こぼ</rt><rp>)</rp></ruby>した<ruby>不平不満<rp>(<rp><rt>ふへいふまん</rt><rp>)</rp></ruby> <br><ruby>屋上<rp>(<rp><rt>おくじょう</rt><rp>)</rp></ruby>で<ruby>手<rp>(<rp><rt>た</rt><rp>)</rp>繰<rp>(<rp><rt>ぐ</rt><rp>)</rp></ruby>り描いた未来図 <br>どれもこれも僕らの証 <br> <br>卒業<ruby>証書<rp>(<rp><rt>しょうしょ</rt><rp>)</rp></ruby>には書いてないけど <br>人を信じ人を愛して<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>んだ <br>泣き笑い喜び<ruby>怒<rp>(<rp><rt>いか</rt><rp>)</rp></ruby>り <br>僕らみたいに青く青く晴れ渡る空 <br> <br>教室の窓から桜ノ虹 <br>夢の<ruby>一片<rp>(<rp><rt>ひとひら</rt><rp>)</rp></ruby>胸<ruby>震<rp>(<rp><rt>ふる</rt><rp>)</rp></ruby>わせた <br>出会いの為の別れと信じて <br>手を振り返そう　忘れないで <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br><ruby>幾千<rp>(<rp><rt>いくぜん</rt><rp>)</rp></ruby>の<ruby>学<rp>(<rp><rt>まな</rt><rp>)</rp></ruby>び<ruby>舎<rp>(<rp><rt>や</rt><rp>)</rp></ruby>の中で <br>僕らが巡り逢えた奇跡 <br>幾つ年をとっても変わらないで <br>その優しい笑顔 <br> <br>教室の窓から桜ノ雨 <br>ふわりてのひら　心に寄せた <br>みんな集めて出来た花束を <br>空に<ruby>放<rp>(<rp><rt>はな</rt><rp>)</rp></ruby>とう　忘れないで <br>今はまだ…　小さな<ruby>花弁<rp>(<rp><rt>はなびら</rt><rp>)</rp></ruby>だとしても <br>僕らは一人じゃない <br> <br>いつかまた　大きな花弁を咲かせ <br>僕らはここで逢おう <br> <br>No matter how hard it hurts me. <br>I'll never say good bye. <br>Your presence will always linger in my heart. <br>... wanna see your smile again. </font></p>
+]]></content>
+      <categories>
+        <category>日本語</category>
+      </categories>
+      <tags>
+        <tag>歌词</tag>
       </tags>
   </entry>
   <entry>
@@ -2096,7 +2564,11 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
 <h2 id="input">input()</h2>
 <h2 id="int">int()</h2>
 <h2 id="isinstance">isinstance()</h2>
-<h2 id="issubclass">issubclass()</h2>
+<p>isinstance(<em>object</em>, <em>classinfo</em>)</p>
+<p>3.10更新：</p>
+<p>如果 <em>object</em> 是 <em>classinfo</em> 的实例或者子类，则返回 <code>True</code> ，如果 <em>object</em> 不是给定类型的对象，该函数始终返回 <code>False</code>。</p>
+<p>如果 <em>classinfo</em> 是类型对象的集合（tuple），或者多重类型的“联合类型” ，如果  <em>object</em> 是任一个类型的实例，则返回<code>True</code>。如果 <em>classinfo</em> 不是一个类型或者类型集合（tuple）或者集合（tuple），会引发<code>TypeError</code>异常。</p>
+<p>如果之前检查成功了，那可能不会引起无效类型的<code>TypeError</code>。 ## issubclass()</p>
 <h2 id="iter">iter()</h2>
 <h1 id="l">L</h1>
 <h2 id="len">len()</h2>
