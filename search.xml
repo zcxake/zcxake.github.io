@@ -106,6 +106,108 @@
       </tags>
   </entry>
   <entry>
+    <title>建站过程中遇到的一些问题的总结</title>
+    <url>/2022/05bfdf9581.html</url>
+    <content><![CDATA[<p>用的next8</p>
+<p>0.远古时期的忘掉了……</p>
+<p>0.1.这个是next的网址QAQ: https://theme-next.js.org/</p>
+<p>0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。</p>
+<h3 id="使用了自己的域名更新后页面找不到github-pages">使用了自己的域名，更新后页面找不到github pages。</h3>
+<span id="more"></span>
+<p>hexo d后仓库被强行覆盖，原先的CNAME就没有了。 在source文件夹里加一个CNAME再更新就好了。 CNAME里填写自己的域名名字。</p>
+<h3 id="使用next主题出现-extends-_layout.swig-等等">使用next主题，出现% extends '_layout.swig' %等等</h3>
+<p>hexo在5.后删除了swig，需要自己手动安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i hexo-renderer-swig</span><br></pre></td></tr></table></figure>
+<h3 id="想要播放歌曲">想要播放歌曲。</h3>
+<p>参考了很多不同站点的做法，其实大同小异。 最后发现还是去官网最快。 但是没能将云音乐红心歌单加进来还是不太开心，metingjs没解析出来。 aplayer：https://aplayer.js.org/#/zh-Hans/?id=%E5%85%A5%E9%97%A8 MetingJS：https://github.com/metowolf/MetingJS 首先根据APlayer教程安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install aplayer --save</span><br></pre></td></tr></table></figure>
+<p>然后到主题配置文件_config.yml改custom_file_path: 将head和sidebar加上（也就是去掉前边的#） 同时分别到hexo下source/_data里新建这两个njk文件</p>
+<p>siderbar.njk里的内容直接参考MeetingJS主页的教程就好了</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!-- require APlayer --&gt;</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;!-- require MetingJS --&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;meting-js</span><br><span class="line">	server=<span class="string">&quot;netease&quot;</span></span><br><span class="line">	<span class="built_in">type</span>=<span class="string">&quot;playlist&quot;</span></span><br><span class="line">	id=<span class="string">&quot;3744805&quot;</span>&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br></pre></td></tr></table></figure>
+<p>BUT， jsdelivr不好用了，可以改成（具体见<a href="#jsdelivr">这里：jsdelivr不稳定，替代品</a>，pjax那里同理，自己改一下吧： <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!-- require APlayer --&gt;</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;!-- require MetingJS --&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://gcore.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;meting-js</span><br><span class="line">	server=<span class="string">&quot;netease&quot;</span></span><br><span class="line">	<span class="built_in">type</span>=<span class="string">&quot;playlist&quot;</span></span><br><span class="line">	id=<span class="string">&quot;3744805&quot;</span>&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br></pre></td></tr></table></figure></p>
+<p>meting-js里的参数除了这三个还有APlayer里的，反正具体看官网吧，我这里没必要多复制了。 上述是加云音乐的，还有藤子，酷狗，虾米，百度的可以改。</p>
+<p>具体来说就是APlayer负责播放器的部分，MetingJS负责解析各大网站id。 但是autoplay真的能autoplay吗。→发现是浏览器限制了，唔，也好吧</p>
+<p>最后在head.njk里写上</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!--pjax：防止跳转页面音乐暂停--&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>可以跨页面放歌。 接着到主题配置文件_config.yml里把pjax改为true就好了。</p>
+<h3 id="添加sitemap网站地图">添加sitemap，网站地图</h3>
+<p>安装搜索引擎插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save </span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+<p>在站点配置文件中把url改为自己的域名</p>
+<p>hexo cl -g后public会生成sitemap和baidusitemap两个xml文件</p>
+<p>分别到谷歌、bing站点地图输入 域名/sitemap.xml</p>
+<p>百度是专用的 域名/baidusitemap.xml</p>
+<p><strong>百度还可以手动提交</strong>：</p>
+<p>安装插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
+<p>在站点配置文件添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 3 ## 提交最新的链接数量</span><br><span class="line">  host: 域名</span><br><span class="line">  token: 在百度站长平台看</span><br><span class="line">  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
+<p>到<a href="https://ziyuan.baidu.com/linksubmit/">普通收录_加快网站内容抓取，快速提交数据工具_站长工具_网站支持_百度搜索资源平台 (baidu.com)</a>看自己的host和token</p>
+<p>在站点配置文件更改deploy：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">      - type: git</span><br><span class="line">        repo: git@github.com:zcxake/zcxake.github.io.git</span><br><span class="line">        branch: master</span><br><span class="line">      - type: baidu_url_submitter</span><br></pre></td></tr></table></figure>
+<p>注意repo和branch的缩进</p>
+<p>这样以后hexo d的时候就自动提交url到百度了。 更新：但是后来发现这个baidu_url_submit可能会导致一些问题，hexo s后出现warning，虽然对提交后的成品网页没影响，但是无法预览也很麻烦，所以把nodejs退到了12……</p>
+<h3 id="希望某些文件夹不渲染">希望某些文件夹不渲染</h3>
+<p>到站点配置文件检索skip，在skip_render后加上想不被渲染的，可使用glob表达式来匹配路径</p>
+<p>如我这里的是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Directory</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: :lang</span><br><span class="line">skip_render: &quot;_ing/**&quot;</span><br></pre></td></tr></table></figure>
+<p>表示source/_ing/里的所有东西都不会被渲染</p>
+<h3 id="next主题偶尔打开会变成空白2022.5.20next-8">next主题偶尔打开会变成空白（2022.5.20）next 8</h3>
+<p>先甩上参考： <a href="https://jnssd.com/2021/12/21/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1hexo-next%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%A9%BA%E7%99%BD%E7%9A%84%E6%83%85%E5%86%B5/">感谢分享</a> 用同样的思路发现我也是这个原因，因为不太懂所以还是上<a href= "https://theme-next.js.org/docs/advanced-settings/vendors.html?highlight=vendors">next theme官网vendors下</a>瞅了一下，直接复制翻译一下好了，反正我是看这个搞定的。</p>
+<blockquote>
+<p>plugins: jsdelivr is used to set how to load the third-party plugins, e.g. anime.js. Third-party plugins are loaded from jsDelivr CDN by default.</p>
+<p>And we also provide other optional CDNs, including the famous UNPKG and CDNJS. These CDN providers are chosen to deliver our third-party plugins because they are fast and reliable. Set plugins to unpkg or cdnjs to load them from different CDN provider.</p>
+<p>Particularly, if you are a Chinese blogger or most of your visits come from China, please note that the CDNJS is blocked in some parts of China, don't use it as your CDN provider.</p>
+<p>If your would like to load all third-party plugins from your site, please set plugins to local and install the <span class="citation" data-cites="next-theme/plugins">@next-theme/plugins</span> package: https://github.com/next-theme/plugins</p>
+</blockquote>
+<table border="1">
+<tr>
+<td>
+plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.js）。<br> 但我们也留了其他选项，比如著名的unpkg和cdnjs，选择这几个因为他们可靠且迅速，设置一个你想用的吧。<br> 但是，如果您老在中国或者你访问者大多数在中国的话，注意cdnjs在中国部分地区禁了，谨慎选用。<br> <i><span class="heimu">虽然官网这么写了，但是实测是jsdelivr不稳定，另外两个可用，反正这种瞬息万变的东西自己看情况吧</span></i><br> 但你要是想从自己网站加载第三方插件的话，把plugins项设置local然后安装@next-theme/plugins package: https://github.com/next-theme/plugins
+</td>
+</tr>
+</table>
+<blockquote>
+<p>Custom CDN URLs Sometimes you may need to use CDNs other than jsdelivr, unpkg or cdnjs. For example, users can get faster loading speed in certain areas using the mirror site of jsDelivr.</p>
+<p>To enable custom CDN URL, you need to set internal: custom and / or plugins: custom in the vendors section, and then specify a CDN URL with the custom_cdn_url option.</p>
+<p>Remember to use the HTTPS protocol of CDN links when you enable HTTPS on your site.</p>
+</blockquote>
+<table border="1">
+<tr>
+<td>
+自定义CDN链接<br> 有时候，或许上边三个满足不了你，比如在某些特定的地方用JSDelivr的镜像站会快一些。 <br> 这时候你需要将internal和/或plugins设为custom，具体看你情况，然后填上底下的custom_cdn_url。 <br> 如果你的网站开启了HTTPS协议注意也要用CDN链接的HTTPS协议。
+</td>
+</tr>
+</table>
+<hr />
+<p>我目前是先改成unpkg了，如果之后还是经常空白就换成镜像站，还是不行的话就本地吧。</p>
+<h3 id="添加对公式的支持">添加对公式的支持</h3>
+<p>再更新：</p>
+<p>katex别的都挺好，能自动换行，能复制，可是在复杂一点的html语言里就会无法解析，懒得折腾跟着next官网又换成了mathjax，然后手动换行了。</p>
+<p>看了mathjax官网，确实v3还不支持自动换行，摊手，就先这样吧。</p>
+<p><span class="heimu">但确实katex更好看……</span></p>
+<p>更新： 看都推荐用mathjax，但用了之后长公式不能换行，换成katex感觉这个更好，还可以选中。 主题config.yml中math下开启katex， 然后前边差不多，先卸载原先的 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure> 再安装 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i @upupming/hexo-renderer-markdown-it-plus --save</span><br></pre></td></tr></table></figure> 目前katex是0.15.6了，已经很好用了。 下面是过去mathjax的，上面的如果好用就不用看了。</p>
+<p>mathjax： 完全参考了<a href="https://blog.csdn.net/weixin_45511189/article/details/115798563">这一篇文章</a> 完全可行，但以防万一给自己备一份吧：</p>
+<p>1.在hexo目录下使用下面的命令查看你是否已经安装了hexo-math插件 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-math</span><br></pre></td></tr></table></figure> empty就是没有，出现版本号就是装了 卸载之： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure> 2.安装hexo-filter-mathjax： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-mathjax --save</span><br></pre></td></tr></table></figure> 检查是否安装成功： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-filter-mathjax</span><br></pre></td></tr></table></figure> 显示了hexo-filter-mathjax版本号则说明安装成功。 安装成功后，进行一些全局配置，打开hexo目录下的_config.yml文件，在最后面添加如下的代码： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">  tags: none # or &#x27;ams&#x27; or &#x27;all&#x27;</span><br><span class="line">  single_dollars: true # enable single dollar signs as in-line math delimiters</span><br><span class="line">  cjk_width: 0.9 # relative CJK char width</span><br><span class="line">  normal_width: 0.6 # relative normal (monospace) width</span><br><span class="line">  append_css: true # add CSS to pages rendered by MathJax</span><br><span class="line">  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span><br></pre></td></tr></table></figure> 3.hexo-math默认的公式渲染器是hexo-renderer-marked，它和markdown的语法有冲突，我们将其卸载，查看是否安装了hexo-renderer-marked公式渲染器： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-renderer-marked</span><br></pre></td></tr></table></figure> 如果安装了将其卸载： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked  --save</span><br></pre></td></tr></table></figure> 然后安装一个新的公式渲染器，叫做hexo-renderer-kramed，它对hexo-renderer-marked进行了改进，在hexo目录下输入下面的命令安装： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure> 检查hexo-renderer-kramed是否安装成功： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-renderer-kramed</span><br></pre></td></tr></table></figure> 4.打开打开hexo主目录下的这个文件：_modules.js，然后修改下面的规则（大家最好不要删除原代码，只是将其注释掉）： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">//修改为：</span><br><span class="line">escape: /^\\([`*\[\]()#$+\-.!_&gt;])/,</span><br></pre></td></tr></table></figure> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">//修改为</span><br><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br></pre></td></tr></table></figure> 保存并退出。 5.最后，打开next主题目录下的_config.yml，开启对mathjax的支持，设置为true。 6.行间输入是<span class="math display">\[公式内容\]</span>，行内公示是$公式内容$ 7.某篇文章不想渲染公式就在md文件开头加上： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mathjax: false</span><br></pre></td></tr></table></figure> ### 谷歌字体访问不稳定 各种不稳定的问题嗯…… 感谢https://u.sb/css-cdn/ 。 next默认的是https://fonts.googleapis.com ，然后目前有个镜像可以用，在host改成自定义的：https://fonts.loli.net</p>
+<p>这里要多提一嘴镜像站了，避免以后又有啥不能使的可以替换： CDNJS：原本的：cdnjs.cloudflare.com，可用替换：cdnjs.loli.net unpkg可作为jsdelivr的替换用</p>
+<h3 id="jsdelivr不稳定替代品"><a id="jsdelivr">jsdelivr不稳定，替代品</a></h3>
+<p><strong>替换法</strong> cdn.jsdelivr.net选一个改： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fastly.jsdelivr.net</span><br><span class="line">gcore.jsdelivr.net</span><br><span class="line">testingcf.jsdelivr.net</span><br></pre></td></tr></table></figure></p>
+<p><strong>其他CDN站</strong> https://cdn.bytedance.com/ 字节跳动 https://www.staticfile.org/ 七牛云 https://cdnjs.com/ https://unpkg.com/</p>
+<h3 id="替换背景">替换背景</h3>
+<p>到next主题打开styles，在source _data.styl后加上： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background-image: url(); </span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment: fixed;</span><br><span class="line">    background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 背景图地址可以是链接或者路径，比如我放在.jpg，那就是/images/bk.jpg 和background相关的几个属性：https://www.w3school.com.cn/cssref/pr_background.asp 自己看着设置。 <strong>然后在后边再加上透明度设置：</strong> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 菜单栏</span><br><span class="line">.header-inner &#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">// 侧边框</span><br><span class="line">.sidebar&#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">// 文章</span><br><span class="line">.post-block&#123;</span><br><span class="line">  opacity: 0.8;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 值看着办吧。 我这个为了显出后边的canvas-nest，这个动态网调深了和背景重合，调浅了和文字白底重合，所以调成了以前不怎么喜欢的暗黑模式QAQ</p>
+<h3 id="框框圆角">框框圆角</h3>
+<p>到next主题打开variables，source _data.styl中添加 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$border-radius-inner     = 30px 30px 30px 30px;</span><br><span class="line">$border-radius           = 30px;</span><br></pre></td></tr></table></figure></p>
+<h3 id="添加鼠特效小爆炸">添加鼠特效小爆炸</h3>
+<p>参考了https://www.smoe.top/2020/12/27/Hexo-click/ 但是版本不同，所以我稍微改了一下。 js找个source文件夹放，然后直接在_data.njk里加上想要的那个效果就好了，改一下相应路径，我也是放的，所以就抄原博文的了 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--点击爆炸--&gt;</span><br><span class="line">&lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt;</span><br><span class="line">&lt;script src=&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script async src=&quot;/js/cursor/explosion.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure> 然后我稍微改了下颜色，饱和度调低了点</p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>小教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>可能是一些好吃的水果吧</title>
     <url>/2023/09556379f9.html</url>
     <content><![CDATA[<p>以后可以尝试尝试~</p>
@@ -137,9 +239,9 @@
 <td>庞各庄西瓜</td>
 <td>庞各庄西瓜</td>
 <td>庞各庄西瓜</td>
-<td>钦蜜九号黄金百香果</td>
-<td>钦蜜九号黄金百香果</td>
-<td>钦蜜九号黄金百香果</td>
+<td></td>
+<td></td>
+<td></td>
 <td>枚珑瓜</td>
 </tr>
 <tr class="even">
@@ -148,9 +250,9 @@
 <td>漳州牛奶青枣</td>
 <td>金钻凤梨</td>
 <td>玉菇甜瓜</td>
-<td>钦蜜九号黄金百香果</td>
-<td>钦蜜九号黄金百香果</td>
-<td>钦蜜九号黄金百香果</td>
+<td></td>
+<td></td>
+<td></td>
 <td>徐香猕猴桃</td>
 <td>金钻凤梨</td>
 <td>漳州牛奶青枣</td>
@@ -365,206 +467,201 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>广西钦蜜九号黄金百香果</td>
-<td>广西农科院重点实验室研发</td>
-<td>6-11</td>
-</tr>
-<tr class="even">
 <td>北京大兴庞各庄西瓜</td>
 <td></td>
 <td>5-8</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>山东玉菇甜瓜</td>
 <td></td>
 <td>5-6</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>海南金美人蜜瓜</td>
 <td></td>
 <td>4-5</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>海南金钻凤梨</td>
 <td>台湾嘉义农科所培育，台农17号</td>
 <td>3-5，10-11</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>海南枚珑瓜</td>
 <td></td>
 <td>12-1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>福建漳州牛奶青枣</td>
 <td></td>
 <td>11-3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>广西武鸣沃柑</td>
 <td>以色列研发</td>
 <td>12-4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>广东四会砂糖橘</td>
 <td></td>
 <td>11-1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>广西融安滑皮金桔</td>
 <td></td>
 <td>11-12</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>德庆皇帝柑</td>
 <td></td>
 <td>11-1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>福建漳州葡萄柚</td>
 <td></td>
 <td>10-12</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>爱媛38号果冻橙</td>
 <td></td>
 <td>11-12</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>陕西周至徐香猕猴桃</td>
 <td></td>
 <td>9-10</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>陕西周至翠香猕猴桃</td>
 <td>西安市猕猴桃研究所和周至县农技试验站研发</td>
 <td>9</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>陕西大荔冬枣</td>
 <td></td>
 <td>9-10</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>广西百色田东桂七芒</td>
 <td></td>
 <td>7-8</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>山东蒙阴黄桃</td>
 <td></td>
 <td>7-8</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>北京平谷水蜜桃</td>
 <td></td>
 <td>6-9</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>甘肃民勤蜜瓜</td>
 <td></td>
 <td>7-8</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>山东博洋9号甜瓜</td>
 <td>集结了羊角蜜和蜜瓜品质优势</td>
 <td>9-10</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>海南小台农</td>
 <td></td>
 <td>5</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>福建漳州贵妃蜜枣</td>
 <td></td>
 <td>9</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>辽宁丹东草莓</td>
 <td></td>
 <td>12-1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>广西砂糖橘</td>
 <td></td>
 <td>12-1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>新疆库尔勒香梨</td>
 <td></td>
 <td>9-10</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>福建漳州平和红柚</td>
 <td></td>
 <td>10-11</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>山东莱阳秋月梨</td>
 <td></td>
 <td>9-10</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>四川蒲江红心猕猴桃</td>
 <td></td>
 <td>9</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>山西运城黄心油桃</td>
 <td></td>
 <td>5-8</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>四川不知火丑橘</td>
 <td></td>
 <td>4-5</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>海南贵妃芒</td>
 <td></td>
 <td>4-7</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>四川安岳柠檬</td>
 <td></td>
 <td>9-12</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>海南文昌老椰子</td>
 <td></td>
 <td>7-8</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>陕西富平柿饼</td>
 <td></td>
 <td>12</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>辽宁丹东99红颜草莓</td>
 <td></td>
 <td>12-1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>新疆阿克苏冰糖心苹果</td>
 <td></td>
 <td>11-12</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>云南红河高山香蕉</td>
 <td></td>
 <td>11-12</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>山西运城“冰溏心”脆柿</td>
 <td></td>
 <td>10-11</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>迁西板栗</td>
 <td></td>
 <td>9-10</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td></td>
 <td></td>
@@ -591,108 +688,6 @@
       <tags>
         <tag>小教程</tag>
         <tag>表情包</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>建站过程中遇到的一些问题的总结</title>
-    <url>/2022/05bfdf9581.html</url>
-    <content><![CDATA[<p>用的next8</p>
-<p>0.远古时期的忘掉了……</p>
-<p>0.1.这个是next的网址QAQ: https://theme-next.js.org/</p>
-<p>0.2.悲伤的故事：Markdown语法在HTML区块标签中将不会被进行处理。例如，无法在HTML区块内使用Markdown形式的*强调*。</p>
-<h3 id="使用了自己的域名更新后页面找不到github-pages">使用了自己的域名，更新后页面找不到github pages。</h3>
-<span id="more"></span>
-<p>hexo d后仓库被强行覆盖，原先的CNAME就没有了。 在source文件夹里加一个CNAME再更新就好了。 CNAME里填写自己的域名名字。</p>
-<h3 id="使用next主题出现-extends-_layout.swig-等等">使用next主题，出现% extends '_layout.swig' %等等</h3>
-<p>hexo在5.后删除了swig，需要自己手动安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i hexo-renderer-swig</span><br></pre></td></tr></table></figure>
-<h3 id="想要播放歌曲">想要播放歌曲。</h3>
-<p>参考了很多不同站点的做法，其实大同小异。 最后发现还是去官网最快。 但是没能将云音乐红心歌单加进来还是不太开心，metingjs没解析出来。 aplayer：https://aplayer.js.org/#/zh-Hans/?id=%E5%85%A5%E9%97%A8 MetingJS：https://github.com/metowolf/MetingJS 首先根据APlayer教程安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install aplayer --save</span><br></pre></td></tr></table></figure>
-<p>然后到主题配置文件_config.yml改custom_file_path: 将head和sidebar加上（也就是去掉前边的#） 同时分别到hexo下source/_data里新建这两个njk文件</p>
-<p>siderbar.njk里的内容直接参考MeetingJS主页的教程就好了</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!-- require APlayer --&gt;</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;!-- require MetingJS --&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;meting-js</span><br><span class="line">	server=<span class="string">&quot;netease&quot;</span></span><br><span class="line">	<span class="built_in">type</span>=<span class="string">&quot;playlist&quot;</span></span><br><span class="line">	id=<span class="string">&quot;3744805&quot;</span>&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br></pre></td></tr></table></figure>
-<p>BUT， jsdelivr不好用了，可以改成（具体见<a href="#jsdelivr">这里：jsdelivr不稳定，替代品</a>，pjax那里同理，自己改一下吧： <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!-- require APlayer --&gt;</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://gcore.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;!-- require MetingJS --&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://gcore.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;meting-js</span><br><span class="line">	server=<span class="string">&quot;netease&quot;</span></span><br><span class="line">	<span class="built_in">type</span>=<span class="string">&quot;playlist&quot;</span></span><br><span class="line">	id=<span class="string">&quot;3744805&quot;</span>&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br></pre></td></tr></table></figure></p>
-<p>meting-js里的参数除了这三个还有APlayer里的，反正具体看官网吧，我这里没必要多复制了。 上述是加云音乐的，还有藤子，酷狗，虾米，百度的可以改。</p>
-<p>具体来说就是APlayer负责播放器的部分，MetingJS负责解析各大网站id。 但是autoplay真的能autoplay吗。→发现是浏览器限制了，唔，也好吧</p>
-<p>最后在head.njk里写上</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!--pjax：防止跳转页面音乐暂停--&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<p>可以跨页面放歌。 接着到主题配置文件_config.yml里把pjax改为true就好了。</p>
-<h3 id="添加sitemap网站地图">添加sitemap，网站地图</h3>
-<p>安装搜索引擎插件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save </span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
-<p>在站点配置文件中把url改为自己的域名</p>
-<p>hexo cl -g后public会生成sitemap和baidusitemap两个xml文件</p>
-<p>分别到谷歌、bing站点地图输入 域名/sitemap.xml</p>
-<p>百度是专用的 域名/baidusitemap.xml</p>
-<p><strong>百度还可以手动提交</strong>：</p>
-<p>安装插件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
-<p>在站点配置文件添加：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 3 ## 提交最新的链接数量</span><br><span class="line">  host: 域名</span><br><span class="line">  token: 在百度站长平台看</span><br><span class="line">  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
-<p>到<a href="https://ziyuan.baidu.com/linksubmit/">普通收录_加快网站内容抓取，快速提交数据工具_站长工具_网站支持_百度搜索资源平台 (baidu.com)</a>看自己的host和token</p>
-<p>在站点配置文件更改deploy：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">      - type: git</span><br><span class="line">        repo: git@github.com:zcxake/zcxake.github.io.git</span><br><span class="line">        branch: master</span><br><span class="line">      - type: baidu_url_submitter</span><br></pre></td></tr></table></figure>
-<p>注意repo和branch的缩进</p>
-<p>这样以后hexo d的时候就自动提交url到百度了。 更新：但是后来发现这个baidu_url_submit可能会导致一些问题，hexo s后出现warning，虽然对提交后的成品网页没影响，但是无法预览也很麻烦，所以把nodejs退到了12……</p>
-<h3 id="希望某些文件夹不渲染">希望某些文件夹不渲染</h3>
-<p>到站点配置文件检索skip，在skip_render后加上想不被渲染的，可使用glob表达式来匹配路径</p>
-<p>如我这里的是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Directory</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: :lang</span><br><span class="line">skip_render: &quot;_ing/**&quot;</span><br></pre></td></tr></table></figure>
-<p>表示source/_ing/里的所有东西都不会被渲染</p>
-<h3 id="next主题偶尔打开会变成空白2022.5.20next-8">next主题偶尔打开会变成空白（2022.5.20）next 8</h3>
-<p>先甩上参考： <a href="https://jnssd.com/2021/12/21/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1hexo-next%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%A9%BA%E7%99%BD%E7%9A%84%E6%83%85%E5%86%B5/">感谢分享</a> 用同样的思路发现我也是这个原因，因为不太懂所以还是上<a href= "https://theme-next.js.org/docs/advanced-settings/vendors.html?highlight=vendors">next theme官网vendors下</a>瞅了一下，直接复制翻译一下好了，反正我是看这个搞定的。</p>
-<blockquote>
-<p>plugins: jsdelivr is used to set how to load the third-party plugins, e.g. anime.js. Third-party plugins are loaded from jsDelivr CDN by default.</p>
-<p>And we also provide other optional CDNs, including the famous UNPKG and CDNJS. These CDN providers are chosen to deliver our third-party plugins because they are fast and reliable. Set plugins to unpkg or cdnjs to load them from different CDN provider.</p>
-<p>Particularly, if you are a Chinese blogger or most of your visits come from China, please note that the CDNJS is blocked in some parts of China, don't use it as your CDN provider.</p>
-<p>If your would like to load all third-party plugins from your site, please set plugins to local and install the <span class="citation" data-cites="next-theme/plugins">@next-theme/plugins</span> package: https://github.com/next-theme/plugins</p>
-</blockquote>
-<table border="1">
-<tr>
-<td>
-plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.js）。<br> 但我们也留了其他选项，比如著名的unpkg和cdnjs，选择这几个因为他们可靠且迅速，设置一个你想用的吧。<br> 但是，如果您老在中国或者你访问者大多数在中国的话，注意cdnjs在中国部分地区禁了，谨慎选用。<br> <i><span class="heimu">虽然官网这么写了，但是实测是jsdelivr不稳定，另外两个可用，反正这种瞬息万变的东西自己看情况吧</span></i><br> 但你要是想从自己网站加载第三方插件的话，把plugins项设置local然后安装@next-theme/plugins package: https://github.com/next-theme/plugins
-</td>
-</tr>
-</table>
-<blockquote>
-<p>Custom CDN URLs Sometimes you may need to use CDNs other than jsdelivr, unpkg or cdnjs. For example, users can get faster loading speed in certain areas using the mirror site of jsDelivr.</p>
-<p>To enable custom CDN URL, you need to set internal: custom and / or plugins: custom in the vendors section, and then specify a CDN URL with the custom_cdn_url option.</p>
-<p>Remember to use the HTTPS protocol of CDN links when you enable HTTPS on your site.</p>
-</blockquote>
-<table border="1">
-<tr>
-<td>
-自定义CDN链接<br> 有时候，或许上边三个满足不了你，比如在某些特定的地方用JSDelivr的镜像站会快一些。 <br> 这时候你需要将internal和/或plugins设为custom，具体看你情况，然后填上底下的custom_cdn_url。 <br> 如果你的网站开启了HTTPS协议注意也要用CDN链接的HTTPS协议。
-</td>
-</tr>
-</table>
-<hr />
-<p>我目前是先改成unpkg了，如果之后还是经常空白就换成镜像站，还是不行的话就本地吧。</p>
-<h3 id="添加对公式的支持">添加对公式的支持</h3>
-<p>再更新：</p>
-<p>katex别的都挺好，能自动换行，能复制，可是在复杂一点的html语言里就会无法解析，懒得折腾跟着next官网又换成了mathjax，然后手动换行了。</p>
-<p>看了mathjax官网，确实v3还不支持自动换行，摊手，就先这样吧。</p>
-<p><span class="heimu">但确实katex更好看……</span></p>
-<p>更新： 看都推荐用mathjax，但用了之后长公式不能换行，换成katex感觉这个更好，还可以选中。 主题config.yml中math下开启katex， 然后前边差不多，先卸载原先的 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure> 再安装 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i @upupming/hexo-renderer-markdown-it-plus --save</span><br></pre></td></tr></table></figure> 目前katex是0.15.6了，已经很好用了。 下面是过去mathjax的，上面的如果好用就不用看了。</p>
-<p>mathjax： 完全参考了<a href="https://blog.csdn.net/weixin_45511189/article/details/115798563">这一篇文章</a> 完全可行，但以防万一给自己备一份吧：</p>
-<p>1.在hexo目录下使用下面的命令查看你是否已经安装了hexo-math插件 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-math</span><br></pre></td></tr></table></figure> empty就是没有，出现版本号就是装了 卸载之： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure> 2.安装hexo-filter-mathjax： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-mathjax --save</span><br></pre></td></tr></table></figure> 检查是否安装成功： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-filter-mathjax</span><br></pre></td></tr></table></figure> 显示了hexo-filter-mathjax版本号则说明安装成功。 安装成功后，进行一些全局配置，打开hexo目录下的_config.yml文件，在最后面添加如下的代码： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">  tags: none # or &#x27;ams&#x27; or &#x27;all&#x27;</span><br><span class="line">  single_dollars: true # enable single dollar signs as in-line math delimiters</span><br><span class="line">  cjk_width: 0.9 # relative CJK char width</span><br><span class="line">  normal_width: 0.6 # relative normal (monospace) width</span><br><span class="line">  append_css: true # add CSS to pages rendered by MathJax</span><br><span class="line">  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span><br></pre></td></tr></table></figure> 3.hexo-math默认的公式渲染器是hexo-renderer-marked，它和markdown的语法有冲突，我们将其卸载，查看是否安装了hexo-renderer-marked公式渲染器： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-renderer-marked</span><br></pre></td></tr></table></figure> 如果安装了将其卸载： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked  --save</span><br></pre></td></tr></table></figure> 然后安装一个新的公式渲染器，叫做hexo-renderer-kramed，它对hexo-renderer-marked进行了改进，在hexo目录下输入下面的命令安装： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure> 检查hexo-renderer-kramed是否安装成功： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm list hexo-renderer-kramed</span><br></pre></td></tr></table></figure> 4.打开打开hexo主目录下的这个文件：_modules.js，然后修改下面的规则（大家最好不要删除原代码，只是将其注释掉）： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">//修改为：</span><br><span class="line">escape: /^\\([`*\[\]()#$+\-.!_&gt;])/,</span><br></pre></td></tr></table></figure> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">//修改为</span><br><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br></pre></td></tr></table></figure> 保存并退出。 5.最后，打开next主题目录下的_config.yml，开启对mathjax的支持，设置为true。 6.行间输入是<span class="math display">\[公式内容\]</span>，行内公示是$公式内容$ 7.某篇文章不想渲染公式就在md文件开头加上： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mathjax: false</span><br></pre></td></tr></table></figure> ### 谷歌字体访问不稳定 各种不稳定的问题嗯…… 感谢https://u.sb/css-cdn/ 。 next默认的是https://fonts.googleapis.com ，然后目前有个镜像可以用，在host改成自定义的：https://fonts.loli.net</p>
-<p>这里要多提一嘴镜像站了，避免以后又有啥不能使的可以替换： CDNJS：原本的：cdnjs.cloudflare.com，可用替换：cdnjs.loli.net unpkg可作为jsdelivr的替换用</p>
-<h3 id="jsdelivr不稳定替代品"><a id="jsdelivr">jsdelivr不稳定，替代品</a></h3>
-<p><strong>替换法</strong> cdn.jsdelivr.net选一个改： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fastly.jsdelivr.net</span><br><span class="line">gcore.jsdelivr.net</span><br><span class="line">testingcf.jsdelivr.net</span><br></pre></td></tr></table></figure></p>
-<p><strong>其他CDN站</strong> https://cdn.bytedance.com/ 字节跳动 https://www.staticfile.org/ 七牛云 https://cdnjs.com/ https://unpkg.com/</p>
-<h3 id="替换背景">替换背景</h3>
-<p>到next主题打开styles，在source _data.styl后加上： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background-image: url(); </span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment: fixed;</span><br><span class="line">    background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 背景图地址可以是链接或者路径，比如我放在.jpg，那就是/images/bk.jpg 和background相关的几个属性：https://www.w3school.com.cn/cssref/pr_background.asp 自己看着设置。 <strong>然后在后边再加上透明度设置：</strong> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 菜单栏</span><br><span class="line">.header-inner &#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">// 侧边框</span><br><span class="line">.sidebar&#123;</span><br><span class="line">    opacity: 0.75;</span><br><span class="line">&#125;</span><br><span class="line">// 文章</span><br><span class="line">.post-block&#123;</span><br><span class="line">  opacity: 0.8;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 值看着办吧。 我这个为了显出后边的canvas-nest，这个动态网调深了和背景重合，调浅了和文字白底重合，所以调成了以前不怎么喜欢的暗黑模式QAQ</p>
-<h3 id="框框圆角">框框圆角</h3>
-<p>到next主题打开variables，source _data.styl中添加 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$border-radius-inner     = 30px 30px 30px 30px;</span><br><span class="line">$border-radius           = 30px;</span><br></pre></td></tr></table></figure></p>
-<h3 id="添加鼠特效小爆炸">添加鼠特效小爆炸</h3>
-<p>参考了https://www.smoe.top/2020/12/27/Hexo-click/ 但是版本不同，所以我稍微改了一下。 js找个source文件夹放，然后直接在_data.njk里加上想要的那个效果就好了，改一下相应路径，我也是放的，所以就抄原博文的了 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--点击爆炸--&gt;</span><br><span class="line">&lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt;</span><br><span class="line">&lt;script src=&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script async src=&quot;/js/cursor/explosion.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure> 然后我稍微改了下颜色，饱和度调低了点</p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>小教程</tag>
       </tags>
   </entry>
   <entry>
@@ -1288,6 +1283,24 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
+    <title>礼貌用语等</title>
+    <url>/2022/058ae62fc9.html</url>
+    <content><![CDATA[<p>小短语 Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span> До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span> До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span> К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span> здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span> спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span> Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span> Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span> Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span> -М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span> -Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span> -Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span> Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span> -Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span> -Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span> Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span> Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span> Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span> Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span> -Ты зн<font color=Crimson>а</font>ешь,.......<span class="heimu">你知道吗</span> -Кон<font color=Crimson>е</font>чно,я знаю,......<span class="heimu">我当然知道</span> Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span> Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span> Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span> Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот ...<span class="heimu">这个xx多少钱</span> пока́<span class="heimu">[副]回头见，暂时</span> Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
+<!--
+|  |  |  |  |  |
+|------ |------ |------|------|------|
+|  |  |  |  |  |
+<div title="ののの"><font color=Crimson></font></div>
+-->
+]]></content>
+      <categories>
+        <category>Русский язык</category>
+      </categories>
+      <tags>
+        <tag>短句</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>语法之类的吧</title>
     <url>/2022/0529d5bea5.html</url>
     <content><![CDATA[<h3 id="数字-属格">数字 属格</h3>
@@ -1392,91 +1405,6 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>礼貌用语等</title>
-    <url>/2022/058ae62fc9.html</url>
-    <content><![CDATA[<p>小短语 Дав<font color=Crimson>а</font>йте познак<font color=Crimson>о</font>мимся.<span class="heimu">让我们认识一下。</span> До свид<font color=Crimson>а</font>ния!<span class="heimu">再见！</span> До з<font color=Crimson>а</font>втра!<span class="heimu">明天见！</span> К<font color=Crimson>а</font>к дел<font color=Crimson>а</font>?<span class="heimu">近来怎样？</span> здр<font color=Crimson>а</font>вствуй(те)<span class="heimu">你（您，你们）好</span> спас<font color=Crimson>и</font>бо<span class="heimu">谢谢</span> Алл<font color=Crimson>о</font>！Алл<font color=Crimson>о</font>！<span class="heimu">（打电话）喂</span> Мин<font color=Crimson>у</font>ту！<span class="heimu">稍等一下</span> Как вас зов<font color=Crimson>у</font>т?<span class="heimu">您叫什么名字</span> -М<font color=Crimson>о</font>жно?<span class="heimu">可以吗？</span> -Пож<font color=Crimson>а</font>луйста?<span class="heimu">请，不客气</span> -Нельз<font color=Crimson>я</font>.<span class="heimu">不行</span> Скаж<font color=Crimson>и</font>те пожалуйста?<span class="heimu">请问</span> -Извин<font color=Crimson>и</font>те.<span class="heimu">抱歉，打扰了</span> -Ничег<font color=Crimson>о</font>.=Пож<font color=Crimson>а</font>луйста.<span class="heimu">没关系</span> Покаж<font color=Crimson>и</font>те.<span class="heimu">请给我看</span> Д<font color=Crimson>а</font>йте.<span class="heimu">给我</span> Посмотр<font color=Crimson>и</font>те.<span class="heimu">你看，你们看</span> Позвон<font color=Crimson>и</font>те.<span class="heimu">请打电话</span> -Ты зн<font color=Crimson>а</font>ешь,.......<span class="heimu">你知道吗</span> -Кон<font color=Crimson>е</font>чно,я знаю,......<span class="heimu">我当然知道</span> Позов<font color=Crimson>и</font>те + 四格代词<span class="heimu">请叫一下xx</span> Пок<font color=Crimson>а</font><span class="heimu">再见，回头见（口语）</span> Прив<font color=Crimson>е</font>т<span class="heimu">问候（非常熟悉的人）</span> Ск<font color=Crimson>о</font>лько ст<font color=Crimson>о</font>ит <font color=Crimson>э</font>тот ...<span class="heimu">这个xx多少钱</span> пока́<span class="heimu">[副]回头见，暂时</span> Дава́й пойдём.<span class="heimu">我们走吧。</span></p>
-<!--
-|  |  |  |  |  |
-|------ |------ |------|------|------|
-|  |  |  |  |  |
-<div title="ののの"><font color=Crimson></font></div>
--->
-]]></content>
-      <categories>
-        <category>Русский язык</category>
-      </categories>
-      <tags>
-        <tag>短句</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>High-Pressure Phase Transition, Pore Collapse, and  Amorphization in the Siliceous 1D Zeolite, TON</title>
-    <url>/2023/042961a824.html</url>
-    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
-<ul>
-<li>标题：硅质一维沸石TON中的高压相变、孔塌陷和非晶化</li>
-<li>时间：February 13, 2017</li>
-<li>作者：Jean-Marc Thibaud, Jerôme Rouquette, Patrick Hermet, Kamil Dziubek, Federico A. Gorelli, Mario Santoro, Gaston Garbarino, Frederico G. Alabarse, Olivier Cambon, Francesco Di Renzo, Arie van der Lee, and Julien Haines</li>
-<li>单位：蒙彼利埃大学，欧洲非线性光谱实验室，亚当密茨凯维奇大学化学学院，意大利国家光学研究所，欧洲同步辐射，法国国家同步加速器，</li>
-<li>期刊：THE JOURNAL OF PHYSICAL CHEMISTRY C</li>
-<li>用到的表征手段：同步辐射XRD、红外光谱</li>
-</ul>
-<span id="more"></span>
-<blockquote>
-<p>原文：<a href="https://pubs.acs.org/doi/10.1021/acs.jpcc.6b11594">10.1021/acs.jpcc.6b11594</a></p>
-</blockquote>
-<table border="1">
-<tr>
-<td>
-<b><font color="orange">摘要</font>：</b> 通过XRD、红外光谱和DFT计算在高压下研究了具有一维孔系统的硅质沸石 TON。使用非穿透性传压介质研究了这种材料的行为。在这些条件下，从<span class="math inline">\(Cmc2_1\)</span>到<span class="math inline">\(Pbn2_1\)</span>结构的相变发生在接近0.6 GPa时，基于Rietveld 精修的原始晶胞加倍。随着椭圆率的强烈增加，孔隙开始塌陷。在将压力降低到该值以下时，初始结构没有恢复。DFT计算表明初始空孔<span class="math inline">\(Cmc2_1\)</span>相是动态不稳定的。当压力进一步增加到21 GPa时，会发生不可逆的、渐进的压力诱导的非晶化。这些变化在中红外和远红外光谱中通过<span class="math inline">\(Cmc2_1\)</span>到<span class="math inline">\(Pbn2_1\)</span>相变处的峰分裂以及非晶化导致的高压下的强峰展宽得到证实。
-</td>
-</tr>
-</table>
-<h2 id="引言">引言</h2>
-<p>沸石是由共享角的TO4（T = Si、Al、...）四面体组成的多孔铝硅酸盐，在催化、分离和离子交换等方面有许多应用。<strong>由于其高孔隙率，沸石在压力下会发生非常重要的变化</strong>。有几个相变的例子，涉及组成四面体的倾斜和/或环结构的变化。压力还可以诱导孔隙塌陷并转变为非晶态。这种非晶形式可以保留<font color="crismon">母晶相的拓扑顺序</font>，并且与普通玻璃不同。</p>
-<p>硅质沸石在吸附、催化、气体分离和储存方面也有许多重要应用，并且也可以被视为模型材料，因为它们基本上只包含SiO4四面体。对MFI（Mobil-five）系统、高压下的silicalite-1进行了大量研究，该系统具有3D互连孔隙系统。这种材料在压力下经历单斜到正交相变，随后发生孔隙坍塌和完全不可逆非晶化。具有一维孔隙系统的更简单的沸石TON (theta-1) 作为分子弹簧中的疏水主体材料和导电聚合物/沸石纳米复合材料中的绝缘主体系统也在催化剂领域广受关注，该复合材料通过单体的压力诱导插入和聚合获得。TON具有正交结构，空间群<span class="math inline">\(Cmc2_1\)</span>，在c方向上具有一维孔。框架是由SiO4四面体的5、6和10元环组成。孔隙呈椭圆形，自由直径为4.6×5.7 Å。由于其一维性质及其与其他沸石相比较小的晶胞，TON可以作为多孔材料压力响应的模型系统。此外，了解TON的高压行为对于分子弹簧应用和纳米复合材料形成中客体分子在该材料中的压力诱导插入具有重要意义。本研究的目标是研究高压下硅质沸石TON的结构变化和相稳定性。</p>
-<h2 id="实验和理论方法">实验和理论方法</h2>
-<h3 id="ton沸石的合成和钙化">TON沸石的合成和钙化</h3>
-<p>TON 沸石通过溶胶-凝胶技术制备，使用三乙烯四胺（TETA，C6H18N4）作为结构导向剂，然后如前所述在170 °C的水热条件下结晶。化学分析表明其摩尔组成如下：0.014 NaCl:0.022 C6H18N4:0.033 Al:1 SiO2。将样品在550 °C的空气中煅烧以去除有机模板。煅烧后的起始样品通过红外光谱、X射线衍射、热重分析和氮吸附等温线进行表征。样品含有模板残留物，呈浅灰色。红外光谱表明不存在C-H伸缩振动，表明TETA的烷基完全热解。</p>
-<h3 id="ton沸石的高压xrd粉末实验">TON沸石的高压，XRD粉末实验</h3>
-<p>在ESRF同步加速器的ID09A光束线上进行了角度色散高压X射线衍射。入射波长为0.4141 Å，样品到MAR555平板探测器的距离为400 mm。ω每变化6°进行测试。</p>
-<p>将TON粉末和红宝石球体放置在直径为110 μm的不锈钢垫圈孔中，该孔预先缩进至50 μm，固定在配备Boehler-Almax金刚石的DAC的砧座上。添加了<b><font color="crismon">DAPHNE7474作为传压介质</font></b>。</p>
-<p>红宝石用来标压，压力是根据红宝石R1荧光线的偏移确定的。使用程序FIT2D对图像进行积分。使用Fullprof程序获得晶胞参数的全轮廓拟合和Rietveld精修。对Si−O距离、O−O距离和/或O−Si−O角应用软约束。使用VESTA程序绘制晶体结构。通过使用程序EoSFit7c拟合P−V数据获得体积模量。</p>
-<h3 id="ton沸石的高压红外光谱实验">TON沸石的高压红外光谱实验</h3>
-<p>使用同步辐射测试中红外-远红外光谱，装备了布鲁克IFS 125 傅里叶变换远红外光谱改进仪来操作同步辐射源。使用MCT（5000-600 cm-1）探测器和KBr分光器测试加压至6 GPa的中红外光谱（4000-400 cm-1）。使用6 μm聚酯薄膜分束器和4.2 K硅辐射热计检测器(700−10 cm−1)获得加压至10 GPa的远红外光谱。光谱分辨率2 cm−1，分别在远红外和中红外扫描400次和800次。又在实验室中使用Bruker IFS-120 HR傅里叶变换红外光谱仪进行了15 GPa（1 cm−1分辨率）的高压中红外测量，该光谱仪配备了基于椭圆面镜的光束聚光器。使用KBr分束器和MCT检测器。</p>
-<p>垫片厚度为50−60 μm，孔径为250 μm。<strong>这将DAC中的远红外范围限制在50 cm−1</strong>。测试中红外时用KBr作传压介质，远红外用聚乙烯（PE），在手套箱（<span class="math inline">\(\rho_{H_2O} &lt; 4 ppm\)</span>）中填充入DAC中。将KBr在120 °C下10^−6 mbar下脱水，在环境温度下在10^−6 mbar下脱水，并将两者转移到手套箱中。还使用红宝石荧光标压。</p>
-<h3 id="ton沸石的密度泛函计算">TON沸石的密度泛函计算</h3>
-<p>略</p>
-<h2 id="结果与讨论">结果与讨论</h2>
-<h3 id="ton在非穿透性压力介质中的x射线粉末衍射">TON在非穿透性压力介质中的X射线粉末衍射。</h3>
-<p>TON的初始结构可以使用正交晶系<span class="math inline">\(Cmc2_1\)</span>空间群中Marler的单晶结构测定的结构模型进行细化（图1和表1和S1）。为了获得良好的拟合和稳定的细化，有必要在孔隙中包含少量原子。这可能对应于起始凝胶中剩余的NaCl和结构导向剂中的残留物，以及吸附物质（大气中的 N2、O2 和 H2O），并按照Marler的策略由部分占据的碳原子建模。这些代表孔隙无序含量的C原子最初位于Marler单晶结构测定的位置。这些原子的细化占据对应于孔隙含量，可以评估为0.8 e^-/SiO2单元的数量级。根据对用相同方法制备并在600 °C的类似温度下煅烧的样品的化学分析，预计残余氮和碳含量按质量计约为0.55%和0.1%。基于上述信息每个SiO2单元的估计摩尔孔隙含量可能对应于热解TETA中的0.029 C和N，0.014 NaCl，以及大气中的0.016 N2和O2，平均给出大约1.3个原子（C或N），NaCl单元，或每个晶胞的分子（N2或O2）。</p>
-<figure>
-<img data-src="\tu\High-Pressure Phase Transition, Pore Collapse, and  Amorphization in the Siliceous 1D Zeolite, TON\1.png"
-     alt="图 1"
-     width=700>
-<figcaption>
-<small>图 1. 环境压力下（顶部）TON <span class="math inline">\(Cmc2_1\)</span>和1.56 GPa下<span class="math inline">\(Pbn2_1\)</span>结构在2−8° 2θ范围Rietveld精修的（完整数据范围如插图所示）实验（黑色）、计算（红色）和差异（蓝色）。垂直条表示布拉格反射的计算位置。强烈背景来自金刚石的康普顿散射。 </small>
-</figcaption>
-</figure>
-<figure>
-<img data-src="\tu\High-Pressure Phase Transition, Pore Collapse, and  Amorphization in the Siliceous 1D Zeolite, TON\表1.png"
-     alt="表 1"
-     width=700>
-<figcaption>
-<small>表 1. TON在环境压力（正交，空间群<span class="math inline">\(Cmc2_1\)</span>）和1.56 GPa（正交，空间群<span class="math inline">\(Pbn2_1\)</span>）的晶格参数和conventional profile <span class="math inline">\(R_p\)</span>、加权profile <span class="math inline">\(R_wp\)</span>和布拉格<span class="math inline">\(R_{Bragg}\)</span>下背景校正因子。 </small>
-</figcaption>
-</figure>
-<p>由于框架中原子数量众多，因此有必要对SiO4四面体中的距离和角度进行软约束，并固定碳原子的某些参数（SI中的表S1和CIF文件）。在低压Cmc21结构中，Si−O距离和O−Si−O角分别限制在平均值的±0.05 Å和±10°。由于高压Pbn21结构中的自由原子坐标数量非常多，精细的结构信息有限，Si−O和O−O距离被限制在平均值的±0.2 Å。放宽两种结构的软约束导致一致性因子的微小改进，但代价是原子间距离的分散增加。</p>
-]]></content>
-      <categories>
-        <category>科研相关</category>
-      </categories>
-      <tags>
-        <tag>文献</tag>
-        <tag>分子筛</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Dirac semimetal PdTe2  temperature-dependent quasiparticle dynamics and electron–phonon coupling</title>
     <url>/2023/03770da5f0.html</url>
     <content><![CDATA[<h2 id="文章信息">文章信息</h2>
@@ -1541,89 +1469,63 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
       </tags>
   </entry>
   <entry>
-    <title>Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium</title>
-    <url>/2023/0438b78d0c.html</url>
+    <title>High-Pressure Phase Transition, Pore Collapse, and  Amorphization in the Siliceous 1D Zeolite, TON</title>
+    <url>/2023/042961a824.html</url>
     <content><![CDATA[<h2 id="文章信息">文章信息</h2>
 <ul>
-<li>标题：由致密流体氦的高压插入引起的五硅沸石中正体积变化的单斜-斜方晶相变</li>
-<li>时间：October 25, 2021</li>
-<li>作者：Mario Santoro, Weiwei Dong, Konstantin Glazyrin, and Julien Haines</li>
-<li>单位：意大利国家光学研究所；欧洲非线性光谱实验室；德国电子同步加速器；中国科学院高能所北京同步辐射；法国蒙彼利埃大学</li>
-<li>期刊：the Journal of Physical chemistry C</li>
-<li>用到的表征手段：同步辐射XRD</li>
+<li>标题：硅质一维沸石TON中的高压相变、孔塌陷和非晶化</li>
+<li>时间：February 13, 2017</li>
+<li>作者：Jean-Marc Thibaud, Jerôme Rouquette, Patrick Hermet, Kamil Dziubek, Federico A. Gorelli, Mario Santoro, Gaston Garbarino, Frederico G. Alabarse, Olivier Cambon, Francesco Di Renzo, Arie van der Lee, and Julien Haines</li>
+<li>单位：蒙彼利埃大学，欧洲非线性光谱实验室，亚当密茨凯维奇大学化学学院，意大利国家光学研究所，欧洲同步辐射，法国国家同步加速器，</li>
+<li>期刊：THE JOURNAL OF PHYSICAL CHEMISTRY C</li>
+<li>用到的表征手段：同步辐射XRD、红外光谱</li>
 </ul>
 <span id="more"></span>
 <blockquote>
-<p>原文：<a href="https://pubs.acs.org/doi/10.1021/acs.jpcc.1c07791">10.1021/acs.jpcc.1c07791</a></p>
+<p>原文：<a href="https://pubs.acs.org/doi/10.1021/acs.jpcc.6b11594">10.1021/acs.jpcc.6b11594</a></p>
 </blockquote>
 <table border="1">
 <tr>
 <td>
-<b><font color="orange">摘要</font>：</b> 使用同步辐射XRD研究了五硅沸石（archetypal siliceous zeolite Mobil-Five MFI）中氦的插入。由于氦气对孔隙和骨架的渗透程度非常高，MFI的单斜形式在较大的压力区间内稳定，并且压缩性远低于孔隙为空或充满除氢以外的任何其他客体分子或原子时。MFI结构从单斜<span class="math inline">\(P2_1/n\)</span>变为正交Pnma，在接近10 GPa时体积不连续地增加了3%。材料在高于42 GPa的压力下具有很高的应变性，但仍保持结晶性。卸压时释放应变，回复高结晶性。
+<b><font color="orange">摘要</font>：</b> 通过XRD、红外光谱和DFT计算在高压下研究了具有一维孔系统的硅质沸石 TON。使用非穿透性传压介质研究了这种材料的行为。在这些条件下，从<span class="math inline">\(Cmc2_1\)</span>到<span class="math inline">\(Pbn2_1\)</span>结构的相变发生在接近0.6 GPa时，基于Rietveld 精修的原始晶胞加倍。随着椭圆率的强烈增加，孔隙开始塌陷。在将压力降低到该值以下时，初始结构没有恢复。DFT计算表明初始空孔<span class="math inline">\(Cmc2_1\)</span>相是动态不稳定的。当压力进一步增加到21 GPa时，会发生不可逆的、渐进的压力诱导的非晶化。这些变化在中红外和远红外光谱中通过<span class="math inline">\(Cmc2_1\)</span>到<span class="math inline">\(Pbn2_1\)</span>相变处的峰分裂以及非晶化导致的高压下的强峰展宽得到证实。
 </td>
 </tr>
 </table>
 <h2 id="引言">引言</h2>
-<p>已经发现氦在高压下很容易穿透某些形式的二氧化硅的框架，例如α-方石英和二氧化硅玻璃，导致结构膨胀。这种行为不会在氩气中的压缩时发生，但在中等大小的氖原子的情况下，动力学速度低于阈值压力时可能发生。对于多孔纯二氧化硅沸石，较大的原子和分子很容易在高压下进入孔隙。在原型全二氧化硅沸石的情况下，具有单斜五硅（MFI）结构和三维孔隙系统的硅质岩-1，氩或简单的分子如水，氮气和二氧化碳可以完全填充孔隙系统但不进入框架。唯一的例外是氢气，最近发现它进入了框架的二级单元。MFI的结构由沿b方向的线性5.3 Å×5.6 Å通道和xz平面上的5.1 Å×5.5 Å正弦孔（sinusoidal pores）形成。高二氧化硅，MFI在349 K处经历从单斜<span class="math inline">\(P2_1/n\)</span>到正交的铁弹性相变。在1 GPa附近的高压下也观察到类似的相变。当硅质MFI在渗透介质（如水或二氧化碳）中被压缩时，这种转变可以在更低的压力下发生。还发现用客体物种填充可以稳定正交相，相对于在非常高的压力下压力诱导的非晶化。在H2填充的MFI中，在60 GPa下仍能观察到结晶相。</p>
+<p>沸石是由共享角的TO4（T = Si、Al、...）四面体组成的多孔铝硅酸盐，在催化、分离和离子交换等方面有许多应用。<strong>由于其高孔隙率，沸石在压力下会发生非常重要的变化</strong>。有几个相变的例子，涉及组成四面体的倾斜和/或环结构的变化。压力还可以诱导孔隙塌陷并转变为非晶态。这种非晶形式可以保留<font color="crismon">母晶相的拓扑顺序</font>，并且与普通玻璃不同。</p>
+<p>硅质沸石在吸附、催化、气体分离和储存方面也有许多重要应用，并且也可以被视为模型材料，因为它们基本上只包含SiO4四面体。对MFI（Mobil-five）系统、高压下的silicalite-1进行了大量研究，该系统具有3D互连孔隙系统。这种材料在压力下经历单斜到正交相变，随后发生孔隙坍塌和完全不可逆非晶化。具有一维孔隙系统的更简单的沸石TON (theta-1) 作为分子弹簧中的疏水主体材料和导电聚合物/沸石纳米复合材料中的绝缘主体系统也在催化剂领域广受关注，该复合材料通过单体的压力诱导插入和聚合获得。TON具有正交结构，空间群<span class="math inline">\(Cmc2_1\)</span>，在c方向上具有一维孔。框架是由SiO4四面体的5、6和10元环组成。孔隙呈椭圆形，自由直径为4.6×5.7 Å。由于其一维性质及其与其他沸石相比较小的晶胞，TON可以作为多孔材料压力响应的模型系统。此外，了解TON的高压行为对于分子弹簧应用和纳米复合材料形成中客体分子在该材料中的压力诱导插入具有重要意义。本研究的目标是研究高压下硅质沸石TON的结构变化和相稳定性。</p>
+<h2 id="实验和理论方法">实验和理论方法</h2>
+<h3 id="ton沸石的合成和钙化">TON沸石的合成和钙化</h3>
+<p>TON 沸石通过溶胶-凝胶技术制备，使用三乙烯四胺（TETA，C6H18N4）作为结构导向剂，然后如前所述在170 °C的水热条件下结晶。化学分析表明其摩尔组成如下：0.014 NaCl:0.022 C6H18N4:0.033 Al:1 SiO2。将样品在550 °C的空气中煅烧以去除有机模板。煅烧后的起始样品通过红外光谱、X射线衍射、热重分析和氮吸附等温线进行表征。样品含有模板残留物，呈浅灰色。红外光谱表明不存在C-H伸缩振动，表明TETA的烷基完全热解。</p>
+<h3 id="ton沸石的高压xrd粉末实验">TON沸石的高压，XRD粉末实验</h3>
+<p>在ESRF同步加速器的ID09A光束线上进行了角度色散高压X射线衍射。入射波长为0.4141 Å，样品到MAR555平板探测器的距离为400 mm。ω每变化6°进行测试。</p>
+<p>将TON粉末和红宝石球体放置在直径为110 μm的不锈钢垫圈孔中，该孔预先缩进至50 μm，固定在配备Boehler-Almax金刚石的DAC的砧座上。添加了<b><font color="crismon">DAPHNE7474作为传压介质</font></b>。</p>
+<p>红宝石用来标压，压力是根据红宝石R1荧光线的偏移确定的。使用程序FIT2D对图像进行积分。使用Fullprof程序获得晶胞参数的全轮廓拟合和Rietveld精修。对Si−O距离、O−O距离和/或O−Si−O角应用软约束。使用VESTA程序绘制晶体结构。通过使用程序EoSFit7c拟合P−V数据获得体积模量。</p>
+<h3 id="ton沸石的高压红外光谱实验">TON沸石的高压红外光谱实验</h3>
+<p>使用同步辐射测试中红外-远红外光谱，装备了布鲁克IFS 125 傅里叶变换远红外光谱改进仪来操作同步辐射源。使用MCT（5000-600 cm-1）探测器和KBr分光器测试加压至6 GPa的中红外光谱（4000-400 cm-1）。使用6 μm聚酯薄膜分束器和4.2 K硅辐射热计检测器(700−10 cm−1)获得加压至10 GPa的远红外光谱。光谱分辨率2 cm−1，分别在远红外和中红外扫描400次和800次。又在实验室中使用Bruker IFS-120 HR傅里叶变换红外光谱仪进行了15 GPa（1 cm−1分辨率）的高压中红外测量，该光谱仪配备了基于椭圆面镜的光束聚光器。使用KBr分束器和MCT检测器。</p>
+<p>垫片厚度为50−60 μm，孔径为250 μm。<strong>这将DAC中的远红外范围限制在50 cm−1</strong>。测试中红外时用KBr作传压介质，远红外用聚乙烯（PE），在手套箱（<span class="math inline">\(\rho_{H_2O} &lt; 4 ppm\)</span>）中填充入DAC中。将KBr在120 °C下10^−6 mbar下脱水，在环境温度下在10^−6 mbar下脱水，并将两者转移到手套箱中。还使用红宝石荧光标压。</p>
+<h3 id="ton沸石的密度泛函计算">TON沸石的密度泛函计算</h3>
+<p>略</p>
+<h2 id="结果与讨论">结果与讨论</h2>
+<h3 id="ton在非穿透性压力介质中的x射线粉末衍射">TON在非穿透性压力介质中的X射线粉末衍射。</h3>
+<p>TON的初始结构可以使用正交晶系<span class="math inline">\(Cmc2_1\)</span>空间群中Marler的单晶结构测定的结构模型进行细化（图1和表1和S1）。为了获得良好的拟合和稳定的细化，有必要在孔隙中包含少量原子。这可能对应于起始凝胶中剩余的NaCl和结构导向剂中的残留物，以及吸附物质（大气中的 N2、O2 和 H2O），并按照Marler的策略由部分占据的碳原子建模。这些代表孔隙无序含量的C原子最初位于Marler单晶结构测定的位置。这些原子的细化占据对应于孔隙含量，可以评估为0.8 e^-/SiO2单元的数量级。根据对用相同方法制备并在600 °C的类似温度下煅烧的样品的化学分析，预计残余氮和碳含量按质量计约为0.55%和0.1%。基于上述信息每个SiO2单元的估计摩尔孔隙含量可能对应于热解TETA中的0.029 C和N，0.014 NaCl，以及大气中的0.016 N2和O2，平均给出大约1.3个原子（C或N），NaCl单元，或每个晶胞的分子（N2或O2）。</p>
 <figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\1.jpeg"
+<img data-src="\tu\High-Pressure Phase Transition, Pore Collapse, and  Amorphization in the Siliceous 1D Zeolite, TON\1.png"
      alt="图 1"
      width=700>
 <figcaption>
-<small>图 1.单斜P21/n11，空间群14（下图）和正交Pnma，S.G. 62 MFI（上图）的结构。比较结构，我们注意到单斜α=90.6207°，并且在Si-O-Si桥接角上观察到一些小差异。单斜晶系的晶胞在非标准空间群设置中描述，以保留类似于斜方相的基础。 </small>
-</figcaption>
-</figure>
-<p>在本工作中，我们探索了硅质MFI，重点是氦插入对单斜相和正交相的影响，它们的稳定性场，体积变化以及该材料的可压缩性。</p>
-<h2 id="方法">方法</h2>
-<p>先制备样品，不细看了。</p>
-<p>将样品与标压用的红宝石球一起放置在DAC的垫圈孔中。在高压下引入流体氦气，压到0.13 GPa。使用波长为0.4828 Å的单色辐射，在DESY的PETRA-III同步加速器的极端条件下光束线P02.2进行角度色散X射线粉末衍射测量。聚焦光束光斑尺寸为9 μm×3 μm。使用珀金埃尔默XRD1621（2048×2048像素，200 μm× 200 μm）探测器进行检测。对二维衍射图像进行积分，然后使用Dioptas程序获得一维衍射轮廓。使用FullProf程序进行Le Baul精修以获得精确的晶格参数和体积。使用红宝石荧光法测量压力。</p>
-<h2 id="结果与讨论">结果与讨论</h2>
-<p>在环境压力下，样品MFI选用已知的单斜结构。在0.13 GPa加载氦气时，结构仍然是单斜的，然而，与之前空的MFI和充满许多分子原子（例如水和二氧化碳）的MFI相比，尽管填充了孔隙，但在1 GPa以下没有观察到向更对称的正交Pnma的转化。事实上，即使高达9.1 GPa，晶胞仍然是单斜晶系，hkl和<span class="math inline">\(\overline{h}kl\)</span>反射有明显的分裂（图2和3）。单斜角度α未随压力减小，无明显趋于正交相的形式（表1，图4）。单斜晶胞在非标准<span class="math inline">\(P2_1/n11\)</span>，S.G.14空间群设置中描述，以保持与Pnma正交相相同的参考。在填充He的情况下，相对晶胞体积远高于无填充或充Ar或充CO2的MFI正交晶相，导致单斜MFI因He膨胀（图5）。氦不同于上面提到的其他客体物种，因为它已被清楚地证明可以穿透各种二氧化硅形式的框架，例如二氧化硅玻璃和方石英，因此除了5.5 Å直径的孔外，它还可以填充框架中的各种环和笼。H2的情况与高压下MFI的正交晶型类似，氢分子不仅占据孔隙，而且占据由SiO4四面体的5元和6元环构成的框架中的笼子。但对于充氢气的情况，低压下没有观察到单斜形式，也没有观察到单斜-正交相变。在另一种硅质沸石TON中，发现在高压和高温下插入 H2 会引起异常体积增加和向更高对称结构的相变.</p>
-<figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\2.jpeg"
-     alt="图 2"
-     width=700>
-<figcaption>
-<small>图 2.MFI在He中的X射线衍射图与压力的函数关系（λ=0.4828 Å）。卸压时获得的数据用“dec.”表示。 </small>
+<small>图 1. 环境压力下（顶部）TON <span class="math inline">\(Cmc2_1\)</span>和1.56 GPa下<span class="math inline">\(Pbn2_1\)</span>结构在2−8° 2θ范围Rietveld精修的（完整数据范围如插图所示）实验（黑色）、计算（红色）和差异（蓝色）。垂直条表示布拉格反射的计算位置。强烈背景来自金刚石的康普顿散射。 </small>
 </figcaption>
 </figure>
 <figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\3.jpeg"
-     alt="图 3"
-     width=700>
-<figcaption>
-<small>图 3.以Le Bail拟合9.1 GPa MFI/He P21/n结构（下图）和10.9 GPa Pnma结构（上图）。实验（黑色），计算（红色）和差异（蓝色）（λ = 0.4828 Å）。垂直条表示布拉格反射的计算位置。 </small>
-</figcaption>
-</figure>
-<figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\4.jpeg"
-     alt="图 4"
-     width=700>
-<figcaption>
-<small>图 4.He中MFI的晶胞参数压缩（实心符号）和卸压（空符号）的函数。误差线小于符号大小。 </small>
-</figcaption>
-</figure>
-<figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\b1.png"
+<img data-src="\tu\High-Pressure Phase Transition, Pore Collapse, and  Amorphization in the Siliceous 1D Zeolite, TON\表1.png"
      alt="表 1"
      width=700>
 <figcaption>
-<small>表1.压缩时结构过渡发生在9.1和10.9 GPa之间。请注意，空起始材料是单斜晶系，在空间组（P21/n，S.G. 14）的非标准P21/n11设置中，a=20.1344（1）Å，b=19.9018（1）Å，c=13.38641（8）Å，α=90.6207（5）°，以保持与斜方体型Pnma相同的轴。 </small>
+<small>表 1. TON在环境压力（正交，空间群<span class="math inline">\(Cmc2_1\)</span>）和1.56 GPa（正交，空间群<span class="math inline">\(Pbn2_1\)</span>）的晶格参数和conventional profile <span class="math inline">\(R_p\)</span>、加权profile <span class="math inline">\(R_wp\)</span>和布拉格<span class="math inline">\(R_{Bragg}\)</span>下背景校正因子。 </small>
 </figcaption>
 </figure>
-<p>晶格参数a在压力为7 GPa以下时减小，但在7到9 GPa之间，它几乎是不可压缩的，这表明预相变的开始（图4）。随后是10.9 GPa处的衍射图样发生重大变化，该衍射图谱仍处于液相中，比12.1 GPa的氦凝固压力低1 GPa以上。在10.9 GPa时，峰值锐化并移动到较低的2θ角，hkl反射分裂消失（例如，313和<span class="math inline">\(\overline{3}13\)</span>），此外，hkl反射与khl反射合并。在此压力下，晶胞参数为a=b=19.443(2)Å和c=13.071(3) Å，意外地具有相同的a和b值，即使从结构的角度来看这些方向非常不同。这种意外并不新鲜，以前在高压下观察到Ar和CO2中的MFI也存在这个现象。 由于将致密流体氦插入结构中，在相变处观察到接近3%的体积增加（图5）。预计该高压下的单斜向正交晶系、铁弹性相变的单斜角度和体积将连续或不连续减小。由于穿透剂He在晶体结构的框架中进入空隙的性质不同，目前的行为与先前报道的案例明显不同。在这里，我们还报告说，在He填充MFI的斜方相中，a细胞参数的可压缩性明显更高，这与正弦孔的方向相对应。沿线孔方向的b参数刚性很强。</p>
-<figure>
-<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\5.jpeg"
-     alt="图 5"
-     width=700>
-<figcaption>
-<small>图 5.He中MFI的相对体积（V/V0）压缩（实心方块）和卸压（空方块）的函数。圆圈、虚线和实线分别代表MFI在H2，硅油和Ar和CO2中的行为。误差线小于符号大小。 </small>
-</figcaption>
-</figure>
-<p>由于这种准静水压力传递介质的偏应力程度低，氦气中MFI的峰值在高达42 GPa时仍然非常尖锐（图2）。 在42 GPa以上，峰展宽与MFI结构中的应变有关。这些线在压力释放时变尖，但我们观察到结构行为存在一些滞后。减压至6.2 GPa后，MFI的体积与压缩时观察到的体积相似，但结构仍然是正交的。</p>
-<p>与He填充的MFI相比，H2填充MFI的衍射线略宽，但从未观察到快速增加，并且展宽更为缓慢。与He填充MFI相比，晶胞的可压缩性更低。 由于氦原子和氢分子的大小相似，因此可以预期MFI结构中的氦量与GCMC模拟中的H2在晶胞体积相似的压力下发现的氦量相似，例如，在12和16 GPa之间，每个单位插入约135个H2分子。</p>
-<h2 id="结论">结论</h2>
-<p>氦气很容易填充单斜MFI的结构，使该相稳定在∼10 GPa的压力下，这远高于任何其他原子或分子客体的报告。高于该压力，但仍比氦的凝固压力低1-2 GPa，观察到向正交相的转变，体积增加约3%，这是由于进一步填充致密流体氦完全改变了这种转变的机制，在没有孔隙填充的情况下通常是铁弹性的。事实上，插入的氦的局部结构的变化，模仿纯氦的凝固相关变化，很可能会发生，并成为观察到的充满氦的MFI转变的驱动力。</p>
+<p>由于框架中原子数量众多，因此有必要对SiO4四面体中的距离和角度进行软约束，并固定碳原子的某些参数（SI中的表S1和CIF文件）。在低压Cmc21结构中，Si−O距离和O−Si−O角分别限制在平均值的±0.05 Å和±10°。由于高压Pbn21结构中的自由原子坐标数量非常多，精细的结构信息有限，Si−O和O−O距离被限制在平均值的±0.2 Å。放宽两种结构的软约束导致一致性因子的微小改进，但代价是原子间距离的分散增加。</p>
 ]]></content>
       <categories>
         <category>科研相关</category>
@@ -1726,6 +1628,99 @@ plugins: 默认设置是jsdelivr，用来设置加载第三方插件（如anime.
 <p>略</p>
 <h2 id="结论">结论</h2>
 <p>综上所述，采用紫外拉曼光谱仪仔细研究了分子筛从FAU到CHA和MFI分子筛的转化。当从FAU开始到目标CHA沸石时，因为它们共享相同的基本组成单元（D6R），D6R几乎直接转变。然而，当目标沸石不包含相同的基本结构时，例如用于将FAU转化为MFI，D6R单元被分解为两个S6R作为目标产物进一步组装和生长的单元。本研究提供的见解对于进一步了解沸石间转化很重要。</p>
+]]></content>
+      <categories>
+        <category>科研相关</category>
+      </categories>
+      <tags>
+        <tag>文献</tag>
+        <tag>分子筛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium</title>
+    <url>/2023/0438b78d0c.html</url>
+    <content><![CDATA[<h2 id="文章信息">文章信息</h2>
+<ul>
+<li>标题：由致密流体氦的高压插入引起的五硅沸石中正体积变化的单斜-斜方晶相变</li>
+<li>时间：October 25, 2021</li>
+<li>作者：Mario Santoro, Weiwei Dong, Konstantin Glazyrin, and Julien Haines</li>
+<li>单位：意大利国家光学研究所；欧洲非线性光谱实验室；德国电子同步加速器；中国科学院高能所北京同步辐射；法国蒙彼利埃大学</li>
+<li>期刊：the Journal of Physical chemistry C</li>
+<li>用到的表征手段：同步辐射XRD</li>
+</ul>
+<span id="more"></span>
+<blockquote>
+<p>原文：<a href="https://pubs.acs.org/doi/10.1021/acs.jpcc.1c07791">10.1021/acs.jpcc.1c07791</a></p>
+</blockquote>
+<table border="1">
+<tr>
+<td>
+<b><font color="orange">摘要</font>：</b> 使用同步辐射XRD研究了五硅沸石（archetypal siliceous zeolite Mobil-Five MFI）中氦的插入。由于氦气对孔隙和骨架的渗透程度非常高，MFI的单斜形式在较大的压力区间内稳定，并且压缩性远低于孔隙为空或充满除氢以外的任何其他客体分子或原子时。MFI结构从单斜<span class="math inline">\(P2_1/n\)</span>变为正交Pnma，在接近10 GPa时体积不连续地增加了3%。材料在高于42 GPa的压力下具有很高的应变性，但仍保持结晶性。卸压时释放应变，回复高结晶性。
+</td>
+</tr>
+</table>
+<h2 id="引言">引言</h2>
+<p>已经发现氦在高压下很容易穿透某些形式的二氧化硅的框架，例如α-方石英和二氧化硅玻璃，导致结构膨胀。这种行为不会在氩气中的压缩时发生，但在中等大小的氖原子的情况下，动力学速度低于阈值压力时可能发生。对于多孔纯二氧化硅沸石，较大的原子和分子很容易在高压下进入孔隙。在原型全二氧化硅沸石的情况下，具有单斜五硅（MFI）结构和三维孔隙系统的硅质岩-1，氩或简单的分子如水，氮气和二氧化碳可以完全填充孔隙系统但不进入框架。唯一的例外是氢气，最近发现它进入了框架的二级单元。MFI的结构由沿b方向的线性5.3 Å×5.6 Å通道和xz平面上的5.1 Å×5.5 Å正弦孔（sinusoidal pores）形成。高二氧化硅，MFI在349 K处经历从单斜<span class="math inline">\(P2_1/n\)</span>到正交的铁弹性相变。在1 GPa附近的高压下也观察到类似的相变。当硅质MFI在渗透介质（如水或二氧化碳）中被压缩时，这种转变可以在更低的压力下发生。还发现用客体物种填充可以稳定正交相，相对于在非常高的压力下压力诱导的非晶化。在H2填充的MFI中，在60 GPa下仍能观察到结晶相。</p>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\1.jpeg"
+     alt="图 1"
+     width=700>
+<figcaption>
+<small>图 1.单斜P21/n11，空间群14（下图）和正交Pnma，S.G. 62 MFI（上图）的结构。比较结构，我们注意到单斜α=90.6207°，并且在Si-O-Si桥接角上观察到一些小差异。单斜晶系的晶胞在非标准空间群设置中描述，以保留类似于斜方相的基础。 </small>
+</figcaption>
+</figure>
+<p>在本工作中，我们探索了硅质MFI，重点是氦插入对单斜相和正交相的影响，它们的稳定性场，体积变化以及该材料的可压缩性。</p>
+<h2 id="方法">方法</h2>
+<p>先制备样品，不细看了。</p>
+<p>将样品与标压用的红宝石球一起放置在DAC的垫圈孔中。在高压下引入流体氦气，压到0.13 GPa。使用波长为0.4828 Å的单色辐射，在DESY的PETRA-III同步加速器的极端条件下光束线P02.2进行角度色散X射线粉末衍射测量。聚焦光束光斑尺寸为9 μm×3 μm。使用珀金埃尔默XRD1621（2048×2048像素，200 μm× 200 μm）探测器进行检测。对二维衍射图像进行积分，然后使用Dioptas程序获得一维衍射轮廓。使用FullProf程序进行Le Baul精修以获得精确的晶格参数和体积。使用红宝石荧光法测量压力。</p>
+<h2 id="结果与讨论">结果与讨论</h2>
+<p>在环境压力下，样品MFI选用已知的单斜结构。在0.13 GPa加载氦气时，结构仍然是单斜的，然而，与之前空的MFI和充满许多分子原子（例如水和二氧化碳）的MFI相比，尽管填充了孔隙，但在1 GPa以下没有观察到向更对称的正交Pnma的转化。事实上，即使高达9.1 GPa，晶胞仍然是单斜晶系，hkl和<span class="math inline">\(\overline{h}kl\)</span>反射有明显的分裂（图2和3）。单斜角度α未随压力减小，无明显趋于正交相的形式（表1，图4）。单斜晶胞在非标准<span class="math inline">\(P2_1/n11\)</span>，S.G.14空间群设置中描述，以保持与Pnma正交相相同的参考。在填充He的情况下，相对晶胞体积远高于无填充或充Ar或充CO2的MFI正交晶相，导致单斜MFI因He膨胀（图5）。氦不同于上面提到的其他客体物种，因为它已被清楚地证明可以穿透各种二氧化硅形式的框架，例如二氧化硅玻璃和方石英，因此除了5.5 Å直径的孔外，它还可以填充框架中的各种环和笼。H2的情况与高压下MFI的正交晶型类似，氢分子不仅占据孔隙，而且占据由SiO4四面体的5元和6元环构成的框架中的笼子。但对于充氢气的情况，低压下没有观察到单斜形式，也没有观察到单斜-正交相变。在另一种硅质沸石TON中，发现在高压和高温下插入 H2 会引起异常体积增加和向更高对称结构的相变.</p>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\2.jpeg"
+     alt="图 2"
+     width=700>
+<figcaption>
+<small>图 2.MFI在He中的X射线衍射图与压力的函数关系（λ=0.4828 Å）。卸压时获得的数据用“dec.”表示。 </small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\3.jpeg"
+     alt="图 3"
+     width=700>
+<figcaption>
+<small>图 3.以Le Bail拟合9.1 GPa MFI/He P21/n结构（下图）和10.9 GPa Pnma结构（上图）。实验（黑色），计算（红色）和差异（蓝色）（λ = 0.4828 Å）。垂直条表示布拉格反射的计算位置。 </small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\4.jpeg"
+     alt="图 4"
+     width=700>
+<figcaption>
+<small>图 4.He中MFI的晶胞参数压缩（实心符号）和卸压（空符号）的函数。误差线小于符号大小。 </small>
+</figcaption>
+</figure>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\b1.png"
+     alt="表 1"
+     width=700>
+<figcaption>
+<small>表1.压缩时结构过渡发生在9.1和10.9 GPa之间。请注意，空起始材料是单斜晶系，在空间组（P21/n，S.G. 14）的非标准P21/n11设置中，a=20.1344（1）Å，b=19.9018（1）Å，c=13.38641（8）Å，α=90.6207（5）°，以保持与斜方体型Pnma相同的轴。 </small>
+</figcaption>
+</figure>
+<p>晶格参数a在压力为7 GPa以下时减小，但在7到9 GPa之间，它几乎是不可压缩的，这表明预相变的开始（图4）。随后是10.9 GPa处的衍射图样发生重大变化，该衍射图谱仍处于液相中，比12.1 GPa的氦凝固压力低1 GPa以上。在10.9 GPa时，峰值锐化并移动到较低的2θ角，hkl反射分裂消失（例如，313和<span class="math inline">\(\overline{3}13\)</span>），此外，hkl反射与khl反射合并。在此压力下，晶胞参数为a=b=19.443(2)Å和c=13.071(3) Å，意外地具有相同的a和b值，即使从结构的角度来看这些方向非常不同。这种意外并不新鲜，以前在高压下观察到Ar和CO2中的MFI也存在这个现象。 由于将致密流体氦插入结构中，在相变处观察到接近3%的体积增加（图5）。预计该高压下的单斜向正交晶系、铁弹性相变的单斜角度和体积将连续或不连续减小。由于穿透剂He在晶体结构的框架中进入空隙的性质不同，目前的行为与先前报道的案例明显不同。在这里，我们还报告说，在He填充MFI的斜方相中，a细胞参数的可压缩性明显更高，这与正弦孔的方向相对应。沿线孔方向的b参数刚性很强。</p>
+<figure>
+<img data-src="\tu\Monoclinic−Orthorhombic Phase Transition with a Positive Volume Change in the Siliceous Zeolite Mobil-Five Induced by the High-Pressure Insertion of Dense Fluid Helium\5.jpeg"
+     alt="图 5"
+     width=700>
+<figcaption>
+<small>图 5.He中MFI的相对体积（V/V0）压缩（实心方块）和卸压（空方块）的函数。圆圈、虚线和实线分别代表MFI在H2，硅油和Ar和CO2中的行为。误差线小于符号大小。 </small>
+</figcaption>
+</figure>
+<p>由于这种准静水压力传递介质的偏应力程度低，氦气中MFI的峰值在高达42 GPa时仍然非常尖锐（图2）。 在42 GPa以上，峰展宽与MFI结构中的应变有关。这些线在压力释放时变尖，但我们观察到结构行为存在一些滞后。减压至6.2 GPa后，MFI的体积与压缩时观察到的体积相似，但结构仍然是正交的。</p>
+<p>与He填充的MFI相比，H2填充MFI的衍射线略宽，但从未观察到快速增加，并且展宽更为缓慢。与He填充MFI相比，晶胞的可压缩性更低。 由于氦原子和氢分子的大小相似，因此可以预期MFI结构中的氦量与GCMC模拟中的H2在晶胞体积相似的压力下发现的氦量相似，例如，在12和16 GPa之间，每个单位插入约135个H2分子。</p>
+<h2 id="结论">结论</h2>
+<p>氦气很容易填充单斜MFI的结构，使该相稳定在∼10 GPa的压力下，这远高于任何其他原子或分子客体的报告。高于该压力，但仍比氦的凝固压力低1-2 GPa，观察到向正交相的转变，体积增加约3%，这是由于进一步填充致密流体氦完全改变了这种转变的机制，在没有孔隙填充的情况下通常是铁弹性的。事实上，插入的氦的局部结构的变化，模仿纯氦的凝固相关变化，很可能会发生，并成为观察到的充满氦的MFI转变的驱动力。</p>
 ]]></content>
       <categories>
         <category>科研相关</category>
