@@ -6,7 +6,7 @@
   <link href="https://www.choutse.cn/atom.xml" rel="self"/>
   
   <link href="https://www.choutse.cn/"/>
-  <updated>2023-10-21T07:21:07.016Z</updated>
+  <updated>2023-11-12T12:59:20.026Z</updated>
   <id>https://www.choutse.cn/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一些城市的美食记忆</title>
+    <link href="https://www.choutse.cn/2023/11556379f9.html"/>
+    <id>https://www.choutse.cn/2023/11556379f9.html</id>
+    <published>2023-11-12T10:21:31.000Z</published>
+    <updated>2023-11-12T12:59:20.026Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;记录一下吃过的饭饭好了~&lt;/p&gt;
+&lt;p&gt;之前在其他城市的不太记得了凑合记了~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="日常" scheme="https://www.choutse.cn/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="记录" scheme="https://www.choutse.cn/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>可能是一些好吃的水果吧</title>
@@ -732,31 +752,6 @@
     
     <summary type="html">&lt;p&gt;导入里的import可以设置txt 找到自己的txt后导入，也可以直接拖入。&lt;/p&gt;
 &lt;p&gt;一上来就遇到了一个非常脑瘫的问题，导入的txt设置问题。 &lt;br&gt;这里把需要修改的参数列出来吧。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研相关" scheme="https://www.choutse.cn/categories/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/"/>
-    
-    
-    <category term="小教程" scheme="https://www.choutse.cn/tags/%E5%B0%8F%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Origin操作小指南</title>
-    <link href="https://www.choutse.cn/2022/06431ba714.html"/>
-    <id>https://www.choutse.cn/2022/06431ba714.html</id>
-    <published>2022-06-29T06:36:28.000Z</published>
-    <updated>2022-06-29T07:43:45.986Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;真的很小，用的是2021版。&lt;/p&gt;
-&lt;h3 id=&quot;开始之前&quot;&gt;开始之前&lt;/h3&gt;
-&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;固定左侧的项目管理器。&lt;/li&gt;
-&lt;li&gt;修改默认字体和页边距： &lt;br&gt;Preference-Options-Text Fonts中Font和Default设置为Times New Roman &lt;br&gt;隔壁的Page设置为Tight&lt;/li&gt;
-&lt;li&gt;一些快捷键和图标 &lt;br&gt;&lt;img align=&quot;left&quot; width=&quot;24&quot; height=&quot;29&quot; data-src=&quot;\tu\Origin操作小指南\1.png&quot;&gt; Rescale表示自动重置坐标轴刻度，以使图像可以充满区域； &lt;br&gt;&lt;br&gt;&lt;img align=&quot;left&quot; width=&quot;25&quot; height=&quot;136&quot; data-src=&quot;\tu\Origin操作小指南\2.png&quot;&gt; 可以增加坐标轴； &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Ctrl+D 新增列；&lt;/li&gt;
-&lt;/ol&gt;</summary>
     
     
     
